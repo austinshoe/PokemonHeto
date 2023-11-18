@@ -42,6 +42,13 @@
       "elevation": 0,
       "dest_map": "MAP_WHISPERING_GROVE",
       "dest_warp_id": "0"
+    },
+    {
+      "x": 12,
+      "y": 11,
+      "elevation": 0,
+      "dest_map": "MAP_LITTLEROOT_TOWN",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [
@@ -52,7 +59,7 @@
       "elevation": 0,
       "var": "VAR_TEMP_MIXED_RECORDS",
       "var_value": "0",
-      "script": "NULL"
+      "script": "PearlTown_NoPokemon"
     },
     {
       "type": "trigger",
@@ -61,7 +68,7 @@
       "elevation": 0,
       "var": "VAR_TEMP_MIXED_RECORDS",
       "var_value": "0",
-      "script": "NULL"
+      "script": "PearlTown_NoPokemon"
     }
   ],
   "bg_events": [
