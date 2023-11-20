@@ -33,7 +33,8 @@
     "gMapGroup_IndoorRoute113",
     "gMapGroup_IndoorRoute123",
     "gMapGroup_IndoorRoute119",
-    "gMapGroup_IndoorRoute124"
+    "gMapGroup_IndoorRoute124",
+    "gMapGroup_IndoorPearl"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",
@@ -94,7 +95,10 @@
     "Underwater_Route105",
     "Underwater_Route125",
     "PearlTown",
-    "WhisperingGrove"
+    "LuminaTown",
+    "EverbloomOrchard",
+    "NewMap1",
+    "NewMap2"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",
@@ -622,5 +626,9 @@
   ],
   "gMapGroup_IndoorRoute124": [
     "Route124_DivingTreasureHuntersHouse"
+  ],
+  "gMapGroup_IndoorPearl": [
+    "Player_House",
+    "Player_Room"
   ]
 }

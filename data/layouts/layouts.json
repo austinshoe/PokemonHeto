@@ -4422,14 +4422,64 @@
       "blockdata_filepath": "data/layouts/PearlTown/map.bin"
     },
     {
-      "id": "LAYOUT_WHISPERING_GROVE",
-      "name": "WhisperingGrove_Layout",
+      "id": "LAYOUT_LUMINA_TOWN",
+      "name": "LuminaTown_Layout",
       "width": 40,
-      "height": 40,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Dewford",
+      "border_filepath": "data/layouts/LuminaTown/border.bin",
+      "blockdata_filepath": "data/layouts/LuminaTown/map.bin"
+    },
+    {
+      "id": "LAYOUT_EVERBLOOM_ORCHARD",
+      "name": "EverbloomOrchard_Layout",
+      "width": 40,
+      "height": 24,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Petalburg",
-      "border_filepath": "data/layouts/WhisperingGrove/border.bin",
-      "blockdata_filepath": "data/layouts/WhisperingGrove/map.bin"
+      "border_filepath": "data/layouts/EverbloomOrchard/border.bin",
+      "blockdata_filepath": "data/layouts/EverbloomOrchard/map.bin"
+    },
+    {
+      "id": "LAYOUT_NEW_MAP1",
+      "name": "NewMap1_Layout",
+      "width": 10,
+      "height": 10,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/NewMap1/border.bin",
+      "blockdata_filepath": "data/layouts/NewMap1/map.bin"
+    },
+    {
+      "id": "LAYOUT_NEW_MAP2",
+      "name": "NewMap2_Layout",
+      "width": 50,
+      "height": 60,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/NewMap2/border.bin",
+      "blockdata_filepath": "data/layouts/NewMap2/map.bin"
+    },
+    {
+      "id": "LAYOUT_PLAYER_HOUSE",
+      "name": "Player_House_Layout",
+      "width": 12,
+      "height": 11,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BrendansMaysHouse",
+      "border_filepath": "data/layouts/Player_House/border.bin",
+      "blockdata_filepath": "data/layouts/Player_House/map.bin"
+    },
+    {
+      "id": "LAYOUT_PLAYER_ROOM",
+      "name": "Player_Room_Layout",
+      "width": 12,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BrendansMaysHouse",
+      "border_filepath": "data/layouts/Player_Room/border.bin",
+      "blockdata_filepath": "data/layouts/Player_Room/map.bin"
     }
   ]
 }

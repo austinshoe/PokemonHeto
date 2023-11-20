@@ -1062,4 +1062,14 @@ Common_EventScript_LegendaryFlewAway::
 
 	.include "data/maps/PearlTown/scripts.inc"
 
-	.include "data/maps/WhisperingGrove/scripts.inc"
+	.include "data/maps/LuminaTown/scripts.inc"
+
+	.include "data/maps/EverbloomOrchard/scripts.inc"
+
+	.include "data/maps/NewMap1/scripts.inc"
+
+	.include "data/maps/NewMap2/scripts.inc"
+
+	.include "data/maps/Player_House/scripts.inc"
+
+	.include "data/maps/Player_Room/scripts.inc"

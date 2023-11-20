@@ -1,18 +1,24 @@
 {
-  "id": "MAP_WHISPERING_GROVE",
-  "name": "WhisperingGrove",
-  "layout": "LAYOUT_WHISPERING_GROVE",
-  "music": "MUS_LITTLEROOT",
+  "id": "MAP_LUMINA_TOWN",
+  "name": "LuminaTown",
+  "layout": "LAYOUT_LUMINA_TOWN",
+  "music": "MUS_DEWFORD",
   "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
   "requires_flash": false,
-  "weather": "WEATHER_SHADE",
-  "map_type": "MAP_TYPE_ROUTE",
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_TOWN",
   "allow_cycling": true,
   "allow_escaping": false,
   "allow_running": true,
   "show_map_name": true,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
-  "connections": 0,
+  "connections": [
+    {
+      "map": "MAP_NEW_MAP1",
+      "offset": 2,
+      "direction": "right"
+    }
+  ],
   "object_events": [
 
   ],
