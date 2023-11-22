@@ -55,4 +55,7 @@ Text_PlayerHasFullParty:
     .string "There's no room for this Egg.$"
 
 Text_EggCondition:
-    .string "How's the egg doing? did it hatch yet?$"
+    .string "How's the egg doing? Did it hatch yet?$"
+
+BugCatcherEthan::
+    

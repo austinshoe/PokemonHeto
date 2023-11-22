@@ -1,11 +1,6 @@
 PearlTown_MapScripts::
     map_script MAP_SCRIPT_ON_TRANSITION, PearlTown_OnTransition
     map_script MAP_SCRIPT_ON_FRAME_TABLE, PearlTown_EventScript_NoPokemonTriggerLeft
-    map_script MAP_SCRIPT_ON_FRAME_TABLE, PearlTown_PlayerHouse
-    map_script MAP_SCRIPT_ON_FRAME_TABLE, PearlTown_RyderHouse
-    map_script MAP_SCRIPT_ON_FRAME_TABLE, PearlTown_Lab
-    map_script MAP_SCRIPT_ON_FRAME_TABLE, PearlTown_Fisherman1
-    map_script MAP_SCRIPT_ON_FRAME_TABLE, PearlTown_TownSignpostScript
 	.byte 0
 
 PearlTown_Fisherman2::
@@ -30,7 +25,7 @@ Script_Fisherman2Warn::
     end
 
 Text_Fisherman2Warning:
-    .string "Don't go near the forest\n"
+    .string "Don't go near the forest.\n"
     .string "There are dangerous Pokémon out there.$"
 
 PearlTown_TownSignpostScript::
