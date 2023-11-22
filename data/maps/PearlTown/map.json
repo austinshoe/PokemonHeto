@@ -37,7 +37,7 @@
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "PearlTown_Fisherman",
+      "script": "PearlTown_Fisherman2",
       "flag": "0"
     },
     {
@@ -101,7 +101,7 @@
       "elevation": 0,
       "var": "VAR_LITTLEROOT_TOWN_STATE",
       "var_value": "0",
-      "script": "earlTown_EventScript_NoPokemonTriggerLeft"
+      "script": "PearlTown_EventScript_NoPokemonTriggerLeft"
     }
   ],
   "bg_events": [

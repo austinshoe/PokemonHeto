@@ -41,7 +41,7 @@ PearlTown_Fisherman1::
     lockall
     faceplayer
     goto_if_unset FLAG_RESCUED_BIRCH, PearlTown_FishermanDirections
-    goto_if_set FLAG_RESCED_BIRCH, PearlTown_FishermanGeneral
+    goto_if_set FLAG_RESCUED_BIRCH, PearlTown_FishermanGeneral
     releaseall
     end
 
@@ -50,7 +50,7 @@ PearlTown_FishermanDirections::
     closemessage
     return
 
-PearlTown_FishermanDirections::
+PearlTown_FishermanGeneral::
     msgbox Text_FishermanGeneral
     closemessage
     return
@@ -60,11 +60,11 @@ Text_FishermanDirections:
     .string "I heard Prof. Pine was looking for you.\n"
     .string "Go check out his lab.$"
 
-Text_FishermanDirections:
+Text_FishermanGeneral:
     .string "Yo! {PLAYER}!\n"
     .string "I got a massive catch today!$"
 
-PearlTown_RyderHouse:
+PearlTown_RyderHouse::
     msgbox Text_RyderHouseSign, MSGBOX_SIGN
     closemessage
     end
@@ -73,12 +73,12 @@ Text_RyderHouseSign:
     .string "Ryder's House$"
 
 
-PearlTown_Lab:
+PearlTown_Lab::
     msgbox Text_ProfPineLab, MSGBOX_SIGN
     closemessage
     end
 
-Text_ProfPineLab::
+Text_ProfPineLab:
     .string "Prof. Pine's House$"
 
 PearlTown_PlayerHouse::
@@ -161,12 +161,12 @@ PearlTown_Text_IfYouGoInGrassPokemonWillJumpOut:
     .string "If you go outside and go in the grass,\n"
     .string "wild POKéMON will jump out!$"
 
-PearlrootTown_Text_DangerousIfYouDontHavePokemon:
+PearlTown_Text_DangerousIfYouDontHavePokemon:
     .string "It's dangerous if you don't have\n"
     .string "your own Pokémon.$"
 
 PearlTown_Text_Convo:
-    .string "{COLOR BLUE}{SHADOW DARK_GRAY}Ryder: {COLOR DARK_GRAY}{SHADOW Light_GRAY}{Player}! What's up?\p"
+    .string "{COLOR BLUE}{SHADOW DARK_GRAY}Ryder: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}{PLAYER}! What's up?\p"
     .string "...\n"
     .string "You just got your first Pokémon?\n"
     .string "...$"
@@ -188,7 +188,7 @@ PearlTown_Text_Battle_Opener:
     .string "prove that I'M the one that deserves\n"
     .string "the Dratini!$"
 
-PearlTown_Movement_TwinPushPlayerFromRoute:
+PearlTown_Movement_PushPlayerBackFromRoute:
     walk_down
     step_end
 

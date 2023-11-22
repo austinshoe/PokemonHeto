@@ -41,7 +41,7 @@ Script_PlayerAnsweredNo::
 
 Text_EggQuestion:
     .string "My Pokémon laid a new egg recently, but\n"
-    .string "I have no need for it.\n
+    .string "I have no need for it.\n"
     .string "Will you take this Egg?$"
 
 Text_PlayerAnsweredNo:
