@@ -93,10 +93,11 @@ PearlTown_House1:
 
 PearlTown_OnTransition::
     call_if_unset FLAG_RESCUED_BIRCH, PearlTown_EventScript_NeedPokemon
-    call_if_eq VAR_LITTLEROOT_INTRO_STATE, 0, PearlTown_EventScript_SetupRivalBattle
+    call_if_set FLAG_RESCUED_BIRCH PearlTown_EventScript_SetupRivalBattle
     end
     
 PearlTown_EventScript_NeedPokemon::
+    setflag FLAG_RIVAL_LEFT_FOR_ROUTE103
     return
     
 PearlTown_EventScript_SetupRivalBattle::
