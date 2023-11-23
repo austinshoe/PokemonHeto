@@ -101,13 +101,8 @@ PearlTown_EventScript_NeedPokemon::
     return
     
 PearlTown_EventScript_SetupRivalBattle::
-    goto_if_unset FLAG_RESCUED_BIRCH, PearlTown_EventScript_SetupRivalBattle_1
     goto_if_unset FLAG_DEFEATED_RIVAL_ROUTE103, PearlTown_EventScript_SetupRivalBattle_2
     goto_if_set FLAG_DEFEATED_RIVAL_ROUTE103 PearlTown_EventScript_SetupRivalBattle_3
-    return
-
-PearlTown_EventScript_SetupRivalBattle_1::
-    setflag FLAG_RIVAL_LEFT_FOR_ROUTE103
     return
 
 PearlTown_EventScript_SetupRivalBattle_2::
@@ -119,18 +114,14 @@ PearlTown_EventScript_SetupRivalBattle_3::
     return
 
 PearlTown_EventScript_Battle_Rival::
+    lock 
+    faceplayer
     goto_if_unset FLAG_DEFEATED_RIVAL_ROUTE103, PearlTown_RivalBattle
     msgbox PostBattleRyder, MSGBOX_AUTOCLOSE
     waitmessage
     end
     
 PearlTown_RivalBattle::
-    lock
-    faceplayer
-    applymovement 3, Common_Movement_ExclamationMark
-    waitmovement 0
-    applymovement 3, PearlTown_Movement_Walk_Up
-    waitmovement 0
     msgbox PearlTown_Text_Convo
     closemessage
     applymovement 3, Common_Movement_ExclamationMark
