@@ -114,8 +114,6 @@ PearlTown_EventScript_SetupRivalBattle_3::
     return
 
 PearlTown_EventScript_Battle_Rival::
-    lock 
-    faceplayer
     goto_if_unset FLAG_DEFEATED_RIVAL_ROUTE103, PearlTown_RivalBattle
     msgbox PostBattleRyder, MSGBOX_AUTOCLOSE
     waitmessage

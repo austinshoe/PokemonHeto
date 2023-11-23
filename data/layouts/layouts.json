@@ -4425,9 +4425,9 @@
       "id": "LAYOUT_LUMINA_TOWN",
       "name": "LuminaTown_Layout",
       "width": 40,
-      "height": 30,
+      "height": 34,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Dewford",
+      "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/LuminaTown/border.bin",
       "blockdata_filepath": "data/layouts/LuminaTown/map.bin"
     },
