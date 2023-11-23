@@ -103,16 +103,30 @@ PearlTown_EventScript_NeedPokemon::
 PearlTown_EventScript_SetupRivalBattle::
     goto_if_unset FLAG_RESCUED_BIRCH, PearlTown_EventScript_SetupRivalBattle_1
     goto_if_unset FLAG_DEFEATED_RIVAL_ROUTE103, PearlTown_EventScript_SetupRivalBattle_2
+    goto_if_set FLAG_DEFEATED_RIVAL_ROUTE103 PearlTown_EventScript_SetupRivalBattle_3
     return
 
 PearlTown_EventScript_SetupRivalBattle_1::
     setflag FLAG_RIVAL_LEFT_FOR_ROUTE103
     return
+
 PearlTown_EventScript_SetupRivalBattle_2::
     clearflag FLAG_RIVAL_LEFT_FOR_ROUTE103
     return
+    
+PearlTown_EventScript_SetupRivalBattle_3::
+    setflag FLAG_RIVAL_LEFT_FOR_ROUTE103
+    return
 
 PearlTown_EventScript_Battle_Rival::
+    goto_if_unset FLAG_DEFEATED_RIVAL_ROUTE103, PearlTown_RivalBattle
+    msgbox PostBattleRyder, MSGBOX_AUTOCLOSE
+    waitmessage
+    end
+    
+PearlTown_RivalBattle::
+    lock
+    faceplayer
     applymovement 3, Common_Movement_ExclamationMark
     waitmovement 0
     applymovement 3, PearlTown_Movement_Walk_Up
@@ -124,15 +138,13 @@ PearlTown_EventScript_Battle_Rival::
     msgbox PearlTown_Text_Battle_Opener
     closemessage
     trainerbattle_single TRAINER_MAY_ROUTE_103_TORCHIC, Ryder_Intro, Ryder_Outro
-    msgbox PostBattleRyder, MSGBOX_AUTOCLOSE
-    waitmessage
     setflag FLAG_DEFEATED_RIVAL_ROUTE103
     setflag FLAG_RIVAL_LEFT_FOR_ROUTE103
     fadescreen FADE_TO_BLACK
     fadescreen FADE_FROM_BLACK
+    release
     end
     
-
 PearlTown_EventScript_NoPokemonTriggerLeft::
     lockall
     applymovement 1, PearlTown_Movement_ManWarns

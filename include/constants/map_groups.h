@@ -597,8 +597,10 @@
 #define MAP_ROUTE124_DIVING_TREASURE_HUNTERS_HOUSE (0 | (33 << 8))
 
 // gMapGroup_IndoorPearl
-#define MAP_PLAYER_HOUSE (0 | (34 << 8))
-#define MAP_PLAYER_ROOM  (1 | (34 << 8))
+#define MAP_PLAYER_HOUSE                   (0 | (34 << 8))
+#define MAP_PLAYER_ROOM                    (1 | (34 << 8))
+#define MAP_PEARL_TOWN_PROFESSOR_PINES_LAB (2 | (34 << 8))
+#define MAP_RYDER_HOUSE                    (3 | (34 << 8))
 
 #define MAP_GROUPS_COUNT 35
 

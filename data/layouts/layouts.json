@@ -4480,6 +4480,26 @@
       "secondary_tileset": "gTileset_BrendansMaysHouse",
       "border_filepath": "data/layouts/Player_Room/border.bin",
       "blockdata_filepath": "data/layouts/Player_Room/map.bin"
+    },
+    {
+      "id": "LAYOUT_PEARL_TOWN_PROFESSOR_PINES_LAB",
+      "name": "PearlTown_ProfessorPinesLab_Layout",
+      "width": 13,
+      "height": 13,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Lab",
+      "border_filepath": "data/layouts/PearlTown_ProfessorPinesLab/border.bin",
+      "blockdata_filepath": "data/layouts/PearlTown_ProfessorPinesLab/map.bin"
+    },
+    {
+      "id": "LAYOUT_RYDER_HOUSE",
+      "name": "Ryder_House_Layout",
+      "width": 12,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BrendansMaysHouse",
+      "border_filepath": "data/layouts/Ryder_House/border.bin",
+      "blockdata_filepath": "data/layouts/Ryder_House/map.bin"
     }
   ]
 }

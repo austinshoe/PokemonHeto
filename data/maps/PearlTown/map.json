@@ -48,8 +48,8 @@
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "2",
       "script": "PearlTown_EventScript_Battle_Rival",
       "flag": "FLAG_RIVAL_LEFT_FOR_ROUTE103"
     }
@@ -81,6 +81,20 @@
       "y": 26,
       "elevation": 0,
       "dest_map": "MAP_PLAYER_HOUSE",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 34,
+      "y": 18,
+      "elevation": 0,
+      "dest_map": "MAP_PEARL_TOWN_PROFESSOR_PINES_LAB",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 17,
+      "y": 18,
+      "elevation": 0,
+      "dest_map": "MAP_RYDER_HOUSE",
       "dest_warp_id": "1"
     }
   ],

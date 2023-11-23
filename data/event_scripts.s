@@ -1073,3 +1073,7 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/Player_House/scripts.inc"
 
 	.include "data/maps/Player_Room/scripts.inc"
+
+	.include "data/maps/PearlTown_ProfessorPinesLab/scripts.inc"
+
+	.include "data/maps/Ryder_House/scripts.inc"
