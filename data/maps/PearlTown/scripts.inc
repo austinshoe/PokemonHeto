@@ -3,11 +3,6 @@ PearlTown_MapScripts::
 
 PearlTown_EventScript_Trigger::
     lockall
-    goto_if_unset FLAG_RESCUED_BIRCH, PearlTown_DangerousNoPokemon
-    releaseall
-    end
-
-PearlTown_DangerousNoPokemon::
     applymovement 1, SeePlayer
     waitmovement
     applymovement 1, Common_Movement_ExclamationMark
@@ -16,7 +11,8 @@ PearlTown_DangerousNoPokemon::
     waitmessage
     applymovement OBJ_EVENT_ID_PLAYER, PushBack
     waitmovement
-    return
+    releaseall
+    end
 
 SeePlayer:
     face_up
