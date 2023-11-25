@@ -9,13 +9,13 @@ PearlTown_EventScript_Trigger::
 
 PearlTown_DangerousNoPokemon::
     applymovement 1, SeePlayer
-    waitmovement
+    waitmovement 0
     applymovement 1, Common_Movement_ExclamationMark
-    waitmovement
+    waitmovement 0
     msgbox Text_DangerousNoPokemon, MSGBOX_DEFAULT
     waitmessage
     applymovement OBJ_EVENT_ID_PLAYER, PushBack
-    waitmovement
+    waitmovement 0
     return
 
 SeePlayer:
@@ -23,7 +23,7 @@ SeePlayer:
     step_end
     
 PushBack:
-    step_down
+    walk_down
     step_end
 
 Text_DangerousNoPokemon:
