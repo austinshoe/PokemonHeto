@@ -71,13 +71,6 @@
     },
     {
       "x": 12,
-      "y": 11,
-      "elevation": 0,
-      "dest_map": "MAP_LITTLEROOT_TOWN",
-      "dest_warp_id": "0"
-    },
-    {
-      "x": 12,
       "y": 26,
       "elevation": 0,
       "dest_map": "MAP_PLAYER_HOUSE",
