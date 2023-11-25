@@ -10,14 +10,10 @@ PearlTown_EventScript_Trigger::
     msgbox Text_DangerousNoPokemon, MSGBOX_DEFAULT
     waitmessage
     applymovement OBJ_EVENT_ID_PLAYER, PushBack
-<<<<<<< HEAD
     waitmovement 0
-    return
-=======
     waitmovement
     releaseall
     end
->>>>>>> 812bc89bad1c0cdfd6bcebf283d16fba36eb2973
 
 SeePlayer:
     face_up
