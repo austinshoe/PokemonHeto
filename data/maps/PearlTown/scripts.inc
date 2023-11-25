@@ -19,7 +19,7 @@ SeePlayer:
     step_end
     
 PushBack:
-    step_down
+    walk_down
     step_end
 
 Text_DangerousNoPokemon:
