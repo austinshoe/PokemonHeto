@@ -14,6 +14,22 @@ PearlTown_EventScript_Trigger::
     releaseall
     end
 
+PearlTown_TownSign::
+    msgbox Text_TownSign, MSGBOX_SIGN
+    end
+
+PearlTown_LabSign::
+    msgbox Text_LabSign, MSGBOX_SIGN
+    end
+
+PearlTown_PlayerSign::
+    msgbox Text_PlayerSign, MSGBOX_SIGN
+    end
+
+PearlTown_LiamSign::
+    msgbox Text_LiamSign, MSGBOX_SIGN
+    end
+
 SeePlayer:
     face_up
     step_end
@@ -25,6 +41,18 @@ PushBack:
 Text_DangerousNoPokemon:
     .string "NO! DONT GO!\p"
     .string "Its dangerous out there if you don't\l"
-    .string "your own Pokémon.\n"
+    .string "have your own Pokémon.\n"
     .string "Wild Pokémon might jump out at you.$"
     
+Text_TownSign:
+    .string "{COLOR BLUE}PearlTown\n"
+    .string "{COLOR LIGHT_GRAY}A haven of tranquility and beauty$"
+    
+Text_LabSign:
+    .string "Prof. Pine's Lab$"
+
+Text_PlayerSign:
+    .string "{PLAYER}'s House$"
+
+Text_LiamSign:
+    .string "Liam's House$"

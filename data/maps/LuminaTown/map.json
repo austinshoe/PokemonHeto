@@ -17,6 +17,11 @@
       "map": "MAP_NEW_MAP1",
       "offset": 4,
       "direction": "right"
+    },
+    {
+      "map": "MAP_EVERBLOOM_ORCHARD",
+      "offset": -12,
+      "direction": "up"
     }
   ],
   "object_events": [
