@@ -1,5 +1,4 @@
 PearlTown_MapScripts::
-    map_script MAP_SCRIPT_ON_TRANSITION, PearlTown_OnTransition
     map_script MAP_SCRIPT_ON_FRAME_TABLE, PearlTown_EventScript_NoPokemonTriggerLeft
     .byte 0
 
@@ -83,9 +82,6 @@ PearlTown_PlayerHouse::
 
 PearlTown_House1:
     .string "{PLAYER}'s house$"
-
-PearlTown_OnTransition::
-    end
 
 PearlTown_EventScript_NoPokemonTriggerLeft::
     lockall
