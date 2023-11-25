@@ -11,7 +11,6 @@ PearlTown_EventScript_Trigger::
     waitmessage
     applymovement OBJ_EVENT_ID_PLAYER, PushBack
     waitmovement 0
-    waitmovement
     releaseall
     end
 
