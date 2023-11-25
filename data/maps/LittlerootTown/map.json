@@ -17,6 +17,11 @@
       "map": "MAP_ROUTE101",
       "offset": 0,
       "direction": "up"
+    },
+    {
+      "map": "MAP_PEARL_TOWN",
+      "offset": -21,
+      "direction": "right"
     }
   ],
   "object_events": [
@@ -152,7 +157,7 @@
       "y": 2,
       "elevation": 0,
       "dest_map": "MAP_PEARL_TOWN",
-      "dest_warp_id": "2"
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [
