@@ -18,6 +18,14 @@ PearlTown_TownSign::
     msgbox Text_TownSign, MSGBOX_SIGN
     end
 
+PearlTown_FatGuy::
+    lock
+    faceplayer
+    call_if_unset FLAG_RESCUED_BIRCH, Text_ForestWarn
+    call_if_set FLAG_RESCUED_BIRCH, Text_NiceDay
+    release
+    end
+
 PearlTown_LabSign::
     msgbox Text_LabSign, MSGBOX_SIGN
     end
@@ -56,3 +64,10 @@ Text_PlayerSign:
 
 Text_LiamSign:
     .string "Liam's House$"
+
+Text_ForestWarn:
+    .string "Don't go in the forest without Pokémon.\p"
+    .string "Wild Pokémon might attack you.$"
+
+Text_NiceDay:
+    .string "It's a nice day today.$"
