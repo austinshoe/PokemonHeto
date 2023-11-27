@@ -26,6 +26,14 @@ PearlTown_FatGuy::
     release
     end
 
+PearlTown_Fisherman::
+    lock
+    faceplayer
+    call_if_unset FLAG_RESCUED_BIRCH, Text_GotoLab
+    call_if_set FLAG_RESCUED_BIRCH, Text_BigCatch
+    release
+    end
+
 PearlTown_LabSign::
     msgbox Text_LabSign, MSGBOX_SIGN
     end
@@ -71,3 +79,12 @@ Text_ForestWarn:
 
 Text_NiceDay:
     .string "It's a nice day today.$"
+
+Text_Goto:
+    .string "Yo! {PLAYER}!\p"
+    .string "I heard Prof. Pine was looking for you.\n"
+    .string "You should go see him in his lab.$"
+    
+Text_BigCatch:
+    .string "Yo! {PLAYER}!\p"
+    .string "I got a big catch today!$"
