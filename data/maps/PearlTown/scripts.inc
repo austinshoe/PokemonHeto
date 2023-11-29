@@ -80,7 +80,7 @@ Text_ForestWarn:
 Text_NiceDay:
     .string "It's a nice day today.$"
 
-Text_Goto:
+Text_GotoLab:
     .string "Yo! {PLAYER}!\p"
     .string "I heard Prof. Pine was looking for you.\n"
     .string "You should go see him in his lab.$"
