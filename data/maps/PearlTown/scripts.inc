@@ -21,18 +21,30 @@ PearlTown_TownSign::
 PearlTown_FatGuy::
     lock
     faceplayer
-    call_if_unset FLAG_RESCUED_BIRCH, Text_ForestWarn
-    call_if_set FLAG_RESCUED_BIRCH, Text_NiceDay
+    call_if_unset FLAG_RESCUED_BIRCH, Script_ForestWarn
+    call_if_set FLAG_RESCUED_BIRCH, Script_NiceDay
     release
     end
 
 PearlTown_Fisherman::
     lock
     faceplayer
-    call_if_unset FLAG_RESCUED_BIRCH, Text_GotoLab
-    call_if_set FLAG_RESCUED_BIRCH, Text_BigCatch
+    call_if_unset FLAG_RESCUED_BIRCH, Script_GotoLab
+    call_if_set FLAG_RESCUED_BIRCH, Script_BigCatch
     release
     end
+
+Script_ForestWarn::
+    msgbox Text_ForestWarn, MSGBOX_DEFAULT
+    
+Script_NiceDay::
+    msgbox Text_NiceDay, MSGBOX_DEFAULT
+
+Script_BigCatch::
+    msgbox Text_BigCatch, MSGBOX_DEFAULT
+
+Script_GotoLab
+    msgbox Text_GotoLab, MSGBOX_DEFAULT
 
 PearlTown_LabSign::
     msgbox Text_LabSign, MSGBOX_SIGN
