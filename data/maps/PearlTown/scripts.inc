@@ -43,7 +43,7 @@ Script_NiceDay::
 Script_BigCatch::
     msgbox Text_BigCatch, MSGBOX_DEFAULT
 
-Script_GotoLab
+Script_GotoLab::
     msgbox Text_GotoLab, MSGBOX_DEFAULT
 
 PearlTown_LabSign::
