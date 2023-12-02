@@ -48,7 +48,13 @@
     }
   ],
   "warp_events": [
-
+    {
+      "x": 34,
+      "y": 18,
+      "elevation": 0,
+      "dest_map": "MAP_PEARL_TOWN_PROFESSOR_PINES_LAB",
+      "dest_warp_id": "0"
+    }
   ],
   "coord_events": [
     {

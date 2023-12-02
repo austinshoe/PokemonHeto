@@ -36,16 +36,24 @@ PearlTown_Fisherman::
 
 Script_ForestWarn::
     msgbox Text_ForestWarn, MSGBOX_DEFAULT
+    release
+    end
     
 Script_NiceDay::
     msgbox Text_NiceDay, MSGBOX_DEFAULT
-
+    release
+    end
+    
 Script_BigCatch::
     msgbox Text_BigCatch, MSGBOX_DEFAULT
-
+    release
+    end
+    
 Script_GotoLab::
     msgbox Text_GotoLab, MSGBOX_DEFAULT
-
+    release
+    end
+    
 PearlTown_LabSign::
     msgbox Text_LabSign, MSGBOX_SIGN
     end

@@ -4500,6 +4500,16 @@
       "secondary_tileset": "gTileset_BrendansMaysHouse",
       "border_filepath": "data/layouts/Ryder_House/border.bin",
       "blockdata_filepath": "data/layouts/Ryder_House/map.bin"
+    },
+    {
+      "id": "LAYOUT_EVERBLOOM_CITY",
+      "name": "EverbloomCity_Layout",
+      "width": 40,
+      "height": 30,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Lilycove",
+      "border_filepath": "data/layouts/EverbloomCity/border.bin",
+      "blockdata_filepath": "data/layouts/EverbloomCity/map.bin"
     }
   ]
 }

@@ -68,6 +68,7 @@
 #define MAP_EVERBLOOM_ORCHARD   (59 | (0 << 8))
 #define MAP_NEW_MAP1            (60 | (0 << 8))
 #define MAP_NEW_MAP2            (61 | (0 << 8))
+#define MAP_EVERBLOOM_CITY      (62 | (0 << 8))
 
 // gMapGroup_IndoorLittleroot
 #define MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F    (0 | (1 << 8))
