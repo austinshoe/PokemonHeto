@@ -1,5 +1,18 @@
 PearlTown_MapScripts::
+    map_script MAP_SCRIPT_ON_TRANSITION, PearlTown_OnTransition
     .byte 0
+
+PearlTown_OnTransition:
+    call_if_unset FLAG_RESCUED_BIRCH, PearlTownState0
+    call_if_set FLAG_RESCUED_BIRCH, PearlTownState1
+
+PearlTownState0::
+    setvar VAR_LITTLEROOT_TOWN_STATE, 0
+    return
+
+PearlTownState1::
+    setvar VAR_LITTLEROOT_TOWN_STATE, 1
+    return
 
 PearlTown_EventScript_Trigger::
     lockall
@@ -82,7 +95,7 @@ Text_DangerousNoPokemon:
     
 Text_TownSign:
     .string "{COLOR BLUE}PearlTown\n"
-    .string "{COLOR LIGHT_GRAY}A haven of tranquility and beauty$"
+    .string "{COLOR DARK_GRAY}A haven of tranquility and beauty$"
     
 Text_LabSign:
     .string "Prof. Pine's Lab$"
