@@ -76,7 +76,7 @@ PearlTownRivalBattle::
     release
     end
 
-PearlTownDefeatedRival
+PearlTownDefeatedRival::
     release
     end
 
