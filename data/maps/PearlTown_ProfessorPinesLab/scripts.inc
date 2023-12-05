@@ -95,7 +95,7 @@ Text_Good:
 
 TextTakePokedex:
     .string "Oh! Right!\n"
-    .string "{Player}!\l"
+    .string "{PLAYER}!\l"
     .string "I ordered this Pokédex to help me with\l"
     .string "my research, but old age prevents me\l"
     .string "from using this as effectively, so I\l"

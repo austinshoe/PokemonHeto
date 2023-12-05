@@ -80,7 +80,7 @@ PearlTownRivalBattle::
     setflag FLAG_RIVAL_LEFT_FOR_ROUTE_103
     msgbox Text_Posbattle, MSGBOX_DEFAULT
     closemessage
-    applymovemt 3, PearlTown_MovementStepAway
+    applymovement 3, PearlTown_MovementStepAway
     waitmovement 0
     msgbox Text_Posbattle1, MSGBOX_DEFAULT
     closemessage
