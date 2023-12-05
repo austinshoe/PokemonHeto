@@ -127,13 +127,13 @@ Text_DangerousNoPokemon:
     .string "Wild Pokémon might jump out at you.$"
 
 Text_PreBattle:
-    .string "{COLOR DARK_BLUE}Liam: {COLOR DARK_GRAY}Yo! {PLAYER}!\n"
+    .string "{COLOR BLUE}Liam: {COLOR DARK_GRAY}Yo! {PLAYER}!\n"
     .string "You got your first Pokémon? That's cool.\l"
     .string "What did you get?\l"
     .string "...$"
 
 Text_Prebattle1:
-    .string "{COLOR DARK_BLUE}Liam: {COLOR DARK_GRAY}I- I- I can't believe this!\n"
+    .string "{COLOR BLUE}Liam: {COLOR DARK_GRAY}I- I- I can't believe this!\n"
     .string "Th- That's the Mirage Pokémon! How did\l"
     .string "you get your hands on this?"
     .string "...\p"
