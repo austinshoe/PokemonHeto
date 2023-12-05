@@ -209,7 +209,7 @@ bool8 ScriptContext_IsEnabled(void)
 
 bool8 LoadTrainerObjectScript(void)
 {
-    sScriptContext1.scriptPtr = gApproachingTrainers[gNoOfApproachingTrainers - 1].trainerScriptPtr;
+    sGlobalScriptContext.scriptPtr = gApproachingTrainers[gNoOfApproachingTrainers - 1].trainerScriptPtr;
     return TRUE;
 }
 

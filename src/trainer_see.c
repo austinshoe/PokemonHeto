@@ -18,7 +18,7 @@
 #include "constants/event_object_movement.h"
 #include "constants/field_effects.h"
 #include "constants/trainer_types.h"
-#include "include/event_scripts.h"
+#include "event_scripts.h"
 
 // this file's functions
 static u8 CheckTrainer(u8 objectEventId);
@@ -227,8 +227,8 @@ bool8 CheckForTrainersWantingBattle(void)
         
         gSelectedObjectEvent = objectEventId;
         gSpecialVar_LastTalked = gObjectEvents[objectEventId].localId;
-        ScriptContext1_SetupScript(EventScript_ObjectApproachPlayer);
-        ScriptContext2_Enable();
+        ScriptContext_SetupScript(EventScript_ObjectApproachPlayer);
+        LockPlayerFieldControls();
         return TRUE;
     }
     
@@ -321,7 +321,7 @@ static u8 CheckTrainer(u8 objectEventId)
         gApproachingTrainers[gNoOfApproachingTrainers].objectEventId = objectEventId;
         gApproachingTrainers[gNoOfApproachingTrainers].trainerScriptPtr = scriptPtr;
         gApproachingTrainers[gNoOfApproachingTrainers].radius = approachDistance;
-        TrainerApproachPlayer(&gObjectEvents[objectEventId], approachDistance - 1);
+        InitTrainerApproachTask(&gObjectEvents[objectEventId], approachDistance - 1);
         gNoOfApproachingTrainers++;
 
         return ret;
