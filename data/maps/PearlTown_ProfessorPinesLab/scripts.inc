@@ -33,7 +33,7 @@ Script_Receive_Starter::
 
 Script_Receive_Starter2::
     setflag FLAG_RESCUED_BIRCH
-    msgbox TakePokedex, MSGBOX_DEFAULT
+    msgbox TextTakePokedex, MSGBOX_DEFAULT
     playfanfare MUS_OBTAIN_ITEM
     waitfanfare
     message GivePokedex_Text_0
@@ -42,7 +42,7 @@ Script_Receive_Starter2::
     setflag FLAG_ADVENTURE_STARTED
     special SetUnlockedPokedexFlags
     setflag FLAG_RECEIVED_POKEDEX_FROM_BIRCH
-    msgbox LittlerootTown_ProfessorBirchsLab_Text_ExplainPokedex, MSGBOX_DEFAULT
+    msgbox PearlTown_ProfessorPinesLab_Text_ExplainPokedex, MSGBOX_DEFAULT
     msgbox GivePokedex_Text_1, MSGBOX_DEFAULT
     waitmessage
     giveitem ITEM_POKE_BALL, 5
@@ -80,21 +80,29 @@ Text_ReceivedDratini:
     .string "{PLAYER} received a Dratini!$"
 
 GivePokedex_Text_0:
-    .string "{PLAYER} received the POKéDEX!$"
+    .string "{PLAYER} received the Pokédex!$"
 
 GivePokedex_Text_1:
     .string "Also take these with you.$"
 
 GivePokedex_Text_2:
     .string "These allow you to catch your own\n"
-    .string "Pokemon in tall grass so you can collect\l"
-    .string "research for the Pokedex.$"
-
-TakePokedex:
-    .string "Oh! Right!\n"
-    .string "Here, {PLAYER}, I ordered this for my\l"
-    .string "research, but I think you should have\l"
-    .string "this Pokédex.$"
+    .string "Pokémon in tall grass so you can collect\l"
+    .string "research for the Pokédex.$"
 
 Text_Good:
     .string "Your Pokémon seem to be doing fine.$"
+
+TextTakePokedex:
+    .string "Oh! Right!\n"
+    .string "{Player}!\l"
+    .string "I ordered this Pokédex to help me with\l"
+    .string "my research, but old age prevents me\l"
+    .string "from using this as effectively, so I\l"
+    .string "think you should have it instead.$"
+
+PearlTown_ProfessorPinesLab_Text_ExplainPokedex:
+    .string "The Pokédex is a marvelous device that\n"
+    .string "helps you record the Pokémon you've seen\l"
+    .string "or caught. It can record different stats\l"
+    .string "like height and weight, etc.$"

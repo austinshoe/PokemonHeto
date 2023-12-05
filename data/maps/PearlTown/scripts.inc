@@ -66,6 +66,7 @@ PearlTown_Rival::
     goto PearlTownDefeatedRival
 
 PearlTownRivalBattle::
+    lockall
     msgbox Text_PreBattle, MSGBOX_DEFAULT
     waitmessage
     closemessage
@@ -74,7 +75,18 @@ PearlTownRivalBattle::
     msgbox Text_Prebattle1, MSGBOX_DEFAULT
     waitmessage
     closemessage
-    release
+    trainerbattle_no_intro TRAINER_MAY_ROUTE_103_TREECKO, Text_LiamDefeated
+    setflag FLAG_DEFEATED_RIVAL_ROUTE103
+    setflag FLAG_RIVAL_LEFT_FOR_ROUTE_103
+    msgbox Text_Posbattle, MSGBOX_DEFAULT
+    closemessage
+    applymovemt 3, PearlTown_MovementStepAway
+    waitmovement 0
+    msgbox Text_Posbattle1, MSGBOX_DEFAULT
+    closemessage
+    fadescreen FADE_TO_BLACK
+    fadescreen FADE_FROM_BLACK
+    releaseall
     end
 
 PearlTownDefeatedRival::
@@ -119,6 +131,12 @@ SeePlayer:
     
 PushBack:
     walk_down
+    step_end
+
+PearlTown_MovementStepAway:
+    walk_left
+    walk_up
+    walk_left
     step_end
 
 Text_DangerousNoPokemon:
@@ -184,3 +202,15 @@ Text_GotoLab:
 Text_BigCatch:
     .string "Yo! {PLAYER}!\p"
     .string "I got a big catch today!$"
+
+Text_LiamDefeated:
+    .string "This... This can't be...$"
+
+Text_Posbattle:
+    .string "How...$"
+
+Text_Posbattle1:
+    .string "Am I... really inferior?\p"
+    .string "...\p"
+    .string "...\p"
+    .string "I- I need to go-$"
