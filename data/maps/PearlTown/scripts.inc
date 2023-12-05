@@ -77,7 +77,7 @@ PearlTownRivalBattle::
     closemessage
     trainerbattle_no_intro TRAINER_MAY_ROUTE_103_TREECKO, Text_LiamDefeated
     setflag FLAG_DEFEATED_RIVAL_ROUTE103
-    setflag FLAG_RIVAL_LEFT_FOR_ROUTE_103
+    setflag FLAG_RIVAL_LEFT_FOR_ROUTE103
     msgbox Text_Posbattle, MSGBOX_DEFAULT
     closemessage
     applymovement 3, PearlTown_MovementStepAway
