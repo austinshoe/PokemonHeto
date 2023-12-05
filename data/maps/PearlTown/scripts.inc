@@ -8,10 +8,21 @@ PearlTown_OnTransition:
 
 PearlTownState0::
     setvar VAR_LITTLEROOT_TOWN_STATE, 0
+    setflag FLAG_RIVAL_LEFT_FOR_ROUTE103
     return
 
 PearlTownState1::
     setvar VAR_LITTLEROOT_TOWN_STATE, 1
+    call_if_unset FLAG_DEFEATED_RIVAL_ROUTE103, PearlTownSetUpRivalBattle
+    call_if_set FLAG_DEFEATED_RIVAL_ROUTE103, PearlTownRivalAfter
+    return
+
+PearlTownSetUpRivalBattle::
+    clearflag FLAG_RIVAL_LEFT_FOR_ROUTE103
+    return
+
+PearlTownRivalAfter::
+    setflag FLAG_RIVAL_LEFT_FOR_ROUTE103
     return
 
 PearlTown_EventScript_Trigger::
@@ -44,6 +55,28 @@ PearlTown_Fisherman::
     faceplayer
     call_if_unset FLAG_RESCUED_BIRCH, Script_GotoLab
     call_if_set FLAG_RESCUED_BIRCH, Script_BigCatch
+    release
+    end
+
+PearlTown_Rival::
+    lock
+    faceplayer
+    goto_if_unset FLAG_DEFEATED_RIVAL_ROUTE103, PearlTownRivalBattle
+    goto PearlTownDefeatedRival
+
+PearlTownRivalBattle::
+    msgbox Text_PreBattle, MSGBOX_DEFAULT
+    waitmessage
+    closemessage
+    applymovement 3, Common_Movement_ExclamationMark
+    waitmovement 0
+    msgbox Text_Prebattle1, MSGBOX_DEFAULT
+    waitmessage
+    closemessage
+    release
+    end
+
+PearlTownDefeatedRival
     release
     end
 
@@ -92,7 +125,36 @@ Text_DangerousNoPokemon:
     .string "Its dangerous out there if you don't\l"
     .string "have your own Pokémon.\n"
     .string "Wild Pokémon might jump out at you.$"
-    
+
+Text_PreBattle:
+    .string "{COLOR DARK_BLUE}Liam: {COLOR DARK_GRAY}Yo! {PLAYER}!\n"
+    .string "You got your first Pokémon? That's cool.\l"
+    .string "What did you get?\l"
+    .string "...$"
+
+Text_Prebattle1:
+    .string "{COLOR DARK_BLUE}Liam: {COLOR DARK_GRAY}I- I- I can't believe this!\n"
+    .string "Th- That's the Mirage Pokémon! How did\l"
+    .string "you get your hands on this?"
+    .string "...\p"
+    .string "...\p"
+    .string "...\p"
+    .string "I see...\n"
+    .string "So the professor gave it you, huh...\l"
+    .string "{FONT FONT_SMALL}all i got was a stupid magikarp...\l"
+    .string "{FONT FONT_SMALL}this is so unfair...\l"
+    .string "{FONT FONT_NORMAL}Why did YOU get the Dratini? Why did I\l"
+    .string "get stuck with the Magikarp? What makes\l"
+    .string "YOU so special?\p"
+    .string "...\p"
+    .string "...\p"
+    .string "...\p"
+    .string "{FONT FONT_SMALL}is it cause i'm weaker?\p"
+    .string "...\p"
+    .string "{FONT FONT_SMALL}No... I refuse to accept this\n"
+    .string "{FONT FONT_NORMAL}Imma prove right here right now, I'M the\l"
+    .string "one that deserves the Dratini!$"
+
 Text_TownSign:
     .string "{COLOR BLUE}PearlTown\n"
     .string "{COLOR DARK_GRAY}A haven of tranquility and beauty$"
