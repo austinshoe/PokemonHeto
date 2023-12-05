@@ -1,4 +1,3 @@
-#include/event_scripts.h
 #include "global.h"
 #include "battle_setup.h"
 #include "event_data.h"
@@ -19,6 +18,7 @@
 #include "constants/event_object_movement.h"
 #include "constants/field_effects.h"
 #include "constants/trainer_types.h"
+#include "include/event_scripts.h"
 
 // this file's functions
 static u8 CheckTrainer(u8 objectEventId);
