@@ -158,12 +158,6 @@ PearlTown_MovementStepAway:
 PearlTown_MovementRivalLeave:
     walk_left
     walk_left
-    walk_left
-    walk_left
-    walk_left
-    walk_left
-    walk_left
-    walk_left
     step_end
     
 PearlTown_MovementPreminder:
@@ -191,18 +185,18 @@ Text_Prebattle1:
     .string "...\p"
     .string "I see...\n"
     .string "So the professor gave it you, huh...\l"
-    .string "{COLOR LIGHT_GRAY}all i got was a stupid magikarp...\l"
-    .string "{COLOR LIGHT_GRAY}this is so unfair...\l"
+    .string "*all i got was a stupid magikarp...*\l"
+    .string "*this is so unfair...*\l"
     .string "{COLOR DARK_GRAY}Why did YOU get the Dratini? Why did I\l"
     .string "get stuck with the Magikarp? What makes\l"
     .string "YOU so special?\p"
     .string "...\p"
     .string "...\p"
     .string "...\p"
-    .string "{COLOR LIGHT_GRAY}is it cause i'm weaker?\p"
+    .string "*is it cause i'm weaker?*\p"
     .string "...\p"
-    .string "{COLOR LIGHT_GRAY}No... I refuse to accept this\n"
-    .string "{COLOR DARK_GRAY}Imma prove right here right now, I'M the\l"
+    .string "*No... I refuse to accept this*\n"
+    .string "Imma prove right here right now, I'M the\l"
     .string "one that deserves the Dratini!$"
 
 Text_TownSign:
