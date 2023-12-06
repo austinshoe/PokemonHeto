@@ -4,8 +4,8 @@ NewMap2_MapScripts::
 Script_GiveEgg::
     lockall
     faceplayer
-    goto_if_unset FLAG_UNUSED_0x020, Script_GiveEgg2
     goto_if_set FLAG_UNUSED_0x020, Script_GiveEgg3
+    goto_if_unset FLAG_UNUSED_0x020, Script_GiveEgg2
     releaseall
     end
 

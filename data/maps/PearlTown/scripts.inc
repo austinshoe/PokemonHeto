@@ -87,6 +87,15 @@ PearlTownRivalBattle::
     waitmessage
     closemessage
     applymovement 3, PearlTown_MovementRivalLeave
+    waitmovement 0
+    msgbox Text_Postbattle2, MSGBOX_DEFAULT
+    waitmessage
+    closemessage
+    applymovement 3, PearlTown_MovementPreminder
+    waitmovement 0
+    msgbox Text_Postbattle3, MSGBOX_DEFAULT
+    waitmessage
+    closemessage
     fadescreen FADE_TO_BLACK
     fadescreen FADE_FROM_BLACK
     releaseall
@@ -156,6 +165,10 @@ PearlTown_MovementRivalLeave:
     walk_left
     walk_left
     step_end
+    
+PearlTown_MovementPreminder:
+    walk_left
+    step_end
 
 Text_DangerousNoPokemon:
     .string "NO! DONT GO!\p"
@@ -178,18 +191,18 @@ Text_Prebattle1:
     .string "...\p"
     .string "I see...\n"
     .string "So the professor gave it you, huh...\l"
-    .string "{FONT FONT_SMALL}all i got was a stupid magikarp...\l"
-    .string "{FONT FONT_SMALL}this is so unfair...\l"
-    .string "{FONT FONT_NORMAL}Why did YOU get the Dratini? Why did I\l"
+    .string "{COLOR LIGHT_GRAY}all i got was a stupid magikarp...\l"
+    .string "{COLOR LIGHT_GRAY}this is so unfair...\l"
+    .string "{COLOR DARK_GRAY}Why did YOU get the Dratini? Why did I\l"
     .string "get stuck with the Magikarp? What makes\l"
     .string "YOU so special?\p"
     .string "...\p"
     .string "...\p"
     .string "...\p"
-    .string "{FONT FONT_SMALL}is it cause i'm weaker?\p"
+    .string "{COLOR LIGHT_GRAY}is it cause i'm weaker?\p"
     .string "...\p"
-    .string "{FONT FONT_SMALL}No... I refuse to accept this\n"
-    .string "{FONT FONT_NORMAL}Imma prove right here right now, I'M the\l"
+    .string "{COLOR LIGHT_GRAY}No... I refuse to accept this\n"
+    .string "{COLOR DARK_GRAY}Imma prove right here right now, I'M the\l"
     .string "one that deserves the Dratini!$"
 
 Text_TownSign:
@@ -234,4 +247,25 @@ Text_Postbattle1:
     .string "Am I... really inferior?\p"
     .string "...\p"
     .string "...\p"
-    .string "I- I need to go-$"
+    .string "I- I need-$"
+
+Text_Postbattle2:
+    .string "{COLOR BLUE}Liam:{COLOR DARK_GRAY}...\p"
+    .string "{PLAYER}-\n"
+    .string "I- I lost to you today... I was weaker-\p"
+    .string "But... the one that wins in the end is\n"
+    .string "the strongest-\l"
+    .string "no matter how many times he lost before!\p"
+    .string "I'm gonna take up the gym challenge and\n"
+    .string "become the Pokémon League's champion.\p"
+    .string "{PLAYER},\n"
+    .string "as my rival, I'm' expecting that you'll\l"
+    .string "do the same. You'll want to go through\l"
+    .string "{COLOR GREEN}Whispering Grove{COLOR DARK_GRAY} since the first gym is\l"
+    .string "in Everbloom, past Lumina Town.$"
+
+Text_Postbattle3:
+    .string "I'll get stronger...\p"
+    .string "{PLAYER}!\n"
+    .string "If you're too slow, I won't think twice\l"
+    .string "about leaving you behind.$"
