@@ -6587,7 +6587,7 @@ static const struct TrainerMon sParty_MayRoute119Mudkip[] = {
 static const struct TrainerMon sParty_MayRoute103Treecko[] = {
     {
     .lvl = 5,
-    .species = SPECIES_TORCHIC,
+    .species = SPECIES_MAGIKARP,
     }
 };
 
@@ -7722,11 +7722,11 @@ static const struct TrainerMon sParty_Crissy[] = {
 static const struct TrainerMon sParty_Rick[] = {
     {
     .lvl = 4,
-    .species = SPECIES_WURMPLE,
+    .species = SPECIES_WEEDLE,
     },
     {
     .lvl = 4,
-    .species = SPECIES_WURMPLE,
+    .species = SPECIES_SPINARAK,
     }
 };
 

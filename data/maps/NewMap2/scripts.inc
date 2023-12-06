@@ -1,5 +1,4 @@
 NewMap2_MapScripts::
-    map_script MAP_SCRIPT_ON_FRAME_TABLE, Script_GiveEgg
 	.byte 0
     
 Script_GiveEgg::
@@ -26,6 +25,7 @@ Script_GiveEgg2::
     giveegg SPECIES_RALTS
     playfanfare MUS_OBTAIN_ITEM
     msgbox Text_ReceivedEgg, MSGBOX_DEFAULT
+    setflag FLAG_UNUSED_0x020
     waitfanfare
     return
     
@@ -41,7 +41,7 @@ Script_PlayerAnsweredNo::
 
 Text_EggQuestion:
     .string "My Pokémon laid a new egg recently, but\n"
-    .string "I have no need for it.\n"
+    .string "I have no need for it.\l"
     .string "Will you take this Egg?$"
 
 Text_PlayerAnsweredNo:
@@ -58,4 +58,16 @@ Text_EggCondition:
     .string "How's the egg doing? Did it hatch yet?$"
 
 BugCatcherEthan::
-    
+    trainerbattle_single TRAINER_RICK, EthanIntro, EthanDefeated
+    msgbox EthanPostBattle, MSGBOX_AUTOCLOSE
+    end
+
+EthanIntro:
+    .string "Behold! My glorious and magnificent bug\n"
+    .string "Pokémon!$"
+
+EthanDefeated:
+    .string "What?! Impossible!$"
+
+EthanPostBattle:
+    .string "Bug Pokémon are the coolest!$"

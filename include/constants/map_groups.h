@@ -602,6 +602,7 @@
 #define MAP_PLAYER_ROOM                    (1 | (34 << 8))
 #define MAP_PEARL_TOWN_PROFESSOR_PINES_LAB (2 | (34 << 8))
 #define MAP_RYDER_HOUSE                    (3 | (34 << 8))
+#define MAP_NEW_MAP3                       (4 | (34 << 8))
 
 #define MAP_GROUPS_COUNT 35
 

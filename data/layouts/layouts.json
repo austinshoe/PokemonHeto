@@ -4510,6 +4510,16 @@
       "secondary_tileset": "gTileset_Lilycove",
       "border_filepath": "data/layouts/EverbloomCity/border.bin",
       "blockdata_filepath": "data/layouts/EverbloomCity/map.bin"
+    },
+    {
+      "id": "LAYOUT_NEW_MAP3",
+      "name": "NewMap3_Layout",
+      "width": 12,
+      "height": 10,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BrendansMaysHouse",
+      "border_filepath": "data/layouts/NewMap3/border.bin",
+      "blockdata_filepath": "data/layouts/NewMap3/map.bin"
     }
   ]
 }

@@ -19,7 +19,7 @@
       "x": 29,
       "y": 36,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_type": "MOVEMENT_TYPE_FACE_DOWN_AND_LEFT",
       "movement_range_x": 0,
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -32,11 +32,11 @@
       "x": 40,
       "y": 35,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_LOOK_AROUND",
+      "movement_type": "MOVEMENT_TYPE_FACE_RIGHT",
       "movement_range_x": 0,
       "movement_range_y": 0,
-      "trainer_type": "TRAINER_TYPE_NONE",
-      "trainer_sight_or_berry_tree_id": "0",
+      "trainer_type": "TRAINER_TYPE_NORMAL",
+      "trainer_sight_or_berry_tree_id": "3",
       "script": "NULL",
       "flag": "0"
     }
@@ -47,14 +47,14 @@
       "y": 51,
       "elevation": 0,
       "dest_map": "MAP_PEARL_TOWN",
-      "dest_warp_id": "0"
+      "dest_warp_id": "3"
     },
     {
       "x": 33,
       "y": 51,
       "elevation": 0,
       "dest_map": "MAP_PEARL_TOWN",
-      "dest_warp_id": "1"
+      "dest_warp_id": "4"
     },
     {
       "x": 6,

@@ -11496,67 +11496,67 @@
           "map": "MAP_NEW_MAP2",
           "base_label": "gNewMap20",
           "land_mons": {
-            "encounter_rate": 0,
+            "encounter_rate": 20,
             "mons": [
               {
-                "min_level": 5,
+                "min_level": 3,
                 "max_level": 5,
                 "species": "SPECIES_ODDISH"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_PETILIL"
+                "min_level": 3,
+                "max_level": 4,
+                "species": "SPECIES_WEEDLE"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_MORELULL"
+                "min_level": 3,
+                "max_level": 6,
+                "species": "SPECIES_SPINARAK"
               },
               {
-                "min_level": 5,
+                "min_level": 3,
                 "max_level": 5,
                 "species": "SPECIES_SHROOMISH"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
+                "min_level": 3,
+                "max_level": 6,
                 "species": "SPECIES_MISDREAVUS"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_FOONGUS"
+                "min_level": 3,
+                "max_level": 4,
+                "species": "SPECIES_COMBEE"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
+                "min_level": 3,
+                "max_level": 6,
+                "species": "SPECIES_GASTLY"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
+                "min_level": 4,
+                "max_level": 6,
+                "species": "SPECIES_DUSKULL"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
+                "min_level": 4,
+                "max_level": 6,
+                "species": "SPECIES_ROWLET"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
+                "min_level": 4,
+                "max_level": 6,
+                "species": "SPECIES_TREECKO"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
+                "min_level": 4,
+                "max_level": 6,
+                "species": "SPECIES_LITWICK"
               },
               {
-                "min_level": 5,
-                "max_level": 5,
-                "species": "SPECIES_NONE"
+                "min_level": 4,
+                "max_level": 6,
+                "species": "SPECIES_MURKROW"
               }
             ]
           }

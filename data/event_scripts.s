@@ -1079,3 +1079,5 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/Ryder_House/scripts.inc"
 
 	.include "data/maps/EverbloomCity/scripts.inc"
+
+	.include "data/maps/NewMap3/scripts.inc"

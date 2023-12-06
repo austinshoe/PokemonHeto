@@ -78,12 +78,15 @@ PearlTownRivalBattle::
     trainerbattle_no_intro TRAINER_MAY_ROUTE_103_TREECKO, Text_LiamDefeated
     setflag FLAG_DEFEATED_RIVAL_ROUTE103
     setflag FLAG_RIVAL_LEFT_FOR_ROUTE103
-    msgbox Text_Posbattle, MSGBOX_DEFAULT
+    msgbox Text_Postbattle, MSGBOX_DEFAULT
+    waitmessage
     closemessage
     applymovement 3, PearlTown_MovementStepAway
     waitmovement 0
-    msgbox Text_Posbattle1, MSGBOX_DEFAULT
+    msgbox Text_Postbattle1, MSGBOX_DEFAULT
+    waitmessage
     closemessage
+    applymovement 3, PearlTown_MovementRivalLeave
     fadescreen FADE_TO_BLACK
     fadescreen FADE_FROM_BLACK
     releaseall
@@ -125,6 +128,10 @@ PearlTown_LiamSign::
     msgbox Text_LiamSign, MSGBOX_SIGN
     end
 
+PearlTown_GroveSign::
+    msgbox Text_GroveSign, MSGBOX_SIGN
+    end
+
 SeePlayer:
     face_up
     step_end
@@ -136,6 +143,17 @@ PushBack:
 PearlTown_MovementStepAway:
     walk_left
     walk_up
+    walk_left
+    step_end
+    
+PearlTown_MovementRivalLeave:
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
     walk_left
     step_end
 
@@ -154,7 +172,7 @@ Text_PreBattle:
 Text_Prebattle1:
     .string "{COLOR BLUE}Liam: {COLOR DARK_GRAY}I- I- I can't believe this!\n"
     .string "Th- That's the Mirage Pokémon! How did\l"
-    .string "you get your hands on this?"
+    .string "you get your hands on this?\p"
     .string "...\p"
     .string "...\p"
     .string "...\p"
@@ -187,6 +205,9 @@ Text_PlayerSign:
 Text_LiamSign:
     .string "Liam's House$"
 
+Text_GroveSign:
+    .string "Whispering Grove$"
+
 Text_ForestWarn:
     .string "Don't go in the forest without Pokémon.\p"
     .string "Wild Pokémon might attack you.$"
@@ -206,10 +227,10 @@ Text_BigCatch:
 Text_LiamDefeated:
     .string "This... This can't be...$"
 
-Text_Posbattle:
+Text_Postbattle:
     .string "How...$"
 
-Text_Posbattle1:
+Text_Postbattle1:
     .string "Am I... really inferior?\p"
     .string "...\p"
     .string "...\p"

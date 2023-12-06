@@ -16,10 +16,12 @@ Script_Receive_Starter::
     lock
     faceplayer
     msgbox Text_TakeDratini, MSGBOX_DEFAULT
+    waitmessage
     closemessage
     applymovement 1, Common_Movement_ExclamationMark
     waitmovement 0
     msgbox Text_TakeDratini2, MSGBOX_DEFAULT
+    waitmessage
     closemessage
     givemon SPECIES_DRATINI, 5, ITEM_DRAGON_FANG
     message Text_ReceivedDratini
@@ -43,6 +45,7 @@ Script_Receive_Starter2::
     special SetUnlockedPokedexFlags
     setflag FLAG_RECEIVED_POKEDEX_FROM_BIRCH
     msgbox PearlTown_ProfessorPinesLab_Text_ExplainPokedex, MSGBOX_DEFAULT
+    waitmessage
     msgbox GivePokedex_Text_1, MSGBOX_DEFAULT
     waitmessage
     giveitem ITEM_POKE_BALL, 5
