@@ -62,12 +62,43 @@ BugCatcherEthan::
     msgbox EthanPostBattle, MSGBOX_AUTOCLOSE
     end
 
+HexManiacElise::
+    trainerbattle_single TRAINER_LEAH, EliseIntro, EliseDefeated
+    msgbox ElisePostBattle, MSGBOX_AUTOCLOSE
+    end
+
+ArtistAlan::
+    trainerbattle_single TRAINER_ALBERTO, AlanIntro, AlanDefeated
+    msgbox AlanPostBattle, MSGBOX_AUTOCLOSE
+    end
+
 EthanIntro:
     .string "Behold! My glorious and magnificent bug\n"
     .string "Pokémon!$"
 
+EliseIntro:
+    .string "Kekekkekke...$"
+
+AlanIntro:
+    .string "The colors of the grove inspire my\n"
+    .string "Pokémon's moves. Each battle is a\l"
+    .string "canvas, and we're ready to paint!$"
+
 EthanDefeated:
     .string "What?! Impossible!$"
 
+EliseDefeated:
+    .string "Kekeke..?$"
+
+AlanDefeated:
+    .string "Ah! My paint cracked!$"
+
 EthanPostBattle:
     .string "Bug Pokémon are the coolest!$"
+
+ElisePostBattle:
+    .string "The spirits failed to lead me to victory\n"
+    .string "this time. Am I not worthy?$"
+
+AlanPostBattle:
+    .string "My poor painting... What a shame.$"
