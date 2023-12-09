@@ -4504,10 +4504,10 @@
     {
       "id": "LAYOUT_EVERBLOOM_CITY",
       "name": "EverbloomCity_Layout",
-      "width": 40,
-      "height": 30,
+      "width": 60,
+      "height": 50,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Lilycove",
+      "secondary_tileset": "gTileset_Rustboro",
       "border_filepath": "data/layouts/EverbloomCity/border.bin",
       "blockdata_filepath": "data/layouts/EverbloomCity/map.bin"
     },
