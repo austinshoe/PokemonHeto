@@ -4505,7 +4505,7 @@
       "id": "LAYOUT_EVERBLOOM_CITY",
       "name": "EverbloomCity_Layout",
       "width": 60,
-      "height": 50,
+      "height": 60,
       "primary_tileset": "gTileset_General",
       "secondary_tileset": "gTileset_Rustboro",
       "border_filepath": "data/layouts/EverbloomCity/border.bin",

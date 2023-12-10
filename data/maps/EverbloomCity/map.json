@@ -15,7 +15,7 @@
   "connections": [
     {
       "map": "MAP_EVERBLOOM_ORCHARD",
-      "offset": 18,
+      "offset": 22,
       "direction": "right"
     }
   ],
