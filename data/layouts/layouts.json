@@ -4520,6 +4520,56 @@
       "secondary_tileset": "gTileset_BrendansMaysHouse",
       "border_filepath": "data/layouts/NewMap3/border.bin",
       "blockdata_filepath": "data/layouts/NewMap3/map.bin"
+    },
+    {
+      "id": "LAYOUT_EVERBLOOM_FARM",
+      "name": "EverbloomFarm_Layout",
+      "width": 30,
+      "height": 40,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Fortree",
+      "border_filepath": "data/layouts/EverbloomFarm/border.bin",
+      "blockdata_filepath": "data/layouts/EverbloomFarm/map.bin"
+    },
+    {
+      "id": "LAYOUT_LUMINA_HOUSE2",
+      "name": "LuminaHouse2_Layout",
+      "width": 11,
+      "height": 8,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/LuminaHouse2/border.bin",
+      "blockdata_filepath": "data/layouts/LuminaHouse2/map.bin"
+    },
+    {
+      "id": "LAYOUT_LUMINA_CENTER",
+      "name": "LuminaCenter_Layout",
+      "width": 14,
+      "height": 9,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/LuminaCenter/border.bin",
+      "blockdata_filepath": "data/layouts/LuminaCenter/map.bin"
+    },
+    {
+      "id": "LAYOUT_KASAAN",
+      "name": "Kasaan_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_Tundra1",
+      "secondary_tileset": "gTileset_tundra2",
+      "border_filepath": "data/layouts/Kasaan/border.bin",
+      "blockdata_filepath": "data/layouts/Kasaan/map.bin"
+    },
+    {
+      "id": "LAYOUT_SBEKEEZI",
+      "name": "Sbekeezi_Layout",
+      "width": 20,
+      "height": 20,
+      "primary_tileset": "gTileset_Sbekeeezi1",
+      "secondary_tileset": "gTileset_Sbekeeezi2",
+      "border_filepath": "data/layouts/Sbekeezi/border.bin",
+      "blockdata_filepath": "data/layouts/Sbekeezi/map.bin"
     }
   ]
 }

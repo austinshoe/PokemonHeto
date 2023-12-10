@@ -825,3 +825,47 @@ const struct Tileset gTileset_UnionRoom =
     .metatileAttributes = gMetatileAttributes_UnionRoom,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_Sbekeeezi1 =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_Sbekeeezi1,
+    .palettes = gTilesetPalettes_Sbekeeezi1,
+    .metatiles = gMetatiles_Sbekeeezi1,
+    .metatileAttributes = gMetatileAttributes_Sbekeeezi1,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_Sbekeeezi2 =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_Sbekeeezi2,
+    .palettes = gTilesetPalettes_Sbekeeezi2,
+    .metatiles = gMetatiles_Sbekeeezi2,
+    .metatileAttributes = gMetatileAttributes_Sbekeeezi2,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_Tundra1 =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_Tundra1,
+    .palettes = gTilesetPalettes_Tundra1,
+    .metatiles = gMetatiles_Tundra1,
+    .metatileAttributes = gMetatileAttributes_Tundra1,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_tundra2 =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_tundra2,
+    .palettes = gTilesetPalettes_tundra2,
+    .metatiles = gMetatiles_tundra2,
+    .metatileAttributes = gMetatileAttributes_tundra2,
+    .callback = NULL,
+};

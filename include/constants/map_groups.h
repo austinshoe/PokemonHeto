@@ -69,6 +69,8 @@
 #define MAP_NEW_MAP1            (60 | (0 << 8))
 #define MAP_NEW_MAP2            (61 | (0 << 8))
 #define MAP_EVERBLOOM_CITY      (62 | (0 << 8))
+#define MAP_EVERBLOOM_FARM      (63 | (0 << 8))
+#define MAP_KASAAN              (64 | (0 << 8))
 
 // gMapGroup_IndoorLittleroot
 #define MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F    (0 | (1 << 8))
@@ -604,6 +606,14 @@
 #define MAP_RYDER_HOUSE                    (3 | (34 << 8))
 #define MAP_NEW_MAP3                       (4 | (34 << 8))
 
-#define MAP_GROUPS_COUNT 35
+// gMapGroup_IndoorLumina
+#define MAP_HOUSE1        (0 | (35 << 8))
+#define MAP_LUMINA_HOUSE2 (1 | (35 << 8))
+#define MAP_LUMINA_CENTER (2 | (35 << 8))
+
+// gMapGroup_IndoorKasaan
+#define MAP_SBEKEEZI (0 | (36 << 8))
+
+#define MAP_GROUPS_COUNT 37
 
 #endif // GUARD_CONSTANTS_MAP_GROUPS_H

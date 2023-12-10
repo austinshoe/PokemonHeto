@@ -1081,3 +1081,15 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/EverbloomCity/scripts.inc"
 
 	.include "data/maps/NewMap3/scripts.inc"
+
+	.include "data/maps/EverbloomFarm/scripts.inc"
+
+	.include "data/maps/House1/scripts.inc"
+
+	.include "data/maps/LuminaHouse2/scripts.inc"
+
+	.include "data/maps/LuminaCenter/scripts.inc"
+
+	.include "data/maps/Kasaan/scripts.inc"
+
+	.include "data/maps/Sbekeezi/scripts.inc"
