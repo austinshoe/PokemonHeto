@@ -612,7 +612,8 @@
 #define MAP_LUMINA_CENTER (2 | (35 << 8))
 
 // gMapGroup_IndoorKasaan
-#define MAP_SBEKEEZI (0 | (36 << 8))
+#define MAP_SBEKEEZI          (0 | (36 << 8))
+#define MAP_KASAAN_PLAYGROUND (1 | (36 << 8))
 
 #define MAP_GROUPS_COUNT 37
 

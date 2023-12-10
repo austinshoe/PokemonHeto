@@ -1093,3 +1093,5 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/Kasaan/scripts.inc"
 
 	.include "data/maps/Sbekeezi/scripts.inc"
+
+	.include "data/maps/KasaanPlayground/scripts.inc"
