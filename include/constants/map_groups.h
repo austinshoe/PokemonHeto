@@ -71,6 +71,9 @@
 #define MAP_EVERBLOOM_CITY      (62 | (0 << 8))
 #define MAP_EVERBLOOM_FARM      (63 | (0 << 8))
 #define MAP_KASAAN              (64 | (0 << 8))
+#define MAP_FROSTVALE_TUNDRA    (65 | (0 << 8))
+#define MAP_FROSTVALE_TUNDRA2   (66 | (0 << 8))
+#define MAP_ROUTEBEFORETUNDRA   (67 | (0 << 8))
 
 // gMapGroup_IndoorLittleroot
 #define MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F    (0 | (1 << 8))
@@ -615,6 +618,10 @@
 #define MAP_SBEKEEZI          (0 | (36 << 8))
 #define MAP_KASAAN_PLAYGROUND (1 | (36 << 8))
 
-#define MAP_GROUPS_COUNT 37
+// gMapGroup_NewDungeons
+#define MAP_WINTERS_PASSAGE   (0 | (37 << 8))
+#define MAP_WINTERS_PASSAGE2F (1 | (37 << 8))
+
+#define MAP_GROUPS_COUNT 38
 
 #endif // GUARD_CONSTANTS_MAP_GROUPS_H

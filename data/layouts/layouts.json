@@ -5465,7 +5465,7 @@
       "id": "LAYOUT_KASAAN",
       "name": "Kasaan_Layout",
       "width": 40,
-      "height": 30,
+      "height": 44,
       "border_width": 2,
       "border_height": 2,
       "primary_tileset": "gTileset_Tundra1",
@@ -5496,6 +5496,66 @@
       "secondary_tileset": "gTileset_tundra2",
       "border_filepath": "data/layouts/KasaanPlayground/border.bin",
       "blockdata_filepath": "data/layouts/KasaanPlayground/map.bin"
+    },
+    {
+      "id": "LAYOUT_FROSTVALE_TUNDRA",
+      "name": "FrostvaleTundra_Layout",
+      "width": 80,
+      "height": 40,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Tundra1",
+      "secondary_tileset": "gTileset_tundra2",
+      "border_filepath": "data/layouts/FrostvaleTundra/border.bin",
+      "blockdata_filepath": "data/layouts/FrostvaleTundra/map.bin"
+    },
+    {
+      "id": "LAYOUT_FROSTVALE_TUNDRA2",
+      "name": "FrostvaleTundra2_Layout",
+      "width": 60,
+      "height": 60,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Tundra1",
+      "secondary_tileset": "gTileset_tundra2",
+      "border_filepath": "data/layouts/FrostvaleTundra2/border.bin",
+      "blockdata_filepath": "data/layouts/FrostvaleTundra2/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTEBEFORETUNDRA",
+      "name": "routebeforetundra_Layout",
+      "width": 40,
+      "height": 32,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/routebeforetundra/border.bin",
+      "blockdata_filepath": "data/layouts/routebeforetundra/map.bin"
+    },
+    {
+      "id": "LAYOUT_WINTERS_PASSAGE",
+      "name": "WintersPassage_Layout",
+      "width": 60,
+      "height": 40,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_MirageTower",
+      "border_filepath": "data/layouts/WintersPassage/border.bin",
+      "blockdata_filepath": "data/layouts/WintersPassage/map.bin"
+    },
+    {
+      "id": "LAYOUT_WINTERS_PASSAGE2F",
+      "name": "WintersPassage2F_Layout",
+      "width": 36,
+      "height": 48,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_MirageTower",
+      "border_filepath": "data/layouts/WintersPassage2F/border.bin",
+      "blockdata_filepath": "data/layouts/WintersPassage2F/map.bin"
     }
   ]
 }

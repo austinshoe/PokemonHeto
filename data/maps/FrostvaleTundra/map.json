@@ -1,12 +1,12 @@
 {
-  "id": "MAP_EVERBLOOM_CITY",
-  "name": "EverbloomCity",
-  "layout": "LAYOUT_EVERBLOOM_CITY",
+  "id": "MAP_FROSTVALE_TUNDRA",
+  "name": "FrostvaleTundra",
+  "layout": "LAYOUT_FROSTVALE_TUNDRA",
   "music": "MUS_ABANDONED_SHIP",
   "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
-  "map_type": "MAP_TYPE_CITY",
+  "map_type": "MAP_TYPE_NONE",
   "allow_cycling": true,
   "allow_escaping": false,
   "allow_running": true,
@@ -14,26 +14,27 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "map": "MAP_EVERBLOOM_ORCHARD",
-      "offset": 22,
-      "direction": "right"
+      "map": "MAP_KASAAN",
+      "offset": 0,
+      "direction": "up"
     },
     {
-      "map": "MAP_EVERBLOOM_FARM",
-      "offset": 6,
-      "direction": "down"
-    },
-    {
-      "map": "MAP_ROUTEBEFORETUNDRA",
-      "offset": 24,
-      "direction": "left"
+      "map": "MAP_FROSTVALE_TUNDRA2",
+      "offset": 34,
+      "direction": "up"
     }
   ],
   "object_events": [
 
   ],
   "warp_events": [
-
+    {
+      "x": 8,
+      "y": 2,
+      "elevation": 0,
+      "dest_map": "MAP_WINTERS_PASSAGE2F",
+      "dest_warp_id": "5"
+    }
   ],
   "coord_events": [
 

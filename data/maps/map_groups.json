@@ -36,7 +36,8 @@
     "gMapGroup_IndoorRoute124",
     "gMapGroup_IndoorPearl",
     "gMapGroup_IndoorLumina",
-    "gMapGroup_IndoorKasaan"
+    "gMapGroup_IndoorKasaan",
+    "gMapGroup_NewDungeons"
   ],
   "gMapGroup_TownsAndRoutes": [
     "PetalburgCity",
@@ -103,7 +104,10 @@
     "NewMap2",
     "EverbloomCity",
     "EverbloomFarm",
-    "Kasaan"
+    "Kasaan",
+    "FrostvaleTundra",
+    "FrostvaleTundra2",
+    "routebeforetundra"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",
@@ -647,5 +651,9 @@
   "gMapGroup_IndoorKasaan": [
     "Sbekeezi",
     "KasaanPlayground"
+  ],
+  "gMapGroup_NewDungeons": [
+    "WintersPassage",
+    "WintersPassage2F"
   ]
 }

@@ -1095,3 +1095,13 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/Sbekeezi/scripts.inc"
 
 	.include "data/maps/KasaanPlayground/scripts.inc"
+
+	.include "data/maps/FrostvaleTundra/scripts.inc"
+
+	.include "data/maps/FrostvaleTundra2/scripts.inc"
+
+	.include "data/maps/routebeforetundra/scripts.inc"
+
+	.include "data/maps/WintersPassage/scripts.inc"
+
+	.include "data/maps/WintersPassage2F/scripts.inc"
