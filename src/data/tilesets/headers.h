@@ -869,3 +869,14 @@ const struct Tileset gTileset_tundra2 =
     .metatileAttributes = gMetatileAttributes_tundra2,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_Fall =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_Fall,
+    .palettes = gTilesetPalettes_Fall,
+    .metatiles = gMetatiles_Fall,
+    .metatileAttributes = gMetatileAttributes_Fall,
+    .callback = NULL,
+};

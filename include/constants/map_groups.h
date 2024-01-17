@@ -74,6 +74,9 @@
 #define MAP_FROSTVALE_TUNDRA    (65 | (0 << 8))
 #define MAP_FROSTVALE_TUNDRA2   (66 | (0 << 8))
 #define MAP_ROUTEBEFORETUNDRA   (67 | (0 << 8))
+#define MAP_NEW_MAP4            (68 | (0 << 8))
+#define MAP_ROUTEAFTERKASAAN    (69 | (0 << 8))
+#define MAP_NEW_MAP5            (70 | (0 << 8))
 
 // gMapGroup_IndoorLittleroot
 #define MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F    (0 | (1 << 8))
@@ -619,8 +622,10 @@
 #define MAP_KASAAN_PLAYGROUND (1 | (36 << 8))
 
 // gMapGroup_NewDungeons
-#define MAP_WINTERS_PASSAGE   (0 | (37 << 8))
-#define MAP_WINTERS_PASSAGE2F (1 | (37 << 8))
+#define MAP_WINTERS_PASSAGE    (0 | (37 << 8))
+#define MAP_WINTERS_PASSAGE2F  (1 | (37 << 8))
+#define MAP_TUNNELAFTERKASSAAN (2 | (37 << 8))
+#define MAP_TUNELUNDRABAND     (3 | (37 << 8))
 
 #define MAP_GROUPS_COUNT 38
 

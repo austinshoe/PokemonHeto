@@ -28,7 +28,34 @@
 
   ],
   "warp_events": [
-
+    {
+      "x": 43,
+      "y": 50,
+      "elevation": 0,
+      "dest_map": "MAP_FROSTVALE_TUNDRA",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 44,
+      "y": 50,
+      "elevation": 0,
+      "dest_map": "MAP_FROSTVALE_TUNDRA2",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 10,
+      "y": 41,
+      "elevation": 0,
+      "dest_map": "MAP_KASAAN",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 11,
+      "y": 41,
+      "elevation": 0,
+      "dest_map": "MAP_KASAAN",
+      "dest_warp_id": "3"
+    }
   ],
   "coord_events": [
 

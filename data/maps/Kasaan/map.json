@@ -22,6 +22,11 @@
       "map": "MAP_FROSTVALE_TUNDRA2",
       "offset": -16,
       "direction": "right"
+    },
+    {
+      "map": "MAP_ROUTEAFTERKASAAN",
+      "offset": -20,
+      "direction": "left"
     }
   ],
   "object_events": [
@@ -92,6 +97,20 @@
       "elevation": 0,
       "dest_map": "MAP_KASAAN_PLAYGROUND",
       "dest_warp_id": "1"
+    },
+    {
+      "x": 36,
+      "y": 28,
+      "elevation": 0,
+      "dest_map": "MAP_FROSTVALE_TUNDRA2",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 37,
+      "y": 28,
+      "elevation": 0,
+      "dest_map": "MAP_FROSTVALE_TUNDRA2",
+      "dest_warp_id": "3"
     }
   ],
   "coord_events": [

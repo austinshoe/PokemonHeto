@@ -5429,7 +5429,7 @@
       "id": "LAYOUT_EVERBLOOM_FARM",
       "name": "EverbloomFarm_Layout",
       "width": 30,
-      "height": 40,
+      "height": 45,
       "border_width": 2,
       "border_height": 2,
       "primary_tileset": "gTileset_General",
@@ -5556,6 +5556,66 @@
       "secondary_tileset": "gTileset_MirageTower",
       "border_filepath": "data/layouts/WintersPassage2F/border.bin",
       "blockdata_filepath": "data/layouts/WintersPassage2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_NEW_MAP4",
+      "name": "NewMap4_Layout",
+      "width": 20,
+      "height": 20,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Fall",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/NewMap4/border.bin",
+      "blockdata_filepath": "data/layouts/NewMap4/map.bin"
+    },
+    {
+      "id": "LAYOUT_ROUTEAFTERKASAAN",
+      "name": "Routeafterkasaan_Layout",
+      "width": 40,
+      "height": 60,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Tundra1",
+      "secondary_tileset": "gTileset_tundra2",
+      "border_filepath": "data/layouts/Routeafterkasaan/border.bin",
+      "blockdata_filepath": "data/layouts/Routeafterkasaan/map.bin"
+    },
+    {
+      "id": "LAYOUT_TUNNELAFTERKASSAAN",
+      "name": "tunnelafterkassaan_Layout",
+      "width": 18,
+      "height": 16,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Sbekeeezi1",
+      "secondary_tileset": "gTileset_Sbekeeezi2",
+      "border_filepath": "data/layouts/tunnelafterkassaan/border.bin",
+      "blockdata_filepath": "data/layouts/tunnelafterkassaan/map.bin"
+    },
+    {
+      "id": "LAYOUT_TUNELUNDRABAND",
+      "name": "tunelundraband_Layout",
+      "width": 60,
+      "height": 8,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Sbekeeezi1",
+      "secondary_tileset": "gTileset_Sbekeeezi2",
+      "border_filepath": "data/layouts/tunelundraband/border.bin",
+      "blockdata_filepath": "data/layouts/tunelundraband/map.bin"
+    },
+    {
+      "id": "LAYOUT_NEW_MAP5",
+      "name": "NewMap5_Layout",
+      "width": 40,
+      "height": 30,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Fall",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/NewMap5/border.bin",
+      "blockdata_filepath": "data/layouts/NewMap5/map.bin"
     }
   ]
 }

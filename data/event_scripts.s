@@ -1105,3 +1105,13 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/WintersPassage/scripts.inc"
 
 	.include "data/maps/WintersPassage2F/scripts.inc"
+
+	.include "data/maps/NewMap4/scripts.inc"
+
+	.include "data/maps/Routeafterkasaan/scripts.inc"
+
+	.include "data/maps/tunnelafterkassaan/scripts.inc"
+
+	.include "data/maps/tunelundraband/scripts.inc"
+
+	.include "data/maps/NewMap5/scripts.inc"

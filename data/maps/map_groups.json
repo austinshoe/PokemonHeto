@@ -107,7 +107,10 @@
     "Kasaan",
     "FrostvaleTundra",
     "FrostvaleTundra2",
-    "routebeforetundra"
+    "routebeforetundra",
+    "NewMap4",
+    "Routeafterkasaan",
+    "NewMap5"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",
@@ -654,6 +657,8 @@
   ],
   "gMapGroup_NewDungeons": [
     "WintersPassage",
-    "WintersPassage2F"
+    "WintersPassage2F",
+    "tunnelafterkassaan",
+    "tunelundraband"
   ]
 }

@@ -34,6 +34,20 @@
       "elevation": 0,
       "dest_map": "MAP_WINTERS_PASSAGE2F",
       "dest_warp_id": "5"
+    },
+    {
+      "x": 77,
+      "y": 5,
+      "elevation": 0,
+      "dest_map": "MAP_FROSTVALE_TUNDRA2",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 78,
+      "y": 5,
+      "elevation": 0,
+      "dest_map": "MAP_FROSTVALE_TUNDRA2",
+      "dest_warp_id": "1"
     }
   ],
   "coord_events": [
