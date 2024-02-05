@@ -5560,12 +5560,12 @@
     {
       "id": "LAYOUT_NEW_MAP4",
       "name": "NewMap4_Layout",
-      "width": 20,
-      "height": 20,
-      "border_width": 2,
-      "border_height": 2,
+      "width": 40,
+      "height": 40,
+      "border_width": 4,
+      "border_height": 4,
       "primary_tileset": "gTileset_Fall",
-      "secondary_tileset": "gTileset_Petalburg",
+      "secondary_tileset": "gTileset_fall2",
       "border_filepath": "data/layouts/NewMap4/border.bin",
       "blockdata_filepath": "data/layouts/NewMap4/map.bin"
     },
@@ -5610,10 +5610,10 @@
       "name": "NewMap5_Layout",
       "width": 40,
       "height": 30,
-      "border_width": 2,
-      "border_height": 2,
+      "border_width": 4,
+      "border_height": 4,
       "primary_tileset": "gTileset_Fall",
-      "secondary_tileset": "gTileset_Petalburg",
+      "secondary_tileset": "gTileset_fall2",
       "border_filepath": "data/layouts/NewMap5/border.bin",
       "blockdata_filepath": "data/layouts/NewMap5/map.bin"
     }

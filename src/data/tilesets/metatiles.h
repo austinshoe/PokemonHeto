@@ -222,3 +222,6 @@ const u16 gMetatileAttributes_tundra2[] = INCBIN_U16("data/tilesets/secondary/tu
 
 const u16 gMetatiles_Fall[] = INCBIN_U16("data/tilesets/primary/fall/metatiles.bin");
 const u16 gMetatileAttributes_Fall[] = INCBIN_U16("data/tilesets/primary/fall/metatile_attributes.bin");
+
+const u16 gMetatiles_fall2[] = INCBIN_U16("data/tilesets/secondary/fall_2/metatiles.bin");
+const u16 gMetatileAttributes_fall2[] = INCBIN_U16("data/tilesets/secondary/fall_2/metatile_attributes.bin");
