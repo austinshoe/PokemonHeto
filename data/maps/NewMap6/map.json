@@ -1,7 +1,7 @@
 {
-  "id": "MAP_NEW_MAP5",
-  "name": "NewMap5",
-  "layout": "LAYOUT_NEW_MAP5",
+  "id": "MAP_NEW_MAP6",
+  "name": "NewMap6",
+  "layout": "LAYOUT_NEW_MAP6",
   "music": "MUS_ABANDONED_SHIP",
   "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
   "requires_flash": false,
@@ -10,13 +10,18 @@
   "allow_cycling": true,
   "allow_escaping": false,
   "allow_running": true,
-  "show_map_name": true,
+  "show_map_name": false,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
       "map": "MAP_NEW_MAP4",
-      "offset": -20,
-      "direction": "right"
+      "offset": -17,
+      "direction": "up"
+    },
+    {
+      "map": "MAP_NEW_MAP7",
+      "offset": 30,
+      "direction": "up"
     }
   ],
   "object_events": [

@@ -15,8 +15,13 @@
   "connections": [
     {
       "map": "MAP_NEW_MAP5",
-      "offset": 0,
+      "offset": 20,
       "direction": "left"
+    },
+    {
+      "map": "MAP_NEW_MAP6",
+      "offset": 17,
+      "direction": "down"
     }
   ],
   "object_events": [

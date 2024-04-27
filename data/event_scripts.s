@@ -1115,3 +1115,7 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/tunelundraband/scripts.inc"
 
 	.include "data/maps/NewMap5/scripts.inc"
+
+	.include "data/maps/NewMap6/scripts.inc"
+
+	.include "data/maps/NewMap7/scripts.inc"

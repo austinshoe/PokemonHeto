@@ -77,6 +77,8 @@
 #define MAP_NEW_MAP4            (68 | (0 << 8))
 #define MAP_ROUTEAFTERKASAAN    (69 | (0 << 8))
 #define MAP_NEW_MAP5            (70 | (0 << 8))
+#define MAP_NEW_MAP6            (71 | (0 << 8))
+#define MAP_NEW_MAP7            (72 | (0 << 8))
 
 // gMapGroup_IndoorLittleroot
 #define MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F    (0 | (1 << 8))

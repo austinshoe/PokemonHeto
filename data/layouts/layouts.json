@@ -5616,6 +5616,30 @@
       "secondary_tileset": "gTileset_fall2",
       "border_filepath": "data/layouts/NewMap5/border.bin",
       "blockdata_filepath": "data/layouts/NewMap5/map.bin"
+    },
+    {
+      "id": "LAYOUT_NEW_MAP6",
+      "name": "NewMap6_Layout",
+      "width": 40,
+      "height": 16,
+      "border_width": 4,
+      "border_height": 4,
+      "primary_tileset": "gTileset_Fall",
+      "secondary_tileset": "gTileset_fall2",
+      "border_filepath": "data/layouts/NewMap6/border.bin",
+      "blockdata_filepath": "data/layouts/NewMap6/map.bin"
+    },
+    {
+      "id": "LAYOUT_NEW_MAP7",
+      "name": "NewMap7_Layout",
+      "width": 60,
+      "height": 60,
+      "border_width": 4,
+      "border_height": 4,
+      "primary_tileset": "gTileset_Fall",
+      "secondary_tileset": "gTileset_fall2",
+      "border_filepath": "data/layouts/NewMap7/border.bin",
+      "blockdata_filepath": "data/layouts/NewMap7/map.bin"
     }
   ]
 }
