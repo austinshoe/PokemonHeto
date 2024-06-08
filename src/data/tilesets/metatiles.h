@@ -225,3 +225,9 @@ const u16 gMetatileAttributes_Fall[] = INCBIN_U16("data/tilesets/primary/fall/me
 
 const u16 gMetatiles_fall2[] = INCBIN_U16("data/tilesets/secondary/fall_2/metatiles.bin");
 const u16 gMetatileAttributes_fall2[] = INCBIN_U16("data/tilesets/secondary/fall_2/metatile_attributes.bin");
+
+const u16 gMetatiles_TallForest[] = INCBIN_U16("data/tilesets/primary/tall_forest/metatiles.bin");
+const u16 gMetatileAttributes_TallForest[] = INCBIN_U16("data/tilesets/primary/tall_forest/metatile_attributes.bin");
+
+const u16 gMetatiles_beach[] = INCBIN_U16("data/tilesets/secondary/beach/metatiles.bin");
+const u16 gMetatileAttributes_beach[] = INCBIN_U16("data/tilesets/secondary/beach/metatile_attributes.bin");

@@ -112,7 +112,9 @@
     "Routeafterkasaan",
     "NewMap5",
     "NewMap6",
-    "NewMap7"
+    "NewMap7",
+    "forestyroutetown",
+    "NewMap8"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",
@@ -661,6 +663,7 @@
     "WintersPassage",
     "WintersPassage2F",
     "tunnelafterkassaan",
-    "tunelundraband"
+    "tunelundraband",
+    "MtEmberfall"
   ]
 }

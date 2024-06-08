@@ -1119,3 +1119,9 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/NewMap6/scripts.inc"
 
 	.include "data/maps/NewMap7/scripts.inc"
+
+	.include "data/maps/forestyroutetown/scripts.inc"
+
+	.include "data/maps/NewMap8/scripts.inc"
+
+	.include "data/maps/MtEmberfall/scripts.inc"

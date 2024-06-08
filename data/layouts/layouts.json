@@ -5640,6 +5640,42 @@
       "secondary_tileset": "gTileset_fall2",
       "border_filepath": "data/layouts/NewMap7/border.bin",
       "blockdata_filepath": "data/layouts/NewMap7/map.bin"
+    },
+    {
+      "id": "LAYOUT_FORESTYROUTETOWN",
+      "name": "forestyroutetown_Layout",
+      "width": 28,
+      "height": 20,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_beach",
+      "border_filepath": "data/layouts/forestyroutetown/border.bin",
+      "blockdata_filepath": "data/layouts/forestyroutetown/map.bin"
+    },
+    {
+      "id": "LAYOUT_NEW_MAP8",
+      "name": "NewMap8_Layout",
+      "width": 60,
+      "height": 60,
+      "border_width": 4,
+      "border_height": 4,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_beach",
+      "border_filepath": "data/layouts/NewMap8/border.bin",
+      "blockdata_filepath": "data/layouts/NewMap8/map.bin"
+    },
+    {
+      "id": "LAYOUT_MT_EMBERFALL",
+      "name": "MtEmberfall_Layout",
+      "width": 20,
+      "height": 20,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/MtEmberfall/border.bin",
+      "blockdata_filepath": "data/layouts/MtEmberfall/map.bin"
     }
   ]
 }
