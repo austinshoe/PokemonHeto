@@ -5398,4 +5398,17 @@ const u8 gEnamorusPokedexText[] = _(
     "winter. According to legend, this\n"
     "Pokémon's love gives rise to the\n"
     "budding of fresh life across the land.");
+
+const u8 gCocokamePokedexText[] = _(
+    "Cocokame's shell is a tough coconut,\n"
+    "defending against predators. It enjoys\n"
+    "basking in the sun on the sandy beaches.\n"
+    "When threatened, it retracts into its shell");
+
+const u8 gFrococoPokedexText[] = _(
+    "Frococo glides gracefully through the palm\n"
+    "groves, using its leafy wings to hide among\n"
+    "the fronds. It is protective of its shell,\n"
+    "which is both its armor and camouflage.");
+
 #endif

@@ -1339,6 +1339,9 @@ const struct MonCoords gMonFrontPicCoords[NUM_SPECIES + 1] =
     [SPECIES_ENAMORUS_THERIAN]             = { .size = MON_COORDS_SIZE(64, 64), .y_offset =  0 },
     // Basculegion
     [SPECIES_BASCULEGION_FEMALE]           = { .size = MON_COORDS_SIZE(64, 64), .y_offset =  0 },
+    [SPECIES_APPLIN_HETONIAN]              = { .size = MON_COORDS_SIZE(64, 64), .y_offset = 16 },
+    [SPECIES_FROCOCO]                      = { .size = MON_COORDS_SIZE(64, 64), .y_offset =  9 },
+    [SPECIES_COCOKAME]                     = { .size = MON_COORDS_SIZE(64, 64), .y_offset =  5 },
 #endif
     // Egg
     [SPECIES_EGG]                          = { .size = MON_COORDS_SIZE(24, 24), .y_offset = 20 },

@@ -10880,5 +10880,30 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerScale = 296,
         .trainerOffset = 1,
     },
+    
+    [NATIONAL_DEX_FROCOCO] =
+    {
+        .categoryName = _("Palm Leaf"),
+        .height = 3,
+        .weight = 12,
+        .description = gFrococoPokedexText,
+        .pokemonScale = 530,
+        .pokemonOffset = 13,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
+    [NATIONAL_DEX_COCOKAME] =
+    {
+        .categoryName = _("Coco Water"),
+        .height = 4,
+        .weight = 140,
+        .description = gAppletunPokedexText,
+        .pokemonScale = 491,
+        .pokemonOffset = 12,
+        .trainerScale = 256,
+        .trainerOffset = 0,
+    },
+
 #endif
 };

@@ -1,4 +1,4 @@
-﻿#define PLACEHOLDER_TWO_FRAME_ANIMATION(name)   \
+#define PLACEHOLDER_TWO_FRAME_ANIMATION(name)   \
 static const union AnimCmd sAnim_##name##_1[] = \
 {                                               \
     ANIMCMD_FRAME(0, 30),                       \
@@ -10507,6 +10507,30 @@ static const union AnimCmd sAnim_EnamorusTherian_1[] =
     ANIMCMD_FRAME(0, 1),
     ANIMCMD_END,
 };
+
+static const union AnimCmd sAnim_ApplinHetonian_1[] =
+{
+    ANIMCMD_FRAME(0, 20),
+    ANIMCMD_FRAME(1, 30),
+    ANIMCMD_FRAME(0, 20),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_Cocokame[] =
+{
+    ANIMCMD_FRAME(0, 20),
+    ANIMCMD_FRAME(1, 30),
+    ANIMCMD_FRAME(0, 20),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_Frococo[] =
+{
+    ANIMCMD_FRAME(0, 20),
+    ANIMCMD_FRAME(1, 30),
+    ANIMCMD_FRAME(0, 20),
+    ANIMCMD_END,
+};
 #endif
 
 #define SINGLE_ANIMATION(name)                      \
@@ -11652,6 +11676,9 @@ SINGLE_ANIMATION(LycanrocDusk);
 #endif
 #if P_GEN_8_POKEMON == TRUE
 SINGLE_ANIMATION(EnamorusTherian);
+SINGLE_ANIMATION(ApplinHetonian);
+SINGLE_ANIMATION(Cocokame);
+SINGLE_ANIMATION(Frococo);
 #endif
 
 const union AnimCmd *const *const gMonFrontAnimsPtrTable[NUM_SPECIES + 1] =
@@ -12924,6 +12951,9 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[NUM_SPECIES + 1] =
     [SPECIES_CALYREX_SHADOW_RIDER] = sAnims_Calyrex,
     [SPECIES_ENAMORUS_THERIAN] = sAnims_EnamorusTherian,
     [SPECIES_BASCULEGION_FEMALE] = sAnims_Basculegion,
+    [SPECIES_APPLIN_HETONIAN] = sAnims_ApplinHetonian,
+    [SPECIES_COCOKAME] = sAnims_Cocokame,
+    [SPECIES_FROCOCO] = sAnims_Frococo,
 #endif
     [SPECIES_EGG]         = sAnims_Egg,
 };

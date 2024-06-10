@@ -914,6 +914,8 @@ const u8 gSpeciesNames[NUM_SPECIES][POKEMON_NAME_LENGTH + 1] = {
     [SPECIES_SNEASLER] = _("Sneasler"),
     [SPECIES_OVERQWIL] = _("Overqwil"),
     [SPECIES_ENAMORUS] = _("Enamorus"),
+    [SPECIES_COCOKAME] = _("Cocokame"),
+    [SPECIES_FROCOCO] = _("Frococo"),
 #endif
 
     // Megas
@@ -1337,5 +1339,6 @@ const u8 gSpeciesNames[NUM_SPECIES][POKEMON_NAME_LENGTH + 1] = {
     [SPECIES_CALYREX_ICE_RIDER] = _("Calyrex"),
     [SPECIES_CALYREX_SHADOW_RIDER] = _("Calyrex"),
     [SPECIES_BASCULEGION_FEMALE] = _("Bsculegion"),
+    [SPECIES_APPLIN_HETONIAN] = _("Applin"),
 #endif
 };

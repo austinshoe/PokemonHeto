@@ -1151,4 +1151,10 @@ static const u16 sBasculegionFormSpeciesIdTable[] = {
     FORM_SPECIES_END,
 };
 
+static const u16 sApplinFormSpeciesIdTable[] = {
+    SPECIES_APPLIN,
+    SPECIES_APPLIN_HETONIAN,
+    FORM_SPECIES_END,
+};
+
 #endif

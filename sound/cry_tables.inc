@@ -1154,6 +1154,8 @@ gCryTable::
 	cry Cry_Zeraora
 	cry Cry_Meltan
 	cry Cry_Melmetal
+    cry Cry_Cocokame
+    cry Cry_Frococo
 .else
 	cry Cry_Unown
 	cry Cry_Unown
@@ -3467,6 +3469,8 @@ gCryTable_Reverse::
 	cry_reverse Cry_Sneasler
 	cry_reverse Cry_Overqwil
 	cry_reverse Cry_Enamorus
+    cry_reverse Cry_Cocokame
+    cry_reverse Cry_Frococo
 .else
 	cry_reverse Cry_Unown
 	cry_reverse Cry_Unown

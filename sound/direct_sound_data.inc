@@ -4363,6 +4363,14 @@ Cry_CalyrexIceRider::
 	.align 2
 Cry_CalyrexShadowRider::
 	.incbin "sound/direct_sound_samples/cries/calyrex_shadow_rider.bin"
+    
+    .align 2
+Cry_Cocokame::
+    .incbin "sound/direct_sound_samples/cries/cocokame.bin"
+    
+    .align 2
+Cry_Frococo::
+    .incbin "sound/direct_sound_samples/cries/frococo.bin"
 
 .endif
 

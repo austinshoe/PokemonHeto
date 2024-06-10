@@ -1331,6 +1331,9 @@ const struct CompressedSpritePalette gMonShinyPaletteTable[NUM_SPECIES + 1] =
 
     SPECIES_SHINY_PAL(BASCULEGION_FEMALE, gMonShinyPalette_BasculegionFemale),
     SPECIES_SHINY_PAL(ENAMORUS_THERIAN, gMonShinyPalette_EnamorusTherian),
+    SPECIES_SHINY_PAL(APPLIN_HETONIAN, gMonShinyPalette_ApplinHetonian),
+    SPECIES_SHINY_PAL(COCOKAME, gMonShinyPalette_Cocokame),
+    SPECIES_SHINY_PAL(FROCOCO, gMonShinyPalette_Frococo),
 #endif
     SPECIES_SHINY_PAL(EGG, gMonPalette_Egg),
 };
