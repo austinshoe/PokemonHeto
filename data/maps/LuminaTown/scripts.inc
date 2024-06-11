@@ -4,12 +4,12 @@ LuminaTown_MapScripts::
 LuminaTown_StoreClerk::
     lock
     faceplayer
-    goto_if_set FLAG_RECEIVED_POTION_OLDALE, LuminaTown_Received, MSGBOX_DEFAULT
+    goto_if_set FLAG_RECEIVED_POTION_OLDALE, LuminaTown_Received
     msgbox Text_NeedHelp, MSGBOX_YESNO
     
     
 LuminaTown_Received::
-    msgbox Text_vist
+    msgbox Text_visit, MSGBOX_DEFAULT
     release
     end
 
