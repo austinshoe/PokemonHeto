@@ -53,3 +53,9 @@ jobs:
         run: |
           make -j${nproc} -O pokeemerald-test.elf
           make -j${nproc} check
+          
+      - name: Artifacts
+        uses: actions/upload-artifact@v3
+        with:
+          name: pokeemerald
+          path: pokeemerald.gba
