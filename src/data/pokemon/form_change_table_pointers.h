@@ -227,7 +227,5 @@ const struct FormChange *const gFormChangeTablePointers[NUM_SPECIES] =
     [SPECIES_ZAMAZENTA_CROWNED_SHIELD] = sZamazentaFormChangeTable,
     [SPECIES_ENAMORUS] = sEnamorusFormChangeTable,
     [SPECIES_ENAMORUS_THERIAN] = sEnamorusFormChangeTable,
-    [SPECIES_APPLIN] = sApplinFormChangeTable,
-    [SPECIES_APPLIN_HETONIAN] = sApplinFormChangeTable,
 #endif
 };

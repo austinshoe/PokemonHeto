@@ -593,5 +593,6 @@ const u16 *const gFormSpeciesIdTables[NUM_SPECIES] =
     [SPECIES_ENAMORUS_THERIAN] = sEnamorusFormSpeciesIdTable,
     // Basculegion
     [SPECIES_BASCULEGION_FEMALE] = sBasculegionFormSpeciesIdTable,
+    [SPECIES_APPLIN_HETONIAN] = sApplinFormSpeciesIdTable,
 #endif
 };

@@ -24763,7 +24763,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .noFlip = FALSE,
     },
     
-    [SPECIES_COCOKAME] =
+    [SPECIES_FROCOCO] =
     {
         .baseHP        = 70,
         .baseAttack    = 115,
