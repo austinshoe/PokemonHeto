@@ -913,3 +913,25 @@ const struct Tileset gTileset_beach =
     .metatileAttributes = gMetatileAttributes_beach,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_volcano1 =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_volcano1,
+    .palettes = gTilesetPalettes_volcano1,
+    .metatiles = gMetatiles_volcano1,
+    .metatileAttributes = gMetatileAttributes_volcano1,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_volcano_2 =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_volcano_2,
+    .palettes = gTilesetPalettes_volcano_2,
+    .metatiles = gMetatiles_volcano_2,
+    .metatileAttributes = gMetatileAttributes_volcano_2,
+    .callback = NULL,
+};

@@ -5669,11 +5669,11 @@
       "id": "LAYOUT_MT_EMBERFALL",
       "name": "MtEmberfall_Layout",
       "width": 20,
-      "height": 20,
+      "height": 24,
       "border_width": 2,
       "border_height": 2,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Petalburg",
+      "primary_tileset": "gTileset_volcano1",
+      "secondary_tileset": "gTileset_volcano_2",
       "border_filepath": "data/layouts/MtEmberfall/border.bin",
       "blockdata_filepath": "data/layouts/MtEmberfall/map.bin"
     }

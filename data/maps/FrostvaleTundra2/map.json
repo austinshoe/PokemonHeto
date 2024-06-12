@@ -5,7 +5,7 @@
   "music": "MUS_ABANDONED_SHIP",
   "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
   "requires_flash": false,
-  "weather": "WEATHER_NONE",
+  "weather": "WEATHER_SNOW",
   "map_type": "MAP_TYPE_ROUTE",
   "allow_cycling": true,
   "allow_escaping": false,
@@ -39,7 +39,7 @@
       "x": 44,
       "y": 50,
       "elevation": 0,
-      "dest_map": "MAP_FROSTVALE_TUNDRA2",
+      "dest_map": "MAP_FROSTVALE_TUNDRA",
       "dest_warp_id": "2"
     },
     {
