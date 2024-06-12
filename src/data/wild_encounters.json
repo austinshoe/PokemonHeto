@@ -11703,7 +11703,7 @@
           "map": "MAP_FROSTVALE_TUNDRA",
           "base_label": "gFrostvaleTundra0",
           "land_mons": {
-            "encounter_rate": 0,
+            "encounter_rate": 30,
             "mons": [
               {
                 "min_level": 5,
@@ -11772,7 +11772,7 @@
           "map": "MAP_NEW_MAP5",
           "base_label": "gNewMap50",
           "land_mons": {
-            "encounter_rate": 20,
+            "encounter_rate": 30,
             "mons": [
               {
                 "min_level": 5,
@@ -12048,7 +12048,7 @@
           "map": "MAP_FROSTVALE_TUNDRA2",
           "base_label": "gFrostvaleTundra20",
           "land_mons": {
-            "encounter_rate": 0,
+            "encounter_rate": 30,
             "mons": [
               {
                 "min_level": 5,
