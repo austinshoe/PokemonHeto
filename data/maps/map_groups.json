@@ -36,6 +36,7 @@
     "gMapGroup_IndoorRoute124",
     "gMapGroup_IndoorPearl",
     "gMapGroup_IndoorLumina",
+    "gMapGroup_IndoorEverbloom",
     "gMapGroup_IndoorKasaan",
     "gMapGroup_NewDungeons"
   ],
@@ -653,7 +654,11 @@
   "gMapGroup_IndoorLumina": [
     "House1",
     "LuminaHouse2",
-    "LuminaCenter"
+    "LuminaCenter",
+    "LuminaMart"
+  ],
+  "gMapGroup_IndoorEverbloom": [
+    "EverbloomGym"
   ],
   "gMapGroup_IndoorKasaan": [
     "Sbekeezi",

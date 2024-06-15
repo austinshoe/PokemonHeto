@@ -1125,3 +1125,7 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/NewMap8/scripts.inc"
 
 	.include "data/maps/MtEmberfall/scripts.inc"
+
+	.include "data/maps/LuminaMart/scripts.inc"
+
+	.include "data/maps/EverbloomGym/scripts.inc"

@@ -5676,6 +5676,30 @@
       "secondary_tileset": "gTileset_volcano_2",
       "border_filepath": "data/layouts/MtEmberfall/border.bin",
       "blockdata_filepath": "data/layouts/MtEmberfall/map.bin"
+    },
+    {
+      "id": "LAYOUT_LUMINA_MART",
+      "name": "LuminaMart_Layout",
+      "width": 11,
+      "height": 8,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Shop",
+      "border_filepath": "data/layouts/LuminaMart/border.bin",
+      "blockdata_filepath": "data/layouts/LuminaMart/map.bin"
+    },
+    {
+      "id": "LAYOUT_EVERBLOOM_GYM",
+      "name": "EverbloomGym_Layout",
+      "width": 31,
+      "height": 31,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_EverbloomGym",
+      "border_filepath": "data/layouts/EverbloomGym/border.bin",
+      "blockdata_filepath": "data/layouts/EverbloomGym/map.bin"
     }
   ]
 }

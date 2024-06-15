@@ -620,18 +620,22 @@
 #define MAP_HOUSE1        (0 | (35 << 8))
 #define MAP_LUMINA_HOUSE2 (1 | (35 << 8))
 #define MAP_LUMINA_CENTER (2 | (35 << 8))
+#define MAP_LUMINA_MART   (3 | (35 << 8))
+
+// gMapGroup_IndoorEverbloom
+#define MAP_EVERBLOOM_GYM (0 | (36 << 8))
 
 // gMapGroup_IndoorKasaan
-#define MAP_SBEKEEZI          (0 | (36 << 8))
-#define MAP_KASAAN_PLAYGROUND (1 | (36 << 8))
+#define MAP_SBEKEEZI          (0 | (37 << 8))
+#define MAP_KASAAN_PLAYGROUND (1 | (37 << 8))
 
 // gMapGroup_NewDungeons
-#define MAP_WINTERS_PASSAGE    (0 | (37 << 8))
-#define MAP_WINTERS_PASSAGE2F  (1 | (37 << 8))
-#define MAP_TUNNELAFTERKASSAAN (2 | (37 << 8))
-#define MAP_TUNELUNDRABAND     (3 | (37 << 8))
-#define MAP_MT_EMBERFALL       (4 | (37 << 8))
+#define MAP_WINTERS_PASSAGE    (0 | (38 << 8))
+#define MAP_WINTERS_PASSAGE2F  (1 | (38 << 8))
+#define MAP_TUNNELAFTERKASSAAN (2 | (38 << 8))
+#define MAP_TUNELUNDRABAND     (3 | (38 << 8))
+#define MAP_MT_EMBERFALL       (4 | (38 << 8))
 
-#define MAP_GROUPS_COUNT 38
+#define MAP_GROUPS_COUNT 39
 
 #endif // GUARD_CONSTANTS_MAP_GROUPS_H

@@ -237,3 +237,6 @@ const u16 gMetatileAttributes_volcano1[] = INCBIN_U16("data/tilesets/primary/vol
 
 const u16 gMetatiles_volcano_2[] = INCBIN_U16("data/tilesets/secondary/volcano_2/metatiles.bin");
 const u16 gMetatileAttributes_volcano_2[] = INCBIN_U16("data/tilesets/secondary/volcano_2/metatile_attributes.bin");
+
+const u16 gMetatiles_EverbloomGym[] = INCBIN_U16("data/tilesets/secondary/everbloom_gym/metatiles.bin");
+const u16 gMetatileAttributes_EverbloomGym[] = INCBIN_U16("data/tilesets/secondary/everbloom_gym/metatile_attributes.bin");
