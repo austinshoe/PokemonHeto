@@ -658,7 +658,13 @@
     "LuminaMart"
   ],
   "gMapGroup_IndoorEverbloom": [
-    "EverbloomGym"
+    "EverbloomGym",
+    "EverbloomMart",
+    "NewMap9",
+    "EverbloomHouse1",
+    "EverbloomHouse2",
+    "CutMasterHouse",
+    "EverbloomHouse3"
   ],
   "gMapGroup_IndoorKasaan": [
     "Sbekeezi",

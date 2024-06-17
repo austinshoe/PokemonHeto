@@ -5700,6 +5700,78 @@
       "secondary_tileset": "gTileset_EverbloomGym",
       "border_filepath": "data/layouts/EverbloomGym/border.bin",
       "blockdata_filepath": "data/layouts/EverbloomGym/map.bin"
+    },
+    {
+      "id": "LAYOUT_EVERBLOOM_MART",
+      "name": "EverbloomMart_Layout",
+      "width": 11,
+      "height": 8,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Shop",
+      "border_filepath": "data/layouts/EverbloomMart/border.bin",
+      "blockdata_filepath": "data/layouts/EverbloomMart/map.bin"
+    },
+    {
+      "id": "LAYOUT_NEW_MAP9",
+      "name": "NewMap9_Layout",
+      "width": 14,
+      "height": 9,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/NewMap9/border.bin",
+      "blockdata_filepath": "data/layouts/NewMap9/map.bin"
+    },
+    {
+      "id": "LAYOUT_EVERBLOOM_HOUSE1",
+      "name": "EverbloomHouse1_Layout",
+      "width": 11,
+      "height": 9,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/EverbloomHouse1/border.bin",
+      "blockdata_filepath": "data/layouts/EverbloomHouse1/map.bin"
+    },
+    {
+      "id": "LAYOUT_EVERBLOOM_HOUSE2",
+      "name": "EverbloomHouse2_Layout",
+      "width": 11,
+      "height": 9,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/EverbloomHouse2/border.bin",
+      "blockdata_filepath": "data/layouts/EverbloomHouse2/map.bin"
+    },
+    {
+      "id": "LAYOUT_CUT_MASTER_HOUSE",
+      "name": "CutMasterHouse_Layout",
+      "width": 9,
+      "height": 7,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/CutMasterHouse/border.bin",
+      "blockdata_filepath": "data/layouts/CutMasterHouse/map.bin"
+    },
+    {
+      "id": "LAYOUT_EVERBLOOM_HOUSE3",
+      "name": "EverbloomHouse3_Layout",
+      "width": 10,
+      "height": 8,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/EverbloomHouse3/border.bin",
+      "blockdata_filepath": "data/layouts/EverbloomHouse3/map.bin"
     }
   ]
 }

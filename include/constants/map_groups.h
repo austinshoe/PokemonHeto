@@ -623,7 +623,13 @@
 #define MAP_LUMINA_MART   (3 | (35 << 8))
 
 // gMapGroup_IndoorEverbloom
-#define MAP_EVERBLOOM_GYM (0 | (36 << 8))
+#define MAP_EVERBLOOM_GYM    (0 | (36 << 8))
+#define MAP_EVERBLOOM_MART   (1 | (36 << 8))
+#define MAP_NEW_MAP9         (2 | (36 << 8))
+#define MAP_EVERBLOOM_HOUSE1 (3 | (36 << 8))
+#define MAP_EVERBLOOM_HOUSE2 (4 | (36 << 8))
+#define MAP_CUT_MASTER_HOUSE (5 | (36 << 8))
+#define MAP_EVERBLOOM_HOUSE3 (6 | (36 << 8))
 
 // gMapGroup_IndoorKasaan
 #define MAP_SBEKEEZI          (0 | (37 << 8))

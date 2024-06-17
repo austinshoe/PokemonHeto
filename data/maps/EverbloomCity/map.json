@@ -39,6 +39,41 @@
       "elevation": 0,
       "dest_map": "MAP_EVERBLOOM_GYM",
       "dest_warp_id": "0"
+    },
+    {
+      "x": 32,
+      "y": 42,
+      "elevation": 0,
+      "dest_map": "MAP_EVERBLOOM_MART",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 17,
+      "y": 33,
+      "elevation": 0,
+      "dest_map": "MAP_NEW_MAP9",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 41,
+      "y": 22,
+      "elevation": 0,
+      "dest_map": "MAP_EVERBLOOM_HOUSE1",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 32,
+      "y": 32,
+      "elevation": 0,
+      "dest_map": "MAP_EVERBLOOM_HOUSE2",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 9,
+      "y": 22,
+      "elevation": 0,
+      "dest_map": "MAP_CUT_MASTER_HOUSE",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [
