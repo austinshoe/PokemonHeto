@@ -1141,3 +1141,11 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/CutMasterHouse/scripts.inc"
 
 	.include "data/maps/EverbloomHouse3/scripts.inc"
+
+	.include "data/maps/EverbloomHouse4/scripts.inc"
+
+	.include "data/maps/EverbloomHouse5/scripts.inc"
+
+	.include "data/maps/SbekeeziUnderground/scripts.inc"
+
+	.include "data/maps/KasaanGym/scripts.inc"

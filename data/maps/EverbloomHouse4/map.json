@@ -1,7 +1,7 @@
 {
-  "id": "MAP_EVERBLOOM_HOUSE3",
-  "name": "EverbloomHouse3",
-  "layout": "LAYOUT_EVERBLOOM_HOUSE3",
+  "id": "MAP_EVERBLOOM_HOUSE4",
+  "name": "EverbloomHouse4",
+  "layout": "LAYOUT_EVERBLOOM_HOUSE4",
   "music": "MUS_ABANDONED_SHIP",
   "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
   "requires_flash": false,
@@ -9,8 +9,8 @@
   "map_type": "MAP_TYPE_INDOOR",
   "allow_cycling": false,
   "allow_escaping": false,
-  "allow_running": true,
-  "show_map_name": false,
+  "allow_running": false,
+  "show_map_name": true,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": 0,
   "object_events": [
@@ -22,14 +22,14 @@
       "y": 7,
       "elevation": 0,
       "dest_map": "MAP_EVERBLOOM_CITY",
-      "dest_warp_id": "6"
+      "dest_warp_id": "7"
     },
     {
       "x": 5,
       "y": 7,
       "elevation": 0,
       "dest_map": "MAP_EVERBLOOM_CITY",
-      "dest_warp_id": "6"
+      "dest_warp_id": "7"
     }
   ],
   "coord_events": [

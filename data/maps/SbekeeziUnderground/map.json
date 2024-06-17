@@ -1,14 +1,14 @@
 {
-  "id": "MAP_SBEKEEZI",
-  "name": "Sbekeezi",
-  "layout": "LAYOUT_SBEKEEZI",
+  "id": "MAP_SBEKEEZI_UNDERGROUND",
+  "name": "SbekeeziUnderground",
+  "layout": "LAYOUT_SBEKEEZI_UNDERGROUND",
   "music": "MUS_ABANDONED_SHIP",
   "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_INDOOR",
-  "allow_cycling": true,
-  "allow_escaping": false,
+  "allow_cycling": false,
+  "allow_escaping": true,
   "allow_running": true,
   "show_map_name": false,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
@@ -18,39 +18,25 @@
   ],
   "warp_events": [
     {
-      "x": 9,
-      "y": 19,
-      "elevation": 0,
-      "dest_map": "MAP_KASAAN",
-      "dest_warp_id": "4"
-    },
-    {
-      "x": 10,
-      "y": 19,
-      "elevation": 0,
-      "dest_map": "MAP_KASAAN",
-      "dest_warp_id": "4"
-    },
-    {
-      "x": 17,
-      "y": 17,
+      "x": 8,
+      "y": 21,
       "elevation": 0,
       "dest_map": "MAP_SBEKEEZI_UNDERGROUND",
       "dest_warp_id": "0"
     },
     {
-      "x": 17,
-      "y": 2,
+      "x": 8,
+      "y": 6,
       "elevation": 0,
       "dest_map": "MAP_SBEKEEZI_UNDERGROUND",
-      "dest_warp_id": "1"
+      "dest_warp_id": "0"
     },
     {
-      "x": 10,
-      "y": 1,
+      "x": 1,
+      "y": 4,
       "elevation": 0,
-      "dest_map": "MAP_SBEKEEZI_UNDERGROUND",
-      "dest_warp_id": "2"
+      "dest_map": "MAP_SBEKEEZI",
+      "dest_warp_id": "4"
     }
   ],
   "coord_events": [

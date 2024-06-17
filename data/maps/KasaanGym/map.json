@@ -1,7 +1,7 @@
 {
-  "id": "MAP_EVERBLOOM_HOUSE3",
-  "name": "EverbloomHouse3",
-  "layout": "LAYOUT_EVERBLOOM_HOUSE3",
+  "id": "MAP_KASAAN_GYM",
+  "name": "KasaanGym",
+  "layout": "LAYOUT_KASAAN_GYM",
   "music": "MUS_ABANDONED_SHIP",
   "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
   "requires_flash": false,
@@ -18,18 +18,18 @@
   ],
   "warp_events": [
     {
-      "x": 4,
-      "y": 7,
+      "x": 7,
+      "y": 39,
       "elevation": 0,
-      "dest_map": "MAP_EVERBLOOM_CITY",
-      "dest_warp_id": "6"
+      "dest_map": "MAP_KASAAN",
+      "dest_warp_id": "5"
     },
     {
-      "x": 5,
-      "y": 7,
+      "x": 8,
+      "y": 39,
       "elevation": 0,
-      "dest_map": "MAP_EVERBLOOM_CITY",
-      "dest_warp_id": "6"
+      "dest_map": "MAP_KASAAN",
+      "dest_warp_id": "5"
     }
   ],
   "coord_events": [

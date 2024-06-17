@@ -48,7 +48,7 @@
       "x": 21,
       "y": 7,
       "elevation": 0,
-      "movement_type": "MOVEMENT_TYPE_NONE",
+      "movement_type": "MOVEMENT_TYPE_WANDER_AROUND",
       "movement_range_x": 1,
       "movement_range_y": 1,
       "trainer_type": "TRAINER_TYPE_NONE",
@@ -85,6 +85,20 @@
       "elevation": 0,
       "dest_map": "MAP_FROSTVALE_TUNDRA2",
       "dest_warp_id": "3"
+    },
+    {
+      "x": 17,
+      "y": 24,
+      "elevation": 0,
+      "dest_map": "MAP_SBEKEEZI",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 7,
+      "y": 16,
+      "elevation": 0,
+      "dest_map": "MAP_KASAAN_GYM",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [
@@ -97,7 +111,7 @@
       "y": 6,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
-      "script": "NULL"
+      "script": "Kasaan_Logs_Tripping"
     },
     {
       "type": "sign",
@@ -114,6 +128,62 @@
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
       "script": "Kasaan_Holey_Logs"
+    },
+    {
+      "type": "sign",
+      "x": 15,
+      "y": 25,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Kasaan_Speakeasy_Sign"
+    },
+    {
+      "type": "sign",
+      "x": 34,
+      "y": 2,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Kasaan_Playground_Sign"
+    },
+    {
+      "type": "sign",
+      "x": 6,
+      "y": 2,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Kasaan_Axes_Trees"
+    },
+    {
+      "type": "sign",
+      "x": 3,
+      "y": 3,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Kasaan_Slide_Ice_Trees_Axes"
+    },
+    {
+      "type": "sign",
+      "x": 2,
+      "y": 4,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Kasaan_Slide_Ice_Trees_Axes"
+    },
+    {
+      "type": "sign",
+      "x": 3,
+      "y": 5,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Kasaan_Slide_Ice_Trees_Axes"
+    },
+    {
+      "type": "sign",
+      "x": 5,
+      "y": 17,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "Kasaan_Gym_Sign"
     }
   ]
 }

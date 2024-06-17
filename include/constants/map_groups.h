@@ -630,10 +630,14 @@
 #define MAP_EVERBLOOM_HOUSE2 (4 | (36 << 8))
 #define MAP_CUT_MASTER_HOUSE (5 | (36 << 8))
 #define MAP_EVERBLOOM_HOUSE3 (6 | (36 << 8))
+#define MAP_EVERBLOOM_HOUSE4 (7 | (36 << 8))
+#define MAP_EVERBLOOM_HOUSE5 (8 | (36 << 8))
 
 // gMapGroup_IndoorKasaan
-#define MAP_SBEKEEZI          (0 | (37 << 8))
-#define MAP_KASAAN_PLAYGROUND (1 | (37 << 8))
+#define MAP_SBEKEEZI             (0 | (37 << 8))
+#define MAP_KASAAN_PLAYGROUND    (1 | (37 << 8))
+#define MAP_SBEKEEZI_UNDERGROUND (2 | (37 << 8))
+#define MAP_KASAAN_GYM           (3 | (37 << 8))
 
 // gMapGroup_NewDungeons
 #define MAP_WINTERS_PASSAGE    (0 | (38 << 8))

@@ -664,11 +664,15 @@
     "EverbloomHouse1",
     "EverbloomHouse2",
     "CutMasterHouse",
-    "EverbloomHouse3"
+    "EverbloomHouse3",
+    "EverbloomHouse4",
+    "EverbloomHouse5"
   ],
   "gMapGroup_IndoorKasaan": [
     "Sbekeezi",
-    "KasaanPlayground"
+    "KasaanPlayground",
+    "SbekeeziUnderground",
+    "KasaanGym"
   ],
   "gMapGroup_NewDungeons": [
     "WintersPassage",

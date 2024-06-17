@@ -5772,6 +5772,54 @@
       "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/EverbloomHouse3/border.bin",
       "blockdata_filepath": "data/layouts/EverbloomHouse3/map.bin"
+    },
+    {
+      "id": "LAYOUT_EVERBLOOM_HOUSE4",
+      "name": "EverbloomHouse4_Layout",
+      "width": 10,
+      "height": 8,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/EverbloomHouse4/border.bin",
+      "blockdata_filepath": "data/layouts/EverbloomHouse4/map.bin"
+    },
+    {
+      "id": "LAYOUT_EVERBLOOM_HOUSE5",
+      "name": "EverbloomHouse5_Layout",
+      "width": 11,
+      "height": 8,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/EverbloomHouse5/border.bin",
+      "blockdata_filepath": "data/layouts/EverbloomHouse5/map.bin"
+    },
+    {
+      "id": "LAYOUT_SBEKEEZI_UNDERGROUND",
+      "name": "SbekeeziUnderground_Layout",
+      "width": 10,
+      "height": 22,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Sbekeeezi1",
+      "secondary_tileset": "gTileset_Sbekeeezi2",
+      "border_filepath": "data/layouts/SbekeeziUnderground/border.bin",
+      "blockdata_filepath": "data/layouts/SbekeeziUnderground/map.bin"
+    },
+    {
+      "id": "LAYOUT_KASAAN_GYM",
+      "name": "KasaanGym_Layout",
+      "width": 16,
+      "height": 40,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Tundra1",
+      "secondary_tileset": "gTileset_tundra2",
+      "border_filepath": "data/layouts/KasaanGym/border.bin",
+      "blockdata_filepath": "data/layouts/KasaanGym/map.bin"
     }
   ]
 }
