@@ -76,6 +76,16 @@ Kasaan_Speakeasy_Sign::
     end
 
 
+Kasaan_Lab_Sign::
+    msgbox Kasaan_Lab_Sign_Text_0, MSGBOX_SIGN
+    end
+
+
+Kasaan_Stone_House::
+    msgbox Kasaan_Stone_House_Text_0, MSGBOX_SIGN
+    end
+
+
 Kasaan_Slide_Ice_Trees_Axes_Text_0:
     .string "Falling down always feels better when\n"
     .string "you land on the ice with a hatchet in\l"
@@ -196,3 +206,10 @@ Kasaan_Yippee_Text_0:
 
 Kasaan_Speakeasy_Sign_Text_0:
     .string "Kasaan Sbeke Eezi$"
+
+Kasaan_Lab_Sign_Text_0:
+    .string "Research Lab of Hetonian Geology\l"
+    .string "Lead Researcher: {SHADOW DARK_GRAY}Dr. Orion Stone$"
+
+Kasaan_Stone_House_Text_0:
+    .string "{SHADOW DARK_GRAY}Dr. Stone's {SHADOW LIGHT_GRAY}house$"

@@ -1,16 +1,16 @@
 {
-  "id": "MAP_MT_EMBERFALL",
-  "name": "MtEmberfall",
-  "layout": "LAYOUT_MT_EMBERFALL",
+  "id": "MAP_GEOLOGISTHOME",
+  "name": "geologisthome",
+  "layout": "LAYOUT_GEOLOGISTHOME",
   "music": "MUS_ABANDONED_SHIP",
   "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
-  "map_type": "MAP_TYPE_UNDERGROUND",
-  "allow_cycling": true,
-  "allow_escaping": true,
+  "map_type": "MAP_TYPE_INDOOR",
+  "allow_cycling": false,
+  "allow_escaping": false,
   "allow_running": true,
-  "show_map_name": true,
+  "show_map_name": false,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": 0,
   "object_events": [
@@ -18,18 +18,18 @@
   ],
   "warp_events": [
     {
-      "x": 10,
-      "y": 18,
+      "x": 4,
+      "y": 7,
       "elevation": 0,
-      "dest_map": "MAP_NEW_MAP7",
-      "dest_warp_id": "0"
+      "dest_map": "MAP_KASAAN",
+      "dest_warp_id": "7"
     },
     {
-      "x": 9,
-      "y": 0,
+      "x": 5,
+      "y": 7,
       "elevation": 0,
-      "dest_map": "MAP_FORESTYROUTETOWN",
-      "dest_warp_id": "0"
+      "dest_map": "MAP_KASAAN",
+      "dest_warp_id": "7"
     }
   ],
   "coord_events": [

@@ -1149,3 +1149,11 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/SbekeeziUnderground/scripts.inc"
 
 	.include "data/maps/KasaanGym/scripts.inc"
+
+	.include "data/maps/Geologist/scripts.inc"
+
+	.include "data/maps/geologisthome/scripts.inc"
+
+	.include "data/maps/NewMap10/scripts.inc"
+
+	.include "data/maps/kewlkidshouse1F/scripts.inc"
