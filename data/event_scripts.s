@@ -1157,3 +1157,5 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/NewMap10/scripts.inc"
 
 	.include "data/maps/kewlkidshouse1F/scripts.inc"
+
+	.include "data/maps/kewlkidshouse2F/scripts.inc"

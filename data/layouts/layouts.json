@@ -5868,6 +5868,18 @@
       "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/kewlkidshouse1F/border.bin",
       "blockdata_filepath": "data/layouts/kewlkidshouse1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_KEWLKIDSHOUSE2F",
+      "name": "kewlkidshouse2F_Layout",
+      "width": 12,
+      "height": 10,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BrendansMaysHouse",
+      "border_filepath": "data/layouts/kewlkidshouse2F/border.bin",
+      "blockdata_filepath": "data/layouts/kewlkidshouse2F/map.bin"
     }
   ]
 }

@@ -642,6 +642,7 @@
 #define MAP_GEOLOGISTHOME        (5 | (37 << 8))
 #define MAP_NEW_MAP10            (6 | (37 << 8))
 #define MAP_KEWLKIDSHOUSE1F      (7 | (37 << 8))
+#define MAP_KEWLKIDSHOUSE2F      (8 | (37 << 8))
 
 // gMapGroup_NewDungeons
 #define MAP_WINTERS_PASSAGE    (0 | (38 << 8))

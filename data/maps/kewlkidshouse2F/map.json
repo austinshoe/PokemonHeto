@@ -1,7 +1,7 @@
 {
-  "id": "MAP_KEWLKIDSHOUSE1F",
-  "name": "kewlkidshouse1F",
-  "layout": "LAYOUT_KEWLKIDSHOUSE1F",
+  "id": "MAP_KEWLKIDSHOUSE2F",
+  "name": "kewlkidshouse2F",
+  "layout": "LAYOUT_KEWLKIDSHOUSE2F",
   "music": "MUS_ABANDONED_SHIP",
   "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
   "requires_flash": false,
@@ -18,25 +18,11 @@
   ],
   "warp_events": [
     {
-      "x": 4,
-      "y": 9,
-      "elevation": 0,
-      "dest_map": "MAP_KASAAN",
-      "dest_warp_id": "9"
-    },
-    {
-      "x": 5,
-      "y": 9,
-      "elevation": 0,
-      "dest_map": "MAP_KASAAN",
-      "dest_warp_id": "9"
-    },
-    {
       "x": 9,
       "y": 1,
       "elevation": 0,
-      "dest_map": "MAP_KEWLKIDSHOUSE2F",
-      "dest_warp_id": "0"
+      "dest_map": "MAP_KEWLKIDSHOUSE1F",
+      "dest_warp_id": "2"
     }
   ],
   "coord_events": [
