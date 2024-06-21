@@ -23,7 +23,13 @@
 
   ],
   "warp_events": [
-
+    {
+      "x": 15,
+      "y": 19,
+      "elevation": 0,
+      "dest_map": "MAP_ONSEN_CITY",
+      "dest_warp_id": "0"
+    }
   ],
   "coord_events": [
 
