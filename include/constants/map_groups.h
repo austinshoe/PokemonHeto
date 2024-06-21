@@ -81,6 +81,9 @@
 #define MAP_NEW_MAP7            (72 | (0 << 8))
 #define MAP_FORESTYROUTETOWN    (73 | (0 << 8))
 #define MAP_NEW_MAP8            (74 | (0 << 8))
+#define MAP_AZURE_TIDEWAY       (75 | (0 << 8))
+#define MAP_NEW_MAP11           (76 | (0 << 8))
+#define MAP_ONSEN_CITY          (77 | (0 << 8))
 
 // gMapGroup_IndoorLittleroot
 #define MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F    (0 | (1 << 8))
@@ -644,13 +647,16 @@
 #define MAP_KEWLKIDSHOUSE1F      (7 | (37 << 8))
 #define MAP_KEWLKIDSHOUSE2F      (8 | (37 << 8))
 
-// gMapGroup_NewDungeons
-#define MAP_WINTERS_PASSAGE    (0 | (38 << 8))
-#define MAP_WINTERS_PASSAGE2F  (1 | (38 << 8))
-#define MAP_TUNNELAFTERKASSAAN (2 | (38 << 8))
-#define MAP_TUNELUNDRABAND     (3 | (38 << 8))
-#define MAP_MT_EMBERFALL       (4 | (38 << 8))
+// gMapGroup_IndoorCoralShore
+#define MAP_CORAL_SHORE_MART (0 | (38 << 8))
 
-#define MAP_GROUPS_COUNT 39
+// gMapGroup_NewDungeons
+#define MAP_WINTERS_PASSAGE    (0 | (39 << 8))
+#define MAP_WINTERS_PASSAGE2F  (1 | (39 << 8))
+#define MAP_TUNNELAFTERKASSAAN (2 | (39 << 8))
+#define MAP_TUNELUNDRABAND     (3 | (39 << 8))
+#define MAP_MT_EMBERFALL       (4 | (39 << 8))
+
+#define MAP_GROUPS_COUNT 40
 
 #endif // GUARD_CONSTANTS_MAP_GROUPS_H

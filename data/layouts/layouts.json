@@ -5333,7 +5333,7 @@
       "id": "LAYOUT_NEW_MAP1",
       "name": "NewMap1_Layout",
       "width": 10,
-      "height": 10,
+      "height": 16,
       "border_width": 2,
       "border_height": 2,
       "primary_tileset": "gTileset_General",
@@ -5668,8 +5668,8 @@
     {
       "id": "LAYOUT_MT_EMBERFALL",
       "name": "MtEmberfall_Layout",
-      "width": 20,
-      "height": 24,
+      "width": 24,
+      "height": 26,
       "border_width": 2,
       "border_height": 2,
       "primary_tileset": "gTileset_volcano1",
@@ -5880,6 +5880,54 @@
       "secondary_tileset": "gTileset_BrendansMaysHouse",
       "border_filepath": "data/layouts/kewlkidshouse2F/border.bin",
       "blockdata_filepath": "data/layouts/kewlkidshouse2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_CORAL_SHORE_MART",
+      "name": "CoralShoreMart_Layout",
+      "width": 11,
+      "height": 8,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Shop",
+      "border_filepath": "data/layouts/CoralShoreMart/border.bin",
+      "blockdata_filepath": "data/layouts/CoralShoreMart/map.bin"
+    },
+    {
+      "id": "LAYOUT_AZURE_TIDEWAY",
+      "name": "AzureTideway_Layout",
+      "width": 96,
+      "height": 24,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_beach",
+      "border_filepath": "data/layouts/AzureTideway/border.bin",
+      "blockdata_filepath": "data/layouts/AzureTideway/map.bin"
+    },
+    {
+      "id": "LAYOUT_NEW_MAP11",
+      "name": "NewMap11_Layout",
+      "width": 40,
+      "height": 30,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Dewford",
+      "border_filepath": "data/layouts/NewMap11/border.bin",
+      "blockdata_filepath": "data/layouts/NewMap11/map.bin"
+    },
+    {
+      "id": "LAYOUT_ONSEN_CITY",
+      "name": "OnsenCity_Layout",
+      "width": 60,
+      "height": 40,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_volcano1",
+      "secondary_tileset": "gTileset_volcano_2",
+      "border_filepath": "data/layouts/OnsenCity/border.bin",
+      "blockdata_filepath": "data/layouts/OnsenCity/map.bin"
     }
   ]
 }

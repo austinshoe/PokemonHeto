@@ -1159,3 +1159,11 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/kewlkidshouse1F/scripts.inc"
 
 	.include "data/maps/kewlkidshouse2F/scripts.inc"
+
+	.include "data/maps/CoralShoreMart/scripts.inc"
+
+	.include "data/maps/AzureTideway/scripts.inc"
+
+	.include "data/maps/NewMap11/scripts.inc"
+
+	.include "data/maps/OnsenCity/scripts.inc"

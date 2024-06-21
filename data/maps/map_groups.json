@@ -38,6 +38,7 @@
     "gMapGroup_IndoorLumina",
     "gMapGroup_IndoorEverbloom",
     "gMapGroup_IndoorKasaan",
+    "gMapGroup_IndoorCoralShore",
     "gMapGroup_NewDungeons"
   ],
   "gMapGroup_TownsAndRoutes": [
@@ -115,7 +116,10 @@
     "NewMap6",
     "NewMap7",
     "forestyroutetown",
-    "NewMap8"
+    "NewMap8",
+    "AzureTideway",
+    "NewMap11",
+    "OnsenCity"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",
@@ -678,6 +682,9 @@
     "NewMap10",
     "kewlkidshouse1F",
     "kewlkidshouse2F"
+  ],
+  "gMapGroup_IndoorCoralShore": [
+    "CoralShoreMart"
   ],
   "gMapGroup_NewDungeons": [
     "WintersPassage",
