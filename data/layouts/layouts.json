@@ -5928,6 +5928,18 @@
       "secondary_tileset": "gTileset_volcano_2",
       "border_filepath": "data/layouts/OnsenCity/border.bin",
       "blockdata_filepath": "data/layouts/OnsenCity/map.bin"
+    },
+    {
+      "id": "LAYOUT_MT_EMBERFALL_EXT",
+      "name": "MtEmberfallExt_Layout",
+      "width": 36,
+      "height": 80,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_volcano1",
+      "secondary_tileset": "gTileset_volcano_2",
+      "border_filepath": "data/layouts/MtEmberfallExt/border.bin",
+      "blockdata_filepath": "data/layouts/MtEmberfallExt/map.bin"
     }
   ]
 }

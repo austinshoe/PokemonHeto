@@ -1,12 +1,12 @@
 {
-  "id": "MAP_ONSEN_CITY",
-  "name": "OnsenCity",
-  "layout": "LAYOUT_ONSEN_CITY",
+  "id": "MAP_MT_EMBERFALL_EXT",
+  "name": "MtEmberfallExt",
+  "layout": "LAYOUT_MT_EMBERFALL_EXT",
   "music": "MUS_ABANDONED_SHIP",
-  "region_map_section": "MAPSEC_LILYCOVE_CITY",
+  "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
-  "map_type": "MAP_TYPE_CITY",
+  "map_type": "MAP_TYPE_ROUTE",
   "allow_cycling": true,
   "allow_escaping": false,
   "allow_running": true,
@@ -14,22 +14,16 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "map": "MAP_MT_EMBERFALL_EXT",
-      "offset": 4,
-      "direction": "left"
+      "map": "MAP_ONSEN_CITY",
+      "offset": -4,
+      "direction": "right"
     }
   ],
   "object_events": [
 
   ],
   "warp_events": [
-    {
-      "x": 12,
-      "y": 7,
-      "elevation": 0,
-      "dest_map": "MAP_NEW_MAP11",
-      "dest_warp_id": "0"
-    }
+
   ],
   "coord_events": [
 
