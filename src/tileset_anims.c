@@ -73,6 +73,8 @@ static void QueueAnimTiles_MauvilleGym_ElectricGates(u16);
 static void QueueAnimTiles_SootopolisGym_Waterfalls(u16);
 static void QueueAnimTiles_EliteFour_GroundLights(u16);
 static void QueueAnimTiles_EliteFour_WallLights(u16);
+static void QueueAnimTiles_Fall_Blueflower(u16);
+static void QueueAnimTiles_Fall_Purpleflower(u16);
 
 const u16 gTilesetAnims_General_Flower_Frame1[] = INCBIN_U16("data/tilesets/primary/general/anim/flower/1.4bpp");
 const u16 gTilesetAnims_General_Flower_Frame0[] = INCBIN_U16("data/tilesets/primary/general/anim/flower/0.4bpp");
@@ -84,6 +86,26 @@ const u16 *const gTilesetAnims_General_Flower[] = {
     gTilesetAnims_General_Flower_Frame1,
     gTilesetAnims_General_Flower_Frame0,
     gTilesetAnims_General_Flower_Frame2
+};
+
+const u16 gTilesetAnims_Fall_Blueflower_Frame0[] = INCBIN_U16("data/tilesets/primary/fall/anim/blueflower/0.4bpp");
+const u16 gTilesetAnims_Fall_Blueflower_Frame1[] = INCBIN_U16("data/tilesets/primary/fall/anim/blueflower/1.4bpp");
+const u16 gTilesetAnims_Fall_Blueflower_Frame2[] = INCBIN_U16("data/tilesets/primary/fall/anim/blueflower/2.4bpp");
+
+const u16 *const gTilesetAnims_Fall_Blueflower[] = {
+    gTilesetAnims_Fall_Blueflower_Frame0,
+    gTilesetAnims_Fall_Blueflower_Frame1,
+    gTilesetAnims_Fall_Blueflower_Frame2
+};
+
+const u16 gTilesetAnims_Fall_Purpleflower_Frame0[] = INCBIN_U16("data/tilesets/primary/fall/anim/purpleflower/0.4bpp");
+const u16 gTilesetAnims_Fall_Purpleflower_Frame1[] = INCBIN_U16("data/tilesets/primary/fall/anim/purpleflower/1.4bpp");
+const u16 gTilesetAnims_Fall_Purpleflower_Frame2[] = INCBIN_U16("data/tilesets/primary/fall/anim/purpleflower/2.4bpp");
+
+const u16 *const gTilesetAnims_Fall_Purpleflower[] = {
+    gTilesetAnims_Fall_Purpleflower_Frame0,
+    gTilesetAnims_Fall_Purpleflower_Frame1,
+    gTilesetAnims_Fall_Purpleflower_Frame2
 };
 
 const u16 gTilesetAnims_General_Water_Frame0[] = INCBIN_U16("data/tilesets/primary/general/anim/water/0.4bpp");
@@ -673,6 +695,18 @@ static void QueueAnimTiles_General_Waterfall(u16 timer)
     AppendTilesetAnimToBuffer(gTilesetAnims_General_Waterfall[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(496)), 6 * TILE_SIZE_4BPP);
 }
 
+static void QueueAnimTiles_Fall_Blueflower(u16 timer)
+{
+    u16 i = timer % ARRAY_COUNT(gTilesetAnims_Fall_Blueflower);
+    AppendTilesetAnimToBuffer(gTilesetAnims_Fall_Blueflower[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(40)), 3 * TILE_SIZE_4BPP);
+}
+
+static void QueueAnimTiles_Fall_Purpleflower(u16 timer)
+{
+    u16 i = timer % ARRAY_COUNT(gTilesetAnims_Fall_Purpleflower);
+    AppendTilesetAnimToBuffer(gTilesetAnims_Fall_Purpleflower[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(56)), 3 * TILE_SIZE_4BPP);
+}
+
 void InitTilesetAnim_Petalburg(void)
 {
     sSecondaryTilesetAnimCounter = 0;
@@ -832,6 +866,14 @@ void InitTilesetAnim_BattleDome(void)
     sSecondaryTilesetAnimCounter = 0;
     sSecondaryTilesetAnimCounterMax = sPrimaryTilesetAnimCounterMax;
     sSecondaryTilesetAnimCallback = TilesetAnim_BattleDome;
+}
+
+static void TilesetAnim_Fall(u16 timer)
+{
+    if (timer % 16 == 0)
+        QueueAnimTiles_Fall_Blueflower(timer / 16);
+    if (timer % 16 == 1)
+        QueueAnimTiles_Fall_Plueflower(timer / 16);
 }
 
 static void TilesetAnim_Rustboro(u16 timer)
