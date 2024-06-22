@@ -873,7 +873,7 @@ static void TilesetAnim_Fall(u16 timer)
     if (timer % 16 == 0)
         QueueAnimTiles_Fall_Blueflower(timer / 16);
     if (timer % 16 == 1)
-        QueueAnimTiles_Fall_Plueflower(timer / 16);
+        QueueAnimTiles_Fall_Purpleflower(timer / 16);
 }
 
 static void TilesetAnim_Rustboro(u16 timer)
