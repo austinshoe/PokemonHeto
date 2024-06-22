@@ -112,43 +112,27 @@ const u16 *const gTilesetAnims_Fall_Purpleflower[] = {
 };
 
 const u16 gTilesetAnims_volcano1_Lava_Frame0[] = INCBIN_U16("data/tilesets/primary/volcano_1/anim/lava/lava0.4bpp");
-const u16 gTilesetAnims_volcano1_Lava_Frame1[] = INCBIN_U16("data/tilesets/primary/volcano_1/anim/lava/lava1.4bpp");
 const u16 gTilesetAnims_volcano1_Lava_Frame2[] = INCBIN_U16("data/tilesets/primary/volcano_1/anim/lava/lava2.4bpp");
-const u16 gTilesetAnims_volcano1_Lava_Frame3[] = INCBIN_U16("data/tilesets/primary/volcano_1/anim/lava/lava3.4bpp");
 const u16 gTilesetAnims_volcano1_Lava_Frame4[] = INCBIN_U16("data/tilesets/primary/volcano_1/anim/lava/lava4.4bpp");
-const u16 gTilesetAnims_volcano1_Lava_Frame5[] = INCBIN_U16("data/tilesets/primary/volcano_1/anim/lava/lava5.4bpp");
 const u16 gTilesetAnims_volcano1_Lava_Frame6[] = INCBIN_U16("data/tilesets/primary/volcano_1/anim/lava/lava6.4bpp");
-const u16 gTilesetAnims_volcano1_Lava_Frame7[] = INCBIN_U16("data/tilesets/primary/volcano_1/anim/lava/lava7.4bpp");
 const u16 gTilesetAnims_volcano1_Lava_Frame8[] = INCBIN_U16("data/tilesets/primary/volcano_1/anim/lava/lava8.4bpp");
-const u16 gTilesetAnims_volcano1_Lava_Frame9[] = INCBIN_U16("data/tilesets/primary/volcano_1/anim/lava/lava9.4bpp");
 const u16 gTilesetAnims_volcano1_Lava_Frame10[] = INCBIN_U16("data/tilesets/primary/volcano_1/anim/lava/lava10.4bpp");
-const u16 gTilesetAnims_volcano1_Lava_Frame11[] = INCBIN_U16("data/tilesets/primary/volcano_1/anim/lava/lava11.4bpp");
 const u16 gTilesetAnims_volcano1_Lava_Frame12[] = INCBIN_U16("data/tilesets/primary/volcano_1/anim/lava/lava12.4bpp");
-const u16 gTilesetAnims_volcano1_Lava_Frame13[] = INCBIN_U16("data/tilesets/primary/volcano_1/anim/lava/lava13.4bpp");
 const u16 gTilesetAnims_volcano1_Lava_Frame14[] = INCBIN_U16("data/tilesets/primary/volcano_1/anim/lava/lava14.4bpp");
-const u16 gTilesetAnims_volcano1_Lava_Frame15[] = INCBIN_U16("data/tilesets/primary/volcano_1/anim/lava/lava15.4bpp");
 
 const u16 *const gTilesetAnims_volcano1_Lava[] = {
     gTilesetAnims_volcano1_Lava_Frame0,
-    gTilesetAnims_volcano1_Lava_Frame1,
     gTilesetAnims_volcano1_Lava_Frame2,
-    gTilesetAnims_volcano1_Lava_Frame3,
     gTilesetAnims_volcano1_Lava_Frame4,
-    gTilesetAnims_volcano1_Lava_Frame5,
     gTilesetAnims_volcano1_Lava_Frame6,
-    gTilesetAnims_volcano1_Lava_Frame7,
+    gTilesetAnims_volcano1_Lava_Frame4,
     gTilesetAnims_volcano1_Lava_Frame6,
-    gTilesetAnims_volcano1_Lava_Frame7,
     gTilesetAnims_volcano1_Lava_Frame8,
-    gTilesetAnims_volcano1_Lava_Frame9,
     gTilesetAnims_volcano1_Lava_Frame10,
-    gTilesetAnims_volcano1_Lava_Frame11,
     gTilesetAnims_volcano1_Lava_Frame12,
-    gTilesetAnims_volcano1_Lava_Frame13,
     gTilesetAnims_volcano1_Lava_Frame14,
-    gTilesetAnims_volcano1_Lava_Frame15,
+    gTilesetAnims_volcano1_Lava_Frame12,
     gTilesetAnims_volcano1_Lava_Frame14,
-    gTilesetAnims_volcano1_Lava_Frame15
 };
 
 const u16 gTilesetAnims_General_Water_Frame0[] = INCBIN_U16("data/tilesets/primary/general/anim/water/0.4bpp");
@@ -766,7 +750,7 @@ static void QueueAnimTiles_Fall_Purpleflower(u16 timer)
 
 static void QueueAnimTiles_volcano1_Lava(u16 timer)
 {
-    u16 i = timer % 20;
+    u16 i = timer % ARRAY_COUNT(gTilesetAnims_volcano1_Lava);
     AppendTilesetAnimToBuffer(gTilesetAnims_volcano1_Lava[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(332)), 0x80);
 }
 
