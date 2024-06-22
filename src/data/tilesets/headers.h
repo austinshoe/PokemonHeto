@@ -878,7 +878,7 @@ const struct Tileset gTileset_Fall =
     .palettes = gTilesetPalettes_Fall,
     .metatiles = gMetatiles_Fall,
     .metatileAttributes = gMetatileAttributes_Fall,
-    .callback = NULL,
+    .callback = InitTilesetAnim_Fall,
 };
 
 const struct Tileset gTileset_fall2 =
