@@ -24,8 +24,8 @@ static void (*sSecondaryTilesetAnimCallback)(u16);
 static void _InitPrimaryTilesetAnimation(void);
 static void _InitSecondaryTilesetAnimation(void);
 static void TilesetAnim_General(u16);
-static void TilesetAnim_volcano1(ul6);
 static void TilesetAnim_Fall(u16);
+static void TilesetAnim_volcano1(ul6);
 static void TilesetAnim_Building(u16);
 static void TilesetAnim_Rustboro(u16);
 static void TilesetAnim_Dewford(u16);
@@ -148,7 +148,7 @@ const u16 *const gTilesetAnims_volcano1_Lava[] = {
     gTilesetAnims_volcano1_Lava_Frame14,
     gTilesetAnims_volcano1_Lava_Frame15,
     gTilesetAnims_volcano1_Lava_Frame14,
-    gTilesetAnims_volcano1_Lava_Frame15,
+    gTilesetAnims_volcano1_Lava_Frame15
 };
 
 const u16 gTilesetAnims_General_Water_Frame0[] = INCBIN_U16("data/tilesets/primary/general/anim/water/0.4bpp");
@@ -722,12 +722,6 @@ static void TilesetAnim_General(u16 timer)
         QueueAnimTiles_General_LandWaterEdge(timer / 16);
 }
 
-static void TilesetAnim_volcano1(u16 timer)
-{
-    if (timer % 16 == 0)
-        QueueAnimTiles_volcano1_Lava(timer / 16);
-}
-
 static void TilesetAnim_Building(u16 timer)
 {
     if (timer % 8 == 0)
@@ -943,6 +937,12 @@ static void TilesetAnim_Fall(u16 timer)
         QueueAnimTiles_Fall_Blueflower(timer / 16);
     if (timer % 16 == 1)
         QueueAnimTiles_Fall_Purpleflower(timer / 16);
+}
+
+static void TilesetAnim_volcano1(u16 timer)
+{
+    if (timer % 16 == 0)
+        QueueAnimTiles_volcano1_Lava(timer / 16);
 }
 
 static void TilesetAnim_Rustboro(u16 timer)
