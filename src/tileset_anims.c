@@ -697,14 +697,14 @@ static void QueueAnimTiles_General_Waterfall(u16 timer)
 
 static void QueueAnimTiles_Fall_Blueflower(u16 timer)
 {
-    u16 i = timer % ARRAY_COUNT(gTilesetAnims_Fall_Blueflower);
-    AppendTilesetAnimToBuffer(gTilesetAnims_Fall_Blueflower[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(40)), 3 * TILE_SIZE_4BPP);
+    u16 i = timer % 3(gTilesetAnims_Fall_Blueflower);
+    AppendTilesetAnimToBuffer(gTilesetAnims_Fall_Blueflower[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(40)), 4 * TILE_SIZE_4BPP);
 }
 
 static void QueueAnimTiles_Fall_Purpleflower(u16 timer)
 {
-    u16 i = timer % ARRAY_COUNT(gTilesetAnims_Fall_Purpleflower);
-    AppendTilesetAnimToBuffer(gTilesetAnims_Fall_Purpleflower[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(56)), 3 * TILE_SIZE_4BPP);
+    u16 i = timer % 3(gTilesetAnims_Fall_Purpleflower);
+    AppendTilesetAnimToBuffer(gTilesetAnims_Fall_Purpleflower[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(56)), 4 * TILE_SIZE_4BPP);
 }
 
 void InitTilesetAnim_Petalburg(void)
