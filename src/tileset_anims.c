@@ -697,13 +697,13 @@ static void QueueAnimTiles_General_Waterfall(u16 timer)
 
 static void QueueAnimTiles_Fall_Blueflower(u16 timer)
 {
-    u16 i = timer % 3(gTilesetAnims_Fall_Blueflower);
+    u16 i = timer % 3;
     AppendTilesetAnimToBuffer(gTilesetAnims_Fall_Blueflower[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(40)), 4 * TILE_SIZE_4BPP);
 }
 
 static void QueueAnimTiles_Fall_Purpleflower(u16 timer)
 {
-    u16 i = timer % 3(gTilesetAnims_Fall_Purpleflower);
+    u16 i = timer % 3;
     AppendTilesetAnimToBuffer(gTilesetAnims_Fall_Purpleflower[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(56)), 4 * TILE_SIZE_4BPP);
 }
 
