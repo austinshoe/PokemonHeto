@@ -24,6 +24,7 @@ static void (*sSecondaryTilesetAnimCallback)(u16);
 static void _InitPrimaryTilesetAnimation(void);
 static void _InitSecondaryTilesetAnimation(void);
 static void TilesetAnim_General(u16);
+static void TilesetAnim_Fall(u16);
 static void TilesetAnim_Building(u16);
 static void TilesetAnim_Rustboro(u16);
 static void TilesetAnim_Dewford(u16);
@@ -698,13 +699,13 @@ static void QueueAnimTiles_General_Waterfall(u16 timer)
 static void QueueAnimTiles_Fall_Blueflower(u16 timer)
 {
     u16 i = timer % 3;
-    AppendTilesetAnimToBuffer(gTilesetAnims_Fall_Blueflower[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(40)), 4 * TILE_SIZE_4BPP);
+    AppendTilesetAnimToBuffer(gTilesetAnims_Fall_Blueflower[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(40)), 0x80);
 }
 
 static void QueueAnimTiles_Fall_Purpleflower(u16 timer)
 {
     u16 i = timer % 3;
-    AppendTilesetAnimToBuffer(gTilesetAnims_Fall_Purpleflower[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(56)), 4 * TILE_SIZE_4BPP);
+    AppendTilesetAnimToBuffer(gTilesetAnims_Fall_Purpleflower[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(56)), 0x80);
 }
 
 void InitTilesetAnim_Petalburg(void)
