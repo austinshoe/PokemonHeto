@@ -787,7 +787,4 @@
 #define METATILE_Underwater_FloorShadow  0x228
 #define METATILE_Underwater_RockWall     0x21E
 
-// gTileset_volcano1
-#define METATILE_volcano1_AshGrass  0x023
-
 #endif // GUARD_METATILE_LABELS_H
