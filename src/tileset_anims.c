@@ -751,7 +751,7 @@ static void QueueAnimTiles_Fall_Purpleflower(u16 timer)
 static void QueueAnimTiles_volcano1_Lava(u16 timer)
 {
     u16 i = timer % 12;
-    AppendTilesetAnimToBuffer(gTilesetAnims_volcano1_Lava[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(332)), 0x80);
+    AppendTilesetAnimToBuffer(gTilesetAnims_volcano1_Lava[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(332)), 4 * TILE_SIZE_4BPP);
 }
 
 void InitTilesetAnim_Petalburg(void)
