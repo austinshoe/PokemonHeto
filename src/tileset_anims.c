@@ -132,7 +132,7 @@ const u16 *const gTilesetAnims_volcano1_Lava[] = {
     gTilesetAnims_volcano1_Lava_Frame12,
     gTilesetAnims_volcano1_Lava_Frame14,
     gTilesetAnims_volcano1_Lava_Frame12,
-    gTilesetAnims_volcano1_Lava_Frame14,
+    gTilesetAnims_volcano1_Lava_Frame14
 };
 
 const u16 gTilesetAnims_General_Water_Frame0[] = INCBIN_U16("data/tilesets/primary/general/anim/water/0.4bpp");
