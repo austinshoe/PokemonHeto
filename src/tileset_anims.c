@@ -25,7 +25,6 @@ static void _InitPrimaryTilesetAnimation(void);
 static void _InitSecondaryTilesetAnimation(void);
 static void TilesetAnim_General(u16);
 static void TilesetAnim_Fall(u16);
-static void TilesetAnim_volcano1(ul6);
 static void TilesetAnim_Building(u16);
 static void TilesetAnim_Rustboro(u16);
 static void TilesetAnim_Dewford(u16);
@@ -694,13 +693,6 @@ void InitTilesetAnim_Fall(void)
     sPrimaryTilesetAnimCallback = TilesetAnim_Fall;
 }
 
-void InitTilesetAnim_volcano1(void)
-{
-    sPrimaryTilesetAnimCounter = 0;
-    sPrimaryTilesetAnimCounterMax = 256;
-    sPrimaryTilesetAnimCallback = TilesetAnim_volcano1;
-}
-
 void InitTilesetAnim_Building(void)
 {
     sPrimaryTilesetAnimCounter = 0;
@@ -938,13 +930,6 @@ static void TilesetAnim_Fall(u16 timer)
     if (timer % 16 == 1)
         QueueAnimTiles_Fall_Purpleflower(timer / 16);
 }
-
-static void TilesetAnim_volcano1(u16 timer)
-{
-    if (timer % 16 == 0)
-        QueueAnimTiles_volcano1_Lava(timer / 16);
-}
-
 
 static void TilesetAnim_Rustboro(u16 timer)
 {
