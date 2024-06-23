@@ -916,6 +916,12 @@ static void TilesetAnim_Fall(u16 timer)
         QueueAnimTiles_Fall_Purpleflower(timer / 16);
 }
 
+static void TilesetAnim_Volcano(u16 timer)
+{
+    if (timer % 16 == 0)
+        QueueAnimTiles_volcano1_Lava(timer / 16);
+}
+
 static void TilesetAnim_Rustboro(u16 timer)
 {
     if (timer % 8 == 0)
