@@ -111,14 +111,14 @@ const u16 *const gTilesetAnims_Fall_Purpleflower[] = {
     gTilesetAnims_Fall_Purpleflower_Frame2
 };
 
-const u16 gTilesetAnims_volcano1_Lava_Frame0[] = INCBIN_U16("data/tilesets/primary/volcano_1/anim/lava/lava0.4bpp");
-const u16 gTilesetAnims_volcano1_Lava_Frame2[] = INCBIN_U16("data/tilesets/primary/volcano_1/anim/lava/lava2.4bpp");
-const u16 gTilesetAnims_volcano1_Lava_Frame4[] = INCBIN_U16("data/tilesets/primary/volcano_1/anim/lava/lava4.4bpp");
-const u16 gTilesetAnims_volcano1_Lava_Frame6[] = INCBIN_U16("data/tilesets/primary/volcano_1/anim/lava/lava6.4bpp");
-const u16 gTilesetAnims_volcano1_Lava_Frame8[] = INCBIN_U16("data/tilesets/primary/volcano_1/anim/lava/lava8.4bpp");
-const u16 gTilesetAnims_volcano1_Lava_Frame10[] = INCBIN_U16("data/tilesets/primary/volcano_1/anim/lava/lava10.4bpp");
-const u16 gTilesetAnims_volcano1_Lava_Frame12[] = INCBIN_U16("data/tilesets/primary/volcano_1/anim/lava/lava12.4bpp");
-const u16 gTilesetAnims_volcano1_Lava_Frame14[] = INCBIN_U16("data/tilesets/primary/volcano_1/anim/lava/lava14.4bpp");
+const u16 gTilesetAnims_volcano1_Lava_Frame0[] = INCBIN_U16("data/tilesets/primary/volcano_1/anim/lava/0.4bpp");
+const u16 gTilesetAnims_volcano1_Lava_Frame2[] = INCBIN_U16("data/tilesets/primary/volcano_1/anim/lava/2.4bpp");
+const u16 gTilesetAnims_volcano1_Lava_Frame4[] = INCBIN_U16("data/tilesets/primary/volcano_1/anim/lava/4.4bpp");
+const u16 gTilesetAnims_volcano1_Lava_Frame6[] = INCBIN_U16("data/tilesets/primary/volcano_1/anim/lava/6.4bpp");
+const u16 gTilesetAnims_volcano1_Lava_Frame8[] = INCBIN_U16("data/tilesets/primary/volcano_1/anim/lava/8.4bpp");
+const u16 gTilesetAnims_volcano1_Lava_Frame10[] = INCBIN_U16("data/tilesets/primary/volcano_1/anim/lava/10.4bpp");
+const u16 gTilesetAnims_volcano1_Lava_Frame12[] = INCBIN_U16("data/tilesets/primary/volcano_1/anim/lava/12.4bpp");
+const u16 gTilesetAnims_volcano1_Lava_Frame14[] = INCBIN_U16("data/tilesets/primary/volcano_1/anim/lava/14.4bpp");
 
 const u16 *const gTilesetAnims_volcano1_Lava[] = {
     gTilesetAnims_volcano1_Lava_Frame0,
@@ -925,7 +925,7 @@ static void TilesetAnim_Fall(u16 timer)
 
 static void TilesetAnim_volcano1(u16 timer)
 {
-    if (timer % 16 == 0)
+    if (timer % 16 == 1)
         QueueAnimTiles_volcano1_Lava(timer >> 4);
 }
 
