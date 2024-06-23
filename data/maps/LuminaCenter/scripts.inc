@@ -4,7 +4,7 @@ LuminaCenter_MapScripts::
 	.byte 0
 
 LuminaTown_Center_OnTransition:
-    setrespawn HEAL_LOCATION_HEAL_LOCATION_LUMINA_TOWN
+    setrespawn HEAL_LOCATION_LUMINA_TOWN
     end
     
 LuminaTown_Center_Nurse::
@@ -16,7 +16,6 @@ LuminaTown_Center_Nurse::
     end
 
 LuminaTown_Center_Girl::
-    lock
     msgbox LuminaTown_Center_Text_NurseJoy, MSGBOX_NPC
     end
 

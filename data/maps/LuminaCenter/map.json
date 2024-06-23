@@ -37,7 +37,7 @@
       "movement_range_y": 2,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "LuminaCenter_Girl",
+      "script": "LuminaTown_Center_Girl",
       "flag": "0"
     }
   ],
