@@ -24,6 +24,7 @@ static void (*sSecondaryTilesetAnimCallback)(u16);
 static void _InitPrimaryTilesetAnimation(void);
 static void _InitSecondaryTilesetAnimation(void);
 static void TilesetAnim_General(u16);
+static void TilesetAnim_Volcano(u16);
 static void TilesetAnim_Fall(u16);
 static void TilesetAnim_Building(u16);
 static void TilesetAnim_Rustboro(u16);
