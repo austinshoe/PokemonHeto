@@ -926,7 +926,7 @@ static void TilesetAnim_Fall(u16 timer)
 static void TilesetAnim_volcano1(u16 timer)
 {
     if (timer % 16 == 0)
-        QueueAnimTiles_volcano1_Lava(timer / 16);
+        QueueAnimTiles_volcano1_Lava(timer >> 4);
 }
 
 static void TilesetAnim_Rustboro(u16 timer)
