@@ -922,7 +922,7 @@ const struct Tileset gTileset_volcano1 =
     .palettes = gTilesetPalettes_volcano1,
     .metatiles = gMetatiles_volcano1,
     .metatileAttributes = gMetatileAttributes_volcano1,
-    .callback = InitTilesetAnim_volcano1,
+    .callback = NULL,
 };
 
 const struct Tileset gTileset_volcano_2 =
