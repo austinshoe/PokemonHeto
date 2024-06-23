@@ -678,13 +678,6 @@ void InitTilesetAnim_Fall(void)
     sPrimaryTilesetAnimCallback = TilesetAnim_Fall;
 }
 
-void InitTilesetAnim_volcano1(void)
-{
-    sPrimaryTilesetAnimCounter = 0;
-    sPrimaryTilesetAnimCounterMax = 256;
-    sPrimaryTilesetAnimCallback = TilesetAnim_volcano1;
-}
-
 void InitTilesetAnim_Building(void)
 {
     sPrimaryTilesetAnimCounter = 0;
