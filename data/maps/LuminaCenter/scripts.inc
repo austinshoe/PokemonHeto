@@ -24,6 +24,6 @@ LuminaTown_Center_Text_NurseJoy:
     .string "You see that kind lady over there?\p"
     .string "She's called Nurse Joy, and she'll heal\n"
     .string "Your Pokémon for free!\p"
-    .string "The computer in the corner is a PC.\n"\
+    .string "The computer in the corner is a PC.\n"
     .string "Anyone is free to use it!$"
     
