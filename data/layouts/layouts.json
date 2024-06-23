@@ -5940,6 +5940,18 @@
       "secondary_tileset": "gTileset_volcano_2",
       "border_filepath": "data/layouts/MtEmberfallExt/border.bin",
       "blockdata_filepath": "data/layouts/MtEmberfallExt/map.bin"
+    },
+    {
+      "id": "LAYOUT_MT_EMBERFALL2",
+      "name": "MtEmberfall2_Layout",
+      "width": 30,
+      "height": 30,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_volcano1",
+      "secondary_tileset": "gTileset_volcano_2",
+      "border_filepath": "data/layouts/MtEmberfall2/border.bin",
+      "blockdata_filepath": "data/layouts/MtEmberfall2/map.bin"
     }
   ]
 }

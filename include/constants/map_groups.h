@@ -657,6 +657,7 @@
 #define MAP_TUNNELAFTERKASSAAN (2 | (39 << 8))
 #define MAP_TUNELUNDRABAND     (3 | (39 << 8))
 #define MAP_MT_EMBERFALL       (4 | (39 << 8))
+#define MAP_MT_EMBERFALL2      (5 | (39 << 8))
 
 #define MAP_GROUPS_COUNT 40
 

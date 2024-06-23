@@ -23,7 +23,20 @@
 
   ],
   "warp_events": [
-
+    {
+      "x": 10,
+      "y": 7,
+      "elevation": 0,
+      "dest_map": "MAP_MT_EMBERFALL2",
+      "dest_warp_id": "1"
+    },
+    {
+      "x": 24,
+      "y": 6,
+      "elevation": 0,
+      "dest_map": "MAP_MT_EMBERFALL2",
+      "dest_warp_id": "2"
+    }
   ],
   "coord_events": [
 

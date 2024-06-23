@@ -1169,3 +1169,5 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/OnsenCity/scripts.inc"
 
 	.include "data/maps/MtEmberfallExt/scripts.inc"
+
+	.include "data/maps/MtEmberfall2/scripts.inc"
