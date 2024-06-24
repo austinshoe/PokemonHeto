@@ -38,6 +38,7 @@
     "gMapGroup_IndoorLumina",
     "gMapGroup_IndoorEverbloom",
     "gMapGroup_IndoorKasaan",
+    "gMapGroup_IndoorFallGrove",
     "gMapGroup_IndoorCoralShore",
     "gMapGroup_NewDungeons"
   ],
@@ -683,6 +684,10 @@
     "NewMap10",
     "kewlkidshouse1F",
     "kewlkidshouse2F"
+  ],
+  "gMapGroup_IndoorFallGrove": [
+    "ResearchersHouse",
+    "FallGroveHouse1"
   ],
   "gMapGroup_IndoorCoralShore": [
     "CoralShoreMart"

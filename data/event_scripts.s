@@ -1171,3 +1171,7 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/MtEmberfallExt/scripts.inc"
 
 	.include "data/maps/MtEmberfall2/scripts.inc"
+
+	.include "data/maps/ResearchersHouse/scripts.inc"
+
+	.include "data/maps/FallGroveHouse1/scripts.inc"

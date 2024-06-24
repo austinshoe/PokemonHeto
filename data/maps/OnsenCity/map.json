@@ -29,6 +29,13 @@
       "elevation": 0,
       "dest_map": "MAP_MT_EMBERFALL2",
       "dest_warp_id": "3"
+    },
+    {
+      "x": 51,
+      "y": 7,
+      "elevation": 0,
+      "dest_map": "MAP_MT_EMBERFALL",
+      "dest_warp_id": "2"
     }
   ],
   "coord_events": [

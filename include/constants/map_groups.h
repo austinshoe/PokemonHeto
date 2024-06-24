@@ -648,17 +648,21 @@
 #define MAP_KEWLKIDSHOUSE1F      (7 | (37 << 8))
 #define MAP_KEWLKIDSHOUSE2F      (8 | (37 << 8))
 
+// gMapGroup_IndoorFallGrove
+#define MAP_RESEARCHERS_HOUSE (0 | (38 << 8))
+#define MAP_FALL_GROVE_HOUSE1 (1 | (38 << 8))
+
 // gMapGroup_IndoorCoralShore
-#define MAP_CORAL_SHORE_MART (0 | (38 << 8))
+#define MAP_CORAL_SHORE_MART (0 | (39 << 8))
 
 // gMapGroup_NewDungeons
-#define MAP_WINTERS_PASSAGE    (0 | (39 << 8))
-#define MAP_WINTERS_PASSAGE2F  (1 | (39 << 8))
-#define MAP_TUNNELAFTERKASSAAN (2 | (39 << 8))
-#define MAP_TUNELUNDRABAND     (3 | (39 << 8))
-#define MAP_MT_EMBERFALL       (4 | (39 << 8))
-#define MAP_MT_EMBERFALL2      (5 | (39 << 8))
+#define MAP_WINTERS_PASSAGE    (0 | (40 << 8))
+#define MAP_WINTERS_PASSAGE2F  (1 | (40 << 8))
+#define MAP_TUNNELAFTERKASSAAN (2 | (40 << 8))
+#define MAP_TUNELUNDRABAND     (3 | (40 << 8))
+#define MAP_MT_EMBERFALL       (4 | (40 << 8))
+#define MAP_MT_EMBERFALL2      (5 | (40 << 8))
 
-#define MAP_GROUPS_COUNT 40
+#define MAP_GROUPS_COUNT 41
 
 #endif // GUARD_CONSTANTS_MAP_GROUPS_H

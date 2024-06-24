@@ -6,10 +6,20 @@ LuminaTown_StoreClerk::
     faceplayer
     goto_if_set FLAG_RECEIVED_POTION_OLDALE, LuminaTown_Received
     msgbox Text_NeedHelp, MSGBOX_YESNO
+    compare VAR_RESULT, NO
+    goto_if_eq LuminaTown_Know
+    msgbox Text_NeedHelp, MSGBOX_DEFAULT
+    release
+    end
     
     
 LuminaTown_Received::
     msgbox Text_visit, MSGBOX_DEFAULT
+    release
+    end
+
+LuminaTown_Know::
+    msgbox Text_FeelFree, MSGBOX_DEFAULT
     release
     end
 
@@ -18,7 +28,14 @@ Text_visit:
     .string "for anything you might need.$"
     
 Text_NeedHelp:
-    .string "Hey! You there!\n"
+    .string "Hey! You there!\l"
     .string "You're a new face here. Are you new to\n"
     .string "Pokémon? If you want I can help you a \n"
     .string "little.$"
+
+Text_FeelFree:
+    .string "Feel free to ask me for help!$"
+    
+Text_NeedHelp:
+    .string "I see!\l"
+    .string "Let me show you around the town.$"

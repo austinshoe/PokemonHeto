@@ -5668,8 +5668,8 @@
     {
       "id": "LAYOUT_MT_EMBERFALL",
       "name": "MtEmberfall_Layout",
-      "width": 24,
-      "height": 26,
+      "width": 50,
+      "height": 50,
       "border_width": 2,
       "border_height": 2,
       "primary_tileset": "gTileset_volcano1",
@@ -5952,6 +5952,30 @@
       "secondary_tileset": "gTileset_volcano_2",
       "border_filepath": "data/layouts/MtEmberfall2/border.bin",
       "blockdata_filepath": "data/layouts/MtEmberfall2/map.bin"
+    },
+    {
+      "id": "LAYOUT_RESEARCHERS_HOUSE",
+      "name": "ResearchersHouse_Layout",
+      "width": 11,
+      "height": 8,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/ResearchersHouse/border.bin",
+      "blockdata_filepath": "data/layouts/ResearchersHouse/map.bin"
+    },
+    {
+      "id": "LAYOUT_FALL_GROVE_HOUSE1",
+      "name": "FallGroveHouse1_Layout",
+      "width": 11,
+      "height": 9,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_BrendansMaysHouse",
+      "border_filepath": "data/layouts/FallGroveHouse1/border.bin",
+      "blockdata_filepath": "data/layouts/FallGroveHouse1/map.bin"
     }
   ]
 }
