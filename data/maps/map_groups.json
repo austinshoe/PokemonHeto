@@ -121,7 +121,8 @@
     "AzureTideway",
     "NewMap11",
     "OnsenCity",
-    "MtEmberfallExt"
+    "MtEmberfallExt",
+    "AzureTideway2"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",
@@ -698,6 +699,7 @@
     "tunnelafterkassaan",
     "tunelundraband",
     "MtEmberfall",
-    "MtEmberfall2"
+    "MtEmberfall2",
+    "MtEmberfall3"
   ]
 }

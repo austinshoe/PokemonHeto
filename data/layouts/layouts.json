@@ -5945,7 +5945,7 @@
       "id": "LAYOUT_MT_EMBERFALL2",
       "name": "MtEmberfall2_Layout",
       "width": 30,
-      "height": 30,
+      "height": 36,
       "border_width": 2,
       "border_height": 2,
       "primary_tileset": "gTileset_volcano1",
@@ -5976,6 +5976,30 @@
       "secondary_tileset": "gTileset_BrendansMaysHouse",
       "border_filepath": "data/layouts/FallGroveHouse1/border.bin",
       "blockdata_filepath": "data/layouts/FallGroveHouse1/map.bin"
+    },
+    {
+      "id": "LAYOUT_AZURE_TIDEWAY2",
+      "name": "AzureTideway2_Layout",
+      "width": 96,
+      "height": 24,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Dewford",
+      "border_filepath": "data/layouts/AzureTideway2/border.bin",
+      "blockdata_filepath": "data/layouts/AzureTideway2/map.bin"
+    },
+    {
+      "id": "LAYOUT_MT_EMBERFALL3",
+      "name": "MtEmberfall3_Layout",
+      "width": 16,
+      "height": 16,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_volcano1",
+      "secondary_tileset": "gTileset_volcano_2",
+      "border_filepath": "data/layouts/MtEmberfall3/border.bin",
+      "blockdata_filepath": "data/layouts/MtEmberfall3/map.bin"
     }
   ]
 }

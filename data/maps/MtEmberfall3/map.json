@@ -1,7 +1,7 @@
 {
-  "id": "MAP_MT_EMBERFALL2",
-  "name": "MtEmberfall2",
-  "layout": "LAYOUT_MT_EMBERFALL2",
+  "id": "MAP_MT_EMBERFALL3",
+  "name": "MtEmberfall3",
+  "layout": "LAYOUT_MT_EMBERFALL3",
   "music": "MUS_ABANDONED_SHIP",
   "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
   "requires_flash": false,
@@ -10,7 +10,7 @@
   "allow_cycling": true,
   "allow_escaping": true,
   "allow_running": true,
-  "show_map_name": true,
+  "show_map_name": false,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": 0,
   "object_events": [
@@ -18,31 +18,17 @@
   ],
   "warp_events": [
     {
-      "x": 4,
-      "y": 8,
-      "elevation": 0,
-      "dest_map": "MAP_NEW_MAP11",
-      "dest_warp_id": "0"
-    },
-    {
-      "x": 8,
-      "y": 30,
-      "elevation": 0,
-      "dest_map": "MAP_MT_EMBERFALL_EXT",
-      "dest_warp_id": "0"
-    },
-    {
-      "x": 15,
+      "x": 7,
       "y": 9,
       "elevation": 0,
-      "dest_map": "MAP_MT_EMBERFALL_EXT",
-      "dest_warp_id": "1"
+      "dest_map": "MAP_MT_EMBERFALL",
+      "dest_warp_id": "3"
     },
     {
-      "x": 25,
-      "y": 14,
+      "x": 5,
+      "y": 7,
       "elevation": 0,
-      "dest_map": "MAP_ONSEN_CITY",
+      "dest_map": "MAP_AZURE_TIDEWAY2",
       "dest_warp_id": "0"
     }
   ],

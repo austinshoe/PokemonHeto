@@ -85,6 +85,7 @@
 #define MAP_NEW_MAP11           (76 | (0 << 8))
 #define MAP_ONSEN_CITY          (77 | (0 << 8))
 #define MAP_MT_EMBERFALL_EXT    (78 | (0 << 8))
+#define MAP_AZURE_TIDEWAY2      (79 | (0 << 8))
 
 // gMapGroup_IndoorLittleroot
 #define MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F    (0 | (1 << 8))
@@ -662,6 +663,7 @@
 #define MAP_TUNELUNDRABAND     (3 | (40 << 8))
 #define MAP_MT_EMBERFALL       (4 | (40 << 8))
 #define MAP_MT_EMBERFALL2      (5 | (40 << 8))
+#define MAP_MT_EMBERFALL3      (6 | (40 << 8))
 
 #define MAP_GROUPS_COUNT 41
 
