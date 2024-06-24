@@ -8,7 +8,7 @@ LuminaTown_StoreClerk::
     msgbox Text_NeedHelp, MSGBOX_YESNO
     compare VAR_RESULT, NO
     goto_if_eq LuminaTown_Know
-    msgbox Text_NeedHelp, MSGBOX_DEFAULT
+    msgbox Text_ShowAround, MSGBOX_DEFAULT
     release
     end
     
@@ -36,6 +36,6 @@ Text_NeedHelp:
 Text_FeelFree:
     .string "Feel free to ask me for help!$"
     
-Text_NeedHelp:
+Text_ShowAround:
     .string "I see!\l"
     .string "Let me show you around the town.$"
