@@ -22,6 +22,11 @@
       "map": "MAP_NEW_MAP11",
       "offset": -15,
       "direction": "down"
+    },
+    {
+      "map": "MAP_AZURE_TIDEWAY2",
+      "offset": 9,
+      "direction": "up"
     }
   ],
   "object_events": [

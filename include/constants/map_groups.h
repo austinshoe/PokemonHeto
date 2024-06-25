@@ -86,6 +86,8 @@
 #define MAP_ONSEN_CITY          (77 | (0 << 8))
 #define MAP_MT_EMBERFALL_EXT    (78 | (0 << 8))
 #define MAP_AZURE_TIDEWAY2      (79 | (0 << 8))
+#define MAP_NEPTUNES_DRIFT      (80 | (0 << 8))
+#define MAP_VOLT_VELDT          (81 | (0 << 8))
 
 // gMapGroup_IndoorLittleroot
 #define MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F    (0 | (1 << 8))

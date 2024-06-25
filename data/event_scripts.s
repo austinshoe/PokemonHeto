@@ -1179,3 +1179,7 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/AzureTideway2/scripts.inc"
 
 	.include "data/maps/MtEmberfall3/scripts.inc"
+
+	.include "data/maps/NeptunesDrift/scripts.inc"
+
+	.include "data/maps/VoltVeldt/scripts.inc"

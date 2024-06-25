@@ -1,7 +1,7 @@
 {
-  "id": "MAP_AZURE_TIDEWAY2",
-  "name": "AzureTideway2",
-  "layout": "LAYOUT_AZURE_TIDEWAY2",
+  "id": "MAP_NEPTUNES_DRIFT",
+  "name": "NeptunesDrift",
+  "layout": "LAYOUT_NEPTUNES_DRIFT",
   "music": "MUS_ABANDONED_SHIP",
   "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
   "requires_flash": false,
@@ -14,13 +14,13 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "map": "MAP_AZURE_TIDEWAY",
-      "offset": -9,
-      "direction": "down"
+      "map": "MAP_AZURE_TIDEWAY2",
+      "offset": 12,
+      "direction": "left"
     },
     {
-      "map": "MAP_NEPTUNES_DRIFT",
-      "offset": -12,
+      "map": "MAP_VOLT_VELDT",
+      "offset": 8,
       "direction": "right"
     }
   ],
@@ -28,13 +28,7 @@
 
   ],
   "warp_events": [
-    {
-      "x": 11,
-      "y": 13,
-      "elevation": 0,
-      "dest_map": "MAP_MT_EMBERFALL3",
-      "dest_warp_id": "1"
-    }
+
   ],
   "coord_events": [
 

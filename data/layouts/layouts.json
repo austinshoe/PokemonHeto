@@ -6000,6 +6000,30 @@
       "secondary_tileset": "gTileset_volcano_2",
       "border_filepath": "data/layouts/MtEmberfall3/border.bin",
       "blockdata_filepath": "data/layouts/MtEmberfall3/map.bin"
+    },
+    {
+      "id": "LAYOUT_NEPTUNES_DRIFT",
+      "name": "NeptunesDrift_Layout",
+      "width": 100,
+      "height": 40,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Dewford",
+      "border_filepath": "data/layouts/NeptunesDrift/border.bin",
+      "blockdata_filepath": "data/layouts/NeptunesDrift/map.bin"
+    },
+    {
+      "id": "LAYOUT_VOLT_VELDT",
+      "name": "VoltVeldt_Layout",
+      "width": 40,
+      "height": 40,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/VoltVeldt/border.bin",
+      "blockdata_filepath": "data/layouts/VoltVeldt/map.bin"
     }
   ]
 }
