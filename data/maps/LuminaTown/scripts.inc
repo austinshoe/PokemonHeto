@@ -12,6 +12,17 @@ LuminaTown_StoreClerk::
     release
     end
     
+LuminaTown_LilBoy::
+    lock
+    faceplayer
+    msgbox Text_LuminaTownLilBoy, MSGBOX_DEFAULT
+    release
+    end
+
+Text_LuminaTownLilBoy:
+    .string "Sometimes the breeze carries over the\n"
+    .string "the scent of flowers to Lumina Town.\l"
+    .string "It smells so nice and refreshing!$"
     
 LuminaTown_Received::
     msgbox Text_visit, MSGBOX_DEFAULT

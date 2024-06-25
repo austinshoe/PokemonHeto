@@ -1183,3 +1183,5 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/NeptunesDrift/scripts.inc"
 
 	.include "data/maps/VoltVeldt/scripts.inc"
+
+	.include "data/maps/HallowSparkCity/scripts.inc"

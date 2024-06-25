@@ -1,12 +1,12 @@
 {
-  "id": "MAP_NEPTUNES_DRIFT",
-  "name": "NeptunesDrift",
-  "layout": "LAYOUT_NEPTUNES_DRIFT",
+  "id": "MAP_HALLOW_SPARK_CITY",
+  "name": "HallowSparkCity",
+  "layout": "LAYOUT_HALLOW_SPARK_CITY",
   "music": "MUS_ABANDONED_SHIP",
   "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
   "requires_flash": false,
-  "weather": "WEATHER_RAIN",
-  "map_type": "MAP_TYPE_OCEAN_ROUTE",
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_CITY",
   "allow_cycling": true,
   "allow_escaping": false,
   "allow_running": true,
@@ -14,14 +14,9 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "map": "MAP_AZURE_TIDEWAY2",
-      "offset": 12,
-      "direction": "left"
-    },
-    {
       "map": "MAP_VOLT_VELDT",
-      "offset": 8,
-      "direction": "right"
+      "offset": 2,
+      "direction": "left"
     }
   ],
   "object_events": [

@@ -6016,7 +6016,7 @@
     {
       "id": "LAYOUT_VOLT_VELDT",
       "name": "VoltVeldt_Layout",
-      "width": 40,
+      "width": 50,
       "height": 40,
       "border_width": 2,
       "border_height": 2,
@@ -6024,6 +6024,18 @@
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/VoltVeldt/border.bin",
       "blockdata_filepath": "data/layouts/VoltVeldt/map.bin"
+    },
+    {
+      "id": "LAYOUT_HALLOW_SPARK_CITY",
+      "name": "HallowSparkCity_Layout",
+      "width": 40,
+      "height": 30,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Mauville",
+      "border_filepath": "data/layouts/HallowSparkCity/border.bin",
+      "blockdata_filepath": "data/layouts/HallowSparkCity/map.bin"
     }
   ]
 }

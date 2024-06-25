@@ -11703,7 +11703,7 @@
           "map": "MAP_FROSTVALE_TUNDRA",
           "base_label": "gFrostvaleTundra0",
           "land_mons": {
-            "encounter_rate": 30,
+            "encounter_rate": 20,
             "mons": [
               {
                 "min_level": 5,
@@ -11772,7 +11772,7 @@
           "map": "MAP_NEW_MAP5",
           "base_label": "gNewMap50",
           "land_mons": {
-            "encounter_rate": 30,
+            "encounter_rate": 20,
             "mons": [
               {
                 "min_level": 5,
@@ -11841,7 +11841,7 @@
           "map": "MAP_MT_EMBERFALL",
           "base_label": "gMtEmberfall0",
           "land_mons": {
-            "encounter_rate": 30,
+            "encounter_rate": 20,
             "mons": [
               {
                 "min_level": 5,
@@ -11979,7 +11979,7 @@
           "map": "MAP_NEW_MAP8",
           "base_label": "gNewMap80",
           "land_mons": {
-            "encounter_rate": 30,
+            "encounter_rate": 25,
             "mons": [
               {
                 "min_level": 5,
@@ -12133,7 +12133,7 @@
           "map": "MAP_FROSTVALE_TUNDRA2",
           "base_label": "gFrostvaleTundra20",
           "land_mons": {
-            "encounter_rate": 30,
+            "encounter_rate": 20,
             "mons": [
               {
                 "min_level": 5,
@@ -12202,7 +12202,7 @@
           "map": "MAP_NEW_MAP7",
           "base_label": "gNewMap70",
           "land_mons": {
-            "encounter_rate": 30,
+            "encounter_rate": 20,
             "mons": [
               {
                 "min_level": 5,
@@ -12271,7 +12271,7 @@
           "map": "MAP_ROUTEAFTERKASAAN",
           "base_label": "gRouteafterkasaan0",
           "land_mons": {
-            "encounter_rate": 30,
+            "encounter_rate": 25,
             "mons": [
               {
                 "min_level": 5,
@@ -12340,7 +12340,7 @@
           "map": "MAP_AZURE_TIDEWAY",
           "base_label": "gAzureTideway0",
           "water_mons": {
-            "encounter_rate": 20,
+            "encounter_rate": 15,
             "mons": [
               {
                 "min_level": 5,
@@ -12429,7 +12429,7 @@
           "map": "MAP_AZURE_TIDEWAY2",
           "base_label": "gAzureTideway20",
           "water_mons": {
-            "encounter_rate": 20,
+            "encounter_rate": 15,
             "mons": [
               {
                 "min_level": 5,
@@ -12587,7 +12587,7 @@
           "map": "MAP_MT_EMBERFALL2",
           "base_label": "gMtEmberfall20",
           "land_mons": {
-            "encounter_rate": 30,
+            "encounter_rate": 20,
             "mons": [
               {
                 "min_level": 5,
@@ -12656,7 +12656,7 @@
           "map": "MAP_MT_EMBERFALL3",
           "base_label": "gMtEmberfall30",
           "land_mons": {
-            "encounter_rate": 30,
+            "encounter_rate": 20,
             "mons": [
               {
                 "min_level": 5,
@@ -12725,7 +12725,7 @@
           "map": "MAP_VOLT_VELDT",
           "base_label": "gVoltVeldt0",
           "land_mons": {
-            "encounter_rate": 20,
+            "encounter_rate": 25,
             "mons": [
               {
                 "min_level": 5,
@@ -12786,6 +12786,95 @@
                 "min_level": 5,
                 "max_level": 5,
                 "species": "SPECIES_ELECTIVIRE"
+              }
+            ]
+          }
+        },
+        {
+          "map": "MAP_NEPTUNES_DRIFT",
+          "base_label": "gNeptunesDrift0",
+          "water_mons": {
+            "encounter_rate": 20,
+            "mons": [
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_FRILLISH"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_PELIPPER"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_JELLICENT"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_EELEKTROSS"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_KINGDRA"
+              }
+            ]
+          },
+          "fishing_mons": {
+            "encounter_rate": 50,
+            "mons": [
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_HORSEA"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_MAGIKARP"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_SEADRA"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_DRATINI"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_GYARADOS"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_JELLICENT"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_GYARADOS"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_CORSOLA"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_DRAGONAIR"
+              },
+              {
+                "min_level": 5,
+                "max_level": 5,
+                "species": "SPECIES_KINGDRA"
               }
             ]
           }
