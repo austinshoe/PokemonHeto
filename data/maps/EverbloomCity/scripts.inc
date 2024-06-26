@@ -4,7 +4,7 @@ EverbloomCity_MapScripts::
 Script_EverbloomCityFan::
     lock
     faceplayer
-    msgbox Text_EverbloomOrchardFan, MSGBOX_DEFAULT
+    msgbox Text_EverbloomFan, MSGBOX_DEFAULT
     release
     end
 
