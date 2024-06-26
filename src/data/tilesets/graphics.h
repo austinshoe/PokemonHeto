@@ -1843,3 +1843,22 @@ const u16 gTilesetPalettes_EverbloomGym[][16] =
 };
 
 const u32 gTilesetTiles_EverbloomGym[] = INCBIN_U32("data/tilesets/secondary/everbloom_gym/tiles.4bpp.lz");
+
+const u16 gTilesetPalettes_Hallowspark[][16] =
+{
+    INCBIN_U16("data/tilesets/primary/hallowspark/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/primary/hallowspark/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/primary/hallowspark/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/primary/hallowspark/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/primary/hallowspark/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/primary/hallowspark/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/primary/hallowspark/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/primary/hallowspark/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/primary/hallowspark/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/primary/hallowspark/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/primary/hallowspark/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/primary/hallowspark/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/primary/hallowspark/palettes/12.gbapal"),
+};
+
+const u32 gTilesetTiles_Hallowspark[] = INCBIN_U32("data/tilesets/primary/hallowspark/tiles.4bpp.lz");

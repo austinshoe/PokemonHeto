@@ -6032,7 +6032,7 @@
       "height": 30,
       "border_width": 2,
       "border_height": 2,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_Hallowspark",
       "secondary_tileset": "gTileset_Mauville",
       "border_filepath": "data/layouts/HallowSparkCity/border.bin",
       "blockdata_filepath": "data/layouts/HallowSparkCity/map.bin"
