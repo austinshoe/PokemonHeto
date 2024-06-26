@@ -4,12 +4,12 @@ EverbloomCity_MapScripts::
 Script_EverbloomCityFan::
     lock
     faceplayer
-    msgbox Text_EverbloomFan, MSGBOX_DEFAULT
+    msgbox Text_EverbloomCityFan, MSGBOX_DEFAULT
     release
     end
 
 Text_EverbloomCityFan:
     .string "Flora, the gym leader of this city, is\n"
-    .string "so cool!"
+    .string "so cool!\l"
     .string "Did you know, she was the one who\l"
     .string "discovered the uses of the {COLOR RED}{SHADOW LIGHT_RED}Big Root!$"
