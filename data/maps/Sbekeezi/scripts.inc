@@ -8,7 +8,7 @@ Script_KassanSpeakeasy1::
     waitmessage
     closemessage
     delay 16
-    applymovement 2, face_left
+    applymovement 2, Common_Movement_FaceLeft
     waitmovement 2
     applymovement 2, Common_Movement_ExclamationMark
     waitbuttonpress
@@ -16,7 +16,7 @@ Script_KassanSpeakeasy1::
     waitmessage
     closemessage
     delay 16
-    applymovement 1, face_right
+    applymovement 1, Common_Movement_FaceRight
     waitmovement 1
     applymovement 1, Common_Movement_ExclamationMark
     waitbuttonpress
@@ -24,10 +24,10 @@ Script_KassanSpeakeasy1::
     waitmessage
     closemessage
     delay 16
-    applymovement 1, face_up
+    applymovement 1, Common_Movement_FaceUp
     waitmovement 1
     delay 16
-    applymovement 2, face_right
+    applymovement 2, Common_Movement_FaceRight
     release
     end
 
