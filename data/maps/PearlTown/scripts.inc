@@ -213,7 +213,7 @@ Text_LiamSign:
     .string "Liam's House$"
 
 Text_GroveSign:
-    .string "Whispering Grove$"
+    .string "{UP_ARROW} Whispering Grove$"
 
 Text_ForestWarn:
     .string "Don't go in the forest without Pokémon.\p"

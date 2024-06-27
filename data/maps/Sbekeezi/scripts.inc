@@ -39,7 +39,7 @@ Text_KassanSpeakeasyPiano:
 
 Text_KassanSpeakeasyNerd1
     .string "{COLOR DARK_GRAY}{SHADOW DARK_GRAY}Kid:{SHADOW LIGHT_GRAY}Oi!\n"
-    .string "Why’d you stop playing?\l"
+    .string "Why’d you stop playing?$"
 
 Text_KassanSpeakeasyWhip
     .string "{SHADOW DARK_GRAY}Kid:{SHADOW LIGHT_GRAY}Imma whip you\p"
