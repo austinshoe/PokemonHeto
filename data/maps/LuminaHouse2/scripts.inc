@@ -10,8 +10,9 @@ Script_LuminaTownOldMan2::
 
 Text_LuminaTownOldMan2:
     .string "According to legends there was a Pokémon\n"
-    .string "that embodied power and energy that once\l"
-    .string "wreaked havoc across the region of {COLOR DARK_GRAY}{SHADOW DARK_GRAY}Hehamayto$"
+    .string "that embodied power and energy that\l"
+    .string "once wreaked havoc across the region of"
+    .string "{COLOR DARK_GRAY}{SHADOW DARK_GRAY}Hehamayto$"
 
 Script_LuminaTownWoman3::
     lock

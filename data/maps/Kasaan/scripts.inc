@@ -194,7 +194,9 @@ Kasaan_Playground_King_Text_2:
     .string "Listen to my rap again for more!$"
 
 Kasaan_Playground_King_Text_3:
-    .string "FUCK YOU BITCH!$"
+    .string "SCREW YOU, YOU FREAKING UNINTELLIGENT"
+    .string "FORM OF LIFE! YOU TAKE UP OXYGEN THAT"
+    .string "WOULD BE BETTER USED ELSEWHERE.$"
 
 Kasaan_Oofer_Text_0:
     .string "Uhh.\nOof.$"
