@@ -4,19 +4,24 @@ Sbekeezi_MapScripts::
 Script_KassanSpeakeasy1::
     lock
     faceplayer
-    msgbox Text_KassanSpeakeasyPiano, MSGBOX_DEFAULT
+    message Text_KassanSpeakeasyPiano
+    waitmessage
     closemessage
     delay 16
     applymovement 2, face_left
     waitmovement 2
     applymovement 2, Common_Movement_ExclamationMark
-    msgbox Text_KassanSpeakeasyNerd1, MSGBOX_DEFAULT
+    waitbuttonpress
+    message Text_KassanSpeakeasyNerd1
+    waitmessage
     closemessage
     delay 16
     applymovement 1, face_right
     waitmovement 1
     applymovement 1, Common_Movement_ExclamationMark
-    msgbox Text_KassanSpeakeasyWhip, MSGBOX_DEFAULT
+    waitbuttonpress
+    message Text_KassanSpeakeasyWhip
+    waitmessage
     closemessage
     delay 16
     applymovement 1, face_up
