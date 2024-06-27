@@ -37,11 +37,11 @@ Text_KassanSpeakeasyPiano:
     .string "If that kid over there hears that I\l"
     .string "stopped playing piano he’ll beat my ass.$"
 
-Text_KassanSpeakeasyNerd1
+Text_KassanSpeakeasyNerd1:
     .string "{COLOR DARK_GRAY}{SHADOW DARK_GRAY}Kid:{SHADOW LIGHT_GRAY}Oi!\n"
     .string "Why’d you stop playing?$"
 
-Text_KassanSpeakeasyWhip
+Text_KassanSpeakeasyWhip:
     .string "{SHADOW DARK_GRAY}Kid:{SHADOW LIGHT_GRAY}Imma whip you\p"
     .string "{SHADOW DARK_GRAY}Piano man:{SHADOW LIGHT_GRAY}{COLOR RED}OW!!!!{COLOR DARK_GRAY}That hurt so freaking\n"
     .string "bad!\l"
