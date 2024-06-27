@@ -35,7 +35,7 @@ Text_KassanSpeakeasyPiano:
     .string "{FONT_SMALL_NARROW}Hey!\n"
     .string "Don’t talk to me!\l"
     .string "If that kid over there hears that I\l"
-    .string "stopped playing piano he’ll beat my ass.\l"
+    .string "stopped playing piano he’ll beat my ass.$"
 
 Text_KassanSpeakeasyNerd1
     .string "{COLOR DARK_GRAY}{SHADOW DARK_GRAY}Kid:{SHADOW LIGHT_GRAY}Oi!\n"
