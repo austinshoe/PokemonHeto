@@ -28,6 +28,7 @@ Script_KassanSpeakeasy1::
     waitmovement 1
     delay 16
     applymovement 2, Common_Movement_FaceRight
+    waitmovement 2
     release
     end
 
@@ -38,12 +39,12 @@ Text_KassanSpeakeasyPiano:
     .string "stopped playing piano he’ll beat my ass.$"
 
 Text_KassanSpeakeasyNerd1:
-    .string "{COLOR DARK_GRAY}{SHADOW DARK_GRAY}Kid:{SHADOW LIGHT_GRAY}Oi!\n"
+    .string "{COLOR DARK_GRAY}{SHADOW DARK_GRAY}Kid:{SHADOW LIGHT_GRAY} Oi!\n"
     .string "Why’d you stop playing?$"
 
 Text_KassanSpeakeasyWhip:
-    .string "{SHADOW DARK_GRAY}Kid:{SHADOW LIGHT_GRAY}Imma whip you\p"
-    .string "{SHADOW DARK_GRAY}Piano man:{SHADOW LIGHT_GRAY}{COLOR RED}OW!!!!{COLOR DARK_GRAY}That hurt so freaking\n"
+    .string "{SHADOW DARK_GRAY}Kid: {SHADOW LIGHT_GRAY}Imma whip you\p"
+    .string "{SHADOW DARK_GRAY}Piano man: {SHADOW LIGHT_GRAY}{COLOR RED}OW!!!!{COLOR DARK_GRAY}That hurt so freaking\n"
     .string "bad!\l"
     .string "Wahhhhhhhh$"
 

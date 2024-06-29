@@ -134,7 +134,7 @@ Kasaan_Holey_Logs_Text_0:
     .string "theannoyingsite.com.$"
 
 Kasaan_Playground_Sign_Text_0:
-    .string "The feamus pleigrownd of Traf.$"
+    .string "The feamus pleigrownd of Heehahmeitoe$"
 
 Kasaan_Gym_Sign_Text_0:
     .string "Feamus Pokimaun Gim of Kasaan$"

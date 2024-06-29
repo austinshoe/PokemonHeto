@@ -6029,7 +6029,7 @@
       "id": "LAYOUT_HALLOW_SPARK_CITY",
       "name": "HallowSparkCity_Layout",
       "width": 40,
-      "height": 30,
+      "height": 50,
       "border_width": 2,
       "border_height": 2,
       "primary_tileset": "gTileset_Hallowspark",
