@@ -243,3 +243,6 @@ const u16 gMetatileAttributes_EverbloomGym[] = INCBIN_U16("data/tilesets/seconda
 
 const u16 gMetatiles_Hallowspark[] = INCBIN_U16("data/tilesets/primary/hallowspark/metatiles.bin");
 const u16 gMetatileAttributes_Hallowspark[] = INCBIN_U16("data/tilesets/primary/hallowspark/metatile_attributes.bin");
+
+const u16 gMetatiles_Hallowspark2[] = INCBIN_U16("data/tilesets/secondary/hallowspark_2/metatiles.bin");
+const u16 gMetatileAttributes_Hallowspark2[] = INCBIN_U16("data/tilesets/secondary/hallowspark_2/metatile_attributes.bin");

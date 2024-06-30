@@ -957,3 +957,14 @@ const struct Tileset gTileset_Hallowspark =
     .metatileAttributes = gMetatileAttributes_Hallowspark,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_Hallowspark2 =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_Hallowspark2,
+    .palettes = gTilesetPalettes_Hallowspark2,
+    .metatiles = gMetatiles_Hallowspark2,
+    .metatileAttributes = gMetatileAttributes_Hallowspark2,
+    .callback = NULL,
+};
