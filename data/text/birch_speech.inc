@@ -3,8 +3,8 @@ gText_Birch_Welcome::
 	.string "Welcome to the world of Pokémon!\p"
 	.string "My name is {COLOR BLUE}Pine{COLOR DARK_GRAY}.\p"
 	.string "But everyone knows me as the Pokémon\n"
-	.string "Professor of the region {COLOR RED}Hehamayto{COLOR DARK_GRAY},\n"
-    .string "or {COLOR RED}Heto{COLOR DARK_GRAY} for short."
+	.string "Professor of the region {COLOR RED}Hehamayto{COLOR DARK_GRAY},\l"
+    .string "or {COLOR RED}Heto{COLOR DARK_GRAY} for short.\n"
 	.string "$"
 
 gText_Birch_Pokemon::
