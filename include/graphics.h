@@ -1361,6 +1361,7 @@ extern const u32 gMonFrontPic_BasculegionFemale[];
 extern const u32 gMonFrontPic_ApplinHetonian[];
 extern const u32 gMonFrontPic_Cocokame[];
 extern const u32 gMonFrontPic_Frococo[];
+extern const u32 gMonFrontPic_Draconarix[];
 #endif
 extern const u32 gMonFrontPic_Egg[];
 
@@ -2649,6 +2650,7 @@ extern const u32 gMonBackPic_BasculegionFemale[];
 extern const u32 gMonBackPic_ApplinHetonian[];
 extern const u32 gMonBackPic_Cocokame[];
 extern const u32 gMonBackPic_Frococo[];
+extern const u32 gMonBackPic_Draconarix[];
 #endif
 
 extern const u32 gMonPalette_CircledQuestionMark[];
@@ -3884,6 +3886,7 @@ extern const u32 gMonPalette_BasculegionFemale[];
 extern const u32 gMonPalette_ApplinHetonian[];
 extern const u32 gMonPalette_Cocokame[];
 extern const u32 gMonPalette_Frococo[];
+extern const u32 gMonPalette_Draconarix[];
 #endif
 extern const u32 gMonPalette_Egg[];
 
@@ -5114,6 +5117,7 @@ extern const u32 gMonShinyPalette_BasculegionFemale[];
 extern const u32 gMonShinyPalette_ApplinHetonian[];
 extern const u32 gMonShinyPalette_Cocokame[];
 extern const u32 gMonShinyPalette_Frococo[];
+extern const u32 gMonShinyPalette_Draconarix[];
 #endif
 
 extern const u8 gMonIcon_QuestionMark[];
@@ -6337,6 +6341,7 @@ extern const u8 gMonIcon_BasculegionFemale[];
 extern const u8 gMonIcon_ApplinHetonian[];
 extern const u8 gMonIcon_Cocokame[];
 extern const u8 gMonIcon_Frococo[];
+extern const u8 gMonIcon_Draconarix[];
 #endif
 extern const u8 gMonIcon_Egg[];
 
@@ -7251,6 +7256,7 @@ extern const u8 gMonFootprint_Calyrex[];
 extern const u8 gMonFootprint_ApplinHetonian[];
 extern const u8 gMonFootprint_Cocokame[];
 extern const u8 gMonFootprint_Frococo[];
+extern const u8 gMonFootprint_Draconarix[];
 //extern const u8 gMonFootprint_Wyrdeer[];
 //extern const u8 gMonFootprint_Kleavor[];
 //extern const u8 gMonFootprint_Ursaluna[];
