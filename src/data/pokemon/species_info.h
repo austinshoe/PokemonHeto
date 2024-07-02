@@ -24785,5 +24785,28 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .noFlip = FALSE,
     },
     
+    [SPECIES_DRACONARIX] =
+    {
+        .baseHP        = 130,
+        .baseAttack    = 70,
+        .baseDefense   = 130,
+        .baseSpeed     = 120,
+        .baseSpAttack  = 100,
+        .baseSpDefense = 130,
+        .types = { TYPE_DRAGON, TYPE_GROUND},
+        .catchRate = 3,
+        .expYield = 300,
+        .evYield_HP  = 3,
+        .genderRatio = MON_GENDERLESS,
+        .eggCycles = 120,
+        .friendship = 70,
+        .growthRate = GROWTH_ERRATIC,
+        .eggGroups = { EGG_GROUP_UNDISCOVERED, EGG_GROUP_UNDISCOVERED},
+        .abilities = {ABILITY_STAMINA, ABILITY_PRESSURE},
+        .bodyColor = BODY_COLOR_BROWN,
+        .noFlip = FALSE,
+        .flags = SPECIES_FLAG_LEGENDARY,
+    },
+    
 #endif
 };

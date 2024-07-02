@@ -10898,11 +10898,23 @@ const struct PokedexEntry gPokedexEntries[] =
         .categoryName = _("Coco Water"),
         .height = 4,
         .weight = 140,
-        .description = gAppletunPokedexText,
+        .description = gCocokamePokedexText,
         .pokemonScale = 491,
         .pokemonOffset = 12,
         .trainerScale = 256,
         .trainerOffset = 0,
+    },
+    
+    [NATIONAL_DEX_COCOKAME] =
+    {
+        .categoryName = _("Energy"),
+        .height = 20,
+        .weight = 2000,
+        .description = gDraconarixPokedexText,
+        .pokemonScale = 256,
+        .pokemonOffset = 0,
+        .trainerScale = 515,
+        .trainerOffset = 14,
     },
 
 #endif

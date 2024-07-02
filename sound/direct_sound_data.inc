@@ -4371,6 +4371,9 @@ Cry_Cocokame::
     .align 2
 Cry_Frococo::
     .incbin "sound/direct_sound_samples/cries/frococo.bin"
+    
+Cry_Frococo::
+    .incbin "sound/direct_sound_samples/cries/draconarix.bin"
 
 .endif
 

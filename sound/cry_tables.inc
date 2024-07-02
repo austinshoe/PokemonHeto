@@ -1156,6 +1156,7 @@ gCryTable::
 	cry Cry_Melmetal
     cry Cry_Cocokame
     cry Cry_Frococo
+    cry Cry_Draconarix
 .else
 	cry Cry_Unown
 	cry Cry_Unown

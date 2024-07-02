@@ -1297,6 +1297,7 @@ const u8 *const gMonIconTable[NUM_SPECIES + 1] =
     [SPECIES_APPLIN_HETONIAN] = gMonIcon_ApplinHetonian,
     [SPECIES_COCOKAME] = gMonIcon_Cocokame,
     [SPECIES_FROCOCO] = gMonIcon_Frococo,
+    [SPECIES_DRACONARIX] = gMonIcon_Draconarix,
 #endif
     [SPECIES_EGG] = gMonIcon_Egg,
 };
@@ -2534,6 +2535,7 @@ const u8 gMonIconPaletteIndices[] =
     [SPECIES_APPLIN_HETONIAN] = 2,
     [SPECIES_COCOKAME] = 2,
     [SPECIES_FROCOCO] = 1,
+    [SPECIES_DRACONARIX] = 0,
 #endif
     [SPECIES_EGG] = 1,
 };

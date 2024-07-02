@@ -911,6 +911,7 @@ const u8 *const gMonFootprintTable[NUM_SPECIES + 1] =
     [SPECIES_APPLIN_HETONIAN] = gMonFootprint_ApplinHetonian,
     [SPECIES_COCOKAME] = gMonFootprint_Cocokame,
     [SPECIES_FROCOCO] = gMonFootprint_Frococo,
+    [SPECIES_DRACONARIX] = gMonFootprint_Draconarix,
 #endif
     [SPECIES_EGG] = gMonFootprint_Bulbasaur,
 };

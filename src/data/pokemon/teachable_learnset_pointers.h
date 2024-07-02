@@ -1337,6 +1337,7 @@ const u16 *const gTeachableLearnsets[NUM_SPECIES] =
     [SPECIES_BASCULEGION_FEMALE] = sBasculegionTeachableLearnset,
     [SPECIES_APPLIN_HETONIAN] = sApplinHetonianTeachableLearnset,
     [SPECIES_COCOKAME] = sCocokameTeachableLearnset,
-    [SPECIES_FROCOCO] = sFrococoTeachableLearnset
+    [SPECIES_FROCOCO] = sFrococoTeachableLearnset,
+    [SPECIES_DRACONARIX] = sDraconarixTeachableLearnset
 #endif
 };

@@ -9552,6 +9552,12 @@ static const union AnimCmd sAnim_Frococo_1[] =
     ANIMCMD_FRAME(0, 20),
     ANIMCMD_END,
 };
+
+static const union AnimCmd sAnim_Draconarix_1[] =
+{
+    ANIMCMD_FRAME(0, 1),
+    ANIMCMD_END,
+};
 #endif
 
 static const union AnimCmd sAnim_VenusaurMega_1[] =
@@ -11511,6 +11517,7 @@ SINGLE_ANIMATION(Overqwil);
 SINGLE_ANIMATION(Enamorus);
 SINGLE_ANIMATION(Cocokame);
 SINGLE_ANIMATION(Frococo);
+SINGLE_ANIMATION(Draconarix);
 #endif
 SINGLE_ANIMATION(VenusaurMega);
 SINGLE_ANIMATION(CHARIZARD_MEGA_X);
@@ -12955,6 +12962,7 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[NUM_SPECIES + 1] =
     [SPECIES_APPLIN_HETONIAN] = sAnims_ApplinHetonian,
     [SPECIES_COCOKAME] = sAnims_Cocokame,
     [SPECIES_FROCOCO] = sAnims_Frococo,
+    [SPECIES_DRACONARIX] = sAnims_Draconarix,
 #endif
     [SPECIES_EGG]         = sAnims_Egg,
 };

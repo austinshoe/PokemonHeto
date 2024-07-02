@@ -1254,6 +1254,7 @@ static const u16 sSpeciesToNationalPokedexNum[NUM_SPECIES - 1] =
     SPECIES_TO_NATIONAL(ENAMORUS),
     SPECIES_TO_NATIONAL(COCOKAME),
     SPECIES_TO_NATIONAL(FROCOCO),
+    SPECIES_TO_NATIONAL(DRACONARIX),
 #endif
 
     // Megas
@@ -3043,6 +3044,7 @@ const u8 sMonFrontAnimIdsTable[NUM_SPECIES - 1] =
     [SPECIES_APPLIN_HETONIAN - 1]           = ANIM_V_SQUISH_AND_BOUNCE,
     [SPECIES_FROCOCO - 1]                   = ANIM_V_SQUISH_AND_BOUNCE,
     [SPECIES_COCOKAME - 1]                  = ANIM_V_SQUISH_AND_BOUNCE,
+    [SPECIES_DRACONARIX - 1]                = ANIM_GROW_VIBRATE,
 };
 
 static const u8 sMonAnimationDelayTable[NUM_SPECIES - 1] =
@@ -3106,6 +3108,7 @@ static const u8 sMonAnimationDelayTable[NUM_SPECIES - 1] =
     [SPECIES_APPLIN_HETONIAN - 1]   = 30,
     [SPECIES_COCOKAME - 1]   = 30,
     [SPECIES_FROCOCO - 1]    = 30,
+    [SPECIES_DRACONARIX - 1]    = 10,
 #if P_GEN_7_POKEMON == TRUE
     [SPECIES_TAPU_FINI - 1]  = 5,
 #endif
