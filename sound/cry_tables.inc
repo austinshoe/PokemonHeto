@@ -3472,6 +3472,7 @@ gCryTable_Reverse::
 	cry_reverse Cry_Enamorus
     cry_reverse Cry_Cocokame
     cry_reverse Cry_Frococo
+    cry_reverse Cry_Draconarix
 .else
 	cry_reverse Cry_Unown
 	cry_reverse Cry_Unown

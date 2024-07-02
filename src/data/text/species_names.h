@@ -917,6 +917,10 @@ const u8 gSpeciesNames[NUM_SPECIES][POKEMON_NAME_LENGTH + 1] = {
     [SPECIES_COCOKAME] = _("Cocokame"),
     [SPECIES_FROCOCO] = _("Frococo"),
     [SPECIES_DRACONARIX] = _("Draconarix"),
+    [SPECIES_DRACONARIX_UNLEASHED] = _("Draconarix"),
+    [SPECIES_DRACONARIX_UNLEASHED_ICE] = _("Draconarix"),
+    [SPECIES_DRACONARIX_UNLEASHED_FIRE] = _("Draconarix"),
+    [SPECIES_DRACONARIX_UNLEASHED_ELECTRIC] = _("Draconarix"),
 #endif
 
     // Megas

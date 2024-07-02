@@ -1338,6 +1338,10 @@ const u16 *const gTeachableLearnsets[NUM_SPECIES] =
     [SPECIES_APPLIN_HETONIAN] = sApplinHetonianTeachableLearnset,
     [SPECIES_COCOKAME] = sCocokameTeachableLearnset,
     [SPECIES_FROCOCO] = sFrococoTeachableLearnset,
-    [SPECIES_DRACONARIX] = sDraconarixTeachableLearnset
+    [SPECIES_DRACONARIX] = sDraconarixTeachableLearnset,
+    [SPECIES_DRACONARIX_UNLEASHED] = sDraconarixTeachableLearnset,
+    [SPECIES_DRACONARIX_UNLEASHED_ICE] = sDraconarixTeachableLearnset,
+    [SPECIES_DRACONARIX_UNLEASHED_FIRE] = sDraconarixTeachableLearnset,
+    [SPECIES_DRACONARIX_UNLEASHED_ELECTRIC] = sDraconarixTeachableLearnset,
 #endif
 };

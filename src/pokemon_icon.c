@@ -1298,6 +1298,10 @@ const u8 *const gMonIconTable[NUM_SPECIES + 1] =
     [SPECIES_COCOKAME] = gMonIcon_Cocokame,
     [SPECIES_FROCOCO] = gMonIcon_Frococo,
     [SPECIES_DRACONARIX] = gMonIcon_Draconarix,
+    [SPECIES_DRACONARIX_UNLEASHED] = gMonIcon_DraconarixUnleashed,
+    [SPECIES_DRACONARIX_UNLEASHED_ICE] = gMonIcon_DraconarixUnleashedIce,
+    [SPECIES_DRACONARIX_UNLEASHED_FIRE] = gMonIcon_DraconarixUnleashedFire,
+    [SPECIES_DRACONARIX_UNLEASHED_ELECTRIC] = gMonIcon_DraconarixUnleashedElectric,
 #endif
     [SPECIES_EGG] = gMonIcon_Egg,
 };

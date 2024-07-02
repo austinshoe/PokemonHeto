@@ -9558,6 +9558,30 @@ static const union AnimCmd sAnim_Draconarix_1[] =
     ANIMCMD_FRAME(0, 1),
     ANIMCMD_END,
 };
+
+static const union AnimCmd sAnim_DraconarixUnleashed_1[] =
+{
+    ANIMCMD_FRAME(0, 1),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_DraconarixUnleashedIce_1[] =
+{
+    ANIMCMD_FRAME(0, 1),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_DraconarixUnleashedFire_1[] =
+{
+    ANIMCMD_FRAME(0, 1),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_DraconarixUnleashedElectric_1[] =
+{
+    ANIMCMD_FRAME(0, 1),
+    ANIMCMD_END,
+};
 #endif
 
 static const union AnimCmd sAnim_VenusaurMega_1[] =
@@ -11518,6 +11542,10 @@ SINGLE_ANIMATION(Enamorus);
 SINGLE_ANIMATION(Cocokame);
 SINGLE_ANIMATION(Frococo);
 SINGLE_ANIMATION(Draconarix);
+SINGLE_ANIMATION(DraconarixUnleashed);
+SINGLE_ANIMATION(DraconarixUnleashedIce);
+SINGLE_ANIMATION(DraconarixUnleashedFire);
+SINGLE_ANIMATION(DraconarixUnleashedElectric);
 #endif
 SINGLE_ANIMATION(VenusaurMega);
 SINGLE_ANIMATION(CHARIZARD_MEGA_X);

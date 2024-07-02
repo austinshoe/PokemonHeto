@@ -1339,5 +1339,9 @@ const struct LevelUpMove *const gLevelUpLearnsets[NUM_SPECIES] =
     [SPECIES_COCOKAME] = sCocokameLevelUpLearnset,
     [SPECIES_FROCOCO] = sFrococoLevelUpLearnset,
     [SPECIES_DRACONARIX] = sDraconarixLevelUpLearnset,
+    [SPECIES_DRACONARIX_UNLEASHED] = sDraconarixLevelUpLearnset,
+    [SPECIES_DRACONARIX_UNLEASHED_ICE] = sDraconarixLevelUpLearnset,
+    [SPECIES_DRACONARIX_UNLEASHED_FIRE] = sDraconarixLevelUpLearnset,
+    [SPECIES_DRACONARIX_UNLEASHED_ELECTRIC] = sDraconarixLevelUpLearnset,
 #endif
 };

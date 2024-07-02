@@ -1339,7 +1339,16 @@ const struct CompressedSpriteSheet gMonFrontPicTable[NUM_SPECIES + 1] =
     SPECIES_SPRITE(COCOKAME, gMonFrontPic_Cocokame),
     
     SPECIES_SPRITE(FROCOCO, gMonFrontPic_Frococo),
+    
     SPECIES_SPRITE(DRACONARIX, gMonFrontPic_Draconarix),
+    
+    SPECIES_SPRITE(DRACONARIX_UNLEASHED, gMonFrontPic_DraconarixUnleashed),
+    
+    SPECIES_SPRITE(DRACONARIX_UNLEASHED_ICE, gMonFrontPic_DraconarixUnleashedIce),
+    
+    SPECIES_SPRITE(DRACONARIX_UNLEASHED_FIRE, gMonFrontPic_DraconarixUnleashedFire),
+    
+    SPECIES_SPRITE(DRACONARIX_UNLEASHED_ELECTRIC, gMonFrontPic_DraconarixUnleashedElectric),
 #endif
     SPECIES_SPRITE(EGG, gMonFrontPic_Egg),
 };

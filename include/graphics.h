@@ -1362,6 +1362,10 @@ extern const u32 gMonFrontPic_ApplinHetonian[];
 extern const u32 gMonFrontPic_Cocokame[];
 extern const u32 gMonFrontPic_Frococo[];
 extern const u32 gMonFrontPic_Draconarix[];
+extern const u32 gMonFrontPic_DraconarixUnleashed[];
+extern const u32 gMonFrontPic_DraconarixUnleashedIce[];
+extern const u32 gMonFrontPic_DraconarixUnleashedFire[];
+extern const u32 gMonFrontPic_DraconarixUnleashedElectric[];
 #endif
 extern const u32 gMonFrontPic_Egg[];
 
@@ -2651,6 +2655,10 @@ extern const u32 gMonBackPic_ApplinHetonian[];
 extern const u32 gMonBackPic_Cocokame[];
 extern const u32 gMonBackPic_Frococo[];
 extern const u32 gMonBackPic_Draconarix[];
+extern const u32 gMonBackPic_DraconarixUnleashed[];
+extern const u32 gMonBackPic_DraconarixUnleashedIce[];
+extern const u32 gMonBackPic_DraconarixUnleashedFire[];
+extern const u32 gMonBackPic_DraconarixUnleashedElectric[];
 #endif
 
 extern const u32 gMonPalette_CircledQuestionMark[];
@@ -3887,6 +3895,10 @@ extern const u32 gMonPalette_ApplinHetonian[];
 extern const u32 gMonPalette_Cocokame[];
 extern const u32 gMonPalette_Frococo[];
 extern const u32 gMonPalette_Draconarix[];
+extern const u32 gMonPalette_DraconarixUnleashed[];
+extern const u32 gMonPalette_DraconarixUnleashedIce[];
+extern const u32 gMonPalette_DraconarixUnleashedFire[];
+extern const u32 gMonPalette_DraconarixUnleashedElectric[];
 #endif
 extern const u32 gMonPalette_Egg[];
 
@@ -5118,6 +5130,10 @@ extern const u32 gMonShinyPalette_ApplinHetonian[];
 extern const u32 gMonShinyPalette_Cocokame[];
 extern const u32 gMonShinyPalette_Frococo[];
 extern const u32 gMonShinyPalette_Draconarix[];
+extern const u32 gMonShinyPalette_DraconarixUnleashed[];
+extern const u32 gMonShinyPalette_DraconarixUnleashedIce[];
+extern const u32 gMonShinyPalette_DraconarixUnleashedFire[];
+extern const u32 gMonShinyPalette_DraconarixUnleashedElectric[];
 #endif
 
 extern const u8 gMonIcon_QuestionMark[];
@@ -6342,6 +6358,10 @@ extern const u8 gMonIcon_ApplinHetonian[];
 extern const u8 gMonIcon_Cocokame[];
 extern const u8 gMonIcon_Frococo[];
 extern const u8 gMonIcon_Draconarix[];
+extern const u8 gMonIcon_DraconarixUnleashed[];
+extern const u8 gMonIcon_DraconarixUnleashedIce[];
+extern const u8 gMonIcon_DraconarixUnleashedFire[];
+extern const u8 gMonIcon_DraconarixUnleashedElectric[];
 #endif
 extern const u8 gMonIcon_Egg[];
 
