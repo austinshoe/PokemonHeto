@@ -1339,6 +1339,9 @@ const struct CompressedSpritePalette gMonShinyPaletteTable[NUM_SPECIES + 1] =
     SPECIES_SHINY_PAL(DRACONARIX_UNLEASHED_ICE, gMonShinyPalette_DraconarixUnleashedIce),
     SPECIES_SHINY_PAL(DRACONARIX_UNLEASHED_FIRE, gMonShinyPalette_DraconarixUnleashedFire),
     SPECIES_SHINY_PAL(DRACONARIX_UNLEASHED_ELECTRIC, gMonShinyPalette_DraconarixUnleashedElectric),
+    SPECIES_SHINY_PAL(TOGEPI_HETONIAN, gMonShinyPalette_TogepiHetonian),
+    SPECIES_SHINY_PAL(TOGETIC_HETONIAN, gMonShinyPalette_TogeticHetonian),
+    SPECIES_SHINY_PAL(TOGEKISS_HETONIAN, gMonShinyPalette_TogekissHetonian),
 #endif
     SPECIES_SHINY_PAL(EGG, gMonPalette_Egg),
 };

@@ -1366,6 +1366,9 @@ const struct MonCoords gMonBackPicCoords[NUM_SPECIES + 1] =
     [SPECIES_DRACONARIX_UNLEASHED_ICE]     = { .size = MON_COORDS_SIZE(64, 64), .y_offset = 0 },
     [SPECIES_DRACONARIX_UNLEASHED_FIRE]    = { .size = MON_COORDS_SIZE(64, 64), .y_offset = 0 },
     [SPECIES_DRACONARIX_UNLEASHED_ELECTRIC]= { .size = MON_COORDS_SIZE(64, 64), .y_offset = 0 },
+    [SPECIES_TOGEPI_HETONIAN]              = { .size = MON_COORDS_SIZE(48, 40), .y_offset = 12 },
+    [SPECIES_TOGETIC_HETONIAN]             = { .size = MON_COORDS_SIZE(56, 56), .y_offset =  6 },
+    [SPECIES_TOGEKISS_HETONIAN]            = { .size = MON_COORDS_SIZE(64, 48), .y_offset = 10 },
 #endif
     [SPECIES_EGG]                          = { .size = MON_COORDS_SIZE(24, 24), .y_offset = 20 },
 };

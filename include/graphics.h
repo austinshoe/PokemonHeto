@@ -1366,6 +1366,9 @@ extern const u32 gMonFrontPic_DraconarixUnleashed[];
 extern const u32 gMonFrontPic_DraconarixUnleashedIce[];
 extern const u32 gMonFrontPic_DraconarixUnleashedFire[];
 extern const u32 gMonFrontPic_DraconarixUnleashedElectric[];
+extern const u32 gMonFrontPic_TogepiHetonian[];
+extern const u32 gMonFrontPic_TogeticHetonian[];
+extern const u32 gMonFrontPic_TogekissHetonian[];
 #endif
 extern const u32 gMonFrontPic_Egg[];
 
@@ -2659,6 +2662,9 @@ extern const u32 gMonBackPic_DraconarixUnleashed[];
 extern const u32 gMonBackPic_DraconarixUnleashedIce[];
 extern const u32 gMonBackPic_DraconarixUnleashedFire[];
 extern const u32 gMonBackPic_DraconarixUnleashedElectric[];
+extern const u32 gMonBackPic_TogepiHetonian[];
+extern const u32 gMonBackPic_TogeticHetonian[];
+extern const u32 gMonBackPic_TogekissHetonian[];
 #endif
 
 extern const u32 gMonPalette_CircledQuestionMark[];
@@ -3899,6 +3905,9 @@ extern const u32 gMonPalette_DraconarixUnleashed[];
 extern const u32 gMonPalette_DraconarixUnleashedIce[];
 extern const u32 gMonPalette_DraconarixUnleashedFire[];
 extern const u32 gMonPalette_DraconarixUnleashedElectric[];
+extern const u32 gMonPalette_TogepiHetonian[];
+extern const u32 gMonPalette_TogeticHetonian[];
+extern const u32 gMonPalette_TogekissHetonian[];
 #endif
 extern const u32 gMonPalette_Egg[];
 
@@ -5134,6 +5143,9 @@ extern const u32 gMonShinyPalette_DraconarixUnleashed[];
 extern const u32 gMonShinyPalette_DraconarixUnleashedIce[];
 extern const u32 gMonShinyPalette_DraconarixUnleashedFire[];
 extern const u32 gMonShinyPalette_DraconarixUnleashedElectric[];
+extern const u32 gMonShinyPalette_TogepiHetonian[];
+extern const u32 gMonShinyPalette_TogeticHetonian[];
+extern const u32 gMonShinyPalette_TogekissHetonian[];
 #endif
 
 extern const u8 gMonIcon_QuestionMark[];
@@ -6362,6 +6374,9 @@ extern const u8 gMonIcon_DraconarixUnleashed[];
 extern const u8 gMonIcon_DraconarixUnleashedIce[];
 extern const u8 gMonIcon_DraconarixUnleashedFire[];
 extern const u8 gMonIcon_DraconarixUnleashedElectric[];
+extern const u8 gMonIcon_TogepiHetonian[];
+extern const u8 gMonIcon_TogeticHetonian[];
+extern const u8 gMonIcon_TogekissHetonian[];
 #endif
 extern const u8 gMonIcon_Egg[];
 
@@ -7277,6 +7292,9 @@ extern const u8 gMonFootprint_ApplinHetonian[];
 extern const u8 gMonFootprint_Cocokame[];
 extern const u8 gMonFootprint_Frococo[];
 extern const u8 gMonFootprint_Draconarix[];
+extern const u8 gMonFootprint_TogepiHetonian[];
+extern const u8 gMonFootprint_TogeticHetonian[];
+extern const u8 gMonFootprint_TogekissHetonian[];
 //extern const u8 gMonFootprint_Wyrdeer[];
 //extern const u8 gMonFootprint_Kleavor[];
 //extern const u8 gMonFootprint_Ursaluna[];

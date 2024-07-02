@@ -1340,6 +1340,9 @@ const struct CompressedSpritePalette gMonPaletteTable[NUM_SPECIES + 1] =
     SPECIES_PAL(DRACONARIX_UNLEASHED_ICE, gMonPalette_DraconarixUnleashedIce),
     SPECIES_PAL(DRACONARIX_UNLEASHED_FIRE, gMonPalette_DraconarixUnleashedFire),
     SPECIES_PAL(DRACONARIX_UNLEASHED_ELECTRIC, gMonPalette_DraconarixUnleashedElectric),
+    SPECIES_PAL(TOGEPI_HETONIAN, gMonPalette_TogepiHetonian),
+    SPECIES_PAL(TOGETIC_HETONIAN, gMonPalette_TogeticHetonian),
+    SPECIES_PAL(TOGEKISS_HETONIAN, gMonPalette_TogekissHetonian),
 #endif
     SPECIES_PAL(EGG, gMonPalette_Egg),
 };

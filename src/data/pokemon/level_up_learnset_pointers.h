@@ -1343,5 +1343,8 @@ const struct LevelUpMove *const gLevelUpLearnsets[NUM_SPECIES] =
     [SPECIES_DRACONARIX_UNLEASHED_ICE] = sDraconarixLevelUpLearnset,
     [SPECIES_DRACONARIX_UNLEASHED_FIRE] = sDraconarixLevelUpLearnset,
     [SPECIES_DRACONARIX_UNLEASHED_ELECTRIC] = sDraconarixLevelUpLearnset,
+    [SPECIES_TOGEPI_HETONIAN] = sTogepiHetonianLevelUpLearnset,
+    [SPECIES_TOGETIC_HETONIAN] = sTogeticHetonianLevelUpLearnset,
+    [SPECIES_TOGEKISS_HETONIAN] = sTogekissHetonianLevelUpLearnset,
 #endif
 };

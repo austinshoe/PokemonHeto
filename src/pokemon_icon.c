@@ -1302,6 +1302,9 @@ const u8 *const gMonIconTable[NUM_SPECIES + 1] =
     [SPECIES_DRACONARIX_UNLEASHED_ICE] = gMonIcon_DraconarixUnleashedIce,
     [SPECIES_DRACONARIX_UNLEASHED_FIRE] = gMonIcon_DraconarixUnleashedFire,
     [SPECIES_DRACONARIX_UNLEASHED_ELECTRIC] = gMonIcon_DraconarixUnleashedElectric,
+    [SPECIES_TOGEPI_HETONIAN] = gMonIcon_TogepiHetonian,
+    [SPECIES_TOGETIC_HETONIAN] = gMonIcon_TogeticHetonian,
+    [SPECIES_TOGEKISS_HETONIAN] = gMonIcon_TogekissHetonian,
 #endif
     [SPECIES_EGG] = gMonIcon_Egg,
 };

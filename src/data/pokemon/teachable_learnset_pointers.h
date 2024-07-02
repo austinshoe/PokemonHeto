@@ -1343,5 +1343,8 @@ const u16 *const gTeachableLearnsets[NUM_SPECIES] =
     [SPECIES_DRACONARIX_UNLEASHED_ICE] = sDraconarixTeachableLearnset,
     [SPECIES_DRACONARIX_UNLEASHED_FIRE] = sDraconarixTeachableLearnset,
     [SPECIES_DRACONARIX_UNLEASHED_ELECTRIC] = sDraconarixTeachableLearnset,
+    [SPECIES_TOGEPI_HETONIAN] = sTogepiHetonianTeachableLearnset,
+    [SPECIES_TOGETIC_HETONIAN] = sTogeticHetonianTeachableLearnset,
+    [SPECIES_TOGEKISS_HETONIAN] = sTogekissHetonianTeachableLearnset,
 #endif
 };

@@ -10562,6 +10562,34 @@ static const union AnimCmd sAnim_ApplinHetonian_1[] =
     ANIMCMD_END,
 };
 
+static const union AnimCmd sAnim_TogepiHetonian_1[] =
+{
+    ANIMCMD_FRAME(0, 50),
+    ANIMCMD_FRAME(1, 50),
+    ANIMCMD_FRAME(0, 10),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_TogeticHetonian_1[] =
+{
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_FRAME(1, 15),
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_END,
+};
+
+static const union AnimCmd sAnim_TogekissHetonian_1[] =
+{
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_FRAME(1, 15),
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_FRAME(1, 15),
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_FRAME(1, 15),
+    ANIMCMD_FRAME(0, 15),
+    ANIMCMD_END,
+};
+
 #endif
 
 #define SINGLE_ANIMATION(name)                      \
@@ -11715,6 +11743,9 @@ SINGLE_ANIMATION(LycanrocDusk);
 #if P_GEN_8_POKEMON == TRUE
 SINGLE_ANIMATION(EnamorusTherian);
 SINGLE_ANIMATION(ApplinHetonian);
+SINGLE_ANIMATION(TogepiHetonian);
+SINGLE_ANIMATION(TogeticHetonian);
+SINGLE_ANIMATION(TogekissHetonian);
 #endif
 
 const union AnimCmd *const *const gMonFrontAnimsPtrTable[NUM_SPECIES + 1] =
@@ -12991,6 +13022,9 @@ const union AnimCmd *const *const gMonFrontAnimsPtrTable[NUM_SPECIES + 1] =
     [SPECIES_COCOKAME] = sAnims_Cocokame,
     [SPECIES_FROCOCO] = sAnims_Frococo,
     [SPECIES_DRACONARIX] = sAnims_Draconarix,
+    [SPECIES_TOGEPI_HETONIAN] = sAnims_TogepiHetonian,
+    [SPECIES_TOGETIC_HETONIAN] = sAnims_TogeticHetonian,
+    [SPECIES_TOGEKISS_HETONIAN] = sAnims_TogekissHetonian,
 #endif
     [SPECIES_EGG]         = sAnims_Egg,
 };

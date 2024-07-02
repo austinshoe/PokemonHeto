@@ -923,6 +923,9 @@ const struct CompressedSpriteSheet gMonBackPicTable[NUM_SPECIES + 1] =
     SPECIES_SPRITE(DRACONARIX_UNLEASHED_ICE, gMonBackPic_DraconarixUnleashedIce),
     SPECIES_SPRITE(DRACONARIX_UNLEASHED_FIRE, gMonBackPic_DraconarixUnleashedFire),
     SPECIES_SPRITE(DRACONARIX_UNLEASHED_ELECTRIC, gMonBackPic_DraconarixUnleashedElectric),
+    SPECIES_SPRITE(TOGEPI_HETONIAN, gMonBackPic_TogepiHetonian),
+    SPECIES_SPRITE(TOGEKISS_HETONIAN, gMonBackPic_TogekissHetonian),
+    SPECIES_SPRITE(TOGETIC_HETONIAN, gMonBackPic_TogeticHetonian),
 #endif
 
     SPECIES_SPRITE(VENUSAUR_MEGA, gMonBackPic_VenusaurMega),

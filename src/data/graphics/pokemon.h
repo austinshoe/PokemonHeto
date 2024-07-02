@@ -1297,6 +1297,9 @@ const u32 gMonFrontPic_DraconarixUnleashed[] = INCBIN_U32("graphics/pokemon/drac
 const u32 gMonFrontPic_DraconarixUnleashedIce[] = INCBIN_U32("graphics/pokemon/draconarix/unleashed/ice/front.4bpp.lz");
 const u32 gMonFrontPic_DraconarixUnleashedFire[] = INCBIN_U32("graphics/pokemon/draconarix/unleashed/fire/front.4bpp.lz");
 const u32 gMonFrontPic_DraconarixUnleashedElectric[] = INCBIN_U32("graphics/pokemon/draconarix/unleashed/electric/front.4bpp.lz");
+const u32 gMonFrontPic_TogepiHetonian[] = INCBIN_U32("graphics/pokemon/togepi/hetonian/anim_front.4bpp.lz");
+const u32 gMonFrontPic_TogeticHetonian[] = INCBIN_U32("graphics/pokemon/togetic/hetonian/anim_front.4bpp.lz");
+const u32 gMonFrontPic_TogekissHetonian[] = INCBIN_U32("graphics/pokemon/togekiss/hetonian/anim_front.4bpp.lz");
 #endif
 const u32 gMonFrontPic_Egg[] = INCBIN_U32("graphics/pokemon/egg/anim_front.4bpp.lz");
 
@@ -2590,6 +2593,9 @@ const u32 gMonBackPic_DraconarixUnleashed[] = INCBIN_U32("graphics/pokemon/draco
 const u32 gMonBackPic_DraconarixUnleashedIce[] = INCBIN_U32("graphics/pokemon/draconarix/unleashed/ice/back.4bpp.lz");
 const u32 gMonBackPic_DraconarixUnleashedFire[] = INCBIN_U32("graphics/pokemon/draconarix/unleashed/fire/back.4bpp.lz");
 const u32 gMonBackPic_DraconarixUnleashedElectric[] = INCBIN_U32("graphics/pokemon/draconarix/unleashed/electric/back.4bpp.lz");
+const u32 gMonBackPic_TogepiHetonian[] = INCBIN_U32("graphics/pokemon/togepi/hetonian/back.4bpp.lz");
+const u32 gMonBackPic_TogeticHetonian[] = INCBIN_U32("graphics/pokemon/togetic/hetonian/back.4bpp.lz");
+const u32 gMonBackPic_TogekissHetonian[] = INCBIN_U32("graphics/pokemon/togekiss/hetonian/back.4bpp.lz");
 #endif
 
 const u32 gMonPalette_CircledQuestionMark[] = INCBIN_U32("graphics/pokemon/question_mark/circled/normal.gbapal.lz");
@@ -3830,6 +3836,9 @@ const u32 gMonPalette_DraconarixUnleashed[] = INCBIN_U32("graphics/pokemon/draco
 const u32 gMonPalette_DraconarixUnleashedIce[] = INCBIN_U32("graphics/pokemon/draconarix/unleashed/ice/normal.gbapal.lz");
 const u32 gMonPalette_DraconarixUnleashedFire[] = INCBIN_U32("graphics/pokemon/draconarix/unleashed/fire/normal.gbapal.lz");
 const u32 gMonPalette_DraconarixUnleashedElectric[] = INCBIN_U32("graphics/pokemon/draconarix/unleashed/electric/normal.gbapal.lz");
+const u32 gMonPalette_TogepiHetonian[] = INCBIN_U32("graphics/pokemon/togepi/hetonian/normal.gbapal.lz");
+const u32 gMonPalette_TogeticHetonian[] = INCBIN_U32("graphics/pokemon/togetic/hetonian/normal.gbapal.lz");
+const u32 gMonPalette_TogekissHetonian[] = INCBIN_U32("graphics/pokemon/togekiss/hetonian/normal.gbapal.lz");
 #endif
 const u32 gMonPalette_Egg[] = INCBIN_U32("graphics/pokemon/egg/normal.gbapal.lz");
 
@@ -5065,6 +5074,9 @@ const u32 gMonShinyPalette_DraconarixUnleashed[] = INCBIN_U32("graphics/pokemon/
 const u32 gMonShinyPalette_DraconarixUnleashedIce[] = INCBIN_U32("graphics/pokemon/draconarix/unleashed/ice/shiny.gbapal.lz");
 const u32 gMonShinyPalette_DraconarixUnleashedFire[] = INCBIN_U32("graphics/pokemon/draconarix/unleashed/fire/shiny.gbapal.lz");
 const u32 gMonShinyPalette_DraconarixUnleashedElectric[] = INCBIN_U32("graphics/pokemon/draconarix/unleashed/electric/shiny.gbapal.lz");
+const u32 gMonShinyPalette_TogepiHetonian[] = INCBIN_U32("graphics/pokemon/togepi/hetonian/shiny.gbapal.lz");
+const u32 gMonShinyPalette_TogeticHetonian[] = INCBIN_U32("graphics/pokemon/togetic/hetonian/shiny.gbapal.lz");
+const u32 gMonShinyPalette_TogekissHetonian[] = INCBIN_U32("graphics/pokemon/togekiss/hetonian/shiny.gbapal.lz");
 #endif
 
 const u8 gMonIcon_QuestionMark[] = INCBIN_U8("graphics/pokemon/question_mark/icon.4bpp");
@@ -6293,6 +6305,9 @@ const u8 gMonIcon_DraconarixUnleashed[] = INCBIN_U8("graphics/pokemon/draconarix
 const u8 gMonIcon_DraconarixUnleashedIce[] = INCBIN_U8("graphics/pokemon/draconarix/unleashed/ice/icon.4bpp");
 const u8 gMonIcon_DraconarixUnleashedFire[] = INCBIN_U8("graphics/pokemon/draconarix/unleashed/fire/icon.4bpp");
 const u8 gMonIcon_DraconarixUnleashedElectric[] = INCBIN_U8("graphics/pokemon/draconarix/unleashed/electric/icon.4bpp");
+const u8 gMonIcon_TogepiHetonian[] = INCBIN_U8("graphics/pokemon/togepi/hetonian/icon.4bpp");
+const u8 gMonIcon_TogeticHetonian[] = INCBIN_U8("graphics/pokemon/togetic/hetonian/icon.4bpp");
+const u8 gMonIcon_TogekissHetonian[] = INCBIN_U8("graphics/pokemon/togekiss/hetonian/icon.4bpp");
 #endif
 
 const u8 gMonIcon_Egg[] = INCBIN_U8("graphics/pokemon/egg/icon.4bpp");
@@ -7209,6 +7224,9 @@ const u8 gMonFootprint_ApplinHetonian[] = INCBIN_U8("graphics/pokemon/applin/het
 const u8 gMonFootprint_Cocokame[] = INCBIN_U8("graphics/pokemon/cocokame/footprint.1bpp");
 const u8 gMonFootprint_Frococo[] = INCBIN_U8("graphics/pokemon/frococo/footprint.1bpp");
 const u8 gMonFootprint_Draconarix[] = INCBIN_U8("graphics/pokemon/draconarix/footprint.1bpp");
+const u8 gMonFootprint_TogepiHetonian[] = INCBIN_U8("graphics/pokemon/togepi/hetonian/footprint.1bpp");
+const u8 gMonFootprint_TogeticHetonian[] = INCBIN_U8("graphics/pokemon/togetic/hetonian/footprint.1bpp");
+const u8 gMonFootprint_TogekissHetonian[] = INCBIN_U8("graphics/pokemon/togekiss/hetonian/footprint.1bpp");
 //const u8 gMonFootprint_Wyrdeer[] = INCBIN_U8("graphics/pokemon/wyrdeer/footprint.1bpp");
 //const u8 gMonFootprint_Kleavor[] = INCBIN_U8("graphics/pokemon/kleavor/footprint.1bpp");
 //const u8 gMonFootprint_Ursaluna[] = INCBIN_U8("graphics/pokemon/ursaluna/footprint.1bpp");
