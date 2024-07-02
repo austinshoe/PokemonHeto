@@ -228,9 +228,9 @@ const struct FormChange *const gFormChangeTablePointers[NUM_SPECIES] =
     [SPECIES_ENAMORUS] = sEnamorusFormChangeTable,
     [SPECIES_ENAMORUS_THERIAN] = sEnamorusFormChangeTable,
     [SPECIES_DRACONARIX] = sDraconarixFormChangeTable,
-    [SPECIES_DRACONARIX_UNLEASHED] = sDraconarixFormChangeTable,
-    [SPECIES_DRACONARIX_UNLEASHED_ICE] = sDraconarixFormChangeTable,
-    [SPECIES_DRACONARIX_UNLEASHED_FIRE] = sDraconarixFormChangeTable,
-    [SPECIES_DRACONARIX_UNLEASHED_ELECTRIC] = sDraconarixFormChangeTable,
+    [SPECIES_DRACONARIX_UNLEASHED] = sDraconarixUnleashedFormChangeTable,
+    [SPECIES_DRACONARIX_UNLEASHED_ICE] = sDraconarixUnleashedIceFormChangeTable,
+    [SPECIES_DRACONARIX_UNLEASHED_FIRE] = sDraconarixUnleashedFireFormChangeTable,
+    [SPECIES_DRACONARIX_UNLEASHED_ELECTRIC] = sDraconarixUnleashedElectricFormChangeTable,
 #endif
 };
