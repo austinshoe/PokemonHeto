@@ -9655,7 +9655,7 @@ const struct Item gItems[] =
         .description = sEnergyCoreDesc,
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
-        .type = ITEM_USE_BAG_MENU,
+        .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_FormChange,
     },
     
@@ -9666,7 +9666,7 @@ const struct Item gItems[] =
         .description = sElectricCoreDesc,
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
-        .type = ITEM_USE_BAG_MENU,
+        .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_FormChange,
     },
     
@@ -9677,7 +9677,7 @@ const struct Item gItems[] =
         .description = sFireCoreDesc,
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
-        .type = ITEM_USE_BAG_MENU,
+        .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_FormChange,
     },
     
@@ -9688,7 +9688,7 @@ const struct Item gItems[] =
         .description = sIceCoreDesc,
         .importance = 1,
         .pocket = POCKET_KEY_ITEMS,
-        .type = ITEM_USE_BAG_MENU,
+        .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_FormChange,
     },
 };
