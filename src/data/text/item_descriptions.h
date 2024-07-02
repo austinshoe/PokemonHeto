@@ -3931,8 +3931,8 @@ static const u8 sElectricCoreDesc[] = _(
 
 static const u8 sFireCoreDesc[] = _(
     "A strange object.\n"
-    "It radiates heat and\n"
-    "is hot to the touch.");
+    "It radiates heat\n"
+    "and feels hot.");
 
 static const u8 sIceCoreDesc[] = _(
     "A strange object.\n"
