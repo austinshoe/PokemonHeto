@@ -2023,3 +2023,15 @@ const u32 gItemIconPalette_LustrousGlobe[] = INCBIN_U32("graphics/items/icon_pal
 
 const u32 gItemIcon_BerserkGene[] = INCBIN_U32("graphics/items/icons/berserk_gene.4bpp.lz");
 const u32 gItemIconPalette_BerserkGene[] = INCBIN_U32("graphics/items/icon_palettes/berserk_gene.gbapal.lz");
+
+const u32 gItemIcon_EnergyCore[] = INCBIN_U32("graphics/items/icons/energy_core.4bpp.lz");
+const u32 gItemIconPalette_BerserkGene[] = INCBIN_U32("graphics/items/icon_palettes/energy_core.gbapal.lz");
+
+const u32 gItemIcon_ElectricCore[] = INCBIN_U32("graphics/items/icons/electric_core.4bpp.lz");
+const u32 gItemIconPalette_BerserkGene[] = INCBIN_U32("graphics/items/icon_palettes/electric_core.gbapal.lz");
+
+const u32 gItemIcon_FireCore[] = INCBIN_U32("graphics/items/icons/fire_core.4bpp.lz");
+const u32 gItemIconPalette_BerserkGene[] = INCBIN_U32("graphics/items/icon_palettes/fire_core.gbapal.lz");
+
+const u32 gItemIcon_IceCore[] = INCBIN_U32("graphics/items/icons/ice_core.4bpp.lz");
+const u32 gItemIconPalette_BerserkGene[] = INCBIN_U32("graphics/items/icon_palettes/ice_core.gbapal.lz");

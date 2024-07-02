@@ -9647,4 +9647,48 @@ const struct Item gItems[] =
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
         .flingPower = 10,
     },
+    
+    [ITEM_ENERGY_CORE] =
+    {
+        .name = _("Energy Core"),
+        .price = 0,
+        .description = sEnergyCoreDesc,
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_FormChange,
+    },
+    
+    [ITEM_ELEC_CORE] =
+    {
+        .name = _("Electric Core"),
+        .price = 0,
+        .description = sElectricCoreDesc,
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_FormChange,
+    },
+    
+    [ITEM_FIRE_CORE] =
+    {
+        .name = _("Fire Core"),
+        .price = 0,
+        .description = sFireCoreDesc,
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_FormChange,
+    },
+    
+    [ITEM_ICE_CORE] =
+    {
+        .name = _("Fire Core"),
+        .price = 0,
+        .description = sIceCoreDesc,
+        .importance = 1,
+        .pocket = POCKET_KEY_ITEMS,
+        .type = ITEM_USE_BAG_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_FormChange,
+    },
 };

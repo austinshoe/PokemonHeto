@@ -9081,6 +9081,14 @@ extern const u32 gItemIcon_LustrousGlobe[];
 extern const u32 gItemIconPalette_LustrousGlobe[];
 extern const u32 gItemIcon_BerserkGene[];
 extern const u32 gItemIconPalette_BerserkGene[];
+extern const u32 gItemIcon_EnergyCore[];
+extern const u32 gItemIconPalette_EnergyCore[];
+extern const u32 gItemIcon_ElectricCore[];
+extern const u32 gItemIconPalette_ElectricCore[];
+extern const u32 gItemIcon_FireCore[];
+extern const u32 gItemIconPalette_FireCore[];
+extern const u32 gItemIcon_IceCore[];
+extern const u32 gItemIconPalette_IceCore[];
 
 extern const u32 gItemIcon_ReturnToFieldArrow[];
 extern const u32 gItemIconPalette_ReturnToFieldArrow[];
