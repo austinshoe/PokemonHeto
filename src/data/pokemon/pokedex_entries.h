@@ -10905,7 +10905,7 @@ const struct PokedexEntry gPokedexEntries[] =
         .trainerOffset = 0,
     },
     
-    [NATIONAL_DEX_COCOKAME] =
+    [NATIONAL_DEX_DRACONARIX] =
     {
         .categoryName = _("Energy"),
         .height = 20,

@@ -5411,7 +5411,7 @@ const u8 gFrococoPokedexText[] = _(
     "the fronds. It is protective of its shell,\n"
     "which is both its armor and camouflage.");
 
-const u8 gFrococoPokedexText[] = _(
+const u8 gDraconarixPokedexText[] = _(
     "Draconarix is the Pokémon embodying\n"
     "raw power. Even in its weakened state,\n"
     "it is easily one of the strongest. In its\n"
