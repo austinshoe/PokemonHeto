@@ -24880,7 +24880,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .flags = SPECIES_FLAG_LEGENDARY,
     },
     
-    [SPECIES_DRACONARIX_UNLEASHED_ICE] =
+    [SPECIES_DRACONARIX_UNLEASHED_ELECTRIC] =
     {
         .baseHP        = 170,
         .baseAttack    = 70,
