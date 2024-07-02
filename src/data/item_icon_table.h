@@ -845,7 +845,7 @@ const u32 *const gItemIconTable[ITEMS_COUNT + 1][2] =
     [ITEM_PEAT_BLOCK] = {gItemIcon_PeatBlock, gItemIconPalette_PeatBlock},
     [ITEM_BERSERK_GENE] = {gItemIcon_BerserkGene, gItemIconPalette_BerserkGene},
     [ITEM_ENERGY_CORE] = {gItemIcon_EnergyCore, gItemIconPalette_EnergyCore},
-    [ITEM_ELECTRIC_CORE] = {gItemIcon_ElectricCore, gItemIconPalette_ElectricCore},
+    [ITEM_ELEC_CORE] = {gItemIcon_ElectricCore, gItemIconPalette_ElectricCore},
     [ITEM_FIRE_CORE] = {gItemIcon_FireCore, gItemIconPalette_FireCore},
     [ITEM_ICE_CORE] = {gItemIcon_IceCore, gItemIconPalette_IceCore},
     // Return to field arrow
