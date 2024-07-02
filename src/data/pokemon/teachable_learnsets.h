@@ -33648,7 +33648,7 @@ static const u16 sFrococoTeachableLearnset[] = {
 
 static const u16 sDraconarixTeachableLearnset[] = {
     MOVE_AERIAL_ACE,
-    MOVE_DRAGON_CLAW
+    MOVE_DRAGON_CLAW,
     MOVE_BLIZZARD,
     MOVE_BRICK_BREAK,
     MOVE_BULK_UP,
