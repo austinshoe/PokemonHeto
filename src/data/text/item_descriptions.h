@@ -3921,20 +3921,20 @@ static const u8 sBerserkGene[] = _(
 
 static const u8 sEnergyCoreDesc[] = _(
     "A mysterious orb.\n"
-    "It radiates a powerful\n"
-    "aura.");
+    "It radiates a\n"
+    "powerful aura.");
 
 static const u8 sElectricCoreDesc[] = _(
-    "A mysterious object.\n"
-    "It gives off a tingly\n"
-    "feeling.");
+    "A strange object.\n"
+    "The air feels tingly\n"
+    "around it.");
 
 static const u8 sFireCoreDesc[] = _(
-    "A mysterious object.\n"
-    "It radiates heat and is\n"
-    "hot to the touch.");
+    "A strange object.\n"
+    "It radiates heat and\n"
+    "is hot to the touch.");
 
 static const u8 sIceCoreDesc[] = _(
-    "A mysterious object.\n"
-    "It gives off a chilly\n"
+    "A strange object.\n"
+    "It gives off a cold\n"
     "and harsh energy.");

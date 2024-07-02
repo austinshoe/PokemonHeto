@@ -9683,7 +9683,7 @@ const struct Item gItems[] =
     
     [ITEM_ICE_CORE] =
     {
-        .name = _("Fire Core"),
+        .name = _("Ice Core"),
         .price = 0,
         .description = sIceCoreDesc,
         .importance = 1,
