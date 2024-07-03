@@ -1345,5 +1345,8 @@ const u8 gSpeciesNames[NUM_SPECIES][POKEMON_NAME_LENGTH + 1] = {
     [SPECIES_CALYREX_SHADOW_RIDER] = _("Calyrex"),
     [SPECIES_BASCULEGION_FEMALE] = _("Bsculegion"),
     [SPECIES_APPLIN_HETONIAN] = _("Applin"),
+    [SPECIES_TOGEPI_HETONIAN] = _("Togepi"),
+    [SPECIES_TOGETIC_HETONIAN] = _("Togetic"),
+    [SPECIES_TOGEKISS_HETONIAN] = _("Togekiss"),
 #endif
 };

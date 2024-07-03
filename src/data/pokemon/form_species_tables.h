@@ -1157,4 +1157,22 @@ static const u16 sApplinFormSpeciesIdTable[] = {
     FORM_SPECIES_END,
 };
 
+static const u16 sTogepiFormSpeciesIdTable[] = {
+    SPECIES_TOGEPI,
+    SPECIES_TOGEPI_HETONIAN,
+    FORM_SPECIES_END,
+};
+
+static const u16 sTogeticFormSpeciesIdTable[] = {
+    SPECIES_TOGETIC,
+    SPECIES_TOGETIC_HETONIAN,
+    FORM_SPECIES_END,
+};
+
+static const u16 sTogekissFormSpeciesIdTable[] = {
+    SPECIES_TOGEKISS,
+    SPECIES_TOGEKISS_HETONIAN,
+    FORM_SPECIES_END,
+};
+
 #endif

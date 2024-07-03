@@ -594,5 +594,8 @@ const u16 *const gFormSpeciesIdTables[NUM_SPECIES] =
     // Basculegion
     [SPECIES_BASCULEGION_FEMALE] = sBasculegionFormSpeciesIdTable,
     [SPECIES_APPLIN_HETONIAN] = sApplinFormSpeciesIdTable,
+    [SPECIES_TOGEPI_HETONIAN] = sTogepiFormSpeciesIdTable,
+    [SPECIES_TOGETIC_HETONIAN] = sTogeticFormSpeciesIdTable,
+    [SPECIES_TOGEKISS_HETONIAN] = sTogekissFormSpeciesIdTable,
 #endif
 };
