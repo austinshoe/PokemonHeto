@@ -2543,6 +2543,9 @@ const u8 gMonIconPaletteIndices[] =
     [SPECIES_COCOKAME] = 2,
     [SPECIES_FROCOCO] = 1,
     [SPECIES_DRACONARIX] = 0,
+    [SPECIES_TOGEPI_HETONIAN] = 0,
+    [SPECIES_TOGETIC_HETONIAN] = 0,
+    [SPECIES_TOGEKISS_HETONIAN] = 2,
 #endif
     [SPECIES_EGG] = 1,
 };
