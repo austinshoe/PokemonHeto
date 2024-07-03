@@ -97,6 +97,7 @@ PearlTownRivalBattle::
     waitmessage
     closemessage
     fadescreen FADE_TO_BLACK
+    hideobjectat 3, MAP_PEARL_TOWN
     fadescreen FADE_FROM_BLACK
     releaseall
     end
