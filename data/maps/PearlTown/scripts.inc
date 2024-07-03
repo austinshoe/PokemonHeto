@@ -96,6 +96,8 @@ PearlTownRivalBattle::
     msgbox Text_Postbattle3, MSGBOX_DEFAULT
     waitmessage
     closemessage
+    applymovement 3, PearlTown_MovementWalkAway
+    waitmovement 0
     fadescreen FADE_TO_BLACK
     hideobjectat 3, MAP_PEARL_TOWN
     fadescreen FADE_FROM_BLACK
@@ -162,6 +164,19 @@ PearlTown_MovementRivalLeave:
     step_end
     
 PearlTown_MovementPreminder:
+    walk_left
+    step_end
+
+PearlTown_MovementWalkAway:
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
     walk_left
     step_end
 
