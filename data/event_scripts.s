@@ -1185,3 +1185,11 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/VoltVeldt/scripts.inc"
 
 	.include "data/maps/HallowSparkCity/scripts.inc"
+
+	.include "data/maps/FallGroveHouse2/scripts.inc"
+
+	.include "data/maps/NewMap12/scripts.inc"
+
+	.include "data/maps/FallGroveHouse4/scripts.inc"
+
+	.include "data/maps/MtEmberfallDraconarixLair/scripts.inc"

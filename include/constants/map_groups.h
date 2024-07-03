@@ -655,18 +655,22 @@
 // gMapGroup_IndoorFallGrove
 #define MAP_RESEARCHERS_HOUSE (0 | (38 << 8))
 #define MAP_FALL_GROVE_HOUSE1 (1 | (38 << 8))
+#define MAP_FALL_GROVE_HOUSE2 (2 | (38 << 8))
+#define MAP_NEW_MAP12         (3 | (38 << 8))
+#define MAP_FALL_GROVE_HOUSE4 (4 | (38 << 8))
 
 // gMapGroup_IndoorCoralShore
 #define MAP_CORAL_SHORE_MART (0 | (39 << 8))
 
 // gMapGroup_NewDungeons
-#define MAP_WINTERS_PASSAGE    (0 | (40 << 8))
-#define MAP_WINTERS_PASSAGE2F  (1 | (40 << 8))
-#define MAP_TUNNELAFTERKASSAAN (2 | (40 << 8))
-#define MAP_TUNELUNDRABAND     (3 | (40 << 8))
-#define MAP_MT_EMBERFALL       (4 | (40 << 8))
-#define MAP_MT_EMBERFALL2      (5 | (40 << 8))
-#define MAP_MT_EMBERFALL3      (6 | (40 << 8))
+#define MAP_WINTERS_PASSAGE              (0 | (40 << 8))
+#define MAP_WINTERS_PASSAGE2F            (1 | (40 << 8))
+#define MAP_TUNNELAFTERKASSAAN           (2 | (40 << 8))
+#define MAP_TUNELUNDRABAND               (3 | (40 << 8))
+#define MAP_MT_EMBERFALL                 (4 | (40 << 8))
+#define MAP_MT_EMBERFALL2                (5 | (40 << 8))
+#define MAP_MT_EMBERFALL3                (6 | (40 << 8))
+#define MAP_MT_EMBERFALL_DRACONARIX_LAIR (7 | (40 << 8))
 
 #define MAP_GROUPS_COUNT 41
 

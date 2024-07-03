@@ -6036,6 +6036,54 @@
       "secondary_tileset": "gTileset_Hallowspark2",
       "border_filepath": "data/layouts/HallowSparkCity/border.bin",
       "blockdata_filepath": "data/layouts/HallowSparkCity/map.bin"
+    },
+    {
+      "id": "LAYOUT_FALL_GROVE_HOUSE2",
+      "name": "FallGroveHouse2_Layout",
+      "width": 11,
+      "height": 9,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/FallGroveHouse2/border.bin",
+      "blockdata_filepath": "data/layouts/FallGroveHouse2/map.bin"
+    },
+    {
+      "id": "LAYOUT_NEW_MAP12",
+      "name": "NewMap12_Layout",
+      "width": 10,
+      "height": 8,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Sbekeeezi1",
+      "secondary_tileset": "gTileset_Sbekeeezi2",
+      "border_filepath": "data/layouts/NewMap12/border.bin",
+      "blockdata_filepath": "data/layouts/NewMap12/map.bin"
+    },
+    {
+      "id": "LAYOUT_FALL_GROVE_HOUSE4",
+      "name": "FallGroveHouse4_Layout",
+      "width": 10,
+      "height": 8,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/FallGroveHouse4/border.bin",
+      "blockdata_filepath": "data/layouts/FallGroveHouse4/map.bin"
+    },
+    {
+      "id": "LAYOUT_MT_EMBERFALL_DRACONARIX_LAIR",
+      "name": "MtEmberfallDraconarixLair_Layout",
+      "width": 80,
+      "height": 30,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_volcano1",
+      "secondary_tileset": "gTileset_volcano_2",
+      "border_filepath": "data/layouts/MtEmberfallDraconarixLair/border.bin",
+      "blockdata_filepath": "data/layouts/MtEmberfallDraconarixLair/map.bin"
     }
   ]
 }

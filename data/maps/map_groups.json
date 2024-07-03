@@ -691,7 +691,10 @@
   ],
   "gMapGroup_IndoorFallGrove": [
     "ResearchersHouse",
-    "FallGroveHouse1"
+    "FallGroveHouse1",
+    "FallGroveHouse2",
+    "NewMap12",
+    "FallGroveHouse4"
   ],
   "gMapGroup_IndoorCoralShore": [
     "CoralShoreMart"
@@ -703,6 +706,7 @@
     "tunelundraband",
     "MtEmberfall",
     "MtEmberfall2",
-    "MtEmberfall3"
+    "MtEmberfall3",
+    "MtEmberfallDraconarixLair"
   ]
 }
