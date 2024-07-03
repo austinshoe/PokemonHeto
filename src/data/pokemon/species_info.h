@@ -24926,7 +24926,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .noFlip = FALSE,
     },
 
-    [SPECIES_TOGETIC] =
+    [SPECIES_TOGETIC_HETONIAN] =
     {
         .baseHP        = 55,
         .baseAttack    = 40,
@@ -24948,7 +24948,7 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .noFlip = FALSE,
     },
     
-    [SPECIES_TOGEKISS] =
+    [SPECIES_TOGEKISS_HETONIAN] =
     {
         .baseHP        = 85,
         .baseAttack    = 45,
@@ -24968,5 +24968,6 @@ const struct SpeciesInfo gSpeciesInfo[] =
         .abilities = {ABILITY_SOUL_HEART, ABILITY_SERENE_GRACE, ABILITY_SUPER_LUCK},
         .bodyColor = BODY_COLOR_BLACK,
         .noFlip = TRUE,
+    },
 #endif
 };

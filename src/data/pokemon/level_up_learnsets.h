@@ -19709,12 +19709,12 @@ static const struct LevelUpMove sTogeticHetonianLevelUpLearnset[] = {
 };
 
 static const struct LevelUpMove sTogekissHetonianLevelUpLearnset[] = {
-    LEVEL_UP_MOVE( 1, MOVE_AFTER_YOU),
     LEVEL_UP_MOVE( 0, MOVE_SKY_ATTACK),
     LEVEL_UP_MOVE( 0, MOVE_EXTREME_SPEED),
     LEVEL_UP_MOVE( 0, MOVE_AURA_SPHERE),
     LEVEL_UP_MOVE( 0, MOVE_DAZZLING_GLEAM),
     LEVEL_UP_MOVE( 0, MOVE_SHADOW_BALL),
+    LEVEL_UP_MOVE( 1, MOVE_AFTER_YOU),
     LEVEL_UP_MOVE( 1, MOVE_AIR_SLASH),
     LEVEL_UP_MOVE( 1, MOVE_DARK_PULSE),
     LEVEL_UP_MOVE( 1, MOVE_MYSTICAL_FIRE),
