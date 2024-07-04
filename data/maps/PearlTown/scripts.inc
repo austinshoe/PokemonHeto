@@ -171,13 +171,23 @@ PearlTown_MovementWalkAway:
     walk_left
     walk_left
     walk_left
-    walk_left
-    walk_left
-    walk_left
-    walk_left
-    walk_left
-    walk_left
-    walk_left
+    walk_fast_left
+    walk_fast_left
+    walk_fast_left
+    walk_fast_left
+    walk_fast_left
+    walk_fast_left
+    walk_fast_left
+    walk_fast_left
+    walk_fast_left
+    walk_fast_left
+    walk_fast_left
+    walk_fast_left
+    walk_fast_left
+    walk_fast_left
+    walk_fast_left
+    walk_fast_left
+    walk_fast_left
     step_end
 
 Text_DangerousNoPokemon:
