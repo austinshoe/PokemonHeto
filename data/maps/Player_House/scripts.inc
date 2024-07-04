@@ -1,5 +1,10 @@
 Player_House_MapScripts::
-	.byte 0
+    map_script MAP_SCRIPT_ON_TRANSITION, Player_House_OnTransition
+    .byte 0
+
+Player_House_OnTransition:
+    setrespawn HEAL_LOCATION_PEARL_TOWN
+    end
 
 Player_House_Mom::
     lock
