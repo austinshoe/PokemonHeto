@@ -6084,6 +6084,18 @@
       "secondary_tileset": "gTileset_volcano_2",
       "border_filepath": "data/layouts/MtEmberfallDraconarixLair/border.bin",
       "blockdata_filepath": "data/layouts/MtEmberfallDraconarixLair/map.bin"
+    },
+    {
+      "id": "LAYOUT_HETONIAN_DESERT",
+      "name": "HetonianDesert_Layout",
+      "width": 50,
+      "height": 100,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Cacti",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/HetonianDesert/border.bin",
+      "blockdata_filepath": "data/layouts/HetonianDesert/map.bin"
     }
   ]
 }

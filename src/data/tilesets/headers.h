@@ -968,3 +968,14 @@ const struct Tileset gTileset_Hallowspark2 =
     .metatileAttributes = gMetatileAttributes_Hallowspark2,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_Cacti =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_Cacti,
+    .palettes = gTilesetPalettes_Cacti,
+    .metatiles = gMetatiles_Cacti,
+    .metatileAttributes = gMetatileAttributes_Cacti,
+    .callback = NULL,
+};

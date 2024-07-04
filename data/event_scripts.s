@@ -1193,3 +1193,5 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/FallGroveHouse4/scripts.inc"
 
 	.include "data/maps/MtEmberfallDraconarixLair/scripts.inc"
+
+	.include "data/maps/HetonianDesert/scripts.inc"

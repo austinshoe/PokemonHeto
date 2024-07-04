@@ -1881,3 +1881,22 @@ const u16 gTilesetPalettes_Hallowspark2[][16] =
 };
 
 const u32 gTilesetTiles_Hallowspark2[] = INCBIN_U32("data/tilesets/secondary/hallowspark_2/tiles.4bpp.lz");
+
+const u16 gTilesetPalettes_Cacti[][16] =
+{
+    INCBIN_U16("data/tilesets/primary/cacti/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/primary/cacti/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/primary/cacti/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/primary/cacti/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/primary/cacti/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/primary/cacti/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/primary/cacti/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/primary/cacti/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/primary/cacti/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/primary/cacti/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/primary/cacti/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/primary/cacti/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/primary/cacti/palettes/12.gbapal"),
+};
+
+const u32 gTilesetTiles_Cacti[] = INCBIN_U32("data/tilesets/primary/cacti/tiles.4bpp.lz");
