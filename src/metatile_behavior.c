@@ -274,6 +274,23 @@ bool8 MetatileBehavior_IsNonAnimDoor(u8 metatileBehavior)
         return FALSE;
 }
 
+bool8 MetatileBehavior_IsNonAnimDoorLeft(u8 metatileBehavior)
+{
+    if (metatileBehavior == MB_NON_ANIMATED_DOOR_LEFT)
+        return TRUE;
+    else
+        return FALSE;
+}
+
+bool8 MetatileBehavior_IsNonAnimDoorRight(u8 metatileBehavior)
+{
+    if (metatileBehavior == MB_NON_ANIMATED_DOOR_RIGHT)
+        return TRUE;
+    else
+        return FALSE;
+}
+
+
 bool8 MetatileBehavior_IsDeepSouthWarp(u8 metatileBehavior)
 {
     if (metatileBehavior == MB_DEEP_SOUTH_WARP)
