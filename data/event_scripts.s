@@ -1195,3 +1195,5 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/MtEmberfallDraconarixLair/scripts.inc"
 
 	.include "data/maps/HetonianDesert/scripts.inc"
+
+	.include "data/maps/CoralShoreCenter/scripts.inc"

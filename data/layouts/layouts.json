@@ -6096,6 +6096,18 @@
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/HetonianDesert/border.bin",
       "blockdata_filepath": "data/layouts/HetonianDesert/map.bin"
+    },
+    {
+      "id": "LAYOUT_CORAL_SHORE_CENTER",
+      "name": "CoralShoreCenter_Layout",
+      "width": 14,
+      "height": 9,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/CoralShoreCenter/border.bin",
+      "blockdata_filepath": "data/layouts/CoralShoreCenter/map.bin"
     }
   ]
 }

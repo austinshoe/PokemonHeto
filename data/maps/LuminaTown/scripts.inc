@@ -9,8 +9,18 @@ LuminaTown_StoreClerk::
     compare VAR_RESULT, NO
     goto_if_eq LuminaTown_Know
     msgbox Text_ShowAround, MSGBOX_DEFAULT
+    checkitemspace ITEM_POTION, 1
+    compare VAR_RESULT, FALSE
+    goto_if_eq LuminaTown_NotEnoughSpaceInBag
+    giveitem ITEM_POTION
+    msgbox Text_visit, MSGBOX_DEFAULT
+    setflag FLAG_RECEIVED_POTION_OLDALE
     release
     end
+    
+LuminaTown_NotEnoughSpaceInBag::
+    msgbox Text_BagIsFull MSGBOX_DEFAULT
+    release end
     
 LuminaTown_LilBoy::
     lock
@@ -49,4 +59,15 @@ Text_FeelFree:
     
 Text_ShowAround:
     .string "I see!\l"
-    .string "Let me show you around the town.$"
+    .string "Let me give you a run down of the town.\p"
+    .string "That blue roofed building next to us is\n"
+    .string "called a {COLOR BLUE}PokéMart{COLOR DARK_GRAY}. You can find a\l"
+    .string "variety of Items there.\l"
+    .string "Almost every town or city has one.\p"
+    .string "The red roofed ones are called\n"
+    .string "{COLOR RED}PokéCenters{COLOR DARK_GRAY}.\l"
+    .string "You can get your Pokémon healed there\l"
+    .string "free of charge.$"
+
+Text_BagIsFull:
+    .string "Your Bag is full.$"

@@ -698,7 +698,8 @@
     "FallGroveHouse4"
   ],
   "gMapGroup_IndoorCoralShore": [
-    "CoralShoreMart"
+    "CoralShoreMart",
+    "CoralShoreCenter"
   ],
   "gMapGroup_NewDungeons": [
     "WintersPassage",

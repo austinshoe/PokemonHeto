@@ -1,12 +1,12 @@
 {
-  "id": "MAP_CORAL_SHORE_MART",
-  "name": "CoralShoreMart",
-  "layout": "LAYOUT_CORAL_SHORE_MART",
+  "id": "MAP_CORAL_SHORE_CENTER",
+  "name": "CoralShoreCenter",
+  "layout": "LAYOUT_CORAL_SHORE_CENTER",
   "music": "MUS_ABANDONED_SHIP",
   "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
-  "map_type": "MAP_TYPE_INDOOR",
+  "map_type": "MAP_TYPE_UNKNOWN",
   "allow_cycling": false,
   "allow_escaping": false,
   "allow_running": true,
@@ -18,18 +18,18 @@
   ],
   "warp_events": [
     {
-      "x": 3,
-      "y": 7,
+      "x": 6,
+      "y": 8,
       "elevation": 0,
       "dest_map": "MAP_NEW_MAP8",
-      "dest_warp_id": "1"
+      "dest_warp_id": "0"
     },
     {
-      "x": 4,
-      "y": 7,
+      "x": 7,
+      "y": 8,
       "elevation": 0,
       "dest_map": "MAP_NEW_MAP8",
-      "dest_warp_id": "1"
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [
