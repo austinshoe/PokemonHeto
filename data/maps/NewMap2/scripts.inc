@@ -22,7 +22,7 @@ Script_GiveEgg2::
     getpartysize
     compare VAR_RESULT, 6
     goto_if_eq Script_PlayerHasFullParty
-    givemon SPECIES_HONEDGE
+    giveegg SPECIES_HONEDGE
     playfanfare MUS_OBTAIN_ITEM
     msgbox Text_ReceivedEgg, MSGBOX_DEFAULT
     setflag FLAG_UNUSED_0x020

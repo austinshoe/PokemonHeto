@@ -20,7 +20,8 @@ LuminaTown_StoreClerk::
     
 LuminaTown_NotEnoughSpaceInBag::
     msgbox Text_BagIsFull MSGBOX_DEFAULT
-    release end
+    release
+    end
     
 LuminaTown_LilBoy::
     lock
