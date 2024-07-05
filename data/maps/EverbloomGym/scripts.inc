@@ -2,6 +2,12 @@ EverbloomGym_MapScripts::
         map_script MAP_SCRIPT_ON_LOAD, Everbloom_Gym_OnLoad
         map_script MAP_SCRIPT_ON_RESUME, Everbloom_Gym_OnResume
 	.byte 0
+    
+Everbloom_Gym_OnLoad:
+    end
+
+Everbloom_Gym_OnResume:
+    end
 
 Everbloom_Gym_Guide::
     lock
