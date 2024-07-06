@@ -11,23 +11,22 @@ HetonianDesert_Random_Weather::
     case 3, HetonianDesert_WeatherSunny
     case 4, HetonianDesert_WeatherNormal
     case 5, HetonianDesert_WeatherNormal
-    case 6, HetonianDesert_WeatherHarshSunny
+    case 6, HetonianDesert_WeatherSunny
     case 7, HetonianDesert_WeatherSandStorm
     case 8, HetonianDesert_WeatherSunny
     case 9, HetonianDesert_WeatherSandStorm
+    end
 
 HetonianDesert_WeatherSandStorm::
     setweather WEATHER_SANDSTORM
     doweather
     end
+
 HetonianDesert_WeatherSunny::
-    setweather WEATHER_SUNNY
-    doweather
-    end
-HetonianDesert_WeatherHarshSunny::
     setweather WEATHER_DROUGHT
     doweather
     end
+
 HetonianDesert_WeatherNormal::
     setweather WEATHER_NONE
     doweather

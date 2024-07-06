@@ -11496,7 +11496,7 @@
           "map": "MAP_NEW_MAP2",
           "base_label": "gNewMap20",
           "land_mons": {
-            "encounter_rate": 20,
+            "encounter_rate": 15,
             "mons": [
               {
                 "min_level": 3,
@@ -11703,7 +11703,7 @@
           "map": "MAP_FROSTVALE_TUNDRA",
           "base_label": "gFrostvaleTundra0",
           "land_mons": {
-            "encounter_rate": 20,
+            "encounter_rate": 15,
             "mons": [
               {
                 "min_level": 5,
@@ -11772,7 +11772,7 @@
           "map": "MAP_NEW_MAP5",
           "base_label": "gNewMap50",
           "land_mons": {
-            "encounter_rate": 20,
+            "encounter_rate": 15,
             "mons": [
               {
                 "min_level": 5,
@@ -11910,7 +11910,7 @@
           "map": "MAP_FORESTYROUTETOWN",
           "base_label": "gforestyroutetown0",
           "land_mons": {
-            "encounter_rate": 30,
+            "encounter_rate": 15,
             "mons": [
               {
                 "min_level": 5,
@@ -11979,7 +11979,7 @@
           "map": "MAP_NEW_MAP8",
           "base_label": "gNewMap80",
           "land_mons": {
-            "encounter_rate": 25,
+            "encounter_rate": 15,
             "mons": [
               {
                 "min_level": 5,
@@ -12044,7 +12044,7 @@
             ]
           },
           "water_mons": {
-            "encounter_rate": 20,
+            "encounter_rate": 6,
             "mons": [
               {
                 "min_level": 5,
@@ -12133,7 +12133,7 @@
           "map": "MAP_FROSTVALE_TUNDRA2",
           "base_label": "gFrostvaleTundra20",
           "land_mons": {
-            "encounter_rate": 20,
+            "encounter_rate": 15,
             "mons": [
               {
                 "min_level": 5,
@@ -12202,7 +12202,7 @@
           "map": "MAP_NEW_MAP7",
           "base_label": "gNewMap70",
           "land_mons": {
-            "encounter_rate": 20,
+            "encounter_rate": 15,
             "mons": [
               {
                 "min_level": 5,
@@ -12271,7 +12271,7 @@
           "map": "MAP_ROUTEAFTERKASAAN",
           "base_label": "gRouteafterkasaan0",
           "land_mons": {
-            "encounter_rate": 25,
+            "encounter_rate": 15,
             "mons": [
               {
                 "min_level": 5,
@@ -12340,7 +12340,7 @@
           "map": "MAP_AZURE_TIDEWAY",
           "base_label": "gAzureTideway0",
           "water_mons": {
-            "encounter_rate": 15,
+            "encounter_rate": 6,
             "mons": [
               {
                 "min_level": 5,
@@ -12429,7 +12429,7 @@
           "map": "MAP_AZURE_TIDEWAY2",
           "base_label": "gAzureTideway20",
           "water_mons": {
-            "encounter_rate": 15,
+            "encounter_rate": 6,
             "mons": [
               {
                 "min_level": 5,
@@ -12794,7 +12794,7 @@
           "map": "MAP_NEPTUNES_DRIFT",
           "base_label": "gNeptunesDrift0",
           "water_mons": {
-            "encounter_rate": 20,
+            "encounter_rate": 10,
             "mons": [
               {
                 "min_level": 5,
