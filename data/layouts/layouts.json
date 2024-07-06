@@ -6093,7 +6093,7 @@
       "border_width": 2,
       "border_height": 2,
       "primary_tileset": "gTileset_Cacti",
-      "secondary_tileset": "gTileset_Petalburg",
+      "secondary_tileset": "gTileset_cacti2",
       "border_filepath": "data/layouts/HetonianDesert/border.bin",
       "blockdata_filepath": "data/layouts/HetonianDesert/map.bin"
     },

@@ -18,25 +18,11 @@
   ],
   "warp_events": [
     {
-      "x": 23,
-      "y": 6,
-      "elevation": 0,
-      "dest_map": "MAP_HALLOW_SPARK_CITY",
-      "dest_warp_id": "2"
-    },
-    {
       "x": 24,
       "y": 6,
       "elevation": 0,
       "dest_map": "MAP_HALLOW_SPARK_CITY",
       "dest_warp_id": "3"
-    },
-    {
-      "x": 25,
-      "y": 6,
-      "elevation": 0,
-      "dest_map": "MAP_HALLOW_SPARK_CITY",
-      "dest_warp_id": "4"
     }
   ],
   "coord_events": [

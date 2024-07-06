@@ -249,3 +249,6 @@ const u16 gMetatileAttributes_Hallowspark2[] = INCBIN_U16("data/tilesets/seconda
 
 const u16 gMetatiles_Cacti[] = INCBIN_U16("data/tilesets/primary/cacti/metatiles.bin");
 const u16 gMetatileAttributes_Cacti[] = INCBIN_U16("data/tilesets/primary/cacti/metatile_attributes.bin");
+
+const u16 gMetatiles_cacti2[] = INCBIN_U16("data/tilesets/secondary/cacti_2/metatiles.bin");
+const u16 gMetatileAttributes_cacti2[] = INCBIN_U16("data/tilesets/secondary/cacti_2/metatile_attributes.bin");
