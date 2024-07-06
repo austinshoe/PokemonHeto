@@ -180,7 +180,7 @@ bool8 MetatileBehavior_IsJumpSouth(u8 metatileBehavior)
 
 bool8 MetatileBehavior_IsPokeGrass(u8 metatileBehavior)
 {
-    if (metatileBehavior == MB_TALL_GRASS || metatileBehavior == MB_LONG_GRASS)
+    if (metatileBehavior == MB_TALL_GRASS || metatileBehavior == MB_LONG_GRASS || metatileBehavior == MB_SAND_GRASS)
         return TRUE;
     else
         return FALSE;
@@ -1293,6 +1293,7 @@ bool8 MetatileBehavior_IsCuttableGrass(u8 metatileBehavior)
 {
     if (metatileBehavior == MB_TALL_GRASS
      || metatileBehavior == MB_LONG_GRASS
+     || metatileBehavior == MB_SAND_GRASS
      || metatileBehavior == MB_ASHGRASS
      || metatileBehavior == MB_LONG_GRASS_SOUTH_EDGE)
         return TRUE;
