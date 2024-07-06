@@ -664,16 +664,23 @@
 #define MAP_CORAL_SHORE_MART   (0 | (39 << 8))
 #define MAP_CORAL_SHORE_CENTER (1 | (39 << 8))
 
-// gMapGroup_NewDungeons
-#define MAP_WINTERS_PASSAGE              (0 | (40 << 8))
-#define MAP_WINTERS_PASSAGE2F            (1 | (40 << 8))
-#define MAP_TUNNELAFTERKASSAAN           (2 | (40 << 8))
-#define MAP_TUNELUNDRABAND               (3 | (40 << 8))
-#define MAP_MT_EMBERFALL                 (4 | (40 << 8))
-#define MAP_MT_EMBERFALL2                (5 | (40 << 8))
-#define MAP_MT_EMBERFALL3                (6 | (40 << 8))
-#define MAP_MT_EMBERFALL_DRACONARIX_LAIR (7 | (40 << 8))
+// gMapGroup_IndoorOnsen
 
-#define MAP_GROUPS_COUNT 41
+// gMapGroup_IndoorHallowSpark
+
+// gMapGroup_Underwater
+#define MAP_NEPTUNETO_EMBERFALL (0 | (42 << 8))
+
+// gMapGroup_NewDungeons
+#define MAP_WINTERS_PASSAGE              (0 | (43 << 8))
+#define MAP_WINTERS_PASSAGE2F            (1 | (43 << 8))
+#define MAP_TUNNELAFTERKASSAAN           (2 | (43 << 8))
+#define MAP_TUNELUNDRABAND               (3 | (43 << 8))
+#define MAP_MT_EMBERFALL                 (4 | (43 << 8))
+#define MAP_MT_EMBERFALL2                (5 | (43 << 8))
+#define MAP_MT_EMBERFALL3                (6 | (43 << 8))
+#define MAP_MT_EMBERFALL_DRACONARIX_LAIR (7 | (43 << 8))
+
+#define MAP_GROUPS_COUNT 44
 
 #endif // GUARD_CONSTANTS_MAP_GROUPS_H

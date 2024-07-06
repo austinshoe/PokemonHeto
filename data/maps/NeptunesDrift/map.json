@@ -22,6 +22,11 @@
       "map": "MAP_VOLT_VELDT",
       "offset": 8,
       "direction": "right"
+    },
+    {
+      "map": "MAP_NEPTUNETO_EMBERFALL",
+      "offset": 0,
+      "direction": "dive"
     }
   ],
   "object_events": [

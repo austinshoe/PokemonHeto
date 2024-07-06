@@ -40,6 +40,9 @@
     "gMapGroup_IndoorKasaan",
     "gMapGroup_IndoorFallGrove",
     "gMapGroup_IndoorCoralShore",
+    "gMapGroup_IndoorOnsen",
+    "gMapGroup_IndoorHallowSpark",
+    "gMapGroup_Underwater",
     "gMapGroup_NewDungeons"
   ],
   "gMapGroup_TownsAndRoutes": [
@@ -700,6 +703,15 @@
   "gMapGroup_IndoorCoralShore": [
     "CoralShoreMart",
     "CoralShoreCenter"
+  ],
+  "gMapGroup_IndoorOnsen": [
+
+  ],
+  "gMapGroup_IndoorHallowSpark": [
+
+  ],
+  "gMapGroup_Underwater": [
+    "NeptunetoEmberfall"
   ],
   "gMapGroup_NewDungeons": [
     "WintersPassage",
