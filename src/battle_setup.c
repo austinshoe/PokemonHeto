@@ -712,10 +712,12 @@ u8 BattleSetup_GetTerrainId(void)
     tileBehavior = MapGridGetMetatileBehaviorAt(x, y);
 
     if (MetatileBehavior_IsTallGrass(tileBehavior))
-        if (MetatileBehavior_IsSand(tileBehavior))
+        if (MetatileBehavior_IsSandGrass(tileBehavior)) {
             return BATTLE_TERRAIN_SAND;
-        else
+        }
+        else {
             return BATTLE_TERRAIN_GRASS;
+        }
     if (MetatileBehavior_IsLongGrass(tileBehavior))
         return BATTLE_TERRAIN_LONG_GRASS;
     if (MetatileBehavior_IsSandOrDeepSand(tileBehavior))
