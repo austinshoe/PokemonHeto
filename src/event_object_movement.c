@@ -7788,15 +7788,11 @@ static void GetGroundEffectFlags_LongGrassOnSpawn(struct ObjectEvent *objEvent, 
 {
     if (MetatileBehavior_IsLongGrass(objEvent->currentMetatileBehavior))
         *flags |= GROUND_EFFECT_FLAG_LONG_GRASS_ON_SPAWN;
-    else if (MetatileBehavior_IsSandGrass(objEvent->currentMetatileBehavior))
-        *flags |= GROUND_EFFECT_FLAG_LONG_GRASS_ON_SPAWN;
 }
 
 static void GetGroundEffectFlags_LongGrassOnBeginStep(struct ObjectEvent *objEvent, u32 *flags)
 {
     if (MetatileBehavior_IsLongGrass(objEvent->currentMetatileBehavior))
-        *flags |= GROUND_EFFECT_FLAG_LONG_GRASS_ON_MOVE;
-    else if (MetatileBehavior_IsSandGrass(objEvent->currentMetatileBehavior))
         *flags |= GROUND_EFFECT_FLAG_LONG_GRASS_ON_MOVE;
 }
 
@@ -7916,7 +7912,6 @@ static void GetGroundEffectFlags_JumpLanding(struct ObjectEvent *objEvent, u32 *
         MetatileBehavior_IsSurfableWaterOrUnderwater,
         MetatileBehavior_IsShallowFlowingWater,
         MetatileBehavior_IsATile,
-        MetatileBehavior_IsSandGrass,
     };
 
     static const u32 jumpLandingFlags[] = {
@@ -7926,7 +7921,6 @@ static void GetGroundEffectFlags_JumpLanding(struct ObjectEvent *objEvent, u32 *
         GROUND_EFFECT_FLAG_LAND_IN_DEEP_WATER,
         GROUND_EFFECT_FLAG_LAND_IN_SHALLOW_WATER,
         GROUND_EFFECT_FLAG_LAND_ON_NORMAL_GROUND,
-        GROUND_EFFECT_FLAG_LAND_IN_TALL_GRASS,
     };
 
     if (objEvent->landingJump && !objEvent->disableJumpLandingGroundEffect)
@@ -8024,12 +8018,6 @@ static void SetObjectEventSpriteOamTableForLongGrass(struct ObjectEvent *objEven
         return;
 
     if (!MetatileBehavior_IsLongGrass(objEvent->previousMetatileBehavior))
-        return;
-    
-    if (!MetatileBehavior_IsSandGrass(objEvent->currentMetatileBehavior))
-        return;
-
-    if (!MetatileBehavior_IsSandGrass(objEvent->previousMetatileBehavior))
         return;
 
     sprite->subspriteTableNum = 4;
