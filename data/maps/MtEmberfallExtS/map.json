@@ -17,6 +17,11 @@
       "map": "MAP_ONSEN_CITY",
       "offset": 0,
       "direction": "left"
+    },
+    {
+      "map": "MAP_MT_EMBERFALL_CRATER",
+      "offset": 17,
+      "direction": "up"
     }
   ],
   "object_events": [

@@ -92,6 +92,7 @@
 #define MAP_HETONIAN_DESERT     (83 | (0 << 8))
 #define MAP_SUNA_TOWN           (84 | (0 << 8))
 #define MAP_MT_EMBERFALL_EXT_S  (85 | (0 << 8))
+#define MAP_MT_EMBERFALL_CRATER (86 | (0 << 8))
 
 // gMapGroup_IndoorLittleroot
 #define MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F    (0 | (1 << 8))

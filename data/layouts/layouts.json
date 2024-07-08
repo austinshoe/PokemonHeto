@@ -6180,6 +6180,18 @@
       "secondary_tileset": "gTileset_volcano_2",
       "border_filepath": "data/layouts/MtEmberfallExtS/border.bin",
       "blockdata_filepath": "data/layouts/MtEmberfallExtS/map.bin"
+    },
+    {
+      "id": "LAYOUT_MT_EMBERFALL_CRATER",
+      "name": "MtEmberfallCrater_Layout",
+      "width": 50,
+      "height": 50,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_volcano1",
+      "secondary_tileset": "gTileset_volcano_2",
+      "border_filepath": "data/layouts/MtEmberfallCrater/border.bin",
+      "blockdata_filepath": "data/layouts/MtEmberfallCrater/map.bin"
     }
   ]
 }

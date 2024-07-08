@@ -1209,3 +1209,5 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/MtEmberfallResurface/scripts.inc"
 
 	.include "data/maps/MtEmberfallExtS/scripts.inc"
+
+	.include "data/maps/MtEmberfallCrater/scripts.inc"
