@@ -1199,3 +1199,13 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/CoralShoreCenter/scripts.inc"
 
 	.include "data/maps/NeptunetoEmberfall/scripts.inc"
+
+	.include "data/maps/SunaTown/scripts.inc"
+
+	.include "data/maps/MtEmberfallUnderwater/scripts.inc"
+
+	.include "data/maps/MtEmberfallUnderwater2/scripts.inc"
+
+	.include "data/maps/MtEmberfallResurface/scripts.inc"
+
+	.include "data/maps/MtEmberfallExtS/scripts.inc"

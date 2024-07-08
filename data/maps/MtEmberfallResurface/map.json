@@ -1,34 +1,35 @@
 {
-  "id": "MAP_NEPTUNETO_EMBERFALL",
-  "name": "NeptunetoEmberfall",
-  "layout": "LAYOUT_NEPTUNETO_EMBERFALL",
+  "id": "MAP_MT_EMBERFALL_RESURFACE",
+  "name": "MtEmberfallResurface",
+  "layout": "LAYOUT_MT_EMBERFALL_RESURFACE",
   "music": "MUS_ABANDONED_SHIP",
   "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
   "requires_flash": false,
-  "weather": "WEATHER_UNDERWATER",
+  "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_UNDERWATER",
   "allow_cycling": false,
   "allow_escaping": false,
-  "allow_running": false,
+  "allow_running": true,
   "show_map_name": false,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "map": "MAP_NEPTUNES_DRIFT",
+      "map": "MAP_MT_EMBERFALL_UNDERWATER2",
       "offset": 0,
-      "direction": "emerge"
-    },
-    {
-      "map": "MAP_MT_EMBERFALL_UNDERWATER",
-      "offset": 5,
-      "direction": "down"
+      "direction": "dive"
     }
   ],
   "object_events": [
 
   ],
   "warp_events": [
-
+    {
+      "x": 12,
+      "y": 5,
+      "elevation": 0,
+      "dest_map": "MAP_MT_EMBERFALL_EXT_S",
+      "dest_warp_id": "0"
+    }
   ],
   "coord_events": [
 

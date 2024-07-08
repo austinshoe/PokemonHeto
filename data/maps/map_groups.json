@@ -129,7 +129,9 @@
     "NeptunesDrift",
     "VoltVeldt",
     "HallowSparkCity",
-    "HetonianDesert"
+    "HetonianDesert",
+    "SunaTown",
+    "MtEmberfallExtS"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",
@@ -711,7 +713,9 @@
 
   ],
   "gMapGroup_Underwater": [
-    "NeptunetoEmberfall"
+    "NeptunetoEmberfall",
+    "MtEmberfallUnderwater",
+    "MtEmberfallUnderwater2"
   ],
   "gMapGroup_NewDungeons": [
     "WintersPassage",
@@ -721,6 +725,7 @@
     "MtEmberfall",
     "MtEmberfall2",
     "MtEmberfall3",
-    "MtEmberfallDraconarixLair"
+    "MtEmberfallDraconarixLair",
+    "MtEmberfallResurface"
   ]
 }

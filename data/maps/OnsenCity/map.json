@@ -17,6 +17,11 @@
       "map": "MAP_MT_EMBERFALL_EXT",
       "offset": 4,
       "direction": "left"
+    },
+    {
+      "map": "MAP_MT_EMBERFALL_EXT_S",
+      "offset": 0,
+      "direction": "right"
     }
   ],
   "object_events": [

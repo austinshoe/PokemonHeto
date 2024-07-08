@@ -6120,6 +6120,66 @@
       "secondary_tileset": "gTileset_Underwater",
       "border_filepath": "data/layouts/NeptunetoEmberfall/border.bin",
       "blockdata_filepath": "data/layouts/NeptunetoEmberfall/map.bin"
+    },
+    {
+      "id": "LAYOUT_SUNA_TOWN",
+      "name": "SunaTown_Layout",
+      "width": 40,
+      "height": 40,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Cacti",
+      "secondary_tileset": "gTileset_cacti2",
+      "border_filepath": "data/layouts/SunaTown/border.bin",
+      "blockdata_filepath": "data/layouts/SunaTown/map.bin"
+    },
+    {
+      "id": "LAYOUT_MT_EMBERFALL_UNDERWATER",
+      "name": "MtEmberfallUnderwater_Layout",
+      "width": 50,
+      "height": 20,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Underwater",
+      "border_filepath": "data/layouts/MtEmberfallUnderwater/border.bin",
+      "blockdata_filepath": "data/layouts/MtEmberfallUnderwater/map.bin"
+    },
+    {
+      "id": "LAYOUT_MT_EMBERFALL_UNDERWATER2",
+      "name": "MtEmberfallUnderwater2_Layout",
+      "width": 16,
+      "height": 16,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Underwater",
+      "border_filepath": "data/layouts/MtEmberfallUnderwater2/border.bin",
+      "blockdata_filepath": "data/layouts/MtEmberfallUnderwater2/map.bin"
+    },
+    {
+      "id": "LAYOUT_MT_EMBERFALL_RESURFACE",
+      "name": "MtEmberfallResurface_Layout",
+      "width": 16,
+      "height": 16,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/MtEmberfallResurface/border.bin",
+      "blockdata_filepath": "data/layouts/MtEmberfallResurface/map.bin"
+    },
+    {
+      "id": "LAYOUT_MT_EMBERFALL_EXT_S",
+      "name": "MtEmberfallExtS_Layout",
+      "width": 40,
+      "height": 70,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_volcano1",
+      "secondary_tileset": "gTileset_volcano_2",
+      "border_filepath": "data/layouts/MtEmberfallExtS/border.bin",
+      "blockdata_filepath": "data/layouts/MtEmberfallExtS/map.bin"
     }
   ]
 }

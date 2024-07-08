@@ -90,6 +90,8 @@
 #define MAP_VOLT_VELDT          (81 | (0 << 8))
 #define MAP_HALLOW_SPARK_CITY   (82 | (0 << 8))
 #define MAP_HETONIAN_DESERT     (83 | (0 << 8))
+#define MAP_SUNA_TOWN           (84 | (0 << 8))
+#define MAP_MT_EMBERFALL_EXT_S  (85 | (0 << 8))
 
 // gMapGroup_IndoorLittleroot
 #define MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F    (0 | (1 << 8))
@@ -669,7 +671,9 @@
 // gMapGroup_IndoorHallowSpark
 
 // gMapGroup_Underwater
-#define MAP_NEPTUNETO_EMBERFALL (0 | (42 << 8))
+#define MAP_NEPTUNETO_EMBERFALL      (0 | (42 << 8))
+#define MAP_MT_EMBERFALL_UNDERWATER  (1 | (42 << 8))
+#define MAP_MT_EMBERFALL_UNDERWATER2 (2 | (42 << 8))
 
 // gMapGroup_NewDungeons
 #define MAP_WINTERS_PASSAGE              (0 | (43 << 8))
@@ -680,6 +684,7 @@
 #define MAP_MT_EMBERFALL2                (5 | (43 << 8))
 #define MAP_MT_EMBERFALL3                (6 | (43 << 8))
 #define MAP_MT_EMBERFALL_DRACONARIX_LAIR (7 | (43 << 8))
+#define MAP_MT_EMBERFALL_RESURFACE       (8 | (43 << 8))
 
 #define MAP_GROUPS_COUNT 44
 
