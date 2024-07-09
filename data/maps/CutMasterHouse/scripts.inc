@@ -5,7 +5,7 @@ Everbloom_FlashMaster::
     lock
     faceplayer
     goto_if_unset FLAG_RECEIVED_HM_FLASH, Everbloom_GiveFlash
-    msgbox Everbloom_HasFlash, MSHBOX_DEFAULT
+    msgbox Everbloom_HasFlash, MSGBOX_DEFAULT
     release
     end
 

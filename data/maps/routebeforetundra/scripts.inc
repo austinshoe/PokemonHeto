@@ -7,7 +7,7 @@ PostEverbloomTrigger::
     applymovement 1, Common_Movement_ExclamationMark
     waitmovement 1
     msgbox PostEverbloomNeedFlash, MSGBOX_DEFAULT
-    applymovement OBJ_EVENT_ID_PLAYER, KeepItSteppin
+    applymovement OBJ_EVENT_ID_PLAYER, Movement_KeepItSteppin
     waitmovement OBJ_EVENT_ID_PLAYER
     release
     end
@@ -40,7 +40,7 @@ PostEverbloomNeedFlash:
     .string "cave systems, so you need to beat the\l"
     .string "Everbloom Gym.$"
 
-KeepItSteppin:
+Movement_KeepItSteppin:
     walk_up
     walk_up
     step_end
