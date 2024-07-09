@@ -51,7 +51,7 @@
       "elevation": 0,
       "var": "VAR_TEMP_MIXED_RECORDS",
       "var_value": "0",
-      "script": "KeepItSteppin"
+      "script": "PostEverbloomTrigger"
     }
   ],
   "bg_events": [
