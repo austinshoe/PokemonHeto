@@ -29,7 +29,7 @@ PostEverbloomHiker2::
     release
     end
 
-PostEverbloomUseFlash
+PostEverbloomUseFlash:
     .string "Hey!\n"
     .string "Kid, use {SHADOW DARK_GRAY}Flash {SHADOW LIGHT_GRAY}to light up caves.$"
 
