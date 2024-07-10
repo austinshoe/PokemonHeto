@@ -3,17 +3,17 @@ EverbloomCity_MapScripts::
 	.byte 0
 
 Everbloom_OnTransition::
-    goto_if_unset FLAG_DEFEATED_RUSTBORO_GYM, Everbloom_VarZero
-    goto_if_set FLAG_DEFEATED_RUSTBORO_GYM, Everbloom_VarOne
+    call_if_unset FLAG_DEFEATED_RUSTBORO_GYM, Everbloom_VarZero
+    call_if_set FLAG_DEFEATED_RUSTBORO_GYM, Everbloom_VarOne
     end
 
 Everbloom_VarZero::
     setvar VAR_RUSTBORO_CITY_STATE, 0
-    end
+    return
 
 Everbloom_VarOne::
     setvar VAR_RUSTBORO_CITY_STATE, 1
-    end
+    return
 
 Script_EverbloomCityFan::
     lock
