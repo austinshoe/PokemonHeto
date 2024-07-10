@@ -36,7 +36,7 @@ PostEverbloomUseFlash:
 PostEverbloomNeedFlash:
     .string "Hey!\n"
     .string "Kid, you need to be able to use{SHADOW DARK_GRAY} Flash\l"
-    .string "if you want to be able to navigate the\l"
+    .string "{SHADOW LIGHT_GRAY}if you want to be able to navigate the\l"
     .string "cave systems, so you need to beat the\l"
     .string "Everbloom Gym.$"
 

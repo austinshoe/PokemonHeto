@@ -46,7 +46,7 @@ LuminaTown_Know::
     end
 
 Text_visit:
-    .string "Please feel free to visit our PokéMart\n"
+    .string "Please feel free to visit our {COLOR BLUE}PokéMart{COLOR DARK_GRAY}\n"
     .string "for anything you might need.$"
     
 Text_NeedHelp:
