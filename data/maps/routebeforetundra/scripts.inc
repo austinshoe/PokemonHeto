@@ -2,19 +2,15 @@ routebeforetundra_MapScripts::
 	.byte 0
 
 PostEverbloomTrigger::
-    lock
-    goto_if_unset FLAG_DEFEATED_RUSTBORO_GYM, PostEverbloomTrigger2
+    lockall
     applymovement 1, Common_Movement_ExclamationMark
     waitmovement 1
     msgbox PostEverbloomNeedFlash, MSGBOX_DEFAULT
     applymovement OBJ_EVENT_ID_PLAYER, Movement_KeepItSteppin
     waitmovement OBJ_EVENT_ID_PLAYER
-    release
+    releaseall
     end
 
-PostEverbloomTrigger2::
-    release
-    end
 
 PostEverbloomHiker::
     lock
