@@ -6192,6 +6192,54 @@
       "secondary_tileset": "gTileset_volcano_2",
       "border_filepath": "data/layouts/MtEmberfallCrater/border.bin",
       "blockdata_filepath": "data/layouts/MtEmberfallCrater/map.bin"
+    },
+    {
+      "id": "LAYOUT_CORAL_SHORE_EX_SEAMAN",
+      "name": "CoralShoreExSeaman_Layout",
+      "width": 9,
+      "height": 7,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/CoralShoreExSeaman/border.bin",
+      "blockdata_filepath": "data/layouts/CoralShoreExSeaman/map.bin"
+    },
+    {
+      "id": "LAYOUT_CORAL_SHORE_OLD_ROD",
+      "name": "CoralShoreOldRod_Layout",
+      "width": 10,
+      "height": 8,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/CoralShoreOldRod/border.bin",
+      "blockdata_filepath": "data/layouts/CoralShoreOldRod/map.bin"
+    },
+    {
+      "id": "LAYOUT_CORAL_SHORE_HOUSE1",
+      "name": "CoralShoreHouse1_Layout",
+      "width": 9,
+      "height": 7,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/CoralShoreHouse1/border.bin",
+      "blockdata_filepath": "data/layouts/CoralShoreHouse1/map.bin"
+    },
+    {
+      "id": "LAYOUT_CORAL_SHORE_HOUSE2",
+      "name": "CoralShoreHouse2_Layout",
+      "width": 10,
+      "height": 8,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/CoralShoreHouse2/border.bin",
+      "blockdata_filepath": "data/layouts/CoralShoreHouse2/map.bin"
     }
   ]
 }

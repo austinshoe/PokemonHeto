@@ -705,7 +705,11 @@
   ],
   "gMapGroup_IndoorCoralShore": [
     "CoralShoreMart",
-    "CoralShoreCenter"
+    "CoralShoreCenter",
+    "CoralShoreExSeaman",
+    "CoralShoreOldRod",
+    "CoralShoreHouse1",
+    "CoralShoreHouse2"
   ],
   "gMapGroup_IndoorOnsen": [
 

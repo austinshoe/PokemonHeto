@@ -37,6 +37,6 @@ PostEverbloomNeedFlash:
     .string "Everbloom Gym.$"
 
 Movement_KeepItSteppin:
-    walk_up
-    walk_up
+    walk_right
+    walk_right
     step_end

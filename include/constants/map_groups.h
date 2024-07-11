@@ -664,8 +664,12 @@
 #define MAP_FALL_GROVE_HOUSE4 (4 | (38 << 8))
 
 // gMapGroup_IndoorCoralShore
-#define MAP_CORAL_SHORE_MART   (0 | (39 << 8))
-#define MAP_CORAL_SHORE_CENTER (1 | (39 << 8))
+#define MAP_CORAL_SHORE_MART      (0 | (39 << 8))
+#define MAP_CORAL_SHORE_CENTER    (1 | (39 << 8))
+#define MAP_CORAL_SHORE_EX_SEAMAN (2 | (39 << 8))
+#define MAP_CORAL_SHORE_OLD_ROD   (3 | (39 << 8))
+#define MAP_CORAL_SHORE_HOUSE1    (4 | (39 << 8))
+#define MAP_CORAL_SHORE_HOUSE2    (5 | (39 << 8))
 
 // gMapGroup_IndoorOnsen
 

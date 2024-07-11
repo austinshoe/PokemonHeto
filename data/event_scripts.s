@@ -1211,3 +1211,11 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/MtEmberfallExtS/scripts.inc"
 
 	.include "data/maps/MtEmberfallCrater/scripts.inc"
+
+	.include "data/maps/CoralShoreExSeaman/scripts.inc"
+
+	.include "data/maps/CoralShoreOldRod/scripts.inc"
+
+	.include "data/maps/CoralShoreHouse1/scripts.inc"
+
+	.include "data/maps/CoralShoreHouse2/scripts.inc"

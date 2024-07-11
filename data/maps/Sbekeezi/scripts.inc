@@ -1,6 +1,22 @@
 Sbekeezi_MapScripts::
 	.byte 0
 
+Sbekeezi_Bartender::
+    lock
+    faceplayer
+    applymovement 3, Common_Movement_ExclamationMark
+    msgbox Text_Bartender, MSGBOX_DEFAULT
+    waitmessage
+    closemessage
+    fadescreen FADE_TO_BLACK
+    warp MAP_KASAAN, 4
+    fadescreen FADE_FROM_BLACK
+    msgbox Text_SbekeeziKickedOut, MSGBOX_DEFAULT
+    release
+    end
+    
+    
+
 Script_KassanSpeakeasy1::
     lock
     faceplayer
@@ -60,3 +76,12 @@ Text_KassanSpeakeasyNerd2:
     .string "{COLOR DARK_GRAY}, if that piano man stops playing one\l"
     .string "more time, I will do unspeakable things\l"
     .string "to him.$"
+
+Text_Bartender:
+    .string "Hey!\n"
+    .string "What are you doing here?\l"
+    .string "Get out of here! Scram!$"
+
+Text_SbekeeziKickedOut:
+    .string "{PLAYER} was\n"
+    .string "forcibly ejected from the club.$"
