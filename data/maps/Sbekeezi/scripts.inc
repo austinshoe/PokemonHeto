@@ -52,7 +52,8 @@ Text_KassanSpeakeasyPiano:
     .string "{FONT_SMALL_NARROW}Hey!\n"
     .string "Don’t talk to me!\l"
     .string "If that kid over there hears that I\l"
-    .string "stopped playing piano he’ll beat my ass.$"
+    .string "stopped playing piano he’ll beat my ass.\p"
+    .string "$"
 
 Text_KassanSpeakeasyNerd1:
     .string "{COLOR DARK_GRAY}{SHADOW DARK_GRAY}Kid:{SHADOW LIGHT_GRAY} Oi!\n"
@@ -62,7 +63,8 @@ Text_KassanSpeakeasyWhip:
     .string "{SHADOW DARK_GRAY}Kid: {SHADOW LIGHT_GRAY}Imma whip you\p"
     .string "{SHADOW DARK_GRAY}Piano man: {SHADOW LIGHT_GRAY}{COLOR RED}OW!!!!{COLOR DARK_GRAY}That hurt so freaking\n"
     .string "bad!\l"
-    .string "Wahhhhhhhh$"
+    .string "Wahhhhhhhh\p"
+    .string "$"
 
 Script_KassanSpeakeasy2::
     lock
