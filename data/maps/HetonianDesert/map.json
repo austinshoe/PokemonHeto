@@ -15,7 +15,7 @@
   "connections": [
     {
       "map": "MAP_SUNA_TOWN",
-      "offset": 10,
+      "offset": 9,
       "direction": "down"
     }
   ],
