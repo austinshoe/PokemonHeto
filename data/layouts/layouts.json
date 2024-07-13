@@ -6244,8 +6244,8 @@
     {
       "id": "LAYOUT_RUINVEIL_CITY",
       "name": "RuinveilCity_Layout",
-      "width": 40,
-      "height": 40,
+      "width": 70,
+      "height": 70,
       "border_width": 2,
       "border_height": 2,
       "primary_tileset": "gTileset_Ruinveil",
