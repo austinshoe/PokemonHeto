@@ -8,10 +8,13 @@ Sbekeezi_Bartender::
     msgbox Text_Bartender, MSGBOX_DEFAULT
     waitmessage
     closemessage
+    msgbox Text_SbekeeziKickedOut, MSGBOX_DEFAULT
+    waitmessage
+    closemessage
     fadescreen FADE_TO_BLACK
     warp MAP_KASAAN, 4
+    delay 32
     fadescreen FADE_FROM_BLACK
-    msgbox Text_SbekeeziKickedOut, MSGBOX_DEFAULT
     release
     end
     
@@ -57,7 +60,8 @@ Text_KassanSpeakeasyPiano:
 
 Text_KassanSpeakeasyNerd1:
     .string "{COLOR DARK_GRAY}{SHADOW DARK_GRAY}Kid:{SHADOW LIGHT_GRAY} Oi!\n"
-    .string "Why’d you stop playing?$"
+    .string "Why’d you stop playing?\p"
+    .string "$"
 
 Text_KassanSpeakeasyWhip:
     .string "{SHADOW DARK_GRAY}Kid: {SHADOW LIGHT_GRAY}Imma whip you\p"

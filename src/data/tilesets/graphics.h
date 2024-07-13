@@ -1919,3 +1919,22 @@ const u16 gTilesetPalettes_cacti2[][16] =
 };
 
 const u32 gTilesetTiles_cacti2[] = INCBIN_U32("data/tilesets/secondary/cacti_2/tiles.4bpp.lz");
+
+const u16 gTilesetPalettes_Ruinveil[][16] =
+{
+    INCBIN_U16("data/tilesets/primary/ruinveil/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/primary/ruinveil/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/primary/ruinveil/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/primary/ruinveil/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/primary/ruinveil/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/primary/ruinveil/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/primary/ruinveil/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/primary/ruinveil/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/primary/ruinveil/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/primary/ruinveil/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/primary/ruinveil/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/primary/ruinveil/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/primary/ruinveil/palettes/12.gbapal"),
+};
+
+const u32 gTilesetTiles_Ruinveil[] = INCBIN_U32("data/tilesets/primary/ruinveil/tiles.4bpp.lz");

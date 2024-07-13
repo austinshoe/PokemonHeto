@@ -990,3 +990,14 @@ const struct Tileset gTileset_cacti2 =
     .metatileAttributes = gMetatileAttributes_cacti2,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_Ruinveil =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_Ruinveil,
+    .palettes = gTilesetPalettes_Ruinveil,
+    .metatiles = gMetatiles_Ruinveil,
+    .metatileAttributes = gMetatileAttributes_Ruinveil,
+    .callback = NULL,
+};

@@ -1219,3 +1219,5 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/CoralShoreHouse1/scripts.inc"
 
 	.include "data/maps/CoralShoreHouse2/scripts.inc"
+
+	.include "data/maps/RuinveilCity/scripts.inc"

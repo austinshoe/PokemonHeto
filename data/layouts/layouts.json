@@ -6125,7 +6125,7 @@
       "id": "LAYOUT_SUNA_TOWN",
       "name": "SunaTown_Layout",
       "width": 40,
-      "height": 40,
+      "height": 39,
       "border_width": 2,
       "border_height": 2,
       "primary_tileset": "gTileset_Cacti",
@@ -6240,6 +6240,18 @@
       "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/CoralShoreHouse2/border.bin",
       "blockdata_filepath": "data/layouts/CoralShoreHouse2/map.bin"
+    },
+    {
+      "id": "LAYOUT_RUINVEIL_CITY",
+      "name": "RuinveilCity_Layout",
+      "width": 40,
+      "height": 40,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Ruinveil",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/RuinveilCity/border.bin",
+      "blockdata_filepath": "data/layouts/RuinveilCity/map.bin"
     }
   ]
 }

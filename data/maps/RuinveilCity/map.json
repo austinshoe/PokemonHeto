@@ -1,33 +1,27 @@
 {
-  "id": "MAP_SUNA_TOWN",
-  "name": "SunaTown",
-  "layout": "LAYOUT_SUNA_TOWN",
+  "id": "MAP_RUINVEIL_CITY",
+  "name": "RuinveilCity",
+  "layout": "LAYOUT_RUINVEIL_CITY",
   "music": "MUS_ABANDONED_SHIP",
   "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
-  "map_type": "MAP_TYPE_TOWN",
+  "map_type": "MAP_TYPE_CITY",
   "allow_cycling": true,
   "allow_escaping": false,
   "allow_running": true,
   "show_map_name": true,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
-  "connections": [
-    {
-      "map": "MAP_HETONIAN_DESERT",
-      "offset": -9,
-      "direction": "up"
-    }
-  ],
+  "connections": 0,
   "object_events": [
 
   ],
   "warp_events": [
     {
-      "x": 12,
-      "y": 14,
+      "x": 19,
+      "y": 6,
       "elevation": 0,
-      "dest_map": "MAP_RUINVEIL_CITY",
+      "dest_map": "MAP_SUNA_TOWN",
       "dest_warp_id": "0"
     }
   ],
