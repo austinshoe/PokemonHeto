@@ -44,7 +44,7 @@ Movement_KeepItSteppin:
 Script_EverbloomCaveRouteKid1::
     lock
     faceplayer
-    msgbox Text_EverbloomCaveRouteKid, MSGBOX_DEFAULT
+    msgbox Text_EverbloomCaveRouteKid1, MSGBOX_DEFAULT
     release
     end
 
