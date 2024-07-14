@@ -23,6 +23,6 @@ Script_EverbloomOrchard1::
 
 Text_EverbloomOrchard1:
     .string "Did you know?\n"
-    .string "Everbloom City is the region’s #1\l"
+    .string "Everbloom City is the region’s no. 1\l"
     .string "exporter of honey thanks to this\l"
     .string "orchard!$"
