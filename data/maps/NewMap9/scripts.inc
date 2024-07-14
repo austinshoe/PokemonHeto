@@ -35,7 +35,7 @@ Text_EverbloomPokeCenter2:
     .string "Personally, I disagree.\l"
     .string "I think Weedle is the strongest cuz\l"
     .string "that thing mopped the floor with my\l"
-    .string "{COLOR BLUE}PRIMAL KYOGRE.l"
+    .string "{COLOR BLUE}PRIMAL KYOGRE.\l"
     .string "{COLOR DARK_GRAY}I wonder if Weedle is a\l"
     .string "Legendary Pokémon.$"
 
