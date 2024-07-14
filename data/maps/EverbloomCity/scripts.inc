@@ -27,3 +27,51 @@ Text_EverbloomCityFan:
     .string "so cool!\l"
     .string "Did you know, she was the one who\l"
     .string "discovered the uses of the {COLOR RED}{SHADOW LIGHT_RED}Big Root{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}!$"
+
+Script_EverbloomCitySign::
+    lock
+    faceplayer
+    msgbox Text_EverbloomCitySign, MSGBOX_DEFAULT
+    release
+    end
+
+Text_EverbloomCitySign:
+    .string "{COLOR BLUE}Everbloom City\n"
+    .string "{COLOR DARK_GRAY}The flower that bends with the wind$"
+    
+Script_EverbloomCityWoman1::
+    lock
+    faceplayer
+    msgbox Text_EverbloomCityWoman1, MSGBOX_DEFAULT
+    release
+    end
+
+Text_EverbloomCityWoman1:
+    .string "Everbloom’s flowers bloom year round,\n"
+    .string "and our trees are green year round too!\p"
+    .string "Now that I think about it, I do suppose\l"
+    .string "that most routes are like that too...$"
+
+Script_EverbloomCityMan1::
+    lock
+    faceplayer
+    msgbox Text_EverbloomCityMan1, MSGBOX_DEFAULT
+    release
+    end
+
+Text_EverbloomCityMan1:
+    .string "Everbloom City’s known for its orchard!\n"
+    .string "As you’d expect, the gym leader here,\l"
+    .string "Flora, uses grass types when she\l"
+    .string "battles!$"
+
+Script_EverbloomCityWoman2::
+    lock
+    faceplayer
+    msgbox Text_EverbloomCityWoman2, MSGBOX_DEFAULT
+    release
+    end
+
+Text_EverbloomCityWoman2:
+    .string "It might be time for me to water my\n"
+    .string "flowers again...$"

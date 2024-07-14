@@ -72,3 +72,14 @@ Text_ShowAround:
 
 Text_BagIsFull:
     .string "Your Bag is full.$"
+
+Script_LuminaCitySign::
+    lock
+    faceplayer
+    msgbox Text_LuminaCitySign, MSGBOX_DEFAULT
+    release
+    end
+
+Text_LuminaCitySign:
+    .string "{COLOR BLUE}Lumina Town\n"
+    .string "{COLOR DARK_GRAY}The first step of a 1000-mile journey\l"
