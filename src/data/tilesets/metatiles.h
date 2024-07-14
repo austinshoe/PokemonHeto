@@ -255,3 +255,6 @@ const u16 gMetatileAttributes_cacti2[] = INCBIN_U16("data/tilesets/secondary/cac
 
 const u16 gMetatiles_Ruinveil[] = INCBIN_U16("data/tilesets/primary/ruinveil/metatiles.bin");
 const u16 gMetatileAttributes_Ruinveil[] = INCBIN_U16("data/tilesets/primary/ruinveil/metatile_attributes.bin");
+
+const u16 gMetatiles_ruinveil2[] = INCBIN_U16("data/tilesets/secondary/ruinveil_2/metatiles.bin");
+const u16 gMetatileAttributes_ruinveil2[] = INCBIN_U16("data/tilesets/secondary/ruinveil_2/metatile_attributes.bin");

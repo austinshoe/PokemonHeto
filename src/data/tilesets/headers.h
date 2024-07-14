@@ -1001,3 +1001,14 @@ const struct Tileset gTileset_Ruinveil =
     .metatileAttributes = gMetatileAttributes_Ruinveil,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_ruinveil2 =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_ruinveil2,
+    .palettes = gTilesetPalettes_ruinveil2,
+    .metatiles = gMetatiles_ruinveil2,
+    .metatileAttributes = gMetatileAttributes_ruinveil2,
+    .callback = NULL,
+};
