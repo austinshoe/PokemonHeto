@@ -10,7 +10,7 @@ Script_WintersPassageMan1::
 
 Text_WintersPassageMan1:
     .string "What?\n"
-    .string "It’s cold?l"
+    .string "It’s cold?\l"
     .string "Listen kid, I’ve been working here for\l"
     .string "25 years, just axing away at this rock.\l"
     .string "If I can handle it, then you can to.\n"
