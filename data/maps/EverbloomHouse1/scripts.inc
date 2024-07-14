@@ -13,7 +13,7 @@ Text_EverbloomHouse11:
     .string "your Pokémon, the more it likes you!\l"
     .string "The measurement we use for this is\l"
     .string "called {COLOR RED}Friendship!\l"
-    .string "{COLOR DARK_GRAY} The friendship you have with a Pokémon\n"
+    .string "{COLOR DARK_GRAY} The friendship you have with a Pokémon\l"
     .string "affects the strength of certain moves.$"
 
 Script_EverbloomHouse12::
