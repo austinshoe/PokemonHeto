@@ -64,6 +64,6 @@ Script_EverbloomCaveRouteMan1::
 
 Text_EverbloomCaveRouteMan1:
     .string "Certain Pokéballs work better in caves.\n"
-    .string "I personally prefer {COLOR_RED}Dusk Balls{COLOR DARK_GRAY}, they\l"
+    .string "I personally prefer {COLOR RED}Dusk Balls{COLOR DARK_GRAY}, they\l"
     .string "catch everything in caves.\l"
     .string "It doesn’t even have to be dark!$"

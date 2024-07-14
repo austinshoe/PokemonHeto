@@ -39,5 +39,5 @@ Script_EverbloomFlashMasterHouse1::
 
 Text_EverbloomCutMasterHouse1:
     .string "When it gets dark outside,\n"
-    .string "Daddy uses {SHADOW_DARK_GRAY}Flash {SHADOW_LIGHT_GRAY}to light up our\l"
+    .string "Daddy uses {SHADOW DARK_GRAY}Flash {SHADOW LIGHT_GRAY}to light up our\l"
     .string "surroundings.$"
