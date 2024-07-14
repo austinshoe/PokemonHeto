@@ -29,3 +29,15 @@ Text_Everbloom_ExplainFlash:
 
 Everbloom_HasFlash:
     .string "Good luck on your journey!$"
+
+Script_EverbloomFlashMasterHouse1::
+    lock
+    faceplayer
+    msgbox Text_EverbloomCutMasterHouse1, MSGBOX_DEFAULT
+    release
+    end
+
+Text_EverbloomCutMasterHouse1:
+    .string "When it gets dark outside,\n"
+    .string "Daddy uses Flash to light up our\l"
+    .string "surroundings.$"

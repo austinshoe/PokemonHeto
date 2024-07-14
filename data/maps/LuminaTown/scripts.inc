@@ -82,4 +82,4 @@ Script_LuminaCitySign::
 
 Text_LuminaCitySign:
     .string "{COLOR BLUE}Lumina Town\n"
-    .string "{COLOR DARK_GRAY}The first step of a 1000-mile journey\l"
+    .string "{COLOR DARK_GRAY}The first step of a 1000-mile journey$"

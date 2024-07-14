@@ -6,3 +6,47 @@ NewMap9_MapScripts::
 Everbloom_Center_OnTransition::
     setrespawn HEAL_LOCATION_EVERBLOOM_CITY
     end
+
+Script_EverbloomPokéCenter1::
+    lock
+    faceplayer
+    msgbox Text_EverbloomPokéCenter1, MSGBOX_DEFAULT
+    release
+    end
+
+Text_EverbloomPokéCenter1:
+    .string "That wild Caterpie out there defeated\n"
+    .string "my {SHADOW DARK_GRAY}Arceus!{SHADOW LIGHT_GRAY}\l"
+    .string "Luckily I ran back here and got it all\l"
+    .string "healed up by Nurse Joy!\l"
+    .string "I think I’m going to propose to her\l"
+    .string "once I turn 8.$"
+
+Script_EverbloomPokéCenter2::
+    lock
+    faceplayer
+    msgbox Text_EverbloomPokéCenter2, MSGBOX_DEFAULT
+    release
+    end
+
+Text_EverbloomPokéCenter2:
+    .string "A lot of people think that Caterpie\n"
+    .string "is the strongest Pokémon out there.\l"
+    .string "Personally, I disagree.\l"
+    .string "I think Weedle is the strongest cuz\l"
+    .string "that thing mopped the floor with my\l"
+    .string "{COLOR BLUE}PRIMAL KYOGRE.l"
+    .string "{COLOR DARK_GRAY}I wonder if Weedle is a\l"
+    .string "Legendary Pokémon.$"
+
+Script_EverbloomPokéCenter3::
+    lock
+    faceplayer
+    msgbox Text_EverbloomPokéCenter3, MSGBOX_DEFAULT
+    release
+    end
+
+Text_EverbloomPokéCenter3:
+    .string "Sometimes, if you are too far from a\n"
+    .string "PokéCenter, you can use healing items\l"
+    .string "like {COLOR RED}Potions {COLOR DARK_GRAY} to heal your party.$"

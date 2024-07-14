@@ -75,3 +75,17 @@ Script_EverbloomCityWoman2::
 Text_EverbloomCityWoman2:
     .string "It might be time for me to water my\n"
     .string "flowers again...$"
+
+Script_EverbloomCityExGirlfriend::
+    lock
+    faceplayer
+    msgbox Text_EverbloomCityExGirlfriend, MSGBOX_DEFAULT
+    release
+    end
+
+Text_EverbloomCityExGirlfriend:
+    .string "I broke up with my boyfriend cuz he\n"
+    .string "was simping for the female love\l"
+    .string "interest of some random anime.\l"
+    .string "Like, what am I even supposed to do in\l"
+    .string "that kind of situation?$"
