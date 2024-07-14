@@ -55,12 +55,12 @@ Text_FrostvaleTundraKid1:
     .string "That thing one shot my Charizard\l"
     .string "and Blaziken.$"
 
-Script_FrostvaleTundraSign
+Script_FrostvaleTundraSign::
     lock
     faceplayer
     msgbox Text_FrostvaleTundraSign, MSGBOX_DEFAULT
     release
     end
     
-Text_FrostvaleTundraSign
+Text_FrostvaleTundraSign:
     .string "Welcome to {COLOR BLUE}Frostvale Tundra$"
