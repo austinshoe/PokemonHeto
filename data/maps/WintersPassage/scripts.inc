@@ -14,7 +14,7 @@ Text_WintersPassageMan1:
     .string "Listen kid, I’ve been working here for\l"
     .string "25 years, just axing away at this rock.\l"
     .string "If I can handle it, then you can to.\n"
-    .string "{FONT SMALL_NARROW}Kids these days...$"
+    .string "{FONT_SMALL_NARROW}Kids these days...$"
 
 Script_WintersPassageMan2::
     lock
