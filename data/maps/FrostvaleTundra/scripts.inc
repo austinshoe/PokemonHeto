@@ -58,7 +58,7 @@ Text_FrostvaleTundraKid1:
 Script_FrostvaleTundraSign
     lock
     faceplayer
-    msgbox Text_FrostvaleTundraSign
+    msgbox Text_FrostvaleTundraSign, MSGBOX_DEFAULT
     release
     end
     
