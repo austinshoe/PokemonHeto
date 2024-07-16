@@ -6252,6 +6252,66 @@
       "secondary_tileset": "gTileset_ruinveil2",
       "border_filepath": "data/layouts/RuinveilCity/border.bin",
       "blockdata_filepath": "data/layouts/RuinveilCity/map.bin"
+    },
+    {
+      "id": "LAYOUT_NEW_MAP13",
+      "name": "NewMap13_Layout",
+      "width": 20,
+      "height": 60,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Underwater",
+      "border_filepath": "data/layouts/NewMap13/border.bin",
+      "blockdata_filepath": "data/layouts/NewMap13/map.bin"
+    },
+    {
+      "id": "LAYOUT_RESURFACEBEFORE_SILVERSTONE",
+      "name": "ResurfacebeforeSilverstone_Layout",
+      "width": 20,
+      "height": 20,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Underwater",
+      "border_filepath": "data/layouts/ResurfacebeforeSilverstone/border.bin",
+      "blockdata_filepath": "data/layouts/ResurfacebeforeSilverstone/map.bin"
+    },
+    {
+      "id": "LAYOUT_PRE_TRITON_BAY",
+      "name": "PreTritonBay_Layout",
+      "width": 20,
+      "height": 20,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Dewford",
+      "border_filepath": "data/layouts/PreTritonBay/border.bin",
+      "blockdata_filepath": "data/layouts/PreTritonBay/map.bin"
+    },
+    {
+      "id": "LAYOUT_TRITON_BAY",
+      "name": "TritonBay_Layout",
+      "width": 80,
+      "height": 40,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Dewford",
+      "border_filepath": "data/layouts/TritonBay/border.bin",
+      "blockdata_filepath": "data/layouts/TritonBay/map.bin"
+    },
+    {
+      "id": "LAYOUT_LUMINARA_TOWN",
+      "name": "LuminaraTown_Layout",
+      "width": 40,
+      "height": 40,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Luminara",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/LuminaraTown/border.bin",
+      "blockdata_filepath": "data/layouts/LuminaraTown/map.bin"
     }
   ]
 }

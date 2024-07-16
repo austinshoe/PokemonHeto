@@ -1,11 +1,11 @@
 {
-  "id": "MAP_NEPTUNETO_EMBERFALL",
-  "name": "NeptunetoEmberfall",
-  "layout": "LAYOUT_NEPTUNETO_EMBERFALL",
+  "id": "MAP_RESURFACEBEFORE_SILVERSTONE",
+  "name": "ResurfacebeforeSilverstone",
+  "layout": "LAYOUT_RESURFACEBEFORE_SILVERSTONE",
   "music": "MUS_ABANDONED_SHIP",
   "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
   "requires_flash": false,
-  "weather": "WEATHER_UNDERWATER",
+  "weather": "WEATHER_NONE",
   "map_type": "MAP_TYPE_UNDERWATER",
   "allow_cycling": false,
   "allow_escaping": false,
@@ -14,19 +14,14 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "map": "MAP_NEPTUNES_DRIFT",
+      "map": "MAP_NEW_MAP13",
+      "offset": 0,
+      "direction": "up"
+    },
+    {
+      "map": "MAP_PRE_TRITON_BAY",
       "offset": 0,
       "direction": "emerge"
-    },
-    {
-      "map": "MAP_MT_EMBERFALL_UNDERWATER",
-      "offset": 5,
-      "direction": "down"
-    },
-    {
-      "map": "MAP_NEW_MAP13",
-      "offset": 60,
-      "direction": "down"
     }
   ],
   "object_events": [

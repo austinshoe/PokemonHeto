@@ -94,6 +94,9 @@
 #define MAP_MT_EMBERFALL_EXT_S  (85 | (0 << 8))
 #define MAP_MT_EMBERFALL_CRATER (86 | (0 << 8))
 #define MAP_RUINVEIL_CITY       (87 | (0 << 8))
+#define MAP_PRE_TRITON_BAY      (88 | (0 << 8))
+#define MAP_TRITON_BAY          (89 | (0 << 8))
+#define MAP_LUMINARA_TOWN       (90 | (0 << 8))
 
 // gMapGroup_IndoorLittleroot
 #define MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F    (0 | (1 << 8))
@@ -677,9 +680,11 @@
 // gMapGroup_IndoorHallowSpark
 
 // gMapGroup_Underwater
-#define MAP_NEPTUNETO_EMBERFALL      (0 | (42 << 8))
-#define MAP_MT_EMBERFALL_UNDERWATER  (1 | (42 << 8))
-#define MAP_MT_EMBERFALL_UNDERWATER2 (2 | (42 << 8))
+#define MAP_NEPTUNETO_EMBERFALL         (0 | (42 << 8))
+#define MAP_MT_EMBERFALL_UNDERWATER     (1 | (42 << 8))
+#define MAP_MT_EMBERFALL_UNDERWATER2    (2 | (42 << 8))
+#define MAP_NEW_MAP13                   (3 | (42 << 8))
+#define MAP_RESURFACEBEFORE_SILVERSTONE (4 | (42 << 8))
 
 // gMapGroup_NewDungeons
 #define MAP_WINTERS_PASSAGE              (0 | (43 << 8))

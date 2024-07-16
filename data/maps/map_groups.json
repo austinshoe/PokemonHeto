@@ -133,7 +133,10 @@
     "SunaTown",
     "MtEmberfallExtS",
     "MtEmberfallCrater",
-    "RuinveilCity"
+    "RuinveilCity",
+    "PreTritonBay",
+    "TritonBay",
+    "LuminaraTown"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",
@@ -721,7 +724,9 @@
   "gMapGroup_Underwater": [
     "NeptunetoEmberfall",
     "MtEmberfallUnderwater",
-    "MtEmberfallUnderwater2"
+    "MtEmberfallUnderwater2",
+    "NewMap13",
+    "ResurfacebeforeSilverstone"
   ],
   "gMapGroup_NewDungeons": [
     "WintersPassage",

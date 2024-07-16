@@ -1221,3 +1221,13 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/CoralShoreHouse2/scripts.inc"
 
 	.include "data/maps/RuinveilCity/scripts.inc"
+
+	.include "data/maps/NewMap13/scripts.inc"
+
+	.include "data/maps/ResurfacebeforeSilverstone/scripts.inc"
+
+	.include "data/maps/PreTritonBay/scripts.inc"
+
+	.include "data/maps/TritonBay/scripts.inc"
+
+	.include "data/maps/LuminaraTown/scripts.inc"
