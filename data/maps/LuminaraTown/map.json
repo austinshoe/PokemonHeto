@@ -19,14 +19,14 @@
   "warp_events": [
     {
       "x": 38,
-      "y": 17,
+      "y": 18,
       "elevation": 0,
       "dest_map": "MAP_TRITON_BAY",
       "dest_warp_id": "0"
     },
     {
       "x": 39,
-      "y": 17,
+      "y": 18,
       "elevation": 0,
       "dest_map": "MAP_TRITON_BAY",
       "dest_warp_id": "1"
