@@ -1021,5 +1021,5 @@ const struct Tileset gTileset_Luminara =
     .palettes = gTilesetPalettes_Luminara,
     .metatiles = gMetatiles_Luminara,
     .metatileAttributes = gMetatileAttributes_Luminara,
-    .callback = NULL,
+    .callback = InitTilesetAnim_Luminara,
 };

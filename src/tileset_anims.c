@@ -155,12 +155,12 @@ static const u16 sTilesetAnims_Luminara_Flower_Frame2[] = INCBIN_U16("data/tiles
 static const u16 sTilesetAnims_Luminara_Flower_Frame3[] = INCBIN_U16("data/tilesets/primary/luminara/anim/flower/3.4bpp");
 static const u16 sTilesetAnims_Luminara_Flower_Frame4[] = INCBIN_U16("data/tilesets/primary/luminara/anim/flower/4.4bpp");
 
-static const u16 *const sTilesetAnims_Luminara_Flower[] = {
-    sTilesetAnims_Luminara_Flower_Frame0,
-    sTilesetAnims_Luminara_Flower_Frame1,
-    sTilesetAnims_Luminara_Flower_Frame2,
-    sTilesetAnims_Luminara_Flower_Frame3,
-    sTilesetAnims_Luminara_Flower_Frame4
+static const u16 *const gTilesetAnims_Luminara_Flower[] = {
+    gTilesetAnims_Luminara_Flower_Frame0,
+    gTilesetAnims_Luminara_Flower_Frame1,
+    gTilesetAnims_Luminara_Flower_Frame2,
+    gTilesetAnims_Luminara_Flower_Frame3,
+    gTilesetAnims_Luminara_Flower_Frame4
 };
 
 const u16 gTilesetAnims_General_Water_Frame0[] = INCBIN_U16("data/tilesets/primary/general/anim/water/0.4bpp");

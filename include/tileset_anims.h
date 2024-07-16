@@ -9,6 +9,7 @@ void TransferTilesetAnimsBuffer(void);
 void InitTilesetAnim_General(void);
 void InitTilesetAnim_Fall(void);
 void InitTilesetAnim_Volcano(void);
+void InitTilesetAnim_Luminara(void);
 void InitTilesetAnim_Petalburg(void);
 void InitTilesetAnim_Rustboro(void);
 void InitTilesetAnim_Dewford(void);
