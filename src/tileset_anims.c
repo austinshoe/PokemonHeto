@@ -149,11 +149,11 @@ const u16 *const gTilesetAnims_volcano1_Lava[] = {
     gTilesetAnims_volcano1_Lava_Frame15
 };
 
-static const u16 sTilesetAnims_Luminara_Flower_Frame0[] = INCBIN_U16("data/tilesets/primary/luminara/anim/flower/0.4bpp");
-static const u16 sTilesetAnims_Luminara_Flower_Frame1[] = INCBIN_U16("data/tilesets/primary/luminara/anim/flower/1.4bpp");
-static const u16 sTilesetAnims_Luminara_Flower_Frame2[] = INCBIN_U16("data/tilesets/primary/luminara/anim/flower/2.4bpp");
-static const u16 sTilesetAnims_Luminara_Flower_Frame3[] = INCBIN_U16("data/tilesets/primary/luminara/anim/flower/3.4bpp");
-static const u16 sTilesetAnims_Luminara_Flower_Frame4[] = INCBIN_U16("data/tilesets/primary/luminara/anim/flower/4.4bpp");
+static const u16 gTilesetAnims_Luminara_Flower_Frame0[] = INCBIN_U16("data/tilesets/primary/luminara/anim/flower/0.4bpp");
+static const u16 gTilesetAnims_Luminara_Flower_Frame1[] = INCBIN_U16("data/tilesets/primary/luminara/anim/flower/1.4bpp");
+static const u16 gTilesetAnims_Luminara_Flower_Frame2[] = INCBIN_U16("data/tilesets/primary/luminara/anim/flower/2.4bpp");
+static const u16 gTilesetAnims_Luminara_Flower_Frame3[] = INCBIN_U16("data/tilesets/primary/luminara/anim/flower/3.4bpp");
+static const u16 gTilesetAnims_Luminara_Flower_Frame4[] = INCBIN_U16("data/tilesets/primary/luminara/anim/flower/4.4bpp");
 
 static const u16 *const gTilesetAnims_Luminara_Flower[] = {
     gTilesetAnims_Luminara_Flower_Frame0,
