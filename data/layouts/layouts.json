@@ -6312,6 +6312,102 @@
       "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/LuminaraTown/border.bin",
       "blockdata_filepath": "data/layouts/LuminaraTown/map.bin"
+    },
+    {
+      "id": "LAYOUT_ONSEN_CENTER",
+      "name": "OnsenCenter_Layout",
+      "width": 14,
+      "height": 9,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/OnsenCenter/border.bin",
+      "blockdata_filepath": "data/layouts/OnsenCenter/map.bin"
+    },
+    {
+      "id": "LAYOUT_ONSEN_MART",
+      "name": "OnsenMart_Layout",
+      "width": 11,
+      "height": 8,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Shop",
+      "border_filepath": "data/layouts/OnsenMart/border.bin",
+      "blockdata_filepath": "data/layouts/OnsenMart/map.bin"
+    },
+    {
+      "id": "LAYOUT_CORAL_GYM",
+      "name": "CoralGym_Layout",
+      "width": 20,
+      "height": 20,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/CoralGym/border.bin",
+      "blockdata_filepath": "data/layouts/CoralGym/map.bin"
+    },
+    {
+      "id": "LAYOUT_ONSEN_SEAMAN",
+      "name": "OnsenSeaman_Layout",
+      "width": 9,
+      "height": 7,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/OnsenSeaman/border.bin",
+      "blockdata_filepath": "data/layouts/OnsenSeaman/map.bin"
+    },
+    {
+      "id": "LAYOUT_ONSEN_HOUSE1",
+      "name": "OnsenHouse1_Layout",
+      "width": 11,
+      "height": 8,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/OnsenHouse1/border.bin",
+      "blockdata_filepath": "data/layouts/OnsenHouse1/map.bin"
+    },
+    {
+      "id": "LAYOUT_ONSEN_HOUSE2",
+      "name": "OnsenHouse2_Layout",
+      "width": 11,
+      "height": 8,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/OnsenHouse2/border.bin",
+      "blockdata_filepath": "data/layouts/OnsenHouse2/map.bin"
+    },
+    {
+      "id": "LAYOUT_ONSEN_GLASS_MASTER",
+      "name": "OnsenGlassMaster_Layout",
+      "width": 10,
+      "height": 9,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/OnsenGlassMaster/border.bin",
+      "blockdata_filepath": "data/layouts/OnsenGlassMaster/map.bin"
+    },
+    {
+      "id": "LAYOUT_ONSEN_HOUSE3",
+      "name": "OnsenHouse3_Layout",
+      "width": 9,
+      "height": 7,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/OnsenHouse3/border.bin",
+      "blockdata_filepath": "data/layouts/OnsenHouse3/map.bin"
     }
   ]
 }

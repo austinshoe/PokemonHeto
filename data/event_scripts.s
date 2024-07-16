@@ -1231,3 +1231,19 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/TritonBay/scripts.inc"
 
 	.include "data/maps/LuminaraTown/scripts.inc"
+
+	.include "data/maps/OnsenCenter/scripts.inc"
+
+	.include "data/maps/OnsenMart/scripts.inc"
+
+	.include "data/maps/CoralGym/scripts.inc"
+
+	.include "data/maps/OnsenSeaman/scripts.inc"
+
+	.include "data/maps/OnsenHouse1/scripts.inc"
+
+	.include "data/maps/OnsenHouse2/scripts.inc"
+
+	.include "data/maps/OnsenGlassMaster/scripts.inc"
+
+	.include "data/maps/OnsenHouse3/scripts.inc"

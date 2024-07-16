@@ -713,10 +713,17 @@
     "CoralShoreExSeaman",
     "CoralShoreOldRod",
     "CoralShoreHouse1",
-    "CoralShoreHouse2"
+    "CoralShoreHouse2",
+    "CoralGym"
   ],
   "gMapGroup_IndoorOnsen": [
-
+    "OnsenCenter",
+    "OnsenMart",
+    "OnsenSeaman",
+    "OnsenHouse1",
+    "OnsenHouse2",
+    "OnsenGlassMaster",
+    "OnsenHouse3"
   ],
   "gMapGroup_IndoorHallowSpark": [
 

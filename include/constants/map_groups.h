@@ -674,8 +674,16 @@
 #define MAP_CORAL_SHORE_OLD_ROD   (3 | (39 << 8))
 #define MAP_CORAL_SHORE_HOUSE1    (4 | (39 << 8))
 #define MAP_CORAL_SHORE_HOUSE2    (5 | (39 << 8))
+#define MAP_CORAL_GYM             (6 | (39 << 8))
 
 // gMapGroup_IndoorOnsen
+#define MAP_ONSEN_CENTER       (0 | (40 << 8))
+#define MAP_ONSEN_MART         (1 | (40 << 8))
+#define MAP_ONSEN_SEAMAN       (2 | (40 << 8))
+#define MAP_ONSEN_HOUSE1       (3 | (40 << 8))
+#define MAP_ONSEN_HOUSE2       (4 | (40 << 8))
+#define MAP_ONSEN_GLASS_MASTER (5 | (40 << 8))
+#define MAP_ONSEN_HOUSE3       (6 | (40 << 8))
 
 // gMapGroup_IndoorHallowSpark
 
