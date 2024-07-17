@@ -1264,4 +1264,4 @@ $(MID_SUBDIR)/se_dex_search.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G127 -v100 -P5
 
 $(MID_SUBDIR)/mus_kasaan_speakeasy.s: %.s: %.mid
-	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -v120 -P5
+	$(MID) $< $@ -E -R70 -G191 -v120 -P5
