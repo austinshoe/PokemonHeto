@@ -12,9 +12,6 @@ HetonianPowerPlant_OnResume:
 HetonianPowerPlant_OnTransition:
     end
 
-HetonianPowerPlant_OnTransition:
-    end
-
 HetonianPowerPlant_OnLoad:
     end
 
