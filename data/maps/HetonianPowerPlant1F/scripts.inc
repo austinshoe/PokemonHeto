@@ -39,14 +39,92 @@ HetonianPowerPlant_EventScript_SetBarrierStateBlueButton::
     setmetatile 26, 15, METATILE_BikeShop_Barrier_Hidden_Top, TRUE
     setmetatile 26, 16, METATILE_BikeShop_Barrier_Hidden_Bottom, TRUE
     setmetatile 26, 17, METATILE_BikeShop_Floor_Shadow_Top, FALSE
-    setmetatile 26, 18, METATILE_BikeShop_Floor_Shadow_Top, FALSE
-    setmetatile 23, 39, METATILE_BikeShop_Wall_Edge_Top, FALSE
+    setmetatile 26, 18, METATILE_BikeShop_Floor_No_Shadow, FALSE
+    setmetatile 26, 19, METATILE_BikeShop_Wall_Edge_Top, FALSE
+    setmetatile 10, 9, METATILE_BikeShop_Barrier_Hidden_Top, TRUE
+    setmetatile 10, 10, METATILE_BikeShop_Barrier_Hidden_Bottom, TRUE
+    setmetatile 10, 11, METATILE_BikeShop_Floor_Shadow_Top, FALSE
+    setmetatile 10, 12, METATILE_BikeShop_Floor_No_Shadow, FALSE
+    setmetatile 10, 13, METATILE_BikeShop_Wall_Edge_Top, FALSE
+    setmetatile 26, 0, METATILE_BikeShop_Barrier_Hidden_Top, TRUE
+    setmetatile 26, 1, METATILE_BikeShop_Barrier_Hidden_Bottom, TRUE
+    setmetatile 26, 2, METATILE_BikeShop_Floor_Shadow_Top, FALSE
+    setmetatile 26, 3, METATILE_BikeShop_Floor_No_Shadow, FALSE
+    setmetatile 26, 4, METATILE_BikeShop_Floor_No_Shadow, FALSE
+    setmetatile 26, 5, METATILE_BikeShop_Wall_Edge_Top, FALSE
+    setmetatile 9, 15, METATILE_BikeShop_Barrier_Blue_Top, TRUE
+    setmetatile 9, 16, METATILE_BikeShop_Barrier_Blue_TopMid, TRUE
+    setmetatile 9, 17, METATILE_BikeShop_Barrier_Blue_BottomMid, TRUE
+    setmetatile 9, 18, METATILE_BikeShop_Barrier_Blue_BottomMid, TRUE
+    setmetatile 9, 39, METATILE_BikeShop_Barrier_Blue_Bottom, TRUE
+    setmetatile 25, 9, METATILE_BikeShop_Barrier_Blue_Top, TRUE
+    setmetatile 25, 10, METATILE_BikeShop_Barrier_Blue_TopMid, TRUE
+    setmetatile 25, 11, METATILE_BikeShop_Barrier_Blue_BottomMid, TRUE
+    setmetatile 25, 12, METATILE_BikeShop_Barrier_Blue_BottomMid, TRUE
+    setmetatile 25, 13, METATILE_BikeShop_Barrier_Blue_Bottom, TRUE
+    setmetatile 9, 0, METATILE_BikeShop_Barrier_Blue_Top, TRUE
+    setmetatile 9, 1, METATILE_BikeShop_Barrier_Blue_TopMid, TRUE
+    setmetatile 9, 2, METATILE_BikeShop_Barrier_Blue_BottomMid, TRUE
+    setmetatile 9, 3, METATILE_BikeShop_Barrier_Blue_BottomMid, TRUE
+    setmetatile 9, 4, METATILE_BikeShop_Barrier_Blue_BottomMid, TRUE
+    setmetatile 9, 5, METATILE_BikeShop_Barrier_Blue_Bottom, TRUE
+    setmetatile 20, 18, METATILE_BikeShop_Button_Pressed, FALSE
+    setmetatile 32, 12, METATILE_BikeShop_Button_Pressed, FALSE
+    setmetatile 3, 12, METATILE_BikeShop_Button_Pressed, FALSE
+    setmetatile 14, 10, METATILE_BikeShop_Button_Pressed, FALSE
+    setmetatile 21, 5, METATILE_BikeShop_Button_Pressed, FALSE
+    setmetatile 31, 3, METATILE_BikeShop_Button_Pressed, FALSE
+    setmetatile 3, 17, METATILE_BikeShop_Button_Green, FALSE
+    setmetatile 15, 18, METATILE_BikeShop_Button_Green, FALSE
+    setmetatile 21, 10, METATILE_BikeShop_Button_Green, FALSE
+    setmetatile 32, 17, METATILE_BikeShop_Button_Green, FALSE
+    setmetatile 14, 5, METATILE_BikeShop_Button_Green, FALSE
+    setmetatile 4, 3, METATILE_BikeShop_Button_Green, FALSE
     return
 
 HetonianPowerPlant_EventScript_SetBarrierStateGreenButton::
     setmetatile 9, 15, METATILE_BikeShop_Barrier_Hidden_Top, TRUE
     setmetatile 9, 16, METATILE_BikeShop_Barrier_Hidden_Bottom, TRUE
     setmetatile 9, 17, METATILE_BikeShop_Floor_Shadow_Top, FALSE
-    setmetatile 9, 18, METATILE_BikeShop_Floor_Shadow_Top, FALSE
+    setmetatile 9, 18, METATILE_BikeShop_Floor_No_Shadow, FALSE
     setmetatile 9, 39, METATILE_BikeShop_Wall_Edge_Top, FALSE
+    setmetatile 25, 9, METATILE_BikeShop_Barrier_Hidden_Top, TRUE
+    setmetatile 25, 10, METATILE_BikeShop_Barrier_Hidden_Bottom, TRUE
+    setmetatile 25, 11, METATILE_BikeShop_Floor_Shadow_Top, FALSE
+    setmetatile 25, 12, METATILE_BikeShop_Floor_No_Shadow, FALSE
+    setmetatile 25, 13, METATILE_BikeShop_Wall_Edge_Top, FALSE
+    setmetatile 9, 0, METATILE_BikeShop_Barrier_Hidden_Top, TRUE
+    setmetatile 9, 1, METATILE_BikeShop_Barrier_Hidden_Bottom, TRUE
+    setmetatile 9, 2, METATILE_BikeShop_Floor_Shadow_Top, FALSE
+    setmetatile 9, 3, METATILE_BikeShop_Floor_No_Shadow, FALSE
+    setmetatile 9, 4, METATILE_BikeShop_Floor_No_Shadow, FALSE
+    setmetatile 9, 5, METATILE_BikeShop_Wall_Edge_Top, FALSE
+    setmetatile 26, 15, METATILE_BikeShop_Barrier_Green_Top, TRUE
+    setmetatile 26, 16, METATILE_BikeShop_Barrier_Green_TopMid, TRUE
+    setmetatile 26, 17, METATILE_BikeShop_Barrier_Green_BottomMid, TRUE
+    setmetatile 26, 18, METATILE_BikeShop_Barrier_Green_BottomMid, TRUE
+    setmetatile 26, 19, METATILE_BikeShop_Barrier_Green_Bottom, TRUE
+    setmetatile 10, 9, METATILE_BikeShop_Barrier_Green_Top, TRUE
+    setmetatile 10, 10, METATILE_BikeShop_Barrier_Green_TopMid, TRUE
+    setmetatile 10, 11, METATILE_BikeShop_Barrier_Green_BottomMid, TRUE
+    setmetatile 10, 12, METATILE_BikeShop_Barrier_Green_BottomMid, TRUE
+    setmetatile 10, 13, METATILE_BikeShop_Barrier_Green_Bottom, TRUE
+    setmetatile 26, 0, METATILE_BikeShop_Barrier_Green_Top, TRUE
+    setmetatile 26, 1, METATILE_BikeShop_Barrier_Green_TopMid, TRUE
+    setmetatile 26, 2, METATILE_BikeShop_Barrier_Green_BottomMid, TRUE
+    setmetatile 26, 3, METATILE_BikeShop_Barrier_Green_BottomMid, TRUE
+    setmetatile 26, 4, METATILE_BikeShop_Barrier_Green_BottomMid, TRUE
+    setmetatile 26, 5, METATILE_BikeShop_Barrier_Green_Bottom, TRUE
+    setmetatile 20, 18, METATILE_BikeShop_Button_Pressed, FALSE
+    setmetatile 32, 12, METATILE_BikeShop_Button_Pressed, FALSE
+    setmetatile 3, 12, METATILE_BikeShop_Button_Pressed, FALSE
+    setmetatile 14, 10, METATILE_BikeShop_Button_Pressed, FALSE
+    setmetatile 21, 5, METATILE_BikeShop_Button_Pressed, FALSE
+    setmetatile 31, 3, METATILE_BikeShop_Button_Pressed, FALSE
+    setmetatile 3, 17, METATILE_BikeShop_Button_Green, FALSE
+    setmetatile 15, 18, METATILE_BikeShop_Button_Green, FALSE
+    setmetatile 21, 10, METATILE_BikeShop_Button_Green, FALSE
+    setmetatile 32, 17, METATILE_BikeShop_Button_Green, FALSE
+    setmetatile 14, 5, METATILE_BikeShop_Button_Green, FALSE
+    setmetatile 4, 3, METATILE_BikeShop_Button_Green, FALSE
     return
