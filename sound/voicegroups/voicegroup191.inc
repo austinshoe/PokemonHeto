@@ -1,5 +1,5 @@
     .align 2
-voicegroup190::
+voicegroup191::
     voice_directsound 60, 0, DirectSoundWaveData_sc88pro_piano1_60, 255, 250, 0, 221
     voice_directsound 60, 0, DirectSoundWaveData_steinway_b_piano, 128, 204, 51, 242
     voice_directsound_no_resample 60, 0, DirectSoundWaveData_bicycle_bell, 255, 249, 0, 165
