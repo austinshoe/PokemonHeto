@@ -12,6 +12,12 @@ HetonianPowerPlant_OnResume:
 HetonianPowerPlant_OnTransition:
     end
 
+HetonianPowerPlant_OnTransition:
+    end
+
+HetonianPowerPlant_OnLoad:
+    end
+
 HetonianPowerPlant_EventScript_BlueButton::
     lockall
     setvar VAR_TEMP_1, 1
