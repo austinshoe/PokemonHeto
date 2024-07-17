@@ -261,3 +261,6 @@ const u16 gMetatileAttributes_ruinveil2[] = INCBIN_U16("data/tilesets/secondary/
 
 const u16 gMetatiles_Luminara[] = INCBIN_U16("data/tilesets/primary/luminara/metatiles.bin");
 const u16 gMetatileAttributes_Luminara[] = INCBIN_U16("data/tilesets/primary/luminara/metatile_attributes.bin");
+
+const u16 gMetatiles_Luminara2[] = INCBIN_U16("data/tilesets/secondary/luminara_2/metatiles.bin");
+const u16 gMetatileAttributes_Luminara2[] = INCBIN_U16("data/tilesets/secondary/luminara_2/metatile_attributes.bin");

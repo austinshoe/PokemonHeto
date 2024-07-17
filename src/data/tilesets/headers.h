@@ -1023,3 +1023,14 @@ const struct Tileset gTileset_Luminara =
     .metatileAttributes = gMetatileAttributes_Luminara,
     .callback = InitTilesetAnim_Luminara,
 };
+
+const struct Tileset gTileset_Luminara2 =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_Luminara2,
+    .palettes = gTilesetPalettes_Luminara2,
+    .metatiles = gMetatiles_Luminara2,
+    .metatileAttributes = gMetatileAttributes_Luminara2,
+    .callback = NULL,
+};
