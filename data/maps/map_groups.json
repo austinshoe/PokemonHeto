@@ -726,7 +726,9 @@
     "OnsenHouse3"
   ],
   "gMapGroup_IndoorHallowSpark": [
-
+    "HallowSparkCenter",
+    "HallowSparkMart",
+    "HetonianPowerPlant1F"
   ],
   "gMapGroup_Underwater": [
     "NeptunetoEmberfall",

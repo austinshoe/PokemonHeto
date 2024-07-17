@@ -686,6 +686,9 @@
 #define MAP_ONSEN_HOUSE3       (6 | (40 << 8))
 
 // gMapGroup_IndoorHallowSpark
+#define MAP_HALLOW_SPARK_CENTER    (0 | (41 << 8))
+#define MAP_HALLOW_SPARK_MART      (1 | (41 << 8))
+#define MAP_HETONIAN_POWER_PLANT1F (2 | (41 << 8))
 
 // gMapGroup_Underwater
 #define MAP_NEPTUNETO_EMBERFALL         (0 | (42 << 8))

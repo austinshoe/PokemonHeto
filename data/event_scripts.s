@@ -1247,3 +1247,9 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/OnsenGlassMaster/scripts.inc"
 
 	.include "data/maps/OnsenHouse3/scripts.inc"
+
+	.include "data/maps/HallowSparkCenter/scripts.inc"
+
+	.include "data/maps/HallowSparkMart/scripts.inc"
+
+	.include "data/maps/HetonianPowerPlant1F/scripts.inc"

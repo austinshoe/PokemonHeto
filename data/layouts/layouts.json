@@ -6408,6 +6408,42 @@
       "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/OnsenHouse3/border.bin",
       "blockdata_filepath": "data/layouts/OnsenHouse3/map.bin"
+    },
+    {
+      "id": "LAYOUT_HALLOW_SPARK_CENTER",
+      "name": "HallowSparkCenter_Layout",
+      "width": 14,
+      "height": 9,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/HallowSparkCenter/border.bin",
+      "blockdata_filepath": "data/layouts/HallowSparkCenter/map.bin"
+    },
+    {
+      "id": "LAYOUT_HALLOW_SPARK_MART",
+      "name": "HallowSparkMart_Layout",
+      "width": 11,
+      "height": 8,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Shop",
+      "border_filepath": "data/layouts/HallowSparkMart/border.bin",
+      "blockdata_filepath": "data/layouts/HallowSparkMart/map.bin"
+    },
+    {
+      "id": "LAYOUT_HETONIAN_POWER_PLANT1F",
+      "name": "HetonianPowerPlant1F_Layout",
+      "width": 36,
+      "height": 24,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_BikeShop",
+      "border_filepath": "data/layouts/HetonianPowerPlant1F/border.bin",
+      "blockdata_filepath": "data/layouts/HetonianPowerPlant1F/map.bin"
     }
   ]
 }

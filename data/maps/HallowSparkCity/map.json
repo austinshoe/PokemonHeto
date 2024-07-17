@@ -51,6 +51,27 @@
       "elevation": 0,
       "dest_map": "MAP_HETONIAN_DESERT",
       "dest_warp_id": "0"
+    },
+    {
+      "x": 25,
+      "y": 31,
+      "elevation": 0,
+      "dest_map": "MAP_HALLOW_SPARK_CENTER",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 14,
+      "y": 20,
+      "elevation": 0,
+      "dest_map": "MAP_HALLOW_SPARK_MART",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 36,
+      "y": 8,
+      "elevation": 0,
+      "dest_map": "MAP_HETONIAN_POWER_PLANT1F",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

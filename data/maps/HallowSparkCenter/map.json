@@ -1,7 +1,7 @@
 {
-  "id": "MAP_NEW_MAP10",
-  "name": "NewMap10",
-  "layout": "LAYOUT_NEW_MAP10",
+  "id": "MAP_HALLOW_SPARK_CENTER",
+  "name": "HallowSparkCenter",
+  "layout": "LAYOUT_HALLOW_SPARK_CENTER",
   "music": "MUS_ABANDONED_SHIP",
   "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
   "requires_flash": false,
@@ -9,7 +9,7 @@
   "map_type": "MAP_TYPE_INDOOR",
   "allow_cycling": false,
   "allow_escaping": false,
-  "allow_running": false,
+  "allow_running": true,
   "show_map_name": false,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": 0,
@@ -21,15 +21,15 @@
       "x": 7,
       "y": 8,
       "elevation": 0,
-      "dest_map": "MAP_KASAAN",
-      "dest_warp_id": "8"
+      "dest_map": "MAP_HALLOW_SPARK_CITY",
+      "dest_warp_id": "5"
     },
     {
       "x": 6,
       "y": 8,
       "elevation": 0,
-      "dest_map": "MAP_KASAAN",
-      "dest_warp_id": "8"
+      "dest_map": "MAP_HALLOW_SPARK_CITY",
+      "dest_warp_id": "5"
     }
   ],
   "coord_events": [
