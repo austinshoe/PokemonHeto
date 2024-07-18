@@ -6444,6 +6444,114 @@
       "secondary_tileset": "gTileset_BikeShop",
       "border_filepath": "data/layouts/HetonianPowerPlant1F/border.bin",
       "blockdata_filepath": "data/layouts/HetonianPowerPlant1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_HALLOW_SPARK_HOUSE11F",
+      "name": "HallowSparkHouse11F_Layout",
+      "width": 12,
+      "height": 9,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/HallowSparkHouse11F/border.bin",
+      "blockdata_filepath": "data/layouts/HallowSparkHouse11F/map.bin"
+    },
+    {
+      "id": "LAYOUT_HETONIAN_POWER_PLANT2F",
+      "name": "HetonianPowerPlant2F_Layout",
+      "width": 20,
+      "height": 20,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_BikeShop",
+      "border_filepath": "data/layouts/HetonianPowerPlant2F/border.bin",
+      "blockdata_filepath": "data/layouts/HetonianPowerPlant2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_HALLOW_SPARK_HOUSE12F",
+      "name": "HallowSparkHouse12F_Layout",
+      "width": 10,
+      "height": 7,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/HallowSparkHouse12F/border.bin",
+      "blockdata_filepath": "data/layouts/HallowSparkHouse12F/map.bin"
+    },
+    {
+      "id": "LAYOUT_HALLOW_SPARK_HOUSE21F",
+      "name": "HallowSparkHouse21F_Layout",
+      "width": 12,
+      "height": 9,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/HallowSparkHouse21F/border.bin",
+      "blockdata_filepath": "data/layouts/HallowSparkHouse21F/map.bin"
+    },
+    {
+      "id": "LAYOUT_HALLOW_SPARK_HOUSE22F",
+      "name": "HallowSparkHouse22F_Layout",
+      "width": 10,
+      "height": 7,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/HallowSparkHouse22F/border.bin",
+      "blockdata_filepath": "data/layouts/HallowSparkHouse22F/map.bin"
+    },
+    {
+      "id": "LAYOUT_HALLOW_SPARK_HOUSE31F",
+      "name": "HallowSparkHouse31F_Layout",
+      "width": 12,
+      "height": 9,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/HallowSparkHouse31F/border.bin",
+      "blockdata_filepath": "data/layouts/HallowSparkHouse31F/map.bin"
+    },
+    {
+      "id": "LAYOUT_HALLOW_SPARK_HOUSE32F",
+      "name": "HallowSparkHouse32F_Layout",
+      "width": 10,
+      "height": 7,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/HallowSparkHouse32F/border.bin",
+      "blockdata_filepath": "data/layouts/HallowSparkHouse32F/map.bin"
+    },
+    {
+      "id": "LAYOUT_HALLOW_SPARK_HOUSE41F",
+      "name": "HallowSparkHouse41F_Layout",
+      "width": 12,
+      "height": 9,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/HallowSparkHouse41F/border.bin",
+      "blockdata_filepath": "data/layouts/HallowSparkHouse41F/map.bin"
+    },
+    {
+      "id": "LAYOUT_HALLOW_SPARK_HOUSE42F",
+      "name": "HallowSparkHouse42F_Layout",
+      "width": 10,
+      "height": 7,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/HallowSparkHouse42F/border.bin",
+      "blockdata_filepath": "data/layouts/HallowSparkHouse42F/map.bin"
     }
   ]
 }

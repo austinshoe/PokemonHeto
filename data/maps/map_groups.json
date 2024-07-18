@@ -728,7 +728,16 @@
   "gMapGroup_IndoorHallowSpark": [
     "HallowSparkCenter",
     "HallowSparkMart",
-    "HetonianPowerPlant1F"
+    "HetonianPowerPlant1F",
+    "HallowSparkHouse11F",
+    "HetonianPowerPlant2F",
+    "HallowSparkHouse12F",
+    "HallowSparkHouse21F",
+    "HallowSparkHouse22F",
+    "HallowSparkHouse31F",
+    "HallowSparkHouse32F",
+    "HallowSparkHouse41F",
+    "HallowSparkHouse42F"
   ],
   "gMapGroup_Underwater": [
     "NeptunetoEmberfall",

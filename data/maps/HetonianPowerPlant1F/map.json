@@ -21,7 +21,7 @@
       "x": 3,
       "y": 1,
       "elevation": 0,
-      "dest_map": "MAP_HETONIAN_POWER_PLANT1F",
+      "dest_map": "MAP_HETONIAN_POWER_PLANT2F",
       "dest_warp_id": "0"
     },
     {
@@ -53,6 +53,96 @@
       "type": "trigger",
       "x": 20,
       "y": 18,
+      "elevation": 0,
+      "var": "VAR_TEMP_1",
+      "var_value": "0",
+      "script": "HetonianPowerPlant_EventScript_BlueButton"
+    },
+    {
+      "type": "trigger",
+      "x": 3,
+      "y": 17,
+      "elevation": 0,
+      "var": "VAR_TEMP_2",
+      "var_value": "0",
+      "script": "HetonianPowerPlant_EventScript_GreenButton"
+    },
+    {
+      "type": "trigger",
+      "x": 32,
+      "y": 17,
+      "elevation": 0,
+      "var": "VAR_TEMP_2",
+      "var_value": "0",
+      "script": "HetonianPowerPlant_EventScript_GreenButton"
+    },
+    {
+      "type": "trigger",
+      "x": 21,
+      "y": 10,
+      "elevation": 0,
+      "var": "VAR_TEMP_2",
+      "var_value": "0",
+      "script": "HetonianPowerPlant_EventScript_GreenButton"
+    },
+    {
+      "type": "trigger",
+      "x": 14,
+      "y": 5,
+      "elevation": 0,
+      "var": "VAR_TEMP_2",
+      "var_value": "0",
+      "script": "HetonianPowerPlant_EventScript_GreenButton"
+    },
+    {
+      "type": "trigger",
+      "x": 4,
+      "y": 3,
+      "elevation": 0,
+      "var": "VAR_TEMP_2",
+      "var_value": "0",
+      "script": "HetonianPowerPlant_EventScript_GreenButton"
+    },
+    {
+      "type": "trigger",
+      "x": 32,
+      "y": 12,
+      "elevation": 0,
+      "var": "VAR_TEMP_1",
+      "var_value": "0",
+      "script": "HetonianPowerPlant_EventScript_BlueButton"
+    },
+    {
+      "type": "trigger",
+      "x": 3,
+      "y": 12,
+      "elevation": 0,
+      "var": "VAR_TEMP_1",
+      "var_value": "0",
+      "script": "HetonianPowerPlant_EventScript_BlueButton"
+    },
+    {
+      "type": "trigger",
+      "x": 14,
+      "y": 10,
+      "elevation": 0,
+      "var": "VAR_TEMP_1",
+      "var_value": "0",
+      "script": "HetonianPowerPlant_EventScript_BlueButton"
+    },
+    {
+      "type": "trigger",
+      "x": 21,
+      "y": 5,
+      "elevation": 0,
+      "var": "VAR_TEMP_1",
+      "var_value": "0",
+      "script": "HetonianPowerPlant_EventScript_BlueButton"
+    },
+    {
+      "type": "trigger",
+      "x": 31,
+      "y": 3,
       "elevation": 0,
       "var": "VAR_TEMP_1",
       "var_value": "0",

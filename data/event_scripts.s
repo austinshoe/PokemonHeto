@@ -1253,3 +1253,21 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/HallowSparkMart/scripts.inc"
 
 	.include "data/maps/HetonianPowerPlant1F/scripts.inc"
+
+	.include "data/maps/HallowSparkHouse11F/scripts.inc"
+
+	.include "data/maps/HetonianPowerPlant2F/scripts.inc"
+
+	.include "data/maps/HallowSparkHouse12F/scripts.inc"
+
+	.include "data/maps/HallowSparkHouse21F/scripts.inc"
+
+	.include "data/maps/HallowSparkHouse22F/scripts.inc"
+
+	.include "data/maps/HallowSparkHouse31F/scripts.inc"
+
+	.include "data/maps/HallowSparkHouse32F/scripts.inc"
+
+	.include "data/maps/HallowSparkHouse41F/scripts.inc"
+
+	.include "data/maps/HallowSparkHouse42F/scripts.inc"

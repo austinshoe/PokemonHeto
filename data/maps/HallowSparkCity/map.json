@@ -72,6 +72,34 @@
       "elevation": 0,
       "dest_map": "MAP_HETONIAN_POWER_PLANT1F",
       "dest_warp_id": "1"
+    },
+    {
+      "x": 13,
+      "y": 9,
+      "elevation": 0,
+      "dest_map": "MAP_HALLOW_SPARK_HOUSE11F",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 24,
+      "y": 9,
+      "elevation": 0,
+      "dest_map": "MAP_HALLOW_SPARK_HOUSE21F",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 24,
+      "y": 20,
+      "elevation": 0,
+      "dest_map": "MAP_HALLOW_SPARK_HOUSE31F",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 13,
+      "y": 31,
+      "elevation": 0,
+      "dest_map": "MAP_HALLOW_SPARK_HOUSE41F",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

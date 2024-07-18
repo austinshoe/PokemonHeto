@@ -689,6 +689,15 @@
 #define MAP_HALLOW_SPARK_CENTER    (0 | (41 << 8))
 #define MAP_HALLOW_SPARK_MART      (1 | (41 << 8))
 #define MAP_HETONIAN_POWER_PLANT1F (2 | (41 << 8))
+#define MAP_HALLOW_SPARK_HOUSE11F  (3 | (41 << 8))
+#define MAP_HETONIAN_POWER_PLANT2F (4 | (41 << 8))
+#define MAP_HALLOW_SPARK_HOUSE12F  (5 | (41 << 8))
+#define MAP_HALLOW_SPARK_HOUSE21F  (6 | (41 << 8))
+#define MAP_HALLOW_SPARK_HOUSE22F  (7 | (41 << 8))
+#define MAP_HALLOW_SPARK_HOUSE31F  (8 | (41 << 8))
+#define MAP_HALLOW_SPARK_HOUSE32F  (9 | (41 << 8))
+#define MAP_HALLOW_SPARK_HOUSE41F  (10 | (41 << 8))
+#define MAP_HALLOW_SPARK_HOUSE42F  (11 | (41 << 8))
 
 // gMapGroup_Underwater
 #define MAP_NEPTUNETO_EMBERFALL         (0 | (42 << 8))

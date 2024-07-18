@@ -1,0 +1,48 @@
+{
+  "id": "MAP_HALLOW_SPARK_HOUSE31F",
+  "name": "HallowSparkHouse31F",
+  "layout": "LAYOUT_HALLOW_SPARK_HOUSE31F",
+  "music": "MUS_ABANDONED_SHIP",
+  "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_INDOOR",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": 0,
+  "object_events": [
+
+  ],
+  "warp_events": [
+    {
+      "x": 5,
+      "y": 8,
+      "elevation": 0,
+      "dest_map": "MAP_HALLOW_SPARK_CITY",
+      "dest_warp_id": "10"
+    },
+    {
+      "x": 6,
+      "y": 8,
+      "elevation": 0,
+      "dest_map": "MAP_HALLOW_SPARK_CITY",
+      "dest_warp_id": "10"
+    },
+    {
+      "x": 10,
+      "y": 1,
+      "elevation": 0,
+      "dest_map": "MAP_HALLOW_SPARK_HOUSE32F",
+      "dest_warp_id": "0"
+    }
+  ],
+  "coord_events": [
+
+  ],
+  "bg_events": [
+
+  ]
+}
