@@ -1,6 +1,6 @@
     .align 2
 voicegroup191::
-    voice_keysplit_all voicegroup005
+    voice_keysplit voicegroup005, KeySplitTable1
     voice_directsound 60, 0, DirectSoundWaveData_sc88pro_nylon_str_guitar, 255, 249, 25, 149
     voice_directsound_no_resample 60, 0, DirectSoundWaveData_bicycle_bell, 255, 249, 0, 165
     voice_directsound 60, 0, DirectSoundWaveData_sc88pro_bubbles, 255, 0, 255, 127
