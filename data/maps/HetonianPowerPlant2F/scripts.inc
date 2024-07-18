@@ -27,14 +27,6 @@ HetonianPowerPlant2F_EventScript_SetGeneratorOffMetatiles::
     special DrawWholeMapView
     return
 
-HetonianPowerPlant2F:
-    .string "{PLAYER} stepped on the switch.\p"
-    .string "Click…\p"
-    .string "… … … … … … … …\n"
-    .string "… … … … … … … …\p"
-    .string "The generator appears to have\n"
-    .string "stopped…$"
-
 HetonianPowerPlant2F_EventScript_Generator::
     lockall
     goto_if_eq VAR_NEW_MAUVILLE_STATE, 2, HetonianPowerPlant2F_EventScript_GeneratorOff
@@ -55,3 +47,11 @@ HetonianPowerPlant2F_Text_GeneratorRadiatingHeat:
 
 HetonianPowerPlant2F_Text_GeneratorQuietedDown:
     .string "The generator quieted down.$"
+
+HetonianPowerPlant2F_Text_SteppedOnSwitchGeneratorStopped:
+    .string "{PLAYER} stepped on the switch.\p"
+    .string "Click…\p"
+    .string "… … … … … … … …\n"
+    .string "… … … … … … … …\p"
+    .string "The generator appears to have\n"
+    .string "stopped…$"
