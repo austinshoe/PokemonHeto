@@ -10,7 +10,7 @@ Script_YellowFallMapMan1::
 
 Text_YellowFallMapMan1:
     .string "Did you know that this is the only\n"
-    .string "place in {SHADOW DARK_GRAY}Hehamayto {SHADOW LIGHT_GRAY} that is"
+    .string "place in {SHADOW DARK_GRAY}Hehamayto {SHADOW LIGHT_GRAY} that is\l"
     .string "fall year round?$"
 
 Script_YellowFallMapWoman1::
