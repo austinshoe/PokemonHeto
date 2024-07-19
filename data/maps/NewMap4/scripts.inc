@@ -25,7 +25,6 @@ Text_FallGroveTownHouse1OldMan1:
 
 Script_FallGroveTownHouse1OldWoman1::
     lock
-    faceplayer
     msgbox Text_FallGroveTownHouse1OldWoman1, MSGBOX_DEFAULT
     release
     end
@@ -50,7 +49,7 @@ Text_FallGroveTownHouse2Woman1:
 Script_FallGroveTownHouse2LittleGirl1::
     lock
     faceplayer
-    msgbox Text_FallGroveTownHouse2Woman1, MSGBOX_DEFAULT
+    msgbox Text_FallGroveTownHouse2LittleGirl1, MSGBOX_DEFAULT
     release
     end
 
