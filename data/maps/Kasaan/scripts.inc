@@ -262,7 +262,7 @@ Text_KassanLittleBoy1:
     .string "What's that smell?\n"
     .string "Oh, I know.\l"
     .string "It's the stench an OLDY MOLDIE!\l"
-    .string "PEE YEW!"
+    .string "PEE YEW!$"
 
 Script_KassanLittleBoy2::
     lock
