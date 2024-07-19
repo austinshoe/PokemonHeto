@@ -215,3 +215,74 @@ Kasaan_Lab_Sign_Text_0:
 
 Kasaan_Stone_House_Text_0:
     .string "{SHADOW DARK_GRAY}Dr. Stone's {SHADOW LIGHT_GRAY}house$"
+
+Script_KassanSign::
+    lock
+    faceplayer
+    msgbox Text_KassanSign, MSGBOX_DEFAULT
+    release
+    end
+    
+Text_KassanSign:
+    .string "{COLOR BLUE}Kassan\n"
+    .string "{COLOR DARK_GRAY}If you're not a kid, leave$"
+
+Script_KassanLittleGirl1::
+    lock
+    faceplayer
+    msgbox Text_KassanLittleGirl1, MSGBOX_DEFAULT
+    release
+    end
+    
+Text_KassanLittleGirl1:
+    .string "I'm going to be honest:\n"
+    .string "you look a bit older than 10 buddy.\l"
+    .string "You better leave.$"
+
+Script_KassanLittleGirl2::
+    lock
+    faceplayer
+    msgbox Text_KassanLittleGirl2, MSGBOX_DEFAULT
+    release
+    end
+    
+Text_KassanLittleGirl2:
+    .string "It's so cold outside that I'm going to\n"
+    .string "ignore how old you are.\l"
+    .string "Be happy.$"
+
+Script_KassanLittleBoy1::
+    lock
+    faceplayer
+    msgbox Text_KassanLittleBoy1, MSGBOX_DEFAULT
+    release
+    end
+
+Text_KassanLittleBoy1:
+    .string "What's that smell?\n"
+    .string "Oh, I know.\l"
+    .string "It's the stench an OLDY MOLDIE!\l"
+    .string "PEE YEW!"
+
+Script_KassanLittleBoy2::
+    lock
+    faceplayer
+    msgbox Text_KassanLittleBoy2, MSGBOX_DEFAULT
+    release
+    end
+
+Text_KassanLittleBoy2:
+    .string "You think you can catch me?\n"
+    .string "I don't think so, oldy.\l"
+    .string "Oldy moldies can never catch me!$"
+
+Script_KassanLittleBoy3::
+    lock
+    faceplayer
+    msgbox Text_KassanLittleBoy3, MSGBOX_DEFAULT
+    release
+    end
+
+Text_KassanLittleBoy3:
+    .string "Your oldy moldie butt better leave now\l"
+    .string "or else imma pull out my Weedle.$"
