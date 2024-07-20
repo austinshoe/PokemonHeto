@@ -28,10 +28,10 @@ Text_PokemartCenterLittleBoy2Convo1:
 
 Script_PokemartCenterKassanLittleBoys2::
     lock
-    msgbox Text_PokemartCenterLittleBoy2Convo2, MSGBOX_DEFAULT
+    msgbox Text_PokemartCenterLittleBoy1Convo2, MSGBOX_DEFAULT
     closemessage
     delay 8
-    msgbox Text_PokemartCenterLittleBoy1Convo2, MSGBOX_DEFAULT
+    msgbox Text_PokemartCenterLittleBoy2Convo2, MSGBOX_DEFAULT
     release
     end
 
