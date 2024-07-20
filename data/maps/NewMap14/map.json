@@ -24,15 +24,15 @@
   ],
   "warp_events": [
     {
-      "x": 18,
-      "y": 0,
+      "x": 78,
+      "y": 1,
       "elevation": 0,
       "dest_map": "MAP_LUMINARA_TOWN",
       "dest_warp_id": "2"
     },
     {
-      "x": 19,
-      "y": 0,
+      "x": 79,
+      "y": 1,
       "elevation": 0,
       "dest_map": "MAP_LUMINARA_TOWN",
       "dest_warp_id": "3"

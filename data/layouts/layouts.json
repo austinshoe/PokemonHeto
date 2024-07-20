@@ -6556,8 +6556,8 @@
     {
       "id": "LAYOUT_NEW_MAP14",
       "name": "NewMap14_Layout",
-      "width": 20,
-      "height": 20,
+      "width": 80,
+      "height": 80,
       "border_width": 2,
       "border_height": 2,
       "primary_tileset": "gTileset_Luminara",
@@ -6576,6 +6576,18 @@
       "secondary_tileset": "gTileset_Luminara2",
       "border_filepath": "data/layouts/SilverstoneCity/border.bin",
       "blockdata_filepath": "data/layouts/SilverstoneCity/map.bin"
+    },
+    {
+      "id": "LAYOUT_KUROMISA_RUINS",
+      "name": "KuromisaRuins_Layout",
+      "width": 20,
+      "height": 40,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_KuromisaRuins",
+      "secondary_tileset": "gTileset_Kuromisa2",
+      "border_filepath": "data/layouts/KuromisaRuins/border.bin",
+      "blockdata_filepath": "data/layouts/KuromisaRuins/map.bin"
     }
   ]
 }

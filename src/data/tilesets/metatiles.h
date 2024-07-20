@@ -264,3 +264,9 @@ const u16 gMetatileAttributes_Luminara[] = INCBIN_U16("data/tilesets/primary/lum
 
 const u16 gMetatiles_Luminara2[] = INCBIN_U16("data/tilesets/secondary/luminara_2/metatiles.bin");
 const u16 gMetatileAttributes_Luminara2[] = INCBIN_U16("data/tilesets/secondary/luminara_2/metatile_attributes.bin");
+
+const u16 gMetatiles_KuromisaRuins[] = INCBIN_U16("data/tilesets/primary/kuromisa_ruins/metatiles.bin");
+const u16 gMetatileAttributes_KuromisaRuins[] = INCBIN_U16("data/tilesets/primary/kuromisa_ruins/metatile_attributes.bin");
+
+const u16 gMetatiles_Kuromisa2[] = INCBIN_U16("data/tilesets/secondary/kuromisa_2/metatiles.bin");
+const u16 gMetatileAttributes_Kuromisa2[] = INCBIN_U16("data/tilesets/secondary/kuromisa_2/metatile_attributes.bin");
