@@ -10,7 +10,7 @@ CoralShoreCity_Center_OnTransition::
 Script_PokemartCenterKassanLittleBoys1::
     lock
     msgbox Text_PokemartCenterLittleBoy1Convo1, MSGBOX_DEFAULT
-    close message
+    closemessage
     delay 8
     msgbox Text_PokemartCenterLittleBoy2Convo2, MSGBOX_DEFAULT
     release
@@ -21,7 +21,7 @@ Text_PokemartCenterLittleBoy1Convo1:
     .string "for Coral Shore, they are going to be\l"
     .string "maaaaaaaaaad.$"
 
-Text_PokemartCenterLittleBoy2Convo2:
+Text_PokemartCenterLittleBoy2Convo1:
     .string "{FONT_SMALL_NARROW}Yeah.\n"
     .string "We better figure out a good plan to\l"
     .string "sneak back, or else.$"
@@ -29,7 +29,7 @@ Text_PokemartCenterLittleBoy2Convo2:
 Script_PokemartCenterKassanLittleBoys2::
     lock
     msgbox Text_PokemartCenterLittleBoy2Convo2, MSGBOX_DEFAULT
-    close message
+    closemessage
     delay 8
     msgbox Text_PokemartCenterLittleBoy1Convo2, MSGBOX_DEFAULT
     release

@@ -1,7 +1,7 @@
 CoralShoreExSeaman_MapScripts::
 	.byte 0
 
-Script_CoralShoreHouse3Tuber1
+Script_CoralShoreHouse3Tuber1::
     lock
     faceplayer
     msgbox Text_CoralShoreHouse3Tuber1, MSGBOX_DEFAULT
