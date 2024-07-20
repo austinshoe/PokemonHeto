@@ -136,7 +136,9 @@
     "RuinveilCity",
     "PreTritonBay",
     "TritonBay",
-    "LuminaraTown"
+    "LuminaraTown",
+    "NewMap14",
+    "SilverstoneCity"
   ],
   "gMapGroup_IndoorLittleroot": [
     "LittlerootTown_BrendansHouse_1F",
@@ -755,6 +757,7 @@
     "MtEmberfall2",
     "MtEmberfall3",
     "MtEmberfallDraconarixLair",
-    "MtEmberfallResurface"
+    "MtEmberfallResurface",
+    "KuromisaRuins"
   ]
 }

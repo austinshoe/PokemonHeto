@@ -97,6 +97,8 @@
 #define MAP_PRE_TRITON_BAY      (88 | (0 << 8))
 #define MAP_TRITON_BAY          (89 | (0 << 8))
 #define MAP_LUMINARA_TOWN       (90 | (0 << 8))
+#define MAP_NEW_MAP14           (91 | (0 << 8))
+#define MAP_SILVERSTONE_CITY    (92 | (0 << 8))
 
 // gMapGroup_IndoorLittleroot
 #define MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F    (0 | (1 << 8))
@@ -716,6 +718,7 @@
 #define MAP_MT_EMBERFALL3                (6 | (43 << 8))
 #define MAP_MT_EMBERFALL_DRACONARIX_LAIR (7 | (43 << 8))
 #define MAP_MT_EMBERFALL_RESURFACE       (8 | (43 << 8))
+#define MAP_KUROMISA_RUINS               (9 | (43 << 8))
 
 #define MAP_GROUPS_COUNT 44
 

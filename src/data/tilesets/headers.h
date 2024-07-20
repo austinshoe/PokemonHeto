@@ -1034,3 +1034,25 @@ const struct Tileset gTileset_Luminara2 =
     .metatileAttributes = gMetatileAttributes_Luminara2,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_KuromisaRuins =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_KuromisaRuins,
+    .palettes = gTilesetPalettes_KuromisaRuins,
+    .metatiles = gMetatiles_KuromisaRuins,
+    .metatileAttributes = gMetatileAttributes_KuromisaRuins,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_Kuromisa2 =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_Kuromisa2,
+    .palettes = gTilesetPalettes_Kuromisa2,
+    .metatiles = gMetatiles_Kuromisa2,
+    .metatileAttributes = gMetatileAttributes_Kuromisa2,
+    .callback = NULL,
+};
