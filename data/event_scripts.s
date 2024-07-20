@@ -1271,3 +1271,7 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/HallowSparkHouse41F/scripts.inc"
 
 	.include "data/maps/HallowSparkHouse42F/scripts.inc"
+
+	.include "data/maps/NewMap14/scripts.inc"
+
+	.include "data/maps/SilverstoneCity/scripts.inc"

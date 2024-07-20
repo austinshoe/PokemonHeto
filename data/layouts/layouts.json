@@ -6552,6 +6552,30 @@
       "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/HallowSparkHouse42F/border.bin",
       "blockdata_filepath": "data/layouts/HallowSparkHouse42F/map.bin"
+    },
+    {
+      "id": "LAYOUT_NEW_MAP14",
+      "name": "NewMap14_Layout",
+      "width": 20,
+      "height": 20,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Luminara",
+      "secondary_tileset": "gTileset_Luminara2",
+      "border_filepath": "data/layouts/NewMap14/border.bin",
+      "blockdata_filepath": "data/layouts/NewMap14/map.bin"
+    },
+    {
+      "id": "LAYOUT_SILVERSTONE_CITY",
+      "name": "SilverstoneCity_Layout",
+      "width": 50,
+      "height": 50,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Luminara",
+      "secondary_tileset": "gTileset_Luminara2",
+      "border_filepath": "data/layouts/SilverstoneCity/border.bin",
+      "blockdata_filepath": "data/layouts/SilverstoneCity/map.bin"
     }
   ]
 }
