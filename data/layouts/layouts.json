@@ -6588,6 +6588,18 @@
       "secondary_tileset": "gTileset_Kuromisa2",
       "border_filepath": "data/layouts/KuromisaRuins/border.bin",
       "blockdata_filepath": "data/layouts/KuromisaRuins/map.bin"
+    },
+    {
+      "id": "LAYOUT_KUROMISA_RUINS2",
+      "name": "KuromisaRuins2_Layout",
+      "width": 20,
+      "height": 20,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_KuromisaRuins",
+      "secondary_tileset": "gTileset_Kuromisa2",
+      "border_filepath": "data/layouts/KuromisaRuins2/border.bin",
+      "blockdata_filepath": "data/layouts/KuromisaRuins2/map.bin"
     }
   ]
 }

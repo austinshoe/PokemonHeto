@@ -719,6 +719,7 @@
 #define MAP_MT_EMBERFALL_DRACONARIX_LAIR (7 | (43 << 8))
 #define MAP_MT_EMBERFALL_RESURFACE       (8 | (43 << 8))
 #define MAP_KUROMISA_RUINS               (9 | (43 << 8))
+#define MAP_KUROMISA_RUINS2              (10 | (43 << 8))
 
 #define MAP_GROUPS_COUNT 44
 

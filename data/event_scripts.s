@@ -1277,3 +1277,5 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/SilverstoneCity/scripts.inc"
 
 	.include "data/maps/KuromisaRuins/scripts.inc"
+
+	.include "data/maps/KuromisaRuins2/scripts.inc"
