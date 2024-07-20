@@ -12,7 +12,7 @@ Script_PokemartCenterKassanLittleBoys1::
     msgbox Text_PokemartCenterLittleBoy1Convo1, MSGBOX_DEFAULT
     closemessage
     delay 8
-    msgbox Text_PokemartCenterLittleBoy2Convo2, MSGBOX_DEFAULT
+    msgbox Text_PokemartCenterLittleBoy2Convo1, MSGBOX_DEFAULT
     release
     end
 

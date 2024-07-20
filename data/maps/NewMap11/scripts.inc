@@ -10,5 +10,5 @@ Script_MountainAfterAzureTidewayMan1::
 
 Text_MountainAfterAzureTidewayMan1:
     .string "Progress at your own risk.\n"
-    .string "I can only warn you about what's"
+    .string "I can only warn you about what's\l"
     .string "to come.$"
