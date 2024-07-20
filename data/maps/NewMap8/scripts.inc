@@ -14,7 +14,7 @@ Text_CoralShoreSign:
 
 Script_CoralShoreBeachMan1::
     lock
-    msgbox CoralShoreBeachMan1, MSGBOX_DEFAULT
+    msgbox Text_CoralShoreBeachMan1, MSGBOX_DEFAULT
     release
     end
 
@@ -26,7 +26,7 @@ Text_CoralShoreBeachMan1:
 Script_CoralShoreBeachMan2::
     lock
     faceplayer
-    msgbox CoralShoreBeachMan2, MSGBOX_DEFAULT
+    msgbox Text_CoralShoreBeachMan2, MSGBOX_DEFAULT
     release
     end
 
@@ -39,7 +39,7 @@ Text_CoralShoreBeachMan2:
 Script_CoralShoreBeachTuber1::
     lock
     faceplayer
-    msgbox CoralShoreBeachTuber1, MSGBOX_DEFAULT
+    msgbox Text_CoralShoreBeachTuber1, MSGBOX_DEFAULT
     release
     end
 
@@ -49,7 +49,7 @@ Text_CoralShoreBeachTuber1:
 Script_CoralShoreBeachTuber2::
     lock
     faceplayer
-    msgbox CoralShoreBeachTuber2, MSGBOX_DEFAULT
+    msgbox Text_CoralShoreBeachTuber2, MSGBOX_DEFAULT
     release
     end
 
@@ -63,7 +63,7 @@ Text_CoralShoreBeachTuber2:
 Script_CoralShoreBeachTuber3::
     lock
     faceplayer
-    msgbox CoralShoreBeachTuber3, MSGBOX_DEFAULT
+    msgbox Text_CoralShoreBeachTuber3, MSGBOX_DEFAULT
     release
     end
 
