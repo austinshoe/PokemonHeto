@@ -701,26 +701,40 @@
 #define MAP_HALLOW_SPARK_HOUSE41F  (10 | (41 << 8))
 #define MAP_HALLOW_SPARK_HOUSE42F  (11 | (41 << 8))
 
+// gMapGroup_IndoorSuna
+#define MAP_SUNA_CENTER       (0 | (42 << 8))
+#define MAP_SUNAMART          (1 | (42 << 8))
+#define MAP_SUNA_HOUSE_TUNNEL (2 | (42 << 8))
+#define MAP_SUNA_HOUSE1       (3 | (42 << 8))
+#define MAP_SUNA_HOUSE2       (4 | (42 << 8))
+
+// gMapGroup_IndoorRuinveil
+
+// gMapGroup_IndoorKushinada
+
+// gMapGroup_IndoorSilverstone
+
 // gMapGroup_Underwater
-#define MAP_NEPTUNETO_EMBERFALL         (0 | (42 << 8))
-#define MAP_MT_EMBERFALL_UNDERWATER     (1 | (42 << 8))
-#define MAP_MT_EMBERFALL_UNDERWATER2    (2 | (42 << 8))
-#define MAP_NEW_MAP13                   (3 | (42 << 8))
-#define MAP_RESURFACEBEFORE_SILVERSTONE (4 | (42 << 8))
+#define MAP_NEPTUNETO_EMBERFALL         (0 | (46 << 8))
+#define MAP_MT_EMBERFALL_UNDERWATER     (1 | (46 << 8))
+#define MAP_MT_EMBERFALL_UNDERWATER2    (2 | (46 << 8))
+#define MAP_NEW_MAP13                   (3 | (46 << 8))
+#define MAP_RESURFACEBEFORE_SILVERSTONE (4 | (46 << 8))
 
 // gMapGroup_NewDungeons
-#define MAP_WINTERS_PASSAGE              (0 | (43 << 8))
-#define MAP_WINTERS_PASSAGE2F            (1 | (43 << 8))
-#define MAP_TUNNELAFTERKASSAAN           (2 | (43 << 8))
-#define MAP_TUNELUNDRABAND               (3 | (43 << 8))
-#define MAP_MT_EMBERFALL                 (4 | (43 << 8))
-#define MAP_MT_EMBERFALL2                (5 | (43 << 8))
-#define MAP_MT_EMBERFALL3                (6 | (43 << 8))
-#define MAP_MT_EMBERFALL_DRACONARIX_LAIR (7 | (43 << 8))
-#define MAP_MT_EMBERFALL_RESURFACE       (8 | (43 << 8))
-#define MAP_KUROMISA_RUINS               (9 | (43 << 8))
-#define MAP_KUROMISA_RUINS2              (10 | (43 << 8))
+#define MAP_WINTERS_PASSAGE              (0 | (47 << 8))
+#define MAP_WINTERS_PASSAGE2F            (1 | (47 << 8))
+#define MAP_TUNNELAFTERKASSAAN           (2 | (47 << 8))
+#define MAP_TUNELUNDRABAND               (3 | (47 << 8))
+#define MAP_MT_EMBERFALL                 (4 | (47 << 8))
+#define MAP_MT_EMBERFALL2                (5 | (47 << 8))
+#define MAP_MT_EMBERFALL3                (6 | (47 << 8))
+#define MAP_MT_EMBERFALL_DRACONARIX_LAIR (7 | (47 << 8))
+#define MAP_MT_EMBERFALL_RESURFACE       (8 | (47 << 8))
+#define MAP_KUROMISA_RUINS               (9 | (47 << 8))
+#define MAP_KUROMISA_RUINS2              (10 | (47 << 8))
+#define MAP_TUNNEL_SUNA_RUINVEIL         (11 | (47 << 8))
 
-#define MAP_GROUPS_COUNT 44
+#define MAP_GROUPS_COUNT 48
 
 #endif // GUARD_CONSTANTS_MAP_GROUPS_H

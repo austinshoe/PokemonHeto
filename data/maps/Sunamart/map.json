@@ -1,16 +1,16 @@
 {
-  "id": "MAP_RUINVEIL_CITY",
-  "name": "RuinveilCity",
-  "layout": "LAYOUT_RUINVEIL_CITY",
+  "id": "MAP_SUNAMART",
+  "name": "Sunamart",
+  "layout": "LAYOUT_SUNAMART",
   "music": "MUS_ABANDONED_SHIP",
   "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
   "requires_flash": false,
-  "weather": "WEATHER_SHADE",
-  "map_type": "MAP_TYPE_CITY",
-  "allow_cycling": true,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_INDOOR",
+  "allow_cycling": false,
   "allow_escaping": false,
   "allow_running": true,
-  "show_map_name": true,
+  "show_map_name": false,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": 0,
   "object_events": [
@@ -18,18 +18,18 @@
   ],
   "warp_events": [
     {
-      "x": 19,
-      "y": 6,
+      "x": 4,
+      "y": 7,
       "elevation": 0,
-      "dest_map": "MAP_TUNNEL_SUNA_RUINVEIL",
+      "dest_map": "MAP_SUNA_TOWN",
       "dest_warp_id": "2"
     },
     {
-      "x": 41,
-      "y": 33,
+      "x": 3,
+      "y": 7,
       "elevation": 0,
-      "dest_map": "MAP_KUROMISA_RUINS",
-      "dest_warp_id": "0"
+      "dest_map": "MAP_SUNA_TOWN",
+      "dest_warp_id": "2"
     }
   ],
   "coord_events": [

@@ -42,6 +42,10 @@
     "gMapGroup_IndoorCoralShore",
     "gMapGroup_IndoorOnsen",
     "gMapGroup_IndoorHallowSpark",
+    "gMapGroup_IndoorSuna",
+    "gMapGroup_IndoorRuinveil",
+    "gMapGroup_IndoorKushinada",
+    "gMapGroup_IndoorSilverstone",
     "gMapGroup_Underwater",
     "gMapGroup_NewDungeons"
   ],
@@ -741,6 +745,22 @@
     "HallowSparkHouse41F",
     "HallowSparkHouse42F"
   ],
+  "gMapGroup_IndoorSuna": [
+    "SunaCenter",
+    "Sunamart",
+    "SunaHouseTunnel",
+    "SunaHouse1",
+    "SunaHouse2"
+  ],
+  "gMapGroup_IndoorRuinveil": [
+
+  ],
+  "gMapGroup_IndoorKushinada": [
+
+  ],
+  "gMapGroup_IndoorSilverstone": [
+
+  ],
   "gMapGroup_Underwater": [
     "NeptunetoEmberfall",
     "MtEmberfallUnderwater",
@@ -759,6 +779,7 @@
     "MtEmberfallDraconarixLair",
     "MtEmberfallResurface",
     "KuromisaRuins",
-    "KuromisaRuins2"
+    "KuromisaRuins2",
+    "TunnelSunaRuinveil"
   ]
 }

@@ -6600,6 +6600,78 @@
       "secondary_tileset": "gTileset_Kuromisa2",
       "border_filepath": "data/layouts/KuromisaRuins2/border.bin",
       "blockdata_filepath": "data/layouts/KuromisaRuins2/map.bin"
+    },
+    {
+      "id": "LAYOUT_SUNA_CENTER",
+      "name": "SunaCenter_Layout",
+      "width": 14,
+      "height": 9,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/SunaCenter/border.bin",
+      "blockdata_filepath": "data/layouts/SunaCenter/map.bin"
+    },
+    {
+      "id": "LAYOUT_SUNAMART",
+      "name": "Sunamart_Layout",
+      "width": 11,
+      "height": 8,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Shop",
+      "border_filepath": "data/layouts/Sunamart/border.bin",
+      "blockdata_filepath": "data/layouts/Sunamart/map.bin"
+    },
+    {
+      "id": "LAYOUT_SUNA_HOUSE_TUNNEL",
+      "name": "SunaHouseTunnel_Layout",
+      "width": 11,
+      "height": 8,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/SunaHouseTunnel/border.bin",
+      "blockdata_filepath": "data/layouts/SunaHouseTunnel/map.bin"
+    },
+    {
+      "id": "LAYOUT_SUNA_HOUSE1",
+      "name": "SunaHouse1_Layout",
+      "width": 10,
+      "height": 9,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/SunaHouse1/border.bin",
+      "blockdata_filepath": "data/layouts/SunaHouse1/map.bin"
+    },
+    {
+      "id": "LAYOUT_SUNA_HOUSE2",
+      "name": "SunaHouse2_Layout",
+      "width": 10,
+      "height": 8,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/SunaHouse2/border.bin",
+      "blockdata_filepath": "data/layouts/SunaHouse2/map.bin"
+    },
+    {
+      "id": "LAYOUT_TUNNEL_SUNA_RUINVEIL",
+      "name": "TunnelSunaRuinveil_Layout",
+      "width": 20,
+      "height": 40,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Fallarbor",
+      "border_filepath": "data/layouts/TunnelSunaRuinveil/border.bin",
+      "blockdata_filepath": "data/layouts/TunnelSunaRuinveil/map.bin"
     }
   ]
 }

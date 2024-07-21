@@ -27,7 +27,35 @@
       "x": 12,
       "y": 14,
       "elevation": 0,
-      "dest_map": "MAP_RUINVEIL_CITY",
+      "dest_map": "MAP_SUNA_HOUSE_TUNNEL",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 30,
+      "y": 29,
+      "elevation": 0,
+      "dest_map": "MAP_SUNA_CENTER",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 14,
+      "y": 31,
+      "elevation": 0,
+      "dest_map": "MAP_SUNA_TOWN",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 20,
+      "y": 11,
+      "elevation": 0,
+      "dest_map": "MAP_SUNA_HOUSE1",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 29,
+      "y": 20,
+      "elevation": 0,
+      "dest_map": "MAP_SUNA_HOUSE2",
       "dest_warp_id": "0"
     }
   ],

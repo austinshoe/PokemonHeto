@@ -1279,3 +1279,15 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/KuromisaRuins/scripts.inc"
 
 	.include "data/maps/KuromisaRuins2/scripts.inc"
+
+	.include "data/maps/SunaCenter/scripts.inc"
+
+	.include "data/maps/Sunamart/scripts.inc"
+
+	.include "data/maps/SunaHouseTunnel/scripts.inc"
+
+	.include "data/maps/SunaHouse1/scripts.inc"
+
+	.include "data/maps/SunaHouse2/scripts.inc"
+
+	.include "data/maps/TunnelSunaRuinveil/scripts.inc"
