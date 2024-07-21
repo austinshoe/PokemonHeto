@@ -6672,6 +6672,78 @@
       "secondary_tileset": "gTileset_Fallarbor",
       "border_filepath": "data/layouts/TunnelSunaRuinveil/border.bin",
       "blockdata_filepath": "data/layouts/TunnelSunaRuinveil/map.bin"
+    },
+    {
+      "id": "LAYOUT_RUINVEIL_CENTER",
+      "name": "RuinveilCenter_Layout",
+      "width": 14,
+      "height": 9,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/RuinveilCenter/border.bin",
+      "blockdata_filepath": "data/layouts/RuinveilCenter/map.bin"
+    },
+    {
+      "id": "LAYOUT_RUINVEIL_MART",
+      "name": "RuinveilMart_Layout",
+      "width": 11,
+      "height": 8,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Shop",
+      "border_filepath": "data/layouts/RuinveilMart/border.bin",
+      "blockdata_filepath": "data/layouts/RuinveilMart/map.bin"
+    },
+    {
+      "id": "LAYOUT_RUINVEIL_HOUSE1",
+      "name": "RuinveilHouse1_Layout",
+      "width": 11,
+      "height": 8,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/RuinveilHouse1/border.bin",
+      "blockdata_filepath": "data/layouts/RuinveilHouse1/map.bin"
+    },
+    {
+      "id": "LAYOUT_RUINVEIL_HOUSE2",
+      "name": "RuinveilHouse2_Layout",
+      "width": 11,
+      "height": 8,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/RuinveilHouse2/border.bin",
+      "blockdata_filepath": "data/layouts/RuinveilHouse2/map.bin"
+    },
+    {
+      "id": "LAYOUT_RUINVEIL_HOUSE3",
+      "name": "RuinveilHouse3_Layout",
+      "width": 11,
+      "height": 8,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/RuinveilHouse3/border.bin",
+      "blockdata_filepath": "data/layouts/RuinveilHouse3/map.bin"
+    },
+    {
+      "id": "LAYOUT_RUINVEIL_HOUSE4",
+      "name": "RuinveilHouse4_Layout",
+      "width": 11,
+      "height": 8,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/RuinveilHouse4/border.bin",
+      "blockdata_filepath": "data/layouts/RuinveilHouse4/map.bin"
     }
   ]
 }

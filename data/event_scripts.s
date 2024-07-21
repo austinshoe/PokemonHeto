@@ -1291,3 +1291,15 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/SunaHouse2/scripts.inc"
 
 	.include "data/maps/TunnelSunaRuinveil/scripts.inc"
+
+	.include "data/maps/RuinveilCenter/scripts.inc"
+
+	.include "data/maps/RuinveilMart/scripts.inc"
+
+	.include "data/maps/RuinveilHouse1/scripts.inc"
+
+	.include "data/maps/RuinveilHouse2/scripts.inc"
+
+	.include "data/maps/RuinveilHouse3/scripts.inc"
+
+	.include "data/maps/RuinveilHouse4/scripts.inc"

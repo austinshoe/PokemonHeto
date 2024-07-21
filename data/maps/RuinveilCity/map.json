@@ -30,6 +30,48 @@
       "elevation": 0,
       "dest_map": "MAP_KUROMISA_RUINS",
       "dest_warp_id": "0"
+    },
+    {
+      "x": 57,
+      "y": 18,
+      "elevation": 0,
+      "dest_map": "MAP_RUINVEIL_CENTER",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 47,
+      "y": 25,
+      "elevation": 0,
+      "dest_map": "MAP_RUINVEIL_MART",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 28,
+      "y": 13,
+      "elevation": 0,
+      "dest_map": "MAP_RUINVEIL_HOUSE1",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 40,
+      "y": 12,
+      "elevation": 0,
+      "dest_map": "MAP_RUINVEIL_HOUSE2",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 43,
+      "y": 19,
+      "elevation": 0,
+      "dest_map": "MAP_RUINVEIL_HOUSE3",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 59,
+      "y": 28,
+      "elevation": 0,
+      "dest_map": "MAP_RUINVEIL_HOUSE4",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

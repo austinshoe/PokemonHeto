@@ -753,7 +753,12 @@
     "SunaHouse2"
   ],
   "gMapGroup_IndoorRuinveil": [
-
+    "RuinveilCenter",
+    "RuinveilMart",
+    "RuinveilHouse1",
+    "RuinveilHouse2",
+    "RuinveilHouse3",
+    "RuinveilHouse4"
   ],
   "gMapGroup_IndoorKushinada": [
 
