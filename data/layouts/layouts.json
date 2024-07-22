@@ -6744,6 +6744,66 @@
       "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/RuinveilHouse4/border.bin",
       "blockdata_filepath": "data/layouts/RuinveilHouse4/map.bin"
+    },
+    {
+      "id": "LAYOUT_KUSHINADA_CENTER",
+      "name": "KushinadaCenter_Layout",
+      "width": 14,
+      "height": 9,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_PokemonCenter",
+      "border_filepath": "data/layouts/KushinadaCenter/border.bin",
+      "blockdata_filepath": "data/layouts/KushinadaCenter/map.bin"
+    },
+    {
+      "id": "LAYOUT_KUSHINADA_MART",
+      "name": "KushinadaMart_Layout",
+      "width": 11,
+      "height": 8,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_Shop",
+      "border_filepath": "data/layouts/KushinadaMart/border.bin",
+      "blockdata_filepath": "data/layouts/KushinadaMart/map.bin"
+    },
+    {
+      "id": "LAYOUT_KUSHINADA_HOUSE1",
+      "name": "KushinadaHouse1_Layout",
+      "width": 11,
+      "height": 8,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/KushinadaHouse1/border.bin",
+      "blockdata_filepath": "data/layouts/KushinadaHouse1/map.bin"
+    },
+    {
+      "id": "LAYOUT_KUSHINADA_HOUSE2",
+      "name": "KushinadaHouse2_Layout",
+      "width": 11,
+      "height": 8,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/KushinadaHouse2/border.bin",
+      "blockdata_filepath": "data/layouts/KushinadaHouse2/map.bin"
+    },
+    {
+      "id": "LAYOUT_KUSHIANDA_HOUSE3",
+      "name": "KushiandaHouse3_Layout",
+      "width": 11,
+      "height": 8,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_GenericBuilding",
+      "border_filepath": "data/layouts/KushiandaHouse3/border.bin",
+      "blockdata_filepath": "data/layouts/KushiandaHouse3/map.bin"
     }
   ]
 }

@@ -1303,3 +1303,13 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/RuinveilHouse3/scripts.inc"
 
 	.include "data/maps/RuinveilHouse4/scripts.inc"
+
+	.include "data/maps/KushinadaCenter/scripts.inc"
+
+	.include "data/maps/KushinadaMart/scripts.inc"
+
+	.include "data/maps/KushinadaHouse1/scripts.inc"
+
+	.include "data/maps/KushinadaHouse2/scripts.inc"
+
+	.include "data/maps/KushiandaHouse3/scripts.inc"

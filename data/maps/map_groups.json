@@ -761,7 +761,11 @@
     "RuinveilHouse4"
   ],
   "gMapGroup_IndoorKushinada": [
-
+    "KushinadaCenter",
+    "KushinadaMart",
+    "KushinadaHouse1",
+    "KushinadaHouse2",
+    "KushiandaHouse3"
   ],
   "gMapGroup_IndoorSilverstone": [
 
