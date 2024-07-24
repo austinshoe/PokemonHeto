@@ -56,7 +56,7 @@ HetonianPowerPlant_EventScript_SetBarrierStateBlueButton::
     setmetatile 9, 16, METATILE_BikeShop_Barrier_Green_TopMid, TRUE
     setmetatile 9, 17, METATILE_BikeShop_Barrier_Green_BottomMid, TRUE
     setmetatile 9, 18, METATILE_BikeShop_Barrier_Green_BottomMid, TRUE
-    setmetatile 9, 39, METATILE_BikeShop_Barrier_Green_Bottom, TRUE
+    setmetatile 9, 19, METATILE_BikeShop_Barrier_Green_Bottom, TRUE
     setmetatile 25, 9, METATILE_BikeShop_Barrier_Green_Top, TRUE
     setmetatile 25, 10, METATILE_BikeShop_Barrier_Green_TopMid, TRUE
     setmetatile 25, 11, METATILE_BikeShop_Barrier_Green_BottomMid, TRUE
@@ -87,7 +87,7 @@ HetonianPowerPlant_EventScript_SetBarrierStateGreenButton::
     setmetatile 9, 16, METATILE_BikeShop_Barrier_Hidden_Bottom, TRUE
     setmetatile 9, 17, METATILE_BikeShop_Floor_Shadow_Top, FALSE
     setmetatile 9, 18, METATILE_BikeShop_Floor_No_Shadow, FALSE
-    setmetatile 9, 39, METATILE_BikeShop_Wall_Edge_Top, FALSE
+    setmetatile 9, 19, METATILE_BikeShop_Wall_Edge_Top, FALSE
     setmetatile 25, 9, METATILE_BikeShop_Barrier_Hidden_Top, TRUE
     setmetatile 25, 10, METATILE_BikeShop_Barrier_Hidden_Bottom, TRUE
     setmetatile 25, 11, METATILE_BikeShop_Floor_Shadow_Top, FALSE
