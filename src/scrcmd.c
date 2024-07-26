@@ -50,6 +50,7 @@
 #include "window.h"
 #include "constants/event_objects.h"
 #include "constants/items.h"
+#include "constants/moves.h"
 
 typedef u16 (*SpecialFunc)(void);
 typedef void (*NativeFunc)(struct ScriptContext *ctx);

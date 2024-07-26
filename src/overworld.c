@@ -38,6 +38,7 @@
 #include "money.h"
 #include "new_game.h"
 #include "palette.h"
+#include "party_menu.h"
 #include "play_time.h"
 #include "random.h"
 #include "roamer.h"
@@ -68,6 +69,7 @@
 #include "constants/weather.h"
 #include "item.h"
 #include "constants/items.h"
+#include "constants/moves.h"
 
 struct CableClubPlayer
 {
@@ -175,7 +177,6 @@ static void TransitionMapMusic(void);
 static u8 GetAdjustedInitialTransitionFlags(struct InitialPlayerAvatarState *, u16, u8);
 static u8 GetAdjustedInitialDirection(struct InitialPlayerAvatarState *, u8, u16, u8);
 static u16 GetCenterScreenMetatileBehavior(void);
-static u8 CanTeachMove(struct Pokemon *, u16);
 static bool8 CanLearnFlashInParty(void);
 
 static void *sUnusedOverworldCallback;
