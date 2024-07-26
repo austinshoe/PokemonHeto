@@ -175,6 +175,7 @@ static void TransitionMapMusic(void);
 static u8 GetAdjustedInitialTransitionFlags(struct InitialPlayerAvatarState *, u16, u8);
 static u8 GetAdjustedInitialDirection(struct InitialPlayerAvatarState *, u8, u16, u8);
 static u16 GetCenterScreenMetatileBehavior(void);
+static u8 CanTeachMove(struct Pokemon *, u16);
 static bool8 CanLearnFlashInParty(void);
 
 static void *sUnusedOverworldCallback;
