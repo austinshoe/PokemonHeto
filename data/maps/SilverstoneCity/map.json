@@ -23,7 +23,20 @@
 
   ],
   "warp_events": [
-
+    {
+      "x": 2,
+      "y": 48,
+      "elevation": 0,
+      "dest_map": "MAP_SIXTH_CUP",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 3,
+      "y": 48,
+      "elevation": 0,
+      "dest_map": "MAP_SIXTH_CUP",
+      "dest_warp_id": "1"
+    }
   ],
   "coord_events": [
 

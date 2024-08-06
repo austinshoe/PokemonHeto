@@ -1313,3 +1313,7 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/KushinadaHouse2/scripts.inc"
 
 	.include "data/maps/KushiandaHouse3/scripts.inc"
+
+	.include "data/maps/SixthCup/scripts.inc"
+
+	.include "data/maps/AceofSwords/scripts.inc"

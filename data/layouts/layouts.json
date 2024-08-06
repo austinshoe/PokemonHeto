@@ -5296,7 +5296,7 @@
     {
       "id": "LAYOUT_PEARL_TOWN",
       "name": "PearlTown_Layout",
-      "width": 50,
+      "width": 54,
       "height": 50,
       "border_width": 2,
       "border_height": 2,
@@ -6804,6 +6804,30 @@
       "secondary_tileset": "gTileset_GenericBuilding",
       "border_filepath": "data/layouts/KushiandaHouse3/border.bin",
       "blockdata_filepath": "data/layouts/KushiandaHouse3/map.bin"
+    },
+    {
+      "id": "LAYOUT_SIXTH_CUP",
+      "name": "SixthCup_Layout",
+      "width": 30,
+      "height": 50,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Luminara",
+      "secondary_tileset": "gTileset_Luminara2",
+      "border_filepath": "data/layouts/SixthCup/border.bin",
+      "blockdata_filepath": "data/layouts/SixthCup/map.bin"
+    },
+    {
+      "id": "LAYOUT_ACEOF_SWORDS",
+      "name": "AceofSwords_Layout",
+      "width": 20,
+      "height": 46,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Luminara",
+      "secondary_tileset": "gTileset_Luminara2",
+      "border_filepath": "data/layouts/AceofSwords/border.bin",
+      "blockdata_filepath": "data/layouts/AceofSwords/map.bin"
     }
   ]
 }
