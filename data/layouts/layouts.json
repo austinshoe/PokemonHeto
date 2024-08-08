@@ -6828,6 +6828,18 @@
       "secondary_tileset": "gTileset_Luminara2",
       "border_filepath": "data/layouts/AceofSwords/border.bin",
       "blockdata_filepath": "data/layouts/AceofSwords/map.bin"
+    },
+    {
+      "id": "LAYOUT_EIGTH_CUP",
+      "name": "EigthCup_Layout",
+      "width": 100,
+      "height": 40,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Dewford",
+      "border_filepath": "data/layouts/EigthCup/border.bin",
+      "blockdata_filepath": "data/layouts/EigthCup/map.bin"
     }
   ]
 }

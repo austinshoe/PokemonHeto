@@ -1317,3 +1317,5 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/SixthCup/scripts.inc"
 
 	.include "data/maps/AceofSwords/scripts.inc"
+
+	.include "data/maps/EigthCup/scripts.inc"
