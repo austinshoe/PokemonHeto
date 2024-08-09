@@ -25,6 +25,7 @@ static void _InitPrimaryTilesetAnimation(void);
 static void _InitSecondaryTilesetAnimation(void);
 static void TilesetAnim_General(u16);
 static void TilesetAnim_Luminara(u16);
+static void TilesetAnim_PokemonLeague(u16);
 static void TilesetAnim_Volcano(u16);
 static void TilesetAnim_Fall(u16);
 static void TilesetAnim_Building(u16);
@@ -80,6 +81,7 @@ static void QueueAnimTiles_Fall_Blueflower(u16);
 static void QueueAnimTiles_Fall_Purpleflower(u16);
 static void QueueAnimTiles_volcano1_Lava(u16);
 static void QueueAnimTiles_Luminara_Flower(u16);
+static void QueueAnimTiles_PokemonLeague_Lilacs(u16);
 
 const u16 gTilesetAnims_General_Flower_Frame1[] = INCBIN_U16("data/tilesets/primary/general/anim/flower/1.4bpp");
 const u16 gTilesetAnims_General_Flower_Frame0[] = INCBIN_U16("data/tilesets/primary/general/anim/flower/0.4bpp");
@@ -111,6 +113,18 @@ const u16 *const gTilesetAnims_Fall_Purpleflower[] = {
     gTilesetAnims_Fall_Purpleflower_Frame0,
     gTilesetAnims_Fall_Purpleflower_Frame1,
     gTilesetAnims_Fall_Purpleflower_Frame2
+};
+
+const u16 gTilesetAnims_PokemonLeague_Lilacs_Frame0[] = INCBIN_U16("data/tilesets/primary/pokemon_league/anim/lilacs/0.4bpp");
+const u16 gTilesetAnims_PokemonLeague_Lilacs_Frame1[] = INCBIN_U16("data/tilesets/primary/pokemon_league/anim/lilacs/1.4bpp");
+const u16 gTilesetAnims_PokemonLeague_Lilacs_Frame2[] = INCBIN_U16("data/tilesets/primary/pokemon_league/anim/lilacs/2.4bpp");
+const u16 gTilesetAnims_PokemonLeague_Lilacs_Frame3[] = INCBIN_U16("data/tilesets/primary/pokemon_league/anim/lilacs/3.4bpp");
+
+const u16 *const gTilesetAnims_PokemonLeague_Lilacs[] = {
+    gTilesetAnims_PokemonLeague_Lilacs_Frame0,
+    gTilesetAnims_PokemonLeague_Lilacs_Frame1,
+    gTilesetAnims_PokemonLeague_Lilacs_Frame2,
+    gTilesetAnims_PokemonLeague_Lilacs_Frame3
 };
 
 const u16 gTilesetAnims_volcano1_Lava_Frame0[] = INCBIN_U16("data/tilesets/primary/volcano_1/anim/lava/0.4bpp");
@@ -720,6 +734,13 @@ void InitTilesetAnim_Luminara(void)
     sPrimaryTilesetAnimCallback = TilesetAnim_Luminara;
 }
 
+void InitTilesetAnim_PokemonLeague(void)
+{
+    sPrimaryTilesetAnimCounter = 0;
+    sPrimaryTilesetAnimCounterMax = 256;
+    sPrimaryTilesetAnimCallback = TilesetAnim_PokemonLeague;
+}
+
 void InitTilesetAnim_Building(void)
 {
     sPrimaryTilesetAnimCounter = 0;
@@ -793,6 +814,12 @@ static void QueueAnimTiles_Luminara_Flower(u16 timer)
 {
     u16 i = timer % 5;
     AppendTilesetAnimToBuffer(gTilesetAnims_Luminara_Flower[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(372)), 0x80);
+}
+
+static void QueueAnimTiles_PokemonLeague_Lilacs(u16 timer)
+{
+    u16 i = timer % 4;
+    AppendTilesetAnimToBuffer(gTilesetAnims_PokemonLeague_Lilacs[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(128)), 12 * TILE_SIZE_4BPP);
 }
 
 void InitTilesetAnim_Petalburg(void)
@@ -974,6 +1001,12 @@ static void TilesetAnim_Luminara(u16 timer)
 {
     if (timer % 16 == 0)
         QueueAnimTiles_Luminara_Flower(timer / 16);
+}
+
+static void TilesetAnim_PokemonLeague(u16 timer)
+{
+    if (timer % 16 == 0)
+        QueueAnimTiles_PokemonLeague_Lilacs(timer / 16);
 }
 
 static void TilesetAnim_Rustboro(u16 timer)

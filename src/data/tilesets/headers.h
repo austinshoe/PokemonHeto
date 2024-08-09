@@ -1065,5 +1065,5 @@ const struct Tileset gTileset_PokemonLeague =
     .palettes = gTilesetPalettes_PokemonLeague,
     .metatiles = gMetatiles_PokemonLeague,
     .metatileAttributes = gMetatileAttributes_PokemonLeague,
-    .callback = NULL,
+    .callback = InitTilesetAnim_PokemonLeague,
 };
