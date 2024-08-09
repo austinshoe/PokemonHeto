@@ -102,6 +102,7 @@
 #define MAP_SIXTH_CUP           (93 | (0 << 8))
 #define MAP_ACEOF_SWORDS        (94 | (0 << 8))
 #define MAP_EIGTH_CUP           (95 | (0 << 8))
+#define MAP_POKEMON_LEAGUE      (96 | (0 << 8))
 
 // gMapGroup_IndoorLittleroot
 #define MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F    (0 | (1 << 8))

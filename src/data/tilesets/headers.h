@@ -1056,3 +1056,14 @@ const struct Tileset gTileset_Kuromisa2 =
     .metatileAttributes = gMetatileAttributes_Kuromisa2,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_PokemonLeague =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_PokemonLeague,
+    .palettes = gTilesetPalettes_PokemonLeague,
+    .metatiles = gMetatiles_PokemonLeague,
+    .metatileAttributes = gMetatileAttributes_PokemonLeague,
+    .callback = NULL,
+};

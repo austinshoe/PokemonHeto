@@ -1319,3 +1319,5 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/AceofSwords/scripts.inc"
 
 	.include "data/maps/EigthCup/scripts.inc"
+
+	.include "data/maps/PokemonLeague/scripts.inc"

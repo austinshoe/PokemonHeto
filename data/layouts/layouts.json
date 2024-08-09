@@ -6840,6 +6840,18 @@
       "secondary_tileset": "gTileset_Dewford",
       "border_filepath": "data/layouts/EigthCup/border.bin",
       "blockdata_filepath": "data/layouts/EigthCup/map.bin"
+    },
+    {
+      "id": "LAYOUT_POKEMON_LEAGUE",
+      "name": "PokemonLeague_Layout",
+      "width": 40,
+      "height": 40,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_PokemonLeague",
+      "secondary_tileset": "gTileset_Luminara2",
+      "border_filepath": "data/layouts/PokemonLeague/border.bin",
+      "blockdata_filepath": "data/layouts/PokemonLeague/map.bin"
     }
   ]
 }
