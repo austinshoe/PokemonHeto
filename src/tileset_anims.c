@@ -82,6 +82,7 @@ static void QueueAnimTiles_Fall_Purpleflower(u16);
 static void QueueAnimTiles_volcano1_Lava(u16);
 static void QueueAnimTiles_Luminara_Flower(u16);
 static void QueueAnimTiles_PokemonLeague_Lilacs(u16);
+static void QueueAnimTiles_PokemonLeague_Flag(u16);
 
 const u16 gTilesetAnims_General_Flower_Frame1[] = INCBIN_U16("data/tilesets/primary/general/anim/flower/1.4bpp");
 const u16 gTilesetAnims_General_Flower_Frame0[] = INCBIN_U16("data/tilesets/primary/general/anim/flower/0.4bpp");
@@ -125,6 +126,38 @@ const u16 *const gTilesetAnims_PokemonLeague_Lilacs[] = {
     gTilesetAnims_PokemonLeague_Lilacs_Frame1,
     gTilesetAnims_PokemonLeague_Lilacs_Frame2,
     gTilesetAnims_PokemonLeague_Lilacs_Frame3
+};
+
+const u16 gTilesetAnims_PokemonLeague_Flag_Frame0[] = INCBIN_U16("data/tilesets/primary/pokemon_league/anim/flag/0.4bpp");
+const u16 gTilesetAnims_PokemonLeague_Flag_Frame1[] = INCBIN_U16("data/tilesets/primary/pokemon_league/anim/flag/1.4bpp");
+const u16 gTilesetAnims_PokemonLeague_Flag_Frame2[] = INCBIN_U16("data/tilesets/primary/pokemon_league/anim/flag/2.4bpp");
+const u16 gTilesetAnims_PokemonLeague_Flag_Frame3[] = INCBIN_U16("data/tilesets/primary/pokemon_league/anim/flag/3.4bpp");
+const u16 gTilesetAnims_PokemonLeague_Flag_Frame4[] = INCBIN_U16("data/tilesets/primary/pokemon_league/anim/flag/4.4bpp");
+const u16 gTilesetAnims_PokemonLeague_Flag_Frame5[] = INCBIN_U16("data/tilesets/primary/pokemon_league/anim/flag/5.4bpp");
+const u16 gTilesetAnims_PokemonLeague_Flag_Frame6[] = INCBIN_U16("data/tilesets/primary/pokemon_league/anim/flag/6.4bpp");
+const u16 gTilesetAnims_PokemonLeague_Flag_Frame7[] = INCBIN_U16("data/tilesets/primary/pokemon_league/anim/flag/7.4bpp");
+const u16 gTilesetAnims_PokemonLeague_Flag_Frame8[] = INCBIN_U16("data/tilesets/primary/pokemon_league/anim/flag/8.4bpp");
+const u16 gTilesetAnims_PokemonLeague_Flag_Frame9[] = INCBIN_U16("data/tilesets/primary/pokemon_league/anim/flag/9.4bpp");
+const u16 gTilesetAnims_PokemonLeague_Flag_Frame10[] = INCBIN_U16("data/tilesets/primary/pokemon_league/anim/flag/10.4bpp");
+const u16 gTilesetAnims_PokemonLeague_Flag_Frame11[] = INCBIN_U16("data/tilesets/primary/pokemon_league/anim/flag/11.4bpp");
+const u16 gTilesetAnims_PokemonLeague_Flag_Frame12[] = INCBIN_U16("data/tilesets/primary/pokemon_league/anim/flag/12.4bpp");
+const u16 gTilesetAnims_PokemonLeague_Flag_Frame13[] = INCBIN_U16("data/tilesets/primary/pokemon_league/anim/flag/13.4bpp");
+
+const u16 *const gTilesetAnims_PokemonLeague_Flag[] = {
+    gTilesetAnims_PokemonLeague_Flag_Frame0,
+    gTilesetAnims_PokemonLeague_Flag_Frame1,
+    gTilesetAnims_PokemonLeague_Flag_Frame2,
+    gTilesetAnims_PokemonLeague_Flag_Frame3,
+    gTilesetAnims_PokemonLeague_Flag_Frame4,
+    gTilesetAnims_PokemonLeague_Flag_Frame5,
+    gTilesetAnims_PokemonLeague_Flag_Frame6,
+    gTilesetAnims_PokemonLeague_Flag_Frame7,
+    gTilesetAnims_PokemonLeague_Flag_Frame8,
+    gTilesetAnims_PokemonLeague_Flag_Frame9,
+    gTilesetAnims_PokemonLeague_Flag_Frame10,
+    gTilesetAnims_PokemonLeague_Flag_Frame11,
+    gTilesetAnims_PokemonLeague_Flag_Frame12,
+    gTilesetAnims_PokemonLeague_Flag_Frame13
 };
 
 const u16 gTilesetAnims_volcano1_Lava_Frame0[] = INCBIN_U16("data/tilesets/primary/volcano_1/anim/lava/0.4bpp");
@@ -822,6 +855,12 @@ static void QueueAnimTiles_PokemonLeague_Lilacs(u16 timer)
     AppendTilesetAnimToBuffer(gTilesetAnims_PokemonLeague_Lilacs[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(128)), 12 * TILE_SIZE_4BPP);
 }
 
+static void QueueAnimTiles_PokemonLeague_Flag(u16 timer)
+{
+    u16 i = timer % 14;
+    AppendTilesetAnimToBuffer(gTilesetAnims_PokemonLeague_Flag[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(496)), 16 * TILE_SIZE_4BPP);
+}
+
 void InitTilesetAnim_Petalburg(void)
 {
     sSecondaryTilesetAnimCounter = 0;
@@ -1007,6 +1046,8 @@ static void TilesetAnim_PokemonLeague(u16 timer)
 {
     if (timer % 16 == 0)
         QueueAnimTiles_PokemonLeague_Lilacs(timer / 16);
+    if (timer % 16 == 0)
+        QueueAnimTiles_PokemonLeague_Flag(timer / 16);
 }
 
 static void TilesetAnim_Rustboro(u16 timer)
