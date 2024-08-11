@@ -273,3 +273,6 @@ const u16 gMetatileAttributes_Kuromisa2[] = INCBIN_U16("data/tilesets/secondary/
 
 const u16 gMetatiles_PokemonLeague[] = INCBIN_U16("data/tilesets/primary/pokemon_league/metatiles.bin");
 const u16 gMetatileAttributes_PokemonLeague[] = INCBIN_U16("data/tilesets/primary/pokemon_league/metatile_attributes.bin");
+
+const u16 gMetatiles_PokemonLeague2[] = INCBIN_U16("data/tilesets/secondary/pokemon_league_2/metatiles.bin");
+const u16 gMetatileAttributes_PokemonLeague2[] = INCBIN_U16("data/tilesets/secondary/pokemon_league_2/metatile_attributes.bin");

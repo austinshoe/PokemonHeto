@@ -6849,7 +6849,7 @@
       "border_width": 2,
       "border_height": 2,
       "primary_tileset": "gTileset_PokemonLeague",
-      "secondary_tileset": "gTileset_Luminara2",
+      "secondary_tileset": "gTileset_PokemonLeague2",
       "border_filepath": "data/layouts/PokemonLeague/border.bin",
       "blockdata_filepath": "data/layouts/PokemonLeague/map.bin"
     },

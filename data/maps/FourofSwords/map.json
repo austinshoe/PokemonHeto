@@ -30,6 +30,20 @@
       "elevation": 0,
       "dest_map": "MAP_EIGTH_CUP",
       "dest_warp_id": "1"
+    },
+    {
+      "x": 52,
+      "y": 46,
+      "elevation": 0,
+      "dest_map": "MAP_POKEMON_LEAGUE",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 53,
+      "y": 46,
+      "elevation": 0,
+      "dest_map": "MAP_POKEMON_LEAGUE",
+      "dest_warp_id": "1"
     }
   ],
   "coord_events": [

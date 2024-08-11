@@ -1067,3 +1067,14 @@ const struct Tileset gTileset_PokemonLeague =
     .metatileAttributes = gMetatileAttributes_PokemonLeague,
     .callback = InitTilesetAnim_PokemonLeague,
 };
+
+const struct Tileset gTileset_PokemonLeague2 =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_PokemonLeague2,
+    .palettes = gTilesetPalettes_PokemonLeague2,
+    .metatiles = gMetatiles_PokemonLeague2,
+    .metatileAttributes = gMetatileAttributes_PokemonLeague2,
+    .callback = NULL,
+};
