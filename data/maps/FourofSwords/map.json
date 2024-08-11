@@ -1,40 +1,34 @@
 {
-  "id": "MAP_EIGTH_CUP",
-  "name": "EigthCup",
-  "layout": "LAYOUT_EIGTH_CUP",
+  "id": "MAP_FOUROF_SWORDS",
+  "name": "FourofSwords",
+  "layout": "LAYOUT_FOUROF_SWORDS",
   "music": "MUS_ABANDONED_SHIP",
   "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
-  "map_type": "MAP_TYPE_ROUTE",
+  "map_type": "MAP_TYPE_TOWN",
   "allow_cycling": true,
   "allow_escaping": false,
   "allow_running": true,
   "show_map_name": true,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
-  "connections": [
-    {
-      "map": "MAP_PEARL_TOWN",
-      "offset": -24,
-      "direction": "left"
-    }
-  ],
+  "connections": 0,
   "object_events": [
 
   ],
   "warp_events": [
     {
-      "x": 94,
-      "y": 16,
+      "x": 1,
+      "y": 2,
       "elevation": 0,
-      "dest_map": "MAP_FOUROF_SWORDS",
+      "dest_map": "MAP_EIGTH_CUP",
       "dest_warp_id": "0"
     },
     {
-      "x": 95,
-      "y": 16,
+      "x": 2,
+      "y": 2,
       "elevation": 0,
-      "dest_map": "MAP_FOUROF_SWORDS",
+      "dest_map": "MAP_EIGTH_CUP",
       "dest_warp_id": "1"
     }
   ],

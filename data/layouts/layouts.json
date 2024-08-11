@@ -6852,6 +6852,18 @@
       "secondary_tileset": "gTileset_Luminara2",
       "border_filepath": "data/layouts/PokemonLeague/border.bin",
       "blockdata_filepath": "data/layouts/PokemonLeague/map.bin"
+    },
+    {
+      "id": "LAYOUT_FOUROF_SWORDS",
+      "name": "FourofSwords_Layout",
+      "width": 68,
+      "height": 60,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Luminara",
+      "secondary_tileset": "gTileset_Luminara2",
+      "border_filepath": "data/layouts/FourofSwords/border.bin",
+      "blockdata_filepath": "data/layouts/FourofSwords/map.bin"
     }
   ]
 }
