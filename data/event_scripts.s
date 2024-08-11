@@ -1323,3 +1323,5 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/PokemonLeague/scripts.inc"
 
 	.include "data/maps/FourofSwords/scripts.inc"
+
+	.include "data/maps/NewMap15/scripts.inc"

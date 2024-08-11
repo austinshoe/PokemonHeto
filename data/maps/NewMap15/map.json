@@ -1,12 +1,12 @@
 {
-  "id": "MAP_FOUROF_SWORDS",
-  "name": "FourofSwords",
-  "layout": "LAYOUT_FOUROF_SWORDS",
+  "id": "MAP_NEW_MAP15",
+  "name": "NewMap15",
+  "layout": "LAYOUT_NEW_MAP15",
   "music": "MUS_ABANDONED_SHIP",
   "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
-  "map_type": "MAP_TYPE_TOWN",
+  "map_type": "MAP_TYPE_ROUTE",
   "allow_cycling": true,
   "allow_escaping": false,
   "allow_running": true,
@@ -18,31 +18,31 @@
   ],
   "warp_events": [
     {
-      "x": 1,
-      "y": 2,
+      "x": 57,
+      "y": 8,
       "elevation": 0,
-      "dest_map": "MAP_EIGTH_CUP",
+      "dest_map": "MAP_POKEMON_LEAGUE",
       "dest_warp_id": "0"
     },
     {
-      "x": 2,
-      "y": 2,
+      "x": 58,
+      "y": 8,
       "elevation": 0,
-      "dest_map": "MAP_EIGTH_CUP",
+      "dest_map": "MAP_POKEMON_LEAGUE",
       "dest_warp_id": "1"
     },
     {
-      "x": 52,
-      "y": 46,
+      "x": 8,
+      "y": 67,
       "elevation": 0,
-      "dest_map": "MAP_NEW_MAP15",
-      "dest_warp_id": "2"
+      "dest_map": "MAP_FOUROF_SWORDS",
+      "dest_warp_id": "0"
     },
     {
-      "x": 53,
-      "y": 46,
+      "x": 9,
+      "y": 67,
       "elevation": 0,
-      "dest_map": "MAP_NEW_MAP15",
+      "dest_map": "MAP_FOUROF_SWORDS",
       "dest_warp_id": "3"
     }
   ],

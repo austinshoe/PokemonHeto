@@ -6845,7 +6845,7 @@
       "id": "LAYOUT_POKEMON_LEAGUE",
       "name": "PokemonLeague_Layout",
       "width": 40,
-      "height": 40,
+      "height": 60,
       "border_width": 2,
       "border_height": 2,
       "primary_tileset": "gTileset_PokemonLeague",
@@ -6864,6 +6864,18 @@
       "secondary_tileset": "gTileset_Luminara2",
       "border_filepath": "data/layouts/FourofSwords/border.bin",
       "blockdata_filepath": "data/layouts/FourofSwords/map.bin"
+    },
+    {
+      "id": "LAYOUT_NEW_MAP15",
+      "name": "NewMap15_Layout",
+      "width": 80,
+      "height": 80,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_Petalburg",
+      "border_filepath": "data/layouts/NewMap15/border.bin",
+      "blockdata_filepath": "data/layouts/NewMap15/map.bin"
     }
   ]
 }
