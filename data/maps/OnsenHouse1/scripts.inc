@@ -10,13 +10,13 @@ Script_OnsenCityHouse2Man1::
     msgbox Text_OnsenCityHouse2Man2, MSGBOX_DEFAULT
     closemessage
     delay 8
-    msgbox Text_OnsenCityHouse2Man12, MSGBOX_DEFAULT
+    msgbox Text_OnsenCityHouse2ManOpinion, MSGBOX_DEFAULT
     closemessage
     delay 16
-    msgbox Text_OnsenCityHouse2Man13, MSGBOX_DEFAULT
+    msgbox Text_OnsenCityHouse2ManHappy, MSGBOX_DEFAULT
     closemessage
     delay 8
-    msgbox Text_OnsenCityHouse2Man22, MSGBOX_DEFAULT
+    msgbox Text_OnsenCityHouse2ManTripping, MSGBOX_DEFAULT
     release
     end
     
@@ -29,13 +29,13 @@ Script_OnsenCityHouse2Man2::
     msgbox Text_OnsenCityHouse2Man2, MSGBOX_DEFAULT
     closemessage
     delay 8
-    msgbox Text_OnsenCityHouse2Man12, MSGBOX_DEFAULT
+    msgbox Text_OnsenCityHouse2ManOpinion, MSGBOX_DEFAULT
     closemessage
     delay 16
-    msgbox Text_OnsenCityHouse2Man13, MSGBOX_DEFAULT
+    msgbox Text_OnsenCityHouse2ManHappy, MSGBOX_DEFAULT
     closemessage
     delay 8
-    msgbox Text_OnsenCityHouse2Man22, MSGBOX_DEFAULT
+    msgbox Text_OnsenCityHouse2ManTripping, MSGBOX_DEFAULT
     release
     end
 
@@ -50,16 +50,16 @@ Text_OnsenCityHouse2Man2:
     .string "Light is miles smarter than L.\l"
     .string "It's not even close.$"
     
-Text_OnsenCityHouse2Man12
+Text_OnsenCityHouse2ManOpinion:
     .string "Let the man speak.\n"
     .string "What do you think?$"
 
-Text_OnsenCityHouse2Man13
+Text_OnsenCityHouse2ManHappy:
     .string "SEEE?!\n"
     .string "I TOLD YOU!\l"
     .string "L IS WAY SMARTER!$"
 
-Text_OnsenCityHouse2Man22
+Text_OnsenCityHouse2ManTripping:
     .string "Nah, both of you are tripping.\n"
     .string "I'm not going to waste a second longer\l"
     .string "arguing with you fools.$"
