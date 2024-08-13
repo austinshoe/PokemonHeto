@@ -22,12 +22,12 @@ Script_HallowSparkCityPowerPlantSign::
 Text_HallowSparkCityPowerPlantSign:
     .string "Hallow Spark City Powerplant$"
     
-Script_HallowSparkCitySign::
+Script_HallowSparkCityExitSign::
     lock
     faceplayer
-    msgbox Text_HallowSparkCitySign, MSGBOX_DEFAULT
+    msgbox Text_HallowSparkCityExitSign, MSGBOX_DEFAULT
     release
     end
 
-Text_HallowSparkCitySign:
+Text_HallowSparkCityExitSign:
     .string "{CLEAR_TO 70}Exit$"
