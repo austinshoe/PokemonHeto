@@ -17,19 +17,37 @@ Script_OnsenCityHouse2Man1::
     closemessage
     delay 8
     msgbox Text_OnsenCityHouse2Man2P2, MSGBOX_DEFAULT
+    release
+    end
+    
+Script_OnsenCityHouse2Man2::
+    lock
+    faceplayer
+    msgbox Text_OnsenCityHouse2Man1, MSGBOX_DEFAULT
     closemessage
+    delay 0
+    msgbox Text_OnsenCityHouse2Man2, MSGBOX_DEFAULT
+    closemessage
+    delay 8
+    msgbox Text_OnsenCityHouse2Man1P2, MSGBOX_DEFAULT
+    closemessage
+    delay 32
+    msgbox Text_OnsenCityHouse2Man1P3, MSGBOX_DEFAULT
+    closemessage
+    delay 8
+    msgbox Text_OnsenCityHouse2Man2P2, MSGBOX_DEFAULT
     release
     end
 
 Text_OnsenCityHouse2Man1:
     .string "Can you settle this argument real\n"
     .string "quick?\l"
-    .string "This guy think that Light is smarter\l"
+    .string "This guy thinks that Light is smarter\l"
     .string "than L, but L is waaaay smarter than-$"
 
 Text_OnsenCityHouse2Man2:
     .string "No way.\n"
-    .string "Light is miles smarter than L."
+    .string "Light is miles smarter than L.\l"
     .string "It's not even close.$"
     
 Text_OnsenCityHouse2Man1P2
