@@ -5,14 +5,19 @@ Script_OnsenCityHouse2Man1::
     lock
     faceplayer
     msgbox Text_OnsenCityHouse2Man1, MSGBOX_DEFAULT
+    closemessage
     delay 0
     msgbox Text_OnsenCityHouse2Man2, MSGBOX_DEFAULT
+    closemessage
     delay 8
     msgbox Text_OnsenCityHouse2Man1P2, MSGBOX_DEFAULT
+    closemessage
     delay 32
     msgbox Text_OnsenCityHouse2Man1P3, MSGBOX_DEFAULT
+    closemessage
     delay 8
     msgbox Text_OnsenCityHouse2Man2P2, MSGBOX_DEFAULT
+    closemessage
     release
     end
 
