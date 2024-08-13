@@ -10,13 +10,13 @@ Script_OnsenCityHouse2Man1::
     msgbox Text_OnsenCityHouse2Man2, MSGBOX_DEFAULT
     closemessage
     delay 8
-    msgbox Text_OnsenCityHouse2Man1P2, MSGBOX_DEFAULT
+    msgbox Text_OnsenCityHouse2Man12, MSGBOX_DEFAULT
     closemessage
-    delay 32
-    msgbox Text_OnsenCityHouse2Man1P3, MSGBOX_DEFAULT
+    delay 16
+    msgbox Text_OnsenCityHouse2Man13, MSGBOX_DEFAULT
     closemessage
     delay 8
-    msgbox Text_OnsenCityHouse2Man2P2, MSGBOX_DEFAULT
+    msgbox Text_OnsenCityHouse2Man22, MSGBOX_DEFAULT
     release
     end
     
@@ -31,7 +31,7 @@ Script_OnsenCityHouse2Man2::
     delay 8
     msgbox Text_OnsenCityHouse2Man12, MSGBOX_DEFAULT
     closemessage
-    delay 32
+    delay 16
     msgbox Text_OnsenCityHouse2Man13, MSGBOX_DEFAULT
     closemessage
     delay 8
