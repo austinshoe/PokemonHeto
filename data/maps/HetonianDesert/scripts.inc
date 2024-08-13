@@ -31,3 +31,37 @@ HetonianDesert_WeatherNormal::
     setweather WEATHER_NONE
     doweather
     end
+
+Script_HetonianDesertMan1::
+    lock
+    faceplayer
+    msgbox Text_HetonianDesertMan1, MSGBOX_DEFAULT
+    release
+    end
+
+Text_HetonianDesertMan1:
+    .string "Are you also running away from those\n"
+    .string "guys from the powerplant?$"
+    
+Script_HetonianDesertWoman1::
+    lock
+    faceplayer
+    msgbox Text_HetonianDesertWoman1, MSGBOX_DEFAULT
+    release
+    end
+
+Text_HetonianDesertWoman1:
+    .string "The dispute ended years ago.\n"
+    .string "Why are they still mad about it?$"
+    
+Script_HetonianDesertMan2::
+    lock
+    faceplayer
+    msgbox Text_HetonianDesertMan2, MSGBOX_DEFAULT
+    release
+    end
+
+Text_HetonianDesertMan2:
+    .string "I am one with the Desert and the\n"
+    .string "Desert is one with me.\p"
+    .string "Commence the ritual.$"

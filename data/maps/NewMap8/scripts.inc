@@ -9,7 +9,7 @@ Script_CoralShoreSign::
     end
 
 Text_CoralShoreSign:
-    .string "{COLOR BLUE}Coral Shore\n"
+    .string "{COLOR BLUE}{CLEAR_TO 70}Coral Shore\n"
     .string "{COLOR DARK_GRAY}There's water here or something idk.$"
 
 Script_CoralShoreBeachMan1::

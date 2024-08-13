@@ -63,4 +63,5 @@ Script_FrostvaleTundraSign::
     end
     
 Text_FrostvaleTundraSign:
-    .string "Welcome to {COLOR BLUE}Frostvale Tundra$"
+    .string "{COLOR BLUE}{CLEAR_TO 70}Frostvale Tundra$"
+    .string "There's snow here!!!$"

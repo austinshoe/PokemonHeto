@@ -81,5 +81,5 @@ Script_LuminaCitySign::
     end
 
 Text_LuminaCitySign:
-    .string "{COLOR BLUE}Lumina Town\n"
+    .string "{COLOR BLUE}{CLEAR_TO 70}Lumina Town\n"
     .string "{COLOR DARK_GRAY}The first step of a 1000-mile journey$"

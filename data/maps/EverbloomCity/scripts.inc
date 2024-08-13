@@ -36,7 +36,7 @@ Script_EverbloomCitySign::
     end
 
 Text_EverbloomCitySign:
-    .string "{COLOR BLUE}Everbloom City\n"
+    .string "{COLOR BLUE}{CLEAR_TO 70}Everbloom City\n"
     .string "{COLOR DARK_GRAY}The flower that bends with the wind$"
     
 Script_EverbloomCityWoman1::

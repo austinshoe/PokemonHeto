@@ -226,7 +226,7 @@ Text_Prebattle1:
     .string "one that deserves the Dratini!$"
 
 Text_TownSign:
-    .string "{COLOR BLUE}PearlTown\n"
+    .string "{COLOR BLUE}{CLEAR_TO 70}PearlTown\n"
     .string "{COLOR DARK_GRAY}A haven of tranquility and beauty$"
     
 Text_LabSign:

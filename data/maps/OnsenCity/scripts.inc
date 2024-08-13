@@ -9,7 +9,7 @@ Script_OnsenCitySign::
     end
 
 Text_OnsenCitySign:
-    .string "{COLOR BLUE}Onsen City\n"
+    .string "{COLOR BLUE}{CLEAR_TO 70}Onsen City\n"
     .string "{COLOR DARK_GRAY}Why are you even here?$"
 
 Script_OnsenCityOutsideBoy1::

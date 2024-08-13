@@ -23,3 +23,13 @@ Text_RouteAfterKassanLittleGirl1:
     .string "Can you walk faster?\n"
     .string "I don't want to see you a second more\l"
     .string "than I have to.$"
+
+Script_RouteAfterKassanExitSign::
+    lock
+    faceplayer
+    msgbox Text_RouteAfterKassanExitSign, MSGBOX_DEFAULT
+    release
+    end
+
+Text_RouteAfterKassanExitSign:
+    .string "{COLOR BLUE}{CLEAR_TO 70}Exit$"

@@ -25,7 +25,7 @@ Script_OnsenCityHouse2Man2::
     faceplayer
     msgbox Text_OnsenCityHouse2Man1, MSGBOX_DEFAULT
     closemessage
-    delay 0
+    delay 8
     msgbox Text_OnsenCityHouse2Man2, MSGBOX_DEFAULT
     closemessage
     delay 8

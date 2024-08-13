@@ -224,7 +224,7 @@ Script_KassanSign::
     end
     
 Text_KassanSign:
-    .string "{COLOR BLUE}Kassan\n"
+    .string "{COLOR BLUE}{CLEAR_TO 70}Kassan\n"
     .string "{COLOR DARK_GRAY}If you're not a kid, leave$"
 
 Script_KassanLittleGirl1::
