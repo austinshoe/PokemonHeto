@@ -1325,3 +1325,31 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/FourofSwords/scripts.inc"
 
 	.include "data/maps/NewMap15/scripts.inc"
+
+	.include "data/maps/SilverstoneCenter/scripts.inc"
+
+	.include "data/maps/SilverstoneMart/scripts.inc"
+
+	.include "data/maps/SilverstoneHouse1A/scripts.inc"
+
+	.include "data/maps/SilverstoneHouse1B/scripts.inc"
+
+	.include "data/maps/SilverstoneHouse2A/scripts.inc"
+
+	.include "data/maps/SilverstoneHouse2B/scripts.inc"
+
+	.include "data/maps/SilverstoneHouse3A/scripts.inc"
+
+	.include "data/maps/SilverstoneHouse3B/scripts.inc"
+
+	.include "data/maps/SilverstoneHouse4A/scripts.inc"
+
+	.include "data/maps/SilverstoneHouse4B/scripts.inc"
+
+	.include "data/maps/SilverstoneHouse5A/scripts.inc"
+
+	.include "data/maps/SilverstoneHouse5B/scripts.inc"
+
+	.include "data/maps/SilverstoneHouse6A/scripts.inc"
+
+	.include "data/maps/SilverstoneHouse6B/scripts.inc"

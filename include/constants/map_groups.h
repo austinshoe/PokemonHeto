@@ -730,6 +730,20 @@
 #define MAP_KUSHIANDA_HOUSE3 (4 | (44 << 8))
 
 // gMapGroup_IndoorSilverstone
+#define MAP_SILVERSTONE_CENTER  (0 | (45 << 8))
+#define MAP_SILVERSTONE_MART    (1 | (45 << 8))
+#define MAP_SILVERSTONE_HOUSE1A (2 | (45 << 8))
+#define MAP_SILVERSTONE_HOUSE1B (3 | (45 << 8))
+#define MAP_SILVERSTONE_HOUSE2A (4 | (45 << 8))
+#define MAP_SILVERSTONE_HOUSE2B (5 | (45 << 8))
+#define MAP_SILVERSTONE_HOUSE3A (6 | (45 << 8))
+#define MAP_SILVERSTONE_HOUSE3B (7 | (45 << 8))
+#define MAP_SILVERSTONE_HOUSE4A (8 | (45 << 8))
+#define MAP_SILVERSTONE_HOUSE4B (9 | (45 << 8))
+#define MAP_SILVERSTONE_HOUSE5A (10 | (45 << 8))
+#define MAP_SILVERSTONE_HOUSE5B (11 | (45 << 8))
+#define MAP_SILVERSTONE_HOUSE6A (12 | (45 << 8))
+#define MAP_SILVERSTONE_HOUSE6B (13 | (45 << 8))
 
 // gMapGroup_Underwater
 #define MAP_NEPTUNETO_EMBERFALL         (0 | (46 << 8))

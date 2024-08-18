@@ -36,6 +36,62 @@
       "elevation": 0,
       "dest_map": "MAP_SIXTH_CUP",
       "dest_warp_id": "1"
+    },
+    {
+      "x": 9,
+      "y": 36,
+      "elevation": 0,
+      "dest_map": "MAP_SILVERSTONE_CENTER",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 29,
+      "y": 36,
+      "elevation": 0,
+      "dest_map": "MAP_SILVERSTONE_MART",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 8,
+      "y": 8,
+      "elevation": 0,
+      "dest_map": "MAP_SILVERSTONE_HOUSE1A",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 24,
+      "y": 8,
+      "elevation": 0,
+      "dest_map": "MAP_SILVERSTONE_HOUSE2A",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 32,
+      "y": 8,
+      "elevation": 0,
+      "dest_map": "MAP_SILVERSTONE_HOUSE3A",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 40,
+      "y": 8,
+      "elevation": 0,
+      "dest_map": "MAP_SILVERSTONE_HOUSE4A",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 39,
+      "y": 22,
+      "elevation": 0,
+      "dest_map": "MAP_SILVERSTONE_HOUSE5A",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 32,
+      "y": 36,
+      "elevation": 0,
+      "dest_map": "MAP_SILVERSTONE_HOUSE6A",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

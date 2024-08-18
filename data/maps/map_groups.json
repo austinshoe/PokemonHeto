@@ -774,7 +774,20 @@
     "KushiandaHouse3"
   ],
   "gMapGroup_IndoorSilverstone": [
-
+    "SilverstoneCenter",
+    "SilverstoneMart",
+    "SilverstoneHouse1A",
+    "SilverstoneHouse1B",
+    "SilverstoneHouse2A",
+    "SilverstoneHouse2B",
+    "SilverstoneHouse3A",
+    "SilverstoneHouse3B",
+    "SilverstoneHouse4A",
+    "SilverstoneHouse4B",
+    "SilverstoneHouse5A",
+    "SilverstoneHouse5B",
+    "SilverstoneHouse6A",
+    "SilverstoneHouse6B"
   ],
   "gMapGroup_Underwater": [
     "NeptunetoEmberfall",
