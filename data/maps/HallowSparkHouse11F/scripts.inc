@@ -24,5 +24,5 @@ Text_HallowSparkHouse1Woman1:
     .string "My husband was gifted this house\n"
     .string "for his heroics during the war\l"
     .string "between {SHADOW_DARK_GRAY}The Republic of Toemayto {SHADOW_LIGHT_GRAY} and\l"
-    .string "{SHADOW_DARK_GRAY}Hehetian Empire.{SHADOW_LIGHT_GRAY}\l"
+    .string "{SHADOW DARK_GRAY}Hehetian Empire.{SHADOW LIGHT_GRAY}\l"
     .string "Impressive, right?$"
