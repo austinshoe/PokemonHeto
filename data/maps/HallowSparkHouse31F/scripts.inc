@@ -31,11 +31,11 @@ Text_HallowSparkHouse3Woman1:
 Script_HallowSparkHouse3Kid1::
     lock
     faceplayer
-    msgbox Text_HallowSparkHouse2Kid1, MSGBOX_DEFAULT
+    msgbox Text_HallowSparkHouse3Kid1, MSGBOX_DEFAULT
     release
     end
 
-Text_HallowSparkHouse2Kid1:
+Text_HallowSparkHouse3Kid1:
     .string "Man, you really just walk into other\n"
     .string "people's houses like that, huh.\l"
     .string "That's kinda weird.$"
