@@ -21,14 +21,14 @@
       "x": 32,
       "y": 59,
       "elevation": 0,
-      "dest_map": "MAP_EIGTH_CUP",
+      "dest_map": "MAP_NEW_MAP15",
       "dest_warp_id": "0"
     },
     {
       "x": 33,
       "y": 59,
       "elevation": 0,
-      "dest_map": "MAP_EIGTH_CUP",
+      "dest_map": "MAP_NEW_MAP15",
       "dest_warp_id": "1"
     }
   ],

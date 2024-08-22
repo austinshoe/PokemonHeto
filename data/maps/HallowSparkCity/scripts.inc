@@ -30,4 +30,4 @@ Script_HallowSparkCityExitSign::
     end
 
 Text_HallowSparkCityExitSign:
-    .string "{CLEAR_TO 70}Exit$"
+    .string "{CLEAR_TO 70}Gate to Hetonian Desert$"
