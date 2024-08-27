@@ -1,6 +1,37 @@
 Kasaan_MapScripts::
+    map_script MAP_SCRIPT_ON_TRANSITION, Kasaan_OnTransition
     .byte 0
 
+Kasaan_OnTransition::
+    call_if_unset FLAG_HIDE_PETALBURG_WOODS_AQUA_GRUNT, Kasaan_VarZero
+    call_if_set FLAG_HIDE_PETALBURG_WOODS_AQUA_GRUNT, Kasaan_VarOne
+    end
+
+Kasaan_VarZero::
+    setvar VAR_DEWFORD_TOWN_STATE, 0
+    call Kasaan_LockedDoor
+    end
+
+Kasaan_LockedDoor::
+    lockall
+    playse SE_PIN
+    setmetatile 7, 16, METATILE_Tundra1_Gym_Door, False
+    special DrawWholeMapView
+    releaseall
+    end
+
+Kasaan_VarOne::
+    setvar VAR_DEWFORD_TOWN_STATE, 1
+    call Kasaan_UnlockedDoor
+    end
+    
+Kasaan_UnlockedDoor::
+    lockall
+    playse SE_PIN
+    setmetatile 7, 16, METATILE_Tundra1_Gym_Door, True
+    special DrawWholeMapView
+    releaseall
+    end
 
 Kasaan_Slide_Ice_Trees_Axes::
     msgbox Kasaan_Slide_Ice_Trees_Axes_Text_0, MSGBOX_SIGN
