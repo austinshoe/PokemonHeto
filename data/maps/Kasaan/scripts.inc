@@ -33,9 +33,6 @@ Kasaan_UnlockedDoor::
     releaseall
     end
 
-Kasaan_Geologist_Trigger
-    lock
-    goto_if_set
 
 Kasaan_Slide_Ice_Trees_Axes::
     msgbox Kasaan_Slide_Ice_Trees_Axes_Text_0, MSGBOX_SIGN
