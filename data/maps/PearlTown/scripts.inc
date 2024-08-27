@@ -204,17 +204,17 @@ Text_PreBattle:
 
 Text_Prebattle1:
     .string "{COLOR BLUE}Liam: {COLOR DARK_GRAY}I- I- I can't believe this!\n"
-    .string "Th- That's the Mirage Pokémon! How did\l"
-    .string "you get your hands on this?\p"
+    .string "Th- That's a {COLOR BLUE}Bagon{COLOR DARK_GRAY}!\l"
+    .string "How did you get your hands on this?\p"
     .string "...\p"
     .string "...\p"
     .string "...\p"
     .string "I see...\n"
     .string "So the professor gave it you, huh...\l"
-    .string "(all i got was a stupid magikarp...)\l"
+    .string "(all I got was a stupid {COLOR RED}magikarp{COLOR DARK_GRAY}...)\l"
     .string "(this is so unfair...)\l"
-    .string "{COLOR DARK_GRAY}Why did YOU get the Dratini? Why did I\l"
-    .string "get stuck with the Magikarp? What makes\l"
+    .string "{COLOR DARK_GRAY}Why did YOU get the {COLOR BLUE}Bagon{COLOR DARK_GRAY}? Why did I\l"
+    .string "get stuck with the {COLOR RED}Magikarp{COLOR DARK_GRAY}? What makes\l"
     .string "YOU so special?\p"
     .string "...\p"
     .string "...\p"
@@ -223,7 +223,7 @@ Text_Prebattle1:
     .string "...\p"
     .string "(No... I refuse to accept this)\n"
     .string "Imma prove right here right now, I'M the\l"
-    .string "one that deserves the Dratini!$"
+    .string "one that deserves the {COLOR BLUE}Bagon{COLOR DARK_GRAY}!$"
 
 Text_TownSign:
     .string "{COLOR BLUE}{CLEAR_TO 70}PearlTown\n"

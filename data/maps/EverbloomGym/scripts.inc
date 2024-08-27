@@ -25,7 +25,7 @@ Everbloom_Gym_Guide_Defeated::
 Text_Everbloom_Guide_Advice:
     .string "Hey, how's it going, Champ?\p"
     .string "Everbloom's Gym Leader, Flora, uses\n"
-    .string "{COLOR GREEN}Grass {COLOR DARK_GRAY}type Pokémon."
+    .string "{COLOR GREEN}Grass {COLOR DARK_GRAY}type Pokémon.\l"
     .string "Having a {COLOR GREEN}Bug{COLOR DARK_GRAY} type Pokémon or a {COLOR RED}fire{COLOR DARK_GRAY} type\l"
     .string "will make things a lot easier for you.\p"
     .string "Hey, you got this. Go for it!$"

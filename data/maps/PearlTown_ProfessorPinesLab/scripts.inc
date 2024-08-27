@@ -18,12 +18,23 @@ Script_Receive_Starter::
     msgbox Text_TakeDratini, MSGBOX_DEFAULT
     waitmessage
     closemessage
-    applymovement 1, Common_Movement_ExclamationMark
+    applymovement 1, Common_Movement_FaceLeft
     waitmovement 0
+    delay 16
+    applymovement 1, Common_Movement_FaceRight
+    waitmovement 0
+    delay 16
+    applymovement 1, Common_Movement_FaceLeft
+    waitmovement 0
+    delay 16
+    applymovement 1, Common_Movement_FaceRight
+    waitmovement 0
+    delay 16
+    faceplayer
     msgbox Text_TakeDratini2, MSGBOX_DEFAULT
     waitmessage
     closemessage
-    givemon SPECIES_DRATINI, 5, ITEM_DRAGON_FANG
+    givemon SPECIES_BAGON, 5, ITEM_DRAGON_FANG
     message Text_ReceivedDratini
     waitmessage
     playfanfare MUS_OBTAIN_ITEM
@@ -69,18 +80,21 @@ Text_TakeDratini:
     .string "I was looking for you. As you know,\l"
     .string "you're now old enough for your very\l"
     .string "first Pokémon!\l"
-    .string "Usually, we only give out Magikarps and\l"
-    .string "Feebas, but since your mom-$"
+    .string "As you know, the assistants and I have\l"
+    .string "been observing you young'uns from birth"
+    .string "to find you a fitting first Pokémon.$"
 
 Text_TakeDratini2:
-    .string "AHEM, WHAT I MEANT TO SAY WAS,\p"
+    .string "Let's see...\p"
     .string "...\p"
     .string "...\p"
     .string "...\p"
-    .string "You know what, here. Just take it.$"
+    .string "Ah!\n"
+    .string "It looks like the Pokémon we've prepared"
+    .string "for you is a {COLOR BLUE} Bagon{COLOR DARK_GRAY}!$"
 
 Text_ReceivedDratini:
-    .string "{PLAYER} received a Dratini!$"
+    .string "{PLAYER} received a Bagon!$"
 
 GivePokedex_Text_0:
     .string "{PLAYER} received the Pokédex!$"
