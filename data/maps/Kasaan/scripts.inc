@@ -15,7 +15,7 @@ Kasaan_VarZero::
 Kasaan_LockedDoor::
     lockall
     playse SE_PIN
-    setmetatile 7, 16, METATILE_Tundra1_Gym_Door, False
+    setmetatile 7, 16, METATILE_Tundra1_Gym_Door, FALSE
     special DrawWholeMapView
     releaseall
     end
@@ -28,7 +28,7 @@ Kasaan_VarOne::
 Kasaan_UnlockedDoor::
     lockall
     playse SE_PIN
-    setmetatile 7, 16, METATILE_Tundra1_Gym_Door, True
+    setmetatile 7, 16, METATILE_Tundra1_Gym_Door, TRUE
     special DrawWholeMapView
     releaseall
     end
