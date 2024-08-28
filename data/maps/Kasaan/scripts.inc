@@ -23,7 +23,7 @@ Kasaan_OnLoad::
     end
     
 Kasaan_LockedDoor::
-    setmetatile 7, 16, METATILE_Tundra1_Gym_Door, FALSE
+    setmetatile 7, 16, METATILE_Tundra1_Gym_Door, TRUE
     end
 
 Kasaan_VarTwo::
@@ -31,7 +31,7 @@ Kasaan_VarTwo::
     end
     
 Kasaan_UnlockedDoor::
-    setmetatile 7, 16, METATILE_Tundra1_Gym_Door, TRUE
+    setmetatile 7, 16, METATILE_Tundra1_Gym_Door, FALSE
     end
 
 Kasaan_Outside_Grunt::
@@ -45,7 +45,7 @@ Kasaan_Outside_Grunt::
     end
 
 Kasaan_Grunt_Post_Defeat:
-    msgbox Text_KasaanGruntDefeated, MSGBOX_DEFAULT
+    msgbox Text_KasaanGruntDefeated2, MSGBOX_DEFAULT
     release
     end
 
@@ -71,6 +71,8 @@ Kasaan_Geologist_Trigger::
 Kasaan_Player_Backed_Off:
     msgbox Text_Backed_Off, MSGBOX_DEFAULT
     applymovement OBJ_EVENT_ID_PLAYER, Movement_Kasaan_Back_Off
+    waitmovement 0
+    applymovement 11, Common_Movement_FaceOriginalDirection
     waitmovement 0
     releaseall
     end
@@ -390,3 +392,10 @@ Text_Did_Not_Back_Off:
 
 Text_KasaanGruntDefeated:
     .string "This is why I hate y'all dulls...$"
+
+Text_KasaanGruntDefeated2:
+    .string "This is why I hate y'all dulls...\p"
+    .string "I'm telling you though, don't go inside\n"
+    .string "or you'll face the repercussions of\l"
+    .string "messing with us, {SHADOW DARK_GRAY}Angrboda{SHADOW LIGHT_GRAY}.$"
+
