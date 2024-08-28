@@ -1,5 +1,6 @@
 Kasaan_MapScripts::
     map_script MAP_SCRIPT_ON_TRANSITION, Kasaan_OnTransition
+    map_script MAP_SCRIPT_ON_LOAD, Kasaan_OnLoad
     .byte 0
 
 Kasaan_OnTransition::
@@ -10,33 +11,27 @@ Kasaan_OnTransition::
 Kasaan_VarZero::
     setvar VAR_DEWFORD_TOWN_STATE, 0
     call_if_set FLAG_HIDE_PETALBURG_WOODS_AQUA_GRUNT, Kasaan_VarOne
-    call Kasaan_LockedDoor
     end
 
 Kasaan_VarOne::
     setvar VAR_DEWFORD_TOWN_STATE, 1
-    call Kasaan_LockedDoor
     end
-
+    
+Kasaan_OnLoad::
+    call_if_set FLAG_RECOVERED_DEVON_GOODS, Kasaan_UnlockedDoor
+    call_if_unset FLAG_RECOVERED_DEVON_GOODS, Kasaan_LockedDoor
+    end
+    
 Kasaan_LockedDoor::
-    lockall
-    playse SE_PIN
     setmetatile 7, 16, METATILE_Tundra1_Gym_Door, FALSE
-    special DrawWholeMapView
-    releaseall
     end
 
 Kasaan_VarTwo::
     setvar VAR_DEWFORD_TOWN_STATE, 2
-    call Kasaan_UnlockedDoor
     end
     
 Kasaan_UnlockedDoor::
-    lockall
-    playse SE_PIN
     setmetatile 7, 16, METATILE_Tundra1_Gym_Door, TRUE
-    special DrawWholeMapView
-    releaseall
     end
 
 Kasaan_Outside_Grunt::
