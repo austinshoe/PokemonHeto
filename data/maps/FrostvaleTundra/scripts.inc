@@ -1,6 +1,51 @@
 FrostvaleTundra_MapScripts::
+    mapscript MAP_SCRIPT_ON_TRANSITION, FrostvaleTundra_OnTransition
 	.byte 0
 
+FrostvaleTundra_OnTransition::
+    call_if_unset FLAG_DEFEATED_RIVAL_ROUTE_104, Tundra_State0
+    call_if_set FLAG_DEFEATED_RIVAL_ROUTE_104, Tundra_State1
+    end
+    
+Tundra_State0:
+    setvar VAR_ROUTE101_STATE, 0
+    end
+
+Tundra_State1:
+    setvar VAR_ROUTE101_STATE, 1
+    end
+
+Frostvale_Tundra_Rival_Trigger::
+    lock
+    applymovement 5, Common_Movement_ExclamationMark
+    waitmovement 0
+    applymovement 5, Common_Movement_WalkUp
+    waitmovement 0
+    msgbox Text_Frostvale_Rival_Intro, MSGBOX_DEFAULT
+    applymovement 5, Common_Movement_FaceAwayPlayer
+    waitmovement 0
+    msgbox Text_Frostvale_Rival_Got_Stronger, MSGBOX_DEFAULT
+    applymovement 5, Frostvale_Movement_Rival_Battle
+    waitmovement 0
+    msgbox Text_Frostvale_Rival_Battle, MSGBOX_DEFAULT
+    trainerbattle_no_intro TRAINER_MAY_ROUTE_110_MUDKIP, Text_FrostvaleLiamDefeated
+    setflag FLAG_DEFEATED_RIVAL_ROUTE_104
+    setvar VAR_ROUTE101_STATE, 1
+    applymovement 5, Common_Movement_WalkUp2
+    waitmovement 0
+    msgbox Text_FrostvaleLiamOutro, MSGBOX_DEFAULT
+    applymovement 5, Common_Movement_FaceAwayPlayer
+    waitmovement 0
+    msgbox Text_FrostvaleLiamNextGym, MSGBOX_DEFAULT
+    applymovement 5, Frostvale_Movement_RivalSkedaddle
+    waitmovement 0
+    fadescreen FADE_TO_BLACK
+    hideobjectat 5, MAP_FROSTVALE_TUNDRA
+    fadescreen FADE_FROM_BLACK
+    releaseall
+    end
+
+    
 Script_FrostvaleTundraMan1::
     lock
     faceplayer
@@ -65,3 +110,60 @@ Script_FrostvaleTundraSign::
 Text_FrostvaleTundraSign:
     .string "{COLOR BLUE}{CLEAR_TO 70}Frostvale Tundra$"
     .string "There's snow here!!!$"
+
+Text_Frostvale_Rival_Intro:
+    .string "{COLOR BLUE}Liam: {COLOR DARK_GRAY}{PLAYER}!\n"
+    .string "Long time no see!\l"
+    .string "Looks like you beat the {COLOR GREEN}Everbloom Gym, \l"
+    .string "huh?\p"
+    .string "$"
+    
+Text_Frostvale_Rival_Got_Stronger:
+    .string "...to be honest, after you beat me back\n"
+    .string "home, I've worked hard to get way\l"
+    .string "stronger.$"
+
+Text_Frostvale_Rival_Battle:
+    .string "Prepare yourself,\n"
+    .string "I'm not losing this time!$"
+
+Text_FrostvaleLiamDefeated:
+    .string "Damn...$"
+
+Text_FrostvaleLiamOutro:
+    .string "{COLOR BLUE}Liam: {COLOR DARK_GRAY}Even after working so hard,\n"
+    .string "I still can't beat you yet...\p"
+    .string "But I guess it was much closer than\n"
+    .string "last time.$"
+
+Text_FrostvaleLiamNextGym:
+    .string "The next gym is right ahead, past this\n"
+    .string "tundra, in {COLOR BLUE}Kasaan{COLOR DARK_GRAY}.\p"
+    .string "I won't lose next time.$"
+
+Frostvale_Movement_Rival_Battle:
+    walk_down
+    walk_down
+    face_up
+    step_end
+
+Frostvale_Movement_RivalSkedaddle:
+    walk_fast_down
+    walk_fast_down
+    walk_fast_down
+    walk_fast_down
+    walk_fast_down
+    walk_fast_down
+    walk_fast_down
+    walk_fast_down
+    face_right
+    walk_fast_right
+    walk_fast_right
+    walk_fast_right
+    walk_fast_right
+    face_down
+    walk_fast_down
+    walk_fast_down
+    walk_fast_down
+    walk_fast_down
+    step_end
