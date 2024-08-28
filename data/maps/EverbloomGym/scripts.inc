@@ -1,6 +1,6 @@
 EverbloomGym_MapScripts::
-        map_script MAP_SCRIPT_ON_LOAD, Everbloom_Gym_OnLoad
-        map_script MAP_SCRIPT_ON_RESUME, Everbloom_Gym_OnResume
+    map_script MAP_SCRIPT_ON_LOAD, Everbloom_Gym_OnLoad
+    map_script MAP_SCRIPT_ON_RESUME, Everbloom_Gym_OnResume
 	.byte 0
     
 Everbloom_Gym_OnLoad:
@@ -32,3 +32,10 @@ Text_Everbloom_Guide_Advice:
     
 Text_Everbloom_Guide_Defeated:
     .string "I smell the perfume of victory on you.$"
+
+Everbloom_Gym_Flora::
+    lock
+    faceplayer
+    setflag FLAG_DEFEATED_RUSTBORO_GYM
+    release
+    end
