@@ -1,5 +1,19 @@
 routebeforetundra_MapScripts::
+    map_script MAP_SCRIPT_ON_TRANSITION, routebeforetundra_OnTransition
 	.byte 0
+
+routebeforetundra_OnTransition::
+    call_if_unset FLAG_DEFEATED_RUSTBORO_GYM, routebeforetundra_VarZero
+    call_if_set FLAG_DEFEATED_RUSTBORO_GYM, routebeforetundra_VarOne
+    end
+
+routebeforetundra_VarZero::
+    setvar VAR_RUSTBORO_CITY_STATE, 0
+    return
+
+routebeforetundra_VarOne::
+    setvar VAR_RUSTBORO_CITY_STATE, 1
+    return
 
 PostEverbloomTrigger::
     lockall
