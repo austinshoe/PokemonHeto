@@ -3,12 +3,18 @@ Kasaan_MapScripts::
     .byte 0
 
 Kasaan_OnTransition::
-    call_if_unset FLAG_HIDE_PETALBURG_WOODS_AQUA_GRUNT, Kasaan_VarZero
-    call_if_set FLAG_HIDE_PETALBURG_WOODS_AQUA_GRUNT, Kasaan_VarOne
+    call_if_unset FLAG_RECOVERED_DEVON_GOODS, Kasaan_VarZero
+    call_if_set FLAG_RECOVERED_DEVON_GOODS, Kasaan_VarTwo
     end
 
 Kasaan_VarZero::
     setvar VAR_DEWFORD_TOWN_STATE, 0
+    call_if_set FLAG_HIDE_PETALBURG_WOODS_AQUA_GRUNT, Kasaan_VarOne
+    call Kasaan_LockedDoor
+    end
+
+Kasaan_VarOne::
+    setvar VAR_DEWFORD_TOWN_STATE, 1
     call Kasaan_LockedDoor
     end
 
@@ -20,8 +26,8 @@ Kasaan_LockedDoor::
     releaseall
     end
 
-Kasaan_VarOne::
-    setvar VAR_DEWFORD_TOWN_STATE, 1
+Kasaan_VarTwo::
+    setvar VAR_DEWFORD_TOWN_STATE, 2
     call Kasaan_UnlockedDoor
     end
     
@@ -33,6 +39,46 @@ Kasaan_UnlockedDoor::
     releaseall
     end
 
+Kasaan_Outside_Grunt::
+    lock
+    faceplayer
+    goto_if_set FLAG_HIDE_PETALBURG_WOODS_AQUA_GRUNT, Kasaan_Grunt_Post_Defeat
+    msgbox Text_Grunt_Dont_Go_In, MSGBOX_DEFAULT
+    applymovement 11, Common_Movement_FaceOriginalDirection
+    waitmovement 11
+    release
+    end
+
+Kasaan_Grunt_Post_Defeat:
+    msgbox Text_KasaanGruntDefeated, MSGBOX_DEFAULT
+    release
+    end
+
+Kasaan_Geologist_Trigger::
+    lockall
+    applymovement 11, Common_Movement_FaceLeft
+    waitmovement 11
+    applymovement 11, Common_Movement_ExclamationMark
+    waitmovement 11
+    delay 16
+    msgbox Text_Kasaan_Back_Off, MSGBOX_YESNO
+    compare VAR_RESULT, YES
+    goto_if_eq Kasaan_Player_Backed_Off
+    applymovement 0, Common_Movement_FaceLeft
+    waitmovement 0
+    msgbox Text_Did_Not_Back_Off, MSGBOX_DEFAULT
+    trainerbattle_no_intro TRAINER_GRUNT_PETALBURG_WOODS, Text_KasaanGruntDefeated
+    setflag FLAG_HIDE_PETALBURG_WOODS_AQUA_GRUNT
+    setvar VAR_DEWFORD_TOWN_STATE, 1
+    releaseall
+    end
+    
+Kasaan_Player_Backed_Off:
+    msgbox Text_Backed_Off, MSGBOX_DEFAULT
+    applymovement 0, Movement_Kasaan_Back_Off
+    waitmovement 0
+    releaseall
+    end
 
 Kasaan_Slide_Ice_Trees_Axes::
     msgbox Kasaan_Slide_Ice_Trees_Axes_Text_0, MSGBOX_SIGN
@@ -76,6 +122,7 @@ Kasaan_Playground_King::
     compare VAR_RESULT, 1
     goto_if_eq Kasaan_Playground_King_2
     msgbox Kasaan_Playground_King_Text_3
+    
 Kasaan_Playground_King_1:
     release
     end
@@ -318,3 +365,33 @@ Script_KassanLittleBoy3::
 Text_KassanLittleBoy3:
     .string "Your oldy moldie butt better leave now\l"
     .string "or else imma pull out my Weedle.$"
+
+Text_Grunt_Dont_Go_In:
+    .string "Oi! Stay away from here you filthy\n"
+    .string "Viola.\p"
+    .string "We're in the middle of doing something\n"
+    .string "so back off.$"
+
+Text_Kasaan_Back_Off:
+    .string "Don't you move any further!\p"
+    .string "I've been given special instructions to\n"
+    .string "not let anyone in. Especially coloreds\l"
+    .string "like you.\p"
+    .string "So back off 'cuz you don't want this\n"
+    .string "smoke.$"
+    
+Text_Backed_Off:
+    .string "Yeah that's what I thought.\p"
+    .string "Back the fuck off.$"
+
+Movement_Kasaan_Back_Off:
+    face_down
+    walk_down
+    step_end
+
+Text_Did_Not_Back_Off:
+    .string "So you think you're tough, cuh?\p"
+    .string "Square up, cuz shit's boutta get real.$"
+
+Text_KasaanGruntDefeated:
+    .string "This is why I hate y'all dulls...$"

@@ -79,9 +79,9 @@ Text_TakeDratini:
     .string "{SHADOW DARK_GRAY}Prof. Pine: {SHADOW LIGHT_GRAY}Hey, {PLAYER}! \n"
     .string "I was looking for you. As you know,\l"
     .string "you're now old enough for your very\l"
-    .string "first Pokémon!\l"
-    .string "As you know, the assistants and I have\l"
-    .string "been observing you young'uns from birth"
+    .string "first Pokémon!\p"
+    .string "As you know, the assistants and I have\n"
+    .string "been observing you young'uns from birth\l"
     .string "to find you a fitting first Pokémon.$"
 
 Text_TakeDratini2:
@@ -90,7 +90,7 @@ Text_TakeDratini2:
     .string "...\p"
     .string "...\p"
     .string "Ah!\n"
-    .string "It looks like the Pokémon we've prepared"
+    .string "It looks like the Pokémon we've prepared\l"
     .string "for you is a {COLOR BLUE} Bagon{COLOR DARK_GRAY}!$"
 
 Text_ReceivedDratini:

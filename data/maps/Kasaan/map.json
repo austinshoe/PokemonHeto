@@ -170,7 +170,7 @@
       "movement_range_y": 0,
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
-      "script": "NULL",
+      "script": "Kasaan_Outside_Grunt",
       "flag": "0"
     }
   ],
@@ -247,7 +247,15 @@
     }
   ],
   "coord_events": [
-
+    {
+      "type": "trigger",
+      "x": 5,
+      "y": 26,
+      "elevation": 0,
+      "var": "VAR_DEWFORD_TOWN_STATE",
+      "var_value": "0",
+      "script": "Kasaan_Geologist_Trigger"
+    }
   ],
   "bg_events": [
     {
