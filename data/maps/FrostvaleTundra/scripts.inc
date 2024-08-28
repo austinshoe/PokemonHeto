@@ -1,5 +1,5 @@
 FrostvaleTundra_MapScripts::
-    mapscript MAP_SCRIPT_ON_TRANSITION, FrostvaleTundra_OnTransition
+    map_script MAP_SCRIPT_ON_TRANSITION, FrostvaleTundra_OnTransition
 	.byte 0
 
 FrostvaleTundra_OnTransition::
