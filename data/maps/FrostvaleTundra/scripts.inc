@@ -114,7 +114,7 @@ Text_FrostvaleTundraSign:
 Text_Frostvale_Rival_Intro:
     .string "{COLOR BLUE}Liam: {COLOR DARK_GRAY}{PLAYER}!\n"
     .string "Long time no see!\l"
-    .string "Looks like you beat the {COLOR GREEN}Everbloom Gym, \l"
+    .string "Looks like you beat the {COLOR GREEN}Everbloom Gym{COLOR DARK_GRAY}, \l"
     .string "huh?\p"
     .string "$"
     
@@ -142,7 +142,6 @@ Text_FrostvaleLiamNextGym:
     .string "I won't lose next time.$"
 
 Frostvale_Movement_Rival_Battle:
-    walk_down
     walk_down
     face_up
     step_end
