@@ -51,7 +51,7 @@ Kasaan_Grunt_Post_Defeat:
 
 Kasaan_Geologist_Trigger::
     lockall
-    applymovement 11, Common_Movement_FaceLeft
+    applymovement 11, Common_Movement_FaceRight
     waitmovement 11
     applymovement 11, Common_Movement_ExclamationMark
     waitmovement 11
@@ -59,7 +59,7 @@ Kasaan_Geologist_Trigger::
     msgbox Text_Kasaan_Back_Off, MSGBOX_YESNO
     compare VAR_RESULT, YES
     goto_if_eq Kasaan_Player_Backed_Off
-    applymovement 0, Common_Movement_FaceLeft
+    applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft
     waitmovement 0
     msgbox Text_Did_Not_Back_Off, MSGBOX_DEFAULT
     trainerbattle_no_intro TRAINER_GRUNT_PETALBURG_WOODS, Text_KasaanGruntDefeated
@@ -70,7 +70,7 @@ Kasaan_Geologist_Trigger::
     
 Kasaan_Player_Backed_Off:
     msgbox Text_Backed_Off, MSGBOX_DEFAULT
-    applymovement 0, Movement_Kasaan_Back_Off
+    applymovement OBJ_EVENT_ID_PLAYER, Movement_Kasaan_Back_Off
     waitmovement 0
     releaseall
     end
