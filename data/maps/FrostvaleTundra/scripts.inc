@@ -31,7 +31,7 @@ Frostvale_Tundra_Rival_Trigger::
     trainerbattle_no_intro TRAINER_MAY_ROUTE_110_MUDKIP, Text_FrostvaleLiamDefeated
     setflag FLAG_DEFEATED_RIVAL_ROUTE_104
     setvar VAR_ROUTE101_STATE, 1
-    applymovement 5, Common_Movement_WalkUp2
+    applymovement 5, Common_Movement_WalkUp
     waitmovement 0
     msgbox Text_FrostvaleLiamOutro, MSGBOX_DEFAULT
     applymovement 5, Common_Movement_FaceAwayPlayer
@@ -40,6 +40,7 @@ Frostvale_Tundra_Rival_Trigger::
     applymovement 5, Frostvale_Movement_RivalSkedaddle
     waitmovement 0
     fadescreen FADE_TO_BLACK
+    removeobject 5
     hideobjectat 5, MAP_FROSTVALE_TUNDRA
     fadescreen FADE_FROM_BLACK
     releaseall
@@ -161,6 +162,11 @@ Frostvale_Movement_RivalSkedaddle:
     walk_fast_right
     walk_fast_right
     face_down
+    walk_fast_down
+    walk_fast_down
+    walk_fast_down
+    walk_fast_down
+    walk_fast_down
     walk_fast_down
     walk_fast_down
     walk_fast_down
