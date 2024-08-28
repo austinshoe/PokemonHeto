@@ -80,7 +80,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_BRENDAN_NORMAL",
       "x": 8,
-      "y": 7,
+      "y": 6,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
       "movement_range_x": 0,
