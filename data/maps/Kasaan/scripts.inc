@@ -39,13 +39,15 @@ Kasaan_Outside_Grunt::
     faceplayer
     goto_if_set FLAG_HIDE_PETALBURG_WOODS_AQUA_GRUNT, Kasaan_Grunt_Post_Defeat
     msgbox Text_Grunt_Dont_Go_In, MSGBOX_DEFAULT
-    applymovement 11, Common_Movement_FaceOriginalDirection
+    applymovement 11, Common_Movement_FaceDown
     waitmovement 11
     release
     end
 
 Kasaan_Grunt_Post_Defeat:
     msgbox Text_KasaanGruntDefeated2, MSGBOX_DEFAULT
+    applymovement 11, Common_Movement_FaceDown
+    waitmovement 11
     release
     end
 
@@ -65,6 +67,8 @@ Kasaan_Geologist_Trigger::
     trainerbattle_no_intro TRAINER_GRUNT_PETALBURG_WOODS, Text_KasaanGruntDefeated
     setflag FLAG_HIDE_PETALBURG_WOODS_AQUA_GRUNT
     setvar VAR_DEWFORD_TOWN_STATE, 1
+    applymovement 11, Common_Movement_FaceDown
+    waitmovement 0
     releaseall
     end
     
@@ -72,7 +76,7 @@ Kasaan_Player_Backed_Off:
     msgbox Text_Backed_Off, MSGBOX_DEFAULT
     applymovement OBJ_EVENT_ID_PLAYER, Movement_Kasaan_Back_Off
     waitmovement 0
-    applymovement 11, Common_Movement_FaceOriginalDirection
+    applymovement 11, Common_Movement_FaceDown
     waitmovement 0
     releaseall
     end
