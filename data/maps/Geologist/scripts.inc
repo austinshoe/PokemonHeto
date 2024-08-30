@@ -50,7 +50,7 @@ Geologist_EventScript_EviL_Team_Encounter:
     waitmovement 0
     message Geologist_KirschbluteExplain
     waitmessage
-    applymovement 4, Common_Movement_Faceup
+    applymovement 4, Common_Movement_FaceUp
     waitmovement 0
     message Geologist_KirschbluteKill
     waitmessage
