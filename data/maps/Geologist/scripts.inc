@@ -81,9 +81,9 @@ Geologist_EventScript_EviL_Team_Encounter:
     applymovement 5, Common_Movement_ExclamationMark
     waitmovement 0
     msgbox Geologist_NoticePLayer, MSGBOX_DEFAULT
-    applymovement 5, Common_Movement_FaceDown
+    applymovement 4, Common_Movement_FaceDown
     waitmovement 0
-    applymovement 5, Common_Movement_ExclamationMark
+    applymovement 4, Common_Movement_ExclamationMark
     waitmovement 0
     msgbox Geologist_FirstBattle, MSGBOX_DEFAULT
     applymovement 5, GeologistKirschbluteDisappointed
@@ -92,9 +92,9 @@ Geologist_EventScript_EviL_Team_Encounter:
     trainerbattle_no_intro TRAINER_GRUNT_AQUA_HIDEOUT_1, Text_GeologistGrunt1Defeated
     message Geologist_Grunt1_PostBattle
     waitmessage
-    applymovement 5, Common_Movement_FaceDown
+    applymovement 2, Common_Movement_FaceDown
     waitmovement 0
-    applymovement 5, Common_Movement_ExclamationMark
+    applymovement 2, Common_Movement_ExclamationMark
     waitmovement 0
     message Geologist_Grunt2
     waitmessage
@@ -115,6 +115,25 @@ Geologist_EventScript_EviL_Team_EncounterPt2M:
     goto Geologist_EventScript_EviL_Team_EncounterPt2
     
 Geologist_EventScript_EviL_Team_EncounterPt2:
+    message Geologist_Grunt2_PostBattle
+    waitmessage
+    applymovement 4, GeologistKirschbluteDisappointed
+    waitmovement 0
+    message Geologist_Kirschblute_PreBattle1
+    waitmessage
+    applymovement 2, Common_Movement_FaceUp
+    waitmovement 0
+    applymovement 2, Common_Movement_ExclamationMark
+    waitmovement 0
+    message Geologist_Kirschblute_PreBattle2
+    waitmessage
+    applymovement 2, Geologist_Movement_Search
+    waitmovement 0
+    applymovement 4, GeologistKirschbluteDisappointed
+    waitmovement 0
+    message Geologist_Kirschblute_PreBattle3
+    waitmessage
+    trainerbattle_no_intro TRAINER_GRUNT_AQUA_HIDEOUT_3, Text_GeologistKirschbluteDefeated
     releaseall
     end
     
@@ -218,7 +237,7 @@ Geologist_Grunt1_Battle:
 
 Geologist_Grunt1_PostBattle:
     .string "{COLOR BLUE}Grunt 1{COLOR DARK_GRAY}: oof...\p"
-    .string "Kirschblüte: {FONT_SMALL_NARROW}You all are useless...{FONT_NORMAL}\n"
+    .string "{COLOR RED}Kirschblüte{COLOR DARK_GRAY}: {FONT_SMALL_NARROW}You all are useless...{FONT_NORMAL}\n"
     .string "You there, end this quickly.\p"
     .string "$"
 
@@ -237,6 +256,29 @@ Text_GeologistGrunt2MDefeated:
 Text_GeologistGrunt2FDefeated:
     .string "But she's just a colored...$"
 
+Geologist_Grunt2_PostBattle:
+    .string "{COLOR BLUE}Grunt 2{COLOR DARK_GRAY}: This...\n"
+    .string "This can't be...\p"
+    .string "{COLOR RED}Kirschblüte{COLOR DARK_GRAY}: {FONT_SMALL_NARROW}Weaklings...{FONT_NORMAL}.\p"
+    .string "$"
+
+Geologist_Kirschblute_PreBattle1:
+    .string "I guess I'll hafta do this myself.\p"
+    .string "You there!\p"
+    .string "$"
+
+Geologist_Kirschblute_PreBattle2:
+    .string "Go search the lab for his research\n"
+    .string "while I take care of this scum.\p"
+    .string "{COLOR BLUE}Grunt 2{COLOR DARK_GRAY}: Yes ma'am!$"
+
+Geologist_Kirschblute_PreBattle3:
+    .string "Kirschblüte: Hehehe...\p"
+    .string "Easy claps...$"
+
+Text_GeologistKirschbluteDefeated:
+    .string "Mmm...$"
+    
 Geologist_Movement_KirschbluteWalkUp:
     walk_up
     step_end
@@ -294,4 +336,16 @@ Geologist_Movement_Grunt2_Confront:
 Geologist_Grunt1_MoveOOTW:
     walk_fast_right
     face_down
+    step_end
+
+Geologist_Movement_Search:
+    walk_fast_left
+    walk_fast_up
+    walk_fast_up
+    walk_fast_up
+    walk_fast_left
+    walk_fast_left
+    walk_fast_left
+    walk_fast_left
+    walk_fast_left
     step_end
