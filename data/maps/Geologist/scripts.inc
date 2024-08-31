@@ -192,7 +192,7 @@ Geologist_Grunt1_Battle:
     .string "with us, {COLOR BLUE}Angrboda{COLOR DARK_GRAY}!$"
 
 Text_GeologistGrunt1Defeated:
-    .string "How???$"
+    .string "How...$"
 
 Geologist_Movement_KirschbluteWalkUp:
     walk_up
