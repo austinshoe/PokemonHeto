@@ -9,7 +9,8 @@ Geologist_OnTransition::
     end
 
 Geologist_VarZero:
-    setvar VAR_DEWFORD_TOWN_STATE, 0    end
+    setvar VAR_DEWFORD_TOWN_STATE, 0
+    end
 
 Geologist_VarTwo:
     setvar VAR_DEWFORD_TOWN_STATE, 2
