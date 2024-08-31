@@ -86,7 +86,7 @@ Geologist_EventScript_EviL_Team_Encounter:
     applymovement 5, Common_Movement_ExclamationMark
     waitmovement 0
     msgbox Geologist_FirstBattle, MSGBOX_DEFAULT
-    applymovement 5, Common_Movement_WalkDown
+    applymovement 5, GeologistKirschbluteDisappointed
     waitmovement 0
     msgbox Geologist_Grunt1_Battle, MSGBOX_DEFAULT
     trainerbattle_no_intro TRAINER_GRUNT_AQUA_HIDEOUT_1, Text_GeologistGrunt1Defeated
