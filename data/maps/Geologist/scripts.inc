@@ -9,10 +9,7 @@ Geologist_OnTransition::
     end
 
 Geologist_VarZero:
-    setvar VAR_DEWFORD_TOWN_STATE, 0
-    addobject 6
-    hideobjectat OBJ_EVENT_ID_PLAYER, 0
-    end
+    setvar VAR_DEWFORD_TOWN_STATE, 0    end
 
 Geologist_VarTwo:
     setvar VAR_DEWFORD_TOWN_STATE, 2
@@ -24,6 +21,8 @@ Geologist_OnFrame:
 
 Geologist_EventScript_EviL_Team_Encounter:
     lockall
+    addobject 6
+    hideobjectat OBJ_EVENT_ID_PLAYER, 0
     applymovement OBJ_EVENT_ID_PLAYER, Geologist_Movement_PanCamera_Up
     waitmovement 0
     applymovement 4, Geologist_Movement_KirschbluteWalkUp
@@ -123,7 +122,7 @@ Geologist_KirschbluteExplain:
     .string "not just those on the front lines. \p"
     .string "{COLOR BLUE}Dr. Stone{COLOR DARK_GRAY}: ...\p"
     .string "{COLOR RED}Kirschblüte{COLOR DARK_GRAY}: And as an Alba, I'm sure\n"
-    .string "you're aware that all is to blame on the\n"
+    .string "you're aware that all is to blame on the\l"
     .string "colored scum in the North.\p"
     .string "$"
 
