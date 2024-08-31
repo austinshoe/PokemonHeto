@@ -28,6 +28,8 @@ Geologist_EventScript_EviL_Team_Encounter:
     waitmovement 0
     applymovement 4, Geologist_Movement_KirschbluteWalkUp
     waitmovement 0
+    applymovement 5, Geologist_Movement_KirschbluteWalkUp
+    waitmovement 0
     message Geologist_Angrboda_Introduction
     waitmessage
     applymovement 1, Common_Movement_ExclamationMark
@@ -58,24 +60,42 @@ Geologist_EventScript_EviL_Team_Encounter:
     waitmovement 0
     message Geologist_KirschblutePreEntrance
     waitmessage
+    applymovement 4, Common_Movement_FaceUp
+    waitmovement 0
+    message Geologist_KirschbluteSeize
+    waitmessage
     closemessage
     applymovement 1, Common_Movement_ExclamationMark
     waitmovement 0
     applymovement 2, Geologist_Grunt_Restrain1
-    waitmovement 0
     applymovement 3, Geologist_Grunt_Restrain2
+    waitmovement 0
     waitmovement 0
     msgbox Geologist_LetGo, MSGBOX_DEFAULT
     applymovement 6, Geologist_Player_Confront
-    waitmovement 0
     applymovement OBJ_EVENT_ID_PLAYER, Geologist_Movement_PanCamera_Back
     waitmovement 0
+    waitmovement 0
+    applymovement 5, Common_Movement_FaceDown
+    waitmovement 0
+    applymovement 5, Common_Movement_ExclamationMark
+    waitmovement 0
+    msgbox Geologist_NoticePLayer, MSGBOX_DEFAULT
+    applymovement 5, Common_Movement_FaceDown
+    waitmovement 0
+    applymovement 5, Common_Movement_ExclamationMark
+    waitmovement 0
+    msgbox Geologist_FirstBattle, MSGBOX_DEFAULT
+    applymovement 5, Common_Movement_WalkDown
+    waitmovement 0
+    msgbox Geologist_Grunt1_Battle, MSGBOX_DEFAULT
+    trainerbattle_no_intro TRAINER_GRUNT_AQUA_HIDEOUT_1, Text_GeologistGrunt1Defeated
     releaseall
     end
     
 
 Geologist_Angrboda_Introduction:
-    .string "{SHADOW DARK_GRAY}???{SHADOW LIGHT_GRAY}: Hello there, Dr. Orion Stone\p"
+    .string "{COLOR BLUE}???{COLOR DARK_GRAY}: Hello there, Dr. Orion Stone\p"
     .string "$"
 
 Geologist_Stone_Intro:
@@ -91,12 +111,12 @@ Geologist_KirschbluteConvince:
     .string "{COLOR BLUE}Dr. Stone{COLOR DARK_GRAY}: I- I don't understand...\n"
     .string "Wh-What do you mean by “one of us”?\l"
     .string "And wh-who are you?\p"
-    .string "{SHADOW DARK_GRAY}???{SHADOW LIGHT_GRAY}: You can call me {COLOR RED}Kirschblüte{COLOR DARK_GRAY}\p"
+    .string "{COLOR BLUE}???{COLOR DARK_GRAY}: You can call me {COLOR RED}Kirschblüte{COLOR DARK_GRAY}\p"
     .string "$"
     
 Geologist_KirschbluteIntro:
     .string "{COLOR RED}Kirschblüte{COLOR DARK_GRAY}: I'm one of the three admins\n"
-    .string "of {SHADOW DARK_GRAY}Angrboda{SHADOW LIGHT_GRAY}.\p"
+    .string "of {COLOR BLUE}Angrboda{COLOR DARK_GRAY}.\p"
     .string "But that doesn't matter.\n"
     .string "Right now, what we need are the files\l"
     .string "you have on the composition of the\l"
@@ -147,11 +167,32 @@ Geologist_KirschbluteKill:
 Geologist_KirschblutePreEntrance:
     .string "{COLOR RED}Kirschblüte{COLOR DARK_GRAY}: ...\p"
     .string "You disappoint me, Mr. Stone\p"
+    .string "$"
+
+Geologist_KirschbluteSeize:
     .string "Grunts! Seize him!\n"
     .string "You there! Search this place!$"
     
 Geologist_LetGo:
     .string "{COLOR BLUE}Dr. Stone{COLOR DARK_GRAY}: Hey! Let go!$"
+
+Geologist_NoticePLayer:
+    .string "{COLOR BLUE}Grunt{COLOR DARK_GRAY}: Ma'am!\n"
+    .string "There's an intruder!$"
+
+Geologist_FirstBattle:
+    .string "{COLOR RED}Kirschblüte{COLOR DARK_GRAY}: That useless outdoor guard...\n"
+    .string "What are you waiting for?\l"
+    .string "GET RID OF IT!\p"
+    .string "{COLOR BLUE}Grunt{COLOR DARK_GRAY}: Yes, ma'am!$"
+
+Geologist_Grunt1_Battle:
+    .string "{COLOR BLUE}Grunt{COLOR DARK_GRAY}: I don't know who you are, but\n"
+    .string "you've got some nerve to be interfering\l"
+    .string "with us, {COLOR BLUE}Angrboda{COLOR DARK_GRAY}!$"
+
+Text_GeologistGrunt1Defeated:
+    .string "How???$"
 
 Geologist_Movement_KirschbluteWalkUp:
     walk_up
@@ -171,20 +212,19 @@ Geologist_Movement_BackOff:
 
 GeologistKirschbluteDisappointed:
     walk_down
-    walk_down
     step_end
 
 Geologist_Grunt_Restrain1:
-    walk_down
-    walk_down
-    walk_down
+    walk_up
+    walk_up
+    walk_up
     face_right
     step_end
 
 Geologist_Grunt_Restrain2:
-    walk_down
-    walk_down
-    walk_down
+    walk_up
+    walk_up
+    walk_up
     face_left
     step_end
 

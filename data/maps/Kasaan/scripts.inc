@@ -401,5 +401,5 @@ Text_KasaanGruntDefeated2:
     .string "This is why I hate y'all dulls...\p"
     .string "I'm telling you though, don't go inside\n"
     .string "or you'll face the repercussions of\l"
-    .string "messing with us, {SHADOW DARK_GRAY}Angrboda{SHADOW LIGHT_GRAY}.$"
+    .string "messing with us, {COLOR BLUE}Angrboda{COLOR DARK_GRAY}.$"
 
