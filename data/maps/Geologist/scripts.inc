@@ -181,7 +181,7 @@ Geologist_NoticePLayer:
     .string "There's an intruder!$"
 
 Geologist_FirstBattle:
-    .string "{COLOR RED}Kirschblüte{COLOR DARK_GRAY}: That useless outdoor guard...\n"
+    .string "{COLOR RED}Kirschblüte{COLOR DARK_GRAY}: {FONT_SMALL_NARROW}That useless outdoor guard...{FONT_NORMAL}\n"
     .string "What are you waiting for?\l"
     .string "GET RID OF IT!\p"
     .string "{COLOR BLUE}Grunt{COLOR DARK_GRAY}: Yes, ma'am!$"
