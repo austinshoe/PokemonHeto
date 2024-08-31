@@ -90,6 +90,31 @@ Geologist_EventScript_EviL_Team_Encounter:
     waitmovement 0
     msgbox Geologist_Grunt1_Battle, MSGBOX_DEFAULT
     trainerbattle_no_intro TRAINER_GRUNT_AQUA_HIDEOUT_1, Text_GeologistGrunt1Defeated
+    message Geologist_Grunt1_PostBattle
+    waitmessage
+    applymovement 5, Common_Movement_FaceDown
+    waitmovement 0
+    applymovement 5, Common_Movement_ExclamationMark
+    waitmovement 0
+    message Geologist_Grunt2
+    waitmessage
+    closemessage
+    applymovement 2, Geologist_Movement_Grunt2_Confront
+    applymovement 5, Geologist_Grunt1_MoveOOTW
+    waitmovement 0
+    waitmovement 0
+    msgbox Geologist_Grunt2_Battle, MSGBOX_DEFAULT
+    checkplayergender
+    compare VAR_RESULT, MALE
+    goto_if_eq Geologist_EventScript_EviL_Team_EncounterPt2M
+    trainerbattle_no_intro TRAINER_GRUNT_AQUA_HIDEOUT_2, Text_GeologistGrunt2FDefeated
+    goto Geologist_EventScript_EviL_Team_EncounterPt2
+    
+Geologist_EventScript_EviL_Team_EncounterPt2M:
+    trainerbattle_no_intro TRAINER_GRUNT_AQUA_HIDEOUT_2, Text_GeologistGrunt2MDefeated
+    goto Geologist_EventScript_EviL_Team_EncounterPt2
+    
+Geologist_EventScript_EviL_Team_EncounterPt2:
     releaseall
     end
     
@@ -101,7 +126,7 @@ Geologist_Angrboda_Introduction:
 Geologist_Stone_Intro:
     .string "{COLOR BLUE}Dr. Stone{COLOR DARK_GRAY}: Wh-Who are you, and wh-what\n"
     .string "business d-do you h-have with me?\p"
-    .string "{SHADOW DARK_GRAY}???{SHADOW LIGHT_GRAY}: Hahaha...\p"
+    .string "{COLOR BLUE}???{COLOR DARK_GRAY}: Hahaha...\p"
     .string "There's no need to be so scared,\n"
     .string "Mr. Stone...\p"
     .string "$"
@@ -177,22 +202,40 @@ Geologist_LetGo:
     .string "{COLOR BLUE}Dr. Stone{COLOR DARK_GRAY}: Hey! Let go!$"
 
 Geologist_NoticePLayer:
-    .string "{COLOR BLUE}Grunt{COLOR DARK_GRAY}: Ma'am!\n"
+    .string "{COLOR BLUE}Grunt 1{COLOR DARK_GRAY}: Ma'am!\n"
     .string "There's an intruder!$"
 
 Geologist_FirstBattle:
     .string "{COLOR RED}Kirschblüte{COLOR DARK_GRAY}: {FONT_SMALL_NARROW}That useless outdoor guard...{FONT_NORMAL}\n"
     .string "What are you waiting for?\l"
-    .string "GET RID OF IT!\p"
-    .string "{COLOR BLUE}Grunt{COLOR DARK_GRAY}: Yes, ma'am!$"
+    .string "Get rid of it!\p"
+    .string "{COLOR BLUE}Grunt 1{COLOR DARK_GRAY}: Yes, ma'am!$"
 
 Geologist_Grunt1_Battle:
-    .string "{COLOR BLUE}Grunt{COLOR DARK_GRAY}: I don't know who you are, but\n"
+    .string "{COLOR BLUE}Grunt 1{COLOR DARK_GRAY}: I don't know who you are, but\n"
     .string "you've got some nerve to be interfering\l"
     .string "with us, {COLOR BLUE}Angrboda{COLOR DARK_GRAY}!$"
 
+Geologist_Grunt1_PostBattle:
+    .string "{COLOR BLUE}Grunt 1{COLOR DARK_GRAY}: oof...\p"
+    .string "Kirschblüte: {FONT_SMALL_NARROW}You all are useless...{FONT_NORMAL}\n"
+    .string "You there, end this quickly.\p"
+    .string "$"
+
+Geologist_Grunt2:
+    .string "{COLOR BLUE}Grunt 2{COLOR DARK_GRAY}: Yes ma'am!$"
+
 Text_GeologistGrunt1Defeated:
     .string "How...$"
+
+Geologist_Grunt2_Battle:
+    .string "{COLOR BLUE}Grunt 2{COLOR DARK_GRAY}: I'll finish you quickly!$"
+
+Text_GeologistGrunt2MDefeated:
+    .string "But he's just a colored...$"
+
+Text_GeologistGrunt2FDefeated:
+    .string "But she's just a colored...$"
 
 Geologist_Movement_KirschbluteWalkUp:
     walk_up
@@ -237,4 +280,18 @@ Geologist_Movement_PanCamera_Back:
     walk_down
     walk_down
     face_up
+    step_end
+    
+Geologist_Movement_Grunt2_Confront:
+    walk_fast_down
+    walk_fast_down
+    walk_fast_down
+    walk_fast_down
+    walk_fast_right
+    face_down
+    step_end
+
+Geologist_Grunt1_MoveOOTW:
+    walk_fast_right
+    face_down
     step_end
