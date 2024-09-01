@@ -314,7 +314,7 @@ Geologist_Grunt2_FoundData:
 Geologist_Grunt2_FoundData2:
     .string "{COLOR RED}Kirschblute{COLOR DARK_GRAY}: Perfectly timed.\p"
     .string "Grunts! Move out!\p"
-    .string "$""
+    .string "$"
 
 Geologist_Movement_KirschbluteWalkUp:
     walk_up
