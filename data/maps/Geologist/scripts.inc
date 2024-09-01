@@ -133,7 +133,29 @@ Geologist_EventScript_EviL_Team_EncounterPt2:
     waitmovement 0
     message Geologist_Kirschblute_PreBattle3
     waitmessage
+    closemessage
     trainerbattle_no_intro TRAINER_GRUNT_AQUA_HIDEOUT_3, Text_GeologistKirschbluteDefeated
+    msgbox Geologist_Kirschblute_PostBattle, MSGBOX_DEFAULT
+    applymovement 2, Geologist_Movement_FoundData
+    waitmovement 0
+    message Geologist_Grunt2_FoundData
+    waitmessage
+    applymovement 4, Common_Movement_FaceUp
+    waitmovement 0
+    applymovement 4, Common_Movement_ExclamationMark
+    waitmovement 0
+    message Geologist_Grunt2_FoundData2
+    waitmessage
+    closemessage
+    applymovement Geologist_Grunt1_escape
+    applymovement Geologist_Grunt2_escape
+    applymovement Geologist_Grunt3_escape
+    waitmovement 5
+    hideobjectat 5, MAP_KASAAN
+    waitmovement 2
+    hideobjectat 2, MAP_KASAAN
+    waitmovement 3
+    hideobjectat 3, MAP_KASAAN
     releaseall
     end
     
@@ -151,7 +173,7 @@ Geologist_Stone_Intro:
     .string "$"
 
 Geologist_KirschbluteConvince:
-    .string "After all, to {SHADOW DARK_GRAY}Angrboda{SHADOW LIGHT_GRAY}, you're one of us.\p"
+    .string "After all, to {COLOR BLUE}Angrboda{COLOR DARK_GRAY}, you're one of us.\p"
     .string "{COLOR BLUE}Dr. Stone{COLOR DARK_GRAY}: I- I don't understand...\n"
     .string "Wh-What do you mean by “one of us”?\l"
     .string "And wh-who are you?\p"
@@ -273,12 +295,27 @@ Geologist_Kirschblute_PreBattle2:
     .string "{COLOR BLUE}Grunt 2{COLOR DARK_GRAY}: Yes ma'am!$"
 
 Geologist_Kirschblute_PreBattle3:
-    .string "Kirschblüte: Hehehe...\p"
+    .string "{COLOR RED}Kirschblüte{COLOR DARK_GRAY}: Hehehe...\p"
     .string "Easy claps...$"
 
 Text_GeologistKirschbluteDefeated:
     .string "Mmm...$"
     
+Geologist_Kirschblute_PostBattle:
+    .string "{COLOR RED}Kirschblüte{COLOR DARK_GRAY}: Hm...\p"
+    .string "I didn't anticipate a development like\n"
+    .string "this, so I didn't bring my full team.\l"
+    .string "That was a miscalculation on my part...$"
+
+Geologist_Grunt2_FoundData:
+    .string "{COLOR BLUE}Grunt 2{COLOR DARK_GRAY}: Ma'am! I got the files!\p"
+    .string "$"
+
+Geologist_Grunt2_FoundData2:
+    .string "{COLOR RED}Kirschblute{COLOR DARK_GRAY}: Perfectly timed.\p"
+    .string "Grunts! Move out!\p"
+    .string "$""
+
 Geologist_Movement_KirschbluteWalkUp:
     walk_up
     step_end
@@ -348,4 +385,47 @@ Geologist_Movement_Search:
     walk_fast_left
     walk_fast_left
     walk_fast_left
+    face_up
+    step_end
+
+Geologist_Movement_FoundData:
+    walk_fast_right
+    walk_fast_right
+    walk_fast_right
+    walk_fast_right
+    walk_fast_right
+    walk_fast_down
+    walk_fast_down
+    walk_fast_right
+    face_down
+    step_end
+    
+Geologist_Grunt1_escape:
+    walk_fast_down
+    walk_fast_down
+    walk_fast_down
+    walk_fast_left
+    face_down
+    step_end
+
+Geologist_Grunt2_escape:
+    walk_fast_right
+    walk_fast_down
+    walk_fast_down
+    walk_fast_down
+    walk_fast_down
+    walk_fast_left
+    face_down
+    step_end
+
+Geologist_Grunt3_escape:
+    walk_fast_down
+    walk_fast_down
+    walk_fast_down
+    walk_fast_down
+    walk_fast_down
+    walk_fast_down
+    walk_fast_down
+    walk_fast_left
+    face_down
     step_end
