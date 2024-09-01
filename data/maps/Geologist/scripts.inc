@@ -147,9 +147,9 @@ Geologist_EventScript_EviL_Team_EncounterPt2:
     message Geologist_Grunt2_FoundData2
     waitmessage
     closemessage
-    applymovement Geologist_Grunt1_escape
-    applymovement Geologist_Grunt2_escape
-    applymovement Geologist_Grunt3_escape
+    applymovement 5, Geologist_Grunt1_escape
+    applymovement 2, Geologist_Grunt2_escape
+    applymovement 3, Geologist_Grunt3_escape
     waitmovement 5
     hideobjectat 5, MAP_KASAAN
     waitmovement 2
