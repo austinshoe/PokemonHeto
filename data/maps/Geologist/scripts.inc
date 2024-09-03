@@ -20,7 +20,7 @@ Geologist_VarTwo:
 
 Geologist_OnFrame:
     map_script_2 VAR_DEWFORD_TOWN_STATE, 0, Geologist_EventScript_EviL_Team_Encounter
-    .2byte 0
+    .4byte 0
 
 Geologist_EventScript_EviL_Team_Encounter:
     lockall
