@@ -27,11 +27,11 @@ Geologist_EventScript_EviL_Team_Encounter:
     checkplayergender
     compare VAR_RESULT, MALE
     goto_if_eq Geologist_EventScript_EviL_Team_EncounterM
-    showobject 7, MAP_GEOLOGIST
+    showobjectat 7, MAP_GEOLOGIST
     goto Geologist_EventScript_EviL_Team_EncounterPostSetup
 
 Geologist_EventScript_EviL_Team_EncounterM:
-    showobject 6, MAP_GEOLOGIST
+    showobjectat 6, MAP_GEOLOGIST
     goto Geologist_EventScript_EviL_Team_EncounterPostSetup
     
 Geologist_EventScript_EviL_Team_EncounterPostSetup:
