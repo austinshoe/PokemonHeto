@@ -10,6 +10,8 @@ Geologist_OnTransition::
 
 Geologist_VarZero:
     setvar VAR_DEWFORD_TOWN_STATE, 0
+    hideobjectat 6, MAP_GEOLOGIST
+    hideobjectat 7, MAP_GEOLOGIST
     end
 
 Geologist_VarTwo:
@@ -22,7 +24,17 @@ Geologist_OnFrame:
 
 Geologist_EventScript_EviL_Team_Encounter:
     lockall
-    addobject 6
+    checkplayergender
+    compare VAR_RESULT, MALE
+    goto_if_eq Geologist_EventScript_EviL_Team_EncounterM
+    showobject 7, MAP_GEOLOGIST
+    goto Geologist_EventScript_EviL_Team_EncounterPostSetup
+
+Geologist_EventScript_EviL_Team_EncounterM:
+    showobject 6, MAP_GEOLOGIST
+    goto Geologist_EventScript_EviL_Team_EncounterPostSetup
+    
+Geologist_EventScript_EviL_Team_EncounterPostSetup:
     hideobjectat OBJ_EVENT_ID_PLAYER, 0
     applymovement OBJ_EVENT_ID_PLAYER, Geologist_Movement_PanCamera_Up
     waitmovement 0
@@ -151,11 +163,17 @@ Geologist_EventScript_EviL_Team_EncounterPt2:
     applymovement 2, Geologist_Grunt2_escape
     applymovement 3, Geologist_Grunt3_escape
     waitmovement 5
-    hideobjectat 5, MAP_KASAAN
+    hideobjectat 5, MAP_GEOLOGIST
     waitmovement 2
-    hideobjectat 2, MAP_KASAAN
+    hideobjectat 2, MAP_GEOLOGIST
     waitmovement 3
-    hideobjectat 3, MAP_KASAAN
+    hideobjectat 3, MAP_GEOLOGIST
+    applymovement 4, Common_Movement_FaceDown
+    message Geologist_Kirschbluteoutro
+    waitmessage
+    closemessage
+    applymovement Geologist_KirschbluteSkedaddle, 4
+    waitmovement
     releaseall
     end
     
@@ -316,6 +334,15 @@ Geologist_Grunt2_FoundData2:
     .string "Grunts! Move out!\p"
     .string "$"
 
+Geologist_Kirschbluteoutro:
+    .string "This was most certainly an unexpected\n"
+    .string "development...\l"
+    .string "I'll be sure to remember your face and\l"
+    .string "thoroughly stamp you out next time...\p"
+    .string "It's one of {COLOR BLUE}Angrboda{COLOR DARK_GRAY}'s jobs to remove\n"
+    .string "coloreds from this world...\p"
+    .string "$"
+
 Geologist_Movement_KirschbluteWalkUp:
     walk_up
     step_end
@@ -428,4 +455,7 @@ Geologist_Grunt3_escape:
     walk_fast_down
     walk_fast_left
     face_down
+    step_end
+
+Geologist_KirschbluteSkedaddle:
     step_end
