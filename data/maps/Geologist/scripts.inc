@@ -20,7 +20,7 @@ Geologist_VarTwo:
 
 Geologist_OnFrame:
     map_script_2 VAR_DEWFORD_TOWN_STATE, 0, Geologist_EventScript_EviL_Team_Encounter
-    .4byte 0
+    .2byte 0
 
 Geologist_EventScript_EviL_Team_Encounter:
     lockall
@@ -169,10 +169,8 @@ Geologist_EventScript_EviL_Team_EncounterPt2:
     waitmovement 3
     hideobjectat 3, MAP_GEOLOGIST
     applymovement 4, Common_Movement_FaceDown
-    message Geologist_Kirschbluteoutro
-    waitmessage
-    closemessage
-    applymovement Geologist_KirschbluteSkedaddle, 4
+    msgbox Geologist_Kirschbluteoutro, MSGBOX_DEFAULT
+    applymovement 4, Geologist_KirschbluteSkedaddle
     waitmovement 0
     releaseall
     end
