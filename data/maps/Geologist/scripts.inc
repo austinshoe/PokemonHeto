@@ -173,7 +173,7 @@ Geologist_EventScript_EviL_Team_EncounterPt2:
     waitmessage
     closemessage
     applymovement Geologist_KirschbluteSkedaddle, 4
-    waitmovement
+    waitmovement 0
     releaseall
     end
     
