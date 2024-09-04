@@ -4,8 +4,6 @@ Geologist_MapScripts::
 	.byte 0
 
 Geologist_OnTransition::
-    hideobjectat 6, MAP_GEOLOGIST
-    hideobjectat 7, MAP_GEOLOGIST
     call_if_unset FLAG_RECOVERED_DEVON_GOODS, Geologist_VarZero
     call_if_set FLAG_RECOVERED_DEVON_GOODS, Geologist_VarTwo
     end
@@ -24,6 +22,8 @@ Geologist_OnFrame:
 
 Geologist_EventScript_EviL_Team_Encounter:
     lockall
+    hideobjectat 6, MAP_GEOLOGIST
+    hideobjectat 7, MAP_GEOLOGIST
     checkplayergender
     compare VAR_RESULT, MALE
     goto_if_eq Geologist_EventScript_EviL_Team_EncounterM
@@ -180,10 +180,13 @@ Geologist_EventScript_EviL_Team_EncounterPt2:
     applymovement 3, Geologist_Grunt3_escape
     waitmovement 5
     hideobjectat 5, MAP_GEOLOGIST
+    removeobject 5
     waitmovement 2
     hideobjectat 2, MAP_GEOLOGIST
+    removeobject 2
     waitmovement 3
     hideobjectat 3, MAP_GEOLOGIST
+    removeobject 3
     applymovement 4, Common_Movement_FaceDown
     msgbox Geologist_Kirschbluteoutro, MSGBOX_DEFAULT
     applymovement 4, Geologist_KirschbluteSkedaddle
@@ -193,10 +196,13 @@ Geologist_EventScript_EviL_Team_EncounterPt2:
     waitmovement 0
     waitmovement 0
     hideobjectat 4, MAP_GEOLOGIST
+    removeobject 4
     fadescreen FADE_TO_BLACK
     setflag FLAG_RECOVERED_DEVON_GOODS
-    setvar VAR_DEWFORD_TOWN_STATE, 1
+    setvar VAR_DEWFORD_TOWN_STATE, 2
     fadescreen FADE_FROM_BLACK
+    removeobject 6
+    removeobject 7
     applymovement OBJ_EVENT_ID_PLAYER, Geologist_Movement_KirschbluteWalkUp
     waitmovement 0
     message Geologist_DrStone_PostEvent
