@@ -197,9 +197,37 @@ Geologist_EventScript_EviL_Team_EncounterPt2:
     setflag FLAG_RECOVERED_DEVON_GOODS
     setvar VAR_DEWFORD_TOWN_STATE, 1
     fadescreen FADE_FROM_BLACK
+    applymovement OBJ_EVENT_ID_PLAYER, Geologist_Movement_KirschbluteWalkUp
+    waitmovement 0
+    message Geologist_DrStone_PostEvent
+    waitmessage
+    applymovement 1, Geologist_Movement_DrStone_PostEvent
+    waitmovement 0
+    message Geologist_DrStone_PostEvent2
+    waitmessage
+    applymovement 1, Common_Movement_FaceLeft
+    waitmovement 0
+    message Geologist_DrStone_PostEvent3
+    waitmessage
+    applymovement 1, Common_Movement_FaceRight
+    waitmovement 0
+    message Geologist_DrStone_PostEvent4
+    waitmessage
+    applymovement 1, Common_Movement_FaceDown
+    waitmovement 0
+    message Geologist_DrStone_PostEvent5
+    waitmessage
+    waitbuttonpress
+    closemessage
     releaseall
     end
     
+Geologist_DrStone:
+    lock
+    faceplayer
+    msgbox Geologist_Normal_DrStone, MSGBOX_DEFAULT
+    release
+    end
 
 Geologist_Angrboda_Introduction:
     .string "{COLOR BLUE}???{COLOR DARK_GRAY}: Hello there, Dr. Orion Stone\p"
@@ -365,6 +393,62 @@ Geologist_Kirschbluteoutro:
     .string "It's one of {COLOR BLUE}Angrboda{COLOR DARK_GRAY}'s jobs to remove\n"
     .string "coloreds from this world anyways...$"
 
+Geologist_DrStone_PostEvent:
+    .string "{COLOR BLUE}Dr. Stone{COLOR DARK_GRAY}: Ugh...\p"
+    .string "$"
+
+Geologist_DrStone_PostEvent2:
+    .string "You... \n"
+    .string "Thank's for helping me out there...\l"
+    .string "What's your name?\p"
+    .string "\p"
+    .string "Ah, I see.\n"
+    .string "It's {PLAYER}.\l"
+    .string "As I'm sure you're aware, {COLOR RED}Heto{COLOR DARK_GRAY}, also\l"
+    .string "known as {COLOR RED}Hehamayto{COLOR DARK_GRAY}, wasn't always\l"
+    .string "one country.\p"
+    .string "$"
+
+Geologist_DrStone_PostEvent3:
+    .string "Yes...\n"
+    .string "We used to be two seperate countries:\l"
+    .string "Toemayto in the north, and Hehehehatia\l"
+    .string "down south.\l"
+    .string "Border disputes caused tensions between\l"
+    .string "the two nations, which eventually broke\l"
+    .string "into all out war.\p"
+    .string "$"
+
+Geologist_DrStone_PostEvent4:
+    .string "The war ended when a coup d'état was\n"
+    .string "staged in Hehehehatia, but it still\l"
+    .string "ruined many families and lives.\l"
+    .string "The organization we encountered today,\l"
+    .string "{COLOR BLUE}Angrboda{COLOR DARK_GRAY}, must be the remnants of the\l"
+    .string "old authoritatian Hehehehatian\l"
+    .string "government trying to restore itself.\p"
+    .string "$"
+
+Geologist_DrStone_PostEvent5:
+    .string "The region of {COLOR RED}Heto{COLOR DARK_GRAY} is located on top\n"
+    .string "of a big pocket of natural gas.\p"
+    .string "From what they said, it seems Angrboda\n"
+    .string "is planning to blow these pockets of gas\l"
+    .string "in order to wreak havoc on the north\p"
+    .string "I wouldn't be too worried though.\n"
+    .string "A layer of bedrock thats basically\l"
+    .string "impenetrable seperates that gas from\l"
+    .string "us.\p"
+    .string "I'd still be careful if I ever met\n"
+    .string "them in the futre, though.\p"
+    .string "The old government wanted to stamp out\n"
+    .string "the “north's colored scum” after all.$"
+
+Geologist_Normal_DrStone:
+    .string "I suppose it would be troublesome if\n"
+    .string "they found a way past the bedrock,\l"
+    .string "though.$"
+
 Geologist_Movement_KirschbluteWalkUp:
     walk_up
     step_end
@@ -487,5 +571,11 @@ Geologist_KirschbluteSkedaddle:
 
 Geologist_KirschbluteSkedaddle2:
     walk_left
+    walk_down
+    step_end
+
+Geologist_Movement_DrStone_PostEvent:
+    walk_down
+    walk_down
     walk_down
     step_end
