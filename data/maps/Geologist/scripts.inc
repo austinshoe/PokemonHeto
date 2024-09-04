@@ -4,14 +4,14 @@ Geologist_MapScripts::
 	.byte 0
 
 Geologist_OnTransition::
+    hideobjectat 6, MAP_GEOLOGIST
+    hideobjectat 7, MAP_GEOLOGIST
     call_if_unset FLAG_RECOVERED_DEVON_GOODS, Geologist_VarZero
     call_if_set FLAG_RECOVERED_DEVON_GOODS, Geologist_VarTwo
     end
 
 Geologist_VarZero:
     setvar VAR_DEWFORD_TOWN_STATE, 0
-    hideobjectat 6, MAP_GEOLOGIST
-    hideobjectat 7, MAP_GEOLOGIST
     end
 
 Geologist_VarTwo:
@@ -84,10 +84,26 @@ Geologist_EventScript_EviL_Team_EncounterPostSetup:
     waitmovement 0
     waitmovement 0
     msgbox Geologist_LetGo, MSGBOX_DEFAULT
+    checkplayergender
+    compare VAR_RESULT, MALE
+    goto_if_eq Geologist_Event_MalePlayer_Confront
+    applymovement 67, Geologist_Player_Confront
+    applymovement OBJ_EVENT_ID_PLAYER, Geologist_Movement_PanCamera_Back
+    waitmovement 0
+    waitmovement 0
+    goto Geologist_Event_Player_Confront
+    
+Geologist_Event_MalePlayer_Confront:
     applymovement 6, Geologist_Player_Confront
     applymovement OBJ_EVENT_ID_PLAYER, Geologist_Movement_PanCamera_Back
     waitmovement 0
     waitmovement 0
+    goto Geologist_Event_Player_Confront
+
+Geologist_Event_Player_Confront:
+    showobjectat OBJ_EVENT_ID_PLAYER, 0
+    hideobjectat 6, MAP_GEOLOGIST
+    hideobjectat 7, MAP_GEOLOGIST
     applymovement 5, Common_Movement_FaceDown
     waitmovement 0
     applymovement 5, Common_Movement_ExclamationMark
@@ -172,6 +188,15 @@ Geologist_EventScript_EviL_Team_EncounterPt2:
     msgbox Geologist_Kirschbluteoutro, MSGBOX_DEFAULT
     applymovement 4, Geologist_KirschbluteSkedaddle
     waitmovement 0
+    applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceDown
+    applymovement 4, Geologist_KirschbluteSkedaddle2
+    waitmovement 0
+    waitmovement 0
+    hideobjectat 4, MAP_GEOLOGIST
+    fadescreen FADE_TO_BLACK
+    setflag FLAG_RECOVERED_DEVON_GOODS
+    setvar VAR_DEWFORD_TOWN_STATE, 1
+    fadescreen FADE_FROM_BLACK
     releaseall
     end
     
@@ -338,8 +363,7 @@ Geologist_Kirschbluteoutro:
     .string "I'll be sure to remember your face and\l"
     .string "thoroughly stamp you out next time...\p"
     .string "It's one of {COLOR BLUE}Angrboda{COLOR DARK_GRAY}'s jobs to remove\n"
-    .string "coloreds from this world...\p"
-    .string "$"
+    .string "coloreds from this world anyways...$"
 
 Geologist_Movement_KirschbluteWalkUp:
     walk_up
@@ -456,4 +480,12 @@ Geologist_Grunt3_escape:
     step_end
 
 Geologist_KirschbluteSkedaddle:
+    walk_right
+    walk_down
+    walk_down
+    step_end
+
+Geologist_KirschbluteSkedaddle2:
+    walk_left
+    walk_down
     step_end
