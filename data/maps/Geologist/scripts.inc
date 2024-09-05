@@ -228,7 +228,7 @@ Geologist_EventScript_EviL_Team_EncounterPt2:
     releaseall
     end
     
-Geologist_DrStone:
+Geologist_DrStone::
     lock
     faceplayer
     msgbox Geologist_Normal_DrStone, MSGBOX_DEFAULT
