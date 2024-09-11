@@ -52,7 +52,7 @@ PearlTown_TestParty::
 
 PearlTown_TestBattleKirschbluteFinal::
     lock
-    trainerbattle_no_intro TRAINER_SHELLY_SEAFLOOR_CAVERN, Text_PearlTown_TestBattleKirschbluteFinal
+    trainerbattle_double TRAINER_SHELLY_SEAFLOOR_CAVERN, Text_PearlTown_PostTestBattle, Text_PearlTown_PostTestBattle, Text_PearlTown_PostTestBattle
     release
     end
 
@@ -308,5 +308,5 @@ Text_Postbattle3:
     .string "about leaving you behind.$"
 
 
-Text_PearlTown_TestBattleKirschbluteFinal:
+Text_PearlTown_PostTestBattle:
     .string "$"
