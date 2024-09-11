@@ -326,14 +326,41 @@ static const struct TrainerMon sParty_ShellyWeatherInstitute[] = {
 
 static const struct TrainerMon sParty_ShellySeafloorCavern[] = {
     {
-    .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
-    .lvl = 37,
-    .species = SPECIES_SHARPEDO,
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .lvl = 60,
+    .species = SPECIES_CHERRIM,
+    .moves = {MOVE_SUNNY_DAY, MOVE_SEED_BOMB, MOVE_SOLAR_BEAM, MOVE_MORNING_SUN}
     },
     {
-    .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
-    .lvl = 37,
-    .species = SPECIES_MIGHTYENA,
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .lvl = 60,
+    .species = SPECIES_STEELIX,
+    .moves = {MOVE_WIDE_GUARD, MOVE_EARTHQUAKE, MOVE_GYRO_BALL, MOVE_CRUNCH}
+    },
+    {
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .lvl = 60,
+    .species = SPECIES_ABSOL,
+    .heldItem = ITEM_ABSOLITE,
+    .moves = {MOVE_KNOCK_OFF, MOVE_SWORDS_DANCE, MOVE_SUCKER_PUNCH, MOVE_IRON_TAIL}
+    },
+    {
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .lvl = 60,
+    .species = SPECIES_MIMIKYU,
+    .moves = {MOVE_PLAY_ROUGH, MOVE_SHADOW_SNEAK, MOVE_SHADOW_CLAW, MOVE_ATTRACT}
+    },
+    {
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .lvl = 60,
+    .species = SPECIES_TOGEKISS_HETONIAN,
+    .moves = {MOVE_EXTREME_SPEED, MOVE_MYSTICAL_FIRE, MOVE_MOONBLAST, MOVE_DARK_PULSE}
+    },
+    {
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .lvl = 60,
+    .species = SPECIES_LAPRAS,
+    .moves = {MOVE_ICE_BEAM, MOVE_BRINE, MOVE_SING, MOVE_PSYCHIC}
     }
 };
 

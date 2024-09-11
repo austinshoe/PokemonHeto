@@ -39,6 +39,23 @@ PearlTown_EventScript_Trigger::
     releaseall
     end
 
+PearlTown_TestParty:
+    lock
+    givemon SPECIES_KYUREM_WHITE, 60, ITEM_NONE
+    givemon SPECIES_AMPHAROS, 60, ITEM_AMPHAROSITE
+    givemon SPECIES_LEAFEON, 60, ITEM_NONE
+    givemon SPECIES_KYOGRE, 60, ITEM_BLUE_ORB
+    givemon SPECIES_SALAMENCE, 60, ITEM_DRACO_PLATE
+    givemon SPECIES_WEAVILE, 60, ITEM_RAZOR_CLAW
+    release
+    end
+
+PearlTown_TestBattleKirschbluteFinal:
+    lock
+    trainerbattle_no_intro TRAINER, Text_PearlTown_TestBattleKirschbluteFinal
+    release
+    end
+
 PearlTown_TownSign::
     msgbox Text_TownSign, MSGBOX_SIGN
     end
@@ -289,3 +306,7 @@ Text_Postbattle3:
     .string "{PLAYER}!\n"
     .string "If you're too slow, I won't think twice\l"
     .string "about leaving you behind.$"
+
+
+Text_PearlTown_TestBattleKirschbluteFinal:
+    .string "$"
