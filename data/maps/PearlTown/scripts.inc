@@ -39,7 +39,7 @@ PearlTown_EventScript_Trigger::
     releaseall
     end
 
-PearlTown_TestParty:
+PearlTown_TestParty::
     lock
     givemon SPECIES_KYUREM_WHITE, 60, ITEM_NONE
     givemon SPECIES_AMPHAROS, 60, ITEM_AMPHAROSITE
@@ -50,9 +50,9 @@ PearlTown_TestParty:
     release
     end
 
-PearlTown_TestBattleKirschbluteFinal:
+PearlTown_TestBattleKirschbluteFinal::
     lock
-    trainerbattle_no_intro TRAINER, Text_PearlTown_TestBattleKirschbluteFinal
+    trainerbattle_no_intro TRAINER_SHELLY_SEAFLOOR_CAVERN, Text_PearlTown_TestBattleKirschbluteFinal
     release
     end
 
