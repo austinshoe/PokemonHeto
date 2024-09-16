@@ -57,7 +57,7 @@ RAKTrigger3:
     closemessage
     setflag FLAG_MET_RIVAL_RUSTBORO
     applymovement 3, RAKMovementSkedaddlydoo
-    waitmovement0
+    waitmovement 0
     removeobject 3
     releaseall
     end
