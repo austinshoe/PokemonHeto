@@ -117,7 +117,7 @@ Text_RAKRival3:
     .string "mentioned that the old Hehehehatian\l"
     .string "government went into hiding after the\l"
     .string "coup.\p"
-    .string "That must've been them.\p
+    .string "That must've been them.\p"
     .string "$"
 
 Text_RAKRival4:
