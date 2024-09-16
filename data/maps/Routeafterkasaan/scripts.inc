@@ -101,7 +101,7 @@ Text_RAKRivalGreeting:
 Text_RAKRival1:
     .string "Looks like you've beaten {COLOR BLUE}Kasaan{COLOR DARK_GRAY}'s gym.\n"
     .string "Anyways-\p"
-    .string "$""
+    .string "$"
 
 Text_RAKRival2:
     .string "You have something to tell me?\n"
