@@ -57,7 +57,7 @@
       "trainer_type": "TRAINER_TYPE_NONE",
       "trainer_sight_or_berry_tree_id": "0",
       "script": "NULL",
-      "flag": "0"
+      "flag": "FLAG_MET_RIVAL_RUSTBORO"
     }
   ],
   "warp_events": [
@@ -75,18 +75,18 @@
       "x": 34,
       "y": 42,
       "elevation": 0,
-      "var": "VAR_TEMP_MIXED_RECORDS",
+      "var": "VAR_ROUTE102_STATE",
       "var_value": "0",
-      "script": "NULL"
+      "script": "RouteafterkasaanTrigger2"
     },
     {
       "type": "trigger",
       "x": 34,
       "y": 41,
       "elevation": 0,
-      "var": "VAR_TEMP_MIXED_RECORDS",
+      "var": "VAR_ROUTE102_STATE",
       "var_value": "0",
-      "script": "NULL"
+      "script": "RouteafterkasaanTrigger1"
     }
   ],
   "bg_events": [

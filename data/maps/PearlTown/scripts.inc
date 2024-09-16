@@ -214,13 +214,13 @@ Text_DangerousNoPokemon:
     .string "Wild Pokémon might jump out at you.$"
 
 Text_PreBattle:
-    .string "{COLOR BLUE}Liam: {COLOR DARK_GRAY}Yo! {PLAYER}!\n"
+    .string "{COLOR BLUE}Liam{COLOR DARK_GRAY}: Yo! {PLAYER}!\n"
     .string "You got your first Pokémon? That's cool.\l"
     .string "What did you get?\l"
     .string "...$"
 
 Text_Prebattle1:
-    .string "{COLOR BLUE}Liam: {COLOR DARK_GRAY}I- I- I can't believe this!\n"
+    .string "{COLOR BLUE}Liam{COLOR DARK_GRAY}: I- I- I can't believe this!\n"
     .string "Th- That's a {COLOR BLUE}Bagon{COLOR DARK_GRAY}!\l"
     .string "How did you get your hands on this?\p"
     .string "...\p"
@@ -287,7 +287,7 @@ Text_Postbattle1:
     .string "I- I need-$"
 
 Text_Postbattle2:
-    .string "{COLOR BLUE}Liam:{COLOR DARK_GRAY}...\p"
+    .string "{COLOR BLUE}Liam{COLOR DARK_GRAY}:...\p"
     .string "{PLAYER}-\n"
     .string "I- I lost to you today... I was weaker-\p"
     .string "But... the one that wins in the end is\n"

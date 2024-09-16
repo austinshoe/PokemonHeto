@@ -225,6 +225,17 @@ Geologist_EventScript_EviL_Team_EncounterPt2:
     waitmessage
     waitbuttonpress
     closemessage
+    applymovement 1, Common_Movement_ExclamationMark
+    waitmovement 0
+    message Text_DrStoneGiveCut
+    waitmessage
+    giveitem ITEM_HM01, 1
+    playfanfare MUS_OBTAIN_ITEM
+    message Text_GeologistPlayerGotCut
+    setflag FLAG_RECEIVED_HM_CUT
+    waitmessage
+    waitbuttonpress
+    closemessage
     releaseall
     end
     
@@ -454,6 +465,18 @@ Geologist_Normal_DrStone:
     .string "I suppose it would be troublesome if\n"
     .string "they found a way past the bedrock,\l"
     .string "though.$"
+
+Text_DrStoneGiveCut:
+    .string "At this time of the year, little trees\n"
+    .string "begin popping up left and right, and\l"
+    .string "they can be annoying obstructions.\p"
+    .string "Take this. It'll help clear the path.\p"
+    .string "$"
+
+Text_GeologistPlayerGotCut:
+    .string "Cut lets you cut small trees.\n"
+    .string "You'll need Kasaan's Gym badge to use\l"
+    .string "it, though.$"
 
 Geologist_Movement_KirschbluteWalkUp:
     walk_up
