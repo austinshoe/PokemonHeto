@@ -1353,3 +1353,5 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/SilverstoneHouse6A/scripts.inc"
 
 	.include "data/maps/SilverstoneHouse6B/scripts.inc"
+
+	.include "data/maps/EverbloomGym2/scripts.inc"

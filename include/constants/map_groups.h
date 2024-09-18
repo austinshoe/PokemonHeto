@@ -656,6 +656,7 @@
 #define MAP_EVERBLOOM_HOUSE3 (6 | (36 << 8))
 #define MAP_EVERBLOOM_HOUSE4 (7 | (36 << 8))
 #define MAP_EVERBLOOM_HOUSE5 (8 | (36 << 8))
+#define MAP_EVERBLOOM_GYM2   (9 | (36 << 8))
 
 // gMapGroup_IndoorKasaan
 #define MAP_SBEKEEZI             (0 | (37 << 8))

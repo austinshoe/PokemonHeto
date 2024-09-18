@@ -7044,6 +7044,18 @@
       "secondary_tileset": "gTileset_BrendansMaysHouse",
       "border_filepath": "data/layouts/SilverstoneHouse6B/border.bin",
       "blockdata_filepath": "data/layouts/SilverstoneHouse6B/map.bin"
+    },
+    {
+      "id": "LAYOUT_EVERBLOOM_GYM2",
+      "name": "EverbloomGym2_Layout",
+      "width": 20,
+      "height": 20,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_EverbloomGym",
+      "border_filepath": "data/layouts/EverbloomGym2/border.bin",
+      "blockdata_filepath": "data/layouts/EverbloomGym2/map.bin"
     }
   ]
 }
