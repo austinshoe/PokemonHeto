@@ -53,13 +53,6 @@ Text_Everbloom_Guide_Advice:
 Text_Everbloom_Guide_Defeated:
     .string "I smell the perfume of victory on you.$"
 
-Everbloom_Gym_Flora::
-    lock
-    faceplayer
-    setflag FLAG_DEFEATED_RUSTBORO_GYM
-    release
-    end
-
 Text_Everbloom_GymSecretPath:
     .string "Ooh!\n"
     .string "Looks like there's a secret path here.\p"
