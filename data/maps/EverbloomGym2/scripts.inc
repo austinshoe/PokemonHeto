@@ -1,23 +1,22 @@
 EverbloomGym2_MapScripts::
-    map_script MAP_SCRIPT_ON_LOAD, EverbloomGym2_OnLoad
+    map_script MAP_SCRIPT_ON_TRANSITION, EverbloomGym2_OnTransition
     map_script MAP_SCRIPT_ON_FRAME_TABLE, EverbloomGym2_OnFrame
 	.byte 0
 
-EverbloomGym2_OnLoad:
+EverbloomGym2_OnTransition:
     setvar VAR_UNUSED_0x4083, 0
     end
 
 EverbloomGym2_OnFrame:
     map_script_2 VAR_UNUSED_0x4083, 0, EverbloomGym2_Entrance
-    .byte 2
+    .2byte 0
 
 EverbloomGym2_Entrance:
     lockall
     message Text_EverbloomGym2_Entrance
     waitmessage
-    setvar VAR_UNUSED_0x4083, 1
-    waitbuttonpress
     closemessage
+    setvar VAR_UNUSED_0x4083, 1
     releaseall
     end
 
@@ -51,12 +50,14 @@ Everbloom_Gym_Flora::
     goto_if_eq Everbloom_Gym_Flora_Playeris7
     goto_if_lt Everbloom_Gym_Flora_PlayerisLeft
     goto_if_gt Everbloom_Gym_Flora_PlayerisRight
+    release
     end
 
 Everbloom_Gym_Flora_Playeris7:
     compare VAR_TEMP_1, 8
     goto_if_gt Everbloom_Gym_Flora_PlayerisDown
     goto_if_lt Everbloom_Gym_Flora_PlayerisUp
+    release
     end
     
 Everbloom_Gym_Flora_PlayerisDown:
@@ -70,6 +71,7 @@ Everbloom_Gym_Flora_PlayerisDown:
     waitmovement 0
     waitmovement 0
     goto Everbloom_Gym_Flora3
+    release
     end
 
 Everbloom_Gym_Flora_PlayerisUp:
@@ -83,6 +85,7 @@ Everbloom_Gym_Flora_PlayerisUp:
     waitmovement 0
     waitmovement 0
     goto Everbloom_Gym_Flora3
+    release
     end
    
 Everbloom_Gym_Flora_PlayerisLeft:
@@ -96,6 +99,7 @@ Everbloom_Gym_Flora_PlayerisLeft:
     waitmovement 0
     waitmovement 0
     goto Everbloom_Gym_Flora3
+    release
     end
    
 Everbloom_Gym_Flora_PlayerisRight:
@@ -109,6 +113,7 @@ Everbloom_Gym_Flora_PlayerisRight:
     waitmovement 0
     waitmovement 0
     goto Everbloom_Gym_Flora3
+    release
     end
    
 Everbloom_Gym_Flora2:
