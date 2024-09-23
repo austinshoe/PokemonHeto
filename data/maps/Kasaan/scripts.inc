@@ -11,6 +11,7 @@ Kasaan_OnTransition::
 
 Kasaan_VarZero::
     setvar VAR_DEWFORD_TOWN_STATE, 0
+    setflag FLAG_UNUSED_0x020
     call_if_set FLAG_HIDE_PETALBURG_WOODS_AQUA_GRUNT, Kasaan_VarOne
     end
 
@@ -34,6 +35,7 @@ Kasaan_VarTwo::
     
 Kasaan_VarThree::
     setvar VAR_DEWFORD_TOWN_STATE, 3
+    clearflag FLAG_UNUSED_0x020
     end
 
 Kasaan_OnFrame:
@@ -78,6 +80,7 @@ Kasaan_MeetKhione:
     applymovement 10, Kasaan_Movement_KhioneSkedaddlyDooFrThisTime
     waitmovement 0
     setflag FLAG_RETURNED_DEVON_GOODS
+    setflag FLAG_UNUSED_0x020
     setvar VAR_DEWFORD_TOWN_STATE, 2
     removeobject 10
     releaseall
@@ -481,8 +484,8 @@ Text_Kasaan_KhioneOopsyPoopsy:
 Text_Kasaan_KhioneIntro:
     .string "{COLOR BLUE}???{COLOR DARK_GRAY}: Oh! Right!\n"
     .string "I should probably introduce myself.\p"
-    .string "I'm Khione, the Gym leader here.\p"
-    .string "Khione: You must be an aspiring trainer!\p"
+    .string "I'm {COLOR BLUE}Khione{COLOR DARK_GRAY}, the Gym leader here.\p"
+    .string "{COLOR BLUE}Khione{COLOR DARK_GRAY}: You must be an aspiring trainer!\p"
     .string "Thanks for your help back there keeping\n"
     .string "Dr. Stone safe.\p"
     .string "$"
@@ -493,7 +496,7 @@ Kasaan_Movement_KhioneSkedaddlyDoo:
     step_end
 
 Text_Kasaan_KhioneBackToGym:
-    .string "Khione: Anyways, I gotta go back to the\n"
+    .string "{COLOR BLUE}Khione{COLOR DARK_GRAY}: Anyways, I gotta go back to the\n"
     .string "gym now.\p"
     .string "Since you're a trainer, I think I can\n"
     .string "expect to see you as a challenger.\p"

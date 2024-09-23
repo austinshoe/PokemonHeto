@@ -62,6 +62,7 @@ Script_Receive_Starter2::
     giveitem ITEM_POKE_BALL, 5
     msgbox GivePokedex_Text_2, MSGBOX_DEFAULT
     waitmessage
+    msgbox Text_PearlTown_ProfessorPinesLab_Outro, MSGBOX_DEFAULT
     setflag FLAG_SYS_POKEMON_GET
     release
     end
@@ -123,3 +124,11 @@ PearlTown_ProfessorPinesLab_Text_ExplainPokedex:
     .string "helps you record the Pokémon you've seen\l"
     .string "or caught. It can record different stats\l"
     .string "like height and weight, etc.$"
+
+Text_PearlTown_ProfessorPinesLab_Outro:
+    .string "{PLAYER}!\p"
+    .string "This is the beginnning of your journey\n"
+    .string "across the world!\p"
+    .string "I wish you good luck in your endeavors,\n"
+    .string "and remember to talk to me if you ever\l"
+    .string "need help!$"
