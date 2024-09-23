@@ -105,6 +105,8 @@ PearlTownRivalBattle::
     closemessage
     applymovement 3, PearlTown_MovementRivalLeave
     waitmovement 0
+    applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft
+    waitmovement 0
     msgbox Text_Postbattle2, MSGBOX_DEFAULT
     waitmessage
     closemessage
