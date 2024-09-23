@@ -1,6 +1,7 @@
 Kasaan_MapScripts::
     map_script MAP_SCRIPT_ON_TRANSITION, Kasaan_OnTransition
     map_script MAP_SCRIPT_ON_LOAD, Kasaan_OnLoad
+    map_script MAP_SCRIPT_ON_FRAME_TABLE, Kasaan_OnFrame
     .byte 0
 
 Kasaan_OnTransition::
@@ -28,35 +29,84 @@ Kasaan_LockedDoor::
 
 Kasaan_VarTwo::
     setvar VAR_DEWFORD_TOWN_STATE, 2
+    call_if_unset FLAG_RETURNED_DEVON_GOODS, Kasaan_VarThree
     end
     
+Kasaan_VarThree::
+    setvar VAR_DEWFORD_TOWN_STATE, 3
+    end
+
+Kasaan_OnFrame:
+    map_script_2 VAR_DEWFORD_TOWN_STATE, 3, Kasaan_MeetKhione
+    .2byte 0
+
 Kasaan_UnlockedDoor::
     setmetatile 7, 16, METATILE_Tundra1_Gym_Door, FALSE
     end
+
+Kasaan_MeetKhione:
+    lockall
+    applymovement 10, Common_Movement_FaceLeft
+    waitmovement 10
+    applymovement 10, Common_Movement_ExclamationMark
+    waitmovement 10
+    applymovement 10, Kasaan_Movement_KhioneConfront
+    waitmovement 10
+    message Text_Kasaan_KhioneConfront
+    waitmessage
+    applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight
+    waitmovement 0
+    applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark
+    waitmovement 0
+    message Text_Kasaan_KhioneWSG
+    waitmessage
+    fadescreen FADE_TO_BLACK
+    delay 64
+    fadescreen FADE_FROM_BLACK
+    message Text_Kasaan_KhioneOopsyPoopsy
+    waitmessage
+    applymovement 10, Common_Movement_ExclamationMark
+    waitmovement 10
+    message Text_Kasaan_KhioneIntro
+    waitmessage
+    applymovement 10, Common_Movement_FaceRight
+    waitmovement 0
+    applymovement 10, Kasaan_Movement_KhioneSkedaddlyDoo
+    message Text_Kasaan_KhioneBackToGym
+    waitmessage
+    closemessage
+    applymovement 10, Kasaan_Movement_KhioneSkedaddlyDooFrThisTime
+    waitmovement 0
+    setflag FLAG_RETURNED_DEVON_GOODS
+    setvar VAR_DEWFORD_TOWN_STATE, 2
+    removeobject 10
+    releaseall
+    end
+    
 
 Kasaan_Outside_Grunt::
     lock
     faceplayer
     goto_if_set FLAG_HIDE_PETALBURG_WOODS_AQUA_GRUNT, Kasaan_Grunt_Post_Defeat
     msgbox Text_Grunt_Dont_Go_In, MSGBOX_DEFAULT
-    applymovement 11, Common_Movement_FaceDown
-    waitmovement 11
+    applymovement 9, Common_Movement_FaceDown
+    waitmovement 9
     release
     end
 
 Kasaan_Grunt_Post_Defeat:
     msgbox Text_KasaanGruntDefeated2, MSGBOX_DEFAULT
-    applymovement 11, Common_Movement_FaceDown
-    waitmovement 11
+    applymovement 9, Common_Movement_FaceDown
+    waitmovement 9
     release
     end
 
 Kasaan_Geologist_Trigger::
     lockall
-    applymovement 11, Common_Movement_FaceRight
-    waitmovement 11
-    applymovement 11, Common_Movement_ExclamationMark
-    waitmovement 11
+    applymovement 9, Common_Movement_FaceRight
+    waitmovement 9
+    applymovement 9, Common_Movement_ExclamationMark
+    waitmovement 9
     delay 16
     msgbox Text_Kasaan_Back_Off, MSGBOX_YESNO
     compare VAR_RESULT, YES
@@ -67,7 +117,7 @@ Kasaan_Geologist_Trigger::
     trainerbattle_no_intro TRAINER_GRUNT_PETALBURG_WOODS, Text_KasaanGruntDefeated
     setflag FLAG_HIDE_PETALBURG_WOODS_AQUA_GRUNT
     setvar VAR_DEWFORD_TOWN_STATE, 1
-    applymovement 11, Common_Movement_FaceDown
+    applymovement 9, Common_Movement_FaceDown
     waitmovement 0
     releaseall
     end
@@ -76,7 +126,7 @@ Kasaan_Player_Backed_Off:
     msgbox Text_Backed_Off, MSGBOX_DEFAULT
     applymovement OBJ_EVENT_ID_PLAYER, Movement_Kasaan_Back_Off
     waitmovement 0
-    applymovement 11, Common_Movement_FaceDown
+    applymovement 9, Common_Movement_FaceDown
     waitmovement 0
     releaseall
     end
@@ -403,3 +453,63 @@ Text_KasaanGruntDefeated2:
     .string "or you'll face the repercussions of\l"
     .string "messing with us, {COLOR BLUE}Angrboda{COLOR DARK_GRAY}.$"
 
+Kasaan_Movement_KhioneConfront:
+    walk_left
+    step_end
+
+Text_Kasaan_KhioneConfront:
+    .string "{COLOR BLUE}???{COLOR DARK_GRAY}: Oi! You there!\p"
+    .string "$"
+
+Text_Kasaan_KhioneWSG:
+    .string "What's going on here? I heard some\n"
+    .string "commotion from {COLOR BLUE}Dr. Stone{COLOR DARK_GRAY}'s house, but\l"
+    .string "When I got here, a bunch of sketchy\l"
+    .string "looking guys rushed passed me.\p"
+    .string "If you hurt {COLOR BLUE}Dr. Stone{COLOR DARK_GRAY} in any way, I'll\n"
+    .string "need to bring you in.\p"
+    .string "Explain what happened here!\p"
+    .string "$"
+
+Text_Kasaan_KhioneOopsyPoopsy:
+    .string "{COLOR BLUE}???{COLOR DARK_GRAY}: Ah... I see what happened...\n"
+    .string "I owe you an apology for assuming that\l"
+    .string "you were in cahoots with those shady\l"
+    .string "people back there.\p"
+    .string "$"
+
+Text_Kasaan_KhioneIntro:
+    .string "{COLOR BLUE}???{COLOR DARK_GRAY}: Oh! Right!\n"
+    .string "I should probably introduce myself.\p"
+    .string "I'm Khione, the Gym leader here.\p"
+    .string "Khione: You must be an aspiring trainer!\p"
+    .string "Thanks for your help back there keeping\n"
+    .string "Dr. Stone safe.\p"
+    .string "$"
+
+Kasaan_Movement_KhioneSkedaddlyDoo:
+    walk_right
+    walk_right
+    step_end
+
+Text_Kasaan_KhioneBackToGym:
+    .string "Khione: Anyways, I gotta go back to the\n"
+    .string "gym now.\p"
+    .string "Since you're a trainer, I think I can\n"
+    .string "expect to see you as a challenger.\p"
+    .string "See you in my gym!\p"
+    .string "$"
+
+Kasaan_Movement_KhioneSkedaddlyDooFrThisTime:
+    walk_right
+    walk_right
+    walk_right
+    walk_up
+    walk_up
+    walk_up
+    walk_up
+    walk_up
+    walk_up
+    walk_up
+    walk_up
+    step_end

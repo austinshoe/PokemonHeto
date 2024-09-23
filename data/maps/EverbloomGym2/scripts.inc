@@ -15,6 +15,7 @@ EverbloomGym2_Entrance:
     lockall
     message Text_EverbloomGym2_Entrance
     waitmessage
+    waitbuttonpress
     closemessage
     setvar VAR_UNUSED_0x4083, 1
     releaseall
@@ -45,6 +46,7 @@ Everbloom_Gym_Flora::
     applymovement 1, Common_Movement_ExclamationMark
     waitmovement 1
     message Text_EverbloomGym2_FloraIntro2
+    waitmessage
     getplayerxy VAR_TEMP_0, VAR_TEMP_1
     compare VAR_TEMP_0, 7
     goto_if_eq Everbloom_Gym_Flora_Playeris7
