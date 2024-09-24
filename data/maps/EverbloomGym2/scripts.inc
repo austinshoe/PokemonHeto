@@ -47,6 +47,8 @@ Everbloom_Gym_Flora::
     waitmovement 1
     message Text_EverbloomGym2_FloraIntro2
     waitmessage
+    waitbuttonpress
+    closemessage
     getplayerxy VAR_TEMP_0, VAR_TEMP_1
     compare VAR_TEMP_0, 7
     goto_if_eq Everbloom_Gym_Flora_Playeris7
@@ -189,7 +191,7 @@ Text_EverbloomGym_FloraPostBattle:
     .string "$"
 
 Text_EverbloomGym_FloraPostBattle2:
-    .string "Your moves were graceful an serene,\n"
+    .string "Your moves were graceful and serene,\n"
     .string "like the flowers gently swaying in the\l"
     .string "wind.\p"
     .string "Here! Take this.\p"
@@ -211,7 +213,7 @@ Text_EverbloomGym_FloraPostBattleDialogue:
     .string "You're strong!\p"
     .string "I hope you can keep growing as a\n"
     .string "trainer, so you can protect all the\l"
-    .string "people in this region, regarless of\l"
+    .string "people in this region, regardless of\l"
     .string "skin and hair color!$"
 
 EverbloomMovement_WalkDown:

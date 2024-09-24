@@ -1,3 +1,5 @@
+.set LOCALID_MOM, 6
+
 PearlTown_MapScripts::
     map_script MAP_SCRIPT_ON_TRANSITION, PearlTown_OnTransition
     .byte 0
@@ -18,12 +20,161 @@ PearlTownState1::
     call_if_set FLAG_DEFEATED_RIVAL_ROUTE103, PearlTownRivalAfter
     return
 
+PearlTownState2::
+    setvar VAR_LITTLEROOT_TOWN_STATE, 2
+    setobjectxyperm LOCALID_MOM, 23, 18
+    setobjectmovementtype LOCALID_MOM, MOVEMENT_TYPE_LOOK_AROUND
+    return
+
+PearlTown_MomGiveShoe:
+    lockall
+    faceplayer
+    applymovement LOCALID_MOM, Common_Movement_ExclamationMark
+    waitmovement 0
+    message Text_PearlTownMomCallsOut
+    waitmessage
+    goto PearlTownRunningShoesTriggerAll
+
+PearlTownRunningShoesTrigger1::
+    lockall
+    applymovement LOCALID_MOM, Common_Movement_FaceUp
+    waitmovement 0
+    applymovement LOCALID_MOM, Common_Movement_ExclamationMark
+    waitmovement 0
+    message Text_PearlTownMomCallsOut
+    waitmessage
+    applymovement LOCALID_MOM, PearlTown_Movement_SlidetoDaRight
+    waitmovement 0
+    applymovement LOCALID_MOM, Common_Movement_FaceUp
+    applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceDown
+    waitmovement LOCALID_MOM
+    waitmovement OBJ_EVENT_ID_PLAYER
+    goto PearlTownRunningShoesTriggerAll
+
+PearlTownRunningShoesTrigger2::
+    lockall
+    applymovement LOCALID_MOM, Common_Movement_FaceRight
+    waitmovement 0
+    applymovement LOCALID_MOM, Common_Movement_ExclamationMark
+    waitmovement 0
+    message Text_PearlTownMomCallsOut
+    waitmessage
+    applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft
+    waitmovement 0
+    applymovement LOCALID_MOM, PearlTown_Movement_SlidetoDaRight
+    waitmovement 0
+    applymovement LOCALID_MOM, PearlTown_Movement_SlidetoDaRight
+    waitmovement 0
+    applymovement LOCALID_MOM, Common_Movement_FaceUp
+    applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceDown
+    waitmovement LOCALID_MOM
+    waitmovement OBJ_EVENT_ID_PLAYER
+    goto PearlTownRunningShoesTriggerAll
+
+PearlTownRunningShoesTrigger3::
+    lockall
+    applymovement LOCALID_MOM, Common_Movement_FaceRight
+    waitmovement 0
+    applymovement LOCALID_MOM, Common_Movement_ExclamationMark
+    waitmovement 0
+    message Text_PearlTownMomCallsOut
+    waitmessage
+    applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft
+    waitmovement 0
+    applymovement LOCALID_MOM, PearlTown_Movement_SlidetoDaRight
+    waitmovement 0
+    applymovement LOCALID_MOM, PearlTown_Movement_SlidetoDaRight
+    waitmovement 0
+    applymovement LOCALID_MOM, PearlTown_Movement_SlidetoDaRight
+    waitmovement 0
+    applymovement LOCALID_MOM, Common_Movement_FaceUp
+    applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceDown
+    waitmovement LOCALID_MOM
+    waitmovement OBJ_EVENT_ID_PLAYER
+    goto PearlTownRunningShoesTriggerAll
+
+PearlTownRunningShoesTrigger4::
+    lockall
+    applymovement LOCALID_MOM, Common_Movement_FaceRight
+    waitmovement 0
+    applymovement LOCALID_MOM, Common_Movement_ExclamationMark
+    waitmovement 0
+    message Text_PearlTownMomCallsOut
+    waitmessage
+    applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft
+    waitmovement 0
+    applymovement LOCALID_MOM, PearlTown_Movement_SlidetoDaRight
+    waitmovement 0
+    applymovement LOCALID_MOM, PearlTown_Movement_SlidetoDaRight
+    waitmovement 0
+    applymovement LOCALID_MOM, PearlTown_Movement_SlidetoDaRight
+    waitmovement 0
+    applymovement LOCALID_MOM, PearlTown_Movement_SlidetoDaRight
+    waitmovement 0
+    applymovement LOCALID_MOM, Common_Movement_FaceUp
+    applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceDown
+    waitmovement LOCALID_MOM
+    waitmovement OBJ_EVENT_ID_PLAYER
+    goto PearlTownRunningShoesTriggerAll
+
+PearlTownRunningShoesTrigger5::
+    lockall
+    applymovement LOCALID_MOM, Common_Movement_FaceRight
+    waitmovement 0
+    applymovement LOCALID_MOM, Common_Movement_ExclamationMark
+    waitmovement 0
+    message Text_PearlTownMomCallsOut
+    waitmessage
+    applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft
+    waitmovement 0
+    applymovement LOCALID_MOM, PearlTown_Movement_SlidetoDaRight
+    waitmovement 0
+    applymovement LOCALID_MOM, PearlTown_Movement_SlidetoDaRight
+    waitmovement 0
+    applymovement LOCALID_MOM, PearlTown_Movement_SlidetoDaRight
+    waitmovement 0
+    applymovement LOCALID_MOM, PearlTown_Movement_SlidetoDaRight
+    waitmovement 0
+    applymovement LOCALID_MOM, PearlTown_Movement_SlidetoDaRight
+    waitmovement 0
+    applymovement LOCALID_MOM, Common_Movement_FaceUp
+    applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceDown
+    waitmovement LOCALID_MOM
+    waitmovement OBJ_EVENT_ID_PLAYER
+    goto PearlTownRunningShoesTriggerAll
+
+PearlTownRunningShoesTriggerAll:
+    msgbox Text_PearlTownMomExplainRunningShoes, MSGBOX_DEFAULT
+    playfanfare MUS_OBTAIN_ITEM
+    message PearlTown_Text_SwitchShoesWithRunningShoes
+    waitfanfare
+    setflag FLAG_RECEIVED_RUNNING_SHOES
+    msgbox PearlTown_Text_ExplainRunningShoes, MSGBOX_DEFAULT
+    msgbox PearlTown_Text_KnowHistory, MSGBOX_YESNO
+    compare VAR_RESULT, NO
+    goto_if_eq PearlTownLoreDump
+    message Text_PearlTown_MomComeBackAnytime
+    waitmessage
+    closemessage
+    applymovement LOCALID_MOM, PearlTown_MovementDiddleOffIntotheSunset
+    waitmovement 0
+    setobjectxyperm LOCALID_MOM, 0, 0
+    setflag FLAG_RECEIVED_RUNNING_SHOES
+    setvar VAR_LITTLEROOT_TOWN_STATE, 1
+    setflag FLAG_SYS_B_DASH
+    releaseall
+    end
+
+PearlTownLoreDump:
+    end
+
 PearlTownSetUpRivalBattle::
     clearflag FLAG_RIVAL_LEFT_FOR_ROUTE103
     return
 
 PearlTownRivalAfter::
     setflag FLAG_RIVAL_LEFT_FOR_ROUTE103
+    call_if_unset FLAG_RECEIVED_RUNNING_SHOES, PearlTownState2
     return
 
 PearlTown_EventScript_Trigger::
@@ -119,6 +270,7 @@ PearlTownRivalBattle::
     waitmovement 0
     fadescreen FADE_TO_BLACK
     hideobjectat 3, MAP_PEARL_TOWN
+    setvar VAR_LITTLEROOT_TOWN_STATE, 2
     fadescreen FADE_FROM_BLACK
     releaseall
     end
@@ -312,3 +464,50 @@ Text_Postbattle3:
 
 Text_PearlTown_PostTestBattle:
     .string "$"
+
+Text_PearlTownMomCallsOut:
+    .string "Mom: {PLAYER}!\p"
+    .string "$"
+
+PearlTown_Movement_SlidetoDaRight:
+    walk_right
+    step_end
+
+Text_PearlTownMomExplainRunningShoes:
+    .string "I forgot to tell you!\p"
+    .string "These came in the mail for you, since\"
+    .string "your old shoes were looking a bit\l"
+    .string "shabby."
+
+PearlTown_Text_SwitchShoesWithRunningShoes:
+    .string "{PLAYER} switched shoes with the\n"
+    .string "Running Shoes.$"
+
+PearlTown_Text_ExplainRunningShoes
+    .string "Mom: {PLAYER}, those shoes came with\n"
+    .string "instructions.\p"
+    .string "“Press the B Button while wearing these\n"
+    .string "Running Shoes to run extra-fast!\p"
+    .string "“Slip on these Running Shoes and race\n"
+    .string "in the great outdoors!”$"
+
+PearlTown_Text_KnowHistory:
+    .string "Are you well versed with this region's\n"
+    .string "history?$"
+
+Text_PearlTown_MomComeBackAnytime:
+    .string "Then you must understand why I'm\n"
+    .string "concerned for your safety.\p"
+    .string "If you're feeling tired or worried,\n"
+    .string "feel free to come back home and take a\l"
+    .string "little break!\p"
+    .string "$"
+
+PearlTown_MovementDiddleOffIntotheSunset:
+    walk_down
+    walk_down
+    walk_down
+    walk_down
+    walk_down
+    walk_down
+    step_end
