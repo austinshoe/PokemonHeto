@@ -483,7 +483,7 @@ PearlTown_Text_SwitchShoesWithRunningShoes:
     .string "{PLAYER} switched shoes with the\n"
     .string "Running Shoes.$"
 
-PearlTown_Text_ExplainRunningShoes
+PearlTown_Text_ExplainRunningShoes:
     .string "Mom: {PLAYER}, those shoes came with\n"
     .string "instructions.\p"
     .string "“Press the B Button while wearing these\n"
