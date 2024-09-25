@@ -475,7 +475,7 @@ PearlTown_Movement_SlidetoDaRight:
 
 Text_PearlTownMomExplainRunningShoes:
     .string "I forgot to tell you!\p"
-    .string "These came in the mail for you, since\"
+    .string "These came in the mail for you, since\n"
     .string "your old shoes were looking a bit\l"
     .string "shabby."
 
