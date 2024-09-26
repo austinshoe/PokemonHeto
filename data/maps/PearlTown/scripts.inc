@@ -26,7 +26,7 @@ PearlTownState2::
     setobjectmovementtype LOCALID_MOM, MOVEMENT_TYPE_LOOK_AROUND
     return
 
-PearlTown_MomGiveShoe:
+PearlTown_MomGiveShoe::
     lockall
     faceplayer
     applymovement LOCALID_MOM, Common_Movement_ExclamationMark

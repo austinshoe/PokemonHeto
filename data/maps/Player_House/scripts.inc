@@ -4,7 +4,23 @@ Player_House_MapScripts::
 
 Player_House_OnTransition:
     setrespawn HEAL_LOCATION_PEARL_TOWN
+    call_if_set FLAG_DEFEATED_RIVAL_ROUTE103, Player_House_HideMomRunningShoes
     end
+
+Player_House_HideMomRunningShoes:
+    call_if_unset FLAG_RECEIVED_RUNNING_SHOES, Player_House_HideMomRunningShoes1
+    call_if_set FLAG_RECEIVED_RUNNING_SHOES, Player_House_ShowMom
+    return
+
+Player_House_HideMomRunningShoes1:
+    hideobjectat 1, MAP_PLAYER_HOUSE
+    setobjectxyperm 1, 0, 0
+    return
+
+Player_House_ShowMom:
+    showobjectat 1, MAP_PLAYER_HOUSE
+    setobjectxyperm 1, 7, 5
+    return
 
 Player_House_Mom::
     lock
