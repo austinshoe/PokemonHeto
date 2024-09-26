@@ -156,9 +156,13 @@ PearlTownRunningShoesTriggerAll:
     message Text_PearlTown_MomComeBackAnytime
     waitmessage
     closemessage
+    goto PearlTownRunningShoesTriggerAll2
+
+PearlTownRunningShoesTriggerAll2:
     applymovement LOCALID_MOM, PearlTown_MovementDiddleOffIntotheSunset
     waitmovement 0
     setobjectxyperm LOCALID_MOM, 0, 0
+    removeobject LOCALID_MOM
     setflag FLAG_RECEIVED_RUNNING_SHOES
     setvar VAR_LITTLEROOT_TOWN_STATE, 1
     setflag FLAG_SYS_B_DASH
@@ -166,6 +170,18 @@ PearlTownRunningShoesTriggerAll:
     end
 
 PearlTownLoreDump:
+    message Text_PearlTownLoreDump
+    waitmessage
+    applymovement LOCALID_MOM, Common_Movement_FaceLeft
+    waitmovement 0
+    message Text_PearlTownLoreDump2
+    waitmessage
+    applymovement LOCALID_MOM, Common_Movement_FaceUp
+    waitmovement 0
+    message Text_PearlTownLoreDump3
+    waitmessage
+    closemessage
+    goto PearlTownRunningShoesTriggerAll2
     end
 
 PearlTownSetUpRivalBattle::
@@ -271,6 +287,9 @@ PearlTownRivalBattle::
     fadescreen FADE_TO_BLACK
     hideobjectat 3, MAP_PEARL_TOWN
     setvar VAR_LITTLEROOT_TOWN_STATE, 2
+    setobjectxyperm LOCALID_MOM, 23, 18
+    setobjectmovementtype LOCALID_MOM, MOVEMENT_TYPE_LOOK_AROUND
+    delay 64
     fadescreen FADE_FROM_BLACK
     releaseall
     end
@@ -477,7 +496,7 @@ Text_PearlTownMomExplainRunningShoes:
     .string "I forgot to tell you!\p"
     .string "These came in the mail for you, since\n"
     .string "your old shoes were looking a bit\l"
-    .string "shabby."
+    .string "shabby.$"
 
 PearlTown_Text_SwitchShoesWithRunningShoes:
     .string "{PLAYER} switched shoes with the\n"
@@ -502,7 +521,6 @@ Text_PearlTown_MomComeBackAnytime:
     .string "feel free to come back home and take a\l"
     .string "little break!\p"
     .string "$"
-
 PearlTown_MovementDiddleOffIntotheSunset:
     walk_down
     walk_down
@@ -511,3 +529,28 @@ PearlTown_MovementDiddleOffIntotheSunset:
     walk_down
     walk_down
     step_end
+
+Text_PearlTownLoreDump:
+    .string "Well... Where do I begin...\p"
+    .string "$"
+Text_PearlTownLoreDump2:
+    .string "In the past, the region of Heto wasn't\l"
+    .string "just a single country.\l"
+    .string "There were two different countries,\l"
+    .string "Toemayto and Hehehehatia.\p"
+    .string "Relations between the two were good,\l"
+    .string "but border disputes caused conflict,\l"
+    .string "which led to war.\p"
+    .string "$"
+
+Text_PearlTownLoreDump3:
+    .string "Even though the war ended a while ago,\n"
+    .string "Some Albas and Auratas, especially on\l"
+    .string "this side of Heto, still have anti\l"
+    .string "colored sentiments.\p"
+    .string "You must understand why I'm concerned\n"
+    .string "for your safety.\p"
+    .string "If you're feeling tired or worried,\n"
+    .string "feel free to come back home and take a\l"
+    .string "little break!\p"
+    .string "$"
