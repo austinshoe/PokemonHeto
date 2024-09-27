@@ -535,11 +535,11 @@ Text_PearlTownLoreDump:
     .string "Well... Where do I begin...\p"
     .string "$"
 Text_PearlTownLoreDump2:
-    .string "In the past, the region of Heto wasn't\l"
+    .string "In the past, the region of Heto wasn't\l\n"
     .string "just a single country.\l"
     .string "There were two different countries,\l"
     .string "Toemayto and Hehehehatia.\p"
-    .string "Relations between the two were good,\l"
+    .string "Relations between the two were good,\n"
     .string "but border disputes caused conflict,\l"
     .string "which led to war.\p"
     .string "$"

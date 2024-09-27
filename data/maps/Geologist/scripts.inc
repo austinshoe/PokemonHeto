@@ -247,13 +247,22 @@ Geologist_ExchangeNumbers:
     msgbox Text_GeologistExchangeNumbers, MSGBOX_YESNO
     compare VAR_RESULT, NO
     goto_if_eq Geologist_ExchangeNumbersPlayerNo
+    goto Geologist_ExchangeNumbersYes
+
+Geologist_ExchangeNumbersPostNo:
+    msgbox Text_GeologistExchangeNumbersTake2, MSGBOX_YESNO
+    compare VAR_RESULT, NO
+    goto_if_eq Geologist_ExchangeNumbersPlayerNo
+    goto Geologist_ExchangeNumbersYes
+
+Geologist_ExchangeNumbersYes:
     message Text_GeologistExchangedNumbers
     waitmessage
     return
 
 Geologist_ExchangeNumbersPlayerNo:
     msgbox Text_Geologist_ExchangeNumbersPlayerNo, MSGBOX_DEFAULT
-    goto Geologist_ExchangeNumbers
+    goto Geologist_ExchangeNumbersPostNo
 
 
 Geologist_DrStone::
@@ -503,8 +512,11 @@ Text_GeologistExchangeNumbers:
 
 Text_Geologist_ExchangeNumbersPlayerNo:
     .string "Come on, now. We need to be able to\n"
-    .string "communicate if something else ever\n"
+    .string "communicate if something else ever\l"
     .string "comes up.$"
+
+Text_GeologistExchangeNumbersTake2:
+    .string "Let's exchange phone numbers, shall we?$"
 
 Text_GeologistExchangedNumbers:
     .string "Perfect...\p"

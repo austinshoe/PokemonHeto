@@ -4280,6 +4280,7 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
             case WEATHER_SNOW:
                 if (!(gBattleWeather & (B_WEATHER_HAIL | B_WEATHER_SNOW)))
                 {
+                    /*
                     #if B_OVERWORLD_SNOW >= GEN_9
                         gBattleWeather = B_WEATHER_SNOW;
                         gBattleScripting.animArg1 = B_ANIM_SNOW_CONTINUES;
@@ -4289,7 +4290,15 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
                         gBattleScripting.animArg1 = B_ANIM_HAIL_CONTINUES;
                         effect++;
                     #endif
-
+                    */
+                    if (!(gBattleWeather & B_WEATHER_HAIL))
+                    {
+                        gBattleWeather = B_WEATHER_HAIL;
+                        gBattleScripting.animArg1 = B_ANIM_HAIL_CONTINUES;
+                        gBattleScripting.battler = battler;
+                        effect++;
+                    }
+                    break;
                 }
                 break;
             }
