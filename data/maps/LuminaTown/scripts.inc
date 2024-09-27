@@ -1,5 +1,10 @@
 LuminaTown_MapScripts::
+    map_script MAP_SCRIPT_ON_TRANSITION, LuminaTown_OnTransition
 	.byte 0
+
+LuminaTown_OnTransition:
+    setflag FLAG_VISITED_OLDALE_TOWN
+    end
 
 LuminaTown_StoreClerk::
     lock

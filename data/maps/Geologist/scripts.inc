@@ -235,10 +235,27 @@ Geologist_EventScript_EviL_Team_EncounterPt2:
     setflag FLAG_RECEIVED_HM_CUT
     waitmessage
     waitbuttonpress
+    applymovement 1, Common_Movement_ExclamationMark
+    waitmovement 0
+    call Geologist_ExchangeNumbers
+    waitbuttonpress
     closemessage
     releaseall
     end
-    
+
+Geologist_ExchangeNumbers:
+    msgbox Text_GeologistExchangeNumbers, MSGBOX_YESNO
+    compare VAR_RESULT, NO
+    goto_if_eq Geologist_ExchangeNumbersPlayerNo
+    message Text_GeologistExchangedNumbers
+    waitmessage
+    return
+
+Geologist_ExchangeNumbersPlayerNo:
+    msgbox Text_Geologist_ExchangeNumbersPlayerNo, MSGBOX_DEFAULT
+    goto Geologist_ExchangeNumbers
+
+
 Geologist_DrStone::
     lock
     faceplayer
@@ -477,6 +494,23 @@ Text_GeologistPlayerGotCut:
     .string "Cut lets you cut small trees.\n"
     .string "You'll need Kasaan's Gym badge to use\l"
     .string "it, though.$"
+
+Text_GeologistExchangeNumbers:
+    .string "Ah right!\p"
+    .string "If you want to, we can exchange phone\n"
+    .string "numbers, so you can contact me if\l"
+    .string "something comes up.$"
+
+Text_Geologist_ExchangeNumbersPlayerNo:
+    .string "Come on, now. We need to be able to\n"
+    .string "communicate if something else ever\n"
+    .string "comes up.$"
+
+Text_GeologistExchangedNumbers:
+    .string "Perfect...\p"
+    .string "I'll be able to communicate with you if\n"
+    .string "something ever comes up.\p"
+    .string "$"
 
 Geologist_Movement_KirschbluteWalkUp:
     walk_up

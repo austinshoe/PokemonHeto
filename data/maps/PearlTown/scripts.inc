@@ -5,6 +5,7 @@ PearlTown_MapScripts::
     .byte 0
 
 PearlTown_OnTransition:
+    setflag FLAG_VISITED_LITTLEROOT_TOWN
     call_if_unset FLAG_RESCUED_BIRCH, PearlTownState0
     call_if_set FLAG_RESCUED_BIRCH, PearlTownState1
     end

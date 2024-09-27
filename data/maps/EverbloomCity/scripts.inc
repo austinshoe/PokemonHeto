@@ -3,6 +3,7 @@ EverbloomCity_MapScripts::
 	.byte 0
 
 Everbloom_OnTransition::
+    setflag FLAG_VISITED_DEWFORD_TOWN
     call_if_unset FLAG_DEFEATED_RUSTBORO_GYM, Everbloom_VarZero
     call_if_set FLAG_DEFEATED_RUSTBORO_GYM, Everbloom_VarOne
     end
