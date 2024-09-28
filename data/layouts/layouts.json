@@ -5609,7 +5609,7 @@
       "id": "LAYOUT_NEW_MAP5",
       "name": "NewMap5_Layout",
       "width": 40,
-      "height": 30,
+      "height": 34,
       "border_width": 4,
       "border_height": 4,
       "primary_tileset": "gTileset_Fall",

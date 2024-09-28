@@ -180,10 +180,55 @@ Text_FallGrove_GeologistExplainMtEmberfall:
     .string "If you go down south, and continue on\n"
     .string "the route below, you'll arrive at\l"
     .string "{COLOR RED}Mt. Emberfall{COLOR DARK_GRAY} in no time.\p"
-    .string "Anyways, I'll be awaiting your report.$"
+    .string "Anyways, I'll be awaiting your report.\p"
+    .string "{FONT FONT_SMALL_NARROW}(click){FONT FONT_NORMAL}\p"
+    .string "...\p"
+    .string "...$"
 
 Text_FallGrove_GeologistNotExplainingMtEmberfall:
     .string "Yeah, I'll need you to check on what's\n"
     .string "going on there.\p"
     .string "Let me know if anything's up.\p"
-    .string "I'll be awaiting your report.$"
+    .string "I'll be awaiting your report.\p"
+    .string "{FONT FONT_SMALL_NARROW}(click){FONT FONT_NORMAL}\p"
+    .string "...\p"
+    .string "...$"
+
+FallGrove_Grunt1::
+    lock
+    message Text_FallGrove_Grunt1
+    waitmessage
+    faceplayer
+    applymovement 3, Common_Movement_ExclamationMark
+    message Text_FallGrove_Grunt2
+    waitmessage
+    waitbuttonpress
+    closemessage
+    applymovement 3, Common_Movement_FaceRight
+    waitmovement 0
+    release
+    end
+
+FallGrove_Grunt2::
+    lock
+    message Text_FallGrove_Grunt1
+    waitmessage
+    faceplayer
+    applymovement 3, Common_Movement_ExclamationMark
+    message Text_FallGrove_Grunt2
+    waitmessage
+    waitbuttonpress
+    closemessage
+    applymovement 3, Common_Movement_FaceLeft
+    waitmovement 0
+    release
+    end
+
+Text_FallGrove_Grunt1:
+    .string "Boss said...\p"
+    .string "$"
+
+Text_FallGrove_Grunt2:
+    .string "Hey!\n"
+    .string "Can't you see we're in the middle of\l"
+    .string "something here?$"
