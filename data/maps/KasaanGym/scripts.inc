@@ -9,7 +9,7 @@ KasaanGym_OnTransition:
 KasaanGym_Khione::
 	lock
 	faceplayer
-	goto_if_set FLAG_DEFEATED_DEWFORD_GYM, Text_KasaanGym_KhionePreBattle
+	goto_if_set FLAG_DEFEATED_DEWFORD_GYM, KasaanGym_KhionePostBattle
 	message KasaanGym_KhionePreBattle
 	waitmessage
 	waitbuttonpress
