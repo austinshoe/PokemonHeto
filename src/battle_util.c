@@ -5054,6 +5054,18 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
                 if (moveType == TYPE_GRASS)
                     effect = 2, statId = STAT_ATK;
                 break;
+            case ABILITY_THOR:
+                if (moveType == TYPE_ELECTRIC)
+                    effect = 2, statId = STAT_SPATK;
+                break;
+            case ABILITY_SKADI:
+                if (moveType == TYPE_ICE)
+                    effect = 2, statId = STAT_SPATK;
+                break;
+            case ABILITY_SURTR:
+                if (moveType == TYPE_ELECTRIC)
+                    effect = 2, statId = STAT_SPATK;
+                break;
             case ABILITY_FLASH_FIRE:
                 if (moveType == TYPE_FIRE
                 #if B_FLASH_FIRE_FROZEN <= GEN_4
@@ -8953,6 +8965,28 @@ static inline u32 CalcMoveBasePowerAfterModifiers(u32 move, u32 battlerAtk, u32 
         if (gBattleMoves[move].pulseMove)
            modifier = uq4_12_multiply(modifier, UQ_4_12(1.5));
         break;
+    case ABILITY_AUTHORITY:
+        if (gBattleMoves[move].blastMove || gBattleMoves[move].ballisticMove)
+            modifier = uq4_12_multiply(modifier, UQ_4_12(1.5));
+        break;
+    case ABILITY_THOR:
+        if (gBattleMoves[move].blastMove || gBattleMoves[move].ballisticMove)
+            modifier = uq4_12_multiply(modifier, UQ_4_12(1.5));
+        if (moveType == TYPE_ELECTRIC && gBattleStruct->ateBoost[battlerAtk])
+            modifier = uq4_12_multiply(modifier, UQ_4_12(1.3));
+        break;
+    case ABILITY_SURTR:
+        if (gBattleMoves[move].blastMove || gBattleMoves[move].ballisticMove)
+            modifier = uq4_12_multiply(modifier, UQ_4_12(1.5));
+        if (moveType == TYPE_FIRE && gBattleStruct->ateBoost[battlerAtk])
+            modifier = uq4_12_multiply(modifier, UQ_4_12(1.3));
+        break;
+    case ABILITY_SKADI:
+        if (gBattleMoves[move].blastMove || gBattleMoves[move].ballisticMove)
+            modifier = uq4_12_multiply(modifier, UQ_4_12(1.5));
+        if (moveType == TYPE_ICE && gBattleStruct->ateBoost[battlerAtk])
+            modifier = uq4_12_multiply(modifier, UQ_4_12(1.3));
+        break;
     case ABILITY_WATER_BUBBLE:
         if (moveType == TYPE_WATER)
            modifier = uq4_12_multiply(modifier, UQ_4_12(2.0));
@@ -9750,6 +9784,25 @@ static inline uq4_12_t GetDefenderAbilitiesModifier(u32 move, u32 moveType, u32 
         if (moveType == TYPE_ELECTRIC || moveType == TYPE_FIRE || moveType == TYPE_ICE)
             return UQ_4_12(0);
         else if (IS_MOVE_SPECIAL(move))
+            return UQ_4_12(0.5);
+        break;
+    case ABILITY_AUTHORITY:
+        if (moveType == TYPE_ELECTRIC || moveType == TYPE_FIRE || moveType == TYPE_ICE)
+            return UQ_4_12(0);
+        else if (IS_MOVE_SPECIAL(move))
+            return UQ_4_12(0.5);
+        break;
+    case ABILITY_THOR:
+        if (IS_MOVE_SPECIAL(move))
+            return UQ_4_12(0.5);
+        break;
+    case ABILITY_SKADI:
+        if (IS_MOVE_SPECIAL(move))
+            return UQ_4_12(0.5);
+        break; 
+    }
+    case ABILITY_SURTR:
+        if (IS_MOVE_SPECIAL(move))
             return UQ_4_12(0.5);
         break; 
     }

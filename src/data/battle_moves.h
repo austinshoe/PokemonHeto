@@ -1021,6 +1021,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
         .split = SPLIT_SPECIAL,
         .zMoveEffect = Z_EFFECT_NONE,
         .sheerForceBoost = TRUE,
+        .blastMove = TRUE,
     },
 
     [MOVE_BLIZZARD] =
@@ -1060,6 +1061,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
         .split = SPLIT_SPECIAL,
         .zMoveEffect = Z_EFFECT_NONE,
         .sheerForceBoost = TRUE,
+        .blastMove = TRUE,
     },
 
     [MOVE_BUBBLE_BEAM] =
@@ -1075,6 +1077,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
         .split = SPLIT_SPECIAL,
         .zMoveEffect = Z_EFFECT_NONE,
         .sheerForceBoost = TRUE,
+        .blastMove = TRUE,
     },
 
     [MOVE_AURORA_BEAM] =
@@ -1090,6 +1093,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
         .split = SPLIT_SPECIAL,
         .zMoveEffect = Z_EFFECT_NONE,
         .sheerForceBoost = TRUE,
+        .blastMove = TRUE,
     },
 
     [MOVE_HYPER_BEAM] =
@@ -1106,6 +1110,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
         .zMoveEffect = Z_EFFECT_NONE,
         .ignoresKingsRock = B_UPDATED_MOVE_FLAGS < GEN_3,
         .instructBanned = TRUE,
+        .blastMove = TRUE,
     },
 
     [MOVE_PECK] =
@@ -1328,6 +1333,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
         .zMoveEffect = Z_EFFECT_NONE,
         .sleepTalkBanned = TRUE,
         .instructBanned = TRUE,
+        .blastMove = TRUE,
     },
 
     [MOVE_POISON_POWDER] =
@@ -1527,6 +1533,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
         .zMoveEffect = Z_EFFECT_NONE,
         .sheerForceBoost = TRUE,
         .damagesAirborne = TRUE,
+        .blastMove = TRUE,
     },
 
     [MOVE_ROCK_THROW] =
@@ -2164,6 +2171,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
         .split = SPLIT_SPECIAL,
         .zMoveEffect = Z_EFFECT_NONE,
         .sheerForceBoost = TRUE,
+        .blastMove = TRUE,
     },
 
     [MOVE_WATERFALL] =
@@ -5560,6 +5568,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
         .split = SPLIT_SPECIAL,
         .zMoveEffect = Z_EFFECT_NONE,
         .sheerForceBoost = TRUE,
+        .blastMove = TRUE,
     },
 
     [MOVE_SHADOW_PUNCH] =
@@ -5848,6 +5857,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
         .split = SPLIT_SPECIAL,
         .zMoveEffect = Z_EFFECT_NONE,
         .sheerForceBoost = TRUE,
+        .blastMove = TRUE,
     },
 
     [MOVE_POISON_TAIL] =
@@ -6046,6 +6056,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
         .zMoveEffect = Z_EFFECT_NONE,
         .sheerForceBoost = TRUE,
         .pulseMove = TRUE,
+        .blastMove = TRUE,
     },
 
     [MOVE_DOOM_DESIRE] =
@@ -6757,6 +6768,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
         .split = SPLIT_SPECIAL,
         .zMoveEffect = Z_EFFECT_NONE,
         .pulseMove = TRUE,
+        .blastMove = TRUE,
         .ballisticMove = TRUE,
     },
 
@@ -6805,6 +6817,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
         .zMoveEffect = Z_EFFECT_NONE,
         .sheerForceBoost = TRUE,
         .pulseMove = TRUE,
+        .blastMove = TRUE,
     },
 
     [MOVE_NIGHT_SLASH] =
@@ -6923,6 +6936,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
         .split = SPLIT_SPECIAL,
         .zMoveEffect = Z_EFFECT_NONE,
         .pulseMove = TRUE,
+        .blastMove = TRUE,
     },
 
     [MOVE_DRAGON_RUSH] =
@@ -7663,6 +7677,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
         .split = SPLIT_SPECIAL,
         .zMoveEffect = Z_EFFECT_NONE,
         .sheerForceBoost = TRUE,
+        .blastMove = TRUE,
     },
 
     [MOVE_WOOD_HAMMER] =
@@ -9628,6 +9643,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
         .split = SPLIT_PHYSICAL,
         .zMoveEffect = Z_EFFECT_NONE,
         .windMove = TRUE,
+        .blastMove = TRUE,
     },
 
     [MOVE_FREEZE_DRY] =
@@ -10355,6 +10371,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
         .split = SPLIT_SPECIAL,
         .zMoveEffect = Z_EFFECT_NONE,
         .pulseMove = TRUE,
+        .blastMove = TRUE,
         .metronomeBanned = TRUE,
     },
 
@@ -12164,6 +12181,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
         .split = SPLIT_SPECIAL,
         .zMoveEffect = Z_EFFECT_NONE,
         .instructBanned = TRUE,
+        .blastMove = TRUE,
     },
 
     [MOVE_SHELL_SIDE_ARM] =
@@ -12241,6 +12259,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
         .split = SPLIT_SPECIAL,
         .zMoveEffect = Z_EFFECT_NONE,
         .pulseMove = TRUE,
+        .blastMove = TRUE,
     },
 
     [MOVE_SKITTER_SMACK] =
@@ -12740,6 +12759,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
         .priority = 0,
         .split = SPLIT_SPECIAL,
         .zMoveEffect = Z_EFFECT_NONE,
+        .blastMove = TRUE,
     },
 
     [MOVE_MOUNTAIN_GALE] =

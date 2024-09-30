@@ -290,6 +290,10 @@ static const u8 sArmorTailDescription[] = _("Protects from priority.");
 static const u8 sEarthEaterDescription[] = _("Eats ground to heal HP.");
 static const u8 sMyceliumMightDescription[] = _("Status moves never fail.");
 static const u8 sHeartlessDescription[] = _("Sp. Attacks do less.");
+static const u8 sAuthorityDescription[] = _("Boosts blasts.");
+static const u8 sThorDescription[] = _("Authority over Electricity.");
+static const u8 sSkadiDescription[] = _("Authority over Ice.");
+static const u8 sSurtrDescription[] = _("Authority over Fire.");
 
 #if B_EXPANDED_ABILITY_NAMES == TRUE
 const u8 gAbilityNames[ABILITIES_COUNT][ABILITY_NAME_LENGTH + 1] =
@@ -898,6 +902,10 @@ const u8 gAbilityNames[ABILITIES_COUNT][ABILITY_NAME_LENGTH + 1] =
     [ABILITY_EARTH_EATER] = _("Earth Eater"),
     [ABILITY_MYCELIUM_MIGHT] = _("MceliumMight"),
     [ABILITY_HEARTLESS] = _("Heartless"),
+    [ABILITY_AUTHORITY] = _("Authority"),
+    [ABILITY_THOR] = _("Thor"),
+    [ABILITY_SKADI] = _("Skadi"),
+    [ABILITY_SURTR] = _("Surtr"),
 };
 #endif
 
@@ -1203,4 +1211,8 @@ const u8 *const gAbilityDescriptionPointers[ABILITIES_COUNT] =
     [ABILITY_EARTH_EATER] = sEarthEaterDescription,
     [ABILITY_MYCELIUM_MIGHT] = sMyceliumMightDescription,
     [ABILITY_HEARTLESS] = sHeartlessDescription,
+    [ABILITY_AUTHORITY] = sAuthorityDescription,
+    [ABILITY_THOR] = sThorDescription,
+    [ABILITY_SKADI] = sSkadiDescription,
+    [ABILITY_SURTR] = sSurtrDescription,
 };
