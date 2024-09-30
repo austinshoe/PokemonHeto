@@ -9746,6 +9746,12 @@ static inline uq4_12_t GetDefenderAbilitiesModifier(u32 move, u32 moveType, u32 
         if (IS_MOVE_SPECIAL(move))
             return UQ_4_12(0.5);
         break;
+    case ABILITY_HEARTLESS:
+        if (moveType == TYPE_ELECTRIC || moveType == TYPE_FIRE || moveType == TYPE_ICE)
+            return UQ_4_12(0);
+        else if (IS_MOVE_SPECIAL(move))
+            return UQ_4_12(0.5);
+        break; 
     }
     return UQ_4_12(1.0);
 }
