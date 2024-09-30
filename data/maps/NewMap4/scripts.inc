@@ -28,16 +28,19 @@ FallGrove_GeologistFirstCall:
     compare VAR_RESULT, NO
     goto_if_eq FallGrove_GeologistFirstCallNO
     goto FallGrove_GeologistFirstCallYES
+    end
 
 FallGrove_GeologistFirstCallNO:
     message Text_FallGrove_GeologistFirstCallNO
     waitmessage
     goto FallGrove_GeologistFirstCall2
+    end
 
 FallGrove_GeologistFirstCallYES:
     message Text_FallGrove_GeologistFirstCallYES
     waitmessage
     goto FallGrove_GeologistFirstCall2
+    end
 
 FallGrove_GeologistFirstCall2:
     msgbox Text_FallGrove_GeologistDeliverBadNews, MSGBOX_YESNO
@@ -165,7 +168,7 @@ Text_FallGrove_GeologistDeliverBadNews:
     .string "to see if {COLOR BLUE}Angrboda{COLOR DARK_GRAY} is messing around\l"
     .string "there.\p"
     .string "Wait...\p"
-    .string "Do you even know where {COLOR RED}Mt. Emberfall{COLOR DARK_GRAY} is?"
+    .string "Do you even know where {COLOR RED}Mt. Emberfall{COLOR DARK_GRAY} is?$"
 
 Text_FallGrove_GeologistExplainMtEmberfall:
     .string "{COLOR RED}Mt. Emberfall{COLOR DARK_GRAY} is the volcano that\n"

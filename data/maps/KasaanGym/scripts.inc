@@ -15,6 +15,7 @@ KasaanGym_Khione::
 	waitbuttonpress
 	closemessage
 	setweather WEATHER_SNOW
+	setvar VAR_TEMP_0, 1
 	doweather
 	applymovement 1, KasaanGym_Movement_LookAround
 	waitmovement 0
