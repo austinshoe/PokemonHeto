@@ -9800,7 +9800,6 @@ static inline uq4_12_t GetDefenderAbilitiesModifier(u32 move, u32 moveType, u32 
         if (IS_MOVE_SPECIAL(move))
             return UQ_4_12(0.5);
         break; 
-    }
     case ABILITY_SURTR:
         if (IS_MOVE_SPECIAL(move))
             return UQ_4_12(0.5);
