@@ -598,6 +598,10 @@ const u8 gAbilityNames[ABILITIES_COUNT][ABILITY_NAME_LENGTH + 1] =
     [ABILITY_EARTH_EATER] = _("Earth Eater"),
     [ABILITY_MYCELIUM_MIGHT] = _("Mycelium Might"),
     [ABILITY_HEARTLESS] = _("Heartless"),
+    [ABILITY_AUTHORITY] = _("Authority"),
+    [ABILITY_THOR] = _("Thor"),
+    [ABILITY_SKADI] = _("Skadi"),
+    [ABILITY_SURTR] = _("Surtr"),
 };
 #else   // 12 characters
 const u8 gAbilityNames[ABILITIES_COUNT][ABILITY_NAME_LENGTH + 1] =

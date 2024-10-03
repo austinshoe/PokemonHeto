@@ -5066,7 +5066,7 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
                     effect = 2, statId = STAT_SPATK;
                 break;
             case ABILITY_SURTR:
-                if (moveType == TYPE_ELECTRIC || moveType == TYPE_DRAGON)
+                if (moveType == TYPE_FIRE || moveType == TYPE_DRAGON)
                     effect = 2, statId = STAT_SPATK;
                 break;
             case ABILITY_FLASH_FIRE:
