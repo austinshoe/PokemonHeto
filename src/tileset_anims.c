@@ -79,6 +79,7 @@ static void QueueAnimTiles_EliteFour_GroundLights(u16);
 static void QueueAnimTiles_EliteFour_WallLights(u16);
 static void QueueAnimTiles_Fall_Blueflower(u16);
 static void QueueAnimTiles_Fall_Purpleflower(u16);
+static void QueueAnimTiles_Fall_Corn(u16);
 static void QueueAnimTiles_volcano1_Lava(u16);
 static void QueueAnimTiles_Luminara_Flower(u16);
 static void QueueAnimTiles_PokemonLeague_Lilacs(u16);
@@ -114,6 +115,23 @@ const u16 *const gTilesetAnims_Fall_Purpleflower[] = {
     gTilesetAnims_Fall_Purpleflower_Frame0,
     gTilesetAnims_Fall_Purpleflower_Frame1,
     gTilesetAnims_Fall_Purpleflower_Frame2
+};
+
+const u16 gTilesetAnims_Fall_Corn_Frame0[] = INCBIN_U16("data/tilesets/primary/fall/anim/corn/0.4bpp");
+const u16 gTilesetAnims_Fall_Corn_Frame1[] = INCBIN_U16("data/tilesets/primary/fall/anim/corn/1.4bpp");
+const u16 gTilesetAnims_Fall_Corn_Frame2[] = INCBIN_U16("data/tilesets/primary/fall/anim/corn/2.4bpp");
+const u16 gTilesetAnims_Fall_Corn_Frame3[] = INCBIN_U16("data/tilesets/primary/fall/anim/corn/3.4bpp");
+const u16 gTilesetAnims_Fall_Corn_Frame4[] = INCBIN_U16("data/tilesets/primary/fall/anim/corn/4.4bpp");
+
+const u16 *const gTilesetAnims_Fall_Corn[] = {
+    gTilesetAnims_Fall_Corn_Frame0,
+    gTilesetAnims_Fall_Corn_Frame1,
+    gTilesetAnims_Fall_Corn_Frame2,
+    gTilesetAnims_Fall_Corn_Frame1,
+    gTilesetAnims_Fall_Corn_Frame0,
+    gTilesetAnims_Fall_Corn_Frame3,
+    gTilesetAnims_Fall_Corn_Frame4,
+    gTilesetAnims_Fall_Corn_Frame3
 };
 
 const u16 gTilesetAnims_PokemonLeague_Lilacs_Frame0[] = INCBIN_U16("data/tilesets/primary/pokemon_league/anim/lilacs/0.4bpp");
@@ -837,6 +855,12 @@ static void QueueAnimTiles_Fall_Purpleflower(u16 timer)
     AppendTilesetAnimToBuffer(gTilesetAnims_Fall_Purpleflower[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(56)), 0x80);
 }
 
+static void QueueAnimTiles_Fall_Purpleflower(u16 timer)
+{
+    u16 i = timer % 8;
+    AppendTilesetAnimToBuffer(gTilesetAnims_Fall_Corn[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(208)), 8 * TILE_SIZE_4BPP);
+}
+
 static void QueueAnimTiles_volcano1_Lava(u16 timer)
 {
     u16 i = timer % 16;
@@ -1028,6 +1052,8 @@ static void TilesetAnim_Fall(u16 timer)
         QueueAnimTiles_Fall_Blueflower(timer / 16);
     if (timer % 16 == 1)
         QueueAnimTiles_Fall_Purpleflower(timer / 16);
+    if (timer % 16 ==2)
+        QueueAnimTiles_Fall_Corn(timer / 16);
 }
 
 static void TilesetAnim_Volcano(u16 timer)
