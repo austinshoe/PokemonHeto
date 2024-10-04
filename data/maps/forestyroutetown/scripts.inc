@@ -27,6 +27,6 @@ Text_forestyroutetownstonecall1:
     .string "I wonder what they're up to...\p"
     .string "For now, just keep an eye out for them.\p"
     .string "Just let me know if you see them again.\p"
-    .string "{FONT FONT_SMALL_NARROW}(click){FONT FONT_NORMAL}\p"
+    .string "{FONT FONT_SMALL}click{FONT FONT_NORMAL}\p"
     .string "...\p"
     .string "...$"

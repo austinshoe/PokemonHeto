@@ -46,7 +46,7 @@ Text_ResearchersHouse_LittleBoy:
 
 Text_ResearchersHouse_OldWoman:
 	.string "Hello there youngin!\p"
-	.string "Are you interested in hearing me story?"
+	.string "Are you interested in hearing me story?$"
 
 Text_ResearchersHouse_OldWomanSaidNo:
 	.string "Glosh diggity drabbity darn it...$"
