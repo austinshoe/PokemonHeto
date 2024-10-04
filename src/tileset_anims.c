@@ -855,7 +855,7 @@ static void QueueAnimTiles_Fall_Purpleflower(u16 timer)
     AppendTilesetAnimToBuffer(gTilesetAnims_Fall_Purpleflower[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(56)), 0x80);
 }
 
-static void QueueAnimTiles_Fall_Purpleflower(u16 timer)
+static void QueueAnimTiles_Fall_Corn(u16 timer)
 {
     u16 i = timer % 8;
     AppendTilesetAnimToBuffer(gTilesetAnims_Fall_Corn[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(208)), 8 * TILE_SIZE_4BPP);
