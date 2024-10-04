@@ -142,7 +142,7 @@ Text_FallGrove_GeologistFirstCall:
     .string "Bzzzt...\p"
     .string "Bzzzt...\p"
     .string "{COLOR BLUE}Dr. Stone{COLOR DARK_GRAY}: {PLAYER}?\n"
-    .string "It's me, Dr. Stone.\p"
+    .string "It's me, {COLOR BLUE}Dr. Stone{COLOR DARK_GRAY}.\p"
     .string "Have you been doing well?$"
 
 Text_FallGrove_GeologistFirstCallNO:
@@ -158,7 +158,7 @@ Text_FallGrove_GeologistFirstCallYES:
     .string "$'"
 
 Text_FallGrove_GeologistDeliverBadNews:
-    .string "After that interaction with Angrboda,\n"
+    .string "After that interaction with {COLOR BLUE}Angrboda{COLOR DARK_GRAY},\n"
     .string "I dug through some of my old research,\l"
     .string "and I found that the bedrock layer\l"
     .string "underneath {COLOR RED}Mt. Emberfall{COLOR DARK_GRAY} is way thinner\l"
@@ -172,12 +172,12 @@ Text_FallGrove_GeologistDeliverBadNews:
 
 Text_FallGrove_GeologistExplainMtEmberfall:
     .string "{COLOR RED}Mt. Emberfall{COLOR DARK_GRAY} is the volcano that\n"
-    .string "created the landmass we know as Heto.\p"
+    .string "created the landmass we know as {COLOR RED}Heto{COLOR DARK_GRAY}.\p"
     .string "It's still active and it's located in\n"
     .string "the heart of the region.\p"
     .string "Where are you right now?\p"
-    .string "..."
-    .string "..."
+    .string "...\p"
+    .string "...\p"
     .string "I see.\p"
     .string "So you're in Fall Grove Town right now.\p"
     .string "If you go down south, and continue on\n"
