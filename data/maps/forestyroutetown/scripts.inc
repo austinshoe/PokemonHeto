@@ -3,13 +3,13 @@ forestyroutetown_MapScripts::
     .byte 0
     
 forestyroutetown_DrStoneCall_OnFrame:
-    map_script_2 VAR_LILYCOVE_CITY_STATE, 0, EventScript_RunCutsceneStone1
+    map_script_2 VAR_ROUTE105_STATE, 0, EventScript_RunCutsceneStone1
     .2byte 0
 
 EventScript_RunCutsceneStone1:
     lock
     msgbox Text_forestyroutetownstonecall1, MSGBOX_DEFAULT
-    setvar VAR_LILYCOVE_CITY_STATE, 1
+    setvar VAR_ROUTE105_STATE, 1
     release
     end
 
@@ -17,9 +17,9 @@ Text_forestyroutetownstonecall1:
     .string "Bzzzt...\p"
     .string "Bzzzt...\p"
     .string "Any news??? On you know what???\n"
-    .string "You saw Angrboda??? At fall grove,"
-    .string "but not Emberfall?"
-    .string "Oh no, what are they planning..."
+    .string "You saw Angrboda??? At Fall Grove,\l"
+    .string "but not Emberfall?\l"
+    .string "Oh no, what are they planning...\l"
     .string "{FONT FONT_SMALL_NARROW}(click){FONT FONT_NORMAL}\p"
     .string "...\p"
     .string "...$"
