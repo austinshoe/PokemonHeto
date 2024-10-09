@@ -5636,6 +5636,20 @@ void SetTypeBeforeUsingMove(u32 move, u32 battlerAtk)
         if (holdEffect == gBattleMoves[move].argument)
             gBattleStruct->dynamicMoveType = ItemId_GetSecondaryId(gBattleMons[battlerAtk].item) | F_DYNAMIC_TYPE_2;
     }
+    else if (gBattleMoves[move].effect == EFFECT_CHANGE_TYPE_ON_TYPE) {
+        if (gSpeciesInfo[gBattleMons[battler].species].types[0] == TYPE_FIRE || gSpeciesInfo[gBattleMons[battler].species].types[1] == TYPE_FIRE) {
+            gBattleStruct->dynamicMoveType = TYPE_FIRE | F_DYNAMIC_TYPE_2;
+        }
+        else if (gSpeciesInfo[gBattleMons[battler].species].types[0] == TYPE_ICE || gSpeciesInfo[gBattleMons[battler].species].types[1] == TYPE_ICE) {
+            gBattleStruct->dynamicMoveType = TYPE_ICE | F_DYNAMIC_TYPE_2;
+        }
+        else if (gSpeciesInfo[gBattleMons[battler].species].types[0] == TYPE_ELECTRIC || gSpeciesInfo[gBattleMons[battler].species].types[1] == TYPE_ELECTRIC) {
+            gBattleStruct->dynamicMoveType = TYPE_ELECTRIC | F_DYNAMIC_TYPE_2;
+        }
+        else {
+            gBattleStruct->dynamicMoveType = TYPE_DRAGON | F_DYNAMIC_TYPE_2;
+        }
+    }
     else if (gBattleMoves[move].effect == EFFECT_REVELATION_DANCE)
     {
         if (gBattleMons[battlerAtk].type1 != TYPE_MYSTERY)
