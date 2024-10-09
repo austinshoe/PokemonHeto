@@ -320,7 +320,6 @@ gBattleScriptsForMoveEffects::
 	.4byte BattleScript_EffectHitSwitchTarget         @ EFFECT_HIT_SWITCH_TARGET
 	.4byte BattleScript_EffectFinalGambit             @ EFFECT_FINAL_GAMBIT
 	.4byte BattleScript_EffectHit                     @ EFFECT_CHANGE_TYPE_ON_ITEM
-    .4byte BattleScript_EffectHit                     @ EFFECT_CHANGE_TYPE_ON_TYPE
 	.4byte BattleScript_EffectAutotomize              @ EFFECT_AUTOTOMIZE
 	.4byte BattleScript_EffectCopycat                 @ EFFECT_COPYCAT
 	.4byte BattleScript_EffectDefog                   @ EFFECT_DEFOG

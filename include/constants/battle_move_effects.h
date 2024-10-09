@@ -414,8 +414,7 @@
 #define EFFECT_MORTAL_SPIN                  408
 #define EFFECT_GIGATON_HAMMER               409
 #define EFFECT_SALT_CURE                    410
-#define EFFECT_CHANGE_TYPE_ON_TYPE          411
 
-#define NUM_BATTLE_MOVE_EFFECTS             412
+#define NUM_BATTLE_MOVE_EFFECTS             411
 
 #endif  // GUARD_CONSTANTS_BATTLE_MOVE_EFFECTS_H
