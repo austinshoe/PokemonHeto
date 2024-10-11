@@ -437,6 +437,7 @@ gBattleScriptsForMoveEffects::
 	.4byte BattleScript_EffectMortalSpin              @ EFFECT_MORTAL_SPIN
 	.4byte BattleScript_EffectHit                     @ EFFECT_GIGATON_HAMMER
 	.4byte BattleScript_EffectSaltCure                @ EFFECT_SALT_CURE
+	.4byte BattleScript_EffectChangeTypeOnType		  @ EFFECT_CHANGE_TYPE_ON_TYPE
 
 BattleScript_EffectSaltCure:
 	call BattleScript_EffectHit_Ret
@@ -10389,3 +10390,6 @@ BattleScript_EffectSnow::
 	jumpifhalfword CMP_COMMON_BITS, gBattleWeather, B_WEATHER_STRONG_WINDS, BattleScript_MysteriousAirCurrentBlowsOn
 	setsnow
 	goto BattleScript_MoveWeatherChange
+
+BattleScript_EffectChangeTypeOnType::
+	goto BattleScript_EffectHit
