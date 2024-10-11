@@ -14295,7 +14295,7 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
     },
     [MOVE_CORE_BLAST] =
     {
-        .effect = EFFECT_HIT,
+        .effect = EFFECT_CHANGE_TYPE_ON_TYPE,
         .power = 140,
         .type = TYPE_DRAGON,
         .accuracy = 100,
