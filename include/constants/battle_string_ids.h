@@ -670,8 +670,11 @@
 #define STRINGID_CURRENTMOVECANTSELECT                668
 #define STRINGID_TARGETISBEINGSALTCURED               669
 #define STRINGID_TARGETISHURTBYSALTCURE               670
+#define STRINGID_MOVECHANGEDTYPEICE                   671
+#define STRINGID_MOVECHANGEDTYPEFIRE                  672
+#define STRINGID_MOVECHANGEDTYPEELECTRIC              673
 
-#define BATTLESTRINGS_COUNT                           671
+#define BATTLESTRINGS_COUNT                           674
 
 // This is the string id that gBattleStringsTable starts with.
 // String ids before this (e.g. STRINGID_INTROMSG) are not in the table,

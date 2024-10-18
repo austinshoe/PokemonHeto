@@ -805,6 +805,7 @@ gBattleAnims_Moves::
 	.4byte Move_SANDSEAR_STORM
 	.4byte Move_LUNAR_BLESSING
 	.4byte Move_TAKE_HEART
+	.4byte Move_CORE_BLAST
 @@@@@@@@@@@@ GEN 9 @@@@@@@@@@@@
 	.4byte Move_TERA_BLAST
 	.4byte Move_SILK_TRAP
@@ -856,7 +857,6 @@ gBattleAnims_Moves::
 	.4byte Move_MAGICAL_TORQUE
 	.4byte Move_PSYBLADE
 	.4byte Move_HYDRO_STEAM
-	.4byte Move_CORE_BLAST
 @@@@ Z MOVES
 	.4byte Move_BREAKNECK_BLITZ
 	.4byte Move_ALL_OUT_PUMMELING

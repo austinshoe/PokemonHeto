@@ -10392,4 +10392,22 @@ BattleScript_EffectSnow::
 	goto BattleScript_MoveWeatherChange
 
 BattleScript_EffectChangeTypeOnType::
+	jumpiftype BS_ATTACKER, TYPE_ICE, BattleScript_EffectChangeTypeToIce
+	jumpiftype BS_ATTACKER, TYPE_FIRE, BattleScript_EffectChangeTypeToFire
+	jumpiftype BS_ATTACKER, TYPE_ELECTRIC, BattleScript_EffectChangeTypeToElectric
+	goto BattleScript_EffectHit
+
+BattleScript_EffectChangeTypeToIce::
+	printstring STRINGID_MOVECHANGEDTYPEICE
+	waitmessage B_WAIT_TIME_LONG
+	goto BattleScript_EffectHit
+
+BattleScript_EffectChangeTypeToFire::
+	printstring STRINGID_MOVECHANGEDTYPEFIRE
+	waitmessage B_WAIT_TIME_LONG
+	goto BattleScript_EffectHit
+
+BattleScript_EffectChangeTypeToElectric::
+	printstring STRINGID_MOVECHANGEDTYPEELECTRIC
+	waitmessage B_WAIT_TIME_LONG
 	goto BattleScript_EffectHit
