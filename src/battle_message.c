@@ -807,9 +807,9 @@ static const u8 sText_TeamGainedEXP[] = _("The rest of your team gained EXP.\nPo
 static const u8 sText_CurrentMoveCantSelect[] = _("{B_BUFF1} cannot be used!\p");
 static const u8 sText_TargetIsBeingSaltCured[] = _("{B_DEF_NAME_WITH_PREFIX} is being salt cured!");
 static const u8 sText_TargetIsHurtBySaltCure[] = _("{B_DEF_NAME_WITH_PREFIX} is hurt by {B_BUFF1}!");
-static const u8 sText_MoveChangedTypeIce[] = _("Core Blast's type changed to the\n ICE TYPE!");
-static const u8 sText_MoveChangedTypeFire[] = _("Core Blast's type changed to the\n FIRE TYPE!");
-static const u8 sText_MoveChangedTypeElectric[] = _("Core Blast's type changed to the\n ELECTRIC TYPE!");
+static const u8 sText_MoveChangedTypeIce[] = _("Core Blast's type changed to the\nICE TYPE!");
+static const u8 sText_MoveChangedTypeFire[] = _("Core Blast's type changed to the\nFIRE TYPE!");
+static const u8 sText_MoveChangedTypeElectric[] = _("Core Blast's type changed to the\nELECTRIC TYPE!");
 
 
 const u8 *const gBattleStringsTable[BATTLESTRINGS_COUNT] =

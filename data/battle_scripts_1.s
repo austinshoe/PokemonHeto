@@ -10395,19 +10395,43 @@ BattleScript_EffectChangeTypeOnType::
 	jumpiftype BS_ATTACKER, TYPE_ICE, BattleScript_EffectChangeTypeToIce
 	jumpiftype BS_ATTACKER, TYPE_FIRE, BattleScript_EffectChangeTypeToFire
 	jumpiftype BS_ATTACKER, TYPE_ELECTRIC, BattleScript_EffectChangeTypeToElectric
-	goto BattleScript_EffectHit
+	goto BattleScript_EffectChangeTypeOnType2
+
+BattleScript_EffectChangeTypeOnType2::
+	attackcanceler
+	accuracycheck BattleScript_PrintMoveMissed, ACC_CURR_MOVE
+	attackstring
+	ppreduce
+	critcalc
+	damagecalc
+	adjustdamage
+	attackanimation
+	waitanimation
+	effectivenesssound
+	hitanimation BS_TARGET
+	waitstate
+	healthbarupdate BS_TARGET
+	datahpupdate BS_TARGET
+	critmessage
+	waitmessage B_WAIT_TIME_LONG
+	resultmessage
+	waitmessage B_WAIT_TIME_LONG
+	seteffectwithchance
+	tryfaintmon BS_TARGET
+	moveendall
+	end
 
 BattleScript_EffectChangeTypeToIce::
 	printstring STRINGID_MOVECHANGEDTYPEICE
 	waitmessage B_WAIT_TIME_LONG
-	goto BattleScript_EffectHit
+	goto BattleScript_EffectChangeTypeOnType2
 
 BattleScript_EffectChangeTypeToFire::
 	printstring STRINGID_MOVECHANGEDTYPEFIRE
 	waitmessage B_WAIT_TIME_LONG
-	goto BattleScript_EffectHit
+	goto BattleScript_EffectChangeTypeOnType2
 
 BattleScript_EffectChangeTypeToElectric::
 	printstring STRINGID_MOVECHANGEDTYPEELECTRIC
 	waitmessage B_WAIT_TIME_LONG
-	goto BattleScript_EffectHit
+	goto BattleScript_EffectChangeTypeOnType2
