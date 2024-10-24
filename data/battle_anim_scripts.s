@@ -805,7 +805,6 @@ gBattleAnims_Moves::
 	.4byte Move_SANDSEAR_STORM
 	.4byte Move_LUNAR_BLESSING
 	.4byte Move_TAKE_HEART
-	.4byte Move_CORE_BLAST
 @@@@@@@@@@@@ GEN 9 @@@@@@@@@@@@
 	.4byte Move_TERA_BLAST
 	.4byte Move_SILK_TRAP
@@ -857,6 +856,7 @@ gBattleAnims_Moves::
 	.4byte Move_MAGICAL_TORQUE
 	.4byte Move_PSYBLADE
 	.4byte Move_HYDRO_STEAM
+	.4byte Move_CORE_BLAST
 @@@@ Z MOVES
 	.4byte Move_BREAKNECK_BLITZ
 	.4byte Move_ALL_OUT_PUMMELING
@@ -15527,6 +15527,40 @@ EerieSpellConvergingFlames:
 	createsprite gSpriteTemplate_EerieSpellFlame, ANIM_TARGET, 2, 0x1, 0x0, 0x17, 0x0, 0x10
 	return
 
+Move_CORE_BLAST::
+	loadspritegfx ANIM_TAG_ORBS
+	loadspritegfx ANIM_TAG_CIRCLE_OF_LIGHT
+	loadspritegfx ANIM_TAG_METEOR
+	loadspritegfx ANIM_TAG_FLAT_ROCK
+	monbg ANIM_ATK_PARTNER
+	setalpha 12, 8
+	createvisualtask AnimTask_BlendColorCycle, 2, F_PAL_ATTACKER, 1, 4, 0, 11, RGB(31, 31, 11)
+	playsewithpan SE_M_MEGA_KICK, SOUND_PAN_ATTACKER
+	call SolarBeamAbsorbEffect
+	waitforvisualfinish
+	clearmonbg ANIM_ATK_PARTNER
+	blendoff
+	monbg ANIM_ATK_PARTNER
+	splitbgprio ANIM_ATTACKER
+	setalpha 12, 8
+	createsprite gSuperpowerOrbSpriteTemplate, ANIM_TARGET, 2, ANIM_ATTACKER
+	playsewithpan SE_M_MEGA_KICK, SOUND_PAN_ATTACKER
+	delay 74
+	createsprite gShakeMonOrTerrainSpriteTemplate, ANIM_ATTACKER, 2, 4, 1, 180, 1
+	createvisualtask SoundTask_PlaySE2WithPanning, 5, SE_M_EARTHQUAKE, 0
+	delay 40
+	createsprite gSuperpowerFireballSpriteTemplate, ANIM_TARGET, 3, ANIM_ATTACKER
+	createvisualtask AnimTask_HorizontalShake, 5, ANIM_TARGET, 3, 60
+	playsewithpan SE_M_SWAGGER, SOUND_PAN_ATTACKER
+	delay 16
+	createvisualtask AnimTask_ShakeMon2, 2, ANIM_TARGET, 8, 0, 16, 1
+	playsewithpan SE_M_MEGA_KICK2, SOUND_PAN_TARGET
+	waitforvisualfinish
+	clearmonbg ANIM_ATK_PARTNER
+	blendoff
+	delay 1
+	end
+
 @@@@@@@@@@@@@@@@@@@@@@@ GEN 9 @@@@@@@@@@@@@@@@@@@@@@@
 @ credits to Skeli
 Move_DIRE_CLAW::
@@ -16508,39 +16542,6 @@ Move_PSYBLADE::
 Move_HYDRO_STEAM::
 	end @to do
 
-Move_CORE_BLAST::
-	loadspritegfx ANIM_TAG_ORBS
-	loadspritegfx ANIM_TAG_CIRCLE_OF_LIGHT
-	loadspritegfx ANIM_TAG_METEOR
-	loadspritegfx ANIM_TAG_FLAT_ROCK
-	monbg ANIM_ATK_PARTNER
-	setalpha 12, 8
-	createvisualtask AnimTask_BlendColorCycle, 2, F_PAL_ATTACKER, 1, 4, 0, 11, RGB(31, 31, 11)
-	playsewithpan SE_M_MEGA_KICK, SOUND_PAN_ATTACKER
-	call SolarBeamAbsorbEffect
-	waitforvisualfinish
-	clearmonbg ANIM_ATK_PARTNER
-	blendoff
-	monbg ANIM_ATK_PARTNER
-	splitbgprio ANIM_ATTACKER
-	setalpha 12, 8
-	createsprite gSuperpowerOrbSpriteTemplate, ANIM_TARGET, 2, ANIM_ATTACKER
-	playsewithpan SE_M_MEGA_KICK, SOUND_PAN_ATTACKER
-	delay 74
-	createsprite gShakeMonOrTerrainSpriteTemplate, ANIM_ATTACKER, 2, 4, 1, 180, 1
-	createvisualtask SoundTask_PlaySE2WithPanning, 5, SE_M_EARTHQUAKE, 0
-	delay 40
-	createsprite gSuperpowerFireballSpriteTemplate, ANIM_TARGET, 3, ANIM_ATTACKER
-	createvisualtask AnimTask_HorizontalShake, 5, ANIM_TARGET, 3, 60
-	playsewithpan SE_M_SWAGGER, SOUND_PAN_ATTACKER
-	delay 16
-	createvisualtask AnimTask_ShakeMon2, 2, ANIM_TARGET, 8, 0, 16, 1
-	playsewithpan SE_M_MEGA_KICK2, SOUND_PAN_TARGET
-	waitforvisualfinish
-	clearmonbg ANIM_ATK_PARTNER
-	blendoff
-	delay 1
-	end
 
 @@@@@@@@@@@@@@@@@@@@@@@ GEN 1-3 @@@@@@@@@@@@@@@@@@@@@@@
 Move_NONE:
