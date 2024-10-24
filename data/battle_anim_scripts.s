@@ -15538,27 +15538,32 @@ Move_CORE_BLAST::
 	playsewithpan SE_M_MEGA_KICK, SOUND_PAN_ATTACKER
 	call SolarBeamAbsorbEffect
 	waitforvisualfinish
-	clearmonbg ANIM_ATK_PARTNER
-	blendoff
-	monbg ANIM_ATK_PARTNER
-	splitbgprio ANIM_ATTACKER
+	loadspritegfx ANIM_TAG_DRAGON_PULSE
+	monbg ANIM_TARGET
 	setalpha 12, 8
-	createsprite gSuperpowerOrbSpriteTemplate, ANIM_TARGET, 2, ANIM_ATTACKER
-	playsewithpan SE_M_MEGA_KICK, SOUND_PAN_ATTACKER
-	delay 74
-	createsprite gShakeMonOrTerrainSpriteTemplate, ANIM_ATTACKER, 2, 4, 1, 180, 1
-	createvisualtask SoundTask_PlaySE2WithPanning, 5, SE_M_EARTHQUAKE, 0
-	delay 40
-	createsprite gSuperpowerFireballSpriteTemplate, ANIM_TARGET, 3, ANIM_ATTACKER
-	createvisualtask AnimTask_HorizontalShake, 5, ANIM_TARGET, 3, 60
-	playsewithpan SE_M_SWAGGER, SOUND_PAN_ATTACKER
-	delay 16
-	createvisualtask AnimTask_ShakeMon2, 2, ANIM_TARGET, 8, 0, 16, 1
-	playsewithpan SE_M_MEGA_KICK2, SOUND_PAN_TARGET
+	createsprite gSimplePaletteBlendSpriteTemplate, ANIM_ATTACKER, 2, 1, 1, 0, 7, RGB_BLACK
 	waitforvisualfinish
-	clearmonbg ANIM_ATK_PARTNER
-	blendoff
+	playsewithpan SE_M_PSYBEAM, SOUND_PAN_ATTACKER
+	createsoundtask SoundTask_LoopSEAdjustPanning, SE_M_PSYBEAM2, SOUND_PAN_ATTACKER, SOUND_PAN_TARGET, 3, 4, 0, 15
+	call DragonPulseParticle
+	call DragonPulseParticle
+	createvisualtask AnimTask_SwayMon, 5, 0, 6, 51200, 4, ANIM_TARGET
+	createvisualtask AnimTask_BlendColorCycle, 2, F_PAL_TARGET, 2, 2, 0, 12, RGB(30, 10, 13)
+	call DragonPulseParticle
+	call DragonPulseParticle
+	call DragonPulseParticle
+	call DragonPulseParticle
+	call DragonPulseParticle
+	call DragonPulseParticle
+	call DragonPulseParticle
+	call DragonPulseParticle
+	call DragonPulseParticle
+	waitforvisualfinish
 	delay 1
+	createsprite gSimplePaletteBlendSpriteTemplate, ANIM_ATTACKER, 2, 1, 1, 7, 0, RGB_BLACK
+	waitforvisualfinish
+	blendoff
+	clearmonbg ANIM_TARGET
 	end
 
 @@@@@@@@@@@@@@@@@@@@@@@ GEN 9 @@@@@@@@@@@@@@@@@@@@@@@
