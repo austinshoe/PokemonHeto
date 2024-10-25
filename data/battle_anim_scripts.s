@@ -15529,19 +15529,18 @@ EerieSpellConvergingFlames:
 
 Move_CORE_BLAST::
 	loadspritegfx ANIM_TAG_ORBS
-	loadspritegfx ANIM_TAG_CIRCLE_OF_LIGHT
-	loadspritegfx ANIM_TAG_METEOR
-	loadspritegfx ANIM_TAG_FLAT_ROCK
 	monbg ANIM_ATK_PARTNER
 	setalpha 12, 8
 	createvisualtask AnimTask_BlendColorCycle, 2, F_PAL_ATTACKER, 1, 4, 0, 11, RGB(31, 31, 11)
 	playsewithpan SE_M_MEGA_KICK, SOUND_PAN_ATTACKER
 	call SolarBeamAbsorbEffect
 	waitforvisualfinish
+	createvisualtask AnimTask_CoreBlast, 0x5
 	jumpargeq 0x0, TYPE_FIRE, CoreBlastFire
 	jumpargeq 0x0, TYPE_ELECTRIC, CoreBlastElectric
 	jumpargeq 0x0, TYPE_ICE, CoreBlastIce
 	jumpargeq 0x0, TYPE_DRAGON, CoreBlastDragon
+	waitforvisualfinish
 	end
 
 CoreBlastFire:
@@ -15630,7 +15629,6 @@ CoreBlastIce:
 	delay 45
 	restorebg
 	waitbgfadein
-	return
 	blendoff
 	return
 
@@ -15734,7 +15732,8 @@ CoreBlastElectric:
 	blendoff
 	call CoreBlastElectrify
 	waitforvisualfinish
-	end
+	return
+
 CoreBlastElectrify:
 	playsewithpan SE_M_THUNDERBOLT2, SOUND_PAN_TARGET
 	createsprite gElectricitySpriteTemplate, ANIM_TARGET, 2, 5, 0, 5, 0, ANIM_TARGET

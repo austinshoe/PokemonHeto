@@ -13,6 +13,7 @@
 #include "util.h"
 #include "trig.h"
 #include "graphics.h"
+#include "pokemon.h"
 #include "battle_scripts.h"
 #include "battle_controllers.h"
 #include "constants/moves.h"
@@ -8605,6 +8606,23 @@ void AnimTask_ShellSideArm(u8 taskId)
         gBattleAnimArgs[0] = TRUE;
     else
         gBattleAnimArgs[0] = FALSE;
+    DestroyAnimVisualTask(taskId);
+}
+
+void AnimTask_CoreBlast(u8 taskId)
+{
+    if (gSpeciesInfo[gBattleMons[gBattleAnimAttacker].species].types[1] == TYPE_FIRE) {
+        gBattleAnimArgs[0] = TYPE_FIRE;
+    }
+    else if (gSpeciesInfo[gBattleMons[gBattleAnimAttacker].species].types[1] == TYPE_ELECTRIC) {
+        gBattleAnimArgs[0] = TYPE_ELECTRIC;
+    }
+    else if (gSpeciesInfo[gBattleMons[gBattleAnimAttacker].species].types[1] == TYPE_ICE) {
+        gBattleAnimArgs[0] = TYPE_ICE;
+    }
+    else if (gSpeciesInfo[gBattleMons[gBattleAnimAttacker].species].types[1] == TYPE_DRAGON) {
+        gBattleAnimArgs[0] = TYPE_DRAGON;
+    }
     DestroyAnimVisualTask(taskId);
 }
 
