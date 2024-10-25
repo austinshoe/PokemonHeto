@@ -8620,7 +8620,7 @@ void AnimTask_CoreBlast(u8 taskId)
     else if (gSpeciesInfo[gBattleMons[gBattleAnimAttacker].species].types[1] == TYPE_ICE) {
         gBattleAnimArgs[0] = TYPE_ICE;
     }
-    else if (gSpeciesInfo[gBattleMons[gBattleAnimAttacker].species].types[1] == TYPE_DRAGON) {
+    else {
         gBattleAnimArgs[0] = TYPE_DRAGON;
     }
     DestroyAnimVisualTask(taskId);
