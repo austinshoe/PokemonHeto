@@ -15678,7 +15678,6 @@ CoreBlastDragon:
 	return
 
 CoreBlastElectric:
-	Move_DISCHARGE:
 	loadspritegfx ANIM_TAG_IMPACT
 	loadspritegfx ANIM_TAG_SPARK_2
 	delay 0
