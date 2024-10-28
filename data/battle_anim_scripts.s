@@ -15580,6 +15580,9 @@ CoreBlastDragon:
 	waitforvisualfinish
 	clearmonbg ANIM_ATTACKER
 	waitforvisualfinish
+	setarg 0x7 0x0 
+	createvisualtask AnimTask_BlendBattleAnimPal, 0xa, (F_PAL_BG | F_PAL_ALL_BUT_DEF), 0x2, 0x0, 0x10, 0x0 @everything to black
+	waitforvisualfinish
 	blendoff
 	restorebg
 	createvisualtask AnimTask_BlendBattleAnimPal, 0xa, (F_PAL_BG | F_PAL_BATTLERS), 0x2, 0x10, 0x0, 0x0 @everything from black
