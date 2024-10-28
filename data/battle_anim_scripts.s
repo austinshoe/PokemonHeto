@@ -15579,17 +15579,13 @@ CoreBlastDragon:
 	createvisualtask AnimTask_HorizontalShake, 5, ANIM_TARGET, 5, 14
 	waitforvisualfinish
 	clearmonbg ANIM_ATTACKER
+	setarg 7, 0x0
 	waitforvisualfinish
-	setarg 0x7 0x0 
-	createvisualtask AnimTask_BlendBattleAnimPal, 0xa, (F_PAL_BG | F_PAL_ALL_BUT_DEF), 0x2, 0x0, 0x10, 0x0 @everything to black
-	waitforvisualfinish
-	blendoff
 	restorebg
-	createvisualtask AnimTask_BlendBattleAnimPal, 0xa, (F_PAL_BG | F_PAL_BATTLERS), 0x2, 0x10, 0x0, 0x0 @everything from black
-	waitforvisualfinish
-	createvisualtask AnimTask_BlendBattleAnimPal, 0xa, F_PAL_BATTLERS, 0x2, 0x0, 0x0, 0x0
-	waitforvisualfinish
-	createvisualtask AnimTask_AllBattlersVisible, 0xA
+	waitbgfadeout
+	setarg 7, 0xFFFF
+	waitbgfadein
+	blendoff
 	waitforvisualfinish
 	end
 
