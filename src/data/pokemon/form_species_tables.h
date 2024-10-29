@@ -1182,6 +1182,6 @@ static const u16 sDraconarixFormSpeciesIdTable[] = {
     SPECIES_DRACONARIX_UNLEASHED_FIRE,
     SPECIES_DRACONARIX_UNLEASHED_ICE,
     FORM_SPECIES_END,
-}
+};
 
 #endif
