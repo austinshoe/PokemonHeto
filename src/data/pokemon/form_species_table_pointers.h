@@ -597,5 +597,10 @@ const u16 *const gFormSpeciesIdTables[NUM_SPECIES] =
     [SPECIES_TOGEPI_HETONIAN] = sTogepiFormSpeciesIdTable,
     [SPECIES_TOGETIC_HETONIAN] = sTogeticFormSpeciesIdTable,
     [SPECIES_TOGEKISS_HETONIAN] = sTogekissFormSpeciesIdTable,
+    [SPECIES_DRACONARIX] = sDraconarixFormSpeciesIdTable,
+    [SPECIES_DRACONARIX_UNLEASHED] = sDraconarixFormSpeciesIdTable,
+    [SPECIES_DRACONARIX_UNLEASHED_ICE] = sDraconarixFormSpeciesIdTable,
+    [SPECIES_DRACONARIX_UNLEASHED_FIRE] = sDraconarixFormSpeciesIdTable,
+    [SPECIES_DRACONARIX_UNLEASHED_ELECTRIC] = sDraconarixFormSpeciesIdTable,
 #endif
 };

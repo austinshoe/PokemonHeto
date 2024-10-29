@@ -675,9 +675,9 @@
 #define STRINGID_MOVECHANGEDTYPEELECTRIC              673
 #define STRINGID_MONUNABLETOVENT                      674
 #define STRINGID_MONRELEASINGALLENERGY                675
-#define STRINGID_MONRELEASEDALLENERGY                676
+#define STRINGID_MONRELEASEDALLENERGY                 676
 
-#define BATTLESTRINGS_COUNT                           674 //change to 677
+#define BATTLESTRINGS_COUNT                           677 //change to 677
 
 // This is the string id that gBattleStringsTable starts with.
 // String ids before this (e.g. STRINGID_INTROMSG) are not in the table,
