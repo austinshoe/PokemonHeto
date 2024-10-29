@@ -14307,4 +14307,18 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
         .zMoveEffect = Z_EFFECT_NONE,
         .metronomeBanned = TRUE,
     },
+    [MOVE_POWER_RELEASE] =
+    {
+        .effect = EFFECT_CHANGE_FORM_ON_MOVE,
+        .power = 250,
+        .type = TYPE_DRAGON,
+        .accuracy = 0,
+        .pp = 7,
+        .secondaryEffectChance = 0,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .split = SPLIT_SPECIAL,
+        .zMoveEffect = Z_EFFECT_NONE,
+        .metronomeBanned = TRUE,
+    },
 };

@@ -19657,6 +19657,7 @@ static const struct LevelUpMove sDraconarixLevelUpLearnset[] = {
     LEVEL_UP_MOVE(44, MOVE_THUNDER),
     LEVEL_UP_MOVE(44, MOVE_FIRE_BLAST),
     LEVEL_UP_MOVE(44, MOVE_BLIZZARD),
+    LEVEL_UP_MOVE(50, MOVE_POWER_RELEASE),
     LEVEL_UP_END
 };
 

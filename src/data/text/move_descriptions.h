@@ -3264,6 +3264,10 @@ static const u8 sCoreBlastDescription[] = _(
     "Absorbs energy from the core\n"
     "and blasts it violently.");
 
+static const u8 sPowerReleaseDescription[] = _(
+    "Releases all remaning power\n"
+    "in a violent explosion.")
+
 const u8 gNotDoneYetDescription[] = _(
     "This move can't be used. Its\n"
     "effect is in development.");
@@ -4104,4 +4108,5 @@ const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
     [MOVE_PSYBLADE - 1] = sPsybladeDescription,
     [MOVE_HYDRO_STEAM - 1] = sHydroSteamDescription,
     [MOVE_CORE_BLAST - 1] = sCoreBlastDescription,
+    [MOVE_POWER_RELEASE - 1] = sPowerReleaseDescription,
 };
