@@ -15679,6 +15679,10 @@ CoreBlastIce:
 	end
 
 CoreBlastElectric:
+	fadetobg BG_THUNDER
+	waitbgfadeout
+	createvisualtask AnimTask_StartSlidingBg, 5, -256, 0, 1, -1
+	waitbgfadein
 	loadspritegfx ANIM_TAG_IMPACT
 	loadspritegfx ANIM_TAG_SPARK_2
 	delay 0
@@ -15735,6 +15739,10 @@ CoreBlastElectric:
 	blendoff
 	call CoreBlastElectrify
 	waitforvisualfinish
+	restorebg
+	waitbgfadeout
+	setarg 7, 0xFFFF
+	waitbgfadein
 	end
 
 CoreBlastElectrify:

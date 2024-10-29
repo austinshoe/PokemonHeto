@@ -438,6 +438,7 @@ gBattleScriptsForMoveEffects::
 	.4byte BattleScript_EffectHit                     @ EFFECT_GIGATON_HAMMER
 	.4byte BattleScript_EffectSaltCure                @ EFFECT_SALT_CURE
 	.4byte BattleScript_EffectChangeTypeOnType		  @ EFFECT_CHANGE_TYPE_ON_TYPE
+	.4byte BattleScript_EffectChangeFormAfterMove	  @ EFFECT_CHANGE_FORM_ON_MOVE 
 
 BattleScript_EffectSaltCure:
 	call BattleScript_EffectHit_Ret
@@ -10435,3 +10436,41 @@ BattleScript_EffectChangeTypeToElectric::
 	printstring STRINGID_MOVECHANGEDTYPEELECTRIC
 	waitmessage B_WAIT_TIME_LONG
 	goto BattleScript_EffectChangeTypeOnType2
+
+BattleScript_EffectChangeFormAfterMove::
+	jumpiftype BS_ATTACKER, TYPE_GROUND, BattleScript_NoEnergyForVent
+	attackcanceler
+	accuracycheck BattleScript_PrintMoveMissed, ACC_CURR_MOVE
+	attackstring
+	ppreduce
+	critcalc
+	damagecalc
+	adjustdamage
+	printstring STRINGID_MONRELEASINGALLENERGY
+	waitmessage B_WAIT_TIME_LONG
+	attackanimation
+	waitanimation
+	effectivenesssound
+	hitanimation BS_TARGET
+	waitstate
+	handleformchange BS_ATTACKER, 0
+	playanimation BS_ATTACKER, B_ANIM_FORM_CHANGE
+	waitanimation
+	printstring STRINGID_MONRELEASEDALLENERGY
+	waitmessage B_WAIT_TIME_LONG
+	healthbarupdate BS_TARGET
+	datahpupdate BS_TARGET
+	critmessage
+	waitmessage B_WAIT_TIME_LONG
+	resultmessage
+	waitmessage B_WAIT_TIME_LONG
+	seteffectwithchance
+	tryfaintmon BS_TARGET
+	moveendall
+	end
+
+BattleScript_NoEnergyForVent:
+	printstring STRINGID_MONUNABLETOVENT
+	waitmessage B_WAIT_TIME_LONG
+	moveendall
+	end

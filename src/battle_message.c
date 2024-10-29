@@ -810,6 +810,9 @@ static const u8 sText_TargetIsHurtBySaltCure[] = _("{B_DEF_NAME_WITH_PREFIX} is 
 static const u8 sText_MoveChangedTypeIce[] = _("Core Blast's type changed to the\nICE TYPE!");
 static const u8 sText_MoveChangedTypeFire[] = _("Core Blast's type changed to the\nFIRE TYPE!");
 static const u8 sText_MoveChangedTypeElectric[] = _("Core Blast's type changed to the\nELECTRIC TYPE!");
+static const u8 sText_MonUnableToVent[] = _("{B_ATK_NAME_WITH_PREFIX} doesn't have\nenough energy to use this!");
+static const u8 sText_MonReleasingAllEnergy[] = _("{B_ATK_NAME_WITH_PREFIX} is using\nall of its extra energy!");
+static const u8 sText_MonReleasedAllEnergy[] = _("{B_ATK_NAME_WITH_PREFIX} used up\nall of its extra energy!");
 
 
 const u8 *const gBattleStringsTable[BATTLESTRINGS_COUNT] =
@@ -1476,6 +1479,9 @@ const u8 *const gBattleStringsTable[BATTLESTRINGS_COUNT] =
     [STRINGID_MOVECHANGEDTYPEICE - BATTLESTRINGS_TABLE_START] = sText_MoveChangedTypeIce,
     [STRINGID_MOVECHANGEDTYPEFIRE - BATTLESTRINGS_TABLE_START] = sText_MoveChangedTypeFire,
     [STRINGID_MOVECHANGEDTYPEELECTRIC - BATTLESTRINGS_TABLE_START] = sText_MoveChangedTypeElectric,
+    [STRINGID_MONUNABLETOVENT - BATTLESTRINGS_TABLE_START] = sText_MonUnableToVent,
+    [STRINGID_MONRELEASINGALLENERGY - BATTLESTRINGS_TABLE_START] = sText_MonReleasingAllEnergy,
+    [STRINGID_MONRELEASEDALLENERGY - BATTLESTRINGS_TABLE_START] = sText_MonReleasedAllEnergy,
 };
 
 const u16 gTrainerUsedItemStringIds[] =
