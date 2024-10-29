@@ -3266,7 +3266,7 @@ static const u8 sCoreBlastDescription[] = _(
 
 static const u8 sPowerReleaseDescription[] = _(
     "Releases all remaning power\n"
-    "in a violent explosion.")
+    "in a violent explosion.");
 
 const u8 gNotDoneYetDescription[] = _(
     "This move can't be used. Its\n"
