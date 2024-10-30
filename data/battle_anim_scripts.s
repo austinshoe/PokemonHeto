@@ -15782,6 +15782,12 @@ Move_POWER_RELEASE::
 	playsewithpan SE_M_CHARGE, SOUND_PAN_ATTACKER
 	clearmonbg ANIM_ATTACKER
 	blendoff
+	createvisualtask AnimTask_HorizontalShake, 5, ANIM_PLAYER_RIGHT, 10, 50
+	createvisualtask AnimTask_HorizontalShake, 5, ANIM_PLAYER_LEFT, 10, 50
+	createvisualtask AnimTask_InvertScreenColor, 2, 0x1 | 0x2 | 0x4
+	createvisualtask AnimTask_HorizontalShake, 5, ANIM_PLAYER_RIGHT, 10, 50
+	createvisualtask AnimTask_HorizontalShake, 5, ANIM_PLAYER_LEFT, 10, 50
+	waitvisualfinish
 	loadspritegfx ANIM_TAG_CIRCLE_OF_LIGHT
 	loadspritegfx ANIM_TAG_METEOR
 	loadspritegfx ANIM_TAG_FLAT_ROCK
@@ -15806,7 +15812,6 @@ Move_POWER_RELEASE::
 	delay 6
 	loopsewithpan SE_M_CHARGE, SOUND_PAN_ATTACKER, 6, 5
 	waitforvisualfinish
-	createvisualtask AnimTask_InvertScreenColor, 2, 0x1 | 0x2 | 0x4
 	createsprite gSimplePaletteBlendSpriteTemplate, ANIM_ATTACKER, 2, F_PAL_BG, 4, 4, 0, RGB_BLACK
 	delay 60
 	loadspritegfx ANIM_TAG_EXPLOSION
