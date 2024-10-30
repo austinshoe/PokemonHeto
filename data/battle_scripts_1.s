@@ -10456,9 +10456,6 @@ BattleScript_EffectChangeFormAfterMove::
 	waitstate
 	seteffectwithchance
 	argumentstatuseffect
-	handleformchange BS_ATTACKER, 0
-	playanimation BS_ATTACKER, B_ANIM_FORM_CHANGE
-	waitanimation
 	printstring STRINGID_MONRELEASEDALLENERGY
 	waitmessage B_WAIT_TIME_LONG
 	healthbarupdate BS_TARGET
