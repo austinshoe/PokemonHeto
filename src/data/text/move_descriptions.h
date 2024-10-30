@@ -3269,8 +3269,8 @@ static const u8 sPowerReleaseDescription[] = _(
     "in a violent explosion.");
 
 static const u8 sUnseelFeelDescription[] = _(
-    "Dark-Fairy magic sucks health\n"
-    "from the opponent");
+    "Dark-Fairy magic sucks\n"
+    "health from the opponent");
 
 const u8 gNotDoneYetDescription[] = _(
     "This move can't be used. Its\n"
