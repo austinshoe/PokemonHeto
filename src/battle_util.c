@@ -1578,6 +1578,7 @@ bool32 IsHealBlockPreventingMove(u32 battler, u32 move)
     {
 #if B_HEAL_BLOCKING >= GEN_6
     case EFFECT_ABSORB:
+    case EFFECT_UNSEEL_FEEL:
     case EFFECT_STRENGTH_SAP:
     case EFFECT_DREAM_EATER:
 #endif
@@ -10153,8 +10154,12 @@ uq4_12_t CalcTypeEffectivenessMultiplier(u32 move, u32 moveType, u32 battlerAtk,
     if (move != MOVE_STRUGGLE && moveType != TYPE_MYSTERY)
     {
         modifier = CalcTypeEffectivenessMultiplierInternal(move, moveType, battlerAtk, battlerDef, recordAbilities, modifier, defAbility);
-        if (gBattleMoves[move].effect == EFFECT_TWO_TYPED_MOVE)
+        if (gBattleMoves[move].effect == EFFECT_TWO_TYPED_MOVE) {
             modifier = CalcTypeEffectivenessMultiplierInternal(move, gBattleMoves[move].argument, battlerAtk, battlerDef, recordAbilities, modifier, defAbility);
+        }
+        else if (gBattleMoves[move].effect == EFFECT_UNSEEL_FEEL) {
+            modifier = CalcTypeEffectivenessMultiplierInternal(move, TYPE_DARK, battlerAtk, battlerDef, recordAbilities, modifier, defAbility);
+        }
     }
 
     if (recordAbilities)

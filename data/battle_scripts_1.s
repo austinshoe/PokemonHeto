@@ -439,6 +439,7 @@ gBattleScriptsForMoveEffects::
 	.4byte BattleScript_EffectSaltCure                @ EFFECT_SALT_CURE
 	.4byte BattleScript_EffectChangeTypeOnType		  @ EFFECT_CHANGE_TYPE_ON_TYPE
 	.4byte BattleScript_EffectChangeFormAfterMove	  @ EFFECT_CHANGE_FORM_ON_MOVE 
+	.4byte BattleScript_UnseelFeel					  @ EFFECT_UNSEEL_FEEL
 
 BattleScript_EffectSaltCure:
 	call BattleScript_EffectHit_Ret
@@ -3339,6 +3340,7 @@ BattleScript_EffectPoisonHit:
 	setmoveeffect MOVE_EFFECT_POISON
 	goto BattleScript_EffectHit
 
+BattleScript_UnseelFeel::
 BattleScript_EffectAbsorb::
 	call BattleScript_EffectHit_Ret
 	jumpifstatus3 BS_ATTACKER, STATUS3_HEAL_BLOCK, BattleScript_AbsorbHealBlock

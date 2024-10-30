@@ -14321,4 +14321,18 @@ const struct BattleMove gBattleMoves[MOVES_COUNT_Z] =
         .zMoveEffect = Z_EFFECT_NONE,
         .metronomeBanned = TRUE,
     },
+    [MOVE_UNSEEL_FEEL] =
+    {
+        .effect = EFFECT_UNSEEL_FEEL,
+        .power = 100,
+        .type = TYPE_FAIRY,
+        .accuracy = 0,
+        .pp = 15,
+        .secondaryEffectChance = 0,
+        .target = MOVE_TARGET_SELECTED,
+        .priority = 0,
+        .split = SPLIT_SPECIAL,
+        .argument = 75,
+        .zMoveEffect = Z_EFFECT_NONE,
+    },
 };

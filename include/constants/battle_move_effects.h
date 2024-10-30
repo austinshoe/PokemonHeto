@@ -416,7 +416,8 @@
 #define EFFECT_SALT_CURE                    410
 #define EFFECT_CHANGE_TYPE_ON_TYPE          411
 #define EFFECT_CHANGE_FORM_ON_MOVE          412
+#define EFFECT_UNSEEL_FEEL                  413
 
-#define NUM_BATTLE_MOVE_EFFECTS             413
+#define NUM_BATTLE_MOVE_EFFECTS             414
 
 #endif  // GUARD_CONSTANTS_BATTLE_MOVE_EFFECTS_H

@@ -3268,6 +3268,10 @@ static const u8 sPowerReleaseDescription[] = _(
     "Releases all remaning power\n"
     "in a violent explosion.");
 
+static const u8 sUnseelFeelDescription[] = _(
+    "Dark-Fairy magic sucks health\n"
+    "from the opponent");
+
 const u8 gNotDoneYetDescription[] = _(
     "This move can't be used. Its\n"
     "effect is in development.");
@@ -4109,4 +4113,5 @@ const u8 *const gMoveDescriptionPointers[MOVES_COUNT - 1] =
     [MOVE_HYDRO_STEAM - 1] = sHydroSteamDescription,
     [MOVE_CORE_BLAST - 1] = sCoreBlastDescription,
     [MOVE_POWER_RELEASE - 1] = sPowerReleaseDescription,
+    [MOVE_UNSEEL_FEEL - 1] = sUnseelFeelDescription,
 };

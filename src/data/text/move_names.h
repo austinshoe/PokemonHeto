@@ -1667,6 +1667,7 @@ const u8 gMoveNames[MOVES_COUNT][MOVE_NAME_LENGTH + 1] =
     [MOVE_HYDRO_STEAM] = _("Hydro Steam"),
     [MOVE_CORE_BLAST] = _("Core Blast"),
     [MOVE_POWER_RELEASE] = _("Pwr Release"),
+    [MOVE_UNSEEL_FEEL] = _("Unseel Feel"),
 };
 #endif
 
