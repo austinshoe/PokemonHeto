@@ -3614,6 +3614,10 @@ void SetMoveEffect(bool32 primary, u32 certain)
                     }
                 }
                 break;
+            case MOVE_EFFECT_POWER_RELEASE:
+                gBattleMons[gBattlerAttacker].species = SPECIES_DRACONARIX;
+                BattleScriptPushCursorAndCallback(BattleScript_AttackerFormChangeMoveEffect);
+                break;
             case MOVE_EFFECT_TRAP_BOTH:
                 if (!(gBattleMons[gBattlerTarget].status2 & STATUS2_ESCAPE_PREVENTION) && !(gBattleMons[gBattlerAttacker].status2 & STATUS2_ESCAPE_PREVENTION))
                 {

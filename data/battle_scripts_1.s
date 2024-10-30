@@ -10439,6 +10439,7 @@ BattleScript_EffectChangeTypeToElectric::
 
 BattleScript_EffectChangeFormAfterMove::
 	jumpiftype BS_ATTACKER, TYPE_GROUND, BattleScript_NoEnergyForVent
+	setmoveeffect MOVE_EFFECT_POWER_RELEASE | MOVE_EFFECT_AFFECTS_USER | MOVE_EFFECT_CERTAIN
 	attackcanceler
 	accuracycheck BattleScript_PrintMoveMissed, ACC_CURR_MOVE
 	attackstring
@@ -10453,6 +10454,8 @@ BattleScript_EffectChangeFormAfterMove::
 	effectivenesssound
 	hitanimation BS_TARGET
 	waitstate
+	seteffectwithchance
+	argumentstatuseffect
 	handleformchange BS_ATTACKER, 0
 	playanimation BS_ATTACKER, B_ANIM_FORM_CHANGE
 	waitanimation
