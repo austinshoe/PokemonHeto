@@ -15679,6 +15679,7 @@ CoreBlastIce:
 	blendoff
 	end
 
+
 CoreBlastElectric:
 	fadetobg BG_THUNDER
 	waitbgfadeout
