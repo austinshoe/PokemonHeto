@@ -15856,6 +15856,7 @@ PwrReleaseExplosion:
 	return
 
 Move_UNSEEL_FEEL::
+	loadspritegfx ANIM_TAG_ORBS
 	call SetPsychicBackground
 	monbg ANIM_DEF_PARTNER
 	splitbgprio ANIM_TARGET
@@ -15880,8 +15881,10 @@ Move_UNSEEL_FEEL::
 	call GigaDrainAbsorbEffect
 	waitforvisualfinish
 	delay 15
+	loadspritegfx ANIM_TAG_BLUE_STAR
 	call UnsetPsychicBg
 	waitforvisualfinish
+	blendoff
 	call HealingEffect
 	waitforvisualfinish
 	end
