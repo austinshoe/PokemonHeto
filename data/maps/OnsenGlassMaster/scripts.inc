@@ -374,7 +374,7 @@ OnsenGlassMaster_Text_HaventGotYourSootSack:
 	.string "volcanic ash, huff-puff.$"
 
 OnsenGlassMaster_Text_FunToBlowGlassFlute:
-	.string "My boss is so cool!\o"
+	.string "My boss is so cool!\p"
 	.string "He can make all sorts of trinkets with\n"
 	.string "volcanic ash!$"
 
