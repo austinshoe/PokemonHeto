@@ -71,23 +71,11 @@ Text_WintersPassageWoman1:
 Script_WintersPassageOp1::
     lock
     faceplayer
-    msgbox Text_WinterPassageOp1Challenge, MSGBOX_DEFAULT
     trainerbattle_single TRAINER_SAWYER_1, Text_WinterPassageOp1Intro, Text_WinterPassageOp1Outro
-    msgbox Text_WinterPassageOp1PostBattle, MSGBOX_AUTOCLOSE
     end
 
-Text_WinterPassageOp1Challenge:
+Text_WinterPassageOp1Intro:
     .string "You. Me. Battle. Now.$"
 
-Text_WinterPassageOp1Intro:
-    .string "What a loser.\n"
-    .string "You'll never win anything playing\l"
-    .string "like that.$"
-    
 Text_WinterPassageOp1Outro:
-    .string "This was rigged.\n"
-    .string "It was the wrong time of day.\l"
-    .string "If it was less windy I would've won.$"
-
-Text_WinterPassageOp1PostBattle:
     .string "Truly one of the battles of all time.$"
