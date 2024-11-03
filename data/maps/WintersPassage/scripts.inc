@@ -53,8 +53,8 @@ Script_WintersPassageMan4::
 
 Text_WintersPassageMan4:
     .string "Man someone told me there was a hotel\n"
-.string "around here.\l"
-.string "I think I might’ve gone the wrong way...$"
+    .string "around here.\l"
+    .string "I think I might’ve gone the wrong way...$"
 
 Script_WintersPassageWoman1::
     lock
@@ -65,5 +65,29 @@ Script_WintersPassageWoman1::
 
 Text_WintersPassageWoman1:
     .string "I really dislike the cold, but who\n"
-.string "else is going to give my husband\l"
-.string "hot chocolate during break?$"
+    .string "else is going to give my husband\l"
+    .string "hot chocolate during break?$"
+
+Script_WintersPassageOp1::
+    lock
+    faceplayer
+    msgbox Text_WinterPassageOp1Challenge, MSGBOX_DEFAULT
+    trainerbattle_single TRAINER_SAWYER_1, Text_WinterPassageOp1Intro, Text_WinterPassageOp1Outro
+    msgbox Text_WinterPassageOp1PostBattle, MSGBOX_AUTOCLOSE
+    end
+
+Text_WinterPassageOp1Challenge:
+    .string "You. Me. Battle. Now.$"
+
+Text_WinterPassageOp1Intro
+    .string "What a loser.\n"
+    .string "You'll never win anything playing\l"
+    .string "like that.$"
+    
+Text_WinterPassageOp1Outro
+    .string "This was rigged.\n"
+    .string "It was the wrong time of day.\l"
+    .string "If it was less windy I would've won.$"
+
+Text_WinterPassageOp1PostBattle
+    .string "Truly one of the battles of all time.$"
