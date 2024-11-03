@@ -79,15 +79,15 @@ Script_WintersPassageOp1::
 Text_WinterPassageOp1Challenge:
     .string "You. Me. Battle. Now.$"
 
-Text_WinterPassageOp1Intro
+Text_WinterPassageOp1Intro:
     .string "What a loser.\n"
     .string "You'll never win anything playing\l"
     .string "like that.$"
     
-Text_WinterPassageOp1Outro
+Text_WinterPassageOp1Outro:
     .string "This was rigged.\n"
     .string "It was the wrong time of day.\l"
     .string "If it was less windy I would've won.$"
 
-Text_WinterPassageOp1PostBattle
+Text_WinterPassageOp1PostBattle:
     .string "Truly one of the battles of all time.$"
