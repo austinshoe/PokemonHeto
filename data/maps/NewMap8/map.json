@@ -133,6 +133,13 @@
       "elevation": 0,
       "dest_map": "MAP_CORAL_SHORE_HOUSE2",
       "dest_warp_id": "0"
+    },
+    {
+      "x": 28,
+      "y": 25,
+      "elevation": 0,
+      "dest_map": "MAP_CORAL_GYM",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [

@@ -4,8 +4,8 @@ NewMap2_MapScripts::
 Script_GiveEgg::
     lockall
     faceplayer
-    goto_if_set FLAG_UNUSED_0x020, Script_GiveEgg3
-    goto_if_unset FLAG_UNUSED_0x020, Script_GiveEgg2
+    goto_if_set FLAG_UNUSED_0x021, Script_GiveEgg3
+    goto_if_unset FLAG_UNUSED_0x021, Script_GiveEgg2
     releaseall
     end
 
@@ -25,7 +25,7 @@ Script_GiveEgg2::
     giveegg SPECIES_HONEDGE
     playfanfare MUS_OBTAIN_ITEM
     msgbox Text_ReceivedEgg, MSGBOX_DEFAULT
-    setflag FLAG_UNUSED_0x020
+    setflag FLAG_UNUSED_0x021
     waitfanfare
     return
     
