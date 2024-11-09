@@ -25,6 +25,7 @@ static void _InitPrimaryTilesetAnimation(void);
 static void _InitSecondaryTilesetAnimation(void);
 static void TilesetAnim_General(u16);
 static void TilesetAnim_Luminara(u16);
+static void TilesetAnim_Fluorites_Eye(ul6);
 static void TilesetAnim_PokemonLeague(u16);
 static void TilesetAnim_Volcano(u16);
 static void TilesetAnim_Fall(u16);
@@ -82,6 +83,7 @@ static void QueueAnimTiles_Fall_Purpleflower(u16);
 static void QueueAnimTiles_Fall_Corn(u16);
 static void QueueAnimTiles_volcano1_Lava(u16);
 static void QueueAnimTiles_Luminara_Flower(u16);
+static void QueueAnimTiles_Fluorites_Eye_Fluorite(u16);
 static void QueueAnimTiles_PokemonLeague_Lilacs(u16);
 static void QueueAnimTiles_PokemonLeague_Flag(u16);
 
@@ -226,6 +228,50 @@ static const u16 *const gTilesetAnims_Luminara_Flower[] = {
     gTilesetAnims_Luminara_Flower_Frame2,
     gTilesetAnims_Luminara_Flower_Frame3,
     gTilesetAnims_Luminara_Flower_Frame4
+};
+
+static const u16 gTilesetAnims_Fluorites_Eye_Fluorite_Frame00[] = INCBIN_U16("data/tilesets/primary/fluorites_eye/anim/fluorite/00.4bpp");
+static const u16 gTilesetAnims_Fluorites_Eye_Fluorite_Frame01[] = INCBIN_U16("data/tilesets/primary/fluorites_eye/anim/fluorite/01.4bpp");
+static const u16 gTilesetAnims_Fluorites_Eye_Fluorite_Frame02[] = INCBIN_U16("data/tilesets/primary/fluorites_eye/anim/fluorite/02.4bpp");
+static const u16 gTilesetAnims_Fluorites_Eye_Fluorite_Frame03[] = INCBIN_U16("data/tilesets/primary/fluorites_eye/anim/fluorite/03.4bpp");
+static const u16 gTilesetAnims_Fluorites_Eye_Fluorite_Frame04[] = INCBIN_U16("data/tilesets/primary/fluorites_eye/anim/fluorite/04.4bpp");
+static const u16 gTilesetAnims_Fluorites_Eye_Fluorite_Frame05[] = INCBIN_U16("data/tilesets/primary/fluorites_eye/anim/fluorite/05.4bpp");
+static const u16 gTilesetAnims_Fluorites_Eye_Fluorite_Frame06[] = INCBIN_U16("data/tilesets/primary/fluorites_eye/anim/fluorite/06.4bpp");
+static const u16 gTilesetAnims_Fluorites_Eye_Fluorite_Frame07[] = INCBIN_U16("data/tilesets/primary/fluorites_eye/anim/fluorite/07.4bpp");
+static const u16 gTilesetAnims_Fluorites_Eye_Fluorite_Frame08[] = INCBIN_U16("data/tilesets/primary/fluorites_eye/anim/fluorite/08.4bpp");
+static const u16 gTilesetAnims_Fluorites_Eye_Fluorite_Frame09[] = INCBIN_U16("data/tilesets/primary/fluorites_eye/anim/fluorite/09.4bpp");
+static const u16 gTilesetAnims_Fluorites_Eye_Fluorite_Frame10[] = INCBIN_U16("data/tilesets/primary/fluorites_eye/anim/fluorite/10.4bpp");
+static const u16 gTilesetAnims_Fluorites_Eye_Fluorite_Frame11[] = INCBIN_U16("data/tilesets/primary/fluorites_eye/anim/fluorite/11.4bpp");
+static const u16 gTilesetAnims_Fluorites_Eye_Fluorite_Frame12[] = INCBIN_U16("data/tilesets/primary/fluorites_eye/anim/fluorite/12.4bpp");
+static const u16 gTilesetAnims_Fluorites_Eye_Fluorite_Frame13[] = INCBIN_U16("data/tilesets/primary/fluorites_eye/anim/fluorite/13.4bpp");
+static const u16 gTilesetAnims_Fluorites_Eye_Fluorite_Frame14[] = INCBIN_U16("data/tilesets/primary/fluorites_eye/anim/fluorite/14.4bpp");
+static const u16 gTilesetAnims_Fluorites_Eye_Fluorite_Frame15[] = INCBIN_U16("data/tilesets/primary/fluorites_eye/anim/fluorite/15.4bpp");
+static const u16 gTilesetAnims_Fluorites_Eye_Fluorite_Frame16[] = INCBIN_U16("data/tilesets/primary/fluorites_eye/anim/fluorite/16.4bpp");
+static const u16 gTilesetAnims_Fluorites_Eye_Fluorite_Frame17[] = INCBIN_U16("data/tilesets/primary/fluorites_eye/anim/fluorite/17.4bpp");
+static const u16 gTilesetAnims_Fluorites_Eye_Fluorite_Frame18[] = INCBIN_U16("data/tilesets/primary/fluorites_eye/anim/fluorite/18.4bpp");
+static const u16 gTilesetAnims_Fluorites_Eye_Fluorite_Frame19[] = INCBIN_U16("data/tilesets/primary/fluorites_eye/anim/fluorite/19.4bpp");
+
+static const u16 *const gTilesetAnims_Fluorites_Eye_Fluorite[] = {
+    gTilesetAnims_Fluorites_Eye_Fluorite_Frame00,
+    gTilesetAnims_Fluorites_Eye_Fluorite_Frame01,
+    gTilesetAnims_Fluorites_Eye_Fluorite_Frame02,
+    gTilesetAnims_Fluorites_Eye_Fluorite_Frame03,
+    gTilesetAnims_Fluorites_Eye_Fluorite_Frame04,
+    gTilesetAnims_Fluorites_Eye_Fluorite_Frame05,
+    gTilesetAnims_Fluorites_Eye_Fluorite_Frame06,
+    gTilesetAnims_Fluorites_Eye_Fluorite_Frame07,
+    gTilesetAnims_Fluorites_Eye_Fluorite_Frame08,
+    gTilesetAnims_Fluorites_Eye_Fluorite_Frame09,
+    gTilesetAnims_Fluorites_Eye_Fluorite_Frame10,
+    gTilesetAnims_Fluorites_Eye_Fluorite_Frame11,
+    gTilesetAnims_Fluorites_Eye_Fluorite_Frame12,
+    gTilesetAnims_Fluorites_Eye_Fluorite_Frame13,
+    gTilesetAnims_Fluorites_Eye_Fluorite_Frame14,
+    gTilesetAnims_Fluorites_Eye_Fluorite_Frame15,
+    gTilesetAnims_Fluorites_Eye_Fluorite_Frame16,
+    gTilesetAnims_Fluorites_Eye_Fluorite_Frame17,
+    gTilesetAnims_Fluorites_Eye_Fluorite_Frame18,
+    gTilesetAnims_Fluorites_Eye_Fluorite_Frame19
 };
 
 const u16 gTilesetAnims_General_Water_Frame0[] = INCBIN_U16("data/tilesets/primary/general/anim/water/0.4bpp");
@@ -785,6 +831,13 @@ void InitTilesetAnim_Luminara(void)
     sPrimaryTilesetAnimCallback = TilesetAnim_Luminara;
 }
 
+void InitTilesetAnim_Fluorite_Eyes(void)
+{
+    sPrimaryTilesetAnimCounter = 0;
+    sPrimaryTilesetAnimCounterMax = 256;
+    sPrimaryTilesetAnimCallback = TilesetAnim_Fluorites_Eye;
+}
+
 void InitTilesetAnim_PokemonLeague(void)
 {
     sPrimaryTilesetAnimCounter = 0;
@@ -871,6 +924,12 @@ static void QueueAnimTiles_Luminara_Flower(u16 timer)
 {
     u16 i = timer % 5;
     AppendTilesetAnimToBuffer(gTilesetAnims_Luminara_Flower[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(372)), 0x80);
+}
+
+static void QueueAnimTiles_Fluorites_Eye_Fluorite(u16 timer)
+{
+    u16 i = timer % 20;
+    AppendTilesetAnimToBuffer(gTilesetAnims_Fluorites_Eye_Fluorite[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(208)), 26 * TILE_SIZE_4BPP);
 }
 
 static void QueueAnimTiles_PokemonLeague_Lilacs(u16 timer)
@@ -1067,6 +1126,13 @@ static void TilesetAnim_Luminara(u16 timer)
     if (timer % 16 == 0)
         QueueAnimTiles_Luminara_Flower(timer / 16);
 }
+
+static void TilesetAnim_Fluorites_Eye(u16 timer)
+{
+    if (timer % 8 == 0)
+        QueueAnimTiles_Fluorites_Eye_Fluorite(timer / 16);
+}
+
 
 static void TilesetAnim_PokemonLeague(u16 timer)
 {

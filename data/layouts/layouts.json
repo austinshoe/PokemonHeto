@@ -7056,6 +7056,18 @@
       "secondary_tileset": "gTileset_EverbloomGym",
       "border_filepath": "data/layouts/EverbloomGym2/border.bin",
       "blockdata_filepath": "data/layouts/EverbloomGym2/map.bin"
+    },
+    {
+      "id": "LAYOUT_FLUORITES_EYE",
+      "name": "FluoritesEye_Layout",
+      "width": 20,
+      "height": 20,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_FluoritesEye",
+      "secondary_tileset": "gTileset_FluoritesEye2",
+      "border_filepath": "data/layouts/FluoritesEye/border.bin",
+      "blockdata_filepath": "data/layouts/FluoritesEye/map.bin"
     }
   ]
 }

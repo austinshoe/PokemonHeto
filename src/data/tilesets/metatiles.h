@@ -276,3 +276,9 @@ const u16 gMetatileAttributes_PokemonLeague[] = INCBIN_U16("data/tilesets/primar
 
 const u16 gMetatiles_PokemonLeague2[] = INCBIN_U16("data/tilesets/secondary/pokemon_league_2/metatiles.bin");
 const u16 gMetatileAttributes_PokemonLeague2[] = INCBIN_U16("data/tilesets/secondary/pokemon_league_2/metatile_attributes.bin");
+
+const u16 gMetatiles_FluoritesEye[] = INCBIN_U16("data/tilesets/primary/fluorites_eye/metatiles.bin");
+const u16 gMetatileAttributes_FluoritesEye[] = INCBIN_U16("data/tilesets/primary/fluorites_eye/metatile_attributes.bin");
+
+const u16 gMetatiles_FluoritesEye2[] = INCBIN_U16("data/tilesets/secondary/fluorites_eye_2/metatiles.bin");
+const u16 gMetatileAttributes_FluoritesEye2[] = INCBIN_U16("data/tilesets/secondary/fluorites_eye_2/metatile_attributes.bin");

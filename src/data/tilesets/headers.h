@@ -1078,3 +1078,25 @@ const struct Tileset gTileset_PokemonLeague2 =
     .metatileAttributes = gMetatileAttributes_PokemonLeague2,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_FluoritesEye =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_FluoritesEye,
+    .palettes = gTilesetPalettes_FluoritesEye,
+    .metatiles = gMetatiles_FluoritesEye,
+    .metatileAttributes = gMetatileAttributes_FluoritesEye,
+    .callback = InitTilesetAnim_Fluorites_Eye,
+};
+
+const struct Tileset gTileset_FluoritesEye2 =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_FluoritesEye2,
+    .palettes = gTilesetPalettes_FluoritesEye2,
+    .metatiles = gMetatiles_FluoritesEye2,
+    .metatileAttributes = gMetatileAttributes_FluoritesEye2,
+    .callback = NULL,
+};
