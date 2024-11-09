@@ -831,7 +831,7 @@ void InitTilesetAnim_Luminara(void)
     sPrimaryTilesetAnimCallback = TilesetAnim_Luminara;
 }
 
-void InitTilesetAnim_Fluorite_Eyes(void)
+void InitTilesetAnim_Fluorite_Eye(void)
 {
     sPrimaryTilesetAnimCounter = 0;
     sPrimaryTilesetAnimCounterMax = 256;
