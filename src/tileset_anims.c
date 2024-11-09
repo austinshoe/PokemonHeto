@@ -1129,7 +1129,7 @@ static void TilesetAnim_Luminara(u16 timer)
 
 static void TilesetAnim_Fluorites_Eye(u16 timer)
 {
-    if (timer % 8 == 0)
+    if (timer % 2 == 0)
         QueueAnimTiles_Fluorites_Eye_Fluorite(timer / 16);
 }
 
