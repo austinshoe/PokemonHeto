@@ -25,7 +25,7 @@ static void _InitPrimaryTilesetAnimation(void);
 static void _InitSecondaryTilesetAnimation(void);
 static void TilesetAnim_General(u16);
 static void TilesetAnim_Luminara(u16);
-static void TilesetAnim_Fluorites_Eye(ul6);
+static void TilesetAnim_Fluorites_Eye(u16);
 static void TilesetAnim_PokemonLeague(u16);
 static void TilesetAnim_Volcano(u16);
 static void TilesetAnim_Fall(u16);
