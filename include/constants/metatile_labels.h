@@ -188,6 +188,26 @@
 #define METATILE_Fallarbor_RedCaveEntrance_Top       0x347
 #define METATILE_Fallarbor_RedRockWall               0x269
 
+// gTileset_FluoritesEye
+#define METATILE_FluoritesEye_Fluorite_Big_Bottom     0x02E
+#define METATILE_FluoritesEye_Fluorite_Big_Top        0x026
+#define METATILE_FluoritesEye_Fluorite_Left_Front     0x01D
+#define METATILE_FluoritesEye_Fluorite_Left_Left_1    0x01B
+#define METATILE_FluoritesEye_Fluorite_Left_Left_2    0x023
+#define METATILE_FluoritesEye_Fluorite_Middle_Front   0x01E
+#define METATILE_FluoritesEye_Fluorite_Right_Front    0x01F
+#define METATILE_FluoritesEye_Fluorite_Right_Right_1  0x01C
+#define METATILE_FluoritesEye_Fluorite_Right_Right_2  0x024
+#define METATILE_FluoritesEye_Rock_Big_Bottom         0x02D
+#define METATILE_FluoritesEye_Rock_Big_Top            0x025
+#define METATILE_FluoritesEye_Rock_Left_Front         0x005
+#define METATILE_FluoritesEye_Rock_Left_Left_1        0x010
+#define METATILE_FluoritesEye_Rock_Left_Left_2        0x008
+#define METATILE_FluoritesEye_Rock_Middle_Front       0x006
+#define METATILE_FluoritesEye_Rock_Right_Front        0x007
+#define METATILE_FluoritesEye_Rock_Right_Right_1      0x009
+#define METATILE_FluoritesEye_Rock_Right_Right_2      0x011
+
 // gTileset_Fortree
 #define METATILE_Fortree_BridgeOverGrass_Lowered           0x24F
 #define METATILE_Fortree_BridgeOverGrass_Raised            0x24E

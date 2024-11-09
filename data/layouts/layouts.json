@@ -7060,8 +7060,8 @@
     {
       "id": "LAYOUT_FLUORITES_EYE",
       "name": "FluoritesEye_Layout",
-      "width": 20,
-      "height": 20,
+      "width": 60,
+      "height": 60,
       "border_width": 2,
       "border_height": 2,
       "primary_tileset": "gTileset_FluoritesEye",

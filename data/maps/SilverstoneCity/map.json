@@ -92,6 +92,20 @@
       "elevation": 0,
       "dest_map": "MAP_SILVERSTONE_HOUSE6A",
       "dest_warp_id": "0"
+    },
+    {
+      "x": 44,
+      "y": 5,
+      "elevation": 0,
+      "dest_map": "MAP_FLUORITES_EYE",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 45,
+      "y": 5,
+      "elevation": 0,
+      "dest_map": "MAP_FLUORITES_EYE",
+      "dest_warp_id": "0"
     }
   ],
   "coord_events": [
