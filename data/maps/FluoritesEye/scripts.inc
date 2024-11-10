@@ -11,7 +11,7 @@ FluoritesEye_BypassActivate:
 	setvar VAR_TEMP_0, 1
 	return
 FluoritesEye_OnFrame::
-	map_script_2, VAR_TEMP_0, 0, FluoritesEye_PlayerActivate_Crystals
+	map_script_2 VAR_TEMP_0, 0, FluoritesEye_PlayerActivate_Crystals
 	.2byte 0
 
 FluoritesEye_OldMan::
