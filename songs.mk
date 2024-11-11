@@ -634,7 +634,7 @@ $(MID_SUBDIR)/mus_encounter_hiker.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G097 -V076
 
 $(MID_SUBDIR)/mus_generic_route.s: %.s: %.mid
-	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V076
+	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V110
 
 $(MID_SUBDIR)/mus_fluorites_eye.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V076
