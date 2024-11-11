@@ -2,7 +2,7 @@
   "id": "MAP_PEARL_TOWN",
   "name": "PearlTown",
   "layout": "LAYOUT_PEARL_TOWN",
-  "music": "MUS_LITTLEROOT",
+  "music": "MUS_GENERIC_ROUTE",
   "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

@@ -2,7 +2,7 @@
   "id": "MAP_FLUORITES_EYE",
   "name": "FluoritesEye",
   "layout": "LAYOUT_FLUORITES_EYE",
-  "music": "MUS_ABANDONED_SHIP",
+  "music": "MUS_FLUORITES_EYE",
   "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

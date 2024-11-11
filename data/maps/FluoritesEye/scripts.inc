@@ -92,6 +92,35 @@ FluoritesEye_Activate_Crystals:
 	setmetatile 54, 23, METATILE_FluoritesEye_Fluorite_Left_Left_1, TRUE
 	setmetatile 54, 21, METATILE_FluoritesEye_Fluorite_Left_Left_1, TRUE
 	setmetatile 56, 24, METATILE_FluoritesEye_Fluorite_Left_Left_1, TRUE
+	setmetatile 57, 14, METATILE_FluoritesEye_Fluorite_Left_Left_1, TRUE
+	setmetatile 59, 11, METATILE_FluoritesEye_Fluorite_Left_Left_1, TRUE
+	setmetatile 54, 9, METATILE_FluoritesEye_Fluorite_Left_Left_1, TRUE
+	setmetatile 58, 9, METATILE_FluoritesEye_Fluorite_Left_Left_1, TRUE
+	setmetatile 54, 7, METATILE_FluoritesEye_Fluorite_Left_Left_1, TRUE
+	setmetatile 57, 5, METATILE_FluoritesEye_Fluorite_Left_Left_1, TRUE
+	setmetatile 56, 4, METATILE_FluoritesEye_Fluorite_Left_Left_1, TRUE
+	setmetatile 36, 21, METATILE_FluoritesEye_Fluorite_Left_Left_1, TRUE
+	setmetatile 30, 16, METATILE_FluoritesEye_Fluorite_Left_Left_1, TRUE
+	setmetatile 31, 14, METATILE_FluoritesEye_Fluorite_Left_Left_1, TRUE
+	setmetatile 29, 15, METATILE_FluoritesEye_Fluorite_Left_Left_1, TRUE
+	setmetatile 26, 10, METATILE_FluoritesEye_Fluorite_Left_Left_1, TRUE
+	setmetatile 27, 10, METATILE_FluoritesEye_Fluorite_Left_Left_1, TRUE
+	setmetatile 28, 8, METATILE_FluoritesEye_Fluorite_Left_Left_1, TRUE
+	setmetatile 21, 8, METATILE_FluoritesEye_Fluorite_Left_Left_1, TRUE
+	setmetatile 29, 24, METATILE_FluoritesEye_Fluorite_Left_Left_1, TRUE
+	setmetatile 29, 25, METATILE_FluoritesEye_Fluorite_Left_Left_1, TRUE
+	setmetatile 29, 28, METATILE_FluoritesEye_Fluorite_Left_Left_1, TRUE
+	setmetatile 31, 28, METATILE_FluoritesEye_Fluorite_Left_Left_1, TRUE
+	setmetatile 32, 29, METATILE_FluoritesEye_Fluorite_Left_Left_1, TRUE
+	setmetatile 16, 55, METATILE_FluoritesEye_Fluorite_Left_Left_2, TRUE
+	setmetatile 18, 51, METATILE_FluoritesEye_Fluorite_Left_Left_2, TRUE
+	setmetatile 19, 56, METATILE_FluoritesEye_Fluorite_Left_Left_2, TRUE
+	setmetatile 22, 48, METATILE_FluoritesEye_Fluorite_Left_Left_2, TRUE
+	setmetatile 22, 44, METATILE_FluoritesEye_Fluorite_Left_Left_2, TRUE
+	setmetatile 24, 46, METATILE_FluoritesEye_Fluorite_Left_Left_2, TRUE
+	setmetatile 26, 40, METATILE_FluoritesEye_Fluorite_Left_Left_2, TRUE
+	setmetatile 30, 43, METATILE_FluoritesEye_Fluorite_Left_Left_2, TRUE
+	setmetatile 52, 50, METATILE_FluoritesEye_Fluorite_Left_Left_2, TRUE
 	return
 
 Text_FluoritesEye_PlayerActivate_Crystals:
