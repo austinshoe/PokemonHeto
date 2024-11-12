@@ -15637,12 +15637,12 @@ CoreBlastFire:
 	end
 
 CoreBlastIce:
+	fadetobg BG_ICE
+	waitbgfadeout
 	monbg ANIM_TARGET
 	splitbgprio ANIM_TARGET
 	setalpha 12, 8
 	loadspritegfx ANIM_TAG_ICE_CRYSTALS
-	fadetobg BG_ICE
-	waitforvisualfinish
 	createsprite gSimplePaletteBlendSpriteTemplate, ANIM_ATTACKER, 2, F_PAL_BG, 1, 0, 7, RGB_BLACK
 	waitforvisualfinish
 	createsoundtask SoundTask_LoopSEAdjustPanning, SE_M_BUBBLE_BEAM2, SOUND_PAN_ATTACKER, SOUND_PAN_TARGET, 4, 4, 0, 10
@@ -15673,11 +15673,9 @@ CoreBlastIce:
 	createsprite gSimplePaletteBlendSpriteTemplate, ANIM_ATTACKER, 2, F_PAL_BG, 0, 7, 0, RGB_BLACK
 	waitforvisualfinish
 	clearmonbg ANIM_TARGET
-	waitbgfadein
-	delay 45
+	blendoff
 	restorebg
 	waitbgfadein
-	blendoff
 	end
 
 
