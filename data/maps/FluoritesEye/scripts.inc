@@ -223,7 +223,68 @@ FluoritesEye_Activate_Crystals:
 	setmetatile 34, 30, METATILE_FluoritesEye_Fluorite_Right_Front, TRUE
 	setmetatile 4, 53, METATILE_FluoritesEye_Fluorite_Right_Right_1, TRUE
 	setmetatile 10, 34, METATILE_FluoritesEye_Fluorite_Right_Right_1, TRUE
-
+	setmetatile 20, 32, METATILE_FluoritesEye_Fluorite_Right_Right_1, TRUE
+	setmetatile 21, 28, METATILE_FluoritesEye_Fluorite_Right_Right_1, TRUE
+	setmetatile 35, 43, METATILE_FluoritesEye_Fluorite_Right_Right_1, TRUE
+	setmetatile 37, 49, METATILE_FluoritesEye_Fluorite_Right_Right_1, TRUE
+	setmetatile 38, 44, METATILE_FluoritesEye_Fluorite_Right_Right_1, TRUE
+	setmetatile 41, 29, METATILE_FluoritesEye_Fluorite_Right_Right_1, TRUE
+	setmetatile 38, 25, METATILE_FluoritesEye_Fluorite_Right_Right_1, TRUE
+	setmetatile 37, 15, METATILE_FluoritesEye_Fluorite_Right_Right_1, TRUE
+	setmetatile 39, 9, METATILE_FluoritesEye_Fluorite_Right_Right_1, TRUE
+	setmetatile 35, 6, METATILE_FluoritesEye_Fluorite_Right_Right_1, TRUE
+	setmetatile 37, 4, METATILE_FluoritesEye_Fluorite_Right_Right_1, TRUE
+	setmetatile 10, 8, METATILE_FluoritesEye_Fluorite_Right_Right_1, TRUE
+	setmetatile 5, 13, METATILE_FluoritesEye_Fluorite_Right_Right_1, TRUE
+	setmetatile 6, 17, METATILE_FluoritesEye_Fluorite_Right_Right_1, TRUE
+	setmetatile 7, 19, METATILE_FluoritesEye_Fluorite_Right_Right_1, TRUE
+	setmetatile 10, 23, METATILE_FluoritesEye_Fluorite_Right_Right_1, TRUE
+	setmetatile 8, 24, METATILE_FluoritesEye_Fluorite_Right_Right_1, TRUE
+	setmetatile 9, 25, METATILE_FluoritesEye_Fluorite_Right_Right_1, TRUE
+	setmetatile 6, 53, METATILE_FluoritesEye_Fluorite_Right_Right_2, TRUE
+	setmetatile 5, 50, METATILE_FluoritesEye_Fluorite_Right_Right_2, TRUE
+	setmetatile 6, 49, METATILE_FluoritesEye_Fluorite_Right_Right_2, TRUE
+	setmetatile 4, 48, METATILE_FluoritesEye_Fluorite_Right_Right_2, TRUE
+	setmetatile 9, 43, METATILE_FluoritesEye_Fluorite_Right_Right_2, TRUE
+	setmetatile 12, 44, METATILE_FluoritesEye_Fluorite_Right_Right_2, TRUE
+	setmetatile 12, 42, METATILE_FluoritesEye_Fluorite_Right_Right_2, TRUE
+	setmetatile 11, 41, METATILE_FluoritesEye_Fluorite_Right_Right_2, TRUE
+	setmetatile 13, 41, METATILE_FluoritesEye_Fluorite_Right_Right_2, TRUE
+	setmetatile 12, 39, METATILE_FluoritesEye_Fluorite_Right_Right_2, TRUE
+	setmetatile 10, 37, METATILE_FluoritesEye_Fluorite_Right_Right_2, TRUE
+	setmetatile 22, 36, METATILE_FluoritesEye_Fluorite_Right_Right_2, TRUE
+	setmetatile 21, 32, METATILE_FluoritesEye_Fluorite_Right_Right_2, TRUE
+	setmetatile 19, 31, METATILE_FluoritesEye_Fluorite_Right_Right_2, TRUE
+	setmetatile 20, 30, METATILE_FluoritesEye_Fluorite_Right_Right_2, TRUE
+	setmetatile 35, 45, METATILE_FluoritesEye_Fluorite_Right_Right_2, TRUE
+	setmetatile 37, 45, METATILE_FluoritesEye_Fluorite_Right_Right_2, TRUE
+	setmetatile 39, 47, METATILE_FluoritesEye_Fluorite_Right_Right_2, TRUE
+	setmetatile 39, 50, METATILE_FluoritesEye_Fluorite_Right_Right_2, TRUE
+	setmetatile 41, 32, METATILE_FluoritesEye_Fluorite_Right_Right_2, TRUE
+	setmetatile 40, 31, METATILE_FluoritesEye_Fluorite_Right_Right_2, TRUE
+	setmetatile 39, 29, METATILE_FluoritesEye_Fluorite_Right_Right_2, TRUE
+	setmetatile 39, 11, METATILE_FluoritesEye_Fluorite_Right_Right_2, TRUE
+	setmetatile 37, 10, METATILE_FluoritesEye_Fluorite_Right_Right_2, TRUE
+	setmetatile 36, 10, METATILE_FluoritesEye_Fluorite_Right_Right_2, TRUE
+	setmetatile 36, 6, METATILE_FluoritesEye_Fluorite_Right_Right_2, TRUE
+	setmetatile 35, 4, METATILE_FluoritesEye_Fluorite_Right_Right_2, TRUE
+	setmetatile 27, 15, METATILE_FluoritesEye_Fluorite_Right_Right_2, TRUE
+	setmetatile 22, 20, METATILE_FluoritesEye_Fluorite_Right_Right_2, TRUE
+	setmetatile 17, 23, METATILE_FluoritesEye_Fluorite_Right_Right_2, TRUE
+	setmetatile 17, 24, METATILE_FluoritesEye_Fluorite_Right_Right_2, TRUE
+	setmetatile 8, 7, METATILE_FluoritesEye_Fluorite_Right_Right_2, TRUE
+	setmetatile 9, 9, METATILE_FluoritesEye_Fluorite_Right_Right_2, TRUE
+	setmetatile 10, 10, METATILE_FluoritesEye_Fluorite_Right_Right_2, TRUE
+	setmetatile 5, 10, METATILE_FluoritesEye_Fluorite_Right_Right_2, TRUE
+	setmetatile 7, 14, METATILE_FluoritesEye_Fluorite_Right_Right_2, TRUE
+	setmetatile 7, 15, METATILE_FluoritesEye_Fluorite_Right_Right_2, TRUE
+	setmetatile 5, 20, METATILE_FluoritesEye_Fluorite_Right_Right_2, TRUE
+	setmetatile 7, 20, METATILE_FluoritesEye_Fluorite_Right_Right_2, TRUE
+	setmetatile 10, 22, METATILE_FluoritesEye_Fluorite_Right_Right_2, TRUE
+	setmetatile 10, 24, METATILE_FluoritesEye_Fluorite_Right_Right_2, TRUE
+	setmetatile 8, 25, METATILE_FluoritesEye_Fluorite_Right_Right_2, TRUE
+	setmetatile 16, 26, METATILE_FluoritesEye_Fluorite_Right_Right_2, TRUE
+	setmetatile 15, 27, METATILE_FluoritesEye_Fluorite_Right_Right_2, TRUE
 	return
 
 Text_FluoritesEye_PlayerActivate_Crystals:
