@@ -614,6 +614,7 @@ gSongTable::
 	song mus_generic_route, 0, 0
 	song mus_fluorites_eye, 0, 0
 	song mus_lumina_town, 0, 0
+	song mus_route_normal, 0, 0
 
 	.align 2
 dummy_song_header:

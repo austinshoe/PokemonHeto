@@ -547,7 +547,8 @@
 //custom songs start
 #define MUS_GENERIC_ROUTE           610
 #define MUS_FLUORITES_EYE           611
-#define MUS_LUMINA_TOWN         612
+#define MUS_LUMINA_TOWN             612
+#define MUS_ROUTE_NORMAL            613
 
 #define MUS_ROUTE118                0x7FFF  // Map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().
 

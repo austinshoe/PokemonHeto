@@ -2,7 +2,7 @@
   "id": "MAP_ROUTEBEFORETUNDRA",
   "name": "routebeforetundra",
   "layout": "LAYOUT_ROUTEBEFORETUNDRA",
-  "music": "MUS_ABANDONED_SHIP",
+  "music": "MUS_ROUTE_NORMAL",
   "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

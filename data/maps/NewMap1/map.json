@@ -2,7 +2,7 @@
   "id": "MAP_NEW_MAP1",
   "name": "NewMap1",
   "layout": "LAYOUT_NEW_MAP1",
-  "music": "MUS_ABANDONED_SHIP",
+  "music": "MUS_LUMINA_TOWN",
   "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
