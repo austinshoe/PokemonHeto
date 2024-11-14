@@ -2,7 +2,7 @@
   "id": "MAP_LUMINA_TOWN",
   "name": "LuminaTown",
   "layout": "LAYOUT_LUMINA_TOWN",
-  "music": "MUS_DEWFORD",
+  "music": "MUS_LUMINA_TOWN",
   "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

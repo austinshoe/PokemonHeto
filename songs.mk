@@ -639,6 +639,9 @@ $(MID_SUBDIR)/mus_generic_route.s: %.s: %.mid
 $(MID_SUBDIR)/mus_fluorites_eye.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V076
 
+$(MID_SUBDIR)/mus_lumina_town.s: %.s: %.mid
+	$(MID) $< $@ -E -R65 -G191 -V090
+
 $(MID_SUBDIR)/ph_choice_blend.s: %.s: %.mid
 	$(MID) $< $@ -E -G130 -P4
 
