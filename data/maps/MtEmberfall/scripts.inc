@@ -160,7 +160,7 @@ Text_MtEmberfall_Recognize2:
     .string "This kid seems to fit the descriptions.\p"
     .string "$"
 
-Text_MtEmberfall_Recognize2:
+Text_MtEmberfall_Recognize3:
     .string "{COLOR BLUE}Grunt 1{COLOR DARK_GRAY}: You!\p"
     .string "You're trying to interfere with\n"
     .string "{COLOR BLUE}Angrboda{COLOR DARK_GRAY}'s plans again, aren't you?\p"
