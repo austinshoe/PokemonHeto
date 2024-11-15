@@ -33,7 +33,7 @@ MtEmberfall_GruntEncounter:
     waitmovement 7
     hideobjectat 7, MAP_MT_EMBERFALL
     removeobject 6
-    removeobhect 7
+    removeobject 7
     setflag FLAG_HIDE_RUSTBORO_CITY_AQUA_GRUNT
     setvar VAR_RUSTURF_TUNNEL_STATE, 1
     release
