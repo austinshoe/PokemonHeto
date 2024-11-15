@@ -1,6 +1,16 @@
 MtEmberfall_MapScripts::
+    map_script MAP_SCRIPT_ON_TRANSITION, MtEmberfall_OnTransition
     map_script MAP_SCRIPT_ON_FRAME_TABLE, MtEmberfall_OnFrame
 	.byte 0
+
+MtEmberfall_OnTransition:
+    compare VAR_RUSTURF_TUNNEL_STATE, 0
+    goto_if_eq MtEmberfall_Show_Grunts
+    end
+
+MtEmberfall_Show_Grunts:
+    clearflag FLAG_HIDE_RUSTBORO_CITY_AQUA_GRUNT
+    return
 
 MtEmberfall_OnFrame:
     map_script_2 VAR_RUSTURF_TUNNEL_STATE, 0, MtEmberfall_GruntEncounter
@@ -61,6 +71,7 @@ MtEmberfall_GruntConfront:
     applymovement 6, Common_Movement_ExclamationMark
     message Text_MtEmberfall_Recognize
     waitmessage
+    waitbuttonpress
     closemessage
     waitmovement 6
     applymovement 7, Common_Movement_ExclamationMark
@@ -73,6 +84,7 @@ MtEmberfall_GruntConfront:
     trainerbattle_no_intro TRAINER_GRUNT_AQUA_HIDEOUT_4, Text_Emberfall_Grunt1_Defeated
     message Text_Emberfall_Grunt1_PostBattle
     waitmessage
+    waitbuttonpress
     closemessage
     message Text_Emberfall_Grunt2_Battle
     trainerbattle_no_intro TRAINER_GRUNT_AQUA_HIDEOUT_5, Text_Emberfall_Grunt2_Defeated
@@ -176,7 +188,7 @@ Text_Emberfall_Grunt2_Battle:
     .string "{COLOR BLUE}Grunt 2{COLOR DARK_GRAY}: I'll take care of this!$"
 
 Text_Emberfall_Grunt2_Defeated:
-    .string "{COLOR BLUE}Grunt 2{COLOR DARK_GRAY}: Aw, fiddlesticks...$"
+    .string "Aw, fiddlesticks...$"
 
 Text_MtEmberfall_Grunt1_PostBattle2:
     .string "{COLOR BLUE}Grunt 1{COLOR DARK_GRAY}: There's no way that we both\n"
