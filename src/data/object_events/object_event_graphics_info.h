@@ -4653,6 +4653,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_HoOh = {
     .affineAnims = gDummySpriteAffineAnimTable,
 };
 
+/*
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RockyNormal = {
     .tileTag = TAG_NONE,
     .paletteTag = OBJ_EVENT_PAL_TAG_ROCKYMAI,
@@ -4862,7 +4863,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_MaiUnderwater = {
     .affineAnims = gDummySpriteAffineAnimTable,
 };
 
-/*
+
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_MaiFishing = {
     .tileTag = TAG_NONE,
     .paletteTag = OBJ_EVENT_PAL_TAG_ROCKYMAI,

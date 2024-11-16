@@ -2172,7 +2172,7 @@ static const struct SpriteFrameImage sPicTable_RubySapphireMay[] = {
     overworld_frame(gObjectEventPic_RubySapphireMayNormal, 2, 4, 7),
     overworld_frame(gObjectEventPic_RubySapphireMayNormal, 2, 4, 8),
 };
-
+/*
 static const struct SpriteFrameImage sPicTable_RockyNormal[] = {
     overworld_frame(gObjectEventPic_RockyNormal, 2, 4, 0),
     overworld_frame(gObjectEventPic_RockyNormal, 2, 4, 1),
@@ -2323,7 +2323,7 @@ static const struct SpriteFrameImage sPicTable_MaiFieldMove[] = {
     overworld_frame(gObjectEventPic_MaiFieldMove, 4, 4, 3),
     overworld_frame(gObjectEventPic_MaiFieldMove, 4, 4, 4),
 };
-/*
+
 static const struct SpriteFrameImage sPicTable_RockyFishing[] = {
     overworld_frame(gObjectEventPic_MaiFishing, 4, 4, 0),
     overworld_frame(gObjectEventPic_MaiFishing, 4, 4, 1),

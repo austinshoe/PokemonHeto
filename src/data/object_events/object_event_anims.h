@@ -1143,7 +1143,7 @@ static const union AffineAnimCmd *const sAffineAnimTable_KyogreGroudon[] = {
     sAffineAnim_KyogreGroudon_DipEast,      // Unused
 };
 
-static const union AnimCmd *const sAnimTable_RockyMaiNormal[] = {
+/*static const union AnimCmd *const sAnimTable_RockyMaiNormal[] = {
     [ANIM_STD_FACE_SOUTH] = sAnim_FaceSouth,
     [ANIM_STD_FACE_NORTH] = sAnim_FaceNorth,
     [ANIM_STD_FACE_WEST] = sAnim_FaceWest,
@@ -1169,6 +1169,7 @@ static const union AnimCmd *const sAnimTable_RockyMaiNormal[] = {
     [ANIM_RUN_WEST] = sAnim_RunWest,
     [ANIM_RUN_EAST] = sAnim_RunEast,
 };
+*/
 
 // For animations with alternating steps
 static const struct StepAnimTable sStepAnimTables[] = {

@@ -244,6 +244,7 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Storyteller
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Giddy;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_UnusedMauvilleOldMan1;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_UnusedMauvilleOldMan2;
+/*
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RockyNormal;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RockyMachBike;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RockySurfing;
@@ -255,7 +256,8 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_MaiMachBike
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_MaiSurfing;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_MaiFieldMove;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_MaiUnderwater;
-//extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_MaiFishing;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_MaiFishing;
+*/
 
 
 const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM_OBJ_EVENT_GFX] = {
@@ -498,6 +500,7 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_LINK_RS_MAY] =              &gObjectEventGraphicsInfo_RubySapphireMay,
     [OBJ_EVENT_GFX_LUGIA] =                    &gObjectEventGraphicsInfo_Lugia,
     [OBJ_EVENT_GFX_HOOH] =                     &gObjectEventGraphicsInfo_HoOh,
+    /*
     [OBJ_EVENT_GFX_ROCKY_NORMAL] =             &gObjectEventGraphicsInfo_RockyNormal,
     [OBJ_EVENT_GFX_ROCKY_MACH_BIKE] =          &gObjectEventGraphicsInfo_RockyMachBike,
     [OBJ_EVENT_GFX_ROCKY_SURFING] =            &gObjectEventGraphicsInfo_RockySurfing,
@@ -508,8 +511,9 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_MAI_MACH_BIKE] =            &gObjectEventGraphicsInfo_MaiMachBike,
     [OBJ_EVENT_GFX_MAI_SURFING] =              &gObjectEventGraphicsInfo_MaiSurfing,
     [OBJ_EVENT_GFX_MAI_FIELD_MOVE] =           &gObjectEventGraphicsInfo_MaiFieldMove,
-    //[OBJ_EVENT_GFX_MAI_FISHING] =              &gObjectEventGraphicsInfo_MaiFishing,
+    [OBJ_EVENT_GFX_MAI_FISHING] =              &gObjectEventGraphicsInfo_MaiFishing,
     [OBJ_EVENT_GFX_MAI_UNDERWATER] =           &gObjectEventGraphicsInfo_MaiUnderwater,
+    */
 };
 
 const struct ObjectEventGraphicsInfo *const gMauvilleOldManGraphicsInfoPointers[] = {
