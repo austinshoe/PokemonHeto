@@ -81,12 +81,17 @@ MtEmberfall_GruntConfront:
     message Text_MtEmberfall_Recognize3
     waitmessage
     applymovement 6, MtEmberfall_Grunt1_Confront
+    applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft
+    waitmovement 0
     trainerbattle_no_intro TRAINER_GRUNT_AQUA_HIDEOUT_4, Text_Emberfall_Grunt1_Defeated
     message Text_Emberfall_Grunt1_PostBattle
     waitmessage
     waitbuttonpress
     closemessage
     message Text_Emberfall_Grunt2_Battle
+    applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp
+    waitmovement 0
+    waitmessage
     trainerbattle_no_intro TRAINER_GRUNT_AQUA_HIDEOUT_5, Text_Emberfall_Grunt2_Defeated
     return
 
@@ -94,12 +99,14 @@ MtEmberfall_Grunts_Post_Battle:
     applymovement 6, Common_Movement_ExclamationMark
     message Text_MtEmberfall_Grunt1_PostBattle2
     waitmessage
+    waitbuttonpress
     closemessage
     waitmovement 6
     applymovement 7, Common_Movement_FaceLeft
     waitmovement 0
     message Text_MtEmberfall_Grunt2_PostBattle2
     waitmessage
+    waitbuttonpress
     closemessage
     return
 
