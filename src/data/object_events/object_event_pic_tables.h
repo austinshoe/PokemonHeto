@@ -2172,3 +2172,170 @@ static const struct SpriteFrameImage sPicTable_RubySapphireMay[] = {
     overworld_frame(gObjectEventPic_RubySapphireMayNormal, 2, 4, 7),
     overworld_frame(gObjectEventPic_RubySapphireMayNormal, 2, 4, 8),
 };
+
+static const struct SpriteFrameImage sPicTable_RockyNormal[] = {
+    overworld_frame(gObjectEventPic_RockyNormal, 2, 4, 0),
+    overworld_frame(gObjectEventPic_RockyNormal, 2, 4, 1),
+    overworld_frame(gObjectEventPic_RockyNormal, 2, 4, 2),
+    overworld_frame(gObjectEventPic_RockyNormal, 2, 4, 3),
+    overworld_frame(gObjectEventPic_RockyNormal, 2, 4, 4),
+    overworld_frame(gObjectEventPic_RockyNormal, 2, 4, 5),
+    overworld_frame(gObjectEventPic_RockyNormal, 2, 4, 6),
+    overworld_frame(gObjectEventPic_RockyNormal, 2, 4, 7),
+    overworld_frame(gObjectEventPic_RockyNormal, 2, 4, 8),
+    overworld_frame(gObjectEventPic_RockyRunning, 2, 4, 0),
+    overworld_frame(gObjectEventPic_RockyRunning, 2, 4, 1),
+    overworld_frame(gObjectEventPic_RockyRunning, 2, 4, 2),
+    overworld_frame(gObjectEventPic_RockyRunning, 2, 4, 3),
+    overworld_frame(gObjectEventPic_RockyRunning, 2, 4, 4),
+    overworld_frame(gObjectEventPic_RockyRunning, 2, 4, 5),
+    overworld_frame(gObjectEventPic_RockyRunning, 2, 4, 6),
+    overworld_frame(gObjectEventPic_RockyRunning, 2, 4, 7),
+    overworld_frame(gObjectEventPic_RockyRunning, 2, 4, 8),
+};
+
+static const struct SpriteFrameImage sPicTable_RockyMachBike[] = {
+    overworld_frame(gObjectEventPic_RockyMachBike, 4, 4, 0),
+    overworld_frame(gObjectEventPic_RockyMachBike, 4, 4, 1),
+    overworld_frame(gObjectEventPic_RockyMachBike, 4, 4, 2),
+    overworld_frame(gObjectEventPic_RockyMachBike, 4, 4, 3),
+    overworld_frame(gObjectEventPic_RockyMachBike, 4, 4, 4),
+    overworld_frame(gObjectEventPic_RockyMachBike, 4, 4, 5),
+    overworld_frame(gObjectEventPic_RockyMachBike, 4, 4, 6),
+    overworld_frame(gObjectEventPic_RockyMachBike, 4, 4, 7),
+    overworld_frame(gObjectEventPic_RockyMachBike, 4, 4, 8),
+};
+
+static const struct SpriteFrameImage sPicTable_RockySurfing[] = {
+    overworld_frame(gObjectEventPic_RockySurfing, 4, 4, 0),
+    overworld_frame(gObjectEventPic_RockySurfing, 4, 4, 2),
+    overworld_frame(gObjectEventPic_RockySurfing, 4, 4, 4),
+    overworld_frame(gObjectEventPic_RockySurfing, 4, 4, 0),
+    overworld_frame(gObjectEventPic_RockySurfing, 4, 4, 0),
+    overworld_frame(gObjectEventPic_RockySurfing, 4, 4, 2),
+    overworld_frame(gObjectEventPic_RockySurfing, 4, 4, 2),
+    overworld_frame(gObjectEventPic_RockySurfing, 4, 4, 4),
+    overworld_frame(gObjectEventPic_RockySurfing, 4, 4, 4),
+    overworld_frame(gObjectEventPic_RockySurfing, 4, 4, 1),
+    overworld_frame(gObjectEventPic_RockySurfing, 4, 4, 3),
+    overworld_frame(gObjectEventPic_RockySurfing, 4, 4, 5),
+};
+
+static const struct SpriteFrameImage sPicTable_RockyUnderwater[] = {
+    overworld_frame(gObjectEventPic_RockyUnderwater, 4, 4, 0),
+    overworld_frame(gObjectEventPic_RockyUnderwater, 4, 4, 1),
+    overworld_frame(gObjectEventPic_RockyUnderwater, 4, 4, 2),
+    overworld_frame(gObjectEventPic_RockyUnderwater, 4, 4, 0),
+    overworld_frame(gObjectEventPic_RockyUnderwater, 4, 4, 0),
+    overworld_frame(gObjectEventPic_RockyUnderwater, 4, 4, 1),
+    overworld_frame(gObjectEventPic_RockyUnderwater, 4, 4, 1),
+    overworld_frame(gObjectEventPic_RockyUnderwater, 4, 4, 2),
+    overworld_frame(gObjectEventPic_RockyUnderwater, 4, 4, 2),
+};
+
+static const struct SpriteFrameImage sPicTable_RockyFieldMove[] = {
+    overworld_frame(gObjectEventPic_RockyFieldMove, 4, 4, 0),
+    overworld_frame(gObjectEventPic_RockyFieldMove, 4, 4, 1),
+    overworld_frame(gObjectEventPic_RockyFieldMove, 4, 4, 2),
+    overworld_frame(gObjectEventPic_RockyFieldMove, 4, 4, 3),
+    overworld_frame(gObjectEventPic_RockyFieldMove, 4, 4, 4),
+};
+
+static const struct SpriteFrameImage sPicTable_RockyFishing[] = {
+    overworld_frame(gObjectEventPic_RockyFishing, 4, 4, 0),
+    overworld_frame(gObjectEventPic_RockyFishing, 4, 4, 1),
+    overworld_frame(gObjectEventPic_RockyFishing, 4, 4, 2),
+    overworld_frame(gObjectEventPic_RockyFishing, 4, 4, 3),
+    overworld_frame(gObjectEventPic_RockyFishing, 4, 4, 4),
+    overworld_frame(gObjectEventPic_RockyFishing, 4, 4, 5),
+    overworld_frame(gObjectEventPic_RockyFishing, 4, 4, 6),
+    overworld_frame(gObjectEventPic_RockyFishing, 4, 4, 7),
+    overworld_frame(gObjectEventPic_RockyFishing, 4, 4, 8),
+    overworld_frame(gObjectEventPic_RockyFishing, 4, 4, 9),
+    overworld_frame(gObjectEventPic_RockyFishing, 4, 4, 10),
+    overworld_frame(gObjectEventPic_RockyFishing, 4, 4, 11),
+};
+
+static const struct SpriteFrameImage sPicTable_MaiNormal[] = {
+    overworld_frame(gObjectEventPic_MaiNormal, 2, 4, 0),
+    overworld_frame(gObjectEventPic_MaiNormal, 2, 4, 1),
+    overworld_frame(gObjectEventPic_MaiNormal, 2, 4, 2),
+    overworld_frame(gObjectEventPic_MaiNormal, 2, 4, 3),
+    overworld_frame(gObjectEventPic_MaiNormal, 2, 4, 4),
+    overworld_frame(gObjectEventPic_MaiNormal, 2, 4, 5),
+    overworld_frame(gObjectEventPic_MaiNormal, 2, 4, 6),
+    overworld_frame(gObjectEventPic_MaiNormal, 2, 4, 7),
+    overworld_frame(gObjectEventPic_MaiNormal, 2, 4, 8),
+    overworld_frame(gObjectEventPic_MaiRunning, 2, 4, 0),
+    overworld_frame(gObjectEventPic_MaiRunning, 2, 4, 1),
+    overworld_frame(gObjectEventPic_MaiRunning, 2, 4, 2),
+    overworld_frame(gObjectEventPic_MaiRunning, 2, 4, 3),
+    overworld_frame(gObjectEventPic_MaiRunning, 2, 4, 4),
+    overworld_frame(gObjectEventPic_MaiRunning, 2, 4, 5),
+    overworld_frame(gObjectEventPic_MaiRunning, 2, 4, 6),
+    overworld_frame(gObjectEventPic_MaiRunning, 2, 4, 7),
+    overworld_frame(gObjectEventPic_MaiRunning, 2, 4, 8),
+};
+
+static const struct SpriteFrameImage sPicTable_MaiMachBike[] = {
+    overworld_frame(gObjectEventPic_MaiMachBike, 4, 4, 0),
+    overworld_frame(gObjectEventPic_MaiMachBike, 4, 4, 1),
+    overworld_frame(gObjectEventPic_MaiMachBike, 4, 4, 2),
+    overworld_frame(gObjectEventPic_MaiMachBike, 4, 4, 3),
+    overworld_frame(gObjectEventPic_MaiMachBike, 4, 4, 4),
+    overworld_frame(gObjectEventPic_MaiMachBike, 4, 4, 5),
+    overworld_frame(gObjectEventPic_MaiMachBike, 4, 4, 6),
+    overworld_frame(gObjectEventPic_MaiMachBike, 4, 4, 7),
+    overworld_frame(gObjectEventPic_MaiMachBike, 4, 4, 8),
+};
+
+static const struct SpriteFrameImage sPicTable_MaiSurfing[] = {
+    overworld_frame(gObjectEventPic_MaiSurfing, 4, 4, 0),
+    overworld_frame(gObjectEventPic_MaiSurfing, 4, 4, 2),
+    overworld_frame(gObjectEventPic_MaiSurfing, 4, 4, 4),
+    overworld_frame(gObjectEventPic_MaiSurfing, 4, 4, 0),
+    overworld_frame(gObjectEventPic_MaiSurfing, 4, 4, 0),
+    overworld_frame(gObjectEventPic_MaiSurfing, 4, 4, 2),
+    overworld_frame(gObjectEventPic_MaiSurfing, 4, 4, 2),
+    overworld_frame(gObjectEventPic_MaiSurfing, 4, 4, 4),
+    overworld_frame(gObjectEventPic_MaiSurfing, 4, 4, 4),
+    overworld_frame(gObjectEventPic_MaiSurfing, 4, 4, 1),
+    overworld_frame(gObjectEventPic_MaiSurfing, 4, 4, 3),
+    overworld_frame(gObjectEventPic_MaiSurfing, 4, 4, 5),
+};
+
+static const struct SpriteFrameImage sPicTable_MaiUnderwater[] = {
+    overworld_frame(gObjectEventPic_MaiUnderwater, 4, 4, 0),
+    overworld_frame(gObjectEventPic_MaiUnderwater, 4, 4, 1),
+    overworld_frame(gObjectEventPic_MaiUnderwater, 4, 4, 2),
+    overworld_frame(gObjectEventPic_MaiUnderwater, 4, 4, 0),
+    overworld_frame(gObjectEventPic_MaiUnderwater, 4, 4, 0),
+    overworld_frame(gObjectEventPic_MaiUnderwater, 4, 4, 1),
+    overworld_frame(gObjectEventPic_MaiUnderwater, 4, 4, 1),
+    overworld_frame(gObjectEventPic_MaiUnderwater, 4, 4, 2),
+    overworld_frame(gObjectEventPic_MaiUnderwater, 4, 4, 2),
+};
+
+static const struct SpriteFrameImage sPicTable_MaiFieldMove[] = {
+    overworld_frame(gObjectEventPic_MaiFieldMove, 4, 4, 0),
+    overworld_frame(gObjectEventPic_MaiFieldMove, 4, 4, 1),
+    overworld_frame(gObjectEventPic_MaiFieldMove, 4, 4, 2),
+    overworld_frame(gObjectEventPic_MaiFieldMove, 4, 4, 3),
+    overworld_frame(gObjectEventPic_MaiFieldMove, 4, 4, 4),
+};
+/*
+static const struct SpriteFrameImage sPicTable_RockyFishing[] = {
+    overworld_frame(gObjectEventPic_MaiFishing, 4, 4, 0),
+    overworld_frame(gObjectEventPic_MaiFishing, 4, 4, 1),
+    overworld_frame(gObjectEventPic_MaiFishing, 4, 4, 2),
+    overworld_frame(gObjectEventPic_MaiFishing, 4, 4, 3),
+    overworld_frame(gObjectEventPic_MaiFishing, 4, 4, 4),
+    overworld_frame(gObjectEventPic_MaiFishing, 4, 4, 5),
+    overworld_frame(gObjectEventPic_MaiFishing, 4, 4, 6),
+    overworld_frame(gObjectEventPic_MaiFishing, 4, 4, 7),
+    overworld_frame(gObjectEventPic_MaiFishing, 4, 4, 8),
+    overworld_frame(gObjectEventPic_MaiFishing, 4, 4, 9),
+    overworld_frame(gObjectEventPic_MaiFishing, 4, 4, 10),
+    overworld_frame(gObjectEventPic_MaiFishing, 4, 4, 11),
+};
+*/
