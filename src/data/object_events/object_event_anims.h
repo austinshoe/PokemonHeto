@@ -1201,9 +1201,9 @@ static const struct StepAnimTable sStepAnimTables[] = {
         .anims = sAnimTable_Fishing,
         .animPos = {1, 3, 0, 2},
     },
-    {
+    /*{
         .anims = sAnimTable_RockyMaiNormal,
         .animPos = {1, 3, 0, 2},
-    },
+    },*/
     {},
 };
