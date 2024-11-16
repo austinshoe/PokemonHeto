@@ -508,7 +508,7 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_MAI_MACH_BIKE] =            &gObjectEventGraphicsInfo_MaiMachBike,
     [OBJ_EVENT_GFX_MAI_SURFING] =              &gObjectEventGraphicsInfo_MaiSurfing,
     [OBJ_EVENT_GFX_MAI_FIELD_MOVE] =           &gObjectEventGraphicsInfo_MaiFieldMove,
-    [OBJ_EVENT_GFX_MAI_FISHING] =              &gObjectEventGraphicsInfo_MaiFishing,
+    //[OBJ_EVENT_GFX_MAI_FISHING] =              &gObjectEventGraphicsInfo_MaiFishing,
     [OBJ_EVENT_GFX_MAI_UNDERWATER] =           &gObjectEventGraphicsInfo_MaiUnderwater,
 };
 
