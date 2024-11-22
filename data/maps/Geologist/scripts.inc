@@ -191,6 +191,7 @@ Geologist_EventScript_EviL_Team_EncounterPt2:
     msgbox Geologist_Kirschbluteoutro, MSGBOX_DEFAULT
     applymovement 4, Geologist_KirschbluteSkedaddle
     waitmovement 0
+    closemessage
     applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceDown
     applymovement 4, Geologist_KirschbluteSkedaddle2
     waitmovement 0
@@ -475,9 +476,9 @@ Geologist_DrStone_PostEvent4:
 Geologist_DrStone_PostEvent5:
     .string "The region of {COLOR RED}Heto{COLOR DARK_GRAY} is located on top\n"
     .string "of a big pocket of natural gas.\p"
-    .string "From what they said, it seems Angrboda\n"
-    .string "is planning to blow these pockets of gas\l"
-    .string "in order to wreak havoc on the north\p"
+    .string "From what they said, it seems {COLOR BLUE}Angrboda{COLOR DARK_GRAY}\n"
+    .string "plans to blow these pockets of gas in\l"
+    .string "order to wreak havoc on the north.\p"
     .string "I wouldn't be too worried though.\n"
     .string "A layer of bedrock thats basically\l"
     .string "impenetrable seperates that gas from\l"
