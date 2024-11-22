@@ -483,7 +483,7 @@ Text_Postbattle3:
 
 
 Text_PearlTown_PostTestBattle:
-    .string "$"
+    .string "{COLOR LIGHT_GRAY}{SHADOW DARK_GRAY}TYPE SHIT {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}$"
 
 Text_PearlTownMomCallsOut:
     .string "Mom: {PLAYER}!\p"
