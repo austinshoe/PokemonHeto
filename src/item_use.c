@@ -966,6 +966,52 @@ void HandleUseExpiredLure(struct ScriptContext *ctx)
 #endif
 }
 
+//NEW NEW NEW NEW
+
+void ItemUseOutOfBattle_CrystalFlute(u8 taskId){
+    if (CanUseCrystalFlute() == TRUE)
+    {
+        VarSet(VAR_TEMP_0, 0);
+        sItemUseOnFieldCB = ItemUseOnFieldCB_CrystalFlute;
+        SetUpItemUseOnFieldCallback(taskId);
+    }
+    else
+    {
+        DisplayDadsAdviceCannotUseItemMessage(taskId, gTasks[taskId].tUsingRegisteredKeyItem);
+    }
+}
+
+static void ItemUseOnFieldCB_CrystalFlute(u8 taskId)
+{
+    CopyItemName(gSpecialVar_ItemId, gStringVar2);
+    gTasks[taskId].data[8] = 0;
+    gTasks[taskId].func = Task_UsedCrystalFlute;
+}
+
+static void Task_UsedCrystalFlute(u8 taskId)
+{
+    if(++gTasks[taskId].data[8] > 7)
+    {
+        PlaySE(SE_GLASS_FLUTE);
+            DisplayItemMessage(taskId, FONT_NORMAL, gStringVar4, CloseItemMessage);
+    }
+}
+
+void Task_UseCrystalFluteOnField(u8 taskId)
+{
+    CopyItemName(gSpecialVar_ItemId, gStringVar2);
+    StringExpandPlaceholders(gStringVar4, gText_PlayerUsedVar2);
+}
+
+bool CanUseCrystalFlute(void) {
+    if (gMapHeader.regionMapSectionId == MAPSEC_ROUTE_101)
+        return TRUE;
+    else
+        return FALSE;
+}
+//NEW NEW NEW NEW
+
+
 static void Task_UsedBlackWhiteFlute(u8 taskId)
 {
     if(++gTasks[taskId].data[8] > 7)

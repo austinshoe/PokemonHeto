@@ -848,6 +848,7 @@ const u32 *const gItemIconTable[ITEMS_COUNT + 1][2] =
     [ITEM_ELEC_CORE] = {gItemIcon_ElectricCore, gItemIconPalette_ElectricCore},
     [ITEM_FIRE_CORE] = {gItemIcon_FireCore, gItemIconPalette_FireCore},
     [ITEM_ICE_CORE] = {gItemIcon_IceCore, gItemIconPalette_IceCore},
+    [ITEM_CRYSTAL_FLUTE] = {gItemIcon_Flute, gItemIconPalette_WhiteFlute},
     // Return to field arrow
     [ITEMS_COUNT] = {gItemIcon_ReturnToFieldArrow, gItemIconPalette_ReturnToFieldArrow},
 };

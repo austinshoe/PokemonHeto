@@ -917,8 +917,9 @@
 #define ITEM_ELEC_CORE 800
 #define ITEM_FIRE_CORE 801
 #define ITEM_ICE_CORE 802
+#define ITEM_CRYSTAL_FLUTE 802
 
-#define ITEMS_COUNT 803
+#define ITEMS_COUNT 804
 #define ITEM_FIELD_ARROW ITEMS_COUNT
 
 // A special item id associated with "Cancel"/"Exit" etc. in a list of items or decorations

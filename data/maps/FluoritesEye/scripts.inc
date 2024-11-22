@@ -4,7 +4,7 @@ FluoritesEye_MapScripts::
 	.byte 0
 
 FluoritesEye_OnTransition::
-	call_if_unset FLAG_RECEIVED_DEVON_SCOPE, FluoritesEye_BypassActivate
+	call FluoritesEye_BypassActivate
 	end
 
 FluoritesEye_BypassActivate:

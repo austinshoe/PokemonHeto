@@ -9691,4 +9691,16 @@ const struct Item gItems[] =
         .type = ITEM_USE_PARTY_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_FormChange,
     },
+
+    [ITEM_CRYSTAL_FLUTE] =
+    {
+        .name = _("Crystal Flute"),
+        .price = 20,
+        .holdEffectParam = 150,
+        .description = sWhiteFluteDesc,
+        .pocket = POCKET_ITEMS,
+        .type = ITEM_USE_PARTY_MENU,
+        .fieldUseFunc = ItemUseOutOfBattle_CrystalFlute,
+        .flingPower = 30,
+    },
 };
