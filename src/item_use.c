@@ -979,7 +979,7 @@ static void Task_UsedCrystalFlute(u8 taskId)
 
 void ItemUseOutOfBattle_CrystalFlute(u8 taskId)
 {
-    if (CanUseCrystalFlute())
+    if (gMapHeader.regionMapSectionId == MAPSEC_ROUTE_101)
     {
         CopyItemName(gSpecialVar_ItemId, gStringVar2);
         VarSet(VAR_TEMP_0, 0);
@@ -990,15 +990,6 @@ void ItemUseOutOfBattle_CrystalFlute(u8 taskId)
     else
     {
         DisplayDadsAdviceCannotUseItemMessage(taskId, gTasks[taskId].tUsingRegisteredKeyItem);
-    }
-}
-
-bool CanUseCrystalFlute(void) {
-    if (gMapHeader.regionMapSectionId == MAPSEC_ROUTE_101){
-        return TRUE;
-    }
-    else {
-        return FALSE;
     }
 }
 //NEW NEW NEW NEW
