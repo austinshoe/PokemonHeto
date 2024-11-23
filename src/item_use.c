@@ -968,6 +968,38 @@ void HandleUseExpiredLure(struct ScriptContext *ctx)
 
 //NEW NEW NEW NEW
 
+void Task_UseCrystalFluteOnField(u8 taskId)
+{
+    //ResetInitialPlayerAvatarState();
+    PlaySE(SE_GLASS_FLUTE);
+    VarSet(VAR_TEMP_0, 0);
+    DestroyTask(taskId);
+}
+
+static void ItemUseOnFieldCB_CrystalFlute(u8 taskId)
+{
+    Overworld_ResetStateAfterDigEscRope();
+    gTasks[taskId].data[0] = 0;
+    DisplayItemMessageOnField(taskId, gStringVar4, Task_UseCrystalFluteOnField);
+}
+
+void ItemUseOutOfBattle_CrystalFlute(u8 taskId)
+{
+    if (gMapHeader.regionMapSectionId == MAPSEC_ROUTE_101)
+    {
+        CopyItemName(gSpecialVar_ItemId, gStringVar2);
+        StringExpandPlaceholders(gStringVar4, gText_PlayerUsedVar2);
+        sItemUseOnFieldCB = ItemUseOnFieldCB_CrystalFlute;
+        gFieldCallback = FieldCB_UseItemOnField;
+        gBagMenu->newScreenCallback = CB2_ReturnToField;
+        Task_FadeAndCloseBagMenu(taskId);
+    }
+    else
+    {
+        DisplayDadsAdviceCannotUseItemMessage(taskId, gTasks[taskId].tUsingRegisteredKeyItem);
+    }
+}
+/*
 static void Task_UsedCrystalFlute(u8 taskId)
 {
     if(++gTasks[taskId].data[8] > 7)
@@ -997,6 +1029,7 @@ void ItemUseOutOfBattle_CrystalFlute(u8 taskId)
         DisplayDadsAdviceCannotUseItemMessage(taskId, gTasks[taskId].tUsingRegisteredKeyItem);
     }
 }
+*/
 //NEW NEW NEW NEW
 
 
