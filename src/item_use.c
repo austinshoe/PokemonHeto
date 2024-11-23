@@ -971,9 +971,12 @@ void HandleUseExpiredLure(struct ScriptContext *ctx)
 void Task_UseCrystalFluteOnField(u8 taskId)
 {
     //ResetInitialPlayerAvatarState();
+    LockPlayerFieldControls();
     PlaySE(SE_GLASS_FLUTE);
     VarSet(VAR_TEMP_0, 0);
     DestroyTask(taskId);
+    ScriptUnfreezeObjectEvents();
+    UnlockPlayerFieldControls();
 }
 
 static void ItemUseOnFieldCB_CrystalFlute(u8 taskId)

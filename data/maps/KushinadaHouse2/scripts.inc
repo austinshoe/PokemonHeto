@@ -13,7 +13,7 @@ Text_KushinadaHouse2Man1:
     .string "memories of even the most remarkable\l"
     .string "of us will last maybe 10000 years.\l"
     .string "That's why none of us care about\l"
-    .string "disputes between {SHADOW DARK_GRAY}Hehehehatia {SHADOW LIGHT_GRAY}and {SHADOW DARK_GRAY}Toemayto{SHADOW LIGHT_GRAY}.\l"
+    .string "disputes between {COLOR RED}Hehehehatia {COLOR DARK_GRAY}and {COLOR RED}Toemayto{COLOR DARK_GRAY}.\l"
     .string "It just really doesn't matter.$"
 
 Script_KushinadaHouse2Woman1::

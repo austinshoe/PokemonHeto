@@ -59,14 +59,14 @@ Text_KassanSpeakeasyPiano:
     .string "$"
 
 Text_KassanSpeakeasyNerd1:
-    .string "{COLOR DARK_GRAY}{SHADOW DARK_GRAY}Kid:{SHADOW LIGHT_GRAY} Oi!\n"
+    .string "{COLOR BLUE}Kid:{COLOR DARK_GRAY} Oi!\n"
     .string "Why’d you stop playing?\p"
     .string "$"
 
 Text_KassanSpeakeasyWhip:
-    .string "{SHADOW DARK_GRAY}Kid: {SHADOW LIGHT_GRAY}Imma whip you\p"
-    .string "{SHADOW DARK_GRAY}Piano man: {SHADOW LIGHT_GRAY}{COLOR RED}OW!!!!{COLOR DARK_GRAY}That hurt so freaking\n"
-    .string "bad!\l"
+    .string "{COLOR BLUE}Kid:{COLOR DARK_GRAY} Imma whip you\p"
+    .string "{COLOR BLUE}Piano Man:{COLOR DARK_GRAY}{COLOR RED}OW!!!!{COLOR DARK_GRAY}That hurt so freaking\n"
+    .string "bad!\p"
     .string "Wahhhhhhhh\p"
     .string "$"
 
@@ -77,7 +77,7 @@ Script_KassanSpeakeasy2::
     end
 
 Text_KassanSpeakeasyNerd2:
-    .string "{SHADOW DARK_GRAY}Kid: {SHADOW LIGHT_GRAY}I swear on the\n"
+    .string "{COLOR BLUE}Kid:{COLOR DARK_GRAY}I swear on the\n"
     .string "{CLEAR_TO 70}{COLOR GREEN}Holey Logs\l"
     .string "{COLOR DARK_GRAY}, if that piano man stops playing one\l"
     .string "more time, I will do unspeakable things\l"

@@ -12,7 +12,7 @@ Text_LuminaTownOldMan2:
     .string "According to legends there was a Pokémon\n"
     .string "that embodied power and energy that\l"
     .string "once wreaked havoc across the region of\l"
-    .string "{COLOR DARK_GRAY}{SHADOW DARK_GRAY}Hehamayto{SHADOW LIGHT_GRAY}.$"
+    .string "{COLOR RED}Hehamayto{COLOR DARK_GRAY}.$"
 
 Script_LuminaTownWoman3::
     lock

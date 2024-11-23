@@ -200,7 +200,7 @@ Text_EverbloomGym_FloraPostBattle2:
 
 Text_EverbloomGym_FloraBadgeExplain:
     .string "This badge lets your Pokémon use the HM\n"
-    .string "{SHADOW DARK_GRAY}Flash {SHADOW LIGHT_GRAY}outside of battle.\p"
+    .string "{COLOR LIGHT_GRAY}{SHADOW DARK_GRAY}Flash {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}outside of battle.\p"
     .string "Please take this with you, too.$"
 
 Text_EverbloomGym_FloraExplainGigaDrain:

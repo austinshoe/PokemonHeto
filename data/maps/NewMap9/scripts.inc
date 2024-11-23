@@ -16,7 +16,7 @@ Script_EverbloomPokeCenter1::
 
 Text_EverbloomPokeCenter1:
     .string "That wild Caterpie out there defeated\n"
-    .string "my {SHADOW DARK_GRAY}Arceus!{SHADOW LIGHT_GRAY}\l"
+    .string "my {COLOR LIGHT_GRAY}{SHADOW DARK_GRAY}Arceus!{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}\p"
     .string "Luckily I ran back here and got it all\l"
     .string "healed up by Nurse Joy!\l"
     .string "I think I’m going to propose to her\l"

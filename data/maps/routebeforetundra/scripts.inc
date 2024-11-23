@@ -41,12 +41,12 @@ PostEverbloomHiker2::
 
 PostEverbloomUseFlash:
     .string "Hey!\n"
-    .string "Kid, use {SHADOW DARK_GRAY}Flash {SHADOW LIGHT_GRAY}to light up caves.$"
+    .string "Kid, use {SHADOW DARK_GRAY}{COLOR LIGHT_GRAY}Flash {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}to light up caves.$"
 
 PostEverbloomNeedFlash:
     .string "Hey!\n"
-    .string "Kid, you need to be able to use{SHADOW DARK_GRAY} Flash\l"
-    .string "{SHADOW LIGHT_GRAY}if you want to be able to navigate the\l"
+    .string "Kid, you need to be able to use {SHADOW DARK_GRAY}{COLOR LIGHT_GRAY}Flash{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}\l"
+    .string "if you want to be able to navigate the\l"
     .string "cave systems, so you need to beat the\l"
     .string "Everbloom Gym.$"
 

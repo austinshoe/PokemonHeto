@@ -345,10 +345,10 @@ Kasaan_Speakeasy_Sign_Text_0:
 
 Kasaan_Lab_Sign_Text_0:
     .string "Research Lab of Hetonian Geology\l"
-    .string "Lead Researcher: {SHADOW DARK_GRAY}Dr. Orion Stone$"
+    .string "Lead Researcher: {SHADOW DARK_GRAY}{COLOR LIGHT_GRAY}Dr. Orion Stone{COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}$"
 
 Kasaan_Stone_House_Text_0:
-    .string "{SHADOW DARK_GRAY}Dr. Stone's {SHADOW LIGHT_GRAY}house$"
+    .string "{SHADOW DARK_GRAY}{COLOR LIGHT_GRAY}Dr. Stone's {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}house$"
 
 Script_KassanSign::
     lock

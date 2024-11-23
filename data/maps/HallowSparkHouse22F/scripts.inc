@@ -10,5 +10,5 @@ Script_HallowSparkHouse2Kid2::
 Text_HallowSparkHouse2Kid2:
     .string "This world is imperfect...\n"
     .string "We must wipe away the impurities,\l"
-    .string "by ridding the world of {SHADOW DARK_GRAY}Hehatians{SHADOW LIGHT_GRAY}!"
+    .string "by ridding the world of {COLOR RED}Hehatians{COLOR DARK_GRAY}!$"
     

@@ -68,7 +68,7 @@ Script_Receive_Starter2::
     end
 
 PearlTown_ProfessorPinesLab_Text_WhyNotGiveNicknameToMon:
-    .string "{SHADOW DARK_GRAY}Prof. Pine: {SHADOW LIGHT_GRAY}While you're at it, why not\n"
+    .string "{SHADOW DARK_GRAY}{COLOR LIGHT_GRAY}Prof. Pine: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}While you're at it, why not\n"
     .string "give a nickname to that {STR_VAR_1}?$"
     
 PearlTown_ProfessorPinesLab_EventScript_NicknameStarter::
@@ -77,7 +77,7 @@ PearlTown_ProfessorPinesLab_EventScript_NicknameStarter::
     goto Script_Receive_Starter2
 
 Text_TakeDratini:
-    .string "{SHADOW DARK_GRAY}Prof. Pine: {SHADOW LIGHT_GRAY}Hey, {PLAYER}! \n"
+    .string "{SHADOW DARK_GRAY}{COLOR LIGHT_GRAY}Prof. Pine: {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}Hey, {PLAYER}! \n"
     .string "I was looking for you. As you know,\l"
     .string "you're now old enough for your very\l"
     .string "first Pokémon!\p"

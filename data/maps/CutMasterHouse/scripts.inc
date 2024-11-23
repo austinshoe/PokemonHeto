@@ -24,7 +24,7 @@ Text_Everbloom_Flash:
     .string "$"
 
 Text_Everbloom_ExplainFlash:
-    .string "{SHADOW DARK_GRAY}Flash {SHADOW LIGHT_GRAY}can help you light up dark caves.\n"
+    .string "{COLOR LIGHT_GRAY}{SHADOW DARK_GRAY}Flash {COLOR DARK_GRAY}{SHADOW LIGHT_GRAY}can help you light up dark caves.\n"
     .string "It'll help you on your journey.$"
 
 Everbloom_HasFlash:
