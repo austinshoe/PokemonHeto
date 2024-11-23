@@ -23,17 +23,12 @@ FluoritesEye_OldMan::
 FluoritesEye_PlayerActivate_Crystals:
 	lockall
 	setvar VAR_TEMP_0, 1
-	msgbox Text_FluoritesEye_PlayerActivate_Crystals, MSGBOX_YESNO
-	compare VAR_RESULT, YES
-	goto_if_eq FluoritesEye_Activated_Crystals
-	releaseall
-	end
-
-FluoritesEye_Activated_Crystals:
-	msgbox Text_FluoritesEye_Activated_Crystals, MSGBOX_DEFAULT
+	msgbox Text_FluoritesEye_PlayerActivate_Crystals, MSGBOX_DEFAULT
 	playse SE_PIN
+	fadescreen FADE_TO_BLACK
 	call FluoritesEye_Activate_Crystals
 	special DrawWholeMapView
+	fadescreen FADE_FROM_BLACK
 	releaseall
 	end
 
@@ -290,7 +285,4 @@ FluoritesEye_Activate_Crystals:
 Text_FluoritesEye_PlayerActivate_Crystals:
 	.string "The rocks around you seem to be\n"
 	.string "resonating with your Crystal Flute!\p"
-	.string "Would you like to play the flute?$"
-
-Text_FluoritesEye_Activated_Crystals:
 	.string "The rocks are reacting to your music!$"
