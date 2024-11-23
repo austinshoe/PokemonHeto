@@ -1441,7 +1441,7 @@ const struct Item gItems[] =
         #if I_KEY_ESCAPE_ROPE >= GEN_8
             .price = 0,
             .importance = 1,
-            .pocket = POCKET_KEY_ITEMS,
+            .pocket = POCKET_ITEMS,
         #else
             .price = 1000,
             .pocket = POCKET_ITEMS,
@@ -9699,7 +9699,7 @@ const struct Item gItems[] =
         .holdEffectParam = 150,
         .description = sWhiteFluteDesc,
         .pocket = POCKET_ITEMS,
-        .type = ITEM_USE_BAG_MENU,
+        .type = ITEM_USE_FIELD,
         .fieldUseFunc = ItemUseOutOfBattle_CrystalFlute,
         .flingPower = 30,
     },

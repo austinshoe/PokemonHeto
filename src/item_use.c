@@ -972,8 +972,10 @@ static void Task_UsedCrystalFlute(u8 taskId)
 {
     if(++gTasks[taskId].data[8] > 7)
     {
+        Overworld_ResetStateAfterDigEscRope();
         PlaySE(SE_GLASS_FLUTE);
         DisplayItemMessage(taskId, FONT_NORMAL, gStringVar4, CloseItemMessage);
+        DestroyTask(taskId);
     }
 }
 
@@ -981,6 +983,9 @@ void ItemUseOutOfBattle_CrystalFlute(u8 taskId)
 {
     if (gMapHeader.regionMapSectionId == MAPSEC_ROUTE_101)
     {
+        gFieldCallback = FieldCB_UseItemOnField;
+        gBagMenu->newScreenCallback = CB2_ReturnToField;
+        Task_FadeAndCloseBagMenu(taskId);
         CopyItemName(gSpecialVar_ItemId, gStringVar2);
         VarSet(VAR_TEMP_0, 0);
         StringExpandPlaceholders(gStringVar4, gText_PlayerUsedVar2);
