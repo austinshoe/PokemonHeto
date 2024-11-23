@@ -646,7 +646,7 @@ $(MID_SUBDIR)/mus_route_normal.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V120
 
 $(MID_SUBDIR)/mus_frostvale_tundra.s: %.s: %.mid
-	$(MID) $< $@ -E -R75 -G191 -V120
+	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V120
 
 $(MID_SUBDIR)/ph_choice_blend.s: %.s: %.mid
 	$(MID) $< $@ -E -G130 -P4
@@ -1277,6 +1277,3 @@ $(MID_SUBDIR)/se_m_leer.s: %.s: %.mid
 
 $(MID_SUBDIR)/se_dex_search.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G127 -v100 -P5
-
-$(MID_SUBDIR)/mus_kasaan_speakeasy.s: %.s: %.mid
-	$(MID) $< $@ -E -R70 -G191 -v120 -P5
