@@ -2,7 +2,7 @@
   "id": "MAP_FROSTVALE_TUNDRA2",
   "name": "FrostvaleTundra2",
   "layout": "LAYOUT_FROSTVALE_TUNDRA2",
-  "music": "MUS_ABANDONED_SHIP",
+  "music": "MUS_FROSTVALE_TUNDRA",
   "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_SNOW",
