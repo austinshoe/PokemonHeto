@@ -280,6 +280,7 @@ FluoritesEye_Activate_Crystals:
 	setmetatile 8, 25, METATILE_FluoritesEye_Fluorite_Right_Right_2, TRUE
 	setmetatile 16, 26, METATILE_FluoritesEye_Fluorite_Right_Right_2, TRUE
 	setmetatile 15, 27, METATILE_FluoritesEye_Fluorite_Right_Right_2, TRUE
+	setmetatile 36, 14, METATILE_FluoritesEye_Fluorite_Right_Right_2, TRUE
 	return
 
 Text_FluoritesEye_PlayerActivate_Crystals:
