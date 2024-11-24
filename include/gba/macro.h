@@ -60,7 +60,7 @@
     dmaRegs[0] = (vu32)(src);                     \
     dmaRegs[1] = (vu32)(dest);                    \
     dmaRegs[2] = (vu32)(control);                 \
-    dmaRegs[2];   
+    dmaRegs[2];                                   \
 }
 
 #if MODERN
