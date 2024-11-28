@@ -851,7 +851,7 @@ static const struct TrainerMon sParty_Ricky5[] = {
     {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     .lvl = 17,
-    .species = SPECIES_RYHORN,
+    .species = SPECIES_RHYHORN,
     },
     {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
