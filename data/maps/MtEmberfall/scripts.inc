@@ -232,3 +232,34 @@ MtEmberfall_Grunt1_Skedaddle:
     face_down
     step_end
 
+Script_MtEmberfall4Op1::
+    lock
+    faceplayer
+    trainerbattle_single TRAINER_RICKY_5, Text_MtEmberfall4Op1Intro, Text_MtEmberfall4Op1Defeat
+    msgbox Text_MtEmberfall4Op1PostBattle, MSGBOX_AUTOCLOSE
+    end
+
+Text_MtEmberfall4Op1Intro:
+    .string ""
+    
+Text_MtEmberfall4Op1Defeat:
+    .string ""
+
+Text_MtEmberfall4Op1PostBattle:
+    .string ""
+
+Script_MtEmberfall4Op2::
+    lock
+    faceplayer
+    trainerbattle_single TRAINER_RANDALL, Text_MtEmberfall4Op2Intro, Text_MtEmberfall4Op2Defeat
+    msgbox Text_MtEmberfall4Op2PostBattle, MSGBOX_AUTOCLOSE
+    end
+
+Text_MtEmberfall4Op2Intro:
+    .string ""
+    
+Text_MtEmberfall4Op2Defeat:
+    .string ""
+
+Text_MtEmberfall4Op2PostBattle:
+    .string ""

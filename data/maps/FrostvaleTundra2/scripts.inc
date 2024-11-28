@@ -29,3 +29,37 @@ Text_FrostvaleTundraWoman2:
     .string "You should leave.\p"
     .string "Why do I live here?\l"
     .string "So I can warn other people not to.$"
+
+Script_FrostvaleTundra2Op1::
+    lock
+    faceplayer
+    trainerbattle_single TRAINER_AUSTINA, Text_FrostvaleTundra2Op1Intro, Text_FrostvaleTundra2Op1Defeat
+    msgbox Text_FrostvaleTundra2Op1PostBattle, MSGBOX_AUTOCLOSE
+    end
+
+Text_FrostvaleTundra2Op1Intro:
+    .string "Your pokémon.\n"
+    .string "Show them to me!$"
+    
+Text_FrostvaleTundra2Op1Defeat:
+    .string "You may have won this one,\n"
+    .string "but I'll be back to take what's mine.$"
+
+Text_FrostvaleTundra2Op1PostBattle:
+    .string "I must be going now.$"
+
+Script_FrostvaleTundra2Op2::
+    lock
+    faceplayer
+    trainerbattle_single TRAINER_GWEN, Text_FrostvaleTundra2Op2Intro, Text_FrostvaleTundra2Op2Defeat
+    msgbox Text_FrostvaleTundra2Op2PostBattle, MSGBOX_AUTOCLOSE
+    end
+
+Text_FrostvaleTundra2Op2Intro:
+    .string "Fine. I guess I'll battle you$"
+    
+Text_FrostvaleTundra2Op2Defeat:
+    .string "Oh no I lost.$"
+
+Text_FrostvaleTundra2Op2PostBattle:
+    .string "Imma go sleep now.$"

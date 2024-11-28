@@ -172,3 +172,59 @@ Frostvale_Movement_RivalSkedaddle:
     walk_fast_down
     walk_fast_down
     step_end
+
+Script_FrostvaleTundraOp1::
+    lock
+    faceplayer
+    trainerbattle_single TRAINER_ROSE_1, Text_FrostvaleTundraOp1Intro, Text_FrostvaleTundraOp1Defeat
+    msgbox Text_FrostvaleTundraOp1PostBattle, MSGBOX_AUTOCLOSE
+    end
+
+Text_FrostvaleTundraOp1Intro:
+    .string "Yawn...\n"
+    .string "Make this battle quick.\n"
+    .string "I wanna sleep.$"
+    
+Text_FrostvaleTundraOp1Defeat:
+    .string "Congrats, you beat me.\n"
+    .string "I'm happy for y...zzz$"
+
+Text_FrostvaleTundraOp1PostBattle:
+    .string "You're still here?\n"
+    .string "Go away.$"
+    
+Script_FrostvaleTundraOp2::
+    lock
+    faceplayer
+    trainerbattle_single TRAINER_FELIX, Text_FrostvaleTundraOp2Intro, Text_FrostvaleTundraOp2Defeat
+    msgbox Text_FrostvaleTundraOp2PostBattle, MSGBOX_AUTOCLOSE
+    end
+
+Text_FrostvaleTundraOp2Intro:
+    .string "I may be new, but I'm strong!\n"
+    .string "NOW FEEL MY WRATH!$"
+    
+Text_FrostvaleTundraOp2Defeat:
+    .string "Maybe I'm just new...$"
+
+Text_FrostvaleTundraOp2PostBattle:
+    .string "Challenge me again sometime!\n"
+    .string "I'm always itching to get stronger.$"
+    
+Script_FrostvaleTundraOp3::
+    lock
+    faceplayer
+    trainerbattle_single TRAINER_VIOLET, Text_FrostvaleTundraOp3Intro, Text_FrostvaleTundraOp3Defeat
+    msgbox Text_FrostvaleTundraOp3PostBattle, MSGBOX_AUTOCLOSE
+    end
+
+Text_FrostvaleTundraOp3Intro:
+    .string "I may be new, but I'm strong!\n"
+    .string "NOW FEEL MY WRATH!$"
+    
+Text_FrostvaleTundraOp3Defeat:
+    .string "Maybe I'm just new...$"
+
+Text_FrostvaleTundraOp3PostBattle:
+    .string "Challenge me again sometime!\n"
+    .string "I'm always itching to get stronger.$"

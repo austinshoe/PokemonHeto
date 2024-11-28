@@ -55,3 +55,51 @@ Script_MtEmberfallFallExteriorWoman2::
 Text_MtEmberfallFallExteriorWoman2:
     .string "Look at these flowers.\n"
     .string "They are both blue and purple!$"
+
+Script_YellowFallMapOp5::
+    lock
+    faceplayer
+    trainerbattle_single TRAINER_RICKY_2, Text_YellowFallMapOp5Intro, Text_YellowFallMapOp5Defeat
+    msgbox Text_YellowFallMapOp5PostBattle, MSGBOX_AUTOCLOSE
+    end
+
+Text_YellowFallMapOp5Intro:
+    .string ""
+    
+Text_YellowFallMapOp5Defeat:
+    .string ""
+
+Text_YellowFallMapOp5PostBattle:
+    .string ""
+
+Script_YellowFallMapOp6::
+    lock
+    faceplayer
+    trainerbattle_single TRAINER_RICKY_3, Text_YellowFallMapOp6Intro, Text_YellowFallMapOp6Defeat
+    msgbox Text_YellowFallMapOp6PostBattle, MSGBOX_AUTOCLOSE
+    end
+
+Text_YellowFallMapOp6Intro:
+    .string ""
+    
+Text_YellowFallMapOp6Defeat:
+    .string ""
+
+Text_YellowFallMapOp6PostBattle:
+    .string ""
+
+Script_YellowFallMapOp7::
+    lock
+    faceplayer
+    trainerbattle_single TRAINER_RICKY_4, Text_YellowFallMapOp7Intro, Text_YellowFallMapOp7Defeat
+    msgbox Text_YellowFallMapOp7PostBattle, MSGBOX_AUTOCLOSE
+    end
+
+Text_YellowFallMapOp7Intro:
+    .string ""
+    
+Text_YellowFallMapOp7Defeat:
+    .string ""
+
+Text_YellowFallMapOp7PostBattle:
+    .string ""

@@ -155,3 +155,58 @@ RAKMovementSkedaddlydoo:
     walk_down
     walk_down
     step_end
+
+Script_RouteafterkassanOp1::
+    lock
+    faceplayer
+    trainerbattle_single TRAINER_LOLA_2, Text_RouteafterkassanOp1Intro, Text_RouteafterkassanOp1Defeat
+    msgbox Text_RouteafterkassanOp1PostBattle, MSGBOX_AUTOCLOSE
+    end
+
+Text_RouteafterkassanOp1Intro:
+    .string "Good job.\n"
+    .string "You made it through Kassan.\l"
+    .string "Now you have to make it through me!$"
+    
+Text_RouteafterkassanOp1Defeat:
+    .string "I didn't lose.\n"
+    .string "I merely failed to win.$"
+
+Text_RouteafterkassanOp1PostBattle:
+    .string "I just realized that what I said\n"
+    .string "was a bit <word that means happy>$"
+
+Script_RouteafterkassanOp2::
+    lock
+    faceplayer
+    trainerbattle_single TRAINER_LOLA_3, Text_RouteafterkassanOp2Intro, Text_RouteafterkassanOp2Defeat
+    msgbox Text_RouteafterkassanOp2PostBattle, MSGBOX_AUTOCLOSE
+    end
+
+Text_RouteafterkassanOp2Intro:
+    .string "Check out my balls!$"
+    
+Text_RouteafterkassanOp2Defeat:
+    .string "Dang, it appears your balls were\n"
+    .string "more powerful.$"
+
+Text_RouteafterkassanOp2PostBattle:
+    .string "I hope to witness your balls\n"
+    .string "another time.$"
+
+Script_RouteafterkassanOp3::
+    lock
+    faceplayer
+    trainerbattle_single TRAINER_LOLA_4, Text_RouteafterkassanOp3Intro, Text_RouteafterkassanOp3Defeat
+    msgbox Text_RouteafterkassanOp3PostBattle, MSGBOX_AUTOCLOSE
+    end
+
+Text_RouteafterkassanOp3Intro:
+    .string "You are about to meet your maker$"
+    
+Text_RouteafterkassanOp3Defeat:
+    .string "You're lucky I left my Charizard\n"
+    .string "at home.$"
+
+Text_RouteafterkassanOp3PostBattle:
+    .string "If beans were brown, we'd die$"
