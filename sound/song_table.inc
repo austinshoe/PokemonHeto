@@ -618,6 +618,12 @@ gSongTable::
 	song mus_frostvale_tundra, 0, 0
 	song mus_everbloom_city, 0, 0
 	song mus_autumn_plains, 0, 0
+	song mus_coral_shore_city, 0, 0
+	song mus_mt_emberfall, 0, 0
+	song mus_kushinada_town, 0, 0
+	song mus_fall_grove_town, 0, 0
+	song mus_onsen_city, 0, 0
+	song mus_hallowspark_city, 0, 0
 
 	.align 2
 dummy_song_header:

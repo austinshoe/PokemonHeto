@@ -552,6 +552,13 @@
 #define MUS_FROSTVALE_TUNDRA        614
 #define MUS_EVERBLOOM_CITY          615
 #define MUS_AUTUMN_PLAINS           616
+#define MUS_CORAL_SHORE_CITY        617
+#define MUS_MT_EMBERFALL            618
+#define MUS_KUSHINADA_TOWN          619
+#define MUS_FALL_GROVE_TOWN         620
+#define MUS_ONSEN_CITY              621
+#define MUS_HALLOSPARK_CITY         622
+
 
 #define MUS_ROUTE118                0x7FFF  // Map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().
 
