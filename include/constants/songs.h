@@ -550,6 +550,8 @@
 #define MUS_LUMINA_TOWN             612
 #define MUS_ROUTE_NORMAL            613
 #define MUS_FROSTVALE_TUNDRA        614
+#define MUS_EVERBLOOM_CITY          615
+#define MUS_AUTUMN_PLAINS           616
 
 #define MUS_ROUTE118                0x7FFF  // Map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().
 

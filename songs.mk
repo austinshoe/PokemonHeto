@@ -648,6 +648,12 @@ $(MID_SUBDIR)/mus_route_normal.s: %.s: %.mid
 $(MID_SUBDIR)/mus_frostvale_tundra.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V120
 
+$(MID_SUBDIR)/mus_everbloom_city.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V120
+
+$(MID_SUBDIR)/mus_autumn_plains.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V120
+
 $(MID_SUBDIR)/ph_choice_blend.s: %.s: %.mid
 	$(MID) $< $@ -E -G130 -P4
 

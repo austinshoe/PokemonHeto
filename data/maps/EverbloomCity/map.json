@@ -2,7 +2,7 @@
   "id": "MAP_EVERBLOOM_CITY",
   "name": "EverbloomCity",
   "layout": "LAYOUT_EVERBLOOM_CITY",
-  "music": "MUS_ABANDONED_SHIP",
+  "music": "MUS_EVERBLOOM_CITY",
   "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

@@ -616,6 +616,8 @@ gSongTable::
 	song mus_lumina_town, 0, 0
 	song mus_route_normal, 0, 0
 	song mus_frostvale_tundra, 0, 0
+	song mus_everbloom_city, 0, 0
+	song mus_autumn_plains, 0, 0
 
 	.align 2
 dummy_song_header:
