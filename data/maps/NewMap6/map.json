@@ -2,7 +2,7 @@
   "id": "MAP_NEW_MAP6",
   "name": "NewMap6",
   "layout": "LAYOUT_NEW_MAP6",
-  "music": "MUS_ABANDONED_SHIP",
+  "music": "MUS_AUTUMN_PLAINS",
   "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

@@ -2,7 +2,7 @@
   "id": "MAP_ROUTEAFTERKASAAN",
   "name": "Routeafterkasaan",
   "layout": "LAYOUT_ROUTEAFTERKASAAN",
-  "music": "MUS_ABANDONED_SHIP",
+  "music": "MUS_FROSTVALE_TUNDRA",
   "region_map_section": "MUS_FROSTVALE_TUNDRA",
   "requires_flash": false,
   "weather": "WEATHER_SNOW",

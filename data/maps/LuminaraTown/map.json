@@ -2,7 +2,7 @@
   "id": "MAP_LUMINARA_TOWN",
   "name": "LuminaraTown",
   "layout": "LAYOUT_LUMINARA_TOWN",
-  "music": "MUS_ABANDONED_SHIP",
+  "music": "MUS_KUSHINADA_TOWN",
   "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_SHADE",
