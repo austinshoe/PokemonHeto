@@ -655,19 +655,19 @@ $(MID_SUBDIR)/mus_autumn_plains.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V120
 
 $(MID_SUBDIR)/mus_coral_shore_city.s: %.s: %.mid
-	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V120
+	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V110
 
 $(MID_SUBDIR)/mus_mt_emberfall.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V120
 
 $(MID_SUBDIR)/mus_kushinada_town.s: %.s: %.mid
-	$(MID) $< $@ -E -R75 -G191 -V120
+	$(MID) $< $@ -E -R75 -G191 -V112
 
 $(MID_SUBDIR)/mus_fall_grove_town.s: %.s: %.mid
-	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V120
+	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V100
 
 $(MID_SUBDIR)/mus_onsen_city.s: %.s: %.mid
-	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V120
+	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V112
 
 $(MID_SUBDIR)/mus_hallowspark_city.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V120
