@@ -60,3 +60,51 @@ Text_Everbloom_GymSecretPath:
 
 Text_Everbloom_GymPAYes:
     .string "Honestly, who wouldn't?$"
+
+Script_EverbloomGymOp1::
+    lock
+    faceplayer
+    trainerbattle_single FLAG, Text_EverbloomGymOp1Intro, Text_EverbloomGymOp1Defeat
+    msgbox Text_EverbloomGymOp1PostBattle, MSGBOX_AUTOCLOSE
+    end
+
+Text_EverbloomGymOp1Intro:
+    .string "$"
+    
+Text_EverbloomGymOp1Defeat:
+    .string "$"
+
+Text_EverbloomGymOp1PostBattle:
+    .string "$"
+
+Script_EverbloomGymOp2::
+    lock
+    faceplayer
+    trainerbattle_single FLAG, Text_EverbloomGymOp2Intro, Text_EverbloomGymOp2Defeat
+    msgbox Text_EverbloomGymOp2PostBattle, MSGBOX_AUTOCLOSE
+    end
+
+Text_EverbloomGymOp2Intro:
+    .string "$"
+    
+Text_EverbloomGymOp2Defeat:
+    .string "$"
+
+Text_EverbloomGymOp2PostBattle:
+    .string "$"
+
+Script_EverbloomGymOp3::
+    lock
+    faceplayer
+    trainerbattle_single FLAG, Text_EverbloomGymOp3Intro, Text_EverbloomGymOp3Defeat
+    msgbox Text_EverbloomGymOp3PostBattle, MSGBOX_AUTOCLOSE
+    end
+
+Text_EverbloomGymOp3Intro:
+    .string "$"
+    
+Text_EverbloomGymOp3Defeat:
+    .string "$"
+
+Text_EverbloomGymOp3PostBattle:
+    .string "$"
