@@ -3323,7 +3323,6 @@ static const struct TrainerMon sParty_Roxanne1[] = {
     .lvl = 15,
     .species = SPECIES_GLOOM,
     }
-    }
 };
 
 static const struct TrainerMon sParty_Brawly1[] = {

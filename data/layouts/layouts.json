@@ -5913,7 +5913,7 @@
       "border_width": 2,
       "border_height": 2,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Dewford",
+      "secondary_tileset": "gTileset_azuretide",
       "border_filepath": "data/layouts/NewMap11/border.bin",
       "blockdata_filepath": "data/layouts/NewMap11/map.bin"
     },
@@ -5985,7 +5985,7 @@
       "border_width": 2,
       "border_height": 2,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Dewford",
+      "secondary_tileset": "gTileset_azuretide",
       "border_filepath": "data/layouts/AzureTideway2/border.bin",
       "blockdata_filepath": "data/layouts/AzureTideway2/map.bin"
     },
@@ -6837,7 +6837,7 @@
       "border_width": 2,
       "border_height": 2,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Dewford",
+      "secondary_tileset": "gTileset_Petalburg",
       "border_filepath": "data/layouts/EigthCup/border.bin",
       "blockdata_filepath": "data/layouts/EigthCup/map.bin"
     },

@@ -1100,3 +1100,14 @@ const struct Tileset gTileset_FluoritesEye2 =
     .metatileAttributes = gMetatileAttributes_FluoritesEye2,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_azuretide =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_azuretide,
+    .palettes = gTilesetPalettes_azuretide,
+    .metatiles = gMetatiles_azuretide,
+    .metatileAttributes = gMetatileAttributes_azuretide,
+    .callback = NULL,
+};

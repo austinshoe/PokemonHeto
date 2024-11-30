@@ -282,3 +282,6 @@ const u16 gMetatileAttributes_FluoritesEye[] = INCBIN_U16("data/tilesets/primary
 
 const u16 gMetatiles_FluoritesEye2[] = INCBIN_U16("data/tilesets/secondary/fluorites_eye_2/metatiles.bin");
 const u16 gMetatileAttributes_FluoritesEye2[] = INCBIN_U16("data/tilesets/secondary/fluorites_eye_2/metatile_attributes.bin");
+
+const u16 gMetatiles_azuretide[] = INCBIN_U16("data/tilesets/secondary/azuretide/metatiles.bin");
+const u16 gMetatileAttributes_azuretide[] = INCBIN_U16("data/tilesets/secondary/azuretide/metatile_attributes.bin");

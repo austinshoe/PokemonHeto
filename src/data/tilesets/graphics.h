@@ -2109,3 +2109,22 @@ const u16 gTilesetPalettes_FluoritesEye2[][16] =
 };
 
 const u32 gTilesetTiles_FluoritesEye2[] = INCBIN_U32("data/tilesets/secondary/fluorites_eye_2/tiles.4bpp.lz");
+
+const u16 gTilesetPalettes_azuretide[][16] =
+{
+    INCBIN_U16("data/tilesets/secondary/azuretide/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/azuretide/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/azuretide/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/azuretide/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/azuretide/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/azuretide/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/azuretide/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/azuretide/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/azuretide/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/azuretide/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/azuretide/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/azuretide/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/secondary/azuretide/palettes/12.gbapal"),
+};
+
+const u32 gTilesetTiles_azuretide[] = INCBIN_U32("data/tilesets/secondary/azuretide/tiles.4bpp.lz");
