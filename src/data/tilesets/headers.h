@@ -1111,3 +1111,14 @@ const struct Tileset gTileset_azuretide =
     .metatileAttributes = gMetatileAttributes_azuretide,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_PearlTown =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_PearlTown,
+    .palettes = gTilesetPalettes_PearlTown,
+    .metatiles = gMetatiles_PearlTown,
+    .metatileAttributes = gMetatileAttributes_PearlTown,
+    .callback = NULL,
+};

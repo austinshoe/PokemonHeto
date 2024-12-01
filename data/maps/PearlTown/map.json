@@ -48,7 +48,7 @@
     },
     {
       "graphics_id": "OBJ_EVENT_GFX_BRENDAN_NORMAL",
-      "x": 34,
+      "x": 32,
       "y": 21,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_UP",
@@ -101,7 +101,7 @@
   ],
   "warp_events": [
     {
-      "x": 34,
+      "x": 32,
       "y": 18,
       "elevation": 0,
       "dest_map": "MAP_PEARL_TOWN_PROFESSOR_PINES_LAB",
@@ -234,7 +234,7 @@
     },
     {
       "type": "sign",
-      "x": 16,
+      "x": 15,
       "y": 26,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
@@ -242,7 +242,7 @@
     },
     {
       "type": "sign",
-      "x": 21,
+      "x": 20,
       "y": 18,
       "elevation": 0,
       "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",

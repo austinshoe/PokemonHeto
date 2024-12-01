@@ -5301,7 +5301,7 @@
       "border_width": 2,
       "border_height": 2,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Petalburg",
+      "secondary_tileset": "gTileset_PearlTown",
       "border_filepath": "data/layouts/PearlTown/border.bin",
       "blockdata_filepath": "data/layouts/PearlTown/map.bin"
     },
@@ -5313,7 +5313,7 @@
       "border_width": 2,
       "border_height": 2,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Petalburg",
+      "secondary_tileset": "gTileset_PearlTown",
       "border_filepath": "data/layouts/LuminaTown/border.bin",
       "blockdata_filepath": "data/layouts/LuminaTown/map.bin"
     },
@@ -6285,7 +6285,7 @@
       "border_width": 2,
       "border_height": 2,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Dewford",
+      "secondary_tileset": "gTileset_azuretide",
       "border_filepath": "data/layouts/PreTritonBay/border.bin",
       "blockdata_filepath": "data/layouts/PreTritonBay/map.bin"
     },
@@ -6297,7 +6297,7 @@
       "border_width": 2,
       "border_height": 2,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Dewford",
+      "secondary_tileset": "gTileset_azuretide",
       "border_filepath": "data/layouts/TritonBay/border.bin",
       "blockdata_filepath": "data/layouts/TritonBay/map.bin"
     },
