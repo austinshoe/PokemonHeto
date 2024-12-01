@@ -6009,7 +6009,7 @@
       "border_width": 2,
       "border_height": 2,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Dewford",
+      "secondary_tileset": "gTileset_azuretide",
       "border_filepath": "data/layouts/NeptunesDrift/border.bin",
       "blockdata_filepath": "data/layouts/NeptunesDrift/map.bin"
     },
