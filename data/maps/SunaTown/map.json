@@ -17,6 +17,11 @@
       "map": "MAP_HETONIAN_DESERT",
       "offset": -9,
       "direction": "up"
+    },
+    {
+      "map": "MAP_HETONIAN_DESERT_PT2",
+      "offset": 0,
+      "direction": "down"
     }
   ],
   "object_events": [

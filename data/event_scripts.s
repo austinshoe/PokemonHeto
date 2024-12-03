@@ -1357,3 +1357,5 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/EverbloomGym2/scripts.inc"
 
 	.include "data/maps/FluoritesEye/scripts.inc"
+
+	.include "data/maps/HetonianDesertPt2/scripts.inc"

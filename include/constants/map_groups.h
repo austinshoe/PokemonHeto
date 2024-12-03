@@ -105,6 +105,7 @@
 #define MAP_POKEMON_LEAGUE      (96 | (0 << 8))
 #define MAP_FOUROF_SWORDS       (97 | (0 << 8))
 #define MAP_NEW_MAP15           (98 | (0 << 8))
+#define MAP_HETONIAN_DESERT_PT2 (99 | (0 << 8))
 
 // gMapGroup_IndoorLittleroot
 #define MAP_LITTLEROOT_TOWN_BRENDANS_HOUSE_1F    (0 | (1 << 8))

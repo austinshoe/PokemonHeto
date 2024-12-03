@@ -7068,6 +7068,18 @@
       "secondary_tileset": "gTileset_FluoritesEye2",
       "border_filepath": "data/layouts/FluoritesEye/border.bin",
       "blockdata_filepath": "data/layouts/FluoritesEye/map.bin"
+    },
+    {
+      "id": "LAYOUT_HETONIAN_DESERT_PT2",
+      "name": "HetonianDesertPt2_Layout",
+      "width": 50,
+      "height": 90,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Cacti",
+      "secondary_tileset": "gTileset_cacti2",
+      "border_filepath": "data/layouts/HetonianDesertPt2/border.bin",
+      "blockdata_filepath": "data/layouts/HetonianDesertPt2/map.bin"
     }
   ]
 }
