@@ -28,7 +28,20 @@
 
   ],
   "warp_events": [
-
+    {
+      "x": 27,
+      "y": 88,
+      "elevation": 0,
+      "dest_map": "MAP_RUINVEIL_DESERT_CONNECTION",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 26,
+      "y": 88,
+      "elevation": 0,
+      "dest_map": "MAP_RUINVEIL_DESERT_CONNECTION",
+      "dest_warp_id": "1"
+    }
   ],
   "coord_events": [
 
