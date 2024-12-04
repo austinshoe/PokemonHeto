@@ -14,8 +14,8 @@
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "map": "MAP_HETONIAN_DESERT_PT2",
-      "offset": 12,
+      "map": "MAP_RUINVEIL_DESERT_CONNECTION",
+      "offset": 28,
       "direction": "up"
     }
   ],

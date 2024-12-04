@@ -1,7 +1,7 @@
 {
-  "id": "MAP_HETONIAN_DESERT_PT2",
-  "name": "HetonianDesertPt2",
-  "layout": "LAYOUT_HETONIAN_DESERT_PT2",
+  "id": "MAP_RUINVEIL_DESERT_CONNECTION",
+  "name": "RuinveilDesertConnection",
+  "layout": "LAYOUT_RUINVEIL_DESERT_CONNECTION",
   "music": "MUS_ABANDONED_SHIP",
   "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
   "requires_flash": false,
@@ -10,18 +10,18 @@
   "allow_cycling": true,
   "allow_escaping": false,
   "allow_running": true,
-  "show_map_name": true,
+  "show_map_name": false,
   "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
   "connections": [
     {
-      "map": "MAP_SUNA_TOWN",
-      "offset": 0,
-      "direction": "up"
+      "map": "MAP_RUINVEIL_CITY",
+      "offset": -28,
+      "direction": "down"
     },
     {
-      "map": "MAP_RUINVEIL_DESERT_CONNECTION",
-      "offset": 17,
-      "direction": "down"
+      "map": "MAP_HETONIAN_DESERT_PT2",
+      "offset": -17,
+      "direction": "up"
     }
   ],
   "object_events": [

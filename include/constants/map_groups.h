@@ -717,13 +717,14 @@
 #define MAP_SUNA_HOUSE2       (4 | (42 << 8))
 
 // gMapGroup_IndoorRuinveil
-#define MAP_RUINVEIL_CENTER (0 | (43 << 8))
-#define MAP_RUINVEIL_MART   (1 | (43 << 8))
-#define MAP_RUINVEIL_HOUSE1 (2 | (43 << 8))
-#define MAP_RUINVEIL_HOUSE2 (3 | (43 << 8))
-#define MAP_RUINVEIL_HOUSE3 (4 | (43 << 8))
-#define MAP_RUINVEIL_HOUSE4 (5 | (43 << 8))
-#define MAP_FLUORITES_EYE   (6 | (43 << 8))
+#define MAP_RUINVEIL_CENTER            (0 | (43 << 8))
+#define MAP_RUINVEIL_MART              (1 | (43 << 8))
+#define MAP_RUINVEIL_HOUSE1            (2 | (43 << 8))
+#define MAP_RUINVEIL_HOUSE2            (3 | (43 << 8))
+#define MAP_RUINVEIL_HOUSE3            (4 | (43 << 8))
+#define MAP_RUINVEIL_HOUSE4            (5 | (43 << 8))
+#define MAP_FLUORITES_EYE              (6 | (43 << 8))
+#define MAP_RUINVEIL_DESERT_CONNECTION (7 | (43 << 8))
 
 // gMapGroup_IndoorKushinada
 #define MAP_KUSHINADA_CENTER (0 | (44 << 8))
