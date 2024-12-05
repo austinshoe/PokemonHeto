@@ -18,8 +18,37 @@ OnsenGym_StepTrigger::
 	lock
 	message Text_OnsenGym_LavaHiss
 	waitmessage
-	compare VAR_UNUSED_0x4083, VAR_UNUSED_0x408B
+	compare VAR_UNUSED_0x408B, 0
+	goto_if_eq OnsenGym_StepCompare0
+	compare VAR_UNUSED_0x408B, 1
+	goto_if_eq OnsenGym_StepCompare1
+	compare VAR_UNUSED_0x408B, 2
+	goto_if_eq OnsenGym_StepCompare2
+	compare VAR_UNUSED_0x408B, 3
+	goto_if_eq OnsenGym_StepCompare3
+	goto OnsenGym_StepTrigger2
+
+OnsenGym_StepCompare0:
+	compare VAR_UNUSED_0x4083, 7
 	goto_if_eq OnsenGym_WashBack
+	goto OnsenGym_StepTrigger2
+
+OnsenGym_StepCompare1:
+	compare VAR_UNUSED_0x4083, 11
+	goto_if_eq OnsenGym_WashBack
+	goto OnsenGym_StepTrigger2
+
+OnsenGym_StepCompare2:
+	compare VAR_UNUSED_0x4083, 15
+	goto_if_eq OnsenGym_WashBack
+	goto OnsenGym_StepTrigger2
+
+OnsenGym_StepCompare0:
+	compare VAR_UNUSED_0x4083, 18
+	goto_if_eq OnsenGym_WashBack
+	goto OnsenGym_StepTrigger2
+
+OnsenGym_StepTrigger2:
 	addvar VAR_UNUSED_0x4083, 1
 	release
 	end
@@ -46,6 +75,5 @@ Text_OnsenGym_LavaHiss:
 	.string "$"
 
 Text_OnsenGym_LavaWashBack:
-	.string "The rising lava forced\n"
-	.string "{PLAYER} to go back\l"
-	.string "on land!$"
+	.string "The rising lava forced {PLAYER}\n"
+	.string "to go back on land!$"
