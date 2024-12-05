@@ -161,5 +161,7 @@ bool8 MetatileBehavior_IsSidewaysStairsLeftSideAny(u8 metatileBehavior);
 bool8 MetatileBehavior_IsNonAnimDoorLeft(u8);
 bool8 MetatileBehavior_IsNonAnimDoorRight(u8);
 bool8 MetatileBehavior_IsSandGrass(u8);
+//test omnidirectional jump
+bool8 MetatileBehavior_IsOmnidirectionalJump(u8 metatileBehavior);
 
 #endif // GUARD_METATILE_BEHAVIOR_H

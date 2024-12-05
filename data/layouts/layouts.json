@@ -7092,6 +7092,18 @@
       "secondary_tileset": "gTileset_ruinveil2",
       "border_filepath": "data/layouts/RuinveilDesertConnection/border.bin",
       "blockdata_filepath": "data/layouts/RuinveilDesertConnection/map.bin"
+    },
+    {
+      "id": "LAYOUT_ONSEN_GYM_1F",
+      "name": "OnsenGym_1F_Layout",
+      "width": 30,
+      "height": 30,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_volcano1",
+      "secondary_tileset": "gTileset_volcano_2",
+      "border_filepath": "data/layouts/OnsenGym_1F/border.bin",
+      "blockdata_filepath": "data/layouts/OnsenGym_1F/map.bin"
     }
   ]
 }

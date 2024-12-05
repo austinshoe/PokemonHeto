@@ -694,6 +694,7 @@
 #define MAP_ONSEN_HOUSE2       (4 | (40 << 8))
 #define MAP_ONSEN_GLASS_MASTER (5 | (40 << 8))
 #define MAP_ONSEN_HOUSE3       (6 | (40 << 8))
+#define MAP_ONSEN_GYM_1F       (7 | (40 << 8))
 
 // gMapGroup_IndoorHallowSpark
 #define MAP_HALLOW_SPARK_CENTER    (0 | (41 << 8))

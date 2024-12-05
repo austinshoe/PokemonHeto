@@ -1510,4 +1510,11 @@ bool8 MetatileBehavior_IsSandGrass(u8 metatileBehavior)
     else
         return FALSE;
 }
-
+//test omnidirectional jump
+bool8 MetatileBehavior_IsOmnidirectionalJump(u8 metatileBehavior)
+{
+    if (metatileBehavior == MB_UNUSED_59)
+        return TRUE;
+    else
+        return FALSE;
+}

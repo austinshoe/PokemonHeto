@@ -1361,3 +1361,5 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/HetonianDesertPt2/scripts.inc"
 
 	.include "data/maps/RuinveilDesertConnection/scripts.inc"
+
+	.include "data/maps/OnsenGym_1F/scripts.inc"
