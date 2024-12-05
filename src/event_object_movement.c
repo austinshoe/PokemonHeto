@@ -5696,7 +5696,13 @@ static void InitJumpRegular(struct ObjectEvent *objectEvent, struct Sprite *spri
     SetStepAnimHandleAlternation(objectEvent, sprite, GetMoveDirectionAnimNum(objectEvent->facingDirection));
     DoShadowFieldEffect(objectEvent);
 }
-
+/*
+static void InitJumpOmni(struct ObjectEvent *objectEvent, struct Sprite *sprite, u8 direction, u8 distance, u8 type)
+{
+    InitJump(objectEvent, sprite, direction, distance, type);
+    SetStepAnimHandleAlternation(objectEvent, sprite, GetMoveDirectionAnimNum(objectEvent->facingDirection));
+}
+ */
 #define sDistance data[4]
 
 static u8 UpdateJumpAnim(struct ObjectEvent *objectEvent, struct Sprite *sprite, u8 callback(struct Sprite *))

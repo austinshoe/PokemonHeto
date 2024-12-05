@@ -1,5 +1,16 @@
 OnsenCity_MapScripts::
+    map_script ON_TRANSITION, OnsenCity_OnTransition
 	.byte 0
+
+OnsenCity_OnTransition:
+    call_if_unset FLAG_VISITED_MAUVILLE_CITY, Onsen_StepLimit_Set
+    setflag FLAG_VISITED_MAUVILLE_CITY
+    setvar VAR_MAUVILLE_GYM_STATE, 0
+    end
+
+Onsen_StepLimit_Set:
+    setvar VAR_UNUSED_0x408B, 7
+    return
 
 Script_OnsenCitySign::
     lock

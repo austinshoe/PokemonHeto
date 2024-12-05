@@ -5,7 +5,7 @@ Kasaan_MapScripts::
     .byte 0
 
 Kasaan_OnTransition::
-    setflag FLAG_VISITED_LAVARIDGE_TOWN
+    setflag FLAG_VISITED_RUSTBORO_CITY
     call_if_unset FLAG_RECOVERED_DEVON_GOODS, Kasaan_VarZero
     call_if_set FLAG_RECOVERED_DEVON_GOODS, Kasaan_VarTwo
     end

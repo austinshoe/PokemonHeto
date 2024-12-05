@@ -33,7 +33,69 @@
     }
   ],
   "coord_events": [
-
+    {
+      "type": "trigger",
+      "x": 15,
+      "y": 23,
+      "elevation": 0,
+      "var": "VAR_MAUVILLE_GYM_STATE",
+      "var_value": "1",
+      "script": "OnsenGym_StepTrigger"
+    },
+    {
+      "type": "trigger",
+      "x": 15,
+      "y": 21,
+      "elevation": 0,
+      "var": "VAR_MAUVILLE_GYM_STATE",
+      "var_value": "1",
+      "script": "OnsenGym_StepTrigger"
+    },
+    {
+      "type": "trigger",
+      "x": 17,
+      "y": 21,
+      "elevation": 0,
+      "var": "VAR_MAUVILLE_GYM_STATE",
+      "var_value": "1",
+      "script": "OnsenGym_StepTrigger"
+    },
+    {
+      "type": "trigger",
+      "x": 17,
+      "y": 19,
+      "elevation": 0,
+      "var": "VAR_MAUVILLE_GYM_STATE",
+      "var_value": "1",
+      "script": "OnsenGym_StepTrigger"
+    },
+    {
+      "type": "trigger",
+      "x": 19,
+      "y": 19,
+      "elevation": 0,
+      "var": "VAR_MAUVILLE_GYM_STATE",
+      "var_value": "1",
+      "script": "OnsenGym_StepTrigger"
+    },
+    {
+      "type": "trigger",
+      "x": 21,
+      "y": 19,
+      "elevation": 0,
+      "var": "VAR_MAUVILLE_GYM_STATE",
+      "var_value": "1",
+      "script": "OnsenGym_StepTrigger"
+    },
+    {
+      "type": "trigger",
+      "x": 23,
+      "y": 19,
+      "elevation": 0,
+      "var": "VAR_MAUVILLE_GYM_STATE",
+      "var_value": "1",
+      "script": "OnsenGym_StepTrigger"
+    }
   ],
   "bg_events": [
 
