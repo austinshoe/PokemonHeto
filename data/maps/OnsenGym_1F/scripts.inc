@@ -1,5 +1,5 @@
 OnsenGym_1F_MapScripts::
-	map_script ON_FRAME_TABLE, OnsenGym_OnFrame
+	map_script MAP_SCRIPT_ON_FRAME_TABLE, OnsenGym_OnFrame
 	.byte 0
 
 OnsenGym_OnFrame:

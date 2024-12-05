@@ -1,5 +1,5 @@
 OnsenCity_MapScripts::
-    map_script ON_TRANSITION, OnsenCity_OnTransition
+    map_script MAP_SCRIPT_ON_TRANSITION, OnsenCity_OnTransition
 	.byte 0
 
 OnsenCity_OnTransition:
