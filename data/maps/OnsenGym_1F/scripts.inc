@@ -43,7 +43,7 @@ OnsenGym_StepCompare2:
 	goto_if_eq OnsenGym_WashBack
 	goto OnsenGym_StepTrigger2
 
-OnsenGym_StepCompare0:
+OnsenGym_StepCompare3:
 	compare VAR_UNUSED_0x4083, 18
 	goto_if_eq OnsenGym_WashBack
 	goto OnsenGym_StepTrigger2
