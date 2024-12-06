@@ -1,7 +1,17 @@
 OnsenGym_1F_MapScripts::
+	map_script MAP_SCRIPT_ON_LOAD, OnsenGym_OnLoad
 	map_script MAP_SCRIPT_ON_TRANSITION, OnsenGym_OnTransition
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, OnsenGym_OnFrame
 	.byte 0
+
+OnsenGym_OnLoad:
+	compare VAR_MAUVILLE_GYM_STATE, 0
+	goto_if_eq OnsenGym_QueueLavaFall
+	end
+
+OnsenGym_QueueLavaFall:
+	call OnsenGym_AnimFrameHigh
+	end
 
 OnsenGym_OnTransition:
 	setvar VAR_MAUVILLE_GYM_STATE, 0
@@ -74,9 +84,15 @@ OnsenGym_AnimLavaRises:
 	call OnsenGym_AnimFrameLow
 	special DrawWholeMapView
 	delay 8
+	call OnsenGym_AnimFrameMid
+	special DrawWholeMapView
+	delay 8
 	return
  
  OnsenGym_AnimLavaLowers:
+	call OnsenGym_AnimFrameHigh
+	special DrawWholeMapView
+	delay 8
 	call OnsenGym_AnimFrameMid
 	special DrawWholeMapView
 	delay 8
@@ -953,6 +969,321 @@ OnsenGym_AnimFrameMid:
 	setmetatile 24, 8, METATILE_volcano1_BottomRightLava, TRUE
 	setmetatile 10, 14, METATILE_volcano1_BottomRightLava, TRUE
 	setmetatile 25, 16, METATILE_volcano1_BottomRightLava, TRUE
+	setmetatile 6, 15, METATILE_volcano1_Lava, TRUE
+	setmetatile 20, 9, METATILE_volcano1_Lava, TRUE
+	setmetatile 21, 17, METATILE_volcano1_Lava, TRUE
+	setmetatile 11, 15, METATILE_volcano1_Lava, TRUE
+	setmetatile 25, 9, METATILE_volcano1_Lava, TRUE
+	setmetatile 26, 17, METATILE_volcano1_Lava, TRUE
+	setmetatile 9, 16, METATILE_volcano1_LavaJump, TRUE
+	setmetatile 23, 18, METATILE_volcano1_LavaJump, TRUE
+	setmetatile 23, 10, METATILE_volcano1_LavaJump, TRUE
+	setmetatile 22, 19, METATILE_volcano1_LavaJump, TRUE
+	setmetatile 20, 19, METATILE_volcano1_LavaJump, TRUE
+	setmetatile 18, 19, METATILE_volcano1_LavaJump, TRUE
+	setmetatile 16, 21, METATILE_volcano1_LavaJump, TRUE
+	setmetatile 16, 15, METATILE_volcano1_LavaJump, TRUE
+	setmetatile 14, 15, METATILE_volcano1_LavaJump, TRUE
+	setmetatile 12, 17, METATILE_volcano1_LavaJump, TRUE
+	setmetatile 10, 17, METATILE_volcano1_LavaJump, TRUE
+	setmetatile 22, 11, METATILE_volcano1_LavaJump, TRUE
+	setmetatile 20, 11, METATILE_volcano1_LavaJump, TRUE
+	setmetatile 18, 11, METATILE_volcano1_LavaJump, TRUE
+	setmetatile 16, 11, METATILE_volcano1_LavaJump, TRUE
+	setmetatile 14, 11, METATILE_volcano1_LavaJump, TRUE
+	setmetatile 12, 9, METATILE_volcano1_LavaJump, TRUE
+	setmetatile 10, 9, METATILE_volcano1_LavaJump, TRUE
+	setmetatile 8, 9, METATILE_volcano1_LavaJump, TRUE
+	setmetatile 8, 5, METATILE_volcano1_LavaJump, TRUE
+	setmetatile 10, 5, METATILE_volcano1_LavaJump, TRUE
+	setmetatile 15, 23, METATILE_volcano1_Lava, FALSE
+	setmetatile 15, 21, METATILE_volcano1_Lava, FALSE
+	setmetatile 17, 21, METATILE_volcano1_Lava, FALSE
+	setmetatile 17, 19, METATILE_volcano1_Lava, FALSE
+	setmetatile 19, 19, METATILE_volcano1_Lava, FALSE
+	setmetatile 21, 19, METATILE_volcano1_Lava, FALSE
+	setmetatile 23, 19, METATILE_volcano1_Lava, FALSE
+	setmetatile 17, 17, METATILE_volcano1_Lava, FALSE
+	setmetatile 17, 15, METATILE_volcano1_Lava, FALSE
+	setmetatile 15, 15, METATILE_volcano1_Lava, FALSE
+	setmetatile 13, 15, METATILE_volcano1_Lava, FALSE
+	setmetatile 13, 17, METATILE_volcano1_Lava, FALSE
+	setmetatile 11, 17, METATILE_volcano1_Lava, FALSE
+	setmetatile 9, 17, METATILE_volcano1_Lava, FALSE
+	setmetatile 13, 13, METATILE_volcano1_Lava, FALSE
+	setmetatile 13, 11, METATILE_volcano1_Lava, FALSE
+	setmetatile 15, 11, METATILE_volcano1_Lava, FALSE
+	setmetatile 17, 11, METATILE_volcano1_Lava, FALSE
+	setmetatile 19, 11, METATILE_volcano1_Lava, FALSE
+	setmetatile 21, 11, METATILE_volcano1_Lava, FALSE
+	setmetatile 23, 11, METATILE_volcano1_Lava, FALSE
+	setmetatile 13, 9, METATILE_volcano1_Lava, FALSE
+	setmetatile 11, 9, METATILE_volcano1_Lava, FALSE
+	setmetatile 9, 9, METATILE_volcano1_Lava, FALSE
+	setmetatile 7, 9, METATILE_volcano1_Lava, FALSE
+	setmetatile 7, 7, METATILE_volcano1_Lava, FALSE
+	setmetatile 7, 5, METATILE_volcano1_Lava, FALSE
+	setmetatile 9, 5, METATILE_volcano1_Lava, FALSE
+	setmetatile 11, 5, METATILE_volcano1_Lava, FALSE
+	setmetatile 17, 22, METATILE_volcano1_Lava, TRUE
+	setmetatile 19, 20, METATILE_volcano1_Lava, TRUE
+	setmetatile 21, 20, METATILE_volcano1_Lava, TRUE
+	setmetatile 23, 20, METATILE_volcano1_Lava, TRUE
+	setmetatile 15, 16, METATILE_volcano1_Lava, TRUE
+	setmetatile 13, 18, METATILE_volcano1_Lava, TRUE
+	setmetatile 11, 18, METATILE_volcano1_Lava, TRUE
+	setmetatile 9, 18, METATILE_volcano1_Lava, TRUE
+	setmetatile 15, 12, METATILE_volcano1_Lava, TRUE
+	setmetatile 17, 12, METATILE_volcano1_Lava, TRUE
+	setmetatile 19, 12, METATILE_volcano1_Lava, TRUE
+	setmetatile 21, 12, METATILE_volcano1_Lava, TRUE
+	setmetatile 23, 12, METATILE_volcano1_Lava, TRUE
+	setmetatile 11, 10, METATILE_volcano1_Lava, TRUE
+	setmetatile 9, 10, METATILE_volcano1_Lava, TRUE
+	setmetatile 7, 10, METATILE_volcano1_Lava, TRUE
+	setmetatile 9, 6, METATILE_volcano1_Lava, TRUE
+	setmetatile 11, 6, METATILE_volcano1_Lava, TRUE
+	setmetatile 7, 6, METATILE_volcano1_Lava, TRUE
+	setmetatile 7, 8, METATILE_volcano1_Lava, TRUE
+	setmetatile 13, 10, METATILE_volcano1_Lava, TRUE
+	setmetatile 13, 12, METATILE_volcano1_Lava, TRUE
+	setmetatile 13, 14, METATILE_volcano1_Lava, TRUE
+	setmetatile 13, 16, METATILE_volcano1_Lava, TRUE
+	setmetatile 13, 18, METATILE_volcano1_Lava, TRUE
+	setmetatile 17, 16, METATILE_volcano1_Lava, TRUE
+	setmetatile 17, 18, METATILE_volcano1_Lava, TRUE
+	setmetatile 17, 20, METATILE_volcano1_Lava, TRUE
+	setmetatile 15, 22, METATILE_volcano1_Lava, TRUE
+	setmetatile 15, 24, METATILE_volcano1_Lava, TRUE
+	return
+
+OnsenGym_AnimFrameHigh:
+	setmetatile 1, 3, METATILE_volcano1_BottomCovered, TRUE
+	setmetatile 2, 3, METATILE_volcano1_BottomCovered, TRUE
+	setmetatile 3, 3, METATILE_volcano1_BottomCovered, TRUE
+	setmetatile 4, 3, METATILE_volcano1_BottomCovered, TRUE
+	setmetatile 5, 3, METATILE_volcano1_BottomCovered, TRUE
+	setmetatile 6, 3, METATILE_volcano1_BottomCovered, TRUE
+	setmetatile 7, 3, METATILE_volcano1_BottomCovered, TRUE
+	setmetatile 8, 3, METATILE_volcano1_BottomCovered, TRUE
+	setmetatile 9, 3, METATILE_volcano1_BottomCovered, TRUE
+	setmetatile 10, 3, METATILE_volcano1_BottomCovered, TRUE
+	setmetatile 11, 3, METATILE_volcano1_BottomCovered, TRUE
+	setmetatile 12, 3, METATILE_volcano1_BottomCovered, TRUE
+	setmetatile 13, 3, METATILE_volcano1_BottomCovered, TRUE
+	setmetatile 14, 3, METATILE_volcano1_BottomCovered, TRUE
+	setmetatile 15, 3, METATILE_volcano1_BottomCovered, TRUE
+	setmetatile 16, 3, METATILE_volcano1_BottomCovered, TRUE
+	setmetatile 17, 3, METATILE_volcano1_BottomCovered, TRUE
+	setmetatile 18, 3, METATILE_volcano1_BottomCovered, TRUE
+	setmetatile 19, 3, METATILE_volcano1_BottomCovered, TRUE
+	setmetatile 20, 3, METATILE_volcano1_BottomCovered, TRUE
+	setmetatile 21, 3, METATILE_volcano1_BottomCovered, TRUE
+	setmetatile 22, 3, METATILE_volcano1_BottomCovered, TRUE
+	setmetatile 23, 3, METATILE_volcano1_BottomCovered, TRUE
+	setmetatile 24, 3, METATILE_volcano1_BottomCovered, TRUE
+	setmetatile 25, 3, METATILE_volcano1_BottomCovered, TRUE
+	setmetatile 26, 3, METATILE_volcano1_BottomCovered, TRUE
+	setmetatile 27, 3, METATILE_volcano1_BottomCovered, TRUE
+	setmetatile 28, 3, METATILE_volcano1_BottomCovered, TRUE
+	setmetatile 2, 4, METATILE_volcano1_Lava, TRUE
+	setmetatile 3, 4, METATILE_volcano1_Lava, TRUE
+	setmetatile 4, 4, METATILE_volcano1_Lava, TRUE
+	setmetatile 5, 4, METATILE_volcano1_Lava, TRUE
+	setmetatile 6, 4, METATILE_volcano1_Lava, TRUE
+	setmetatile 7, 4, METATILE_volcano1_Lava, TRUE
+	setmetatile 8, 4, METATILE_volcano1_Lava, TRUE
+	setmetatile 9, 4, METATILE_volcano1_Lava, TRUE
+	setmetatile 10, 4, METATILE_volcano1_Lava, TRUE
+	setmetatile 11, 4, METATILE_volcano1_Lava, TRUE
+	setmetatile 12, 4, METATILE_volcano1_Lava, TRUE
+	setmetatile 13, 4, METATILE_volcano1_Lava, TRUE
+	setmetatile 14, 4, METATILE_volcano1_Lava, TRUE
+	setmetatile 15, 4, METATILE_volcano1_Lava, TRUE
+	setmetatile 16, 4, METATILE_volcano1_Lava, TRUE
+	setmetatile 17, 4, METATILE_volcano1_Lava, TRUE
+	setmetatile 18, 4, METATILE_volcano1_Lava, TRUE
+	setmetatile 19, 4, METATILE_volcano1_Lava, TRUE
+	setmetatile 20, 4, METATILE_volcano1_Lava, TRUE
+	setmetatile 21, 4, METATILE_volcano1_Lava, TRUE
+	setmetatile 22, 4, METATILE_volcano1_Lava, TRUE
+	setmetatile 23, 4, METATILE_volcano1_Lava, TRUE
+	setmetatile 24, 4, METATILE_volcano1_Lava, TRUE
+	setmetatile 25, 4, METATILE_volcano1_Lava, TRUE
+	setmetatile 26, 4, METATILE_volcano1_Lava, TRUE
+	setmetatile 27, 4, METATILE_volcano1_Lava, TRUE
+	setmetatile 7, 15, METATILE_volcano1_Lava, TRUE
+	setmetatile 10, 15, METATILE_volcano1_Lava, TRUE
+	setmetatile 21, 9, METATILE_volcano1_Lava, TRUE
+	setmetatile 24, 9, METATILE_volcano1_Lava, TRUE
+	setmetatile 22, 17, METATILE_volcano1_Lava, TRUE
+	setmetatile 25, 17, METATILE_volcano1_Lava, TRUE
+	setmetatile 0, 3, METATILE_volcano1_InsideLeftCovered, TRUE
+	setmetatile 1, 4, METATILE_volcano1_Lava, TRUE
+	setmetatile 29, 3, METATILE_volcano1_InsideRightCovered, TRUE
+	setmetatile 28, 4, METATILE_volcano1_Lava, TRUE
+	setmetatile 10, 3, METATILE_volcano1_StairLeftCovered, FALSE
+	setmetatile 8, 14, METATILE_volcano1_StairLeftCovered, FALSE
+	setmetatile 8, 15, METATILE_volcano1_Lava, FALSE
+	setmetatile 22, 8, METATILE_volcano1_StairLeftCovered, FALSE
+	setmetatile 22, 9, METATILE_volcano1_Lava, FALSE
+	setmetatile 23, 16, METATILE_volcano1_StairLeftCovered, FALSE
+	setmetatile 23, 17, METATILE_volcano1_Lava, FALSE
+	setmetatile 11, 3, METATILE_volcano1_StairRightCovered, FALSE
+	setmetatile 9, 14, METATILE_volcano1_StairRightCovered, FALSE
+	setmetatile 9, 15, METATILE_volcano1_Lava, FALSE
+	setmetatile 23, 8, METATILE_volcano1_StairRightCovered, FALSE
+	setmetatile 23, 9, METATILE_volcano1_Lava, FALSE
+	setmetatile 24, 16, METATILE_volcano1_StairRightCovered, FALSE
+	setmetatile 24, 17, METATILE_volcano1_Lava, FALSE
+	setmetatile 0, 4, METATILE_volcano1_RightCovered, TRUE
+	setmetatile 0, 5, METATILE_volcano1_RightCovered, TRUE
+	setmetatile 0, 6, METATILE_volcano1_RightCovered, TRUE
+	setmetatile 0, 7, METATILE_volcano1_RightCovered, TRUE
+	setmetatile 0, 8, METATILE_volcano1_RightCovered, TRUE
+	setmetatile 0, 9, METATILE_volcano1_RightCovered, TRUE
+	setmetatile 0, 10, METATILE_volcano1_RightCovered, TRUE
+	setmetatile 0, 11, METATILE_volcano1_RightCovered, TRUE
+	setmetatile 0, 12, METATILE_volcano1_RightCovered, TRUE
+	setmetatile 0, 13, METATILE_volcano1_RightCovered, TRUE
+	setmetatile 0, 14, METATILE_volcano1_RightCovered, TRUE
+	setmetatile 0, 15, METATILE_volcano1_RightCovered, TRUE
+	setmetatile 0, 16, METATILE_volcano1_RightCovered, TRUE
+	setmetatile 0, 17, METATILE_volcano1_RightCovered, TRUE
+	setmetatile 0, 18, METATILE_volcano1_RightCovered, TRUE
+	setmetatile 0, 19, METATILE_volcano1_RightCovered, TRUE
+	setmetatile 0, 20, METATILE_volcano1_RightCovered, TRUE
+	setmetatile 0, 21, METATILE_volcano1_RightCovered, TRUE
+	setmetatile 0, 22, METATILE_volcano1_RightCovered, TRUE
+	setmetatile 0, 23, METATILE_volcano1_RightCovered, TRUE
+	setmetatile 11, 25, METATILE_volcano1_RightCovered, TRUE
+	setmetatile 24, 7, METATILE_volcano1_RightCovered, TRUE
+	setmetatile 10, 13, METATILE_volcano1_RightCovered, TRUE
+	setmetatile 25, 15, METATILE_volcano1_RightCovered, TRUE
+	setmetatile 1, 5, METATILE_volcano1_Lava, TRUE
+	setmetatile 1, 6, METATILE_volcano1_Lava, TRUE
+	setmetatile 1, 7, METATILE_volcano1_Lava, TRUE
+	setmetatile 1, 8, METATILE_volcano1_Lava, TRUE
+	setmetatile 1, 9, METATILE_volcano1_Lava, TRUE
+	setmetatile 1, 10, METATILE_volcano1_Lava, TRUE
+	setmetatile 1, 11, METATILE_volcano1_Lava, TRUE
+	setmetatile 1, 12, METATILE_volcano1_Lava, TRUE
+	setmetatile 1, 13, METATILE_volcano1_Lava, TRUE
+	setmetatile 1, 14, METATILE_volcano1_Lava, TRUE
+	setmetatile 1, 15, METATILE_volcano1_Lava, TRUE
+	setmetatile 1, 16, METATILE_volcano1_Lava, TRUE
+	setmetatile 1, 17, METATILE_volcano1_Lava, TRUE
+	setmetatile 1, 18, METATILE_volcano1_Lava, TRUE
+	setmetatile 1, 19, METATILE_volcano1_Lava, TRUE
+	setmetatile 1, 20, METATILE_volcano1_Lava, TRUE
+	setmetatile 1, 21, METATILE_volcano1_Lava, TRUE
+	setmetatile 1, 22, METATILE_volcano1_Lava, TRUE
+	setmetatile 12, 24, METATILE_volcano1_Lava, TRUE
+	setmetatile 25, 8, METATILE_volcano1_Lava, TRUE
+	setmetatile 11, 14, METATILE_volcano1_Lava, TRUE
+	setmetatile 26, 16, METATILE_volcano1_Lava, TRUE
+	setmetatile 29, 4, METATILE_volcano1_LeftCovered, TRUE
+	setmetatile 29, 5, METATILE_volcano1_LeftCovered, TRUE
+	setmetatile 29, 6, METATILE_volcano1_LeftCovered, TRUE
+	setmetatile 29, 7, METATILE_volcano1_LeftCovered, TRUE
+	setmetatile 29, 8, METATILE_volcano1_LeftCovered, TRUE
+	setmetatile 29, 9, METATILE_volcano1_LeftCovered, TRUE
+	setmetatile 29, 10, METATILE_volcano1_LeftCovered, TRUE
+	setmetatile 29, 11, METATILE_volcano1_LeftCovered, TRUE
+	setmetatile 29, 12, METATILE_volcano1_LeftCovered, TRUE
+	setmetatile 29, 13, METATILE_volcano1_LeftCovered, TRUE
+	setmetatile 29, 14, METATILE_volcano1_LeftCovered, TRUE
+	setmetatile 29, 15, METATILE_volcano1_LeftCovered, TRUE
+	setmetatile 29, 16, METATILE_volcano1_LeftCovered, TRUE
+	setmetatile 29, 17, METATILE_volcano1_LeftCovered, TRUE
+	setmetatile 29, 18, METATILE_volcano1_LeftCovered, TRUE
+	setmetatile 29, 19, METATILE_volcano1_LeftCovered, TRUE
+	setmetatile 29, 20, METATILE_volcano1_LeftCovered, TRUE
+	setmetatile 29, 21, METATILE_volcano1_LeftCovered, TRUE
+	setmetatile 29, 22, METATILE_volcano1_LeftCovered, TRUE
+	setmetatile 29, 23, METATILE_volcano1_LeftCovered, TRUE
+	setmetatile 20, 25, METATILE_volcano1_LeftCovered, TRUE
+	setmetatile 21, 7, METATILE_volcano1_LeftCovered, TRUE
+	setmetatile 7, 13, METATILE_volcano1_LeftCovered, TRUE
+	setmetatile 22, 15, METATILE_volcano1_LeftCovered, TRUE
+	setmetatile 28, 5, METATILE_volcano1_Lava, TRUE
+	setmetatile 28, 6, METATILE_volcano1_Lava, TRUE
+	setmetatile 28, 7, METATILE_volcano1_Lava, TRUE
+	setmetatile 28, 8, METATILE_volcano1_Lava, TRUE
+	setmetatile 28, 9, METATILE_volcano1_Lava, TRUE
+	setmetatile 28, 10, METATILE_volcano1_Lava, TRUE
+	setmetatile 28, 11, METATILE_volcano1_Lava, TRUE
+	setmetatile 28, 12, METATILE_volcano1_Lava, TRUE
+	setmetatile 28, 13, METATILE_volcano1_Lava, TRUE
+	setmetatile 28, 14, METATILE_volcano1_Lava, TRUE
+	setmetatile 28, 15, METATILE_volcano1_Lava, TRUE
+	setmetatile 28, 16, METATILE_volcano1_Lava, TRUE
+	setmetatile 28, 17, METATILE_volcano1_Lava, TRUE
+	setmetatile 28, 18, METATILE_volcano1_Lava, TRUE
+	setmetatile 28, 19, METATILE_volcano1_Lava, TRUE
+	setmetatile 28, 20, METATILE_volcano1_Lava, TRUE
+	setmetatile 28, 21, METATILE_volcano1_Lava, TRUE
+	setmetatile 28, 22, METATILE_volcano1_Lava, TRUE
+	setmetatile 19, 24, METATILE_volcano1_Lava, TRUE
+	setmetatile 20, 8, METATILE_volcano1_Lava, TRUE
+	setmetatile 6, 14, METATILE_volcano1_Lava, TRUE
+	setmetatile 21, 16, METATILE_volcano1_Lava, TRUE
+	setmetatile 1, 23, METATILE_volcano1_Lava, TRUE
+	setmetatile 2, 23, METATILE_volcano1_Lava, TRUE
+	setmetatile 3, 23, METATILE_volcano1_Lava, TRUE
+	setmetatile 4, 23, METATILE_volcano1_Lava, TRUE
+	setmetatile 5, 23, METATILE_volcano1_Lava, TRUE
+	setmetatile 6, 23, METATILE_volcano1_Lava, TRUE
+	setmetatile 7, 23, METATILE_volcano1_Lava, TRUE
+	setmetatile 8, 23, METATILE_volcano1_Lava, TRUE
+	setmetatile 9, 23, METATILE_volcano1_Lava, TRUE
+	setmetatile 10, 23, METATILE_volcano1_Lava, TRUE
+	setmetatile 11, 23, METATILE_volcano1_Lava, TRUE
+	setmetatile 12, 25, METATILE_volcano1_Lava, FALSE
+	setmetatile 13, 25, METATILE_volcano1_Lava, FALSE
+	setmetatile 14, 25, METATILE_volcano1_Lava, FALSE
+	setmetatile 15, 25, METATILE_volcano1_Lava, FALSE
+	setmetatile 16, 25, METATILE_volcano1_Lava, FALSE
+	setmetatile 17, 25, METATILE_volcano1_Lava, FALSE
+	setmetatile 18, 25, METATILE_volcano1_Lava, FALSE
+	setmetatile 19, 25, METATILE_volcano1_Lava, FALSE
+	setmetatile 20, 23, METATILE_volcano1_Lava, TRUE
+	setmetatile 21, 23, METATILE_volcano1_Lava, TRUE
+	setmetatile 22, 23, METATILE_volcano1_Lava, TRUE
+	setmetatile 23, 23, METATILE_volcano1_Lava, TRUE
+	setmetatile 24, 23, METATILE_volcano1_Lava, TRUE
+	setmetatile 25, 23, METATILE_volcano1_Lava, TRUE
+	setmetatile 26, 23, METATILE_volcano1_Lava, TRUE
+	setmetatile 27, 23, METATILE_volcano1_Lava, TRUE
+	setmetatile 28, 23, METATILE_volcano1_Lava, TRUE
+	setmetatile 22, 6, METATILE_volcano1_Top, FALSE
+	setmetatile 23, 6, METATILE_volcano1_Top, FALSE
+	setmetatile 8, 12, METATILE_volcano1_Top, FALSE
+	setmetatile 9, 12, METATILE_volcano1_Top, FALSE
+	setmetatile 23, 14, METATILE_volcano1_Top, FALSE
+	setmetatile 24, 14, METATILE_volcano1_Top, FALSE
+	setmetatile 21, 6, METATILE_volcano1_TopLeftCovered, TRUE
+	setmetatile 20, 7, METATILE_volcano1_Lava, TRUE
+	setmetatile 7, 12, METATILE_volcano1_TopLeftCovered, TRUE
+	setmetatile 6, 13, METATILE_volcano1_Lava, TRUE
+	setmetatile 22, 14, METATILE_volcano1_TopLeftCovered, TRUE
+	setmetatile 21, 15, METATILE_volcano1_Lava, TRUE
+	setmetatile 19, 23, METATILE_volcano1_Lava, TRUE
+	setmetatile 24, 6, METATILE_volcano1_TopRightLava, TRUE
+	setmetatile 25, 7, METATILE_volcano1_Lava, TRUE
+	setmetatile 10, 12, METATILE_volcano1_TopRightCovered, TRUE
+	setmetatile 11, 13, METATILE_volcano1_Lava, TRUE
+	setmetatile 25, 14, METATILE_volcano1_TopRightCovered, TRUE
+	setmetatile 26, 15, METATILE_volcano1_Lava, TRUE
+	setmetatile 12, 23, METATILE_volcano1_Lava, TRUE
+	setmetatile 11, 24, METATILE_volcano1_TopRightCovered, TRUE
+	setmetatile 20, 24, METATILE_volcano1_TopLeftCovered, TRUE
+	setmetatile 21, 8, METATILE_volcano1_BottomLeftCovered, TRUE
+	setmetatile 7, 14, METATILE_volcano1_BottomLeftCovered, TRUE
+	setmetatile 22, 16, METATILE_volcano1_BottomLeftCovered, TRUE
+	setmetatile 24, 8, METATILE_volcano1_BottomRightCovered, TRUE
+	setmetatile 10, 14, METATILE_volcano1_BottomRightCovered, TRUE
+	setmetatile 25, 16, METATILE_volcano1_BottomRightCovered, TRUE
 	setmetatile 6, 15, METATILE_volcano1_Lava, TRUE
 	setmetatile 20, 9, METATILE_volcano1_Lava, TRUE
 	setmetatile 21, 17, METATILE_volcano1_Lava, TRUE
