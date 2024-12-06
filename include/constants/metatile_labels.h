@@ -811,4 +811,32 @@
 #define METATILE_Underwater_FloorShadow  0x228
 #define METATILE_Underwater_RockWall     0x21E
 
+// gTileset_volcano1
+#define METATILE_volcano1_TopLeft  0x008
+#define METATILE_volcano1_Top  0x009
+#define METATILE_volcano1_TopRight  0x00A
+#define METATILE_volcano1_InsideLeft  0x00B
+#define METATILE_volcano1_InsideRight  0x00C
+#define METATILE_volcano1_Left  0x010
+#define METATILE_volcano1_Middle  0x011
+#define METATILE_volcano1_Right  0x012
+#define METATILE_volcano1_LeftBottom  0x018
+#define METATILE_volcano1_Bottom  0x019
+#define METATILE_volcano1_RightBottom  0x01A
+#define METATILE_volcano1_LedgeTop 0x071
+#define METATILE_volcano1_LedgeBottom 0x079
+#define METATILE_volcano1_StairLeft 0x096
+#define METATILE_volcano1_StairRight 0x097
+#define METATILE_volcano1_Lava 0x136
+#define METATILE_volcano1_StairTop 0x157
+#define METATILE_volcano1_TopLeftLava 0x15C
+#define METATILE_volcano1_TopRightLava 0x15E
+#define METATILE_volcano1_JumpBottom  0x15F
+#define METATILE_volcano1_LeftLava 0x164
+#define METATILE_volcano1_LavaJump 0x165
+#define METATILE_volcano1_RightLava 0x166
+#define METATILE_volcano1_BottomLeftLava 0x16C
+#define METATILE_volcano1_BottomRightLava 0x16E
+#define METATILE_volcano1_LedgeBottomNoJump 0x180
+
 #endif // GUARD_METATILE_LABELS_H
