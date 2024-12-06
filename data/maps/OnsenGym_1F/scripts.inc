@@ -285,7 +285,7 @@ OnsenGym_AnimFrameNormal:
 	setmetatile 27, 23, METATILE_volcano1_Top, TRUE
 	setmetatile 28, 23, METATILE_volcano1_Top, TRUE
 	setmetatile 22, 6, METATILE_volcano1_Top, FALSE
-	setmetatile 13, 6, METATILE_volcano1_Top, FALSE
+	setmetatile 23, 6, METATILE_volcano1_Top, FALSE
 	setmetatile 8, 12, METATILE_volcano1_Top, FALSE
 	setmetatile 9, 12, METATILE_volcano1_Top, FALSE
 	setmetatile 23, 14, METATILE_volcano1_Top, FALSE
