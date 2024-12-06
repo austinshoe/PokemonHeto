@@ -80,13 +80,13 @@ OnsenGym_WashBack:
 	end
 
 OnsenGym_AnimLavaRises:
-	delay 8
+	delay 16
 	call OnsenGym_AnimFrameLow
 	special DrawWholeMapView
-	delay 8
+	delay 16
 	call OnsenGym_AnimFrameMid
 	special DrawWholeMapView
-	delay 8
+	delay 16
 	return
  
  OnsenGym_AnimLavaLowers:
@@ -95,13 +95,13 @@ OnsenGym_AnimLavaRises:
 	delay 8
 	call OnsenGym_AnimFrameMid
 	special DrawWholeMapView
-	delay 8
+	delay 16
 	call OnsenGym_AnimFrameLow
 	special DrawWholeMapView
-	delay 8
+	delay 16
 	call OnsenGym_AnimFrameNormal
 	special DrawWholeMapView
-	delay 8
+	delay 16
 	return
 
 Text_OnsenGym_LavaHiss:
