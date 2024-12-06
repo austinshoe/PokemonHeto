@@ -1,6 +1,11 @@
 OnsenGym_1F_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, OnsenGym_OnTransition
 	map_script MAP_SCRIPT_ON_FRAME_TABLE, OnsenGym_OnFrame
 	.byte 0
+
+OnsenGym_OnTransition:
+	setvar VAR_MAUVILLE_GYM_STATE, 0
+	end
 
 OnsenGym_OnFrame:
 	map_script_2 VAR_MAUVILLE_GYM_STATE, 0, OnsenGym_InGym
@@ -59,8 +64,8 @@ OnsenGym_WashBack:
 	waitbuttonpress
 	closemessage
 	call OnsenGym_AnimLavaRises
-	warp MAP_ONSEN_GYM_1F, 15, 26
 	setvar VAR_MAUVILLE_GYM_STATE, 0
+	warp MAP_ONSEN_GYM_1F, 15, 26
 	release
 	end
 
