@@ -825,6 +825,7 @@
 #define METATILE_volcano1_RightBottom  0x01A
 #define METATILE_volcano1_LedgeTop 0x071
 #define METATILE_volcano1_LedgeBottom 0x079
+#define METATILE_volcano1_LedgeBottomCovered 0x07A
 #define METATILE_volcano1_StairLeft 0x096
 #define METATILE_volcano1_StairRight 0x097
 #define METATILE_volcano1_Lava 0x136
@@ -837,6 +838,17 @@
 #define METATILE_volcano1_RightLava 0x166
 #define METATILE_volcano1_BottomLeftLava 0x16C
 #define METATILE_volcano1_BottomRightLava 0x16E
+#define METATILE_volcano1_TopLeftCovered 0x171
+#define METATILE_volcano1_TopRightCovered 0x173
+#define METATILE_volcano1_InsideLeftCovered 0x174
+#define METATILE_volcano1_InsideRightCovered 0x175
+#define METATILE_volcano1_StairLeftCovered 0x176
+#define METATILE_volcano1_StairRightCovered 0x177
+#define METATILE_volcano1_LeftCovered 0x179
+#define METATILE_volcano1_RightCovered 0x17B
 #define METATILE_volcano1_LedgeBottomNoJump 0x180
+#define METATILE_volcano1_BottomLeftCovered 0x181
+#define METATILE_volcano1_BottomCovered 0x182
+#define METATILE_volcano1_BottomRightCovered 0x183
 
 #endif // GUARD_METATILE_LABELS_H
