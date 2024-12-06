@@ -92,6 +92,20 @@
       "y": 33,
       "elevation": 0,
       "weather": "COORD_EVENT_WEATHER_SUNNY"
+    },
+    {
+      "type": "weather",
+      "x": 30,
+      "y": 1,
+      "elevation": 0,
+      "weather": "COORD_EVENT_WEATHER_VOLCANIC_ASH"
+    },
+    {
+      "type": "weather",
+      "x": 31,
+      "y": 1,
+      "elevation": 0,
+      "weather": "COORD_EVENT_WEATHER_VOLCANIC_ASH"
     }
   ],
   "bg_events": [

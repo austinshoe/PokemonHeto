@@ -6160,12 +6160,12 @@
     {
       "id": "LAYOUT_MT_EMBERFALL_RESURFACE",
       "name": "MtEmberfallResurface_Layout",
-      "width": 16,
+      "width": 20,
       "height": 16,
       "border_width": 2,
       "border_height": 2,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Petalburg",
+      "secondary_tileset": "gTileset_azuretide",
       "border_filepath": "data/layouts/MtEmberfallResurface/border.bin",
       "blockdata_filepath": "data/layouts/MtEmberfallResurface/map.bin"
     },
