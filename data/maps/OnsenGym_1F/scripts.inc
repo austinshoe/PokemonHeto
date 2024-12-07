@@ -33,6 +33,7 @@ OnsenGym_StepTrigger::
 	lock
 	message Text_OnsenGym_LavaHiss
 	waitmessage
+	waitbuttonpress
 	compare VAR_UNUSED_0x408B, 0
 	goto_if_eq OnsenGym_StepCompare0
 	compare VAR_UNUSED_0x408B, 1
@@ -67,6 +68,29 @@ OnsenGym_StepTrigger2:
 	addvar VAR_UNUSED_0x4083, 1
 	release
 	end
+
+OnsenGym_Trainer1::
+	lock
+	faceplayer
+	setvar VAR_UNUSED_0x408B, 1
+	release
+	end
+
+OnsenGym_Trainer2::
+	lock
+	faceplayer
+	setvar VAR_UNUSED_0x408B, 2
+	release
+	end
+
+OnsenGym_Trainer3::
+	lock
+	faceplayer
+	setvar VAR_UNUSED_0x408B, 3
+	release
+	end
+
+
 
 OnsenGym_WashBack:
 	message Text_OnsenGym_LavaWashBack
@@ -105,8 +129,7 @@ OnsenGym_AnimLavaRises:
 	return
 
 Text_OnsenGym_LavaHiss:
-	.string "The lava hisses!\p"
-	.string "$"
+	.string "The lava hisses!$"
 
 Text_OnsenGym_LavaWashBack:
 	.string "The rising lava forced {PLAYER}\n"
