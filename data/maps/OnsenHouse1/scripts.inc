@@ -5,16 +5,11 @@ Script_OnsenCityHouse2Man1::
     lock
     faceplayer
     msgbox Text_OnsenCityHouse2Man1, MSGBOX_DEFAULT
-    closemessage
-    delay 0
     msgbox Text_OnsenCityHouse2Man2, MSGBOX_DEFAULT
-    closemessage
     delay 8
     msgbox Text_OnsenCityHouse2ManOpinion, MSGBOX_DEFAULT
-    closemessage
     delay 16
     msgbox Text_OnsenCityHouse2ManHappy, MSGBOX_DEFAULT
-    closemessage
     delay 8
     msgbox Text_OnsenCityHouse2ManTripping, MSGBOX_DEFAULT
     release
@@ -24,16 +19,12 @@ Script_OnsenCityHouse2Man2::
     lock
     faceplayer
     msgbox Text_OnsenCityHouse2Man1, MSGBOX_DEFAULT
-    closemessage
     delay 8
     msgbox Text_OnsenCityHouse2Man2, MSGBOX_DEFAULT
-    closemessage
     delay 8
     msgbox Text_OnsenCityHouse2ManOpinion, MSGBOX_DEFAULT
-    closemessage
     delay 16
     msgbox Text_OnsenCityHouse2ManHappy, MSGBOX_DEFAULT
-    closemessage
     delay 8
     msgbox Text_OnsenCityHouse2ManTripping, MSGBOX_DEFAULT
     release
@@ -41,13 +32,13 @@ Script_OnsenCityHouse2Man2::
 
 Text_OnsenCityHouse2Man1:
     .string "Can you settle this argument real\n"
-    .string "quick?\l"
+    .string "quick?\p"
     .string "This guy thinks that Light is smarter\l"
     .string "than L, but L is waaaay smarter than-$"
 
 Text_OnsenCityHouse2Man2:
-    .string "No way.\n"
-    .string "Light is miles smarter than L.\l"
+    .string "No way.\p"
+    .string "Light is miles smarter than L.\p"
     .string "It's not even close.$"
     
 Text_OnsenCityHouse2ManOpinion:
@@ -56,12 +47,12 @@ Text_OnsenCityHouse2ManOpinion:
 
 Text_OnsenCityHouse2ManHappy:
     .string "SEEE?!\n"
-    .string "I TOLD YOU!\l"
+    .string "I TOLD YOU!\p"
     .string "L IS WAY SMARTER!$"
 
 Text_OnsenCityHouse2ManTripping:
     .string "Nah, both of you are tripping.\n"
-    .string "I'm not going to waste a second longer\l"
+    .string "I'm not going to waste a second longer\p"
     .string "arguing with you fools.$"
     
 Script_OnsenCityHouse2Woman1::
