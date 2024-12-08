@@ -8736,11 +8736,9 @@ const struct Item gItems[] =
     [ITEM_TM_CASE] =
     {
         .name = _("TM CASE"),
-        .itemId = ITEM_TM_CASE,
         .price = 0,
         .description = sTMCaseDesc,
         .importance = 1,
-        .registrability = TRUE,
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_TmCase,
