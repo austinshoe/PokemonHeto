@@ -3032,7 +3032,7 @@ extern const u8 gText_MoveOkBack[];
 extern const u8 gText_YourName[];
 extern const u8 gText_BoxName[];
 extern const u8 gText_PkmnsNickname[];
-extern const u8 gText_TellHimT
+extern const u8 gText_TellHimTheWords[];
 
 // Exp. Share
 extern const u8 gText_ExpShareOn[];
