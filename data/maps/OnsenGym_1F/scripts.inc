@@ -26,6 +26,15 @@ OnsenGym_InGym:
 	setvar VAR_MAUVILLE_GYM_STATE, 1
 	setvar VAR_UNUSED_0x4083, 0
 	call OnsenGym_AnimLavaLowers
+	goto_if_set FLAG_MAUVILLE_GYM_BARRIERS_STATE, OnsenGym_LavaBurnedMon
+	clearflag FLAG_MAUVILLE_GYM_BARRIERS_STATE
+	release
+	end
+
+OnsenGym_LavaBurnedMon:
+	bufferpartymonnick STR_VAR_1, 0
+	msgbox TextOnsenGym_LavaBurnedMon, MSGBOX_DEFAULT
+	clearflag FLAG_MAUVILLE_GYM_BARRIERS_STATE
 	release
 	end
 
@@ -135,6 +144,9 @@ Text_OnsenGym_LavaHiss:
 Text_OnsenGym_LavaWashBack:
 	.string "The rising lava forced {PLAYER}\n"
 	.string "to go back on land!$"
+
+TextOnsenGym_LavaBurnedMon:
+	.string "The lava burned your {STR_VAR_1}!$"
 
 OnsenGym_AnimFrameNormal:
 	setmetatile 1, 3, METATILE_volcano1_Bottom, TRUE
