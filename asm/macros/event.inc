@@ -1735,6 +1735,12 @@
 	.2byte \quantity
 	.endm
 
+	@ sets the status of the nth mon in your party
+	.macro setstatus status:req, slot:req
+	.byte 0xe3
+	.2byte \status
+	.2byte \slot
+	.endm
 
 @ Supplementary
 

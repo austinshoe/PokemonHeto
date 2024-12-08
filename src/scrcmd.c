@@ -30,6 +30,7 @@
 #include "mystery_event_script.h"
 #include "palette.h"
 #include "party_menu.h"
+#include "pokemon.h"
 #include "pokemon_storage_system.h"
 #include "random.h"
 #include "overworld.h"
@@ -2327,4 +2328,12 @@ bool8 ScrCmd_warpwhitefade(struct ScriptContext *ctx)
     DoWhiteFadeWarp();
     ResetInitialPlayerAvatarState();
     return TRUE;
+}
+
+void ScrCmd_setstatus(struct ScriptContext *ctx)
+{
+    u32 status = VarGet(ScriptReadHalfword(ctx));
+    u16 partyIndex = VarGet(ScriptReadHalfword(ctx));
+
+    SetMonData(&gPlayerParty[partyIndex], MON_DATA_STATUS, &status);
 }

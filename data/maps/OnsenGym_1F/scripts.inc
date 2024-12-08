@@ -99,6 +99,7 @@ OnsenGym_WashBack:
 	closemessage
 	call OnsenGym_AnimLavaRises
 	setvar VAR_MAUVILLE_GYM_STATE, 0
+	setstatus STATUS1_BURN, 0
 	warp MAP_ONSEN_GYM_1F, 15, 26
 	release
 	end
