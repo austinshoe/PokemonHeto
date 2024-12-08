@@ -2334,12 +2334,7 @@ void ScrCmd_setstatus(struct ScriptContext *ctx)
 {
     u32 status = VarGet(ScriptReadHalfword(ctx));
     u16 partyIndex = VarGet(ScriptReadHalfword(ctx));
-    if (GetMonData(&gPlayerParty[partyIndex], MON_DATA_SPECIES, NULL).type1 == TYPE_FIRE
-    || GetMonData(&gPlayerParty[partyIndex], MON_DATA_SPECIES, NULL).type2 == TYPE_FIRE){
-        FlagClear(FLAG_MAUVILLE_GYM_BARRIERS_STATE);
-        return;
-    }
-    if (GetMonData(&gPlayerParty[partyIndex], MON_DATA_STATUS, NULL) == STATUS1_BURN){
+    if (GetMonData(&gPlayerParty[partyIndex], MON_DATA_STATUS, NULL) == status){
         FlagClear(FLAG_MAUVILLE_GYM_BARRIERS_STATE);
         return;
     }
