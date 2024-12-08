@@ -8735,13 +8735,15 @@ const struct Item gItems[] =
 
     [ITEM_TM_CASE] =
     {
-        .name = _("TM Case"),
+        .name = _("TM CASE"),
+        .itemId = ITEM_TM_CASE,
         .price = 0,
         .description = sTMCaseDesc,
         .importance = 1,
+        .registrability = TRUE,
         .pocket = POCKET_KEY_ITEMS,
         .type = ITEM_USE_BAG_MENU,
-        .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
+        .fieldUseFunc = ItemUseOutOfBattle_TmCase,
     },
 
     [ITEM_BERRY_POUCH] =
@@ -9153,7 +9155,7 @@ const struct Item gItems[] =
         .type = ITEM_USE_BAG_MENU,
         .fieldUseFunc = ItemUseOutOfBattle_CannotUse,
     },
-
+    
     [ITEM_TRI_PASS] =
     {
         .name = _("Tri-Pass"),
