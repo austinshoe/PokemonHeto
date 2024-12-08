@@ -2335,8 +2335,8 @@ void ScrCmd_setstatus(struct ScriptContext *ctx)
     u32 status = VarGet(ScriptReadHalfword(ctx));
     u16 partyIndex = VarGet(ScriptReadHalfword(ctx));
     if (GetMonData(&gPlayerParty[partyIndex], MON_DATA_STATUS, NULL) == status){
-        FlagClear(FLAG_MAUVILLE_GYM_BARRIERS_STATE);
         return;
     }
+    FlagSet(FLAG_MAUVILLE_GYM_BARRIERS_STATE);
     SetMonData(&gPlayerParty[partyIndex], MON_DATA_STATUS, &status);
 }
