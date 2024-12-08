@@ -588,7 +588,7 @@ static void TMCase_MoveCursor_UpdatePrintedDescription(s32 itemIndex)
     AddTextPrinterParameterized_ColorByIndex(1, 2, str, 2, 3, 1, 0, 0, 0);
 
     // update icons
-    TintPartyMonIcons(itemId - ITEM_TM01);
+    TintPartyMonIcons(itemId);
 }
 
 static void FillBG2RowWithPalette_2timesNplus1(s32 a0)
@@ -1162,15 +1162,16 @@ static void DrawPartyMonIcons(void)
     }
 }
 
-static void TintPartyMonIcons(u8 tm)
+static void TintPartyMonIcons(u16 itemId)
 {
     u8 i;
     u16 species;
+    u16 move = ItemIdToBattleMoveId(itemId)
 
     for (i = 0; i < gPlayerPartyCount; i++)
     {
         species = GetMonData(&gPlayerParty[i], MON_DATA_SPECIES);
-        if (!CanSpeciesLearnTMHM(species, tm))
+        if (!CanLearnTeachableMove(species, move))
         {
             gSprites[spriteIdData[i]].oam.paletteNum = 7 + spriteIdPalette[i];
         }
