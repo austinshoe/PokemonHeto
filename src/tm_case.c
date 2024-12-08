@@ -124,7 +124,7 @@ static void InitSelectedTMSpriteData(u8 a0, u16 itemId);
 static void SpriteCB_MoveTMSpriteInCase(struct Sprite * sprite);
 static void LoadTMTypePalettes(void);
 static void DrawPartyMonIcons(void);
-static void TintPartyMonIcons(u8 tm);
+static void TintPartyMonIcons(u16 itemId);
 static void DestroyPartyMonIcons(void);
 
 static const struct BgTemplate sBGTemplates[] = {
@@ -1166,7 +1166,7 @@ static void TintPartyMonIcons(u16 itemId)
 {
     u8 i;
     u16 species;
-    u16 move = ItemIdToBattleMoveId(itemId)
+    u16 move = ItemIdToBattleMoveId(itemId);
 
     for (i = 0; i < gPlayerPartyCount; i++)
     {
