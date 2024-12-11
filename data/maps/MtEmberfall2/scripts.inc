@@ -1,6 +1,12 @@
 MtEmberfall2_MapScripts::
 	.byte 0
 
+MtEmberfallBurnTrigger::
+    lock
+    setstatusnext STATUS1_BURN
+    release
+    end
+
 Script_MtEmberfallPt2Man1::
     lock
     faceplayer

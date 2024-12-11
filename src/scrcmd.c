@@ -52,6 +52,7 @@
 #include "constants/event_objects.h"
 #include "constants/items.h"
 #include "constants/moves.h"
+#include "constants/species/h"
 
 typedef u16 (*SpecialFunc)(void);
 typedef void (*NativeFunc)(struct ScriptContext *ctx);
@@ -2339,4 +2340,20 @@ void ScrCmd_setstatus(struct ScriptContext *ctx)
     }
     FlagSet(FLAG_MAUVILLE_GYM_BARRIERS_STATE);
     SetMonData(&gPlayerParty[partyIndex], MON_DATA_STATUS, &status);
+}
+
+void ScrCmd_setstatusnext(struct ScriptContext *ctx)
+{
+    u32 status = VarGet(ScriptReadHalfword(ctx));
+    for (int i = 0; i < 6; i++) {
+        if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES, NULL) == NULL ||
+        GetMonData(&gPlayerParty[i], MON_DATA_SPECIES, NULL) == SPECIES_NONE)
+        {
+            break;
+        }
+        if (GetMonData(&gPlayerParty[i], MON_DATA_STATUS, NULL) != status){
+            SetMonData(&gPlayerParty[i], MON_DATA_STATUS, &status);
+            break;
+        }
+    } 
 }

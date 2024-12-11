@@ -11,7 +11,7 @@ OnsenCity_OnTransition:
 
 Onsen_StepLimit_Set:
     setvar VAR_UNUSED_0x408B, 0
-    end
+    return
 
 Script_OnsenCitySign::
     lock

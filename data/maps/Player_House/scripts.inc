@@ -13,8 +13,8 @@ Player_House_HideMomRunningShoes:
     return
 
 Player_House_HideMomRunningShoes1:
-    setobjectxyperm 1, 0, 0
     hideobjectat 1, MAP_PLAYER_HOUSE
+    setobjectxyperm 1, 0, 0
     return
 
 Player_House_ShowMom:
