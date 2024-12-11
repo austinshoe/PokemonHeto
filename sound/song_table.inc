@@ -624,6 +624,12 @@ gSongTable::
 	song mus_fall_grove_town, 0, 0
 	song mus_onsen_city, 0, 0
 	song mus_hallowspark_city, 0, 0
+	song mus_hetonian_desert, 0, 0
+	song mus_suna_town, 0, 0
+	song mus_ruinveil_city, 0, 0
+	song mus_silverstone_city, 0, 0
+	song mus_victory_road_new, 0, 0
+	song mus_welcome_to_pokemon, 0, 0
 
 	.align 2
 dummy_song_header:

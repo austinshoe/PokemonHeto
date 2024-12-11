@@ -558,6 +558,12 @@
 #define MUS_FALL_GROVE_TOWN         620
 #define MUS_ONSEN_CITY              621
 #define MUS_HALLOWSPARK_CITY        622
+#define MUS_HETONIAN_DESERT         623
+#define MUS_SUNA_TOWN               624
+#define MUS_RUINVEIL_CITY           625
+#define MUS_SILVERSTONE_CITY        626
+#define MUS_VICTORY_ROAD_NEW        627
+#define MUS_WELCOME_TO_POKEMON      628
 
 
 #define MUS_ROUTE118                0x7FFF  // Map is split into 2 music sections. controlled by GetCurrLocationDefaultMusic().

@@ -672,6 +672,24 @@ $(MID_SUBDIR)/mus_onsen_city.s: %.s: %.mid
 $(MID_SUBDIR)/mus_hallowspark_city.s: %.s: %.mid
 	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V120
 
+$(MID_SUBDIR)/mus_hetonian_desert.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V120
+
+$(MID_SUBDIR)/mus_suna_town.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V120
+
+$(MID_SUBDIR)/mus_ruinveil_city.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V120
+
+$(MID_SUBDIR)/mus_silverstone_city.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V120
+
+$(MID_SUBDIR)/mus_victory_road_new.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V120
+
+$(MID_SUBDIR)/mus_welcome_to_pokemon.s: %.s: %.mid
+	$(MID) $< $@ -E -R$(STD_REVERB) -G191 -V120
+
 $(MID_SUBDIR)/ph_choice_blend.s: %.s: %.mid
 	$(MID) $< $@ -E -G130 -P4
 
