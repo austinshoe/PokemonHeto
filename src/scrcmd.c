@@ -2345,14 +2345,15 @@ void ScrCmd_setstatus(struct ScriptContext *ctx)
 void ScrCmd_setstatusnext(struct ScriptContext *ctx)
 {
     u32 status = VarGet(ScriptReadHalfword(ctx));
-    for (u16 i = 0; i < 6; i++) {
-        if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES, NULL) == NULL ||
-        GetMonData(&gPlayerParty[i], MON_DATA_SPECIES, NULL) == SPECIES_NONE)
+    u16 partyIndex;
+    for (partyIndex = 0; partyIndex < 6; partyIndex++) {
+        if (GetMonData(&gPlayerParty[partyIndex], MON_DATA_SPECIES, NULL) == NULL ||
+        GetMonData(&gPlayerParty[partyIndex], MON_DATA_SPECIES, NULL) == SPECIES_NONE)
         {
             break;
         }
-        if (GetMonData(&gPlayerParty[i], MON_DATA_STATUS, NULL) != status){
-            SetMonData(&gPlayerParty[i], MON_DATA_STATUS, &status);
+        if (GetMonData(&gPlayerParty[partyIndex], MON_DATA_STATUS, NULL) != status){
+            SetMonData(&gPlayerParty[partyIndex], MON_DATA_STATUS, &status);
             break;
         }
     } 
