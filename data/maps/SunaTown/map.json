@@ -2,7 +2,7 @@
   "id": "MAP_SUNA_TOWN",
   "name": "SunaTown",
   "layout": "LAYOUT_SUNA_TOWN",
-  "music": "MUS_ABANDONED_SHIP",
+  "music": "MUS_SUNA_TOWN",
   "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

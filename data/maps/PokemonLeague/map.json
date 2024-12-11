@@ -2,7 +2,7 @@
   "id": "MAP_POKEMON_LEAGUE",
   "name": "PokemonLeague",
   "layout": "LAYOUT_POKEMON_LEAGUE",
-  "music": "MUS_ABANDONED_SHIP",
+  "music": "MUS_VICTORY_ROAD_NEW",
   "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

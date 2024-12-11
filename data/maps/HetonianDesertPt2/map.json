@@ -2,7 +2,7 @@
   "id": "MAP_HETONIAN_DESERT_PT2",
   "name": "HetonianDesertPt2",
   "layout": "LAYOUT_HETONIAN_DESERT_PT2",
-  "music": "MUS_ABANDONED_SHIP",
+  "music": "MUS_HETONIAN_DESERT",
   "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",

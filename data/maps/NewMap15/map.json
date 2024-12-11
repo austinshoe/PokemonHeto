@@ -2,7 +2,7 @@
   "id": "MAP_NEW_MAP15",
   "name": "NewMap15",
   "layout": "LAYOUT_NEW_MAP15",
-  "music": "MUS_ABANDONED_SHIP",
+  "music": "MUS_VICTORY_ROAD_NEW",
   "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_NONE",
