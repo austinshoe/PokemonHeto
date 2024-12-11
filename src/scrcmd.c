@@ -52,7 +52,7 @@
 #include "constants/event_objects.h"
 #include "constants/items.h"
 #include "constants/moves.h"
-#include "constants/species/h"
+#include "constants/species.h"
 
 typedef u16 (*SpecialFunc)(void);
 typedef void (*NativeFunc)(struct ScriptContext *ctx);
