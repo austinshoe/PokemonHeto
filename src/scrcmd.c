@@ -2345,7 +2345,7 @@ void ScrCmd_setstatus(struct ScriptContext *ctx)
 void ScrCmd_setstatusnext(struct ScriptContext *ctx)
 {
     u32 status = VarGet(ScriptReadHalfword(ctx));
-    for (int i = 0; i < 6; i++) {
+    for (u16 i = 0; i < 6; i++) {
         if (GetMonData(&gPlayerParty[i], MON_DATA_SPECIES, NULL) == NULL ||
         GetMonData(&gPlayerParty[i], MON_DATA_SPECIES, NULL) == SPECIES_NONE)
         {
