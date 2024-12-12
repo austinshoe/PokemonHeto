@@ -52,7 +52,7 @@
 #include "constants/event_objects.h"
 #include "constants/items.h"
 #include "constants/moves.h"
-#include "constants/species.h"
+//#include "constants/species.h"
 
 typedef u16 (*SpecialFunc)(void);
 typedef void (*NativeFunc)(struct ScriptContext *ctx);
@@ -2345,7 +2345,7 @@ void ScrCmd_setstatus(struct ScriptContext *ctx)
     SetMonData(&gPlayerParty[partyIndex], MON_DATA_STATUS, &status);
 }
 
-void ScrCmd_setstatusnext(struct ScriptContext *ctx)
+/*void ScrCmd_setstatusnext(struct ScriptContext *ctx)
 {
     u32 status = VarGet(ScriptReadHalfword(ctx));
     u16 partyIndex;
@@ -2359,4 +2359,4 @@ void ScrCmd_setstatusnext(struct ScriptContext *ctx)
         }
     }
     return;
-}
+}*/

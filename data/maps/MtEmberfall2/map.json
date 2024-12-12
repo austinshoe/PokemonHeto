@@ -59,15 +59,7 @@
     }
   ],
   "coord_events": [
-    {
-      "type": "trigger",
-      "x": 24,
-      "y": 19,
-      "elevation": 0,
-      "var": "VAR_TEMP_1",
-      "var_value": "0",
-      "script": "NULL"
-    }
+
   ],
   "bg_events": [
 

@@ -1742,12 +1742,6 @@
 	.2byte \slot
 	.endm
 
-	@sets the status of the next mon in your party that does not already have that status
-	.macro setstatusnext status:req
-	.byte 0xe4
-	.2byte \status
-	.endm
-
 @ Supplementary
 
 	.macro goto_if_unset flag:req, dest:req
