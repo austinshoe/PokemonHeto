@@ -2338,6 +2338,9 @@ void ScrCmd_setstatus(struct ScriptContext *ctx)
     if (GetMonData(&gPlayerParty[partyIndex], MON_DATA_STATUS, NULL) == status){
         return;
     }
+    if (GetMonData(&gPlayerParty[partyIndex], MON_DATA_HP, NULL) <= 0) {
+        return;
+    }
     FlagSet(FLAG_MAUVILLE_GYM_BARRIERS_STATE);
     SetMonData(&gPlayerParty[partyIndex], MON_DATA_STATUS, &status);
 }
@@ -2345,15 +2348,14 @@ void ScrCmd_setstatus(struct ScriptContext *ctx)
 void ScrCmd_setstatusnext(struct ScriptContext *ctx)
 {
     u32 status = VarGet(ScriptReadHalfword(ctx));
-    u16 partyIndex;
-    for (partyIndex = 0; partyIndex < 6; partyIndex++) {
-        if (GetMonData(&gPlayerParty[partyIndex], MON_DATA_SPECIES, NULL) == NULL)
+    for (int partyIndex = 0; partyIndex < CalculatePlayerPartyCount(); partyIndex++) {
+        if (GetMonData(&gPlayerParty[partyIndex], MON_DATA_STATUS, NULL) != status
+        && GetMonData(&gPlayerParty[partyIndex], MON_DATA_HP, NULL) <= 0)
         {
-            break;
-        }
-        if (GetMonData(&gPlayerParty[partyIndex], MON_DATA_STATUS, NULL) != status){
             SetMonData(&gPlayerParty[partyIndex], MON_DATA_STATUS, &status);
-            break;
+            FlagSet(FLAG_MAUVILLE_GYM_BARRIERS_STATE);
+            return;
         }
-    } 
+    }
+    return;
 }
