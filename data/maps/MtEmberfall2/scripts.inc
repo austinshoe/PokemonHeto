@@ -4,6 +4,7 @@ MtEmberfall2_MapScripts::
 MtEmberfallBurnTrigger::
     lock
     setstatusnext STATUS1_BURN
+    clearflag FLAG_MAUVILLE_GYM_BARRIERS_STATE
     release
     end
 
