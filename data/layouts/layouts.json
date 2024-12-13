@@ -5529,7 +5529,7 @@
       "border_width": 2,
       "border_height": 2,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_PearlTown",
+      "secondary_tileset": "gTileset_Rustboro",
       "border_filepath": "data/layouts/routebeforetundra/border.bin",
       "blockdata_filepath": "data/layouts/routebeforetundra/map.bin"
     },

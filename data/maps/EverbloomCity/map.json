@@ -154,6 +154,20 @@
       "elevation": 0,
       "dest_map": "MAP_EVERBLOOM_HOUSE5",
       "dest_warp_id": "0"
+    },
+    {
+      "x": 53,
+      "y": 35,
+      "elevation": 0,
+      "dest_map": "MAP_EVERBLOOM_ORCHARD",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 53,
+      "y": 36,
+      "elevation": 0,
+      "dest_map": "MAP_EVERBLOOM_ORCHARD",
+      "dest_warp_id": "1"
     }
   ],
   "coord_events": [
