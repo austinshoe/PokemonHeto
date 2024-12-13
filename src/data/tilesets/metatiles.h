@@ -288,3 +288,9 @@ const u16 gMetatileAttributes_azuretide[] = INCBIN_U16("data/tilesets/secondary/
 
 const u16 gMetatiles_PearlTown[] = INCBIN_U16("data/tilesets/secondary/pearl_town/metatiles.bin");
 const u16 gMetatileAttributes_PearlTown[] = INCBIN_U16("data/tilesets/secondary/pearl_town/metatile_attributes.bin");
+
+const u16 gMetatiles_EverbloomCity[] = INCBIN_U16("data/tilesets/primary/everbloom_city/metatiles.bin");
+const u16 gMetatileAttributes_EverbloomCity[] = INCBIN_U16("data/tilesets/primary/everbloom_city/metatile_attributes.bin");
+
+const u16 gMetatiles_Everbloom[] = INCBIN_U16("data/tilesets/secondary/everbloom/metatiles.bin");
+const u16 gMetatileAttributes_Everbloom[] = INCBIN_U16("data/tilesets/secondary/everbloom/metatile_attributes.bin");

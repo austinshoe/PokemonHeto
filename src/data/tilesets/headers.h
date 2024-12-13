@@ -1122,3 +1122,25 @@ const struct Tileset gTileset_PearlTown =
     .metatileAttributes = gMetatileAttributes_PearlTown,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_EverbloomCity =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_EverbloomCity,
+    .palettes = gTilesetPalettes_EverbloomCity,
+    .metatiles = gMetatiles_EverbloomCity,
+    .metatileAttributes = gMetatileAttributes_EverbloomCity,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_Everbloom =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_Everbloom,
+    .palettes = gTilesetPalettes_Everbloom,
+    .metatiles = gMetatiles_Everbloom,
+    .metatileAttributes = gMetatileAttributes_Everbloom,
+    .callback = NULL,
+};
