@@ -1363,3 +1363,5 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/RuinveilDesertConnection/scripts.inc"
 
 	.include "data/maps/OnsenGym_1F/scripts.inc"
+
+	.include "data/maps/HallowSparkGym/scripts.inc"

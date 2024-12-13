@@ -709,6 +709,7 @@
 #define MAP_HALLOW_SPARK_HOUSE32F  (9 | (41 << 8))
 #define MAP_HALLOW_SPARK_HOUSE41F  (10 | (41 << 8))
 #define MAP_HALLOW_SPARK_HOUSE42F  (11 | (41 << 8))
+#define MAP_HALLOW_SPARK_GYM       (12 | (41 << 8))
 
 // gMapGroup_IndoorSuna
 #define MAP_SUNA_CENTER       (0 | (42 << 8))

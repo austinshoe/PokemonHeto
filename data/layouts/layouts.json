@@ -5320,12 +5320,12 @@
     {
       "id": "LAYOUT_EVERBLOOM_ORCHARD",
       "name": "EverbloomOrchard_Layout",
-      "width": 40,
+      "width": 44,
       "height": 24,
       "border_width": 2,
       "border_height": 2,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Petalburg",
+      "secondary_tileset": "gTileset_PearlTown",
       "border_filepath": "data/layouts/EverbloomOrchard/border.bin",
       "blockdata_filepath": "data/layouts/EverbloomOrchard/map.bin"
     },
@@ -5349,7 +5349,7 @@
       "border_width": 2,
       "border_height": 2,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Petalburg",
+      "secondary_tileset": "gTileset_PearlTown",
       "border_filepath": "data/layouts/NewMap2/border.bin",
       "blockdata_filepath": "data/layouts/NewMap2/map.bin"
     },
@@ -5529,7 +5529,7 @@
       "border_width": 2,
       "border_height": 2,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Petalburg",
+      "secondary_tileset": "gTileset_PearlTown",
       "border_filepath": "data/layouts/routebeforetundra/border.bin",
       "blockdata_filepath": "data/layouts/routebeforetundra/map.bin"
     },
@@ -6016,12 +6016,12 @@
     {
       "id": "LAYOUT_VOLT_VELDT",
       "name": "VoltVeldt_Layout",
-      "width": 50,
+      "width": 58,
       "height": 40,
       "border_width": 2,
       "border_height": 2,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Petalburg",
+      "secondary_tileset": "gTileset_PearlTown",
       "border_filepath": "data/layouts/VoltVeldt/border.bin",
       "blockdata_filepath": "data/layouts/VoltVeldt/map.bin"
     },
@@ -6837,7 +6837,7 @@
       "border_width": 2,
       "border_height": 2,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Petalburg",
+      "secondary_tileset": "gTileset_PearlTown",
       "border_filepath": "data/layouts/EigthCup/border.bin",
       "blockdata_filepath": "data/layouts/EigthCup/map.bin"
     },
@@ -7104,6 +7104,18 @@
       "secondary_tileset": "gTileset_volcano_2",
       "border_filepath": "data/layouts/OnsenGym_1F/border.bin",
       "blockdata_filepath": "data/layouts/OnsenGym_1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_HALLOW_SPARK_GYM",
+      "name": "HallowSparkGym_Layout",
+      "width": 20,
+      "height": 20,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_Building",
+      "secondary_tileset": "gTileset_MauvilleGym",
+      "border_filepath": "data/layouts/HallowSparkGym/border.bin",
+      "blockdata_filepath": "data/layouts/HallowSparkGym/map.bin"
     }
   ]
 }

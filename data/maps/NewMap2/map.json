@@ -98,14 +98,14 @@
     },
     {
       "x": 40,
-      "y": 5,
+      "y": 6,
       "elevation": 0,
       "dest_map": "MAP_SIXTH_CUP",
       "dest_warp_id": "2"
     },
     {
       "x": 41,
-      "y": 5,
+      "y": 6,
       "elevation": 0,
       "dest_map": "MAP_SIXTH_CUP",
       "dest_warp_id": "3"
