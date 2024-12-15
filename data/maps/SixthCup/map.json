@@ -18,42 +18,42 @@
   ],
   "warp_events": [
     {
-      "x": 25,
+      "x": 27,
       "y": 2,
       "elevation": 0,
       "dest_map": "MAP_SILVERSTONE_CITY",
       "dest_warp_id": "0"
     },
     {
-      "x": 26,
+      "x": 28,
       "y": 2,
       "elevation": 0,
       "dest_map": "MAP_SILVERSTONE_CITY",
       "dest_warp_id": "1"
     },
     {
-      "x": 4,
+      "x": 6,
       "y": 49,
       "elevation": 0,
       "dest_map": "MAP_NEW_MAP2",
       "dest_warp_id": "4"
     },
     {
-      "x": 5,
+      "x": 7,
       "y": 49,
       "elevation": 0,
       "dest_map": "MAP_NEW_MAP2",
       "dest_warp_id": "5"
     },
     {
-      "x": 10,
+      "x": 12,
       "y": 45,
       "elevation": 0,
       "dest_map": "MAP_ACEOF_SWORDS",
       "dest_warp_id": "0"
     },
     {
-      "x": 11,
+      "x": 13,
       "y": 45,
       "elevation": 0,
       "dest_map": "MAP_ACEOF_SWORDS",

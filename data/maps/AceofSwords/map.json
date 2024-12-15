@@ -19,28 +19,28 @@
   "warp_events": [
     {
       "x": 10,
-      "y": 1,
+      "y": 3,
       "elevation": 0,
       "dest_map": "MAP_SIXTH_CUP",
       "dest_warp_id": "4"
     },
     {
       "x": 11,
-      "y": 1,
+      "y": 3,
       "elevation": 0,
       "dest_map": "MAP_SIXTH_CUP",
       "dest_warp_id": "5"
     },
     {
       "x": 10,
-      "y": 44,
+      "y": 46,
       "elevation": 0,
       "dest_map": "MAP_PEARL_TOWN",
       "dest_warp_id": "5"
     },
     {
       "x": 11,
-      "y": 44,
+      "y": 46,
       "elevation": 0,
       "dest_map": "MAP_PEARL_TOWN",
       "dest_warp_id": "6"

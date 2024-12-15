@@ -18,28 +18,28 @@
   ],
   "warp_events": [
     {
-      "x": 38,
+      "x": 40,
       "y": 18,
       "elevation": 0,
       "dest_map": "MAP_TRITON_BAY",
       "dest_warp_id": "0"
     },
     {
-      "x": 39,
+      "x": 41,
       "y": 18,
       "elevation": 0,
       "dest_map": "MAP_TRITON_BAY",
       "dest_warp_id": "1"
     },
     {
-      "x": 0,
+      "x": 2,
       "y": 15,
       "elevation": 0,
       "dest_map": "MAP_NEW_MAP14",
       "dest_warp_id": "0"
     },
     {
-      "x": 1,
+      "x": 3,
       "y": 15,
       "elevation": 0,
       "dest_map": "MAP_NEW_MAP14",
@@ -53,28 +53,28 @@
       "dest_warp_id": "0"
     },
     {
-      "x": 23,
+      "x": 25,
       "y": 10,
       "elevation": 0,
       "dest_map": "MAP_KUSHINADA_MART",
       "dest_warp_id": "0"
     },
     {
-      "x": 29,
+      "x": 31,
       "y": 22,
       "elevation": 0,
       "dest_map": "MAP_KUSHINADA_HOUSE1",
       "dest_warp_id": "0"
     },
     {
-      "x": 9,
+      "x": 11,
       "y": 22,
       "elevation": 0,
       "dest_map": "MAP_KUSHINADA_HOUSE2",
       "dest_warp_id": "0"
     },
     {
-      "x": 14,
+      "x": 16,
       "y": 31,
       "elevation": 0,
       "dest_map": "MAP_KUSHIANDA_HOUSE3",
