@@ -18,14 +18,14 @@
   ],
   "warp_events": [
     {
-      "x": 57,
+      "x": 58,
       "y": 8,
       "elevation": 0,
       "dest_map": "MAP_POKEMON_LEAGUE",
       "dest_warp_id": "0"
     },
     {
-      "x": 58,
+      "x": 59,
       "y": 8,
       "elevation": 0,
       "dest_map": "MAP_POKEMON_LEAGUE",

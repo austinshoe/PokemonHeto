@@ -18,28 +18,28 @@
   ],
   "warp_events": [
     {
-      "x": 1,
+      "x": 3,
       "y": 2,
       "elevation": 0,
       "dest_map": "MAP_EIGTH_CUP",
       "dest_warp_id": "0"
     },
     {
-      "x": 2,
+      "x": 4,
       "y": 2,
       "elevation": 0,
       "dest_map": "MAP_EIGTH_CUP",
       "dest_warp_id": "1"
     },
     {
-      "x": 52,
+      "x": 54,
       "y": 46,
       "elevation": 0,
       "dest_map": "MAP_NEW_MAP15",
       "dest_warp_id": "2"
     },
     {
-      "x": 53,
+      "x": 55,
       "y": 46,
       "elevation": 0,
       "dest_map": "MAP_NEW_MAP15",

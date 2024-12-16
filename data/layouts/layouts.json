@@ -6844,7 +6844,7 @@
     {
       "id": "LAYOUT_POKEMON_LEAGUE",
       "name": "PokemonLeague_Layout",
-      "width": 40,
+      "width": 42,
       "height": 60,
       "border_width": 2,
       "border_height": 2,
@@ -6856,7 +6856,7 @@
     {
       "id": "LAYOUT_FOUROF_SWORDS",
       "name": "FourofSwords_Layout",
-      "width": 68,
+      "width": 70,
       "height": 60,
       "border_width": 2,
       "border_height": 2,
@@ -6873,7 +6873,7 @@
       "border_width": 2,
       "border_height": 2,
       "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Petalburg",
+      "secondary_tileset": "gTileset_azuretide",
       "border_filepath": "data/layouts/NewMap15/border.bin",
       "blockdata_filepath": "data/layouts/NewMap15/map.bin"
     },
