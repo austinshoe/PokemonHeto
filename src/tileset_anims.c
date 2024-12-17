@@ -276,8 +276,8 @@ static const u16 *const gTilesetAnims_Fluorites_Eye_Fluorite[] = {
     gTilesetAnims_Fluorites_Eye_Fluorite_Frame19
 };
 
-const u16 gTilesetAnims_HallowSpark_Gym_Tesla_Frame0[] = INCBIN_U16("data/tilesets/primary/general/anim/hallow_spark_gym/0.4bpp");
-const u16 gTilesetAnims_HallowSpark_Gym_Tesla_Frame1[] = INCBIN_U16("data/tilesets/primary/general/anim/hallow_spark_gym/1.4bpp");
+const u16 gTilesetAnims_HallowSpark_Gym_Tesla_Frame0[] = INCBIN_U16("data/tilesets/primary/hallow_spark_gym/anim/tesla/0.4bpp");
+const u16 gTilesetAnims_HallowSpark_Gym_Tesla_Frame1[] = INCBIN_U16("data/tilesets/primary/hallow_spark_gym/anim/tesla/1.4bpp");
 
 static const u16 *const gTilesetAnims_HallowSpark_Gym_Tesla[] = {
     gTilesetAnims_HallowSpark_Gym_Tesla_Frame0,
