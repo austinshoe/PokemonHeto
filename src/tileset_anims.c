@@ -951,7 +951,7 @@ static void QueueAnimTiles_Fluorites_Eye_Fluorite(u16 timer)
 
 static void QueueAnimTiles_HallowSpark_Gym_Tesla(u16 timer) {
     u16 i = timer % 2;
-    AppendTilesetAnimToBuffer(gTilesetAnims_HallowSpark_Gym_Tesla[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(64)), 12 * TILE_SIZE_4BPP)
+    AppendTilesetAnimToBuffer(gTilesetAnims_HallowSpark_Gym_Tesla[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(64)), 12 * TILE_SIZE_4BPP);
 }
 
 static void QueueAnimTiles_PokemonLeague_Lilacs(u16 timer)
@@ -1157,7 +1157,7 @@ static void TilesetAnim_Fluorites_Eye(u16 timer)
 
 static void TilesetAnim_HallowSpark_Gym(u16 timer) {
     if (timer % 4  == 0) {
-        QueueAnimTiles_HallowSpark_Gym_Tesla(timer /4)
+        QueueAnimTiles_HallowSpark_Gym_Tesla(timer /4);
     }
 }
 
