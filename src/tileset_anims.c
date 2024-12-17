@@ -26,6 +26,7 @@ static void _InitSecondaryTilesetAnimation(void);
 static void TilesetAnim_General(u16);
 static void TilesetAnim_Luminara(u16);
 static void TilesetAnim_Fluorites_Eye(u16);
+static void TilesetAnim_HallowSpark_Gym(u16);
 static void TilesetAnim_PokemonLeague(u16);
 static void TilesetAnim_Volcano(u16);
 static void TilesetAnim_Fall(u16);
@@ -84,6 +85,7 @@ static void QueueAnimTiles_Fall_Corn(u16);
 static void QueueAnimTiles_volcano1_Lava(u16);
 static void QueueAnimTiles_Luminara_Flower(u16);
 static void QueueAnimTiles_Fluorites_Eye_Fluorite(u16);
+static void QueueAnimTiles_HallowSpark_Gym_Tesla(u16);
 static void QueueAnimTiles_PokemonLeague_Lilacs(u16);
 static void QueueAnimTiles_PokemonLeague_Flag(u16);
 
@@ -272,6 +274,14 @@ static const u16 *const gTilesetAnims_Fluorites_Eye_Fluorite[] = {
     gTilesetAnims_Fluorites_Eye_Fluorite_Frame17,
     gTilesetAnims_Fluorites_Eye_Fluorite_Frame18,
     gTilesetAnims_Fluorites_Eye_Fluorite_Frame19
+};
+
+const u16 gTilesetAnims_HallowSpark_Gym_Tesla_Frame0[] = INCBIN_U16("data/tilesets/primary/general/anim/hallow_spark_gym/0.4bpp");
+const u16 gTilesetAnims_HallowSpark_Gym_Tesla_Frame1[] = INCBIN_U16("data/tilesets/primary/general/anim/hallow_spark_gym/1.4bpp");
+
+static const u16 *const gTilesetAnims_HallowSpark_Gym_Tesla[] = {
+    gTilesetAnims_HallowSpark_Gym_Tesla_Frame0,
+    gTilesetAnims_HallowSpark_Gym_Tesla_Frame1
 };
 
 const u16 gTilesetAnims_General_Water_Frame0[] = INCBIN_U16("data/tilesets/primary/general/anim/water/0.4bpp");
@@ -838,6 +848,13 @@ void InitTilesetAnim_Fluorites_Eye(void)
     sPrimaryTilesetAnimCallback = TilesetAnim_Fluorites_Eye;
 }
 
+void InitTilesetAnim_HallowSpark_Gym(void)
+{
+    sPrimaryTilesetAnimCounter = 0;
+    sPrimaryTilesetAnimCounterMax = 256;
+    sPrimaryTilesetAnimCallback = TilesetAnim_HallowSpark_Gym;
+}
+
 void InitTilesetAnim_PokemonLeague(void)
 {
     sPrimaryTilesetAnimCounter = 0;
@@ -930,6 +947,11 @@ static void QueueAnimTiles_Fluorites_Eye_Fluorite(u16 timer)
 {
     u16 i = timer % 20;
     AppendTilesetAnimToBuffer(gTilesetAnims_Fluorites_Eye_Fluorite[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(208)), 26 * TILE_SIZE_4BPP);
+}
+
+static void QueueAnimTiles_HallowSpark_Gym_Tesla(u16 timer) {
+    u16 i = timer % 2;
+    AppendTilesetAnimToBuffer(gTilesetAnims_HallowSpark_Gym_Tesla[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(64)), 12 * TILE_SIZE_4BPP)
 }
 
 static void QueueAnimTiles_PokemonLeague_Lilacs(u16 timer)
@@ -1133,6 +1155,11 @@ static void TilesetAnim_Fluorites_Eye(u16 timer)
         QueueAnimTiles_Fluorites_Eye_Fluorite(timer / 16);
 }
 
+static void TilesetAnim_HallowSpark_Gym(u16 timer) {
+    if (timer % 4  == 0) {
+        QueueAnimTiles_HallowSpark_Gym_Tesla(timer /4)
+    }
+}
 
 static void TilesetAnim_PokemonLeague(u16 timer)
 {

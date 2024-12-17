@@ -11,6 +11,7 @@ void InitTilesetAnim_Fall(void);
 void InitTilesetAnim_Volcano(void);
 void InitTilesetAnim_Luminara(void);
 void InitTilesetAnim_Fluorites_Eye(void);
+void InitTilesetAnim_HallowSpark_Gym(void);
 void InitTilesetAnim_PokemonLeague(void);
 void InitTilesetAnim_Petalburg(void);
 void InitTilesetAnim_Rustboro(void);

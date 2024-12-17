@@ -1153,7 +1153,7 @@ const struct Tileset gTileset_HallowSpark_Gym =
     .palettes = gTilesetPalettes_HallowSpark_Gym,
     .metatiles = gMetatiles_HallowSpark_Gym,
     .metatileAttributes = gMetatileAttributes_HallowSpark_Gym,
-    .callback = NULL,
+    .callback = InitTilesetAnim_HallowSpark_Gym,
 };
 
 const struct Tileset gTileset_HallowSpark_Gears =
