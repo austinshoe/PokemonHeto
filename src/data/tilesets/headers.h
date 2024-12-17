@@ -1144,3 +1144,25 @@ const struct Tileset gTileset_Everbloom =
     .metatileAttributes = gMetatileAttributes_Everbloom,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_HallowSpark_Gym =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_HallowSpark_Gym,
+    .palettes = gTilesetPalettes_HallowSpark_Gym,
+    .metatiles = gMetatiles_HallowSpark_Gym,
+    .metatileAttributes = gMetatileAttributes_HallowSpark_Gym,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_HallowSpark_Gears =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_HallowSpark_Gears,
+    .palettes = gTilesetPalettes_HallowSpark_Gears,
+    .metatiles = gMetatiles_HallowSpark_Gears,
+    .metatileAttributes = gMetatileAttributes_HallowSpark_Gears,
+    .callback = NULL,
+};

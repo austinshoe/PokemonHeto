@@ -294,3 +294,9 @@ const u16 gMetatileAttributes_EverbloomCity[] = INCBIN_U16("data/tilesets/primar
 
 const u16 gMetatiles_Everbloom[] = INCBIN_U16("data/tilesets/secondary/everbloom/metatiles.bin");
 const u16 gMetatileAttributes_Everbloom[] = INCBIN_U16("data/tilesets/secondary/everbloom/metatile_attributes.bin");
+
+const u16 gMetatiles_HallowSpark_Gym[] = INCBIN_U16("data/tilesets/primary/hallow_spark_gym/metatiles.bin");
+const u16 gMetatileAttributes_HallowSpark_Gym[] = INCBIN_U16("data/tilesets/primary/hallow_spark_gym/metatile_attributes.bin");
+
+const u16 gMetatiles_HallowSpark_Gears[] = INCBIN_U16("data/tilesets/secondary/hallow_spark_gears/metatiles.bin");
+const u16 gMetatileAttributes_HallowSpark_Gears[] = INCBIN_U16("data/tilesets/secondary/hallow_spark_gears/metatile_attributes.bin");
