@@ -5,16 +5,33 @@ HallowSparkGym_MapScripts::
 
 HallowSparkGym_OnTransition:
 	random 3
-	setvar VAR_TEMP_0, VAR_RESULT
-	addvar VAR_TEMP_0, 1
+	switch VAR_RESULT
+	case 1, HallowSparkGym_PatternSet1
+	case 2, HallowSparkGym_PatternSet2
+	case 3, HallowSparkGym_PatternSet3
+	end
+
+HallowSparkGym_PatternSet1:
+	setvar VAR_TEMP_0, 1
+	end
+
+HallowSparkGym_PatternSet2:
+	setvar VAR_TEMP_0, 2
+	end
+
+HallowSparkGym_PatternSet3:
+	setvar VAR_TEMP_0, 3
 	end
 
 HallowSparkGym_PlayLights3::
+	lock
+	setvar VAR_TEMP_1, 0
 	setvar VAR_UNUSED_0x4091, 1
 	switch VAR_TEMP_0
 	case 1, HallowSparkGym_Lights3_Pattern1
 	case 2, HallowSparkGym_Lights3_Pattern2
 	case 3, HallowSparkGym_Lights3_Pattern3
+	release
 	end
 
 HallowSparkGym_Lights31::
