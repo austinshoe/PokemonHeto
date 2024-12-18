@@ -27,10 +27,12 @@ HallowSparkGym_PlayLights3::
 	lock
 	setvar VAR_TEMP_1, 0
 	setvar VAR_UNUSED_0x4091, 1
+	msgbox Text_Test1, MSGBOX_DEFAULT
 	switch VAR_TEMP_0
 	case 1, HallowSparkGym_Lights3_Pattern1
 	case 2, HallowSparkGym_Lights3_Pattern2
 	case 3, HallowSparkGym_Lights3_Pattern3
+	msgbox Text_Test2, MSGBOX_DEFAULT
 	release
 	end
 
@@ -237,3 +239,10 @@ Text_HallowSparkGym_Lights_Succeed:
 
 Text_HallowSparkGym_Lights_Fail:
 	.string "That was the wrong combo!$"
+
+Text_Test1:
+	.string "Test 1$"
+
+Text_Test2:
+	.string "Test 2$"
+
