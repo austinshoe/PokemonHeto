@@ -133,7 +133,7 @@ HallowSparkGym_Lights3_Pattern2:
 	release
 	end
 
-HallowSparkGym_Lights3_Pattern2:
+HallowSparkGym_Lights3_Pattern3:
 	setmetatile 19, 31, METATILE_HallowSpark_Gym_Light_On, TRUE
 	special DrawWholeMapView
 	delay 8
@@ -153,3 +153,4 @@ HallowSparkGym_Lights3_Pattern2:
 
 Text_HallowSparkGym_Lights_Succeed:
 	.string "You cracked the combo!$"
+
