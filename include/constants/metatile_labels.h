@@ -270,6 +270,10 @@
 #define METATILE_GenericBuilding_TrickHouse_Door_Closed  0x21B
 #define METATILE_GenericBuilding_TrickHouse_Stairs_Down  0x219
 
+// gTileset_HallowSpark
+#define METATILE_HallowSpark_Gym_Light_Off  0x003
+#define METATILE_HallowSpark_Gym_Light_On   0x002
+
 // gTileset_InsideOfTruck
 #define METATILE_InsideOfTruck_DoorClosedFloor_Bottom  0x21D
 #define METATILE_InsideOfTruck_DoorClosedFloor_Mid     0x215

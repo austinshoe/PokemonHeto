@@ -4,11 +4,11 @@ EverbloomGym2_MapScripts::
 	.byte 0
 
 EverbloomGym2_OnTransition:
-    setvar VAR_UNUSED_0x4083, 0
+    setvar VAR_TEMP_0, 0
     end
 
 EverbloomGym2_OnFrame:
-    map_script_2 VAR_UNUSED_0x4083, 0, EverbloomGym2_Entrance
+    map_script_2 VAR_TEMP_0, 0, EverbloomGym2_Entrance
     .2byte 0
 
 EverbloomGym2_Entrance:
@@ -17,7 +17,7 @@ EverbloomGym2_Entrance:
     waitmessage
     waitbuttonpress
     closemessage
-    setvar VAR_UNUSED_0x4083, 1
+    setvar VAR_TEMP_0, 1
     releaseall
     end
 
@@ -149,6 +149,7 @@ Everbloom_Gym_FloraPostBattle:
     faceplayer
     msgbox Text_EverbloomGym_FloraPostBattleDialogue, MSGBOX_DEFAULT
     applymovement 1, Common_Movement_FaceUp
+    setvar VAR_TEMP_0, 1
     waitmovement 0
     release
     end
