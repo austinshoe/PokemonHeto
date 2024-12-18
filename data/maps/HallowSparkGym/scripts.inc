@@ -6,9 +6,9 @@ HallowSparkGym_MapScripts::
 HallowSparkGym_OnTransition:
 	random 3
 	switch VAR_RESULT
-	case 1, HallowSparkGym_PatternSet1
-	case 2, HallowSparkGym_PatternSet2
-	case 3, HallowSparkGym_PatternSet3
+	case 0, HallowSparkGym_PatternSet1
+	case 1, HallowSparkGym_PatternSet2
+	case 2, HallowSparkGym_PatternSet3
 	end
 
 HallowSparkGym_PatternSet1:
