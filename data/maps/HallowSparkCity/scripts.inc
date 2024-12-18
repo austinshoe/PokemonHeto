@@ -1,6 +1,11 @@
 HallowSparkCity_MapScripts::
+    map_script MAP_SCRIPT_ON_TRANSITION, HallowSparkCity_OnTransition
 	.byte 0
 
+HallowSparkCity_OnTransition:
+    setvar VAR_UNUSED_0x4091, 0
+    end
+    
 Script_HallowSparkCitySign::
     lock
     faceplayer

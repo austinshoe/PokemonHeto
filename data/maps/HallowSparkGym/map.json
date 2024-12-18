@@ -33,9 +33,58 @@
     }
   ],
   "coord_events": [
-
+    {
+      "type": "trigger",
+      "x": 18,
+      "y": 33,
+      "elevation": 0,
+      "var": "VAR_UNUSED_0x4091",
+      "var_value": "0",
+      "script": "HallowSparkGym_PlayLights3"
+    },
+    {
+      "type": "trigger",
+      "x": 19,
+      "y": 33,
+      "elevation": 0,
+      "var": "VAR_UNUSED_0x4091",
+      "var_value": "0",
+      "script": "HallowSparkGym_PlayLights3"
+    },
+    {
+      "type": "trigger",
+      "x": 20,
+      "y": 33,
+      "elevation": 0,
+      "var": "VAR_UNUSED_0x4091",
+      "var_value": "0",
+      "script": "HallowSparkGym_PlayLights3"
+    }
   ],
   "bg_events": [
-
+    {
+      "type": "sign",
+      "x": 18,
+      "y": 31,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "HallowSparkGym_Lights31"
+    },
+    {
+      "type": "sign",
+      "x": 19,
+      "y": 31,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "HallowSparkGym_Lights32"
+    },
+    {
+      "type": "sign",
+      "x": 20,
+      "y": 31,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "HallowSparkGym_Lights33"
+    }
   ]
 }

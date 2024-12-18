@@ -9,7 +9,8 @@ HallowSparkGym_OnTransition:
 	addvar VAR_TEMP_0, 1
 	end
 
-HallowSparkGym_PlayLights3:
+HallowSparkGym_PlayLights3::
+	setvar VAR_UNUSED_0x4091, 1
 	switch VAR_TEMP_0
 	case 1, HallowSparkGym_Lights3_Pattern1
 	case 2, HallowSparkGym_Lights3_Pattern2
@@ -17,53 +18,116 @@ HallowSparkGym_PlayLights3:
 	end
 
 HallowSparkGym_Lights31::
+	lock
+	setmetatile 18, 31, METATILE_HallowSpark_Gym_Light_On, TRUE
+	setmetatile 19, 31, METATILE_HallowSpark_Gym_Light_Off, TRUE
+	setmetatile 20, 31, METATILE_HallowSpark_Gym_Light_Off, TRUE
+	special DrawWholeMapView
+	delay 8
 	switch VAR_TEMP_0
 	case 1, HallowSparkGym_Lights31_Pattern12
 	case 2, HallowSparkGym_Lights31_Pattern12
 	case 3, HallowSparkGym_Lights31_Pattern3
+	release
+	end
+
+HallowSparkGym_Lights32::
+	lock
+	setmetatile 18, 31, METATILE_HallowSpark_Gym_Light_Off, TRUE
+	setmetatile 19, 31, METATILE_HallowSpark_Gym_Light_On, TRUE
+	setmetatile 20, 31, METATILE_HallowSpark_Gym_Light_Off, TRUE
+	special DrawWholeMapView
+	delay 8
+	switch VAR_TEMP_0
+	case 1, HallowSparkGym_Lights32_Pattern1
+	case 2, HallowSparkGym_Lights32_Pattern2
+	case 3, HallowSparkGym_Lights32_Pattern3
+	release
+	end
+
+HallowSparkGym_Lights33::
+	lock
+	setmetatile 18, 31, METATILE_HallowSpark_Gym_Light_Off, TRUE
+	setmetatile 19, 31, METATILE_HallowSpark_Gym_Light_Off, TRUE
+	setmetatile 20, 31, METATILE_HallowSpark_Gym_Light_On, TRUE
+	special DrawWholeMapView
+	delay 8
+	switch VAR_TEMP_0
+	case 1, HallowSparkGym_Lights33_Pattern1
+	case 2, HallowSparkGym_Lights33_Pattern23
+	case 3, HallowSparkGym_Lights33_Pattern23
+	release
 	end
 
 HallowSparkGym_Lights31_Pattern3:
-	setmetatile 18, 31, METATILE_HallowSpark_Gym_Light_On, TRUE
-	setmetatile 19, 31, METATILE_HallowSpark_Gym_Light_Off, TRUE
-	setmetatile 20, 31, METATILE_HallowSpark_Gym_Light_Off, TRUE
-	special DrawWholeMapView
-	delay 8
 	compare VAR_TEMP_1, 2
-	goto_if_eq HallowSparkGym_Lights31_End
+	goto_if_eq HallowSparkGym_Lights3_End
 	setflag FLAG_TEMP_1
-	goto HallowSparkGym_Lights31_End
+	goto HallowSparkGym_Lights3_End
 
 HallowSparkGym_Lights31_Pattern12:
-	setmetatile 18, 31, METATILE_HallowSpark_Gym_Light_On, TRUE
-	setmetatile 19, 31, METATILE_HallowSpark_Gym_Light_Off, TRUE
-	setmetatile 20, 31, METATILE_HallowSpark_Gym_Light_Off, TRUE
-	special DrawWholeMapView
-	delay 8
 	compare VAR_TEMP_1, 0
-	goto_if_eq HallowSparkGym_Lights31_End
+	goto_if_eq HallowSparkGym_Lights3_End
 	setflag FLAG_TEMP_1
-	goto HallowSparkGym_Lights31_End
+	goto HallowSparkGym_Lights3_End
 
-HallowSparkGym_Lights31_End:
+HallowSparkGym_Lights32_Pattern1:
+	compare VAR_TEMP_1, 2
+	goto_if_eq HallowSparkGym_Lights3_End
+	setflag FLAG_TEMP_1
+	goto HallowSparkGym_Lights3_End
+
+HallowSparkGym_Lights32_Pattern2:
+	compare VAR_TEMP_1, 1
+	goto_if_eq HallowSparkGym_Lights3_End
+	setflag FLAG_TEMP_1
+	goto HallowSparkGym_Lights3_End
+
+HallowSparkGym_Lights32_Pattern3:
+	compare VAR_TEMP_1, 0
+	goto_if_eq HallowSparkGym_Lights3_End
+	setflag FLAG_TEMP_1
+	goto HallowSparkGym_Lights3_End
+
+HallowSparkGym_Lights33_Pattern1:
+	compare VAR_TEMP_1, 1
+	goto_if_eq HallowSparkGym_Lights3_End
+	setflag FLAG_TEMP_1
+	goto HallowSparkGym_Lights3_End
+
+HallowSparkGym_Lights33_Pattern23:
+	compare VAR_TEMP_1, 2
+	goto_if_eq HallowSparkGym_Lights3_End
+	setflag FLAG_TEMP_1
+	goto HallowSparkGym_Lights3_End
+
+HallowSparkGym_Lights3_End:
 	addvar VAR_TEMP_1, 1
 	compare VAR_TEMP_1, 3
-	goto_if_eq HallowSparkGym_Lights31_YesNo
+	goto_if_eq HallowSparkGym_Lights3_YesNo
+	release
 	end
 
-HallowSparkGym_Lights31_YesNo:
-	goto_if_set FLAG_TEMP_1, HallowSparkGym_Lights31_Fail
-	call HallowSparkGym_Lights31_Succeed
+HallowSparkGym_Lights3_YesNo:
+	setvar VAR_TEMP_1, 0
+	goto_if_set FLAG_TEMP_1, HallowSparkGym_Lights3_Fail
+	call HallowSparkGym_Lights3_Succeed
+	clearflag FLAG_TEMP_1
+	release
 	end
 
-HallowSparkGym_Lights31_Fail:
+HallowSparkGym_Lights3_Fail:
 	setmetatile 18, 31, METATILE_HallowSpark_Gym_Light_Off, TRUE
 	setmetatile 19, 31, METATILE_HallowSpark_Gym_Light_Off, TRUE
 	setmetatile 20, 31, METATILE_HallowSpark_Gym_Light_Off, TRUE
 	special DrawWholeMapView
 	delay 8
+	clearflag FLAG_TEMP_1
+	msgbox Text_HallowSparkGym_Lights_Fail, MSGBOX_DEFAULT
+	release
+	end
 
-HallowSparkGym_Lights31_Succeed:
+HallowSparkGym_Lights3_Succeed:
 	msgbox Text_HallowSparkGym_Lights_Succeed, MSGBOX_DEFAULT
 	setmetatile 18, 31, METATILE_HallowSpark_Gym_Light_On, TRUE
 	setmetatile 19, 31, METATILE_HallowSpark_Gym_Light_On, TRUE
@@ -154,3 +218,5 @@ HallowSparkGym_Lights3_Pattern3:
 Text_HallowSparkGym_Lights_Succeed:
 	.string "You cracked the combo!$"
 
+Text_HallowSparkGym_Lights_Fail:
+	.string "That was the wrong combo!$"
