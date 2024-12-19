@@ -90,7 +90,7 @@ HallowSparkGym_Lights33::
 	release
 	end
 
-HallowSparkGym_Lights51:
+HallowSparkGym_Lights51::
 	lock
 	setmetatile 2, 32, METATILE_HallowSpark_Gym_Light_On, TRUE
 	setmetatile 3, 32, METATILE_HallowSpark_Gym_Light_Off, TRUE
@@ -107,7 +107,7 @@ HallowSparkGym_Lights51:
 	release
 	end
 
-HallowSparkGym_Lights52:
+HallowSparkGym_Lights52::
 	lock
 	setmetatile 2, 32, METATILE_HallowSpark_Gym_Light_Off, TRUE
 	setmetatile 3, 32, METATILE_HallowSpark_Gym_Light_On, TRUE
@@ -124,7 +124,7 @@ HallowSparkGym_Lights52:
 	release
 	end
 
-HallowSparkGym_Lights53:
+HallowSparkGym_Lights53::
 	lock
 	setmetatile 2, 32, METATILE_HallowSpark_Gym_Light_Off, TRUE
 	setmetatile 3, 32, METATILE_HallowSpark_Gym_Light_Off, TRUE
@@ -141,7 +141,7 @@ HallowSparkGym_Lights53:
 	release
 	end
 
-HallowSparkGym_Lights54:
+HallowSparkGym_Lights54::
 	lock
 	setmetatile 2, 32, METATILE_HallowSpark_Gym_Light_Off, TRUE
 	setmetatile 3, 32, METATILE_HallowSpark_Gym_Light_Off, TRUE
@@ -158,7 +158,7 @@ HallowSparkGym_Lights54:
 	release
 	end
 
-HallowSparkGym_Lights55:
+HallowSparkGym_Lights55::
 	lock
 	setmetatile 2, 32, METATILE_HallowSpark_Gym_Light_Off, TRUE
 	setmetatile 3, 32, METATILE_HallowSpark_Gym_Light_Off, TRUE
