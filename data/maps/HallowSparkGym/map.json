@@ -109,8 +109,8 @@
       "x": 2,
       "y": 32,
       "elevation": 0,
-      "player_facing_dir": "HallowSparkGym_Lights51",
-      "script": "NULL"
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "HallowSparkGym_Lights51"
     },
     {
       "type": "sign",
