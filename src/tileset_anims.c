@@ -287,10 +287,10 @@ static const u16 *const gTilesetAnims_HallowSpark_Gym_Tesla[] = {
     gTilesetAnims_HallowSpark_Gym_Tesla_Frame1
 };
 
-const u16 gTilesetAnims_HallowSpark_Gears_Biggear1_Frame0[] = INCBIN_U16("data/tilesets/primary/hallow_spark_gears/anim/biggear1/0.4bpp");
-const u16 gTilesetAnims_HallowSpark_Gears_Biggear1_Frame1[] = INCBIN_U16("data/tilesets/primary/hallow_spark_gears/anim/biggear1/1.4bpp");
-const u16 gTilesetAnims_HallowSpark_Gears_Biggear1_Frame2[] = INCBIN_U16("data/tilesets/primary/hallow_spark_gears/anim/biggear1/2.4bpp");
-const u16 gTilesetAnims_HallowSpark_Gears_Biggear1_Frame3[] = INCBIN_U16("data/tilesets/primary/hallow_spark_gears/anim/biggear1/3.4bpp");
+const u16 gTilesetAnims_HallowSpark_Gears_Biggear1_Frame0[] = INCBIN_U16("data/tilesets/secondary/hallow_spark_gears/anim/biggear1/0.4bpp");
+const u16 gTilesetAnims_HallowSpark_Gears_Biggear1_Frame1[] = INCBIN_U16("data/tilesets/secondary/hallow_spark_gears/anim/biggear1/1.4bpp");
+const u16 gTilesetAnims_HallowSpark_Gears_Biggear1_Frame2[] = INCBIN_U16("data/tilesets/secondary/hallow_spark_gears/anim/biggear1/2.4bpp");
+const u16 gTilesetAnims_HallowSpark_Gears_Biggear1_Frame3[] = INCBIN_U16("data/tilesets/secondary/hallow_spark_gears/anim/biggear1/3.4bpp");
 
 static const u16 *const gTilesetAnims_HallowSpark_Gears_Biggear1[] = {
     gTilesetAnims_HallowSpark_Gears_Biggear1_Frame0,
@@ -299,10 +299,10 @@ static const u16 *const gTilesetAnims_HallowSpark_Gears_Biggear1[] = {
     gTilesetAnims_HallowSpark_Gears_Biggear1_Frame3
 };
 
-const u16 gTilesetAnims_HallowSpark_Gears_Biggear2_Frame0[] = INCBIN_U16("data/tilesets/primary/hallow_spark_gears/anim/biggear2/0.4bpp");
-const u16 gTilesetAnims_HallowSpark_Gears_Biggear2_Frame1[] = INCBIN_U16("data/tilesets/primary/hallow_spark_gears/anim/biggear2/1.4bpp");
-const u16 gTilesetAnims_HallowSpark_Gears_Biggear2_Frame2[] = INCBIN_U16("data/tilesets/primary/hallow_spark_gears/anim/biggear2/2.4bpp");
-const u16 gTilesetAnims_HallowSpark_Gears_Biggear2_Frame3[] = INCBIN_U16("data/tilesets/primary/hallow_spark_gears/anim/biggear2/3.4bpp");
+const u16 gTilesetAnims_HallowSpark_Gears_Biggear2_Frame0[] = INCBIN_U16("data/tilesets/secondary/hallow_spark_gears/anim/biggear2/0.4bpp");
+const u16 gTilesetAnims_HallowSpark_Gears_Biggear2_Frame1[] = INCBIN_U16("data/tilesets/secondary/hallow_spark_gears/anim/biggear2/1.4bpp");
+const u16 gTilesetAnims_HallowSpark_Gears_Biggear2_Frame2[] = INCBIN_U16("data/tilesets/secondary/hallow_spark_gears/anim/biggear2/2.4bpp");
+const u16 gTilesetAnims_HallowSpark_Gears_Biggear2_Frame3[] = INCBIN_U16("data/tilesets/secondary/hallow_spark_gears/anim/biggear2/3.4bpp");
 
 static const u16 *const gTilesetAnims_HallowSpark_Gears_Biggear2[] = {
     gTilesetAnims_HallowSpark_Gears_Biggear2_Frame0,
