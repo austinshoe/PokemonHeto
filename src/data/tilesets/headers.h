@@ -1164,5 +1164,5 @@ const struct Tileset gTileset_HallowSpark_Gears =
     .palettes = gTilesetPalettes_HallowSpark_Gears,
     .metatiles = gMetatiles_HallowSpark_Gears,
     .metatileAttributes = gMetatileAttributes_HallowSpark_Gears,
-    .callback = NULL,
+    .callback = InitTilesetAnim_HallowSpark_Gears,
 };
