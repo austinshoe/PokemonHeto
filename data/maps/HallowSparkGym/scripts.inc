@@ -99,8 +99,8 @@ HallowSparkGym_Lights33::
 	msgbox Text_Button_Pressed, MSGBOX_DEFAULT
 	switch VAR_TEMP_0
 	case 1, HallowSparkGym_Lights33_Pattern1
-	case 2, HallowSparkGym_Lights33_Pattern23
-	case 3, HallowSparkGym_Lights33_Pattern23
+	case 2, HallowSparkGym_Lights33_Pattern2
+	case 3, HallowSparkGym_Lights33_Pattern3
 	release
 	end
 
@@ -298,7 +298,7 @@ HallowSparkGym_Lights66::
 	end
 
 HallowSparkGym_Lights31_Pattern3:
-	compare VAR_TEMP_1, 2
+	compare VAR_TEMP_1, 1
 	goto_if_eq HallowSparkGym_Lights3_End
 	setflag FLAG_TEMP_1
 	goto HallowSparkGym_Lights3_End
@@ -333,12 +333,17 @@ HallowSparkGym_Lights33_Pattern1:
 	setflag FLAG_TEMP_1
 	goto HallowSparkGym_Lights3_End
 
-HallowSparkGym_Lights33_Pattern23:
+HallowSparkGym_Lights33_Pattern2:
 	compare VAR_TEMP_1, 2
 	goto_if_eq HallowSparkGym_Lights3_End
 	setflag FLAG_TEMP_1
 	goto HallowSparkGym_Lights3_End
 
+HallowSparkGym_Lights33_Pattern3:
+	compare VAR_TEMP_1, 2
+	goto_if_eq HallowSparkGym_Lights3_End
+	setflag FLAG_TEMP_1
+	goto HallowSparkGym_Lights3_End
 
 HallowSparkGym_Lights51_Pattern1:
 	compare VAR_TEMP_1, 0
