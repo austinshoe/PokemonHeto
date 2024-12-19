@@ -87,7 +87,8 @@ static void QueueAnimTiles_volcano1_Lava(u16);
 static void QueueAnimTiles_Luminara_Flower(u16);
 static void QueueAnimTiles_Fluorites_Eye_Fluorite(u16);
 static void QueueAnimTiles_HallowSpark_Gym_Tesla(u16);
-static void QueueAnimTiles_HallowSpark_Gears_Biggear(u16);
+static void QueueAnimTiles_HallowSpark_Gears_Biggear1(u16);
+static void QueueAnimTiles_HallowSpark_Gears_Biggear2(u16);
 static void QueueAnimTiles_PokemonLeague_Lilacs(u16);
 static void QueueAnimTiles_PokemonLeague_Flag(u16);
 
@@ -286,16 +287,28 @@ static const u16 *const gTilesetAnims_HallowSpark_Gym_Tesla[] = {
     gTilesetAnims_HallowSpark_Gym_Tesla_Frame1
 };
 
-const u16 gTilesetAnims_HallowSpark_Gears_Biggear_Frame0[] = INCBIN_U16("data/tilesets/primary/hallow_spark_gears/anim/biggear/0.4bpp");
-const u16 gTilesetAnims_HallowSpark_Gears_Biggear_Frame1[] = INCBIN_U16("data/tilesets/primary/hallow_spark_gears/anim/biggear/1.4bpp");
-const u16 gTilesetAnims_HallowSpark_Gears_Biggear_Frame2[] = INCBIN_U16("data/tilesets/primary/hallow_spark_gears/anim/biggear/2.4bpp");
-const u16 gTilesetAnims_HallowSpark_Gears_Biggear_Frame3[] = INCBIN_U16("data/tilesets/primary/hallow_spark_gears/anim/biggear/3.4bpp");
+const u16 gTilesetAnims_HallowSpark_Gears_Biggear1_Frame0[] = INCBIN_U16("data/tilesets/primary/hallow_spark_gears/anim/biggear1/0.4bpp");
+const u16 gTilesetAnims_HallowSpark_Gears_Biggear1_Frame1[] = INCBIN_U16("data/tilesets/primary/hallow_spark_gears/anim/biggear1/1.4bpp");
+const u16 gTilesetAnims_HallowSpark_Gears_Biggear1_Frame2[] = INCBIN_U16("data/tilesets/primary/hallow_spark_gears/anim/biggear1/2.4bpp");
+const u16 gTilesetAnims_HallowSpark_Gears_Biggear1_Frame3[] = INCBIN_U16("data/tilesets/primary/hallow_spark_gears/anim/biggear1/3.4bpp");
 
-static const u16 *const gTilesetAnims_HallowSpark_Gears_Biggear[] = {
-    gTilesetAnims_HallowSpark_Gears_Biggear_Frame0,
-    gTilesetAnims_HallowSpark_Gears_Biggear_Frame1,
-    gTilesetAnims_HallowSpark_Gears_Biggear_Frame2,
-    gTilesetAnims_HallowSpark_Gears_Biggear_Frame3
+static const u16 *const gTilesetAnims_HallowSpark_Gears_Biggear1[] = {
+    gTilesetAnims_HallowSpark_Gears_Biggear1_Frame0,
+    gTilesetAnims_HallowSpark_Gears_Biggear1_Frame1,
+    gTilesetAnims_HallowSpark_Gears_Biggear1_Frame2,
+    gTilesetAnims_HallowSpark_Gears_Biggear1_Frame3
+};
+
+const u16 gTilesetAnims_HallowSpark_Gears_Biggear2_Frame0[] = INCBIN_U16("data/tilesets/primary/hallow_spark_gears/anim/biggear2/0.4bpp");
+const u16 gTilesetAnims_HallowSpark_Gears_Biggear2_Frame1[] = INCBIN_U16("data/tilesets/primary/hallow_spark_gears/anim/biggear2/1.4bpp");
+const u16 gTilesetAnims_HallowSpark_Gears_Biggear2_Frame2[] = INCBIN_U16("data/tilesets/primary/hallow_spark_gears/anim/biggear2/2.4bpp");
+const u16 gTilesetAnims_HallowSpark_Gears_Biggear2_Frame3[] = INCBIN_U16("data/tilesets/primary/hallow_spark_gears/anim/biggear2/3.4bpp");
+
+static const u16 *const gTilesetAnims_HallowSpark_Gears_Biggear2[] = {
+    gTilesetAnims_HallowSpark_Gears_Biggear2_Frame0,
+    gTilesetAnims_HallowSpark_Gears_Biggear2_Frame1,
+    gTilesetAnims_HallowSpark_Gears_Biggear2_Frame2,
+    gTilesetAnims_HallowSpark_Gears_Biggear2_Frame3
 };
 
 const u16 gTilesetAnims_General_Water_Frame0[] = INCBIN_U16("data/tilesets/primary/general/anim/water/0.4bpp");
@@ -968,9 +981,14 @@ static void QueueAnimTiles_HallowSpark_Gym_Tesla(u16 timer) {
     AppendTilesetAnimToBuffer(gTilesetAnims_HallowSpark_Gym_Tesla[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(64)), 12 * TILE_SIZE_4BPP);
 }
 
-static void QueueAnimTiles_HallowSpark_Gears_Biggear(u16 timer) {
+static void QueueAnimTiles_HallowSpark_Gears_Biggear1(u16 timer) {
     u16 i = timer % 4;
-    AppendTilesetAnimToBuffer(gTilesetAnims_HallowSpark_Gears_Biggear[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(800)), 68 * TILE_SIZE_4BPP);
+    AppendTilesetAnimToBuffer(gTilesetAnims_HallowSpark_Gears_Biggear1[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(834)), 34 * TILE_SIZE_4BPP);
+}
+
+static void QueueAnimTiles_HallowSpark_Gears_Biggear2(u16 timer) {
+    u16 i = timer % 4;
+    AppendTilesetAnimToBuffer(gTilesetAnims_HallowSpark_Gears_Biggear2[i], (u16 *)(BG_VRAM + TILE_OFFSET_4BPP(800)), 34 * TILE_SIZE_4BPP);
 }
 
 static void QueueAnimTiles_PokemonLeague_Lilacs(u16 timer)
@@ -1189,7 +1207,10 @@ static void TilesetAnim_HallowSpark_Gym(u16 timer) {
 
 static void TilesetAnim_HallowSpark_Gears(u16 timer) {
     if (timer % 8 == 0) {
-        QueueAnimTiles_HallowSpark_Gears_Biggear(timer / 8);
+        QueueAnimTiles_HallowSpark_Gears_Biggear1(timer / 8);
+    }
+    if (timer % 8 == 0) {
+        QueueAnimTiles_HallowSpark_Gears_Biggear2(timer / 8);
     }
 }
 
