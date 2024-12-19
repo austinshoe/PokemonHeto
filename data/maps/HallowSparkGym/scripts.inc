@@ -290,7 +290,7 @@ HallowSparkGym_Lights54_Pattern3:
 	setflag FLAG_TEMP_1
 	goto HallowSparkGym_Lights5_End
 
-HallowSparkGym_Lights54_Pattern1:
+HallowSparkGym_Lights55_Pattern1:
 	compare VAR_TEMP_1, 2
 	goto_if_eq HallowSparkGym_Lights5_End
 	setflag FLAG_TEMP_1
@@ -406,7 +406,7 @@ HallowSparkGym_Lights3_Succeed:
 	delay 16
 	return
 
-HallowSparkGym_Lights5_Fail:
+HallowSparkGym_Lights5_Succeed:
 	msgbox Text_HallowSparkGym_Lights_Succeed, MSGBOX_DEFAULT
 	setmetatile 2, 32, METATILE_HallowSpark_Gym_Light_On, TRUE
 	setmetatile 3, 32, METATILE_HallowSpark_Gym_Light_On, TRUE
