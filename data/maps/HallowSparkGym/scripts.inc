@@ -1008,7 +1008,7 @@ HallowSparkGym_Magnemite1:
 	release
 	end
 
-HallowSparkGym_Magnemite1:
+HallowSparkGym_Magnemite2:
 	setwildbattle SPECIES_MAGNEMITE, 31, ITEM_MAGNET
 	dowildbattle
 	release
