@@ -927,6 +927,7 @@ HallowSparkGym_Lights3_Fail:
 	delay 8
 	clearflag FLAG_TEMP_1
 	msgbox Text_HallowSparkGym_Lights_Fail, MSGBOX_DEFAULT
+	call HallowSparkGym_FailPenalty
 	release
 	end
 
@@ -955,6 +956,7 @@ HallowSparkGym_Lights6_Fail:
 	delay 8
 	clearflag FLAG_TEMP_1
 	msgbox Text_HallowSparkGym_Lights_Fail, MSGBOX_DEFAULT
+	call HallowSparkGym_FailPenalty
 	release
 	end
 
@@ -971,6 +973,7 @@ HallowSparkGym_Lights8_Fail:
 	delay 8
 	clearflag FLAG_TEMP_1
 	msgbox Text_HallowSparkGym_Lights_Fail, MSGBOX_DEFAULT
+	call HallowSparkGym_FailPenalty
 	release
 	end
 
