@@ -6,6 +6,11 @@ KasaanGym_OnTransition:
 	setvar VAR_TEMP_0, 0
 	end
 
+KasaanGym_Guide::
+	msgbox Text_KasaanGym_Guide, MSGBOX_DEFAULT
+	release
+	end
+
 KasaanGym_Khione::
 	lock
 	faceplayer
@@ -139,3 +144,13 @@ Text_KasaanGym_KhionePostBattle2:
 	.string "run by some little kids headed by some\l"
 	.string "kid called the Playground King.\p"
 	.string "I don't think they know how to spell.$"
+
+Text_KasaanGym_Guide:
+	.string "Wassup, champ?\n"
+	.string "This the gym of Kasaan, ya hear?\p"
+	.string "This gym specializes in {COLOR BLUE}Ice{COLOR DARK_GRAY} types,\n"
+	.string "so I hope you brought ski gear.\p"
+	.string "Slide across the ice to the other side\n"
+	.string "of the gym, and you'll find {COLOR BLUE}Khione{COLOR DARK_GRAY},\l"
+	.string "the gym leader here.\p"
+	.string "Good luck!$"

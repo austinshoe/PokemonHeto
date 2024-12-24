@@ -46,7 +46,7 @@
       "dest_warp_id": "1"
     },
     {
-      "x": 24,
+      "x": 26,
       "y": 31,
       "elevation": 0,
       "dest_map": "MAP_KUSHINADA_CENTER",
@@ -78,6 +78,13 @@
       "y": 31,
       "elevation": 0,
       "dest_map": "MAP_KUSHIANDA_HOUSE3",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 22,
+      "y": 22,
+      "elevation": 0,
+      "dest_map": "MAP_KUSHINADA_GYM_BUFFER",
       "dest_warp_id": "0"
     }
   ],

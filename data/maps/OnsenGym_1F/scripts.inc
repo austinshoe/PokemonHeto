@@ -78,6 +78,11 @@ OnsenGym_StepTrigger2:
 	release
 	end
 
+OnsenGym_Gym_Guide::
+	msgbox Text_OnsenGym_Guide, MSGBOX_NPC
+	release
+	end
+
 OnsenGym_Trainer1::
 	lock
 	faceplayer
@@ -147,6 +152,26 @@ Text_OnsenGym_LavaWashBack:
 
 TextOnsenGym_LavaBurnedMon:
 	.string "The lava burned your {STR_VAR_1}!$"
+
+Text_OnsenGym_Guide:
+	.string "Heya, champ!\p"
+	.string "It might be useless for me to say this,\n"
+	.string "but this is the Onsen Gym, and we\l"
+	.string "specialize in {COLOR RED}Fire{COLOR DARK_GRAY} types here.\p"
+	.string "As you make your way across the gym,\n"
+	.string "hopping on the stones protruding from\l"
+	.string "the lava, you will be given a certain\l"
+	.string "amount of steps you're allowed to take\l"
+	.string "before the lava rises and washes you\l"
+	.string "back to the start.\p"
+	.string "This number of steps will be increased\n"
+	.string "as you battle the trainers in the gym.\p"
+	.string "Be careful, though - \n"
+	.string "the rising lava will burn a Pokémon in\n"
+	.string "your party, and it is hot enough to\l"
+	.string "inflict this status on any Pokémon,\l"
+	.string "regardless of the ability or type!$"
+
 
 OnsenGym_AnimFrameNormal:
 	setmetatile 1, 3, METATILE_volcano1_Bottom, TRUE

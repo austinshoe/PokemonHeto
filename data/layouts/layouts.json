@@ -5500,7 +5500,7 @@
     {
       "id": "LAYOUT_FROSTVALE_TUNDRA",
       "name": "FrostvaleTundra_Layout",
-      "width": 80,
+      "width": 160,
       "height": 40,
       "border_width": 2,
       "border_height": 2,
@@ -7116,6 +7116,42 @@
       "secondary_tileset": "gTileset_HallowSpark_Gears",
       "border_filepath": "data/layouts/HallowSparkGym/border.bin",
       "blockdata_filepath": "data/layouts/HallowSparkGym/map.bin"
+    },
+    {
+      "id": "LAYOUT_KUSHINADA_GYM",
+      "name": "Kushinada_Gym_Layout",
+      "width": 44,
+      "height": 40,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_PearlTown",
+      "border_filepath": "data/layouts/Kushinada_Gym/border.bin",
+      "blockdata_filepath": "data/layouts/Kushinada_Gym/map.bin"
+    },
+    {
+      "id": "LAYOUT_KUSHINADA_GYM2",
+      "name": "Kushinada_Gym2_Layout",
+      "width": 44,
+      "height": 40,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_PearlTown",
+      "border_filepath": "data/layouts/Kushinada_Gym2/border.bin",
+      "blockdata_filepath": "data/layouts/Kushinada_Gym2/map.bin"
+    },
+    {
+      "id": "LAYOUT_KUSHINADA_GYM_BUFFER",
+      "name": "Kushinada_Gym_Buffer_Layout",
+      "width": 1,
+      "height": 1,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_General",
+      "secondary_tileset": "gTileset_PearlTown",
+      "border_filepath": "data/layouts/Kushinada_Gym_Buffer/border.bin",
+      "blockdata_filepath": "data/layouts/Kushinada_Gym_Buffer/map.bin"
     }
   ]
 }

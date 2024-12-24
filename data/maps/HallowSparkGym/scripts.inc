@@ -23,6 +23,11 @@ HallowSparkGym_PatternSet3:
 	setvar VAR_TEMP_0, 3
 	end
 
+HallowSparkGym_Guide::
+	msgbox Text_HallowSparkGym_Guide, MSGBOX_NPC
+	release
+	end
+
 HallowSparkGym_PlayLights3::
 	lock
 	msgbox Text_Lights_Are_Flashing, MSGBOX_DEFAULT
@@ -1612,3 +1617,16 @@ Text_Button_Pressed:
 
 Text_Lights_Are_Flashing:
 	.string "The lights are flashing the code.$"
+
+Text_HallowSparkGym_Guide:
+	.string "Welcome, challenger,\n"
+	.string "to the Hallowspark Gym!\p"
+	.string "As you might know, this gym specializes\n"
+	.string "in the Electric and Ghost type!\p"
+	.string "As you make your way across the gym,\n"
+	.string "the lights on the floor will flash a\l"
+	.string "code that you must memorize and reenter\l"
+	.string "in order to progress.\p"
+	.string "If you fail to get the code correct,\n"
+	.string "wild Pokémon will jump out at you.\p"
+	.string "Best of luck, and keep persevering!$"

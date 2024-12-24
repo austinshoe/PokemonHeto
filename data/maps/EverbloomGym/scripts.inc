@@ -27,12 +27,37 @@ Everbloom_Gym_Guide::
     lock
     faceplayer
     goto_if_set FLAG_DEFEATED_RUSTBORO_GYM, Everbloom_Gym_Guide_Defeated
+    compare VAR_UNUSED_0x404E, 3
+    goto_if_ge, Everbloom_Gym_Guide_Hint
     msgbox Text_Everbloom_Guide_Advice MSGBOX_DEFAULT
     release
     end
 
-Everbloom_Gym_Guide_Defeated::
-    msgbox Text_Everbloom_Guide_Defeated
+Everbloom_Gym_Guide_Defeated:
+    msgbox Text_Everbloom_Guide_Defeated, MSGBOX_DEFAULT
+    release
+    end
+
+Everbloom_Gym_Guide_Hint:
+    msgbox Text_Everbloom_Guide_Hint, MSGBOX_DEFAULT
+    release
+    end
+
+Everbloom_Gym_Trainer1::
+    lock
+    addvar VAR_UNUSED_0x404E, 1
+    release
+    end
+
+Everbloom_Gym_Trainer2::
+    lock
+    addvar VAR_UNUSED_0x404E, 1
+    release
+    end
+
+Everbloom_Gym_Trainer3::
+    lock
+    addvar VAR_UNUSED_0x404E, 1
     release
     end
 
@@ -48,7 +73,8 @@ Text_Everbloom_Guide_Advice:
     .string "Battle the rest of the trainers here,\n"
     .string "I'll give you a little hint on how to\l"
     .string "get to the gym leader!\p"
-    .string "Hey, you got this. Go for it!$"
+    .string "Hey, you got this.\n"
+    .string "Go for it!$"
     
 Text_Everbloom_Guide_Defeated:
     .string "I smell the perfume of victory on you.$"
@@ -60,3 +86,8 @@ Text_Everbloom_GymSecretPath:
 
 Text_Everbloom_GymPAYes:
     .string "Honestly, who wouldn't?$"
+
+Text_Everbloom_Guide_Hint:
+    .string "I wonder what would happen if you\n"
+    .string "followed that thin, dark, narrow path\l"
+    .string "between the trees...$"

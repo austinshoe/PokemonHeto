@@ -1365,3 +1365,9 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/OnsenGym_1F/scripts.inc"
 
 	.include "data/maps/HallowSparkGym/scripts.inc"
+
+	.include "data/maps/Kushinada_Gym/scripts.inc"
+
+	.include "data/maps/Kushinada_Gym2/scripts.inc"
+
+	.include "data/maps/Kushinada_Gym_Buffer/scripts.inc"

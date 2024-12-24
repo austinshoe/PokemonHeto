@@ -729,11 +729,14 @@
 #define MAP_RUINVEIL_DESERT_CONNECTION (7 | (43 << 8))
 
 // gMapGroup_IndoorKushinada
-#define MAP_KUSHINADA_CENTER (0 | (44 << 8))
-#define MAP_KUSHINADA_MART   (1 | (44 << 8))
-#define MAP_KUSHINADA_HOUSE1 (2 | (44 << 8))
-#define MAP_KUSHINADA_HOUSE2 (3 | (44 << 8))
-#define MAP_KUSHIANDA_HOUSE3 (4 | (44 << 8))
+#define MAP_KUSHINADA_CENTER     (0 | (44 << 8))
+#define MAP_KUSHINADA_MART       (1 | (44 << 8))
+#define MAP_KUSHINADA_HOUSE1     (2 | (44 << 8))
+#define MAP_KUSHINADA_HOUSE2     (3 | (44 << 8))
+#define MAP_KUSHIANDA_HOUSE3     (4 | (44 << 8))
+#define MAP_KUSHINADA_GYM        (5 | (44 << 8))
+#define MAP_KUSHINADA_GYM2       (6 | (44 << 8))
+#define MAP_KUSHINADA_GYM_BUFFER (7 | (44 << 8))
 
 // gMapGroup_IndoorSilverstone
 #define MAP_SILVERSTONE_CENTER  (0 | (45 << 8))
