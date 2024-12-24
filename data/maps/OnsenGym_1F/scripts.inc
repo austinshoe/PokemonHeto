@@ -79,7 +79,9 @@ OnsenGym_StepTrigger2:
 	end
 
 OnsenGym_Gym_Guide::
-	msgbox Text_OnsenGym_Guide, MSGBOX_NPC
+	lock
+	faceplayer
+	msgbox Text_OnsenGym_Guide, MSGBOX_DEFAULT
 	release
 	end
 
@@ -103,8 +105,6 @@ OnsenGym_Trainer3::
 	setvar VAR_UNUSED_0x408B, 3
 	release
 	end
-
-
 
 OnsenGym_WashBack:
 	message Text_OnsenGym_LavaWashBack
@@ -167,7 +167,7 @@ Text_OnsenGym_Guide:
 	.string "This number of steps will be increased\n"
 	.string "as you battle the trainers in the gym.\p"
 	.string "Be careful, though - \n"
-	.string "the rising lava will burn a Pokémon in\n"
+	.string "the rising lava will burn a Pokémon in\l"
 	.string "your party, and it is hot enough to\l"
 	.string "inflict this status on any Pokémon,\l"
 	.string "regardless of the ability or type!$"
