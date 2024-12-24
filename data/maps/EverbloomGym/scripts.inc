@@ -28,7 +28,7 @@ Everbloom_Gym_Guide::
     faceplayer
     goto_if_set FLAG_DEFEATED_RUSTBORO_GYM, Everbloom_Gym_Guide_Defeated
     compare VAR_UNUSED_0x404E, 3
-    goto_if_ge, Everbloom_Gym_Guide_Hint
+    goto_if_ge Everbloom_Gym_Guide_Hint
     msgbox Text_Everbloom_Guide_Advice MSGBOX_DEFAULT
     release
     end
