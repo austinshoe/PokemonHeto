@@ -84,8 +84,8 @@
       "x": 22,
       "y": 22,
       "elevation": 0,
-      "dest_map": "MAP_KUSHINADA_GYM_BUFFER",
-      "dest_warp_id": "0"
+      "dest_map": "MAP_DYNAMIC",
+      "dest_warp_id": "WARP_ID_DYNAMIC"
     }
   ],
   "coord_events": [
