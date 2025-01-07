@@ -33,16 +33,9 @@ jobs:
         env:
           COMPARE: 0
         run: make -j${nproc} -O all
-      
-      - name: Artifacts
-        uses: actions/upload-artifact@v4
-        with:
-          name: pokeemerald
-          path: pokeemerald.gba
 
       - name: Test
         env:
           TEST: 1
         run: |
-          make -j${nproc} -O pokeemerald-test.elf
           make -j${nproc} check
