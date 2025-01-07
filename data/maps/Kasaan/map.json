@@ -19,11 +19,6 @@
       "direction": "down"
     },
     {
-      "map": "MAP_FROSTVALE_TUNDRA2",
-      "offset": -16,
-      "direction": "right"
-    },
-    {
       "map": "MAP_ROUTEAFTERKASAAN",
       "offset": -20,
       "direction": "left"

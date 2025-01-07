@@ -2,7 +2,7 @@
   "id": "MAP_RUINVEIL_DESERT_CONNECTION",
   "name": "RuinveilDesertConnection",
   "layout": "LAYOUT_RUINVEIL_DESERT_CONNECTION",
-  "music": "MUS_ABANDONED_SHIP",
+  "music": "MUS_RUINVEIL_CITY",
   "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
   "requires_flash": false,
   "weather": "WEATHER_SHADE",
