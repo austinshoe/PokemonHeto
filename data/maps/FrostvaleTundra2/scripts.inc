@@ -14,6 +14,7 @@ FrostvaleTundra2_NoTrigger:
 FrostvaleTundra2_Trigger::
     lock
     applymovement 5, FrostvaleTundra2_Movement_Kirschblute_LookAround
+    waitmovement 5
     message Text_FrostvaleTundra2_Context
     waitmessage
     waitbuttonpress
@@ -37,23 +38,21 @@ FrostvaleTundra2_Trigger::
     applymovement 5, Common_Movement_FaceUp
     waitmovement 5,
     hideobjectat 5, MAP_FROSTVALE_TUNDRA2
-    playse SE_WARP_OUT
+    playse SE_EXIT
     applymovement 6, FrostvaleTundra2_Movement_Grunt6Leave
     applymovement 7, FrostvaleTundra2_Movement_Grunt7Leave
     applymovement 8, FrostvaleTundra2_Movement_Grunt8Leave
     applymovement 9, FrostvaleTundra2_Movement_Grunt9Leave
     waitmovement 9
     hideobjectat 9, MAP_FROSTVALE_TUNDRA2
-    playse SE_WARP_OUT
     waitmovement 6
     hideobjectat 6, MAP_FROSTVALE_TUNDRA2
-    playse SE_WARP_OUT
+    playse SE_EXIT
     waitmovement 8
     hideobjectat 8, MAP_FROSTVALE_TUNDRA2
-    playse SE_WARP_OUT
     waitmovement 7
     hideobjectat 7, MAP_FROSTVALE_TUNDRA2
-    playse SE_WARP_OUT
+    playse SE_EXIT
     setvar VAR_ROUTE101_STATE, 2
     setobjectxyperm 5, 0, 59
     setobjectxyperm 6, 0, 59
@@ -142,9 +141,9 @@ Text_FrostvaleTundra2_Context:
     .string "{COLOR BLUE}???:{COLOR DARK_GRAY} Alright, according to our intel,\n"
     .string "he should live around here.\p"
     .string "We're just here to extract information,\n"
-    .string "so don't hurt him. and do your best to\l"
+    .string "so don't hurt him, and do your best to\l"
     .string "keep civilians out of it.\p"
-    .string "If you fail...\p$"
+    .string "If you fail...\p"
     .string "I'll dispose of you-\n"
     .string "Y'all are just low level grunts\l"
     .string "anyways...\p"
