@@ -1,5 +1,68 @@
 FrostvaleTundra2_MapScripts::
+    map_script MAP_SCRIPT_ON_TRANSITION, FrostvaleTundra2_OnTransition
 	.byte 0
+
+FrostvaleTundra2_OnTransition:
+    goto_if_set FLAG_VISITED_RUSTBORO_CITY, FrostvaleTundra2_NoTrigger
+    setvar VAR_ROUTE101_STATE, 1
+    end
+
+FrostvaleTundra2_NoTrigger:
+    setvar VAR_ROUTE101_STATE, 2
+    end
+
+FrostvaleTundra2_Trigger::
+    lock
+    applymovement FrostvaleTundra2_Movement_Kirschblute_LookAround
+    message Text_FrostvaleTundra2_Context
+    waitmessage
+    waitbuttonpress
+    closemessage
+    applymovement 6, Common_Movement_ExclamationMark
+    applymovement 7, Common_Movement_ExclamationMark
+    applymovement 8, Common_Movement_ExclamationMark
+    applymovement 9, Common_Movement_ExclamationMark
+    waitmovement 6
+    waitmovement 7
+    waitmovement 8
+    waitmovement 9
+    message Text_FrostvaleTundra2_GruntAffirm
+    waitmessage
+    waitbuttonpress
+    closemessage
+    message Text_FrostvaleTundra2_KirschbluteLeave
+    waitmessage
+    waitbuttonpress
+    closemessage
+    applymovement 5, Common_Movement_FaceUp
+    waitmovement 5,
+    hideobjectat 5, MAP_FROSTVALE_TUNDRA2
+    playse SE_WARP
+    applymovement
+    applymovement 6, FrostvaleTundra2_Movement_Grunt6Leave
+    applymovement 7, FrostvaleTundra2_Movement_Grunt7Leave
+    applymovement 8, FrostvaleTundra2_Movement_Grunt8Leave
+    applymovement 9, FrostvaleTundra2_Movement_Grunt9Leave
+    waitmovement 9
+    hideobjectat 9, MAP_FROSTVALE_TUNDRA2
+    playse SE_WARP
+    waitmovement 6
+    hideobjectat 6, MAP_FROSTVALE_TUNDRA2
+    playse SE_WARP
+    waitmovement 8
+    hideobjectat 8, MAP_FROSTVALE_TUNDRA2
+    playse SE_WARP
+    waitmovement 7
+    hideobjectat 7, MAP_FROSTVALE_TUNDRA2
+    playse SE_WARP
+    setvar VAR_ROUTE101_STATE, 2
+    setobjectxyperm 5, 0, 59
+    setobjectxyperm 6, 0, 59
+    setobjectxyperm 7, 0, 59
+    setobjectxyperm 8, 0, 59
+    setobjectxyperm 9, 0, 59
+    release
+    end
 
 Script_FrostvaleTundraMan2::
     lock
@@ -63,3 +126,56 @@ Text_FrostvaleTundra2Op2Defeat:
 
 Text_FrostvaleTundra2Op2PostBattle:
     .string "Imma go sleep now.$"
+
+FrostvaleTundra2_Movement_Kirschblute_LookAround:
+    face_right
+    delay_16
+    face_down
+    delay_16
+    face_right
+    delay_16
+    face_down
+    delay_16
+    face_right
+    step_end
+
+Text_FrostvaleTundra2_Context:
+    .string "{COLOR BLUE}???:{COLOR DARK_GRAY} Alright, according to our intel,\n"
+    .string "he should live around here.\p"
+    .string "We're just here to extract information,\n"
+    .string "so don't hurt him. and do your best to\l"
+    .string "keep civilians out of it.\p"
+    .string "If you fail...\p$"
+    .string "I'll dispose of you-\n"
+    .string "Y'all are just low level grunts\l"
+    .string "anyways...\p"
+    .string "Understood?$"
+
+Text_FrostvaleTundra2_GruntAffirm:
+    .string "{COLOR BLUE}Grunts:{COLOR DARK_GRAY} YES, MA'AM!$"
+
+Text_FrostvaleTundra2_KirschbluteLeave:
+    .string "{COLOR BLUE}???:{COLOR DARK_GRAY} Good. Notify me immediately when\n"
+    .string "you locate him.$"
+
+FrostvaleTundra2_Movement_Grunt6Leave:
+    walk_up
+    walk_up
+    step_end
+
+FrostvaleTundra2_Movement_Grunt7Leave:
+    walk_up
+    walk_left
+    walk_up
+    step_end
+
+FrostvaleTundra2_Movement_Grunt8Leave:
+    walk_up
+    walk_left
+    face_up
+    step_end
+
+FrostvaleTundra2_Movement_Grunt9Leave:
+    walk_left
+    face_up
+    step_end

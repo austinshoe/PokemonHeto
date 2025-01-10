@@ -6,8 +6,14 @@ Kasaan_MapScripts::
 
 Kasaan_OnTransition::
     setflag FLAG_VISITED_RUSTBORO_CITY
+    goto_if_unset FLAG_HIDE_RUSTBORO_CITY_DEVON_EMPLOYEE_1, Kasaan_VarThree
     call_if_unset FLAG_RECOVERED_DEVON_GOODS, Kasaan_VarZero
     call_if_set FLAG_RECOVERED_DEVON_GOODS, Kasaan_VarTwo
+    end
+
+Kasaan_VarThree::
+    setobjectxyperm 9, 39, 43
+    setvar VAR_DEWFORD_TOWN_STATE, 3
     end
 
 Kasaan_VarZero::
@@ -52,6 +58,7 @@ Kasaan_MeetKhione:
     applymovement 10, Common_Movement_FaceLeft
     waitmovement 10
     applymovement 10, Common_Movement_ExclamationMark
+    playse SE_PIN
     waitmovement 10
     applymovement 10, Kasaan_Movement_KhioneConfront
     waitmovement 10
@@ -60,6 +67,7 @@ Kasaan_MeetKhione:
     applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight
     waitmovement 0
     applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark
+    playse SE_PIN
     waitmovement 0
     message Text_Kasaan_KhioneWSG
     waitmessage
@@ -69,6 +77,7 @@ Kasaan_MeetKhione:
     message Text_Kasaan_KhioneOopsyPoopsy
     waitmessage
     applymovement 10, Common_Movement_ExclamationMark
+    playse SE_PIN
     waitmovement 10
     message Text_Kasaan_KhioneIntro
     waitmessage
@@ -110,6 +119,7 @@ Kasaan_Geologist_Trigger::
     applymovement 9, Common_Movement_FaceRight
     waitmovement 9
     applymovement 9, Common_Movement_ExclamationMark
+    playse SE_PIN
     waitmovement 9
     delay 16
     msgbox Text_Kasaan_Back_Off, MSGBOX_YESNO
@@ -219,6 +229,186 @@ Kasaan_Stone_House::
     msgbox Kasaan_Stone_House_Text_0, MSGBOX_SIGN
     end
 
+Kasaan_OutsideKirschblüte::
+    lock
+    msgbox Text_Kasaan_OutsideKirschblüte, MSGBOX_DEFAULT
+    release
+    end
+
+Kasaan_OutsideGrunts::
+    lock
+    msgbox Text_Kasaan_OutsideGrunts, MSGBOX_DEFAULT
+    release
+    end
+
+Kasaan_Angrboda_Enter_GeologistHouse::
+    lock 
+    call Kasaan_Angrboda_Cutscene
+    release @ finish rest later
+    end
+
+Kasaan_Angrboda_Cutscene:
+    fadescreen FADE_TO_BLACK
+    setobjectxyperm OBJ_EVENT_ID_PLAYER, 35, 26
+    hideobjectat OBJ_EVENT_ID_PLAYER, 0
+    setobjectxyperm 12, 35, 28
+    setobjectxyperm 15, 35, 27
+    setobjectxyperm 14, 34, 27
+    setobjectxyperm 13, 36, 27
+    fadescreen FADE_FROM_BLACK
+    message Text_Kasaan_Angrboda_Cutscene_1
+    waitmessage
+    applymovement 12, Common_Movement_ExclamationMark
+    playse SE_PIN
+    waitmovement 12
+    message Text_Kasaan_Angrboda_Cutscene_2
+    waitmessage
+    applymovement 11, Common_Movement_FaceLeft
+    waitmovement 11
+    message Text_Kasaan_Angrboda_Cutscene_3
+    waitmessage
+    waitbuttonpress
+    closemessage
+    applymovement 13, Common_Movement_FaceLeft
+    applymovement 12, Kasaan_Movement_12GetOutofWay
+    applymovement 15, Kasaan_Movement_1514GetOutofWay
+    applymovement 15, Kasaan_Movement_1514GetOutofWay
+    waitmovement 12
+    waitmovement 13
+    waitmovement 14
+    waitmovement 15
+    applymovement 11, Kasaan_Movement_KbluteLeave1
+    waitmovement 11
+    applymovement 11, Kasaan_Movement_KbluteLeave2
+    applymovement 14, Kasaan_Movement_14Leave
+    applymovement 15, Kasaan_Movement_15Leave
+    applymovement 12, Kasaan_Movement_12Leave
+    applymovement 13, Kasaan_Movement_13Leave
+    waitmovement 11
+    waitmovement 12
+    waitmovement 13
+    waitmovement 14
+    waitmovement 15
+    fadescreen FADE_TO_BLACK
+    setobjectxyperm OBJ_EVENT_ID_PLAYER, 5, 26
+    showobjectat OBJ_EVENT_ID_PLAYER, 0
+    setobjectxyperm 11, 14, 26
+    setobjectxyperm 14, 15, 26
+    setobjectxyperm 15, 16, 26
+    setobjectxyperm 12, 17, 26
+    setobjectxyperm 13, 18, 26
+    fadescreen FADE_FROM_BLACK
+    end
+
+Text_Kasaan_Angrboda_Cutscene_1:
+    .string "{COLOR BLUE}???:{COLOR DARK_GRAY} So? Did you guys find him?\p"
+    .string "$"
+
+Text_Kasaan_Angrboda_Cutscene_2:
+    .string "{COLOR BLUE}Grunt 1:{COLOR DARK_GRAY} Ma'am, we've checked every\n"
+    .string "house except for the one on the edge of\l"
+    .string "town.\p"
+    .string "He must be in that house.\p"
+    .string "$"
+
+Text_Kasaan_Angrboda_Cutscene_3:
+    .string "{COLOR BLUE}???:{COLOR DARK_GRAY} Alright then.\p"
+    .string "Let's go.$"
+
+Kasaan_Movement_12GetOutofWay:
+    walk_right
+    face_up
+    step_end
+
+Kasaan_Movement_1514GetOutofWay:
+    walk_down
+    face_up
+    step_end
+
+Kasaan_Movement_KbluteLeave1:
+    walk_down
+    walk_left
+    step_end
+
+Kasaan_Movement_KbluteLeave2:
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    step_end
+
+Kasaan_Movement_14Leave:
+    walk_up
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    step_end
+
+Kasaan_Movement_15Leave:
+    walk_left
+    walk_up
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    step_end
+
+Kasaan_Movement_12Leave:
+    walk_left
+    walk_left
+    walk_up
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    step_end
+
+Kasaan_Movement_13Leave:
+    walk_down
+    walk_left
+    walk_left
+    walk_up
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    step_end
 
 Kasaan_Slide_Ice_Trees_Axes_Text_0:
     .string "Falling down always feels better when\n"
@@ -517,3 +707,9 @@ Kasaan_Movement_KhioneSkedaddlyDooFrThisTime:
     walk_up
     walk_up
     step_end
+
+Text_Kasaan_OutsideKirschblüte:
+    .string "{COLOR BLUE}???:{COLOR DARK_GRAY} Those grunts are useless...$"
+
+Text_Kasaan_OutsideGrunts:
+    .string "{COLOR BLUE}Grunt:{COLOR DAKR_GRAY} Is he in here..?$"
