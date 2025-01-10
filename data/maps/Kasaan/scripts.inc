@@ -6,14 +6,14 @@ Kasaan_MapScripts::
 
 Kasaan_OnTransition::
     setflag FLAG_VISITED_RUSTBORO_CITY
-    goto_if_unset FLAG_HIDE_RUSTBORO_CITY_DEVON_EMPLOYEE_1, Kasaan_VarThree
+    goto_if_unset FLAG_HIDE_RUSTBORO_CITY_DEVON_EMPLOYEE_1, Kasaan_VarFour
     call_if_unset FLAG_RECOVERED_DEVON_GOODS, Kasaan_VarZero
     call_if_set FLAG_RECOVERED_DEVON_GOODS, Kasaan_VarTwo
     end
 
-Kasaan_VarThree::
+Kasaan_VarFour::
     setobjectxyperm 9, 39, 43
-    setvar VAR_DEWFORD_TOWN_STATE, 3
+    setvar VAR_DEWFORD_TOWN_STATE, 4
     end
 
 Kasaan_VarZero::

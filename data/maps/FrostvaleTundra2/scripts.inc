@@ -13,7 +13,7 @@ FrostvaleTundra2_NoTrigger:
 
 FrostvaleTundra2_Trigger::
     lock
-    applymovement FrostvaleTundra2_Movement_Kirschblute_LookAround
+    applymovement 5, FrostvaleTundra2_Movement_Kirschblute_LookAround
     message Text_FrostvaleTundra2_Context
     waitmessage
     waitbuttonpress
@@ -38,7 +38,6 @@ FrostvaleTundra2_Trigger::
     waitmovement 5,
     hideobjectat 5, MAP_FROSTVALE_TUNDRA2
     playse SE_WARP
-    applymovement
     applymovement 6, FrostvaleTundra2_Movement_Grunt6Leave
     applymovement 7, FrostvaleTundra2_Movement_Grunt7Leave
     applymovement 8, FrostvaleTundra2_Movement_Grunt8Leave

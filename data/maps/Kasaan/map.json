@@ -309,8 +309,8 @@
       "y": 27,
       "elevation": 0,
       "var": "VAR_DEWFORD_TOWN_STATE",
-      "var_value": "3",
-      "script": "NULL"
+      "var_value": "4",
+      "script": "Kasaan_Angrboda_Enter_GeologistHouse"
     }
   ],
   "bg_events": [
