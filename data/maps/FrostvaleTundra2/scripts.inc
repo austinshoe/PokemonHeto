@@ -37,23 +37,23 @@ FrostvaleTundra2_Trigger::
     applymovement 5, Common_Movement_FaceUp
     waitmovement 5,
     hideobjectat 5, MAP_FROSTVALE_TUNDRA2
-    playse SE_WARP
+    playse SE_WARP_OUT
     applymovement 6, FrostvaleTundra2_Movement_Grunt6Leave
     applymovement 7, FrostvaleTundra2_Movement_Grunt7Leave
     applymovement 8, FrostvaleTundra2_Movement_Grunt8Leave
     applymovement 9, FrostvaleTundra2_Movement_Grunt9Leave
     waitmovement 9
     hideobjectat 9, MAP_FROSTVALE_TUNDRA2
-    playse SE_WARP
+    playse SE_WARP_OUT
     waitmovement 6
     hideobjectat 6, MAP_FROSTVALE_TUNDRA2
-    playse SE_WARP
+    playse SE_WARP_OUT
     waitmovement 8
     hideobjectat 8, MAP_FROSTVALE_TUNDRA2
-    playse SE_WARP
+    playse SE_WARP_OUT
     waitmovement 7
     hideobjectat 7, MAP_FROSTVALE_TUNDRA2
-    playse SE_WARP
+    playse SE_WARP_r
     setvar VAR_ROUTE101_STATE, 2
     setobjectxyperm 5, 0, 59
     setobjectxyperm 6, 0, 59
