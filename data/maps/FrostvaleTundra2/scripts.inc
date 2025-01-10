@@ -53,7 +53,7 @@ FrostvaleTundra2_Trigger::
     playse SE_WARP_OUT
     waitmovement 7
     hideobjectat 7, MAP_FROSTVALE_TUNDRA2
-    playse SE_WARP_r
+    playse SE_WARP_OUT
     setvar VAR_ROUTE101_STATE, 2
     setobjectxyperm 5, 0, 59
     setobjectxyperm 6, 0, 59
