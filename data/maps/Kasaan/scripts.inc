@@ -229,9 +229,9 @@ Kasaan_Stone_House::
     msgbox Kasaan_Stone_House_Text_0, MSGBOX_SIGN
     end
 
-Kasaan_OutsideKirschblüte::
+Kasaan_OutsideKirschblute::
     lock
-    msgbox Text_Kasaan_OutsideKirschblüte, MSGBOX_DEFAULT
+    msgbox Text_Kasaan_OutsideKirschblute, MSGBOX_DEFAULT
     release
     end
 
@@ -708,8 +708,8 @@ Kasaan_Movement_KhioneSkedaddlyDooFrThisTime:
     walk_up
     step_end
 
-Text_Kasaan_OutsideKirschblüte:
+Text_Kasaan_OutsideKirschblute:
     .string "{COLOR BLUE}???:{COLOR DARK_GRAY} Those grunts are useless...$"
 
 Text_Kasaan_OutsideGrunts:
-    .string "{COLOR BLUE}Grunt:{COLOR DAKR_GRAY} Is he in here..?$"
+    .string "{COLOR BLUE}Grunt:{COLOR DARK_GRAY} Is he in here..?$"
