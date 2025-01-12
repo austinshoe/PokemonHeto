@@ -9,6 +9,15 @@ FrostvaleTundra2_OnTransition:
 
 FrostvaleTundra2_NoTrigger:
     setvar VAR_ROUTE101_STATE, 2
+    call FrostvaleTundra2_HideGrunts
+    end
+
+FrostvaleTundra2_HideGrunts:
+    setobjectxyperm 5, 0, 59
+    setobjectxyperm 9, 0, 59
+    setobjectxyperm 6, 0, 59
+    setobjectxyperm 8, 0, 59
+    setobjectxyperm 7, 0, 59
     end
 
 FrostvaleTundra2_Trigger::
@@ -37,23 +46,26 @@ FrostvaleTundra2_Trigger::
     closemessage
     applymovement 5, Common_Movement_FaceUp
     waitmovement 5,
-    setobjectxyperm 5, 0, 59
+    hideobjectat 5, MAP_FROSTVALE_TUNDRA2
     playse SE_EXIT
     applymovement 6, FrostvaleTundra2_Movement_Grunt6Leave
     applymovement 7, FrostvaleTundra2_Movement_Grunt7Leave
     applymovement 8, FrostvaleTundra2_Movement_Grunt8Leave
     applymovement 9, FrostvaleTundra2_Movement_Grunt9Leave
     waitmovement 9
-    setobjectxyperm 9, 0, 59
+    hideobjectat 9, MAP_FROSTVALE_TUNDRA2
     waitmovement 6
-    setobjectxyperm 6, 0, 59
+    hideobjectat 6, MAP_FROSTVALE_TUNDRA2
     playse SE_EXIT
     waitmovement 8
-    setobjectxyperm 8, 0, 59
+    hideobjectat 8, MAP_FROSTVALE_TUNDRA2
     waitmovement 7
-    setobjectxyperm 7, 0, 59
+    hideobjectat 7, MAP_FROSTVALE_TUNDRA2
     playse SE_EXIT
     setvar VAR_ROUTE101_STATE, 2
+    fadescreen FADE_TO_BLACK
+    call FrostvaleTundra2_HideGrunts
+    fadescreen FADE_FROM_BLACK
     release
     end
 
@@ -68,7 +80,7 @@ Text_FrostvaleTundraMan2:
     .string "Hey kid, be careful.\n"
     .string "The ground here is extremely slippery.\l"
     .string "Make sure you walk slowly and\l"
-    .string "carefully, I don’t want to have to dig\l"
+    .string "carefully, I don't want to have to dig\l"
     .string "you out of the snow if you fall.$"
 
 Script_FrostvaleTundraWoman2::
