@@ -18,7 +18,7 @@ FrostvaleTundra2_HideGrunts:
     setobjectxyperm 6, 0, 59
     setobjectxyperm 8, 0, 59
     setobjectxyperm 7, 0, 59
-    end
+    return
 
 FrostvaleTundra2_Trigger::
     lock
