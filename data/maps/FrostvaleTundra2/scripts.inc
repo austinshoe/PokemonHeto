@@ -65,6 +65,13 @@ FrostvaleTundra2_Trigger::
     setvar VAR_ROUTE101_STATE, 2
     fadescreen FADE_TO_BLACK
     call FrostvaleTundra2_HideGrunts
+    setflag FLAG_VISITED_RUSTBORO_CITY
+    removeobject 5
+    removeobject 6
+    removeobject 7
+    removeobject 8
+    removeobject 9
+    clearflag FLAG_VISITED_RUSTBORO_CITY
     fadescreen FADE_FROM_BLACK
     release
     end

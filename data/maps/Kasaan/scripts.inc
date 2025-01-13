@@ -13,6 +13,7 @@ Kasaan_OnTransition::
 
 Kasaan_VarFour::
     setobjectxyperm 9, 39, 43
+    setflag FLAG_UNUSED_0x020
     setvar VAR_DEWFORD_TOWN_STATE, 4
     end
 
@@ -249,7 +250,7 @@ Kasaan_Angrboda_Enter_GeologistHouse::
 
 Kasaan_Angrboda_Cutscene:
     fadescreen FADE_TO_BLACK
-    setobjectxyperm OBJ_EVENT_ID_PLAYER, 35, 26
+    warpsilent MAP_KASAAN, 35, 26
     hideobjectat OBJ_EVENT_ID_PLAYER, 0
     setobjectxyperm 12, 35, 28
     setobjectxyperm 15, 35, 27
@@ -290,7 +291,7 @@ Kasaan_Angrboda_Cutscene:
     waitmovement 14
     waitmovement 15
     fadescreen FADE_TO_BLACK
-    setobjectxyperm OBJ_EVENT_ID_PLAYER, 5, 26
+    warpsilent MAP_KASAAN, 5, 26
     showobjectat OBJ_EVENT_ID_PLAYER, 0
     setobjectxyperm 11, 14, 26
     setobjectxyperm 14, 15, 26
