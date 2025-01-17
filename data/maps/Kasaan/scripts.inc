@@ -243,14 +243,14 @@ Kasaan_OutsideGrunts::
     end
 
 Kasaan_Angrboda_Enter_GeologistHouse::
-    lock 
+    lockall
     call Kasaan_Angrboda_Cutscene
-    release @ finish rest later
+    releaseall @ finish rest later
     end
 
 Kasaan_Angrboda_Cutscene:
     fadescreen FADE_TO_BLACK
-    warpsilent MAP_KASAAN, 35, 26
+    setobjectxyperm OBJ_EVENT_ID_PLAYER, 35, 26
     hideobjectat OBJ_EVENT_ID_PLAYER, 0
     setobjectxyperm 12, 35, 28
     setobjectxyperm 15, 35, 27
@@ -291,7 +291,7 @@ Kasaan_Angrboda_Cutscene:
     waitmovement 14
     waitmovement 15
     fadescreen FADE_TO_BLACK
-    warpsilent MAP_KASAAN, 5, 26
+    setobjectxyperm OBJ_EVENT_ID_PLAYER, 5, 26
     showobjectat OBJ_EVENT_ID_PLAYER, 0
     setobjectxyperm 11, 14, 26
     setobjectxyperm 14, 15, 26
