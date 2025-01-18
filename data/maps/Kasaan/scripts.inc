@@ -245,6 +245,7 @@ Kasaan_OutsideGrunts::
 Kasaan_Angrboda_Enter_GeologistHouse::
     lockall
     call Kasaan_Angrboda_Cutscene
+    call Kasaan_Angrboda_Walk_Up
     releaseall @ finish rest later
     end
 
@@ -257,7 +258,13 @@ Kasaan_Angrboda_Cutscene:
     setobjectxyperm 14, 34, 27
     setobjectxyperm 13, 36, 27
     fadescreen FADE_FROM_BLACK
+    setobjectxyperm OBJ_EVENT_ID_PLAYER, 35, 26
+    setobjectxyperm 12, 35, 28
+    setobjectxyperm 15, 35, 27
+    setobjectxyperm 14, 34, 27
+    setobjectxyperm 13, 36, 27
     message Text_Kasaan_Angrboda_Cutscene_1
+    setobjectxyperm OBJ_EVENT_ID_PLAYER, 35, 26
     waitmessage
     applymovement 12, Common_Movement_ExclamationMark
     playse SE_PIN
@@ -299,7 +306,12 @@ Kasaan_Angrboda_Cutscene:
     setobjectxyperm 12, 17, 26
     setobjectxyperm 13, 18, 26
     fadescreen FADE_FROM_BLACK
-    end
+    setobjectxyperm OBJ_EVENT_ID_PLAYER, 5, 26
+    return
+
+Kasaan_Angrboda_Walk_Up:
+    
+    return
 
 Text_Kasaan_Angrboda_Cutscene_1:
     .string "{COLOR BLUE}???:{COLOR DARK_GRAY} So? Did you guys find him?\p"
