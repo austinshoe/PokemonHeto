@@ -30,28 +30,8 @@ Kasaan_VarOne::
 Kasaan_OnLoad::
     call_if_set FLAG_RECOVERED_DEVON_GOODS, Kasaan_UnlockedDoor
     call_if_unset FLAG_RECOVERED_DEVON_GOODS, Kasaan_LockedDoor
-    compare VAR_DEWFORD_TOWN_STATE, 5
-    goto_if_eq Kasaan_SetGruntPosHidePlayer
-    compare VAR_DEWFORD_TOWN_STATE, 6
-    goto_if_eq Kasaan_UpdateGruntPosShowPlayer
     end
-
-Kasaan_SetGruntPosHidePlayer:
-    hideobjectat OBJ_EVENT_ID_PLAYER, 0
-    setobjectxyperm 12, 35, 28
-    setobjectxyperm 15, 35, 27
-    setobjectxyperm 14, 34, 27
-    setobjectxyperm 13, 36, 27
-    end
-
-Kasaan_UpdateGruntPosShowPlayer:
-    showobjectat OBJ_EVENT_ID_PLAYER, 0
-    setobjectxyperm 11, 14, 26
-    setobjectxyperm 14, 15, 26
-    setobjectxyperm 15, 16, 26
-    setobjectxyperm 12, 17, 26
-    setobjectxyperm 13, 18, 26
-
+    
 Kasaan_LockedDoor::
     setmetatile 7, 16, METATILE_Tundra1_Gym_Door, TRUE
     end
@@ -264,16 +244,25 @@ Kasaan_OutsideGrunts::
 
 Kasaan_Angrboda_Enter_GeologistHouse::
     lockall
-    setvar VAR_DEWFORD_TOWN_STATE, 5
     call Kasaan_Angrboda_Cutscene
     call Kasaan_Angrboda_Walk_Up
-    setvar VAR_DEWFORD_TOWN_STATE, 0
     releaseall @ finish rest later
     end
 
 Kasaan_Angrboda_Cutscene:
-    setvar VAR_DEWFORD_TOWN_STATE, 5
-    warpsilent MAP_KASAAN, 35, 26
+    fadescreen FADE_TO_BLACK
+    setobjectxy OBJ_EVENT_ID_PLAYER, 35, 26
+    hideobjectat OBJ_EVENT_ID_PLAYER, 0
+    setobjectxyperm 12, 35, 28
+    setobjectxyperm 15, 35, 27
+    setobjectxyperm 14, 34, 27
+    setobjectxyperm 13, 36, 27
+    fadescreen FADE_FROM_BLACK
+    setobjectxy OBJ_EVENT_ID_PLAYER, 35, 26
+    setobjectxyperm 12, 35, 28
+    setobjectxyperm 15, 35, 27
+    setobjectxyperm 14, 34, 27
+    setobjectxyperm 13, 36, 27
     message Text_Kasaan_Angrboda_Cutscene_1
     setobjectxyperm OBJ_EVENT_ID_PLAYER, 35, 26
     waitmessage
@@ -308,8 +297,16 @@ Kasaan_Angrboda_Cutscene:
     waitmovement 13
     waitmovement 14
     waitmovement 15
-    setvar VAR_DEWFORD_TOWN_STATE, 6
-    warpsilent MAP_KASAAN, 5, 26
+    fadescreen FADE_TO_BLACK
+    setobjectxy OBJ_EVENT_ID_PLAYER, 5, 26
+    showobjectat OBJ_EVENT_ID_PLAYER, 0
+    setobjectxyperm 11, 14, 26
+    setobjectxyperm 14, 15, 26
+    setobjectxyperm 15, 16, 26
+    setobjectxyperm 12, 17, 26
+    setobjectxyperm 13, 18, 26
+    fadescreen FADE_FROM_BLACK
+    setobjectxy OBJ_EVENT_ID_PLAYER, 5, 26
     return
 
 Kasaan_Angrboda_Walk_Up:
