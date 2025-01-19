@@ -358,7 +358,7 @@ Kasaan_VarSix:
     applymovement 15, Common_Movement_ExclamationMark
     playse SE_PIN
     waitbuttonpress
-    waitmovement
+    waitmovement 15
     message Kasaan_Text_SeeSign3
     waitmessage
     applymovement 15, Common_Movement_ExclamationMark
@@ -366,9 +366,9 @@ Kasaan_VarSix:
     message Kasaan_Text_SeeSign4
     waitmessage
     closemessage
-    waitmovement
+    waitmovement 15
     applymovement 15, Kasaan_Movement_GoToDoor1
-    waitmovement
+    waitmovement 15
     applymovement 15, Common_Movement_ExclamationMark
     playse SE_PIN
     applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight
@@ -844,7 +844,7 @@ Kasaan_Movement_WalkUpToHouse12:
     face_down
     step_end
 
-Kasaan_Movement_WalkUpToHouse13
+Kasaan_Movement_WalkUpToHouse13:
     walk_left
     walk_left
     walk_down
@@ -890,7 +890,7 @@ Kasaan_Movement_PlayerOutOfWay:
     step_end
 
 Kasaan_Text_GruntSkedaddle:
-    .string "{FONT FONT_SMALL_NARROW}Stupid colored kid...{FONT FONR_NORMAL}$"
+    .string "{FONT FONT_SMALL_NARROW}Stupid colored kid...{FONT FONT_NORMAL}$"
 
 Kasaan_Movement_GoToDoor2:
     walk_left
