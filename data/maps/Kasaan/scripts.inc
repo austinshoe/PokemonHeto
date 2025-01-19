@@ -35,6 +35,7 @@ Kasaan_UpdateGruntPos:
 Kasaan_VarFour::
     setobjectxyperm 9, 39, 43
     setflag FLAG_UNUSED_0x020
+    setflag FLAG_RECOVERED_DEVON_GOODS
     setvar VAR_DEWFORD_TOWN_STATE, 4
     end
 
@@ -49,10 +50,16 @@ Kasaan_VarOne::
     end
     
 Kasaan_OnLoad::
+    goto_if_unset FLAG_HIDE_RUSTBORO_CITY_DEVON_EMPLOYEE_1, Kasaan_LockedDoorAndGruntHide
     call_if_set FLAG_RECOVERED_DEVON_GOODS, Kasaan_UnlockedDoor
     call_if_unset FLAG_RECOVERED_DEVON_GOODS, Kasaan_LockedDoor
     end
-    
+
+Kasaan_LockedDoorAndGruntHide::
+    setflag FLAG_RECOVERED_DEVON_GOODS
+    setmetatile 7, 16, METATILE_Tundra1_Gym_Door, TRUE
+    end
+
 Kasaan_LockedDoor::
     setmetatile 7, 16, METATILE_Tundra1_Gym_Door, TRUE
     end
@@ -69,6 +76,8 @@ Kasaan_VarThree::
 
 Kasaan_OnFrame:
     map_script_2 VAR_DEWFORD_TOWN_STATE, 3, Kasaan_MeetKhione
+    map_script_2 VAR_DEWFORD_TOWN_STATE, 5, Kasaan_VarFive
+    map_script_2 VAR_DEWFORD_TOWN_STATE, 6, Kasaan_VarSix
     .2byte 0
 
 Kasaan_UnlockedDoor::
@@ -266,17 +275,16 @@ Kasaan_OutsideGrunts::
 Kasaan_Angrboda_Enter_GeologistHouse::
     lockall
     call Kasaan_Angrboda_Cutscene
-    call Kasaan_Angrboda_Walk_Up
-    releaseall @ finish rest later
     end
 
 Kasaan_Angrboda_Cutscene:
     setvar VAR_DEWFORD_TOWN_STATE, 5
     warpsilent MAP_KASAAN, 35, 26
-    setobjectxyperm 12, 35, 28
-    setobjectxyperm 15, 35, 27
-    setobjectxyperm 14, 34, 27
-    setobjectxyperm 13, 36, 27
+    end
+
+Kasaan_VarFive:
+    lockall
+    hideobjectat OBJ_EVENT_ID_PLAYER, 0
     message Text_Kasaan_Angrboda_Cutscene_1
     waitmessage
     applymovement 12, Common_Movement_ExclamationMark
@@ -310,17 +318,92 @@ Kasaan_Angrboda_Cutscene:
     waitmovement 13
     waitmovement 14
     waitmovement 15
+    setvar VAR_DEWFORD_TOWN_STATE, 6
     warpsilent MAP_KASAAN, 5, 27
     setobjectxyperm 11, 14, 26
     setobjectxyperm 14, 15, 26
     setobjectxyperm 15, 16, 26
     setobjectxyperm 12, 17, 26
     setobjectxyperm 13, 18, 26
-    return
+    end
 
-Kasaan_Angrboda_Walk_Up:
-    
-    return
+Kasaan_VarSix:
+    lockall
+    showobjectat OBJ_EVENT_ID_PLAYER, 0
+    applymovement 11, Kasaan_Movement_WalkUpToHouse
+    applymovement 14, Kasaan_Movement_WalkUpToHouse
+    applymovement 15, Kasaan_Movement_WalkUpToHouse
+    applymovement 12, Kasaan_Movement_WalkUpToHouse
+    applymovement 13, Kasaan_Movement_WalkUpToHouse
+    waitmovement 11
+    applymovement 11, Common_Movement_FaceUp
+    waitmovement 15
+    applymovement 15, Kasaan_Movement_WalkUpToHouse15
+    waitmovement 12
+    applymovement 12, Kasaan_Movement_WalkUpToHouse12
+    waitmovement 13
+    applymovement 13, Kasaan_Movement_WalkUpToHouse13
+    waitmovement 14
+    waitmovement 11
+    waitmovement 15
+    waitmovement 12
+    waitmovement 13
+    message Kasaan_Text_SeeSign
+    waitmessage
+    applymovement 11, Common_Movement_FaceDown
+    waitmovement 11
+    waitmessage
+    message Kasaan_Text_SeeSign2
+    waitmessage
+    applymovement 15, Common_Movement_ExclamationMark
+    playse SE_PIN
+    waitbuttonpress
+    waitmovement
+    message Kasaan_Text_SeeSign3
+    waitmessage
+    applymovement 15, Common_Movement_ExclamationMark
+    playse SE_PIN
+    message Kasaan_Text_SeeSign4
+    waitmessage
+    closemessage
+    waitmovement
+    applymovement 15, Kasaan_Movement_GoToDoor1
+    waitmovement
+    applymovement 15, Common_Movement_ExclamationMark
+    playse SE_PIN
+    applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight
+    waitmovement 15
+    waitmovement OBJ_EVENT_ID_PLAYER
+    msgbox Kasaan_Text_GruntScram MSGBOX_DEFAULT
+    applymovement OBJ_EVENT_ID_PLAYER, Kasaan_Movement_PlayerOutOfWay
+    waitmovement OBJ_EVENT_ID_PLAYER
+    msgbox Kasaan_Text_GruntSkedaddle MSGBOX_DEFAULT
+    applymovement 15, Kasaan_Movement_GoToDoor2
+    waitmovement 15
+    applymovement 11, Kasaan_Movement_KirscbluteEnter
+    applymovement 14, Kasaan_Movement_14Enter
+    applymovement 13, Kasaan_Movement_13Enter
+    applymovement 12, Kasaan_Movement_12Enter
+    waitmovement 11
+    hideobjectat 11, MAP_KASAAN
+    playse SE_WARP_IN
+    waitmovement 14
+    hideobjectat 14, MAP_KASAAN
+    waitmovement 13
+    hideobjectat 13, MAP_KASAAN
+    playse SE_WARP_IN
+    waitmovement 12
+    hideobjectat 12, MAP_KASAAN
+    clearflag FLAG_RECOVERED_DEVON_GOODS
+    setflag FLAG_HIDE_RUSTBORO_CITY_DEVON_EMPLOYEE_1
+    setvar VAR_DEWFORD_TOWN_STATE, 0
+    removeobject 11
+    removeobject 12
+    removeobject 13
+    removeobject 14
+    removeobject 15
+    release
+    end
 
 Text_Kasaan_Angrboda_Cutscene_1:
     .string "{COLOR BLUE}???:{COLOR DARK_GRAY} So? Did you guys find him?\p"
@@ -735,3 +818,116 @@ Text_Kasaan_OutsideKirschblute:
 
 Text_Kasaan_OutsideGrunts:
     .string "{COLOR BLUE}Grunt:{COLOR DARK_GRAY} Is he in here..?$"
+
+Kasaan_Movement_WalkUpToHouse:
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    step_end
+
+Kasaan_Movement_WalkUpToHouse15:
+    walk_down
+    walk_left
+    walk_left
+    walk_left
+    face_down
+    step_end
+
+Kasaan_Movement_WalkUpToHouse12:
+    walk_left
+    walk_down
+    walk_left
+    walk_left
+    face_down
+    step_end
+
+Kasaan_Movement_WalkUpToHouse13
+    walk_left
+    walk_left
+    walk_down
+    walk_left
+    face_down
+    step_end
+
+Kasaan_Text_SeeSign:
+    .string "???: There's no way you guys are being\n"
+    .string "serious right now.\p"
+    .string "It literally says his name on this sign\n"
+    .string "and you're telling me you couldn't find\l"
+    .string "him?\p"
+    .string "Pathetic.\p"
+    .string "$"
+
+Kasaan_Text_SeeSign2:
+    .string "You there!\p"
+    .string "$"
+
+Kasaan_Text_SeeSign3:
+    .string "???: Go guard the door.\p"
+    .string "Keep any intruders out of the lab while\n"
+    .string "we do our job here.$"
+
+Kasaan_Text_SeeSign4:
+    .string "Grunt: Yes, ma'am!$"
+
+Kasaan_Movement_GoToDoor1:
+    walk_left
+    walk_down
+    walk_left
+    face_left
+    step_end
+
+Kasaan_Text_GruntScram:
+    .string "Scram, kid!\n"
+    .string "Skedaddle!$"
+
+Kasaan_Movement_PlayerOutOfWay:
+    walk_down
+    face_up
+    step_end
+
+Kasaan_Text_GruntSkedaddle:
+    .string "{FONT FONT_SMALL_NARROW}Stupid colored kid...{FONT FONR_NORMAL}$"
+
+Kasaan_Movement_GoToDoor2:
+    walk_left
+    walk_left
+    face_down
+    step_end
+
+Kasaan_Movement_KirscbluteEnter:
+    walk_left
+    walk_left
+    walk_left
+    face_up
+    step_end
+
+Kasaan_Movement_14Enter:
+    walk_down
+    walk_left
+    walk_up
+    walk_left
+    walk_left
+    walk_left
+    face_up
+    step_end
+
+Kasaan_Movement_13Enter:
+    walk_left
+    walk_up
+    walk_left
+    walk_left
+    walk_left
+    face_up
+    step_end
+
+Kasaan_Movement_12Enter:
+    walk_up
+    walk_left
+    walk_left
+    walk_left
+    face_up
+    step_end
