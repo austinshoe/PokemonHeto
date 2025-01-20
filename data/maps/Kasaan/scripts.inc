@@ -1,6 +1,7 @@
 Kasaan_MapScripts::
     map_script MAP_SCRIPT_ON_TRANSITION, Kasaan_OnTransition
     map_script MAP_SCRIPT_ON_LOAD, Kasaan_OnLoad
+    map_script ON_WARP_INTO_MAP_TABLE, Kasaan_OnWarp
     map_script MAP_SCRIPT_ON_FRAME_TABLE, Kasaan_OnFrame
     .byte 0
 
@@ -72,6 +73,19 @@ Kasaan_VarTwo::
 Kasaan_VarThree::
     setvar VAR_DEWFORD_TOWN_STATE, 3
     clearflag FLAG_UNUSED_0x020
+    end
+
+Kasaan_OnWarp::
+    map_script_2 VAR_DEWFORD_TOWN_STATE, 5, Kasaan_VarFivePlayer
+    map_script_2 VAR_DEWFORD_TOWN_STATE, 6, Kasaan_VarSixPlayer
+    .2byte 0
+
+Kasaan_VarFivePlayer:
+    hideobjectat OBJ_EVENT_ID_PLAYER, 0
+    end
+
+Kasaan_VarSixPlayer:
+    showobjectat OBJ_EVENT_ID_PLAYER, 0
     end
 
 Kasaan_OnFrame:
@@ -332,6 +346,9 @@ Kasaan_VarFive:
 Kasaan_VarSix:
     lockall
     showobjectat OBJ_EVENT_ID_PLAYER, 0
+    end
+
+Kasaan_VarSixPlaceholder: @remove after
     applymovement 11, Kasaan_Movement_WalkUpToHouse
     applymovement 14, Kasaan_Movement_WalkUpToHouse
     applymovement 15, Kasaan_Movement_WalkUpToHouse
@@ -892,7 +909,7 @@ Kasaan_Movement_PlayerOutOfWay:
     step_end
 
 Kasaan_Text_GruntSkedaddle:
-    .string "{FONT FONT_SMALL}Stupid colored kid...{FONT FONT_NORMAL}$"
+    .string "Stupid colored kid...$"
 
 Kasaan_Movement_GoToDoor2:
     walk_left
