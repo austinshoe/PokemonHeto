@@ -274,12 +274,11 @@ Kasaan_OutsideGrunts::
 
 Kasaan_Angrboda_Enter_GeologistHouse::
     lockall
-    call Kasaan_Angrboda_Cutscene
-    end
-
-Kasaan_Angrboda_Cutscene:
     setvar VAR_DEWFORD_TOWN_STATE, 5
     warpsilent MAP_KASAAN, 35, 26
+    delay 32
+    hideobjectat OBJ_EVENT_ID_PLAYER, 0
+    releaseall
     end
 
 Kasaan_VarFive:
@@ -301,7 +300,7 @@ Kasaan_VarFive:
     applymovement 13, Common_Movement_FaceLeft
     applymovement 12, Kasaan_Movement_12GetOutofWay
     applymovement 15, Kasaan_Movement_1514GetOutofWay
-    applymovement 15, Kasaan_Movement_1514GetOutofWay
+    applymovement 14, Kasaan_Movement_1514GetOutofWay
     waitmovement 12
     waitmovement 13
     waitmovement 14
@@ -325,6 +324,9 @@ Kasaan_VarFive:
     setobjectxyperm 15, 16, 26
     setobjectxyperm 12, 17, 26
     setobjectxyperm 13, 18, 26
+    delay 32
+    showobjectat OBJ_EVENT_ID_PLAYER, 0
+    releaseall
     end
 
 Kasaan_VarSix:
@@ -890,7 +892,7 @@ Kasaan_Movement_PlayerOutOfWay:
     step_end
 
 Kasaan_Text_GruntSkedaddle:
-    .string "{FONT FONT_SMALL_NARROW}Stupid colored kid...{FONT FONT_NORMAL}$"
+    .string "{FONT FONT_SMALL}Stupid colored kid...{FONT FONT_NORMAL}$"
 
 Kasaan_Movement_GoToDoor2:
     walk_left
