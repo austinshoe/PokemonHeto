@@ -306,7 +306,7 @@
     {
       "type": "trigger",
       "x": 5,
-      "y": 27,
+      "y": 26,
       "elevation": 0,
       "var": "VAR_DEWFORD_TOWN_STATE",
       "var_value": "4",
