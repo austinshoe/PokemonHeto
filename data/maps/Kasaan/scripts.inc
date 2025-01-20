@@ -346,16 +346,16 @@ Kasaan_VarFive:
 Kasaan_VarSix:
     lockall
     showobjectat OBJ_EVENT_ID_PLAYER, 0
-    setvar VAR_DEWFORD_TOWN_STATE 0
-    releaseall
-    end
-
-Kasaan_VarSixPlaceholder: @remove after
     applymovement 11, Kasaan_Movement_WalkUpToHouse
     applymovement 14, Kasaan_Movement_WalkUpToHouse
     applymovement 15, Kasaan_Movement_WalkUpToHouse
     applymovement 12, Kasaan_Movement_WalkUpToHouse
     applymovement 13, Kasaan_Movement_WalkUpToHouse
+    setvar VAR_DEWFORD_TOWN_STATE 0
+    releaseall
+    end
+
+Kasaan_VarSixPlaceholder: @remove after
     waitmovement 11
     applymovement 11, Common_Movement_FaceUp
     waitmovement 15
