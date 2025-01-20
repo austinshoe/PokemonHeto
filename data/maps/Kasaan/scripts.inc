@@ -1,7 +1,7 @@
 Kasaan_MapScripts::
     map_script MAP_SCRIPT_ON_TRANSITION, Kasaan_OnTransition
     map_script MAP_SCRIPT_ON_LOAD, Kasaan_OnLoad
-    map_script ON_WARP_INTO_MAP_TABLE, Kasaan_OnWarp
+    map_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, Kasaan_OnWarp
     map_script MAP_SCRIPT_ON_FRAME_TABLE, Kasaan_OnFrame
     .byte 0
 
