@@ -410,6 +410,7 @@ Kasaan_VarSix:
     waitmovement 12
     hideobjectat 12, MAP_KASAAN
     clearflag FLAG_RECOVERED_DEVON_GOODS
+    showobjectat 9, MAP_KASAAN
     setflag FLAG_HIDE_RUSTBORO_CITY_DEVON_EMPLOYEE_1
     setvar VAR_DEWFORD_TOWN_STATE, 0
     removeobject 11
@@ -772,7 +773,7 @@ Kasaan_Movement_KhioneConfront:
     step_end
 
 Text_Kasaan_KhioneConfront:
-    .string "{COLOR BLUE}???{COLOR DARK_GRAY}: Oi! You there!\p"
+    .string "{COLOR BLUE}???:{COLOR DARK_GRAY} Oi! You there!\p"
     .string "$"
 
 Text_Kasaan_KhioneWSG:
@@ -786,14 +787,14 @@ Text_Kasaan_KhioneWSG:
     .string "$"
 
 Text_Kasaan_KhioneOopsyPoopsy:
-    .string "{COLOR BLUE}???{COLOR DARK_GRAY}: Ah... I see what happened...\n"
+    .string "{COLOR BLUE}???:{COLOR DARK_GRAY} Ah... I see what happened...\n"
     .string "I owe you an apology for assuming that\l"
     .string "you were in cahoots with those shady\l"
     .string "people back there.\p"
     .string "$"
 
 Text_Kasaan_KhioneIntro:
-    .string "{COLOR BLUE}???{COLOR DARK_GRAY}: Oh! Right!\n"
+    .string "{COLOR BLUE}???:{COLOR DARK_GRAY} Oh! Right!\n"
     .string "I should probably introduce myself.\p"
     .string "I'm {COLOR BLUE}Khione{COLOR DARK_GRAY}, the Gym leader here.\p"
     .string "{COLOR BLUE}Khione{COLOR DARK_GRAY}: You must be an aspiring trainer!\p"
@@ -884,7 +885,7 @@ Kasaan_Movement_WalkUpToHouse15:
     walk_left
     walk_left
     walk_left
-    face_down
+    face_up
     step_end
 
 Kasaan_Movement_WalkUpToHouse12:
@@ -892,7 +893,7 @@ Kasaan_Movement_WalkUpToHouse12:
     walk_down
     walk_left
     walk_left
-    face_down
+    face_up
     step_end
 
 Kasaan_Movement_WalkUpToHouse13:
@@ -900,11 +901,11 @@ Kasaan_Movement_WalkUpToHouse13:
     walk_left
     walk_down
     walk_left
-    face_down
+    face_up
     step_end
 
 Kasaan_Text_SeeSign:
-    .string "???: There's no way you guys are being\n"
+    .string "{COLOR BLUE}???:{COLOR DARK_GRAY} There's no way you guys are being\n"
     .string "serious right now.\p"
     .string "It literally says his name on this sign\n"
     .string "and you're telling me you couldn't find\l"
@@ -917,16 +918,16 @@ Kasaan_Text_SeeSign2:
     .string "$"
 
 Kasaan_Text_SeeSign3:
-    .string "???: Go guard the door.\p"
+    .string "{COLOR BLUE}???:{COLOR DARK_GRAY} Go guard the door.\p"
     .string "Keep any intruders out of the lab while\n"
     .string "we do our job here.$"
 
 Kasaan_Text_SeeSign4:
-    .string "Grunt: Yes, ma'am!$"
+    .string "{COLOR BLUE}Grunt:{COLOR DARK_GRAY} Yes, ma'am!$"
 
 Kasaan_Movement_GoToDoor1:
     walk_left
-    walk_down
+    walk_up
     walk_left
     face_left
     step_end
