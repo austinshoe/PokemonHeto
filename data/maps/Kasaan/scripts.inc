@@ -345,12 +345,11 @@ Kasaan_VarFive:
 
 Kasaan_VarSix:
     lockall
-    showobjectat OBJ_EVENT_ID_PLAYER, 0
-    applymovement 11, Kasaan_Movement_WalkUpToHouse1
-    applymovement 14, Kasaan_Movement_WalkUpToHouse4
-    applymovement 15, Kasaan_Movement_WalkUpToHouse5
-    applymovement 12, Kasaan_Movement_WalkUpToHouse2
-    applymovement 13, Kasaan_Movement_WalkUpToHouse3
+    applymovement 15, Kasaan_Movement_WalkUpToHouse
+    applymovement 12, Kasaan_Movement_WalkUpToHouse
+    applymovement 13, Kasaan_Movement_WalkUpToHouse
+    applymovement 11, Kasaan_Movement_WalkUpToHouse
+    applymovement 14, Kasaan_Movement_WalkUpToHouse
     waitmovement 11
     waitmovement 14
     waitmovement 15
@@ -360,7 +359,7 @@ Kasaan_VarSix:
     releaseall
     end
 
-Kasaan_VarSixPlaceholder: @remove after
+Kasaan_VarSixPlaceholder: @remove after fixes
     waitmovement 11
     applymovement 11, Common_Movement_FaceUp
     waitmovement 15
@@ -845,43 +844,7 @@ Text_Kasaan_OutsideKirschblute:
 Text_Kasaan_OutsideGrunts:
     .string "{COLOR BLUE}Grunt:{COLOR DARK_GRAY} Is he in here..?$"
 
-Kasaan_Movement_WalkUpToHouse5:
-    walk_left
-    walk_left
-    walk_left
-    walk_left
-    walk_left
-    walk_left
-    step_end
-
-Kasaan_Movement_WalkUpToHouse1:
-    walk_left
-    walk_left
-    walk_left
-    walk_left
-    walk_left
-    walk_left
-    step_end
-
-Kasaan_Movement_WalkUpToHouse2:
-    walk_left
-    walk_left
-    walk_left
-    walk_left
-    walk_left
-    walk_left
-    step_end
-
-Kasaan_Movement_WalkUpToHouse3:
-    walk_left
-    walk_left
-    walk_left
-    walk_left
-    walk_left
-    walk_left
-    step_end
-
-Kasaan_Movement_WalkUpToHouse4:
+Kasaan_Movement_WalkUpToHouse:
     walk_left
     walk_left
     walk_left
