@@ -351,6 +351,11 @@ Kasaan_VarSix:
     applymovement 15, Kasaan_Movement_WalkUpToHouse
     applymovement 12, Kasaan_Movement_WalkUpToHouse
     applymovement 13, Kasaan_Movement_WalkUpToHouse
+    waitmovement 11
+    waitmovement 14
+    waitmovement 15
+    waitmovement 12
+    waitmovement 13
     setvar VAR_DEWFORD_TOWN_STATE 0
     releaseall
     end
