@@ -27,10 +27,10 @@ Kasaan_SetGruntPos:
 Kasaan_UpdateGruntPos:
     showobjectat OBJ_EVENT_ID_PLAYER, 0
     setobjectxyperm 11, 14, 26
-    setobjectxyperm 14, 15, 26
-    setobjectxyperm 15, 16, 26
-    setobjectxyperm 12, 17, 26
-    setobjectxyperm 13, 18, 26
+    setobjectxyperm 14, 14, 27
+    setobjectxyperm 15, 15, 27
+    setobjectxyperm 12, 15, 26
+    setobjectxyperm 13, 15, 25
     end
 
 Kasaan_VarFour::
@@ -334,10 +334,10 @@ Kasaan_VarFive:
     setvar VAR_DEWFORD_TOWN_STATE, 6
     warpsilent MAP_KASAAN, 5, 27
     setobjectxyperm 11, 14, 26
-    setobjectxyperm 14, 15, 26
-    setobjectxyperm 15, 16, 26
-    setobjectxyperm 12, 17, 26
-    setobjectxyperm 13, 18, 26
+    setobjectxyperm 14, 14, 27
+    setobjectxyperm 15, 15, 27
+    setobjectxyperm 12, 15, 26
+    setobjectxyperm 13, 15, 25
     delay 32
     showobjectat OBJ_EVENT_ID_PLAYER, 0
     releaseall
@@ -346,16 +346,10 @@ Kasaan_VarFive:
 Kasaan_VarSix:
     lockall
     applymovement 11, Kasaan_Movement_WalkUpToHouse
-    applymovement 14, Kasaan_Movement_WalkUpToHouse
-    applymovement 15, Kasaan_Movement_WalkUpToHouse
-    applymovement 12, Kasaan_Movement_WalkUpToHouse
-    applymovement 13, Kasaan_Movement_WalkUpToHouse
-    waitmovement 13
-    setvar VAR_DEWFORD_TOWN_STATE 0
-    releaseall
-    end
-
-Kasaan_VarSixPlaceholder: @remove after fixes
+    applymovement 14, Kasaan_Movement_WalkUpToHouse4
+    applymovement 15, Kasaan_Movement_WalkUpToHouse5
+    applymovement 12, Kasaan_Movement_WalkUpToHouse2
+    applymovement 13, Kasaan_Movement_WalkUpToHouse3
     waitmovement 11
     applymovement 11, Common_Movement_FaceUp
     waitmovement 15
@@ -423,7 +417,7 @@ Kasaan_VarSixPlaceholder: @remove after fixes
     removeobject 13
     removeobject 14
     removeobject 15
-    release
+    releaseall
     end
 
 Text_Kasaan_Angrboda_Cutscene_1:
@@ -845,6 +839,42 @@ Kasaan_Movement_WalkUpToHouse:
     walk_left
     walk_left
     walk_left
+    walk_left
+    walk_left
+    step_end
+
+Kasaan_Movement_WalkUpToHouse4:
+    walk_up
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    step_end
+
+Kasaan_Movement_WalkUpToHouse5:
+    walk_left
+    walk_up
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    step_end
+
+Kasaan_Movement_WalkUpToHouse2:
+    walk_down
+    walk_left
+    walk_up
+    walk_left
+    walk_left
+    walk_left
+    step_end
+
+Kasaan_Movement_WalkUpToHouse3:
+    walk_down
+    walk_down
+    walk_left
+    walk_up
     walk_left
     walk_left
     step_end
