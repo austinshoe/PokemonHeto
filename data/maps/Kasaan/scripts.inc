@@ -346,6 +346,7 @@ Kasaan_VarFive:
 Kasaan_VarSix:
     lockall
     showobjectat OBJ_EVENT_ID_PLAYER, 0
+    releaseall
     end
 
 Kasaan_VarSixPlaceholder: @remove after
