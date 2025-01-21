@@ -332,7 +332,7 @@ Kasaan_VarFive:
     waitmovement 14
     waitmovement 15
     setvar VAR_DEWFORD_TOWN_STATE, 6
-    warpsilent MAP_KASAAN, 5, 27
+    warpsilent MAP_KASAAN, 5, 26
     setobjectxyperm 11, 14, 26
     setobjectxyperm 14, 14, 27
     setobjectxyperm 15, 15, 27
@@ -410,6 +410,7 @@ Kasaan_VarSix:
     waitmovement 12
     hideobjectat 12, MAP_KASAAN
     clearflag FLAG_RECOVERED_DEVON_GOODS
+    addobject 9
     showobjectat 9, MAP_KASAAN
     setflag FLAG_HIDE_RUSTBORO_CITY_DEVON_EMPLOYEE_1
     setvar VAR_DEWFORD_TOWN_STATE, 0
@@ -928,7 +929,6 @@ Kasaan_Text_SeeSign4:
 Kasaan_Movement_GoToDoor1:
     walk_left
     walk_up
-    walk_left
     face_left
     step_end
 
