@@ -402,13 +402,13 @@ Kasaan_VarSix:
     waitmovement 11
     hideobjectat 11, MAP_KASAAN
     playse SE_WARP_IN
-    waitmovement 14
-    hideobjectat 14, MAP_KASAAN
+    waitmovement 12
+    hideobjectat 12, MAP_KASAAN
     waitmovement 13
     hideobjectat 13, MAP_KASAAN
     playse SE_WARP_IN
-    waitmovement 12
-    hideobjectat 12, MAP_KASAAN
+    waitmovement 14
+    hideobjectat 14, MAP_KASAAN
     clearflag FLAG_RECOVERED_DEVON_GOODS
     addobject 9
     showobjectat 9, MAP_KASAAN
