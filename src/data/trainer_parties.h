@@ -3358,7 +3358,7 @@ static const struct TrainerMon sParty_Brawly1[] = {
 static const struct TrainerMon sParty_Wattson1[] = {
     {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
-    .ability = ABILITY_DRIZZLE
+    .ability = ABILITY_DRIZZLE,
     .lvl = 26,
     .species = SPECIES_PELIPPER,
     .nature = NATURE_MODEST,
