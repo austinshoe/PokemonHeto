@@ -5572,7 +5572,7 @@
     {
       "id": "LAYOUT_ROUTEAFTERKASAAN",
       "name": "Routeafterkasaan_Layout",
-      "width": 44,
+      "width": 46,
       "height": 60,
       "border_width": 2,
       "border_height": 2,
@@ -5812,7 +5812,7 @@
     {
       "id": "LAYOUT_KASAAN_GYM",
       "name": "KasaanGym_Layout",
-      "width": 16,
+      "width": 18,
       "height": 40,
       "border_width": 2,
       "border_height": 2,
