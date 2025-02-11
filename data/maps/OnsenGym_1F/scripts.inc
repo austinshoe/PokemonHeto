@@ -172,6 +172,81 @@ Text_OnsenGym_Guide:
 	.string "inflict this status on any Pokémon,\l"
 	.string "regardless of the ability or type!$"
 
+OnsenGym_Ryo::
+	lock
+	faceplayer
+	trainerbattle_single TRAINER_FLANNERY_1, Text_OnsenGym_Ryo, Text_OnsenGym_RyoDefeat, OnsenGym_RyoDefeated, NO_MUSIC
+	goto_if_unset FLAG_RECEIVED_TM_OVERHEAT, OnsenGym_RyoGiveTM
+	msgbox Text_OnsenGym_RyoDefeated, MSGBOX_DEFAULT
+	release
+	end
+
+OnsenGym_RyoDefeated:
+	message Text_OnsenGym_ReceivedBadge
+	waitmessage
+	call Common_EventScript_PlayGymBadgeFanfare
+	setflag FLAG_DEFEATED_LAVARIDGE_GYM
+	setflag FLAG_BADGE04_GET
+	msgbox OnsenGym_RyoExplainBadge, MSGBOX_DEFAULT
+OnsenGym_RyoGiveTM:
+	giveitem ITEM_TM_FLAMETHROWER
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_BagIsFull
+	msgbox Text_OnsenGym_RyoGiveTM, MSGBOX_DEFAULT
+	setflag FLAG_RECEIVED_TM_OVERHEAT
+	msgbox Text_OnsenGym_RyoDefeated, MSGBOX_DEFAULT
+	release
+	end
+
+Text_OnsenGym_Ryo:
+	.string "{COLOR RED}Ryo{COLOR DARK_GRAY}: Hello there, challenger.\p"
+	.string "I'm the gym leader here, Ryo.\p"
+	.string "I presume you're here to challenge my\n"
+	.string "gym.\p"
+	.string "How was it, hopping over lava that\n"
+	.string "bubbled in agitation, yet almost\l"
+	.string "rhythmically, below you?\p"
+	.string "As you might be aware, I specialize in\n"
+	.string "{COLOR RED}Fire{COLOR DARK_GRAY} types.\p"
+	.string "The way I see it, fire can be both\n"
+	.string "destructive, but also a purifier-\l"
+	.string "the phoenix rises out of the ashes of\l"
+	.string "its former body, after all.\p"
+	.string "The tranquil waters of the hot springs\n"
+	.string "soothes the body and soul, but beneath\l"
+	.string "its calm exterior, the flames burn \l"
+	.string "fiercely.\p"
+	.string "Whether you'll be able to withstand the\n"
+	.string "heat is a matter to be determined by\l"
+	.string "battle!$"
+
+Text_OnsenGym_RyoDefeat:
+	.string "Reduced to mere embers...$"
+
+Text_OnsenGym_ReceivedBadge:
+	.string "Your moves were scorching but soothing\n"
+	.string "to watch!\p"
+	.string "You've earned yourself this.\p"
+	.string "{PLAYER} received the THERMAL BADGE\n"
+	.string "from {COLOR RED}Ryo{COLOR DARK_GRAY}.$"
+
+OnsenGym_RyoExplainBadge:
+	.string "This badge, the Thermal Badge, allows\n"
+	.string "you to use the move Rock Smash out of\l"
+	.string "battle.\p"
+	.string "That brilliant display of yours deserves\n"
+	.string "to be further rewarded.\p"
+	.string "Please accept this as well.$"
+
+Text_OnsenGym_RyoGiveTM:
+	.string "The TM I just gave you contains the\n"
+	.string "move {COLOR RED}Flamethrower{COLOR DARK_GRAY}.\p"
+	.string "It's a beautiful, yet destructive move.\p"
+	.string "I hope you use it well.$"
+
+Text_OnsenGym_RyoDefeated:
+	.string "Remember:\n"
+	.string "Balance is essential - destruction and\l"
+	.string "rebirth.$"
 
 OnsenGym_AnimFrameNormal:
 	setmetatile 1, 3, METATILE_volcano1_Bottom, TRUE

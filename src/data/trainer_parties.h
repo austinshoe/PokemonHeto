@@ -3395,32 +3395,48 @@ static const struct TrainerMon sParty_Wattson1[] = {
 
 static const struct TrainerMon sParty_Flannery1[] = {
     {
-    .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
-    .lvl = 24,
-    .species = SPECIES_NUMEL,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_OVERHEAT, MOVE_TAKE_DOWN, MOVE_MAGNITUDE, MOVE_SUNNY_DAY}
-    },
-    {
-    .iv = TRAINER_PARTY_IVS(24, 24, 24, 24, 24, 24),
-    .lvl = 24,
-    .species = SPECIES_SLUGMA,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_OVERHEAT, MOVE_SMOG, MOVE_LIGHT_SCREEN, MOVE_SUNNY_DAY}
-    },
-    {
-    .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
-    .lvl = 26,
-    .species = SPECIES_CAMERUPT,
-    .heldItem = ITEM_NONE,
-    .moves = {MOVE_OVERHEAT, MOVE_TACKLE, MOVE_SUNNY_DAY, MOVE_ATTRACT}
-    },
-    {
-    .iv = TRAINER_PARTY_IVS(30, 30, 30, 30, 30, 30),
-    .lvl = 29,
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .ability = ABILITY_DROUGHT,
+    .lvl = 34,
     .species = SPECIES_TORKOAL,
-    .heldItem = ITEM_WHITE_HERB,
-    .moves = {MOVE_OVERHEAT, MOVE_SUNNY_DAY, MOVE_BODY_SLAM, MOVE_ATTRACT}
+    .nature = NATURE_BOLD,
+    .heldItem = ITEM_HEAT_ROCK,
+    .moves = {MOVE_LAVA_PLUME, MOVE_RAPID_SPIN, MOVE_STEALTH_ROCK, MOVE_FLAMETHROWER}
+    },
+    {
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .ability = ABILITY_FLAME_BODY,
+    .lvl = 34,
+    .species = SPECIES_MAGCARGO,
+    .nature = NATURE_TIMID,
+    .heldItem = ITEM_LEFTOVERS,
+    .moves = {MOVE_LAVA_PLUME, MOVE_EARTH_POWER, MOVE_ANCIENT_POWER, MOVE_SOLAR_BEAM}
+    },
+    {
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .ability = ABILITY_SOLID_ROCK,
+    .lvl = 35,
+    .species = SPECIES_CAMERUPT,
+    .nature = NATURE_QUIET,
+    .heldItem = ITEM_LEFTOVERS,
+    .moves = {MOVE_LAVA_PLUME, MOVE_EARTH_POWER, MOVE_ERUPTION, MOVE_ANCIENT_POWER}
+    },
+    {
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .lvl = 35,
+    .species = SPECIES_MAGMORTAR,
+    .nature = NATURE_MODEST,
+    .heldItem = ITEM_EXPERT_BELT,
+    .moves = {MOVE_FLAMETHROWER, MOVE_THUNDERBOLT, MOVE_FOCUS_BLAST, MOVE_MYSTICAL_FIRE}
+    },
+    {
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .ability = ABILITY_BLAZE,
+    .lvl = 36,
+    .species = SPECIES_CHARIZARD,
+    .nature = NATURE_ADAMANT,
+    .heldItem = ITEM_CHARIZARDITE_X,
+    .moves = {MOVE_DRAGON_CLAW, MOVE_DRAGON_DANCE, MOVE_ROOST, MOVE_FLARE_BLITZ}
     }
 };
 
