@@ -1365,9 +1365,9 @@
 // Towns and Cities
 #define FLAG_VISITED_LITTLEROOT_TOWN                (SYSTEM_FLAGS + 0xF) //Pearl Town
 #define FLAG_VISITED_OLDALE_TOWN                    (SYSTEM_FLAGS + 0x10) //Lumina Town
-#define FLAG_VISITED_DEWFORD_TOWN                   (SYSTEM_FLAGS + 0x11) //Fall Grove Town
+#define FLAG_VISITED_DEWFORD_TOWN                   (SYSTEM_FLAGS + 0x11)
 #define FLAG_VISITED_LAVARIDGE_TOWN                 (SYSTEM_FLAGS + 0x12) 
-#define FLAG_VISITED_FALLARBOR_TOWN                 (SYSTEM_FLAGS + 0x13)
+#define FLAG_VISITED_FALLARBOR_TOWN                 (SYSTEM_FLAGS + 0x13) //Fall Grove Town
 #define FLAG_VISITED_VERDANTURF_TOWN                (SYSTEM_FLAGS + 0x14)
 #define FLAG_VISITED_PACIFIDLOG_TOWN                (SYSTEM_FLAGS + 0x15)
 #define FLAG_VISITED_PETALBURG_CITY                 (SYSTEM_FLAGS + 0x16) //Everbloom City

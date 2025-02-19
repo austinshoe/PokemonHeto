@@ -8,6 +8,18 @@ Script_MtEmberfallExtMan1::
     release
     end
 
+MtEmberfallExt_Trigger::
+    lock 
+    setvar VAR_MAUVILLE_CITY_STATE, 0
+    release
+    end
+
+MtEmberfallExt_Trigger::
+    lock
+    setvar VAR_MAUVILLE_CITY_STATE, 1
+    release
+    end
+
 Text_MtEmberfallExtMan1:
     .string "You're seriously trying to climb\n"
     .string "without hiking shoes?\l"

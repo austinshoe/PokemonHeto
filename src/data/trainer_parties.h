@@ -6676,19 +6676,36 @@ static const struct TrainerMon sParty_MayRoute103Mudkip[] = {
 
 static const struct TrainerMon sParty_MayRoute110Mudkip[] = {
     {
-    .iv = TRAINER_PARTY_IVS(6, 6, 6, 6, 6, 6),
-    .lvl = 18,
-    .species = SPECIES_WINGULL,
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .lvl = 31,
+    .species = SPECIES_GROWLITHE,
+    .nature = NATURE_ADAMANT,
+    .moves = {MOVE_FLAME_WHEEL, MOVE_FIRE_FANG, MOVE_BITE, MOVE_AGILITY}
     },
     {
-    .iv = TRAINER_PARTY_IVS(6, 6, 6, 6, 6, 6),
-    .lvl = 18,
-    .species = SPECIES_SLUGMA,
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .lvl = 31,
+    .species = SPECIES_HAUNTER,
+    .nature = NATURE_TIMID,
+    .moves = {MOVE_HYPNOSIS, MOVE_CONFUSE_RAY, MOVE_MEAN_LOOK, MOVE_LICK}
     },
     {
-    .iv = TRAINER_PARTY_IVS(12, 12, 12, 12, 12, 12),
-    .lvl = 20,
-    .species = SPECIES_GROVYLE,
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .lvl = 31,
+    .species = SPECIES_WEAVILE,
+    .nature = NATURE_JOLLY,
+    .heldItem = ITEM_RAZOR_CLAW,
+    .moves = {MOVE_AVALANCHE, MOVE_THIEF, MOVE_SLASH, MOVE_HONE_CLAWS}
+    },
+    {
+    .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
+    .ability = ABILITY_MOXIE,
+    .lvl = 32,
+    .species = SPECIES_GYARADOS,
+    .nature - NATURE_ADAMANT,
+    .heldItem = ITEM_NONE,
+    .isShiny = true,
+    .moves = {MOVE_WATERFALL, MOVE_ICE_FANG, MOVE_CRUNCH, MOVE_AQUA_TAIL}
     }
 };
 
@@ -6715,6 +6732,7 @@ static const struct TrainerMon sParty_MayRoute103Treecko[] = {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     .lvl = 5,
     .species = SPECIES_MAGIKARP,
+    .isShiny = true,
     }
 };
 
@@ -6723,7 +6741,7 @@ static const struct TrainerMon sParty_MayRoute110Treecko[] = {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     .lvl = 16,
     .species = SPECIES_SNEASEL,
-    .moves = {MOVE_HYPNOSIS, MOVE_CONFUSE_RAY, MOVE_MEAN_LOOK, MOVE_LICK}
+    .moves = {MOVE_FEINT_ATTACK, MOVE_QUICK_ATTACK, MOVE_AVALANCHE, MOVE_HONE_CLAWS}
     },
     {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
@@ -6735,6 +6753,7 @@ static const struct TrainerMon sParty_MayRoute110Treecko[] = {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     .lvl = 15,
     .species = SPECIES_MAGIKARP,
+    .isShiny = true,
     }
 };
 

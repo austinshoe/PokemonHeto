@@ -28,7 +28,7 @@ Frostvale_Tundra_Rival_Trigger::
     applymovement 5, Frostvale_Movement_Rival_Battle
     waitmovement 0
     msgbox Text_Frostvale_Rival_Battle, MSGBOX_DEFAULT
-    trainerbattle_no_intro TRAINER_MAY_ROUTE_110_MUDKIP, Text_FrostvaleLiamDefeated
+    trainerbattle_no_intro TRAINER_MAY_ROUTE_110_TREECKO, Text_FrostvaleLiamDefeated
     setflag FLAG_DEFEATED_RIVAL_ROUTE_104
     setvar VAR_ROUTE101_STATE, 1
     applymovement 5, Common_Movement_WalkUp

@@ -1,5 +1,10 @@
 NewMap8_MapScripts::
+    map_script MAP_SCRIPT_ON_TRANSITION, NewMap8_OnTransition
 	.byte 0
+
+NewMap8_OnTransition:
+    setflag FLAG_VISITED_SLATEPORT_CITY
+    end
 
 Script_CoralShoreSign::
     lock
