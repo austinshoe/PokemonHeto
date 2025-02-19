@@ -127,7 +127,7 @@ Text_MtEmberfall2_RivalPostBattle3:
     .string "they were nowhere to be seen.\p"
     .string "It's possible I didn't see correctly,\n"
     .string "though.\p"
-    .string "{FONT FONT_SMALL_NARROW}I'll catch up to you soon, don't worry.{FONT NORMAL}$"
+    .string "{FONT FONT_SMALL_NARROW}I'll catch up to you soon, don't worry.{FONT FONT_NORMAL}$"
 
 MtEmberfall2_RivalLeave2:
     walk_right

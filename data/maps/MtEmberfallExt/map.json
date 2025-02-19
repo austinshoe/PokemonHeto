@@ -93,7 +93,7 @@
       "elevation": 0,
       "var": "VAR_MAUVILLE_CITY_STATE",
       "var_value": "1",
-      "script": "NULL"
+      "script": "MtEmberfallExt_Trigger1"
     },
     {
       "type": "trigger",

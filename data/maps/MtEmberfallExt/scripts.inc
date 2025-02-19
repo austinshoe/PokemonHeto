@@ -14,7 +14,7 @@ MtEmberfallExt_Trigger::
     release
     end
 
-MtEmberfallExt_Trigger::
+MtEmberfallExt_Trigger1::
     lock
     setvar VAR_MAUVILLE_CITY_STATE, 1
     release
