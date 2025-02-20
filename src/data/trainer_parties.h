@@ -6704,7 +6704,7 @@ static const struct TrainerMon sParty_MayRoute110Mudkip[] = {
     .species = SPECIES_GYARADOS,
     .nature - NATURE_ADAMANT,
     .heldItem = ITEM_NONE,
-    .isShiny = true,
+    .isShiny = TRUE,
     .moves = {MOVE_WATERFALL, MOVE_ICE_FANG, MOVE_CRUNCH, MOVE_AQUA_TAIL}
     }
 };
@@ -6732,7 +6732,7 @@ static const struct TrainerMon sParty_MayRoute103Treecko[] = {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     .lvl = 5,
     .species = SPECIES_MAGIKARP,
-    .isShiny = true,
+    .isShiny = TRUE,
     }
 };
 
@@ -6753,7 +6753,7 @@ static const struct TrainerMon sParty_MayRoute110Treecko[] = {
     .iv = TRAINER_PARTY_IVS(31, 31, 31, 31, 31, 31),
     .lvl = 15,
     .species = SPECIES_MAGIKARP,
-    .isShiny = true,
+    .isShiny = TRUE,
     }
 };
 
