@@ -6702,7 +6702,7 @@ static const struct TrainerMon sParty_MayRoute110Mudkip[] = {
     .ability = ABILITY_MOXIE,
     .lvl = 32,
     .species = SPECIES_GYARADOS,
-    .nature - NATURE_ADAMANT,
+    .nature = NATURE_ADAMANT,
     .heldItem = ITEM_NONE,
     .isShiny = TRUE,
     .moves = {MOVE_WATERFALL, MOVE_ICE_FANG, MOVE_CRUNCH, MOVE_AQUA_TAIL}
