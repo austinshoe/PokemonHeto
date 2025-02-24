@@ -10,13 +10,13 @@ Script_MtEmberfallExtMan1::
 
 MtEmberfallExt_Trigger::
     lock 
-    setvar VAR_MAUVILLE_CITY_STATE, 0
+    setvar VAR_MAUVILLE_CITY_STATE, 1
     release
     end
 
 MtEmberfallExt_Trigger1::
     lock
-    setvar VAR_MAUVILLE_CITY_STATE, 1
+    setvar VAR_MAUVILLE_CITY_STATE, 0
     release
     end
 
