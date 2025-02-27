@@ -8,6 +8,8 @@ MtEmberfall2_OnFrame:
 
 MtEmberfall2_RivalBattle:
     lock
+    setobjectxyperm 3, 15, 10
+    hideobjectat OBJ_EVENT_ID_PLAYER, 0
     msgbox MtEmberfall2_RivalCallOut, MSGBOX_DEFAULT
     applymovement 2, MtEmberfall2_RivalApproach
     waitmovement 2
@@ -30,14 +32,21 @@ MtEmberfall2_RivalBattle:
     waitmessage
     closemessage
     applymovement 2, MtEmberfall2_RivalLeave1
+    applymovement OBJ_EVENT_ID_PLAYER, MtEmberfall2_RivalLeave1
     waitmovement 2
+    waitmovement OBJ_EVENT_ID_PLAYER
     message Text_MtEmberfall2_RivalPostBattle3
     waitmessage
     closemessage
     applymovement 2, MtEmberfall2_RivalLeave2
+    applymovement OBJ_EVENT_ID_PLAYER, MtEmberfall2_PlayerReturn
     waitmovement 2
+    waitmovement OBJ_EVENT_ID_PLAYER
+    showobjectat OBJ_EVENT_ID_PLAYER, 0
     setflag FLAG_DEFEATED_RIVAL_RUSTBORO
+    setobjectxyperm 3, 29, 0
     removeobject 2
+    removeobject 3
     release
 	end
 
@@ -116,6 +125,12 @@ Text_MtEmberfall2_RivalPostBattle2:
 MtEmberfall2_RivalLeave1:
     walk_down
     walk_down
+    step_end
+
+MtEmberfall2_PlayerReturn:
+    walk_up
+    walk_up
+    face_down
     step_end
 
 Text_MtEmberfall2_RivalPostBattle3:
