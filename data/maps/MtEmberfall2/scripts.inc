@@ -1,6 +1,16 @@
 MtEmberfall2_MapScripts::
+    map_script MAP_SCRIPT_ON_TRANSITION, MtEmberfall2_OnTransition
     map_script MAP_SCRIPT_ON_FRAME_TABLE, MtEmberfall2_OnFrame
 	.byte 0
+
+MtEmberfall2_OnTransition:
+    compare VAR_MAUVILLE_CITY_STATE, 1
+    goto_if_eq MtEmberfall2_SetUpBattle
+    end
+
+MtEmberfall2_SetUpBattle:
+    setobjectxyperm 3, 15, 10
+    end
 
 MtEmberfall2_OnFrame:
     map_script_2 VAR_MAUVILLE_CITY_STATE, 1, MtEmberfall2_RivalBattle
@@ -8,7 +18,6 @@ MtEmberfall2_OnFrame:
 
 MtEmberfall2_RivalBattle:
     lock
-    setobjectxyperm 3, 15, 10
     hideobjectat OBJ_EVENT_ID_PLAYER, 0
     msgbox MtEmberfall2_RivalCallOut, MSGBOX_DEFAULT
     applymovement 2, MtEmberfall2_RivalApproach
