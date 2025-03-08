@@ -8,6 +8,8 @@ MtEmberfall_OnTransition:
     goto_if_eq MtEmberfall_Show_Grunts
     compare VAR_RUSTURF_TUNNEL_STATE, 4
     goto_if_eq MtEmberfall_HidePlayer
+    compare VAR_RUSTURF_TUNNEL_STATE, 5
+    goto_if_eq MtEmberfall_ShowPlayer
     end
 
 MtEmberfall_Show_Grunts:
@@ -16,6 +18,10 @@ MtEmberfall_Show_Grunts:
 
 MtEmberfall_HidePlayer:
     hideobjectat OBJ_EVENT_ID_PLAYER, 0
+    return
+
+MtEmberfall_ShowPlayer:
+    showobjectat OBJ_EVENT_ID_PLAYER, 0
     return
 
 MtEmberfall_OnFrame:
@@ -122,9 +128,8 @@ MtEmberfall_Grunts_Post_Battle:
 MtEmberfall_RivalBreaksRock:
     lock
     setvar VAR_RUSTURF_TUNNEL_STATE, 4
-    setflag FLAG_RECEIVED_HM_ROCK_SMASH
     warpsilent MAP_MT_EMBERFALL, 24, 31
-    releaser
+    release
     end
 
 MtEmberfall_RivalBreaksRock2:
@@ -174,6 +179,9 @@ MtEmberfall_RivalBreaksRock2:
     release
     end
 
+MtEmberfall_HMRockSmash::
+	finditem ITEM_HM_ROCK_SMASH
+	end
 
 Script_MtEmberfallInteriorP1Man1::
     lock
