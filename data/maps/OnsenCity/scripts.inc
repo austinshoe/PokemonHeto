@@ -13,6 +13,14 @@ Onsen_StepLimit_Set:
     setvar VAR_UNUSED_0x408B, 0
     return
 
+Onsen_TriggerSetUp::
+    setvar VAR_RUSTURF_TUNNEL_STATE, 2
+    end
+
+Onsen_TriggerSetUp2::
+    setvar VAR_RUSTURF_TUNNEL_STATE, 3
+    end
+
 Script_OnsenCitySign::
     lock
     faceplayer

@@ -151,7 +151,24 @@
     }
   ],
   "coord_events": [
-
+    {
+      "type": "trigger",
+      "x": 12,
+      "y": 8,
+      "elevation": 0,
+      "var": "VAR_RUSTURF_TUNNEL_STATE",
+      "var_value": "3",
+      "script": "Onsen_TriggerSetUp"
+    },
+    {
+      "type": "trigger",
+      "x": 51,
+      "y": 8,
+      "elevation": 0,
+      "var": "VAR_RUSTURF_TUNNEL_STATE",
+      "var_value": "3",
+      "script": "Onsen_TriggerSetUp2"
+    }
   ],
   "bg_events": [
     {

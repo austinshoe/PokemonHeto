@@ -187,6 +187,7 @@ OnsenGym_RyoDefeated:
 	call Common_EventScript_PlayGymBadgeFanfare
 	setflag FLAG_DEFEATED_LAVARIDGE_GYM
 	setflag FLAG_BADGE04_GET
+	setvar VAR_RUSTURF_TUNNEL_STATE, 2
 	msgbox OnsenGym_RyoExplainBadge, MSGBOX_DEFAULT
 OnsenGym_RyoGiveTM:
 	giveitem ITEM_TM_FLAMETHROWER

@@ -6,14 +6,22 @@ MtEmberfall_MapScripts::
 MtEmberfall_OnTransition:
     compare VAR_RUSTURF_TUNNEL_STATE, 0
     goto_if_eq MtEmberfall_Show_Grunts
+    compare VAR_RUSTURF_TUNNEL_STATE, 4
+    goto_if_eq MtEmberfall_HidePlayer
     end
 
 MtEmberfall_Show_Grunts:
     clearflag FLAG_HIDE_RUSTBORO_CITY_AQUA_GRUNT
     return
 
+MtEmberfall_HidePlayer:
+    hideobjectat OBJ_EVENT_ID_PLAYER, 0
+    return
+
 MtEmberfall_OnFrame:
     map_script_2 VAR_RUSTURF_TUNNEL_STATE, 0, MtEmberfall_GruntEncounter
+    map_script_2 VAR_RUSTURF_TUNNEL_STATE, 3, MtEmberfall_RivalBreaksRock
+    map_script_2 VAR_RUSTURF_TUNNEL_STATE, 4, MtEmberfall_RivalBreaksRock2
     .2byte 0
 
 MtEmberfall_GruntEncounter:
@@ -110,6 +118,62 @@ MtEmberfall_Grunts_Post_Battle:
     waitbuttonpress
     closemessage
     return
+
+MtEmberfall_RivalBreaksRock:
+    lock
+    setvar VAR_RUSTURF_TUNNEL_STATE, 4
+    setflag FLAG_RECEIVED_HM_ROCK_SMASH
+    warpsilent MAP_MT_EMBERFALL, 24, 31
+    releaser
+    end
+
+MtEmberfall_RivalBreaksRock2:
+    lock
+    clearflag FLAG_UNUSED_0x022
+    addobject 9
+    applymovement 9, MtEmberfall_RivalWalkUp
+    waitmovement 9
+    message MtEmberfall_RivalUseRockSmash
+    waitmessage
+    applymovement 9, MtEmberfall_RivalBackUp
+    waitmovement 9
+    setobjectxy 12, 24, 31
+    message MtEmberfall_WeavileUseRockSmash
+    waitmessage
+    closemessage
+    applymovement 12, Common_Movement_ExclamationMark
+    applymovement 2, Movement_SmashRock
+    removeobject 2
+    waitmovement 12
+    waitmovement 2
+    message MtEmberfall_RivalUseRockSmash2
+    waitmessage
+    closemessage
+    applymovement 9, MtEmberfall_RivalGoBackUp
+    applymovement 12, MtEmberfall_WeavileFollowUp
+    applymovement 1, Movement_SmashRock
+    removeobject 1
+    message MtEmberfall_RivalWeavileReturn
+    waitmessage
+    waitbuttonpress
+    setobjectxy 12, 48, 0
+    message MtEmberfall_RivalThrowAwayRockSmash1
+    waitmessage
+    closemessage
+    applymovement 9, MtEmberfall_Throw1
+    waitmovement 9
+    message MtEmberfall_RivalThrowAwayRockSmash2
+    waitmessage
+    clearflag FLAG_RECEIVED_HM_ROCK_SMASH
+    applymovement 9, MtEmberfall_RivalLeave
+    waitmovement 9
+    setflag FLAG_UNUSED_0x022
+    removeobject 9
+    setvar VAR_RUSTURF_TUNNEL_STATE, 5
+    warpsilent MAP_MT_EMBERFALL, 2
+    release
+    end
+
 
 Script_MtEmberfallInteriorP1Man1::
     lock
@@ -263,3 +327,68 @@ Text_MtEmberfall4Op2Defeat:
 
 Text_MtEmberfall4Op2PostBattle:
     .string ""
+
+MtEmberfall_RivalWalkUp:
+    walk_up
+    walk_up
+    walk_up
+    walk_up
+    walk_up
+    walk_up
+    step_end
+
+MtEmberfall_RivalUseRockSmash:
+    .string "Liam: All these annoying little rocks\n"
+    .string "everywhere...\p"
+    .string "I can finally get rid of them.\p"
+    .string "Go! Weavile!\p"
+    .string "$"
+
+MtEmberfall_RivalBackUp:
+    walk_down
+    face_up
+    step_end
+
+MtEmberfall_WeavileUseRockSmash:
+    .string "Weavile! Use Rock Smash!$"
+
+MtEmberfall_RivalUseRockSmash2:
+    .string "Good, now the other one!$"
+
+MtEmberfall_RivalGoBackUp:
+    walk_up
+    step_end
+
+MtEmberfall_WeavileFollowUp:
+    walk_up
+    face_left
+    step_end
+
+MtEmberfall_RivalWeavileReturn:
+    .string "Weavile! Return!\p"
+    .string "$"
+
+MtEmberfall_RivalThrowAwayRockSmash1:
+    .string "Alright, so that's taken care of, and I\n"
+    .string "can move on to Hallowspark City for the\l"
+    .string "next gym.$"
+
+MtEmberfall_Throw1:
+    walk_up
+    face_down
+    step_end
+
+MtEmberfall_RivalThrowAwayRockSmash2:
+    .string "I don't think I'll be needing this\n"
+    .string "Rock Smash HM anymore.$"
+
+MtEmberfall_RivalLeave:
+    walk_left
+    walk_up
+    walk_up
+    walk_up
+    walk_up
+    walk_up
+    walk_up
+    walk_up
+    step_end
