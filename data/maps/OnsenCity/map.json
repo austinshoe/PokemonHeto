@@ -166,7 +166,7 @@
       "y": 8,
       "elevation": 0,
       "var": "VAR_RUSTURF_TUNNEL_STATE",
-      "var_value": "3",
+      "var_value": "2",
       "script": "Onsen_TriggerSetUp2"
     }
   ],
