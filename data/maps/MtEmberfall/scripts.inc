@@ -1,5 +1,6 @@
 MtEmberfall_MapScripts::
     map_script MAP_SCRIPT_ON_TRANSITION, MtEmberfall_OnTransition
+    map_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, MtEmberfallOnWarp
     map_script MAP_SCRIPT_ON_FRAME_TABLE, MtEmberfall_OnFrame
 	.byte 0
 
@@ -23,6 +24,11 @@ MtEmberfall_HidePlayer:
 MtEmberfall_ShowPlayer:
     showobjectat OBJ_EVENT_ID_PLAYER, 0
     return
+
+MtEmberfallOnWarp:
+    map_script_2 VAR_RUSTURF_TUNNEL_STATE, 4, MtEmberfall_HidePlayer
+    map_script_2 VAR_RUSTURF_TUNNEL_STATE, 5, MtEmberfall_ShowPlayer
+    .2byte 0
 
 MtEmberfall_OnFrame:
     map_script_2 VAR_RUSTURF_TUNNEL_STATE, 0, MtEmberfall_GruntEncounter
@@ -129,6 +135,7 @@ MtEmberfall_RivalBreaksRock:
     lock
     setvar VAR_RUSTURF_TUNNEL_STATE, 4
     warpsilent MAP_MT_EMBERFALL, 24, 31
+    hideobjectat OBJ_EVENT_ID_PLAYER, 0
     release
     end
 
