@@ -154,16 +154,24 @@ MtEmberfall_RivalBreaksRock2:
     waitmessage
     closemessage
     applymovement 12, Common_Movement_ExclamationMark
-    applymovement 2, Movement_SmashRock
-    removeobject 2
+    delay 32
     waitmovement 12
+    applymovement 12, MtEmberfall_WeavileSmashRock1
+    waitmovement 12
+    applymovement 2, Movement_SmashRock
     waitmovement 2
+    removeobject 2
     message MtEmberfall_RivalUseRockSmash2
     waitmessage
     closemessage
     applymovement 9, MtEmberfall_RivalGoBackUp
     applymovement 12, MtEmberfall_WeavileFollowUp
+    waitmovement 9
+    waitmovement 12
+    applymovement 12, MtEmberfall_WeavileSmashRock2
+    waitmovement 12
     applymovement 1, Movement_SmashRock
+    waitmovement 1
     removeobject 1
     message MtEmberfall_RivalWeavileReturn
     waitmessage
@@ -355,7 +363,7 @@ MtEmberfall_RivalWalkUp:
     step_end
 
 MtEmberfall_RivalUseRockSmash:
-    .string "Liam: All these annoying little rocks\n"
+    .string "{COLOR BLUE}Liam{COLOR DARK_GRAY}: All these annoying little rocks\n"
     .string "everywhere...\p"
     .string "I can finally get rid of them.\p"
     .string "Go! Weavile!\p"
@@ -409,3 +417,18 @@ MtEmberfall_RivalLeave:
     walk_up
     walk_up
     step_end
+
+MtEmberfall_WeavileSmashRock1:
+    jump_in_place_up
+    delay_16
+    jump_in_place_up
+    delay_16
+    step_end
+
+MtEmberfall_WeavileSmashRock2:
+    jump_in_place_left
+    delay_16
+    jump_in_place_left
+    delay_16
+    step_end
+
