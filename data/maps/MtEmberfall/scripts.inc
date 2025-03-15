@@ -135,7 +135,6 @@ MtEmberfall_RivalBreaksRock:
     lock
     setvar VAR_RUSTURF_TUNNEL_STATE, 4
     warpsilent MAP_MT_EMBERFALL, 24, 31
-    hideobjectat OBJ_EVENT_ID_PLAYER, 0
     release
     end
 
@@ -149,6 +148,7 @@ MtEmberfall_RivalBreaksRock2:
     waitmessage
     applymovement 9, MtEmberfall_RivalBackUp
     waitmovement 9
+    addobject 12
     setobjectxy 12, 24, 31
     message MtEmberfall_WeavileUseRockSmash
     waitmessage
@@ -177,6 +177,8 @@ MtEmberfall_RivalBreaksRock2:
     message MtEmberfall_RivalThrowAwayRockSmash2
     waitmessage
     clearflag FLAG_RECEIVED_HM_ROCK_SMASH
+    addobject 13
+    showobjectat 13, MAP_MT_EMBERFALL 
     applymovement 9, MtEmberfall_RivalLeave
     waitmovement 9
     setflag FLAG_UNUSED_0x022
