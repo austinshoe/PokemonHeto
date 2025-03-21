@@ -11,6 +11,10 @@ HallowSparkGym_OnTransition:
 	case 2, HallowSparkGym_PatternSet3
 	end
 
+HallowSparkGym_Andre:
+	setvar VAR_FORTREE_CITY_STATE, 2
+	end
+
 HallowSparkGym_PatternSet1:
 	setvar VAR_TEMP_0, 1
 	end

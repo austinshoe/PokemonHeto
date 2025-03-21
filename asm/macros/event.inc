@@ -1742,6 +1742,13 @@
 	.2byte \slot
 	.endm
 
+	@ sets overworld sprite of the nth object on the current map
+	.macro setobjectgfx localId:req, graphicsId:req
+	.byte 0xe4
+	.2byte \localId
+	.2byte \graphicsId
+	.endm
+
 @ Supplementary
 
 	.macro goto_if_unset flag:req, dest:req

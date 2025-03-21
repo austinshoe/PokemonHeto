@@ -2345,6 +2345,15 @@ void ScrCmd_setstatus(struct ScriptContext *ctx)
     SetMonData(&gPlayerParty[partyIndex], MON_DATA_STATUS, &status);
 }
 
+void ScrCmd_setobjectgfx(struct ScriptContext *ctx)
+{
+    u16 localId = VarGet(ScriptReadHalfword(ctx));
+    u16 graphicsId = ScriptReadHalfword(ctx);
+    struct ObjectEvent *objectEvent;
+    objectEvent = &GetObjectEventIdByLocalId(localId);
+    ObjectEventSetGraphicsId(objectEvent, graphicsId);
+}
+
 /*void ScrCmd_setstatusnext(struct ScriptContext *ctx)
 {
     u32 status = VarGet(ScriptReadHalfword(ctx));

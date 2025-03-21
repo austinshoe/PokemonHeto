@@ -431,4 +431,3 @@ MtEmberfall_WeavileSmashRock2:
     jump_in_place_left
     delay_16
     step_end
-
