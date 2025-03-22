@@ -7,8 +7,8 @@ HallowSparkCity_MapScripts::
 HallowSparkCity_OnTransition:
     setflag FLAG_TEMP_1
     setvar VAR_UNUSED_0x4091, 0
-    goto_if_set FLAG_VISITED_FORTREE_CITY, HallowSparkCity_SetUpObjxy
-    setvar VAR_FORTREE_CITY_STATE, 0
+    setflag FLAG_VISITED_FORTREE_CITY
+    goto HallowSparkCity_SetUpObjxy
     end
 
 HallowSparkCity_OnWarp: 
@@ -31,10 +31,6 @@ HallowsparkCity_SetUpAngrbodaCutscene:
     setobjectxyperm 8, 22, 11
     end
 
-HallowsparkCity_ShowPlayer:
-    showobjectat OBJ_EVENT_ID_PLAYER, 0
-    return
-
 HallowSparkCity_OnFrame:
     map_script_2 VAR_FORTREE_CITY_STATE, 0, HallowSparkCity_LenaCutscene1
     map_script_2 VAR_FORTREE_CITY_STATE, 2, HallowSparkCity_AngrbodaCutscene
@@ -49,7 +45,7 @@ HallowSparkCity_SetUpObjxy:
 
 HallowSparkCity_SetUpLenaPos:
     setobjectxyperm 1, 3, 5
-    return
+    end
 
 HallowSparkCity_SetUpRivalLenaPos:
     clearflag FLAG_TEMP_1
@@ -58,7 +54,7 @@ HallowSparkCity_SetUpRivalLenaPos:
     addobject 1
     setobjectxyperm 1, 32, 11
     setobjectxyperm 2, 32, 12
-    return
+    end
 
 HallowSparkCity_LenaCutscene1:
     lockall
@@ -66,9 +62,10 @@ HallowSparkCity_LenaCutscene1:
     applymovement 1, Common_Movement_FaceDown
     waitmovement 1
     getplayerxy VAR_TEMP_0, VAR_TEMP_1
-    addobject 2
     setobjectxyperm 2, VAR_TEMP_0, VAR_TEMP_1
+    addobject 2
     clearflag FLAG_TEMP_1
+    setobjectxyperm 2, VAR_TEMP_0, VAR_TEMP_1
     hideobjectat OBJ_EVENT_ID_PLAYER, 0
     compare VAR_TEMP_0, 2
     goto_if_eq HallowSparkCity_LenaCutscene1OtherMvmt
@@ -265,7 +262,7 @@ HallowsparkCity_PanCameraDown2:
     step_end
 
 HallowSpark_LenaSawAngrboda:
-    .string "???: So this is where he said Angrboda\n"
+    .string "{COLOR BLUE}???{COLOR DARK_GRAY}: So this is where he said {COLOR BLUE}Angrboda{COLOR DARK_GRAY}\n"
     .string "would be...$"
 
 HallowSpark_LookAround:
