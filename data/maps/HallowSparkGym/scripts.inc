@@ -4,6 +4,7 @@ HallowSparkGym_MapScripts::
 
 
 HallowSparkGym_OnTransition:
+	setvar VAR_TERRAIN, STATUS_FIELD_ELECTRIC_TERRAIN
 	random 3
 	switch VAR_RESULT
 	case 0, HallowSparkGym_PatternSet1

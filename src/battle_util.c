@@ -4236,6 +4236,15 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
             effect++;
         }
     #endif
+        /////////
+        else if (GetCurrentWeather() == WEATHER_PERM_TERRAIN && !(gFieldStatuses & VarGet(VAR_TERRAIN)))
+        {
+            gFieldStatuses = (VarGet(VAR_TERRAIN) | STATUS_FIELD_TERRAIN_PERMANENT);
+            gBattleCommunication[MULTISTRING_CHOOSER] = 2;
+            BattleScriptPushCursorAndCallback(BattleScript_OverworldTerrain);
+            effect++;
+        }
+        /////////
     #if B_FOG_TERRAIN == TRUE
         else if ((GetCurrentWeather() == WEATHER_FOG_HORIZONTAL || GetCurrentWeather() == WEATHER_FOG_DIAGONAL) && !(gFieldStatuses & STATUS_FIELD_MISTY_TERRAIN))
         {
