@@ -43,12 +43,12 @@ HallowSparkCity_OnFrame:
 
 HallowSparkCity_SetUpObjxy:
     switch VAR_FORTREE_CITY_STATE
-    case 0: HallowSparkCity_SetUpLenaPos
-    case 3: HallowSparkCity_SetUpRivalLenaPos
+    case 0, HallowSparkCity_SetUpLenaPos
+    case 3, HallowSparkCity_SetUpRivalLenaPos
     end
 
 HallowSparkCity_SetUpLenaPos:
-    setobjectxyperm, 3, 5
+    setobjectxyperm 1, 3, 5
     return
 
 HallowSparkCity_SetUpRivalLenaPos:
@@ -67,7 +67,7 @@ HallowSparkCity_LenaCutscene1:
     waitmovement 1
     getplayerxy VAR_TEMP_0, VAR_TEMP_1
     addobject 2
-    setobjectxyperm VAR_TEMP_0, VAR_TEMP_1
+    setobjectxyperm 2, VAR_TEMP_0, VAR_TEMP_1
     clearflag FLAG_TEMP_1
     hideobjectat OBJ_EVENT_ID_PLAYER, 0
     compare VAR_TEMP_0, 2
@@ -76,24 +76,24 @@ HallowSparkCity_LenaCutscene1:
     waitmovement 0
     call HallowSparkCity_LenaCutscene1pt2
     waitmovement 1
-    applymovemnt 1, HallowSpark_LenaLeaveForNow2
+    applymovement 1, HallowSpark_LenaLeaveForNow2
     applymovement OBJ_EVENT_ID_PLAYER, HallowsparkCity_PanCameraDown1
     waitmovement 0
     waitmovement 1
-    HallowSparkCity_LenaCutscene1pt3
+    goto HallowSparkCity_LenaCutscene1pt3
 
 HallowSparkCity_LenaCutscene1OtherMvmt:
     applymovement OBJ_EVENT_ID_PLAYER, HallowsparkCity_PanCameraUp2
     waitmovement 0
     call HallowSparkCity_LenaCutscene1pt2
     waitmovement 1
-    applymovemnt 1, HallowSpark_LenaLeaveForNow2
+    applymovement 1, HallowSpark_LenaLeaveForNow2
     applymovement OBJ_EVENT_ID_PLAYER, HallowsparkCity_PanCameraDown2
     waitmovement 0
     waitmovement 1
     goto HallowSparkCity_LenaCutscene1pt3
 
-HallowSparkCity_LenaCutscene1pt2
+HallowSparkCity_LenaCutscene1pt2:
     msgbox HallowSpark_LenaSawAngrboda, MSGBOX_DEFAULT
     applymovement 1, HallowSpark_LookAround
     waitmovement 1
@@ -103,7 +103,7 @@ HallowSparkCity_LenaCutscene1pt2
     waitmovement 1
     waitmovement OBJ_EVENT_ID_PLAYER
     msgbox HallowSpark_LenaLieLow, MSGBOX_DEFAULT
-    applymovemnt 1, HallowSpark_LenaLeaveForNow
+    applymovement 1, HallowSpark_LenaLeaveForNow
     return
 
 HallowSparkCity_LenaCutscene1pt3:
@@ -253,7 +253,7 @@ HallowsparkCity_PanCameraDown1:
     walk_up
     walk_up
     walk_up
-    face_end
+    face_down
     step_end
 
 HallowsparkCity_PanCameraDown2:
@@ -288,7 +288,7 @@ HallowSpark_LenaBetterWatchOut:
     .string "probably close by.$"
 
 HallowSpark_LenaStepUp:
-    step_up
+    walk_up
     step_end
 
 HallowSpark_LenaLieLow:
@@ -337,7 +337,7 @@ HallowSparkCity_AngrbodaGetInFormation:
     step_end
 
 HallowSpark_TextAngrbodaLetsGo:
-    .string "{COLOR BLUE}Grunt{COLOR DARK_GRAT}: Boss and them should already be\n"
+    .string "{COLOR BLUE}Grunt{COLOR DARK_GRAY}: Boss and them should already be\n"
     .string "in there.\p"
     .string "Let's make this quick, and make sure\n"
     .string "nobody notices us until we finish our\l"
