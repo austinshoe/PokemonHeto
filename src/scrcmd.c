@@ -2350,7 +2350,7 @@ void ScrCmd_setobjectgfx(struct ScriptContext *ctx)
     u16 localId = VarGet(ScriptReadHalfword(ctx));
     u16 graphicsId = ScriptReadHalfword(ctx);
     struct ObjectEvent *objectEvent;
-    objectEvent = &GetObjectEventIdByLocalId(localId);
+    objectEvent = &gObjectEvents[GetObjectEventIdByLocalId(localId)];
     ObjectEventSetGraphicsId(objectEvent, graphicsId);
 }
 
