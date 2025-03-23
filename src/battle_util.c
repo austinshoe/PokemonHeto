@@ -4203,7 +4203,7 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
     {
     case ABILITYEFFECT_SWITCH_IN_TERRAIN:
         gBattleScripting.battler = battler;
-        if (VarGet(VAR_TERRAIN) & STATUS_FIELD_TERRAIN_ANY)
+        if ((VarGet(VAR_TERRAIN) & STATUS_FIELD_TERRAIN_ANY) && (GetCurrentWeather() != WEATHER_PERM_TERRAIN))
         {
             u16 terrainFlags = VarGet(VAR_TERRAIN) & STATUS_FIELD_TERRAIN_ANY;    // only works for status flag (1 << 15)
             gFieldStatuses = terrainFlags | STATUS_FIELD_TERRAIN_PERMANENT; // terrain is permanent
