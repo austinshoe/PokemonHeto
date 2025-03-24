@@ -285,7 +285,7 @@ HallowSpark_LenaBetterWatchOut:
     .string "probably close by.$"
 
 HallowSpark_LenaStepUp:
-    walk_up
+    walk_down
     step_end
 
 HallowSpark_LenaLieLow:
