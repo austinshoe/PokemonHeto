@@ -4237,9 +4237,9 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
         }
     #endif
         /////////
-        else if (GetCurrentWeather() == WEATHER_PERM_TERRAIN && !(gFieldStatuses & VarGet(VAR_TERRAIN)))
+        else if (GetCurrentWeather() == WEATHER_PERM_TERRAIN && !(gFieldStatuses & VarGet(VAR_UNUSED_0x40F7)))
         {
-            gFieldStatuses = (VarGet(VAR_TERRAIN) | STATUS_FIELD_TERRAIN_PERMANENT);
+            gFieldStatuses = (VarGet(VAR_UNUSED_0x40F7) | STATUS_FIELD_TERRAIN_PERMANENT);
             gBattleCommunication[MULTISTRING_CHOOSER] = 2;
             BattleScriptPushCursorAndCallback(BattleScript_OverworldTerrain);
             effect++;

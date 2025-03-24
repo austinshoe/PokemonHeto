@@ -1880,6 +1880,7 @@ const u16 gWeatherStartsStringIds[] =
     [WEATHER_DOWNPOUR]           = STRINGID_ITISRAINING,
     [WEATHER_UNDERWATER_BUBBLES] = STRINGID_ITISRAINING,
     [WEATHER_ABNORMAL]           = STRINGID_ITISRAINING
+    [WEATHER_PERM_TERRAIN]               = STRINGID_ITISRAINING,
 };
 
 const u16 gPrimalWeatherBlocksStringIds[] =
