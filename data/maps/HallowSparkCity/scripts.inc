@@ -114,9 +114,9 @@ HallowSparkCity_LenaCutscene1pt3:
 
 HallowSparkCity_AngrbodaCutscene:
     delay 16
-    setvar VAR_FORTREE_CITY_STATE, 10
     getplayerxy VAR_UNUSED_0x40FE, VAR_UNUSED_0x40FF
     warpsilent MAP_HALLOW_SPARK_CITY, 36, 10
+    setvar VAR_FORTREE_CITY_STATE, 10
     end
 
 HallowSparkCity_AngrbodaCutscene2:
@@ -146,7 +146,9 @@ HallowSparkCity_AngrbodaCutscene2:
     applymovement 6, Common_Movement_ExclamationMark
     applymovement 7, Common_Movement_ExclamationMark
     applymovement 8, Common_Movement_ExclamationMark
-    msgbox HallowSpark_TextAngrbodaLetsGo2, MSGBOX_DEFAULT
+    message HallowSpark_TextAngrbodaLetsGo2
+    waitmessage
+    closemessage
     waitmovement 4
     waitmovement 5
     waitmovement 6
@@ -185,12 +187,17 @@ HallowSparkCity_AngrbodaCutscene2:
     waitse
     fadescreen FADE_TO_BLACK
     addobject 1
+    showobjectat 1, MAP_HALLOW_SPARK_CITY
     setobjectxyperm 1, 32, 17
+    setobjectxy 1, 32, 17
     clearflag FLAG_TEMP_1
     addobject 2
     setobjectgfx 2, OBJ_EVENT_GFX_BRENDAN_NORMAL
     setobjectxy 2, 27, 11
+    showobjectat 2, MAP_HALLOW_SPARK_CITY
     fadescreen FADE_FROM_BLACK
+    addobject 2
+    addobject 1
     delay 16
     applymovement 1, HallowSparkCity_LenaPullUp
     applymovement 2, HallowSparkCity_RivalPullUp
@@ -310,26 +317,26 @@ HallowSpark_LenaLeaveForNow2:
     step_end
 
 HallowSparkCity_AngrbodaWalkUp:
-    walk_faster_right
-    walk_faster_right
-    walk_faster_right
-    walk_faster_right
-    walk_faster_right
-    walk_faster_right
-    walk_faster_right
-    walk_faster_right
-    walk_faster_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
     step_end
 
 HallowSparkCity_AngrbodaWalkUpMiniLeader:
-    walk_faster_up
+    walk_up
     face_down
     step_end
 
 HallowSparkCity_AngrbodaGetInFormation:
-    walk_faster_right
-    walk_faster_right
-    walk_faster_right
+    walk_right
+    walk_right
+    walk_right
     face_up
     step_end
 
@@ -389,17 +396,17 @@ HallowSpark_AngrbodaLeave4:
     step_end 
 
 HallowSparkCity_LenaPullUp:
-    walk_faster_right
-    walk_faster_right
-    walk_faster_right
-    walk_faster_right
-    walk_faster_right
+    walk_up
+    walk_up
+    walk_up
+    walk_up
+    walk_up
     step_end
 
 HallowSparkCity_RivalPullUp:
-    walk_faster_up
-    walk_faster_up
-    walk_faster_up
-    walk_faster_up
-    walk_faster_up
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
     step_end
