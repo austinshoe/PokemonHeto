@@ -54,6 +54,8 @@ HallowSparkCity_SetUpRivalLenaPos:
     addobject 1
     setobjectxyperm 1, 32, 11
     setobjectxyperm 2, 32, 12
+    setobjectmovementtype 1, MOVEMENT_TYPE_FACE_DOWN
+    setobjectmovementtype 2, MOVEMENT_TYPE_FACE_UP
     end
 
 HallowSparkCity_LenaCutscene1:
@@ -209,6 +211,29 @@ HallowSparkCity_AngrbodaCutscene2:
     waitbuttonpress
     setvar VAR_FORTREE_CITY_STATE, 3
     warpsilent MAP_HALLOW_SPARK_CITY, VAR_UNUSED_0x40FE, VAR_UNUSED_0x40FF
+    end
+
+HallowSpark_LenaRivalEventTriggers:
+    lockall
+    getplayerxy VAR_UNUSED_0x40FE, VAR_UNUSED_0x40FF
+    delay 16
+    applymovement 1, Common_Movement_ExclamationMark
+    applymovement 2, Common_Movement_ExclamationMark
+    waitmovement 1
+    message HallowSpark_LiamSurprised
+    waitmessage
+    waitbuttonpress
+    waitmovement 2
+    closemessage
+    applymovement 1, Common_Movement_QuestionMark
+    message HallowSpark_LenaConfuzzled
+    waitmessage
+    waitmovement 1
+    message HallowSpark_LiamWhoRU
+    waitmessage
+    applymovement 2, Common_Movement_ExclamationMark
+    message HallowSpark_LiamAngrbodaAccusations
+    waitmessage
     end
 
 Script_HallowSparkCitySign::
@@ -410,3 +435,20 @@ HallowSparkCity_RivalPullUp:
     walk_right
     walk_right
     step_end
+
+HallowSpark_LiamSurprised:
+    .string "{COLOR BLUE}Liam{COLOR DARK_GRAY}: Woah there! Outta the way, I'm\n"
+    .string "doing something important here!$"
+
+HallowSpark_LenaConfuzzled:
+    .string "{COLOR BLUE}???{COLOR DARK_GRAY}: Who, me?\p"
+    .string "I also happen to have business here.$"
+
+HallowSpark_LiamWhoRU:
+    .string "Liam: Business here?\n"
+    .string "What business do you have here?\p"
+    .string "Wait...\p"
+    .string "$"
+
+HallowSpark_LiamAngrbodaAccusations:
+    .string "---PLACEHOLDER TEXT----$"

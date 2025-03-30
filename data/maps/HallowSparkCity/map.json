@@ -213,7 +213,96 @@
     }
   ],
   "coord_events": [
-
+    {
+      "type": "trigger",
+      "x": 30,
+      "y": 9,
+      "elevation": 0,
+      "var": "VAR_FORTREE_CITY_STATE",
+      "var_value": "3",
+      "script": "NULL"
+    },
+    {
+      "type": "trigger",
+      "x": 30,
+      "y": 10,
+      "elevation": 0,
+      "var": "VAR_FORTREE_CITY_STATE",
+      "var_value": "3",
+      "script": "NULL"
+    },
+    {
+      "type": "trigger",
+      "x": 30,
+      "y": 11,
+      "elevation": 0,
+      "var": "VAR_FORTREE_CITY_STATE",
+      "var_value": "3",
+      "script": "NULL"
+    },
+    {
+      "type": "trigger",
+      "x": 30,
+      "y": 12,
+      "elevation": 0,
+      "var": "VAR_FORTREE_CITY_STATE",
+      "var_value": "3",
+      "script": "NULL"
+    },
+    {
+      "type": "trigger",
+      "x": 30,
+      "y": 13,
+      "elevation": 0,
+      "var": "VAR_FORTREE_CITY_STATE",
+      "var_value": "3",
+      "script": "NULL"
+    },
+    {
+      "type": "trigger",
+      "x": 31,
+      "y": 14,
+      "elevation": 0,
+      "var": "VAR_FORTREE_CITY_STATE",
+      "var_value": "3",
+      "script": "NULL"
+    },
+    {
+      "type": "trigger",
+      "x": 32,
+      "y": 14,
+      "elevation": 0,
+      "var": "VAR_FORTREE_CITY_STATE",
+      "var_value": "3",
+      "script": "NULL"
+    },
+    {
+      "type": "trigger",
+      "x": 33,
+      "y": 14,
+      "elevation": 0,
+      "var": "VAR_FORTREE_CITY_STATE",
+      "var_value": "3",
+      "script": "NULL"
+    },
+    {
+      "type": "trigger",
+      "x": 34,
+      "y": 14,
+      "elevation": 0,
+      "var": "VAR_FORTREE_CITY_STATE",
+      "var_value": "3",
+      "script": "NULL"
+    },
+    {
+      "type": "trigger",
+      "x": 35,
+      "y": 14,
+      "elevation": 0,
+      "var": "VAR_FORTREE_CITY_STATE",
+      "var_value": "3",
+      "script": "NULL"
+    }
   ],
   "bg_events": [
     {
