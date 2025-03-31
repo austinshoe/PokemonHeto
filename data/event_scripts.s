@@ -1035,7 +1035,7 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/scripts/repel.inc"
 	.include "data/scripts/safari_zone.inc"
 	.include "data/scripts/roulette.inc"
-	.include "new_custom_trainer_scripts.inc"
+	.include "data/scripts/new_custom_trainer_scripts.inc"
 	.include "data/text/pokedex_rating.inc"
 	.include "data/text/lottery_corner.inc"
 	.include "data/text/event_ticket_1.inc"
