@@ -297,7 +297,7 @@ HallowSpark_PlayerLeft2:
 HallowSpark_PlayerLeft3:
 HallowSpark_PlayerLeft4:
 HallowSpark_PlayerRight1:
-    @ stub to fix 2 
+    @ stub to fix
     return
 
 Script_HallowSparkCitySign::
