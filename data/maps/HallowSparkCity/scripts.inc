@@ -451,4 +451,6 @@ HallowSpark_LiamWhoRU:
     .string "$"
 
 HallowSpark_LiamAngrbodaAccusations:
-    .string "---PLACEHOLDER TEXT----$"
+    .string "That uniform...\p"
+    .string "Could it be that you're one of those\n$"
+    .string "{COLOR BLUE}Angrboda{COLOR DARK_GRAY} people?"
