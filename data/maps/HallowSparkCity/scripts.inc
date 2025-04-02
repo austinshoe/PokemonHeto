@@ -242,7 +242,6 @@ HallowSpark_LenaRivalEventTriggers:
     waitmessage
     closemessage
     call HallowSparkCity_TurnRival 
-    turnobject 2, VAR_TEMP_F
     delay 8
     applymovement 2, Common_Movement_ExclamationMark
     message HallowSpark_RivalHollaAtYou
@@ -260,15 +259,15 @@ HallowSparkCity_TurnRival:
     return
 
 HallowSpark_RivalDown:
-    setvar VAR_TEMP_F, DIR_SOUTH
+    turnobject 2, DIR_SOUTH
     return
 
 HallowSpark_RivalLeft:
-    setvar VAR_TEMP_F, DIR_WEST
+    turnobject 2, DIR_WEST
     return
 
 HallowSpark_RivalUp:
-    setvar VAR_TEMP_F, DIR_NORTH
+    turnobject 2, DIR_NORTH
     return
 
 HallowSpark_PlayerPullUp:
@@ -296,7 +295,7 @@ HallowSpark_PlayerLeft2:
 HallowSpark_PlayerLeft3:
 HallowSpark_PlayerLeft4:
 HallowSpark_PlayerRight1:
-    @ stub to fix 
+    @ stub to fix 2 
     return
 
 Script_HallowSparkCitySign::
