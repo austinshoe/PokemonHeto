@@ -234,7 +234,70 @@ HallowSpark_LenaRivalEventTriggers:
     applymovement 2, Common_Movement_ExclamationMark
     message HallowSpark_LiamAngrbodaAccusations
     waitmessage
+    applymovement 1, Common_Movement_QuestionMark
+    message HallowSpark_LenaImNotAngrboda
+    waitmessage
+    waitmovement 1
+    message HallowSpark_RivalBackAtYou
+    waitmessage
+    closemessage
+    call HallowSparkCity_TurnRival 
+    turnobject 2, VAR_TEMP_F
+    delay 8
+    applymovement 2, Common_Movement_ExclamationMark
+    message HallowSpark_RivalHollaAtYou
+    waitmessage
+    waitmovement 2
+    closemessage
+    call HallowSpark_PlayerPullUp
     end
+
+HallowSparkCity_TurnRival:
+    switch VAR_UNUSED_0x40FF
+    case 10: HallowSpark_RivalUp
+    case 14: HallowSpark_RivalDown
+    default: HallowSpark_RivalLeft
+    return
+
+HallowSpark_RivalDown:
+    setvar VAR_TEMP_F, DIR_SOUTH
+    return
+
+HallowSpark_RivalLeft:
+    setvar VAR_TEMP_F, DIR_WEST
+    return
+
+HallowSpark_RivalUp:
+    setvar VAR_TEMP_F, DIR_NORTH
+    return
+
+HallowSpark_PlayerPullUp:
+    call HallowSpark_PlayerAdjustX
+    call HallowSpark_PlayerAdjustY
+    return
+
+HallowSpark_PlayerAdjustX:
+    switch VAR_UNUSED_0x40FE
+    case 31: HallowSpark_PlayerNothing
+    case 32: HallowSpark_PlayerLeft1
+    case 33: HallowSpark_PlayerLeft2
+    case 34: HallowSpark_PlayerLeft3
+    case 35: HallowSpark_PlayerLeft4
+    default: HallowSpark_PlayerRight1
+    return
+
+HallowSpark_PlayerAdjustY:
+    @ stub to fix
+    return
+
+HallowSpark_PlayerNothing:
+HallowSpark_PlayerLeft1:
+HallowSpark_PlayerLeft2:
+HallowSpark_PlayerLeft3:
+HallowSpark_PlayerLeft4:
+HallowSpark_PlayerRight1:
+    @ stub to fix 
+    return
 
 Script_HallowSparkCitySign::
     lock
@@ -452,5 +515,24 @@ HallowSpark_LiamWhoRU:
 
 HallowSpark_LiamAngrbodaAccusations:
     .string "That uniform...\p"
-    .string "Could it be that you're one of those\n$"
-    .string "{COLOR BLUE}Angrboda{COLOR DARK_GRAY} people?"
+    .string "Could it be that you're one of those\n"
+    .string "{COLOR BLUE}Angrboda{COLOR DARK_GRAY} people?$"
+
+HallowSpark_LenaImNotAngrboda:
+    .string "???: Wait what- No-\p"
+    .string "I'm not part of Angrboda-\n"
+    .string "How do you even know what Angrboda is?\p"
+    .string "$"
+
+HallowSpark_RivalBackAtYou:
+    .string "Liam: Right back at you, how do YOU\n"
+    .string "know about Angrboda?\p"
+    .string "???: That's classified information.\p"
+    .string "Liam: Classified information?\p"
+    .string "What does that even mean, classified-\n"
+    .string "Are you a government agent or what?\p"
+    .string "???: Well, I suppose I am something\n"
+    .string "like that.$"
+
+HallowSpark_RivalHollaAtYou:
+    .string "Liam: {PLAYER}! You're also here!$"
