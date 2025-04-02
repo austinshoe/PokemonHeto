@@ -5,6 +5,7 @@ on:
     branches:
       - master
       - upcoming
+      - event-scripts
   pull_request:
 
 jobs:
