@@ -255,7 +255,9 @@ HallowSparkCity_TurnRival:
     switch VAR_UNUSED_0x40FF
     case 10, HallowSpark_RivalUp
     case 14, HallowSpark_RivalDown
-    default, HallowSpark_RivalLeft
+    case 11, HallowSpark_RivalLeft
+    case 12, HallowSpark_RivalLeft
+    case 13, HallowSpark_RivalLeft
     return
 
 HallowSpark_RivalDown:
@@ -282,7 +284,7 @@ HallowSpark_PlayerAdjustX:
     case 33, HallowSpark_PlayerLeft2
     case 34, HallowSpark_PlayerLeft3
     case 35, HallowSpark_PlayerLeft4
-    default, HallowSpark_PlayerRight1
+    case 30, HallowSpark_PlayerRight1
     return
 
 HallowSpark_PlayerAdjustY:
