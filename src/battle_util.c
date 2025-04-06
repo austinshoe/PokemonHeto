@@ -4672,8 +4672,8 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
         ////////
         case ABILITY_AUTHORITY:
             VarSet(VAR_UNUSED_0x40F8, 0);
-            struct Pokemon *mon;
             u32 itemId;
+            struct Pokemon *mon;
             if (GetBattlerSide(battler) == B_SIDE_OPPONENT)
                 mon = &gEnemyParty[gBattlerPartyIndexes[battler]];
             else
@@ -4685,8 +4685,8 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
             break;
         case ABILITY_THOR:
             VarSet(VAR_UNUSED_0x40F8, 1);
-            struct Pokemon *mon;
             u32 itemId;
+            struct Pokemon *mon;
             if (GetBattlerSide(battler) == B_SIDE_OPPONENT)
                 mon = &gEnemyParty[gBattlerPartyIndexes[battler]];
             else
@@ -4698,8 +4698,8 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
             break;
         case ABILITY_SKADI:
             VarSet(VAR_UNUSED_0x40F8, 2);
-            struct Pokemon *mon;
             u32 itemId;
+            struct Pokemon *mon;
             if (GetBattlerSide(battler) == B_SIDE_OPPONENT)
                 mon = &gEnemyParty[gBattlerPartyIndexes[battler]];
             else
@@ -4711,8 +4711,8 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
             break;
         case ABILITY_SURTR:
             VarSet(VAR_UNUSED_0x40F8, 3);
-            struct Pokemon *mon;
             u32 itemId;
+            struct Pokemon *mon;
             if (GetBattlerSide(battler) == B_SIDE_OPPONENT)
                 mon = &gEnemyParty[gBattlerPartyIndexes[battler]];
             else
