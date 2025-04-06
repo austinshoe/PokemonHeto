@@ -478,6 +478,11 @@ extern const u8 BattleScript_UltraBurst[];
 extern const u8 BattleScript_SelectingNotAllowedCurrentMove[];
 extern const u8 BattleScript_SelectingNotAllowedCurrentMoveInPalace[];
 extern const u8 BattleScript_SaltCureExtraDamage[];
+extern const u8 BattleScript_EnergyStormContinues[];
+extern const u8 BattleScript_EnergyStormEnds[];
+extern const u8 BattleScript_EnergyStormBoostActivates[];
+extern const u8 BattleScript_EnergyStormActivates[];
+extern const u8 BattleScript_EnergyTurnDmg[];
 
 // zmoves
 extern const u8 BattleScript_ZMoveActivateDamaging[];
