@@ -18,6 +18,7 @@
 #define WEATHER_UNDERWATER_BUBBLES      14
 #define WEATHER_ABNORMAL                15  // The alternating weather during Groudon/Kyogre conflict
 #define WEATHER_PERM_TERRAIN            16
+#define WEATHER_ENERGY_STORM            17
 #define WEATHER_ROUTE119_CYCLE          20
 #define WEATHER_ROUTE123_CYCLE          21
 
@@ -37,6 +38,7 @@
 #define COORD_EVENT_WEATHER_SHADE               10
 #define COORD_EVENT_WEATHER_DROUGHT             11
 #define COORD_EVENT_WEATHER_PERM_TERRAIN        12
+#define COORD_EVENT_WEATHER_ENERGY_STORM        13
 #define COORD_EVENT_WEATHER_ROUTE119_CYCLE      20
 #define COORD_EVENT_WEATHER_ROUTE123_CYCLE      21
 

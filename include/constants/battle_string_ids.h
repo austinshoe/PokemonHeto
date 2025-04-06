@@ -676,8 +676,12 @@
 #define STRINGID_MONUNABLETOVENT                      674
 #define STRINGID_MONRELEASINGALLENERGY                675
 #define STRINGID_MONRELEASEDALLENERGY                 676
+#define STRINGID_ENERGYSTORM                          677
+#define STRINGID_STORMISBREWING                       678
+#define STRINGID_STORMDISSIPATED                      679
+#define STRINGID_PKMNHURTBYENERGY                     680
 
-#define BATTLESTRINGS_COUNT                           677 //change to 677
+#define BATTLESTRINGS_COUNT                           681
 
 // This is the string id that gBattleStringsTable starts with.
 // String ids before this (e.g. STRINGID_INTROMSG) are not in the table,
@@ -754,6 +758,10 @@
 #define B_MSG_SANDSTORM  0
 #define B_MSG_HAIL       1
 #define B_MSG_SNOW       2
+
+//gEnergyStormStringIds
+#define B_MSG_ENERGYSTORMCONTINUES 0
+#define B_MSG_ENERGYSTORMSTOPS 1
 
 // gReflectLightScreenSafeguardStringIds
 #define B_MSG_SIDE_STATUS_FAILED     0

@@ -6674,6 +6674,34 @@ BattleScript_LearnedNewMove::
 BattleScript_LearnMoveReturn::
 	return
 
+BattleScript_EnergyStormContinues::
+	printfromtable gEnergyStormStringIds
+	waitmessage B_WAIT_TIME_LONG
+	playanimation_var BS_ATTACKER, sB_ANIM_ARG1
+	setbyte gBattleCommunication, 0
+	end2
+
+BattleScript_EnergyStormEnds::
+	printfromtable gEnergyStormStringIds
+	waitmessage B_WAIT_TIME_LONG
+	call BattleScript_ActivateWeatherAbilities
+	setbyte gBattleCommunication, 0
+	end2
+
+BattleScript_EnergyStormBoostActivates::
+	jumpifstat BS_TARGET, CMP_LESS_THAN, STAT_ATK, MAX_STAT_STAGE, BattleScript_AngerShellTryDef
+	jumpifstat BS_TARGET, CMP_LESS_THAN, STAT_SPATK, MAX_STAT_STAGE, BattleScript_AngerShellTryDef
+	jumpifstat BS_TARGET, CMP_LESS_THAN, STAT_SPEED, MAX_STAT_STAGE, BattleScript_AngerShellTryDef
+BattleScript_EnergyStormBoostTryAttack:
+	setbyte sSTAT_ANIM_PLAYED, FALSE
+	modifybattlerstatstage BS_ATTACKER, STAT_ATK, INCREASE, 1, BattleScript_EnergyStormBoostTrySpAtk, ANIM_ON
+BattleScript_EnergyStormBoostTrySpAtk:
+	modifybattlerstatstage BS_ATTACKER, STAT_SPATK, INCREASE, 1, BattleScript_EnergyStormBoostTrySpeed, ANIM_ON
+BattleScript_EnergyStormBoostTrySpeed:
+	modifybattlerstatstage BS_ATTACKER, STAT_SPEED, INCREASE, 1, BattleScript_EnergyStormBoostRet, ANIM_ON
+BattleScript_EnergyStormBoostRet:
+	end2
+
 BattleScript_RainContinuesOrEnds::
 	printfromtable gRainContinuesStringIds
 	waitmessage B_WAIT_TIME_LONG
@@ -7981,6 +8009,11 @@ BattleScript_PoisonHealActivates::
 	datahpupdate BS_ATTACKER
 	end2
 
+BattleScript_EnergyTurnDmg::
+	printstring STRINGID_PKMNHURTBYENERGY
+	waitmessage B_WAIT_TIME_LONG
+	goto BattleScript_DoTurnDmg
+
 BattleScript_BurnTurnDmg::
 	printstring STRINGID_PKMNHURTBYBURN
 	waitmessage B_WAIT_TIME_LONG
@@ -8676,6 +8709,15 @@ BattleScript_CostarActivates::
 	call BattleScript_AbilityPopUp
 	printstring STRINGID_PKMNCOPIEDSTATCHANGES
 	waitmessage B_WAIT_TIME_LONG
+	end3
+
+BattleScript_EnergyStormActivates::
+	pause B_WAIT_TIME_SHORT
+	call BattleScript_AbilityPopUp
+	printstring STRINGID_ENERGYSTORM
+	waitstate
+	playanimation BS_BATTLER_0, B_ANIM_RAIN_CONTINUES
+	call BattleScript_ActivateWeatherAbilities
 	end3
 
 BattleScript_AttackWeakenedByStrongWinds::

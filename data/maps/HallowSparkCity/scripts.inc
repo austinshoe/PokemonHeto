@@ -249,6 +249,12 @@ HallowSpark_LenaRivalEventTriggers:
     waitmovement 2
     closemessage
     call HallowSpark_PlayerPullUp
+    applymovement 2, Common_Movement_FaceUp
+    applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp
+    waitmovement 0
+    delay 16
+    applymovement 1, Common_Movement_ExclamationMark
+    message HallowSpark_RivalHollaAtYou
     end
 
 HallowSparkCity_TurnRival:
@@ -285,19 +291,70 @@ HallowSpark_PlayerAdjustX:
     case 34, HallowSpark_PlayerLeft3
     case 35, HallowSpark_PlayerLeft4
     case 30, HallowSpark_PlayerRight1
+    applymovement 2, Common_Movement_FaceUp
+    waitmovement 2
     return
 
 HallowSpark_PlayerAdjustY:
-    @ stub to fix
+    switch VAR_UNUSED_0x40FF
+    case 10, HallowSpark_PlayerDown2
+    case 11, HallowSpark_PlayerDown1
+    case 12, HallowSpark_PlayerNothing2
+    case 13, HallowSpark_PlayerUp1
+    case 14, HallowSpark_RivalUp2
     return
 
 HallowSpark_PlayerNothing:
+    return
+
 HallowSpark_PlayerLeft1:
+    applymovement OBJ_EVENT_ID_PLAYER, Movement_HallowSpark_PlayerLeft1
+    waitmovement 0
+    return
+
 HallowSpark_PlayerLeft2:
+    applymovement OBJ_EVENT_ID_PLAYER, Movement_HallowSpark_PlayerLeft2
+    waitmovement 0
+    return
+
 HallowSpark_PlayerLeft3:
+    applymovement OBJ_EVENT_ID_PLAYER, Movement_HallowSpark_PlayerLeft3
+    waitmovement 0
+    return
+
 HallowSpark_PlayerLeft4:
-HallowSpark_PlayerRight1:
-    @ stub to fix
+    applymovement OBJ_EVENT_ID_PLAYER, Movement_HallowSpark_PlayerLeft4
+    waitmovement 0
+    return
+
+HallowSpark_PlayerRight1:   
+    applymovement OBJ_EVENT_ID_PLAYER, Movement_HallowSpark_PlayerRight1
+    waitmovement 0
+    return
+
+HallowSpark_PlayerDown2:
+    applymovement OBJ_EVENT_ID_PLAYER, Movement_HallowSpark_PlayerDown2
+    waitmovement 0
+    return
+
+HallowSpark_PlayerDown1:
+    applymovement OBJ_EVENT_ID_PLAYER, Movement_HallowSpark_PlayerDown1
+    waitmovement 0
+    return
+
+HallowSpark_PlayerNothing2:
+    applymovement OBJ_EVENT_ID_PLAYER, Movement_HallowSpark_PlayerNothing2
+    waitmovement 0
+    return
+
+HallowSpark_PlayerUp1:
+    applymovement OBJ_EVENT_ID_PLAYER, Movement_HallowSpark_PlayerUp1
+    waitmovement 0
+    return
+
+HallowSpark_RivalUp2:
+    applymovement OBJ_EVENT_ID_PLAYER, Movement_HallowSpark_PlayerUp2
+    waitmovement 0
     return
 
 Script_HallowSparkCitySign::
@@ -537,3 +594,53 @@ HallowSpark_RivalBackAtYou:
 
 HallowSpark_RivalHollaAtYou:
     .string "Liam: {PLAYER}! You're also here!$"
+
+Movement_HallowSpark_PlayerLeft1:
+    walk_left
+    step_end
+
+Movement_HallowSpark_PlayerLeft2:
+    walk_left
+    walk_left
+    step_end
+
+Movement_HallowSpark_PlayerLeft3:
+    walk_left
+    walk_left
+    walk_left
+    step_end
+
+Movement_HallowSpark_PlayerLeft4:
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    step_end
+
+Movement_HallowSpark_PlayerRight1:
+    walk_right
+    step_end
+
+Movement_HallowSpark_PlayerDown2:
+    walk_down
+    walk_down
+    face_up
+    step_end
+
+Movement_HallowSpark_PlayerDown1:
+    walk_down
+    face_up
+    step_end
+
+Movement_HallowSpark_PlayerNothing2:
+    face_up
+    step_end
+
+Movement_HallowSpark_PlayerUp1:
+    walk_up
+    step_end
+
+Movement_HallowSpark_PlayerUp2:
+    walk_up
+    walk_up
+    step_end

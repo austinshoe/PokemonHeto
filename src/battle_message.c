@@ -813,6 +813,10 @@ static const u8 sText_MoveChangedTypeElectric[] = _("Core Blast's type changed t
 static const u8 sText_MonUnableToVent[] = _("{B_ATK_NAME_WITH_PREFIX} doesn't have\nenough energy to use this!");
 static const u8 sText_MonReleasingAllEnergy[] = _("{B_ATK_NAME_WITH_PREFIX} is using\nall of its extra energy!");
 static const u8 sText_MonReleasedAllEnergy[] = _("{B_ATK_NAME_WITH_PREFIX} used up\nall of its extra energy!");
+static const u8 sText_EnergyStorm[] = _("A energy storm begins to brew!");
+static const u8 sText_StormIsBrewing[] = _("The energy storm is brewing.");
+static const u8 sText_StormDissipated[] = _("The energy storm dissipated!");
+static const u8 sText_HurtByEnergy[] = _("The swirling energy hurt\n{B_ATK_NAME_WITH_PREFIX}!");
 
 
 const u8 *const gBattleStringsTable[BATTLESTRINGS_COUNT] =
@@ -1482,6 +1486,10 @@ const u8 *const gBattleStringsTable[BATTLESTRINGS_COUNT] =
     [STRINGID_MONUNABLETOVENT - BATTLESTRINGS_TABLE_START] = sText_MonUnableToVent,
     [STRINGID_MONRELEASINGALLENERGY - BATTLESTRINGS_TABLE_START] = sText_MonReleasingAllEnergy,
     [STRINGID_MONRELEASEDALLENERGY - BATTLESTRINGS_TABLE_START] = sText_MonReleasedAllEnergy,
+    [STRINGID_ENERGYSTORM - BATTLESTRINGS_TABLE_START] = sText_EnergyStorm,
+    [STRINGID_STORMISBREWING - BATTLESTRINGS_TABLE_START] = sText_StormIsBrewing,
+    [STRINGID_STORMDISSIPATED - BATTLESTRINGS_TABLE_START] = sText_StormDissipated,
+    [STRINGID_PKMNHURTBYENERGY - BATTLESTRINGS_TABLE_START] = sText_HurtByEnergy,
 };
 
 const u16 gTrainerUsedItemStringIds[] =
@@ -1622,6 +1630,12 @@ const u16 gRainContinuesStringIds[] =
     [B_MSG_RAIN_CONTINUES]     = STRINGID_RAINCONTINUES,
     [B_MSG_DOWNPOUR_CONTINUES] = STRINGID_DOWNPOURCONTINUES,
     [B_MSG_RAIN_STOPPED]       = STRINGID_RAINSTOPPED
+};
+
+const u16 gEnergyStormStringIds[] = 
+{
+    [B_MSG_ENERGYSTORMCONTINUES] = STRINGID_STORMISBREWING,
+    [B_MSG_ENERGYSTORMSTOPS]     = STRINGID_STORMDISSIPATED
 };
 
 const u16 gProtectLikeUsedStringIds[] =
@@ -1880,7 +1894,8 @@ const u16 gWeatherStartsStringIds[] =
     [WEATHER_DOWNPOUR]           = STRINGID_ITISRAINING,
     [WEATHER_UNDERWATER_BUBBLES] = STRINGID_ITISRAINING,
     [WEATHER_ABNORMAL]           = STRINGID_ITISRAINING,
-    [WEATHER_PERM_TERRAIN]       = STRINGID_ITISRAINING
+    [WEATHER_PERM_TERRAIN]       = STRINGID_ITISRAINING,
+    [WEATHER_ENERGY_STORM]       = STRINGID_STORMISBREWING
 };
 
 const u16 gPrimalWeatherBlocksStringIds[] =

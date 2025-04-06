@@ -23,6 +23,7 @@ static void CoordEventWeather_Drought(void);
 static void CoordEventWeather_Route119Cycle(void);
 static void CoordEventWeather_Route123Cycle(void);
 static void CoordEventWeather_PermTerrain(void);
+static void CoordEventWeather_EnergyStorm(void);
 
 static const struct CoordEventWeather sCoordEventWeatherFuncs[] =
 {
@@ -40,6 +41,7 @@ static const struct CoordEventWeather sCoordEventWeatherFuncs[] =
     { COORD_EVENT_WEATHER_ROUTE119_CYCLE,    CoordEventWeather_Route119Cycle },
     { COORD_EVENT_WEATHER_ROUTE123_CYCLE,    CoordEventWeather_Route123Cycle },
     { COORD_EVENT_WEATHER_PERM_TERRAIN,      CoordEventWeather_PermTerrain },
+    { COORD_EVENT_WEATHER_ENERGY_STORM,      CoordEventWeather_EnergyStorm },
 };
 
 static void CoordEventWeather_Clouds(void)
@@ -110,6 +112,11 @@ static void CoordEventWeather_Route123Cycle(void)
 static void CoordEventWeather_PermTerrain(void)
 {
     SetWeather(WEATHER_PERM_TERRAIN);
+}
+
+static void CoordEventWeather_EnergyStorm(void)
+{
+    SetWeather(WEATHER_ENERGY_STORM);
 }
 
 void DoCoordEventWeather(u8 coordEventWeather)

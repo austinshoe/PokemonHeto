@@ -101,6 +101,7 @@ static const struct WeatherCallbacks sWeatherFuncs[] =
     [WEATHER_DOWNPOUR]           = {Downpour_InitVars,      Thunderstorm_Main,  Downpour_InitAll,      Thunderstorm_Finish},
     [WEATHER_UNDERWATER_BUBBLES] = {Bubbles_InitVars,       Bubbles_Main,       Bubbles_InitAll,       Bubbles_Finish},
     [WEATHER_PERM_TERRAIN]       = {None_Init,              None_Main,          None_Init,             None_Finish},
+    [WEATHER_ENERGY_STORM]       = {None_Init,              None_Main,          None_Init,             None_Finish},
 };
 
 void (*const gWeatherPalStateFuncs[])(void) =

@@ -1996,6 +1996,7 @@ enum
     ENDTURN_SUN,
     ENDTURN_HAIL,
     ENDTURN_SNOW,
+    ENDTURN_ENERGY,
     ENDTURN_GRAVITY,
     ENDTURN_WATER_SPORT,
     ENDTURN_MUD_SPORT,
@@ -2375,6 +2376,36 @@ u8 DoFieldEndTurnEffects(void)
             }
             gBattleStruct->turnCountersTracker++;
             break;
+        case ENDTURN_ENERGY:
+            if (gBattleWeather & B_WEATHER_ENERGY_STORM) {
+                u8 foundBattler = 1;
+                while (gBattleStruct->turnSideTracker < gBattlersCount)
+                {
+                    u32 battler = gBattlerByTurnOrder[gBattleStruct->turnSideTracker];
+                    if (foundBattler!= 0 && (gBattleMons[battler].species == SPECIES_DRACONARIX
+                        || gBattleMons[battler].species == SPECIES_DRACONARIX_UNLEASHED
+                        || gBattleMons[battler].species == SPECIES_DRACONARIX_UNLEASHED_ICE
+                        || gBattleMons[battler].species == SPECIES_DRACONARIX_UNLEASHED_FIRE
+                        || gBattleMons[battler].species == SPECIES_DRACONARIX_UNLEASHED_ELECTRIC)) {
+                            foundBattler = 0;
+                            break;
+                        }
+                }
+                if (foundBattler == 0) {
+                    gBattlescriptCurrInstr = BattleScript_EnergyStormContinues;
+                    gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_ENERGYSTORMCONTINUES;
+                }
+                else {
+                    gFieldStatuses &= ~B_WEATHER_ENERGY_STORM;
+                    gBattlescriptCurrInstr = BattleScript_EnergyStormEnds;
+                    gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_ENERGYSTORMSTOPS;
+                }
+                gBattleScripting.animArg1 = B_ANIM_RAIN_CONTINUES;
+                BattleScriptExecute(gBattlescriptCurrInstr);
+                effect++;
+            }
+            gBattleStruct->turnCountersTracker++;
+            break;
         case ENDTURN_TRICK_ROOM:
             if (gFieldStatuses & STATUS_FIELD_TRICK_ROOM && --gFieldTimers.trickRoomTimer == 0)
             {
@@ -2543,6 +2574,7 @@ enum
     ENDTURN_PLASMA_FISTS,
     ENDTURN_CUD_CHEW,
     ENDTURN_SALT_CURE,
+    ENDTURN_ENERGYBOOSTS,
     ENDTURN_BATTLER_COUNT
 };
 
@@ -3115,6 +3147,25 @@ u8 DoBattlerEndTurnEffects(void)
                 PREPARE_MOVE_BUFFER(gBattleTextBuff1, MOVE_SALT_CURE);
                 BattleScriptExecute(BattleScript_SaltCureExtraDamage);
                 effect++;
+            }
+            gBattleStruct->turnEffectsTracker++;
+            break;
+        case ENDTURN_ENERGYBOOSTS:
+            if (gBattleWeather & B_WEATHER_ENERGY_STORM) {
+                if (gBattleMons[battler].species == SPECIES_DRACONARIX
+                    || gBattleMons[battler].species == SPECIES_DRACONARIX_UNLEASHED
+                    || gBattleMons[battler].species == SPECIES_DRACONARIX_UNLEASHED_ICE
+                    || gBattleMons[battler].species == SPECIES_DRACONARIX_UNLEASHED_FIRE
+                    || gBattleMons[battler].species == SPECIES_DRACONARIX_UNLEASHED_ELECTRIC) 
+                {
+                    BattleScriptExecute(BattleScript_EnergyStormBoostActivates);
+                    effect++;
+                }
+                else {
+                    gBattleMoveDamage = gBattleMons[battler].maxHP / 16;
+                    BattleScriptExecute(BattleScript_EnergyTurnDmg);
+                    effect++;
+                }
             }
             gBattleStruct->turnEffectsTracker++;
             break;
@@ -3998,6 +4049,7 @@ static const u16 sWeatherFlagsInfo[][3] =
     [ENUM_WEATHER_HAIL] = {B_WEATHER_HAIL_TEMPORARY, B_WEATHER_HAIL_PERMANENT, HOLD_EFFECT_ICY_ROCK},
     [ENUM_WEATHER_STRONG_WINDS] = {B_WEATHER_STRONG_WINDS, B_WEATHER_STRONG_WINDS, HOLD_EFFECT_NONE},
     [ENUM_WEATHER_SNOW] = {B_WEATHER_SNOW_TEMPORARY, B_WEATHER_SNOW_PERMANENT, HOLD_EFFECT_ICY_ROCK},
+    [ENUM_WEATHER_ENERGY_STORM] = {B_WEATHER_ENERGY_STORM, B_WEATHER_ENERGY_STORM, HOLD_EFFECT_NONE},
 };
 
 static void ShouldChangeFormInWeather(u32 battler)
@@ -4021,7 +4073,11 @@ bool32 TryChangeBattleWeather(u32 battler, u32 weatherEnumId, bool32 viaAbility)
     if (gBattleWeather & B_WEATHER_PRIMAL_ANY
         && battlerAbility != ABILITY_DESOLATE_LAND
         && battlerAbility != ABILITY_PRIMORDIAL_SEA
-        && battlerAbility != ABILITY_DELTA_STREAM)
+        && battlerAbility != ABILITY_DELTA_STREAM/*
+        && battlerAbility != ABILITY_AUTHORITY
+        && battlerAbility != ABILITY_THOR
+        && battlerAbility != ABILITY_SKADI
+        && battlerAbility != ABILITY_SURTR*/)
     {
         return FALSE;
     }
@@ -4613,6 +4669,56 @@ u32 AbilityBattleEffects(u32 caseID, u32 battler, u32 ability, u32 special, u32 
                 effect++;
             }
             break;
+        ////////
+        case ABILITY_AUTHORITY:
+            VarSet(VAR_UNUSED_0x40F8, 0);
+            struct Pokemon *mon;
+            if (GetBattlerSide(battler) == B_SIDE_OPPONENT)
+                mon = &gEnemyParty[gBattlerPartyIndexes[battler]];
+            else
+                mon = &gPlayerParty[gBattlerPartyIndexes[battler]];
+            itemId = GetMonData(mon, MON_DATA_HELD_ITEM);
+            if (itemId == ITEM_ENERGY_CORE) {
+                effect = TryDraconarixEnergyStorm(battler, effect);
+            }
+            break;
+        case ABILITY_THOR:
+            VarSet(VAR_UNUSED_0x40F8, 1);
+            struct Pokemon *mon;
+            if (GetBattlerSide(battler) == B_SIDE_OPPONENT)
+                mon = &gEnemyParty[gBattlerPartyIndexes[battler]];
+            else
+                mon = &gPlayerParty[gBattlerPartyIndexes[battler]];
+            itemId = GetMonData(mon, MON_DATA_HELD_ITEM);
+            if (itemId == ITEM_ENERGY_CORE || itemId == ITEM_ELEC_CORE) {
+                effect = TryDraconarixEnergyStorm(battler, effect);
+            }
+            break;
+        case ABILITY_SKADI:
+            VarSet(VAR_UNUSED_0x40F8, 2);
+            struct Pokemon *mon;
+            if (GetBattlerSide(battler) == B_SIDE_OPPONENT)
+                mon = &gEnemyParty[gBattlerPartyIndexes[battler]];
+            else
+                mon = &gPlayerParty[gBattlerPartyIndexes[battler]];
+            itemId = GetMonData(mon, MON_DATA_HELD_ITEM);
+            if (itemId == ITEM_ENERGY_CORE || itemId == ITEM_ICE_CORE) {
+                effect = TryDraconarixEnergyStorm(battler, effect);
+            }
+            break;
+        case ABILITY_SURTR:
+            VarSet(VAR_UNUSED_0x40F8, 3);
+            struct Pokemon *mon;
+            if (GetBattlerSide(battler) == B_SIDE_OPPONENT)
+                mon = &gEnemyParty[gBattlerPartyIndexes[battler]];
+            else
+                mon = &gPlayerParty[gBattlerPartyIndexes[battler]];
+            itemId = GetMonData(mon, MON_DATA_HELD_ITEM);
+            if (itemId == ITEM_ENERGY_CORE || itemId == ITEM_FIRE_CORE) {
+                effect = TryDraconarixEnergyStorm(battler, effect);
+            }
+            break;
+        ////////
         case ABILITY_ELECTRIC_SURGE:
         case ABILITY_HADRON_ENGINE:
             if (TryChangeBattleTerrain(battler, STATUS_FIELD_ELECTRIC_TERRAIN, &gFieldTimers.terrainTimer))
@@ -11337,3 +11443,12 @@ u8 GetBattlerType(u32 battler, u8 typeIndex)
     return types[typeIndex];
 }
 
+////////
+u32 TryDraconarixEnergyStorm(u32 battler, u32 effect) {
+    if (TryChangeBattleWeather(battler, ENUM_WEATHER_ENERGY_STORM, TRUE))
+    {
+        BattleScriptPushCursorAndCallback(BattleScript_EnergyStormActivates);
+        effect++;
+    }
+}
+////////
