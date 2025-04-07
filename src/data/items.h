@@ -9652,6 +9652,7 @@ const struct Item gItems[] =
     {
         .name = _("Energy Core"),
         .price = 0,
+        .holdEffect = HOLD_EFFECT_NONE,
         .description = sEnergyCoreDesc,
         .importance = 1,
         .pocket = POCKET_ITEMS,
@@ -9663,6 +9664,7 @@ const struct Item gItems[] =
     {
         .name = _("Electric Core"),
         .price = 0,
+        .holdEffect = HOLD_EFFECT_NONE,
         .description = sElectricCoreDesc,
         .importance = 1,
         .pocket = POCKET_ITEMS,
@@ -9674,6 +9676,7 @@ const struct Item gItems[] =
     {
         .name = _("Fire Core"),
         .price = 0,
+        .holdEffect = HOLD_EFFECT_NONE,
         .description = sFireCoreDesc,
         .importance = 1,
         .pocket = POCKET_ITEMS,
@@ -9685,6 +9688,7 @@ const struct Item gItems[] =
     {
         .name = _("Ice Core"),
         .price = 0,
+        .holdEffect = HOLD_EFFECT_NONE,
         .description = sIceCoreDesc,
         .importance = 1,
         .pocket = POCKET_ITEMS,
