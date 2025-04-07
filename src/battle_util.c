@@ -65,6 +65,7 @@ static u32 GetBattlerItemHoldEffectParam(u32 battler, u32 item);
 static uq4_12_t GetInverseTypeMultiplier(uq4_12_t multiplier);
 static uq4_12_t GetSupremeOverlordModifier(u32 battler);
 static bool32 CanBeInfinitelyConfused(u32 battler);
+static u32 TryDraconarixEnergyStorm(u32 battler, u32 effect);
 
 extern const u8 *const gBattleScriptsForMoveEffects[];
 extern const u8 *const gBattlescriptsForRunningByItem[];
@@ -11444,7 +11445,7 @@ u8 GetBattlerType(u32 battler, u8 typeIndex)
 }
 
 ////////
-u32 TryDraconarixEnergyStorm(u32 battler, u32 effect) {
+static u32 TryDraconarixEnergyStorm(u32 battler, u32 effect) {
     if (TryChangeBattleWeather(battler, ENUM_WEATHER_ENERGY_STORM, TRUE))
     {
         BattleScriptPushCursorAndCallback(BattleScript_EnergyStormActivates);
