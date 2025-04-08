@@ -6689,9 +6689,6 @@ BattleScript_EnergyStormEnds::
 	end2
 
 BattleScript_EnergyStormBoostActivates::
-	jumpifstat BS_TARGET, CMP_LESS_THAN, STAT_ATK, MAX_STAT_STAGE, BattleScript_AngerShellTryDef
-	jumpifstat BS_TARGET, CMP_LESS_THAN, STAT_SPATK, MAX_STAT_STAGE, BattleScript_AngerShellTryDef
-	jumpifstat BS_TARGET, CMP_LESS_THAN, STAT_SPEED, MAX_STAT_STAGE, BattleScript_AngerShellTryDef
 BattleScript_EnergyStormBoostTryAttack:
 	setbyte sSTAT_ANIM_PLAYED, FALSE
 	modifybattlerstatstage BS_ATTACKER, STAT_ATK, INCREASE, 1, BattleScript_EnergyStormBoostTrySpAtk, ANIM_ON
