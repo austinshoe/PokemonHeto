@@ -6685,7 +6685,6 @@ BattleScript_EnergyStormEnds::
 	printfromtable gEnergyStormStringIds
 	waitmessage B_WAIT_TIME_LONG
 	call BattleScript_ActivateWeatherAbilities
-	setbyte gBattleCommunication, 0
 	end2
 
 BattleScript_EnergyStormBoostActivates::
