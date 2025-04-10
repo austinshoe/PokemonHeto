@@ -8712,7 +8712,7 @@ BattleScript_EnergyStormActivates::
 	call BattleScript_AbilityPopUp
 	printstring STRINGID_ENERGYSTORM
 	waitstate
-	playanimation BS_BATTLER_0, B_ANIM_RAIN_CONTINUES
+	playanimation BS_BATTLER_0, B_ANIM_ENERGYSTORM_CONTINUES
 	call BattleScript_ActivateWeatherAbilities
 	end3
 
