@@ -2402,7 +2402,20 @@ u8 DoFieldEndTurnEffects(void)
                     gBattlescriptCurrInstr = BattleScript_EnergyStormEnds;
                     gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_ENERGYSTORMSTOPS;
                 }
-                gBattleScripting.animArg1 = B_ANIM_ENERGYSTORM_CONTINUES;
+                switch(VAR_UNUSED_0x40F8) {
+                    case 0:
+                        gBattleScripting.animArg1 = B_ANIM_ENERGYSTORM_CONTINUESP;
+                        break;
+                    case 1:
+                        gBattleScripting.animArg1 = B_ANIM_ENERGYSTORM_CONTINUESEB;
+                        break;
+                    case 2:
+                        gBattleScripting.animArg1 = B_ANIM_ENERGYSTORM_CONTINUESIB;
+                        break;
+                    case 3:
+                        gBattleScripting.animArg1 = B_ANIM_ENERGYSTORM_CONTINUESF;
+                        break;
+                }
                 BattleScriptExecute(gBattlescriptCurrInstr);
                 effect++;
             }

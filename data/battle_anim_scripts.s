@@ -952,7 +952,10 @@ gBattleAnims_General::
 	.4byte General_Snow                     @ B_ANIM_SNOW_CONTINUES
 	.4byte General_UltraBurst               @ B_ANIM_ULTRA_BURST
 	.4byte General_SaltCureDamage           @ B_ANIM_SALT_CURE_DAMAGE
-	.4byte General_EnergyStorm				@ B_ANIM_ENERGYSTORM_CONTINUES
+	.4byte General_EnergyStormPurple		@ B_ANIM_ENERGYSTORM_CONTINUESP
+	.4byte General_EnergyStormElectric		@ B_ANIM_ENERGYSTORM_CONTINUESEB
+	.4byte General_EnergyStormIce			@ B_ANIM_ENERGYSTORM_CONTINUESIB
+	.4byte General_EnergyStormFire			@ B_ANIM_ENERGYSTORM_CONTINUESF
 
 	.align 2
 gBattleAnims_Special::
@@ -27055,17 +27058,9 @@ General_HangedOn:
 	createsprite gSlideMonToOriginalPosSpriteTemplate, ANIM_ATTACKER, 0, 0, 0, 15
 	end
 
-General_EnergyStorm:
+General_EnergyStormPurple:
 	playsewithpan SE_M_HAZE, 0
 	createvisualtask AnimTask_MistBallFog, 5
-	switch VAR_UNUSED_0x40F8
-	case 0, General_EnergyStormPurple
-	case 1, General_EnergyStormElectric
-	case 2, General_EnergyStormIce
-	case 3, General_EnergyStormFire
-	end
-
-General_EnergyStormPurple:
 	createvisualtask AnimTask_BlendBattleAnimPal, 10, (F_PAL_BG | F_PAL_BATTLERS), 3, 0, 16, RGB(15, 0, 31)
 	delay 8
 	createvisualtask AnimTask_ShakeMon, 2, ANIM_TARGET, 4, 0, 70, 0
@@ -27074,6 +27069,8 @@ General_EnergyStormPurple:
 	end
 
 General_EnergyStormElectric:
+	playsewithpan SE_M_HAZE, 0
+	createvisualtask AnimTask_MistBallFog, 5
 	createvisualtask AnimTask_BlendBattleAnimPal, 10, (F_PAL_BG | F_PAL_BATTLERS), 3, 0, 16, RGB(5, 30, 31)
 	delay 8
 	createvisualtask AnimTask_ShakeMon, 2, ANIM_TARGET, 4, 0, 70, 0
@@ -27082,6 +27079,8 @@ General_EnergyStormElectric:
 	end
 
 General_EnergyStormIce:
+	playsewithpan SE_M_HAZE, 0
+	createvisualtask AnimTask_MistBallFog, 5
 	createvisualtask AnimTask_BlendBattleAnimPal, 10, (F_PAL_BG | F_PAL_BATTLERS), 3, 0, 16, RGB(20, 26, 31)
 	delay 8
 	createvisualtask AnimTask_ShakeMon, 2, ANIM_TARGET, 4, 0, 70, 0
@@ -27090,6 +27089,8 @@ General_EnergyStormIce:
 	end
 
 General_EnergyStormFire:
+	playsewithpan SE_M_HAZE, 0
+	createvisualtask AnimTask_MistBallFog, 5
 	createvisualtask AnimTask_BlendBattleAnimPal, 10, (F_PAL_BG | F_PAL_BATTLERS), 3, 0, 16, RGB_RED
 	delay 8
 	createvisualtask AnimTask_ShakeMon, 2, ANIM_TARGET, 4, 0, 70, 0
