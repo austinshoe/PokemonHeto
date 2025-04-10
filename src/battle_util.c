@@ -2379,7 +2379,7 @@ u8 DoFieldEndTurnEffects(void)
             break;
         case ENDTURN_ENERGY:
             if (gBattleWeather & B_WEATHER_ENERGY_STORM) {
-                bool foundBattler = false;
+                u8 foundBattler = 1;
                 while (gBattleStruct->turnSideTracker < gBattlersCount)
                 {
                     u32 battler = gBattlerByTurnOrder[gBattleStruct->turnSideTracker];
@@ -2388,12 +2388,12 @@ u8 DoFieldEndTurnEffects(void)
                         || gBattleMons[battler].species == SPECIES_DRACONARIX_UNLEASHED_ICE
                         || gBattleMons[battler].species == SPECIES_DRACONARIX_UNLEASHED_FIRE
                         || gBattleMons[battler].species == SPECIES_DRACONARIX_UNLEASHED_ELECTRIC) {
-                            foundBattler = true;
+                            foundBattler = 0;
                             break;
                         }
                     gBattleStruct->turnSideTracker++;
                 }
-                if (foundBattler) {
+                if (foundBattler == 0) {
                     gBattlescriptCurrInstr = BattleScript_EnergyStormContinues;
                     gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_ENERGYSTORMCONTINUES;
                 }
