@@ -2379,20 +2379,21 @@ u8 DoFieldEndTurnEffects(void)
             break;
         case ENDTURN_ENERGY:
             if (gBattleWeather & B_WEATHER_ENERGY_STORM) {
-                u8 foundBattler = 1;
+                bool foundBattler = false;
                 while (gBattleStruct->turnSideTracker < gBattlersCount)
                 {
                     u32 battler = gBattlerByTurnOrder[gBattleStruct->turnSideTracker];
-                    if (foundBattler!= 0 && (gBattleMons[battler].species == SPECIES_DRACONARIX
+                    if (gBattleMons[battler].species == SPECIES_DRACONARIX
                         || gBattleMons[battler].species == SPECIES_DRACONARIX_UNLEASHED
                         || gBattleMons[battler].species == SPECIES_DRACONARIX_UNLEASHED_ICE
                         || gBattleMons[battler].species == SPECIES_DRACONARIX_UNLEASHED_FIRE
-                        || gBattleMons[battler].species == SPECIES_DRACONARIX_UNLEASHED_ELECTRIC)) {
-                            foundBattler = 0;
+                        || gBattleMons[battler].species == SPECIES_DRACONARIX_UNLEASHED_ELECTRIC) {
+                            foundBattler = true;
                             break;
                         }
+                    gBattleStruct->turnSideTracker++;
                 }
-                if (foundBattler == 0) {
+                if (foundBattler) {
                     gBattlescriptCurrInstr = BattleScript_EnergyStormContinues;
                     gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_ENERGYSTORMCONTINUES;
                 }
