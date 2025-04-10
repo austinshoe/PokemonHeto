@@ -2404,16 +2404,16 @@ u8 DoFieldEndTurnEffects(void)
                 }
                 switch(VAR_UNUSED_0x40F8) {
                     case 0:
-                        gBattleScripting.animArg1 = B_ANIM_ENERGYSTORM_CONTINUESP;
+                        gBattleScripting.animArg1 = B_ANIM_ENERGYSTORM_CONTINUES_P;
                         break;
                     case 1:
-                        gBattleScripting.animArg1 = B_ANIM_ENERGYSTORM_CONTINUESEB;
+                        gBattleScripting.animArg1 = B_ANIM_ENERGYSTORM_CONTINUES_EB;
                         break;
                     case 2:
-                        gBattleScripting.animArg1 = B_ANIM_ENERGYSTORM_CONTINUESIB;
+                        gBattleScripting.animArg1 = B_ANIM_ENERGYSTORM_CONTINUES_IB;
                         break;
                     case 3:
-                        gBattleScripting.animArg1 = B_ANIM_ENERGYSTORM_CONTINUESF;
+                        gBattleScripting.animArg1 = B_ANIM_ENERGYSTORM_CONTINUES_F;
                         break;
                 }
                 BattleScriptExecute(gBattlescriptCurrInstr);
