@@ -4976,7 +4976,8 @@ static void PlayAnimation(u32 battler, u8 animId, const u16 *argPtr, const u8 *n
           || animId == B_ANIM_SUN_CONTINUES
           || animId == B_ANIM_SANDSTORM_CONTINUES
           || animId == B_ANIM_HAIL_CONTINUES
-          || animId == B_ANIM_SNOW_CONTINUES)
+          || animId == B_ANIM_SNOW_CONTINUES
+          || animId == B_ANIM_ENERGYSTORM_CONTINUES)
     {
         BtlController_EmitBattleAnimation(battler, BUFFER_A, animId, *argPtr);
         MarkBattlerForControllerExec(battler);

@@ -952,6 +952,7 @@ gBattleAnims_General::
 	.4byte General_Snow                     @ B_ANIM_SNOW_CONTINUES
 	.4byte General_UltraBurst               @ B_ANIM_ULTRA_BURST
 	.4byte General_SaltCureDamage           @ B_ANIM_SALT_CURE_DAMAGE
+	.4byte General_EnergyStorm				@ B_ANIM_ENERGYSTORM_CONTINUES
 
 	.align 2
 gBattleAnims_Special::
@@ -27052,6 +27053,16 @@ General_HangedOn:
 	waitforvisualfinish
 	delay 6
 	createsprite gSlideMonToOriginalPosSpriteTemplate, ANIM_ATTACKER, 0, 0, 0, 15
+	end
+
+General_EnergyStorm:
+	playsewithpan SE_M_HAZE, 0
+	createvisualtask AnimTask_MistBallFog, 5
+	createvisualtask AnimTask_BlendBattleAnimPal, 10, (F_PAL_BG | F_PAL_BATTLERS), 3, 0, 16, RGB_PURPLE
+	delay 8
+	createvisualtask AnimTask_ShakeMon, 2, ANIM_TARGET, 4, 0, 70, 0
+	delay 70
+	createvisualtask AnimTask_BlendBattleAnimPal, 10, (F_PAL_BG | F_PAL_BATTLERS), 2, 16, 0, RGB_PURPLE
 	end
 
 General_Rain:

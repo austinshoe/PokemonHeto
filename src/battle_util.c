@@ -2398,11 +2398,11 @@ u8 DoFieldEndTurnEffects(void)
                     gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_ENERGYSTORMCONTINUES;
                 }
                 else {
-                    gFieldStatuses &= ~B_WEATHER_ENERGY_STORM;
+                    gBattleWeather &= ~B_WEATHER_ENERGY_STORM;
                     gBattlescriptCurrInstr = BattleScript_EnergyStormEnds;
                     gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_ENERGYSTORMSTOPS;
                 }
-                gBattleScripting.animArg1 = B_ANIM_RAIN_CONTINUES;
+                gBattleScripting.animArg1 = B_ANIM_ENERGYSTORM_CONTINUES;
                 BattleScriptExecute(gBattlescriptCurrInstr);
                 effect++;
             }
