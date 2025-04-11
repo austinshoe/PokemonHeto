@@ -952,10 +952,10 @@ gBattleAnims_General::
 	.4byte General_Snow                     @ B_ANIM_SNOW_CONTINUES
 	.4byte General_UltraBurst               @ B_ANIM_ULTRA_BURST
 	.4byte General_SaltCureDamage           @ B_ANIM_SALT_CURE_DAMAGE
-	.4byte General_EnergyStormPurple		@ B_ANIM_ENERGYSTORM_CONTINUESP
-	.4byte General_EnergyStormElectric		@ B_ANIM_ENERGYSTORM_CONTINUESEB
-	.4byte General_EnergyStormIce			@ B_ANIM_ENERGYSTORM_CONTINUESIB
-	.4byte General_EnergyStormFire			@ B_ANIM_ENERGYSTORM_CONTINUESF
+	.4byte General_EnergyStormPurple		@ B_ANIM_ENERGYSTORM_CONTINUES_P
+	.4byte General_EnergyStormElectric		@ B_ANIM_ENERGYSTORM_CONTINUES_EB
+	.4byte General_EnergyStormIce			@ B_ANIM_ENERGYSTORM_CONTINUES_IB
+	.4byte General_EnergyStormFire			@ B_ANIM_ENERGYSTORM_CONTINUES_F
 
 	.align 2
 gBattleAnims_Special::
