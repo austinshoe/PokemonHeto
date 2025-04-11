@@ -27061,53 +27061,53 @@ General_HangedOn:
 General_EnergyStormPurple:
 	playsewithpan SE_M_HAZE, 0
 	createvisualtask AnimTask_MistBallFog, 5
-	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_BATTLERS, 3, 0, 16, RGB(15, 0, 31)
+	createvisualtask AnimTask_BlendBattleAnimPal, 10, (F_PAL_BG | F_PAL_BATTLERS), 2, 0, 4, RGB(15, 0, 31)
 	delay 8
 	createvisualtask AnimTask_ShakeMon, 2, ANIM_ATTACKER, 4, 0, 70, 0
 	createvisualtask AnimTask_ShakeMon, 2, ANIM_TARGET, 4, 0, 70, 0
 	createvisualtask AnimTask_ShakeMon, 2, ANIM_ATK_PARTNER, 4, 0, 70, 0
 	createvisualtask AnimTask_ShakeMon, 2, ANIM_DEF_PARTNER, 4, 0, 70, 0
 	delay 70
-	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_BATTLERS, 2, 16, 0, RGB(15, 0, 31)
+	createvisualtask AnimTask_BlendBattleAnimPal, 10, (F_PAL_BG | F_PAL_BATTLERS), 2, 4, 0, RGB(15, 0, 31)
 	end
 
 General_EnergyStormElectric:
 	playsewithpan SE_M_HAZE, 0
 	createvisualtask AnimTask_MistBallFog, 5
-	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_BATTLERS, 3, 0, 16, RGB(5, 30, 31)
+	createvisualtask AnimTask_BlendBattleAnimPal, 10, (F_PAL_BG | F_PAL_BATTLERS), 3, 0, 16, RGB(5, 30, 31)
 	delay 8
 	createvisualtask AnimTask_ShakeMon, 2, ANIM_ATTACKER, 4, 0, 70, 0
 	createvisualtask AnimTask_ShakeMon, 2, ANIM_TARGET, 4, 0, 70, 0
 	createvisualtask AnimTask_ShakeMon, 2, ANIM_ATK_PARTNER, 4, 0, 70, 0
 	createvisualtask AnimTask_ShakeMon, 2, ANIM_DEF_PARTNER, 4, 0, 70, 0
 	delay 70
-	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_BATTLERS, 2, 16, 0, RGB(5, 30, 31)
+	createvisualtask AnimTask_BlendBattleAnimPal, 10, (F_PAL_BG | F_PAL_BATTLERS), 2, 16, 0, RGB(5, 30, 31)
 	end
 
 General_EnergyStormIce:
 	playsewithpan SE_M_HAZE, 0
 	createvisualtask AnimTask_MistBallFog, 5
-	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_BATTLERS, 3, 0, 16, RGB(20, 26, 31)
+	createvisualtask AnimTask_BlendBattleAnimPal, 10, (F_PAL_BG | F_PAL_BATTLERS), 3, 0, 16, RGB(20, 26, 31)
 	delay 8
 	createvisualtask AnimTask_ShakeMon, 2, ANIM_ATTACKER, 4, 0, 70, 0
 	createvisualtask AnimTask_ShakeMon, 2, ANIM_TARGET, 4, 0, 70, 0
 	createvisualtask AnimTask_ShakeMon, 2, ANIM_ATK_PARTNER, 4, 0, 70, 0
 	createvisualtask AnimTask_ShakeMon, 2, ANIM_DEF_PARTNER, 4, 0, 70, 0
 	delay 70
-	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_BATTLERS, 2, 16, 0, RGB(20, 26, 31)
+	createvisualtask AnimTask_BlendBattleAnimPal, 10, (F_PAL_BG | F_PAL_BATTLERS), 2, 16, 0, RGB(20, 26, 31)
 	end
 
 General_EnergyStormFire:
 	playsewithpan SE_M_HAZE, 0
 	createvisualtask AnimTask_MistBallFog, 5
-	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_BATTLERS, 3, 0, 16, RGB_RED
+	createvisualtask AnimTask_BlendBattleAnimPal, 10, (F_PAL_BG | F_PAL_BATTLERS), 3, 0, 16, RGB_RED
 	delay 8
 	createvisualtask AnimTask_ShakeMon, 2, ANIM_ATTACKER, 4, 0, 70, 0
 	createvisualtask AnimTask_ShakeMon, 2, ANIM_TARGET, 4, 0, 70, 0
 	createvisualtask AnimTask_ShakeMon, 2, ANIM_ATK_PARTNER, 4, 0, 70, 0
 	createvisualtask AnimTask_ShakeMon, 2, ANIM_DEF_PARTNER, 4, 0, 70, 0
 	delay 70
-	createvisualtask AnimTask_BlendBattleAnimPal, 10, F_PAL_BATTLERS, 2, 16, 0, RGB_RED
+	createvisualtask AnimTask_BlendBattleAnimPal, 10, (F_PAL_BG | F_PAL_BATTLERS), 2, 16, 0, RGB_RED
 	end
 
 General_Rain:
