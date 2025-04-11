@@ -8711,8 +8711,8 @@ BattleScript_EnergyStormActivates::
 	pause B_WAIT_TIME_SHORT
 	call BattleScript_AbilityPopUp
 	printstring STRINGID_ENERGYSTORM
-	waitstate
-	playanimation BS_BATTLER_0, B_ANIM_ENERGYSTORM_CONTINUES
+	waitstate	
+	playanimation_var BS_BATTLER_0, sB_ANIM_ARG1
 	call BattleScript_ActivateWeatherAbilities
 	end3
 

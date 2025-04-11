@@ -2402,7 +2402,7 @@ u8 DoFieldEndTurnEffects(void)
                     gBattlescriptCurrInstr = BattleScript_EnergyStormEnds;
                     gBattleCommunication[MULTISTRING_CHOOSER] = B_MSG_ENERGYSTORMSTOPS;
                 }
-                switch(VAR_UNUSED_0x40F8) {
+                switch(VarGet(VAR_UNUSED_0x40F8)) {
                     case 0:
                         gBattleScripting.animArg1 = B_ANIM_ENERGYSTORM_CONTINUES_P;
                         break;
@@ -11462,6 +11462,20 @@ u8 GetBattlerType(u32 battler, u8 typeIndex)
 static u32 TryDraconarixEnergyStorm(u32 battler, u32 effect) {
     if (TryChangeBattleWeather(battler, ENUM_WEATHER_ENERGY_STORM, TRUE))
     {
+        switch(VarGet(VAR_UNUSED_0x40F8)) {
+            case 0:
+                gBattleScripting.animArg1 = B_ANIM_ENERGYSTORM_CONTINUES_P;
+                break;
+            case 1:
+                gBattleScripting.animArg1 = B_ANIM_ENERGYSTORM_CONTINUES_EB;
+                break;
+            case 2:
+                gBattleScripting.animArg1 = B_ANIM_ENERGYSTORM_CONTINUES_IB;
+                break;
+            case 3:
+                gBattleScripting.animArg1 = B_ANIM_ENERGYSTORM_CONTINUES_F;
+                break;
+        }
         BattleScriptPushCursorAndCallback(BattleScript_EnergyStormActivates);
         effect++;
     }
