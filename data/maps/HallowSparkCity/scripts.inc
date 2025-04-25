@@ -295,10 +295,10 @@ HallowSpark_LenaRivalEventTriggers:
     waitmessage
     closemessage
     applymovement 1, HallowSpark_LenaGetInPos
-    waitmovement
+    waitmovement 0
     applymovement 2, Common_Movement_FaceLeft
     applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight
-    waitmovement
+    waitmovement 0
     message HallowSpark_LiamWeBetterGetGoing
     waitmessage
     applymovement 2, HallowSpark_RivalEnter
@@ -311,7 +311,7 @@ HallowSpark_LenaRivalEventTriggers:
     setvar VAR_FORTREE_CITY_STATE, 4
     waitmovement 0
     playse SE_EXIT
-    warpsilent MAP_HETONIAN_POWER_PLANT_1F, 1
+    warpsilent MAP_HETONIAN_POWER_PLANT1F, 1
     releaseall
     end
 
@@ -704,7 +704,7 @@ Movement_HallowSpark_PlayerUp2:
     step_end
 
 HallowSpark_LenaRecognizeName:
-    .string "???: {Player}...\n"
+    .string "???: {PLAYER}...\n"
     .string "I recognize that name...\p"
     .string "Oh, right, Khione mentioned you.\p"
     .string "You were the one that encountered\n"
