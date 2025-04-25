@@ -220,21 +220,25 @@ HallowSpark_LenaRivalEventTriggers:
     applymovement 1, Common_Movement_ExclamationMark
     applymovement 2, Common_Movement_ExclamationMark
     waitmovement 1
+    delay 32
     message HallowSpark_LiamSurprised
     waitmessage
     waitbuttonpress
     waitmovement 2
     closemessage
     applymovement 1, Common_Movement_QuestionMark
+    delay 32
     message HallowSpark_LenaConfuzzled
     waitmessage
     waitmovement 1
     message HallowSpark_LiamWhoRU
     waitmessage
     applymovement 2, Common_Movement_ExclamationMark
+    delay 32
     message HallowSpark_LiamAngrbodaAccusations
     waitmessage
     applymovement 1, Common_Movement_QuestionMark
+    delay 32
     message HallowSpark_LenaImNotAngrboda
     waitmessage
     waitmovement 1
@@ -244,6 +248,7 @@ HallowSpark_LenaRivalEventTriggers:
     call HallowSparkCity_TurnRival 
     delay 8
     applymovement 2, Common_Movement_ExclamationMark
+    delay 32
     message HallowSpark_RivalHollaAtYou
     waitmessage
     waitmovement 2
@@ -254,7 +259,60 @@ HallowSpark_LenaRivalEventTriggers:
     waitmovement 0
     delay 16
     applymovement 1, Common_Movement_ExclamationMark
-    message HallowSpark_RivalHollaAtYou
+    delay 32
+    message HallowSpark_LenaRecognizeName
+    waitmessage
+    waitmovement 1
+    message HallowSpark_RivalWhoIsLena
+    waitmessage
+    applymovement 2, Common_Movement_ExclamationMark
+    delay 32
+    message HallowSpark_OverstepBounds
+    waitmessage 
+    waitmovement 2
+    message HallowSpark_AngrbodaUniform
+    waitmessage
+    applymovement 1, HallowSpark_LenaAboutToLeave
+    waitmovement 0
+    applymovement 1, Common_Movement_ExclamationMark
+    delay 32
+    message HallowSpark_LenaForgotMons
+    waitmessage
+    waitmovement 1
+    message HallowSpark_CanBeOfUseAfterAll
+    waitmessage
+    closemessage
+    delay 32
+    applymovement 2, HallowSpark_RivalGetBehindLena
+    applymovement OBJ_EVENT_ID_PLAYER, HallowSpark_RivalGetBehindLena
+    waitmovement 0
+    applymovement 1, HallowSpark_LenaGoToEntr
+    applymovement 2, HallowSpark_RivalFollowLena
+    applymovement OBJ_EVENT_ID_PLAYER, HallowSpark_RivalFollowLena
+    waitmovement 0
+    delay 32
+    message HallowSpark_LenaExplainMission
+    waitmessage
+    closemessage
+    applymovement 1, HallowSpark_LenaGetInPos
+    waitmovement
+    applymovement 2, Common_Movement_FaceLeft
+    applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight
+    waitmovement
+    message HallowSpark_LiamWeBetterGetGoing
+    waitmessage
+    applymovement 2, HallowSpark_RivalEnter
+    waitmovement 0
+    playse SE_EXIT
+    setflag FLAG_TEMP_1
+    removeobject 2
+    applymovement OBJ_EVENT_ID_PLAYER, HallowSpark_PlayerEnter
+    setvar VAR_NEW_MAUVILLE_STATE, 1
+    setvar VAR_FORTREE_CITY_STATE, 4
+    waitmovement 0
+    playse SE_EXIT
+    warpsilent MAP_HETONIAN_POWER_PLANT_1F, 1
+    releaseall
     end
 
 HallowSparkCity_TurnRival:
@@ -644,3 +702,108 @@ Movement_HallowSpark_PlayerUp2:
     walk_up
     walk_up
     step_end
+
+HallowSpark_LenaRecognizeName:
+    .string "???: {Player}...\n"
+    .string "I recognize that name...\p"
+    .string "Oh, right, Khione mentioned you.\p"
+    .string "You were the one that encountered\n"
+    .string "Angrboda back in Kasaan, right?$"
+
+HallowSpark_RivalWhoIsLena:
+    .string "Liam: You know Khione like that?\p"
+    .string "Just who are you?\p"
+    .string "Wait...\p"
+    .string "Could it be that you're also a gym\n"
+    .string "leader or something?\p"
+    .string "???: Who, me?\p"
+    .string "Something like that, yes.$"
+
+HallowSpark_OverstepBounds:
+    .string "Liam: Oh shoot- My fault for over\n"
+    .string "stepping my boundaries back there.\p"
+    .string "I thought you were a part of Angrboda\n"
+    .string "because of your-\p"
+    .string "$"
+
+HallowSpark_AngrbodaUniform:
+    .string "???: Because of my uniform?\p"
+    .string "It's okay, you guys would be too young\n"
+    .string "Where it comes from anyways.\p"
+    .string "My name is Lena- I'm grateful for your\n"
+    .string "concern in this matter, but I can take\l"
+    .string "from here.$"
+
+HallowSpark_LenaAboutToLeave:
+    face_right
+    walk_right
+    step_end
+
+HallowSpark_LenaForgotMons:
+    .string "Lena: Oh dear god... There's no way...\n"
+    .string "How did I forget to bring my Pokémon on\l"
+    .string "this mission-\l"
+    .string "I won't be able to battle like this-$"
+
+HallowSpark_CanBeOfUseAfterAll:
+    .string "Liam: Ms. Lena!\p"
+    .string "We can still help!\p"
+    .string "I promise me and {PLAYER}\n"
+    .string "won't drag you down- we're definitely\l"
+    .string "way stronger than you think\p"
+    .string "Lena: I'm so stupid...\n"
+    .string "I guess I don't really have a choice-\l"
+    .string "It's not like we have time to wait for\l"
+    .string "reinforcements.\p"
+    .string "Come on. Follow me.$"
+
+HallowSpark_RivalGetBehindLena:
+    walk_up
+    face_right
+    step_end
+
+HallowSpark_LenaGoToEntr:
+    walk_right
+    walk_right
+    walk_right
+    walk_up
+    face_down
+    step_end
+
+HallowSpark_RivalFollowLena:
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    face_up
+    step_end
+
+HallowSpark_LenaExplainMission:
+    .string "Lena: Since I can't fight in my current\n"
+    .string "state, I'll just stay out here.\p"
+    .string "If you need to heal your Pokémon I can\n"
+    .string "heal them here.$"
+
+HallowSpark_LenaGetInPos:
+    walk_left
+    walk_left
+    walk_up
+    face_down
+    step_end
+
+HallowSpark_LiamWeBetterGetGoing:
+    .string "Liam: Well, we better get going too!$"
+
+HallowSpark_RivalEnter:
+    walk_up
+    walk_up
+    walk_up
+    step_end
+
+HallowSpark_PlayerEnter:
+    walk_right
+    walk_up
+    walk_up
+    walk_up
+    step_end
+
