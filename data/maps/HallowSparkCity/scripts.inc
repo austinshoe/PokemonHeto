@@ -213,7 +213,7 @@ HallowSparkCity_AngrbodaCutscene2:
     warpsilent MAP_HALLOW_SPARK_CITY, VAR_UNUSED_0x40FE, VAR_UNUSED_0x40FF
     end
 
-HallowSpark_LenaRivalEventTriggers:
+HallowSpark_LenaRivalEventTriggers::
     lockall
     getplayerxy VAR_UNUSED_0x40FE, VAR_UNUSED_0x40FF
     delay 16
