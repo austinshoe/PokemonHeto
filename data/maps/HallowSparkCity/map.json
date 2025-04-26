@@ -220,7 +220,7 @@
       "elevation": 0,
       "var": "VAR_FORTREE_CITY_STATE",
       "var_value": "3",
-      "script": "NULL"
+      "script": "HallowSpark_LenaRivalEventTriggers"
     },
     {
       "type": "trigger",
@@ -229,7 +229,7 @@
       "elevation": 0,
       "var": "VAR_FORTREE_CITY_STATE",
       "var_value": "3",
-      "script": "NULL"
+      "script": "HallowSpark_LenaRivalEventTriggers"
     },
     {
       "type": "trigger",
@@ -238,7 +238,7 @@
       "elevation": 0,
       "var": "VAR_FORTREE_CITY_STATE",
       "var_value": "3",
-      "script": "NULL"
+      "script": "HallowSpark_LenaRivalEventTriggers"
     },
     {
       "type": "trigger",
@@ -247,7 +247,7 @@
       "elevation": 0,
       "var": "VAR_FORTREE_CITY_STATE",
       "var_value": "3",
-      "script": "NULL"
+      "script": "HallowSpark_LenaRivalEventTriggers"
     },
     {
       "type": "trigger",
@@ -256,7 +256,7 @@
       "elevation": 0,
       "var": "VAR_FORTREE_CITY_STATE",
       "var_value": "3",
-      "script": "NULL"
+      "script": "HallowSpark_LenaRivalEventTriggers"
     },
     {
       "type": "trigger",
@@ -265,7 +265,7 @@
       "elevation": 0,
       "var": "VAR_FORTREE_CITY_STATE",
       "var_value": "3",
-      "script": "NULL"
+      "script": "HallowSpark_LenaRivalEventTriggers"
     },
     {
       "type": "trigger",
@@ -274,7 +274,7 @@
       "elevation": 0,
       "var": "VAR_FORTREE_CITY_STATE",
       "var_value": "3",
-      "script": "NULL"
+      "script": "HallowSpark_LenaRivalEventTriggers"
     },
     {
       "type": "trigger",
@@ -283,7 +283,7 @@
       "elevation": 0,
       "var": "VAR_FORTREE_CITY_STATE",
       "var_value": "3",
-      "script": "NULL"
+      "script": "HallowSpark_LenaRivalEventTriggers"
     },
     {
       "type": "trigger",
@@ -292,7 +292,7 @@
       "elevation": 0,
       "var": "VAR_FORTREE_CITY_STATE",
       "var_value": "3",
-      "script": "NULL"
+      "script": "HallowSpark_LenaRivalEventTriggers"
     }
   ],
   "bg_events": [
