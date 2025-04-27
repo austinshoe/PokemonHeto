@@ -3,8 +3,8 @@
 
 #include <stddef.h>
 
-#define TRUE  1
-#define FALSE 0
+#define TRUE   1
+#define FALSE  0
 
 #define IWRAM_DATA __attribute__((section("iwram_data")))
 #define EWRAM_DATA __attribute__((section("ewram_data")))

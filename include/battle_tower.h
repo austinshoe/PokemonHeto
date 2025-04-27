@@ -84,5 +84,10 @@ s32 GetHighestLevelInPlayerParty(void);
 u16 FacilityClassToGraphicsId(u8 facilityClass);
 bool32 ValidateBattleTowerRecord(u8 recordId); // unused
 void TrySetLinkBattleTowerEnemyPartyLevel(void);
+<<<<<<< HEAD
+=======
+void CreateFacilityMon(const struct TrainerMon *fmon, u16 level, u8 fixedIV, u32 otID, u32 flags, struct Pokemon *dst);
+void FillPartnerParty(u16 trainerId);
+>>>>>>> 47723c34e5 (Follower NPCs (follow-me) (#6500))
 
 #endif //GUARD_BATTLE_TOWER_H
