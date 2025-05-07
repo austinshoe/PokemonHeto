@@ -41,6 +41,7 @@ HallowSparkCity_SetUpObjxy:
     switch VAR_FORTREE_CITY_STATE
     case 0, HallowSparkCity_SetUpLenaPos
     case 3, HallowSparkCity_SetUpRivalLenaPos
+    case 4, HallowSparkCity_SetUpLenaHealerPos
     end
 
 HallowSparkCity_SetUpLenaPos:
@@ -57,6 +58,19 @@ HallowSparkCity_SetUpRivalLenaPos:
     setobjectmovementtype 1, MOVEMENT_TYPE_FACE_DOWN
     setobjectmovementtype 2, MOVEMENT_TYPE_FACE_UP
     end
+
+HallowSparkCity_SetUpLenaHealerPos:
+    setobjectxyperm 1, 34, 9
+    setobjectmovementtype 1, MOVEMENT_TYPE_FACE_DOWN
+    end
+
+HallowSparkCity_LenaHealer::
+    msgbox HallowSparkCity_LenaHeal MSGBOX_DEFAULT
+    call Common_EventScript_OutOfCenterPartyHeal
+	waitmessage
+	waitbuttonpress
+	release
+	end
 
 HallowSparkCity_LenaCutscene1:
     lockall
@@ -188,26 +202,27 @@ HallowSparkCity_AngrbodaCutscene2:
     removeobject 4
     waitse
     fadescreen FADE_TO_BLACK
-    addobject 1
-    showobjectat 1, MAP_HALLOW_SPARK_CITY
-    setobjectxyperm 1, 32, 17
-    setobjectxy 1, 32, 17
-    clearflag FLAG_TEMP_1
     addobject 2
-    setobjectgfx 2, OBJ_EVENT_GFX_BRENDAN_NORMAL
-    setobjectxy 2, 27, 11
     showobjectat 2, MAP_HALLOW_SPARK_CITY
-    fadescreen FADE_FROM_BLACK
-    addobject 2
+    setobjectxyperm 2, 32, 17
+    setobjectxy 2, 32, 17
+    clearflag FLAG_TEMP_1
     addobject 1
+    setobjectgfx 2, OBJ_EVENT_GFX_BRENDAN_NORMAL
+    setobjectxy 1, 27, 11
+    showobjectat 1, MAP_HALLOW_SPARK_CITY
+    fadescreen FADE_FROM_BLACK
+    addobject 1
+    addobject 2
     delay 16
-    applymovement 1, HallowSparkCity_LenaPullUp
-    applymovement 2, HallowSparkCity_RivalPullUp
-    waitmovement 2
-    applymovement 1, Common_Movement_FaceDown
+    applymovement 2, HallowSparkCity_LenaPullUp
+    applymovement 1, HallowSparkCity_RivalPullUp
     waitmovement 1
-    applymovement 2, Common_Movement_ExclamationMark
+    applymovement 2, Common_Movement_FaceDown
+    applymovement 1, Common_Movement_FaceUp
+    waitmovement 1
     applymovement 1, Common_Movement_ExclamationMark
+    applymovement 2, Common_Movement_ExclamationMark
     waitbuttonpress
     setvar VAR_FORTREE_CITY_STATE, 3
     warpsilent MAP_HALLOW_SPARK_CITY, VAR_UNUSED_0x40FE, VAR_UNUSED_0x40FF
@@ -301,6 +316,9 @@ HallowSpark_LenaRivalEventTriggers::
     waitmovement 0
     message HallowSpark_LiamWeBetterGetGoing
     waitmessage
+    waitbuttonpress
+    setrespawn HEAL_LOCATION_HALLOWSPARK_LENA
+    closemessage
     applymovement 2, HallowSpark_RivalEnter
     waitmovement 0
     playse SE_EXIT
@@ -732,7 +750,7 @@ HallowSpark_AngrbodaUniform:
     .string "Where it comes from anyways.\p"
     .string "My name is Lena- I'm grateful for your\n"
     .string "concern in this matter, but I can take\l"
-    .string "from here.$"
+    .string "things from here.$"
 
 HallowSpark_LenaAboutToLeave:
     face_right
@@ -750,7 +768,7 @@ HallowSpark_CanBeOfUseAfterAll:
     .string "We can still help!\p"
     .string "I promise me and {PLAYER}\n"
     .string "won't drag you down- we're definitely\l"
-    .string "way stronger than you think\p"
+    .string "way stronger than you think!\p"
     .string "Lena: I'm so stupid...\n"
     .string "I guess I don't really have a choice-\l"
     .string "It's not like we have time to wait for\l"
@@ -792,7 +810,8 @@ HallowSpark_LenaGetInPos:
     step_end
 
 HallowSpark_LiamWeBetterGetGoing:
-    .string "Liam: Well, we better get going too!$"
+    .string "Liam: Well, I guess that means we better\n"
+    .string "get going too!$"
 
 HallowSpark_RivalEnter:
     walk_up
@@ -806,4 +825,8 @@ HallowSpark_PlayerEnter:
     walk_up
     walk_up
     step_end
+
+HallowSparkCity_LenaHeal:
+    .string "Your pokémon look battered-\p"
+    .string "Let me heal them up for you!$"
 
