@@ -34,7 +34,7 @@ HetonianPowerPlant_SetUpRival2:
     addobject 1
     end
 
-HetonianPowerPLant_SetUpExceptGrunt
+HetonianPowerPLant_SetUpExceptGrunt:
     setobjectxyperm 1, 30, 3
     clearflag FLAG_TEMP_1
     setflag FLAG_TEMP_2
@@ -95,7 +95,7 @@ HetonianPowerPlant_AngrbodaGrunt4::
 	msgbox HetonianPowerPlant_Text_Grunt3PostBattle, MSGBOX_AUTOCLOSE
 	end
 
-HetonianPowerPlant_AngrbodaGrunt4::
+HetonianPowerPlant_AngrbodaGrunt5::
     trainerbattle_single TRAINER_GRUNT_AQUA_HIDEOUT_6, HetonianPowerPlant_Text_Grunt5, HetonianPowerPlant_Text_Grunt5Defeat
 	msgbox HetonianPowerPlant_Text_Grunt5PostBattle, MSGBOX_DEFAULT
     closemessage

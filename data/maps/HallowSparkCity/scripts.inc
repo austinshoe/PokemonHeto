@@ -323,7 +323,7 @@ HallowSparkCity_PostAngrbodaCutscene::
     message HallowSpark_LenaAskForHelp
     waitmessage
     applymovement 1, HallowSparkCity_ShinWalkAway
-    waitmovememnt 1
+    waitmovement 1
     setobjectxy 1, 35, 0
     setobjectxyperm 1, 35, 0
     applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceDown
