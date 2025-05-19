@@ -101,7 +101,7 @@
       "dest_warp_id": "0"
     },
     {
-      "x": 31,
+      "x": 30,
       "y": 21,
       "elevation": 0,
       "dest_map": "MAP_ONSEN_MART",
@@ -122,7 +122,7 @@
       "dest_warp_id": "0"
     },
     {
-      "x": 24,
+      "x": 23,
       "y": 21,
       "elevation": 0,
       "dest_map": "MAP_ONSEN_HOUSE2",

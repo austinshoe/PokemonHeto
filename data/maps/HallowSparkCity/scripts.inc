@@ -35,6 +35,7 @@ HallowSparkCity_OnFrame:
     map_script_2 VAR_FORTREE_CITY_STATE, 0, HallowSparkCity_LenaCutscene1
     map_script_2 VAR_FORTREE_CITY_STATE, 2, HallowSparkCity_AngrbodaCutscene
     map_script_2 VAR_FORTREE_CITY_STATE, 10, HallowSparkCity_AngrbodaCutscene2
+    map_script_2 VAR_FORTREE_CITY_STATE, 5, HallowSparkCity_PostAngrbodaCutscene
     .2byte 0
 
 HallowSparkCity_SetUpObjxy:
@@ -42,6 +43,7 @@ HallowSparkCity_SetUpObjxy:
     case 0, HallowSparkCity_SetUpLenaPos
     case 3, HallowSparkCity_SetUpRivalLenaPos
     case 4, HallowSparkCity_SetUpLenaHealerPos
+    case 5, HallowSparkCity_SetUpLenaChampRivalPos
     end
 
 HallowSparkCity_SetUpLenaPos:
@@ -71,6 +73,38 @@ HallowSparkCity_LenaHealer::
 	waitbuttonpress
 	release
 	end
+
+HallowSparkCity_SetUpLenaChampRivalPos::
+    clearflag FLAG_TEMP_1
+    addobject 2
+    setobjectgfx 2, OBJ_EVENT_GFX_BRENDAN_NORMAL
+    addobject 1
+    setobjectxyperm 1, 34, 10
+    setobjectmovementtype 1, MOVEMENT_TYPE_FACE_DOWN
+    setobjectxyperm 2, 36, 10
+    setobjectmovementtype 2, MOVEMENT_TYPE_FACE_DOWN
+    setobjectxyperm 9, 27, 11
+    setobjectmovementtype 9, MOVEMENT_TYPE_FACE_RIGHT
+    addobject 9
+    end    
+
+HallowSpark_CantLeaveLeft::
+    msgbox Text_HallowSpark_CantLeaveYet, MSGBOX_DEFAULT
+    applymovement OBJ_EVENT_ID_PLAYER, HallowSpark_WalkRight
+    waitmovement 0
+    end
+
+HallowSpark_CantLeaveDown::
+    msgbox Text_HallowSpark_CantLeaveYet, MSGBOX_DEFAULT
+    applymovement OBJ_EVENT_ID_PLAYER, HallowSpark_WalkUp
+    waitmovement 0
+    end
+
+HallowSpark_CantLeaveRight::
+    msgbox Text_HallowSpark_CantLeaveYet, MSGBOX_DEFAULT
+    applymovement OBJ_EVENT_ID_PLAYER, HallowSpark_WalkLeft
+    waitmovement 0
+    end
 
 HallowSparkCity_LenaCutscene1:
     lockall
@@ -218,14 +252,94 @@ HallowSparkCity_AngrbodaCutscene2:
     applymovement 2, HallowSparkCity_LenaPullUp
     applymovement 1, HallowSparkCity_RivalPullUp
     waitmovement 1
-    applymovement 2, Common_Movement_FaceDown
-    applymovement 1, Common_Movement_FaceUp
+    applymovement 2, Common_Movement_FaceUp
+    applymovement 1, Common_Movement_FaceDown
     waitmovement 1
     applymovement 1, Common_Movement_ExclamationMark
     applymovement 2, Common_Movement_ExclamationMark
     waitbuttonpress
     setvar VAR_FORTREE_CITY_STATE, 3
     warpsilent MAP_HALLOW_SPARK_CITY, VAR_UNUSED_0x40FE, VAR_UNUSED_0x40FF
+    end
+
+HallowSparkCity_PostAngrbodaCutscene::
+    lockall
+    delay 32
+    applymovement 2, HallowSparkCity_WalkDownFaceLeft
+    applymovement OBJ_EVENT_ID_PLAYER, HallowSparkCity_WalkDownFaceLeft
+    waitmovement 0
+    delay 32
+    applymovement 1, Common_Movement_FaceRight
+    waitmovement 0
+    applymovement 1, Common_Movement_ExclamationMark
+    message HallowSparkCity_LenaThereYallAre
+    waitmessage
+    waitmovement 1
+    applymovement 2, Common_Movement_FaceLeft
+    applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft
+    waitmovement 0
+    applymovement 2, Common_Movement_ExclamationMark
+    applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark
+    message HallowSparkCity_LenaWorried
+    waitmessage
+    waitmovement 0
+    waitbuttonpress
+    closemessage
+    applymovement 1, Common_Movement_FaceLeft
+    waitmovement 0
+    applymovement 1, Common_Movement_ExclamationMark
+    applymovement 9, HallowSparkCity_ShinPullUp
+    waitmovement 9
+    waitmovement 1
+    applymovement 1, Common_Movement_FaceDown
+    waitmovement 1
+    message HallowSparkCity_ShinWantUpdate
+    waitmessage
+    applymovement 9, Common_Movement_FaceRight
+    waitmovement 9
+    applymovement 9, Common_Movement_ExclamationMark
+    message HallowSparkCity_ShinWhoAreKids
+    waitmessage
+    waitmovement 0
+    fadescreen FADE_TO_BLACK
+    closemessage
+    delay 32
+    fadescreen FADE_FROM_BLACK
+    delay 16
+    message HallowSparkCity_ShinAnalyse
+    waitmessage
+    applymovement 9, Common_Movement_FaceUp
+    waitmovement 0
+    message HallowSparkCity_ShinLeave
+    waitmessage
+    waitbuttonpress
+    closemessage
+    applymovement 9, HallowSparkCity_ShinWalkAway
+    waitmovement 9
+    setobjectxy 9, 34, 0
+    setobjectxyperm 9, 34, 0
+    applymovement 1, Common_Movement_FaceRight
+    waitmovement 1
+    message HallowSpark_LenaAskForHelp
+    waitmessage
+    applymovement 1, HallowSparkCity_ShinWalkAway
+    waitmovememnt 1
+    setobjectxy 1, 35, 0
+    setobjectxyperm 1, 35, 0
+    applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceDown
+    applymovement 2, Common_Movement_FaceUp
+    waitmovement 0
+    message HallowSpark_LiamOutro
+    waitmessage
+    waitbuttonpress
+    closemessage
+    applymovement 2, HetonianPowerPlant2F_LiamLeave
+    waitmovement 2
+    setflag FLAG_TEMP_1
+    removeobject 2
+    setvar VAR_FORTREE_CITY_STATE, 6
+    delay 16
+    releaseall
     end
 
 HallowSpark_LenaRivalEventTriggers::
@@ -642,7 +756,7 @@ HallowSpark_LenaConfuzzled:
     .string "I also happen to have business here.$"
 
 HallowSpark_LiamWhoRU:
-    .string "Liam: Business here?\n"
+    .string "{COLOR BLUE}Liam{COLOR DARK_GRAY}: Business here?\n"
     .string "What business do you have here?\p"
     .string "Wait...\p"
     .string "$"
@@ -653,23 +767,23 @@ HallowSpark_LiamAngrbodaAccusations:
     .string "{COLOR BLUE}Angrboda{COLOR DARK_GRAY} people?$"
 
 HallowSpark_LenaImNotAngrboda:
-    .string "???: Wait what- No-\p"
+    .string "{COLOR BLUE}???{COLOR DARK_GRAY}: Wait what- No-\p"
     .string "I'm not part of Angrboda-\n"
     .string "How do you even know what Angrboda is?\p"
     .string "$"
 
 HallowSpark_RivalBackAtYou:
-    .string "Liam: Right back at you, how do YOU\n"
+    .string "{COLOR BLUE}Liam{COLOR DARK_GRAY}: Right back at you, how do YOU\n"
     .string "know about Angrboda?\p"
-    .string "???: That's classified information.\p"
-    .string "Liam: Classified information?\p"
+    .string "{COLOR BLUE}???{COLOR DARK_GRAY}: That's classified information.\p"
+    .string "{COLOR BLUE}Liam{COLOR DARK_GRAY}: Classified information?\p"
     .string "What does that even mean, classified-\n"
     .string "Are you a government agent or what?\p"
-    .string "???: Well, I suppose I am something\n"
+    .string "{COLOR BLUE}???{COLOR DARK_GRAY}: Well, I suppose I am something\n"
     .string "like that.$"
 
 HallowSpark_RivalHollaAtYou:
-    .string "Liam: {PLAYER}! You're also here!$"
+    .string "{COLOR BLUE}Liam{COLOR DARK_GRAY}: {PLAYER}! You're also here!$"
 
 Movement_HallowSpark_PlayerLeft1:
     walk_left
@@ -722,30 +836,30 @@ Movement_HallowSpark_PlayerUp2:
     step_end
 
 HallowSpark_LenaRecognizeName:
-    .string "???: {PLAYER}...\n"
+    .string "{COLOR BLUE}???{COLOR DARK_GRAY}: {PLAYER}...\n"
     .string "I recognize that name...\p"
-    .string "Oh, right, Khione mentioned you.\p"
+    .string "Oh, right, {COLOR BLUE}Khione{COLOR DARK_GRAY} mentioned you.\p"
     .string "You were the one that encountered\n"
-    .string "Angrboda back in Kasaan, right?$"
+    .string "{COLOR BLUE}Angrboda{COLOR DARK_GRAY} back in{COLOR BLUE}Kasaan{COLOR DARK_GRAY}, right?$"
 
 HallowSpark_RivalWhoIsLena:
-    .string "Liam: You know Khione like that?\p"
+    .string "{COLOR BLUE}Liam{COLOR DARK_GRAY}: You know Khione like that?\p"
     .string "Just who are you?\p"
     .string "Wait...\p"
     .string "Could it be that you're also a gym\n"
     .string "leader or something?\p"
-    .string "???: Who, me?\p"
+    .string "{COLOR BLUE}???{COLOR DARK_GRAY}: Who, me?\p"
     .string "Something like that, yes.$"
 
 HallowSpark_OverstepBounds:
-    .string "Liam: Oh shoot- My fault for over\n"
+    .string "{COLOR BLUE}Liam{COLOR DARK_GRAY}: Oh shoot- My fault for over\n"
     .string "stepping my boundaries back there.\p"
-    .string "I thought you were a part of Angrboda\n"
-    .string "because of your-\p"
+    .string "I thought you were a part of {COLOR BLUE}Angrboda\n"
+    .string "{COLOR DARK_GRAY}because of your-\p"
     .string "$"
 
 HallowSpark_AngrbodaUniform:
-    .string "???: Because of my uniform?\p"
+    .string "{COLOR BLUE}???{COLOR DARK_GRAY}: Because of my uniform?\p"
     .string "It's okay, you guys would be too young\n"
     .string "Where it comes from anyways.\p"
     .string "My name is Lena- I'm grateful for your\n"
@@ -758,18 +872,18 @@ HallowSpark_LenaAboutToLeave:
     step_end
 
 HallowSpark_LenaForgotMons:
-    .string "Lena: Oh dear god... There's no way...\n"
+    .string "{COLOR BLUE}Lena{COLOR DARK_GRAY}: Oh dear god... There's no way...\n"
     .string "How did I forget to bring my Pokémon on\l"
     .string "this mission-\l"
     .string "I won't be able to battle like this-$"
 
 HallowSpark_CanBeOfUseAfterAll:
-    .string "Liam: Ms. Lena!\p"
+    .string "{COLOR BLUE}Liam{COLOR DARK_GRAY}: Ms. Lena!\p"
     .string "We can still help!\p"
     .string "I promise me and {PLAYER}\n"
     .string "won't drag you down- we're definitely\l"
     .string "way stronger than you think!\p"
-    .string "Lena: I'm so stupid...\n"
+    .string "{COLOR BLUE}Lena{COLOR DARK_GRAY}: I'm so stupid...\n"
     .string "I guess I don't really have a choice-\l"
     .string "It's not like we have time to wait for\l"
     .string "reinforcements.\p"
@@ -797,7 +911,7 @@ HallowSpark_RivalFollowLena:
     step_end
 
 HallowSpark_LenaExplainMission:
-    .string "Lena: Since I can't fight in my current\n"
+    .string "{COLOR BLUE}Lena{COLOR DARK_GRAY}: Since I can't fight in my current\n"
     .string "state, I'll just stay out here.\p"
     .string "If you need to heal your Pokémon I can\n"
     .string "heal them here.$"
@@ -810,7 +924,7 @@ HallowSpark_LenaGetInPos:
     step_end
 
 HallowSpark_LiamWeBetterGetGoing:
-    .string "Liam: Well, I guess that means we better\n"
+    .string "{COLOR BLUE}Liam{COLOR DARK_GRAY}: Well, I guess that means we better\n"
     .string "get going too!$"
 
 HallowSpark_RivalEnter:
@@ -829,4 +943,132 @@ HallowSpark_PlayerEnter:
 HallowSparkCity_LenaHeal:
     .string "Your pokémon look battered-\p"
     .string "Let me heal them up for you!$"
+
+HallowSpark_WalkUp:
+    walk_up
+    step_end
+
+HallowSpark_WalkRight:
+    walk_right
+    step_end
+
+HallowSpark_WalkLeft:
+    walk_left
+    step_end
+
+HallowSparkCity_WalkDownFaceLeft:
+    walk_down
+    face_left
+    step_end
+
+HallowSparkCity_LenaThereYallAre:
+    .string "Lena: Oh thank goodness, there you are!$"
+
+HallowSparkCity_LenaWorried:
+    .string "I was so worried if you guys were okay.\n"
+    .string "I saw Angrboda coming out, so I was\l"
+    .string "worried that something bad might have\l"
+    .string "happened to you.\p"
+    .string "I'm so glad to see you guys are fine.\p"
+    .string "What happened in-\p"
+    .string "???: Lena!$"
+
+HallowSparkCity_ShinPullUp:
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    face_up
+    step_end
+
+HallowSparkCity_ShinWantUpdate:
+    .string "???: Lena, what's the update? Are you\n"
+    .string "alright?\p"
+    .string "Lena: I'm fine, geez..\n"
+    .string "As for Angrboda, they already left...\p"
+    .string "And for what actually happened, I really\l"
+    .string "have no idea.\p"
+    .string "???: You have no idea?\p"
+    .string "$"
+
+HallowSparkCity_ShinWhoAreKids:
+    .string "Wait, who are they?\p"
+    .string "Liam: No way...\p"
+    .string "{PLAYER}! That's the Pokémon Champion-\n"
+    .string "That's Shin!\p"
+    .string "Lena: They were helping me because...\n"
+    .string "because- because I left my Pokémon\l"
+    .string "back home..."
+    .string "Shin: Oh, is that the kid Khione was\n"
+    .string "talking about?\p"
+    .string "Thank you again.\p"
+    .string "And you, what's your name?\p"
+    .string "Liam: My name is Liam.. My brother-\n"
+    .string "my brother served alongside you in-\p"
+    .string "Shin: -the war? Was your brother Daiya?\n"
+    .string "Thank you, too, for helping us.\p"
+    .string "The government and the\n"
+    .string "Pokémon Association are working on this\n"
+    .string "case with Angrboda.\p"
+    .string "It would be very helpful if you could\n"
+    .string "brief me on what happened in there.$"
+
+HallowSparkCity_ShinAnalyse:
+    .string "I see... So they went to Emberfall...\n"
+    .string "This is bad. We should follow them.\p"
+    .string "$"
+
+HallowSparkCity_ShinLeave:
+    .string "I'll go on first.\p"
+    .string "Lena, go get your Pokémon, and meet me\n"
+    .string "at Mt. Emberfall.$"
+
+HallowSparkCity_ShinWalkAway:
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    step_end
+
+HallowSpark_LenaAskForHelp:
+    .string "Lena: Shin can be a bit cold sometimes,\n"
+    .string "but he's really a good person.\p"
+    .string "Anyways, we're a bit short staffed\n"
+    .string "currently, so it would be extremely\l"
+    .string "helpful if you two would continue to\l"
+    .string "aid us in stopping Angrboda.\p"
+    .string "Liam: Sure.\p"
+    .string "Lena: Thank you so much!\p"
+    .string "Here's what we're going to do:\n"
+    .string "Surf back from here across Neptune's\l"
+    .string "Drift.\p"
+    .string "About halfway across the drift, I'll be\n"
+    .string "waiting on an island.\p"
+    .string "We'll continue from there.\n"
+    .string "I must hurry, now. The matter at hand is\l"
+    .string "quite pressing.$"
+
+HallowSpark_LiamOutro:
+    .string "I'll meet up with you at Neptune's Drift$"
+
+HetonianPowerPlant2F_LiamLeave:
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    step_end
+
+
+
+
 

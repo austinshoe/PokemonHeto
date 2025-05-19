@@ -2,6 +2,7 @@ HetonianPowerPlant1F_MapScripts::
     map_script MAP_SCRIPT_ON_RESUME, HetonianPowerPlant_OnResume
     map_script MAP_SCRIPT_ON_TRANSITION, HetonianPowerPlant_OnTransition
     map_script MAP_SCRIPT_ON_LOAD, HetonianPowerPlant_OnLoad
+    map_script MAP_SCRIPT_ON_FRAME_TABLE, HetonianPowerPlant_OnFrame
     .byte 0
 
 HetonianPowerPlant_OnResume:
@@ -10,10 +11,101 @@ HetonianPowerPlant_OnResume:
     end
 
 HetonianPowerPlant_OnTransition:
+    compare VAR_NEW_MAUVILLE_STATE, 1
+    goto_if_eq HetonianPowerPlant_SetUpRival
+    compare VAR_NEW_MAUVILLE_STATE, 2
+    goto_if_eq HetonianPowerPlant_SetUpRival2
+    compare VAR_NEW_MAUVILLE_STATE, 3
+    goto_if_eq HetonianPowerPLant_SetUpExceptGrunt
+    setflag FLAG_TEMP_1
+    setflag FLAG_TEMP_2
+    end
+
+HetonianPowerPlant_SetUpRival:
+    clearflag FLAG_TEMP_1
+    clearflag FLAG_TEMP_2
+    addobject 1
+    end
+
+HetonianPowerPlant_SetUpRival2:
+    setobjectxyperm 1, 30, 3
+    clearflag FLAG_TEMP_1
+    clearflag FLAG_TEMP_2
+    addobject 1
+    end
+
+HetonianPowerPLant_SetUpExceptGrunt
+    setobjectxyperm 1, 30, 3
+    clearflag FLAG_TEMP_1
+    setflag FLAG_TEMP_2
+    addobject 1
     end
 
 HetonianPowerPlant_OnLoad:
     end
+
+HetonianPowerPlant_OnFrame:
+    map_script_2 VAR_NEW_MAUVILLE_STATE, 1, HetonianPowerPlant_Rival_Player_SplitUp
+    .2byte 0
+
+HetonianPowerPlant_Rival_Player_SplitUp:
+    lockall
+    applymovement OBJ_EVENT_ID_PLAYER, HetonianPowerPlant_MoveUp
+    waitmovement 0
+    msgbox HetonianPowerPlant_LetsSplitUp, MSGBOX_DEFAULT
+    applymovement 1, HetonianPowerPlant_RivalLeave1
+    waitmovement 1
+    delay 16
+    setvar VAR_TEMP_1, 1
+    setvar VAR_TEMP_2, 0
+    playse SE_PIN
+    call HetonianPowerPlant_EventScript_SetBarrierStateBlueButton
+    special DrawWholeMapView
+    delay 16
+    applymovement 1, HetonianPowerPlant_RivalLeave2
+    waitmovement 0
+    setflag FLAG_TEMP_1
+    setvar VAR_NEW_MAUVILLE_STATE, 2
+    releaseall
+    end
+
+HetonianPowerPlant_ShouldntGoThere::
+    msgbox Text_HetonianPowerPlant_ShouldntGoThere, MSGBOX_DEFAULT
+    applymovement OBJ_EVENT_ID_PLAYER, HetonianPowerPlant_Walk_Left
+    waitmovement 0
+    end
+
+HetonianPowerPlant_AngrbodaGrunt1::
+    trainerbattle_single TRAINER_GRUNT_SEAFLOOR_CAVERN_1, HetonianPowerPlant_Text_Grunt1, HetonianPowerPlant_Text_Grunt1Defeat
+	msgbox HetonianPowerPlant_Text_Grunt1PostBattle, MSGBOX_AUTOCLOSE
+	end
+
+HetonianPowerPlant_AngrbodaGrunt2::
+    trainerbattle_single TRAINER_GRUNT_SEAFLOOR_CAVERN_2, HetonianPowerPlant_Text_Grunt2, HetonianPowerPlant_Text_Grunt2Defeat
+	msgbox HetonianPowerPlant_Text_Grunt2PostBattle, MSGBOX_AUTOCLOSE
+	end
+
+HetonianPowerPlant_AngrbodaGrunt3::
+    trainerbattle_single TRAINER_GRUNT_SEAFLOOR_CAVERN_3, HetonianPowerPlant_Text_Grunt3, HetonianPowerPlant_Text_Grunt3Defeat
+	msgbox HetonianPowerPlant_Text_Grunt3PostBattle, MSGBOX_AUTOCLOSE
+	end
+
+HetonianPowerPlant_AngrbodaGrunt4::
+    trainerbattle_single TRAINER_GRUNT_SEAFLOOR_CAVERN_4, HetonianPowerPlant_Text_Grunt4, HetonianPowerPlant_Text_Grunt4Defeat
+	msgbox HetonianPowerPlant_Text_Grunt3PostBattle, MSGBOX_AUTOCLOSE
+	end
+
+HetonianPowerPlant_AngrbodaGrunt4::
+    trainerbattle_single TRAINER_GRUNT_AQUA_HIDEOUT_6, HetonianPowerPlant_Text_Grunt5, HetonianPowerPlant_Text_Grunt5Defeat
+	msgbox HetonianPowerPlant_Text_Grunt5PostBattle, MSGBOX_DEFAULT
+    closemessage
+    applymovement 6, HetonianPowerPlant_GruntSkedaddle
+    setvar VAR_NEW_MAUVILLE_STATE, 3
+    waitmovement 0
+    setflag FLAG_TEMP_2
+    playse SE_EXIT
+    removeobject 6
+	end
 
 HetonianPowerPlant_EventScript_BlueButton::
     lockall
@@ -128,3 +220,96 @@ HetonianPowerPlant_EventScript_SetBarrierStateGreenButton::
     setmetatile 14, 5, METATILE_BikeShop_Button_Pressed, FALSE
     setmetatile 4, 3, METATILE_BikeShop_Button_Pressed, FALSE
     return
+
+HetonianPowerPlant_MoveUp:
+    walk_up
+    walk_up
+    walk_up
+    step_end
+
+HetonianPowerPlant_LetsSplitUp:
+    .string "{COLOR BLUE}Liam{COLOR DARK_GRAY}: It looks like the power plant\n"
+    .string "branches off into two directions.\p"
+    .string "I take the right side, you take left.$"
+
+HetonianPowerPlant_RivalLeave1:
+    walk_up
+    walk_up
+    walk_right
+    walk_right
+    step_end
+
+HetonianPowerPlant_RivalLeave2:
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    step_end
+
+HetonianPowerPlant_Walk_Left:
+    walk_left
+    step_end
+
+Text_HetonianPowerPlant_ShouldntGoThere:
+    .string "That's the right side...\p"
+    .string "Shouldn't go there!$"
+
+HetonianPowerPlant_Text_Grunt1:
+    .string "Intruder spotted!$"
+
+HetonianPowerPlant_Text_Grunt1Defeat:
+    .string "Hu-Huh???$"
+
+HetonianPowerPlant_Text_Grunt1PostBattle:
+    .string "I swear to Bidoof you look so familiar.$"
+
+HetonianPowerPlant_Text_Grunt2:
+    .string "What's this-\p"
+    .string "A colored rat scurrying around?$"
+
+HetonianPowerPlant_Text_Grunt2Defeat:
+    .string "Yowch! I'll get rabies!$"
+
+HetonianPowerPlant_Text_Grunt2PostBattle:
+    .string "Why is it you again?$"
+
+HetonianPowerPlant_Text_Grunt3:
+    .string "Get outta here!$"
+
+HetonianPowerPlant_Text_Grunt3Defeat:
+    .string "I'm warning ya...$"
+
+HetonianPowerPlant_Text_Grunt3PostBattle:
+    .string "Better get out while you still can.$"
+
+HetonianPowerPlant_Text_Grunt4:
+    .string "We have business here!$"
+
+HetonianPowerPlant_Text_Grunt4Defeat:
+    .string "Mind your own business, monkey!$"
+
+HetonianPowerPlant_Text_Grunt4PostBattle:
+    .string "Can't you see that we're doing important\n"
+    .string "things here?$"
+
+HetonianPowerPlant_Text_Grunt5:
+    .string "An intruder! I'll stop you here!$"
+
+HetonianPowerPlant_Text_Grunt5Defeat:
+    .string "Oh, no...$"
+
+HetonianPowerPlant_Text_Grunt5PostBattle:
+    .string "I can't let this happen-\p"
+    .string "I gotta warn him!$"
+
+HetonianPowerPlant_GruntSkedaddle:
+    walk_left
+    walk_left
+    walk_up
+    step_end

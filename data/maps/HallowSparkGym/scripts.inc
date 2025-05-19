@@ -576,7 +576,7 @@ HallowSparkGym_Lights53_Pattern2:
 	goto HallowSparkGym_Lights5_End
 
 HallowSparkGym_Lights53_Pattern3:
-	compare VAR_TEMP_1, 5
+	compare VAR_TEMP_1, 4
 	goto_if_eq HallowSparkGym_Lights5_End
 	setflag FLAG_TEMP_1
 	goto HallowSparkGym_Lights5_End
