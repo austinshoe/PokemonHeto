@@ -1068,7 +1068,8 @@ HetonianPowerPlant2F_LiamLeave:
     walk_left
     step_end
 
-
+Text_HallowSpark_CantLeaveYet:
+    .string "Gotta stop them!$"
 
 
 

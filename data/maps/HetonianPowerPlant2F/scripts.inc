@@ -307,14 +307,6 @@ HetonianPowerPlant2F_AngrbodaTriggerFinal:
     end
     
 
-HetonianPowerPlant2F_EventScript_RedButton::
-    lockall
-    msgbox HetonianPowerPlant2F_Text_SteppedOnSwitchGeneratorStopped, MSGBOX_DEFAULT
-    call HetonianPowerPlant2F_EventScript_SetGeneratorOnMetatiles
-    setvar VAR_TEMP_1, 2
-    releaseall
-    end
-
 HetonianPowerPlant2F_EventScript_SetGeneratorOffMetatiles::
     setmetatile 12, 3, METATILE_BikeShop_Generator_Off_Tile1, TRUE
     setmetatile 13, 3, METATILE_BikeShop_Generator_Off_Tile2, TRUE
