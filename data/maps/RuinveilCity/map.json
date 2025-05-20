@@ -39,13 +39,13 @@
     },
     {
       "x": 57,
-      "y": 18,
+      "y": 19,
       "elevation": 0,
       "dest_map": "MAP_RUINVEIL_CENTER",
       "dest_warp_id": "0"
     },
     {
-      "x": 47,
+      "x": 46,
       "y": 25,
       "elevation": 0,
       "dest_map": "MAP_RUINVEIL_MART",
@@ -66,8 +66,8 @@
       "dest_warp_id": "0"
     },
     {
-      "x": 43,
-      "y": 19,
+      "x": 44,
+      "y": 18,
       "elevation": 0,
       "dest_map": "MAP_RUINVEIL_HOUSE3",
       "dest_warp_id": "0"
