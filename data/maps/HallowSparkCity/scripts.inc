@@ -67,7 +67,10 @@ HallowSparkCity_SetUpLenaHealerPos:
     end
 
 HallowSparkCity_LenaHealer::
+    lock
+    faceplayer
     msgbox HallowSparkCity_LenaHeal MSGBOX_DEFAULT
+    closemessage
     call Common_EventScript_OutOfCenterPartyHeal
 	waitmessage
 	waitbuttonpress
@@ -90,18 +93,21 @@ HallowSparkCity_SetUpLenaChampRivalPos::
 
 HallowSpark_CantLeaveLeft::
     msgbox Text_HallowSpark_CantLeaveYet, MSGBOX_DEFAULT
+    closemessage
     applymovement OBJ_EVENT_ID_PLAYER, HallowSpark_WalkRight
     waitmovement 0
     end
 
 HallowSpark_CantLeaveDown::
     msgbox Text_HallowSpark_CantLeaveYet, MSGBOX_DEFAULT
+    closemessage
     applymovement OBJ_EVENT_ID_PLAYER, HallowSpark_WalkUp
     waitmovement 0
     end
 
 HallowSpark_CantLeaveRight::
     msgbox Text_HallowSpark_CantLeaveYet, MSGBOX_DEFAULT
+    closemessage
     applymovement OBJ_EVENT_ID_PLAYER, HallowSpark_WalkLeft
     waitmovement 0
     end
@@ -113,6 +119,19 @@ HallowSparkCity_LenaCutscene1:
     waitmovement 1
     getplayerxy VAR_TEMP_0, VAR_TEMP_1
     setobjectxyperm 2, VAR_TEMP_0, VAR_TEMP_1
+    goto HallowSparkCityUpdatePlayerGFX
+
+HallowSparkCityUpdatePlayerGFX:
+    checkplayergender
+    compare VAR_RESULT, FEMALE
+    goto_if_eq HallowSparkCityUpdatePlayerGFXGirl
+    goto HallowSparkCity_LenaCutscene15
+    
+HallowSparkCityUpdatePlayerGFXGirl:
+    setobjectgfx 2, OBJ_EVENT_GFX_MAY_NORMAL
+    goto HallowSparkCity_LenaCutscene15
+
+HallowSparkCity_LenaCutscene15:
     addobject 2
     clearflag FLAG_TEMP_1
     setobjectxyperm 2, VAR_TEMP_0, VAR_TEMP_1
@@ -338,6 +357,7 @@ HallowSparkCity_PostAngrbodaCutscene::
     setflag FLAG_TEMP_1
     removeobject 2
     setvar VAR_FORTREE_CITY_STATE, 6
+    clearflag FLAG_HIDE_LITTLEROOT_TOWN_RIVAL
     delay 16
     releaseall
     end
@@ -861,7 +881,7 @@ HallowSpark_OverstepBounds:
 HallowSpark_AngrbodaUniform:
     .string "{COLOR BLUE}???{COLOR DARK_GRAY}: Because of my uniform?\p"
     .string "It's okay, you guys would be too young\n"
-    .string "Where it comes from anyways.\p"
+    .string "to know where it comes from anyways.\p"
     .string "My name is Lena- I'm grateful for your\n"
     .string "concern in this matter, but I can take\l"
     .string "things from here.$"
