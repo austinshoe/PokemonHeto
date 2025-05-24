@@ -2700,17 +2700,11 @@ static void TeleportWarpInFieldEffect_SpinGround(struct Task *task)
         task->data[1] = 8;
         if ((++task->data[2]) > 4 && task->data[14] == player->facingDirection)
         {
-            if (FNPC_NPC_FOLLOWER_SHOW_AFTER_LEAVE_ROUTE) {
+            if (FNPC_NPC_FOLLOWER_SHOW_AFTER_LEAVE_ROUTE) 
                 FollowerNPCReappearAfterLeaveMap(follower, player);
 
-                task->data[3] = 1;
-            }
-            else {
-                UnlockPlayerFieldControls();
-                CameraObjectReset1();
-                UnfreezeObjectEvents();
-                DestroyTask(FindTaskIdByFunc(Task_TeleportWarpIn)); 
-            }
+            task->data[3] = 1;
+            
         }
     }
     if (task->data[3] == 1)
