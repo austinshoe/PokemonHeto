@@ -3,7 +3,6 @@
 #include "pokemon.h"
 #include "metatile_behavior.h"
 #include "fieldmap.h"
-#include "follower_npc.h"
 #include "random.h"
 #include "field_player_avatar.h"
 #include "event_data.h"
@@ -784,18 +783,8 @@ void RockSmashWildEncounter(void)
         else if (WildEncounterCheck(wildPokemonInfo->encounterRate, TRUE) == TRUE
          && TryGenerateWildMon(wildPokemonInfo, WILD_AREA_ROCKS, WILD_CHECK_REPEL | WILD_CHECK_KEEN_EYE) == TRUE)
         {
-            if (TryDoDoubleWildBattle())
-            {
-                struct Pokemon mon1 = gEnemyParty[0];
-                TryGenerateWildMon(wildPokemonInfo, WILD_AREA_ROCKS, WILD_CHECK_REPEL | WILD_CHECK_KEEN_EYE);
-                gEnemyParty[1] = mon1;
-                BattleSetup_StartDoubleWildBattle();
-                gSpecialVar_Result = TRUE;
-            }
-            else {
-                BattleSetup_StartWildBattle();
-                gSpecialVar_Result = TRUE;
-            }
+            BattleSetup_StartWildBattle();
+            gSpecialVar_Result = TRUE;
         }
         else
         {
@@ -1132,10 +1121,7 @@ bool8 TryDoDoubleWildBattle(void)
 #endif
         return FALSE;
 #if B_FLAG_FORCE_DOUBLE_WILD != 0
-    if (FollowerNPCIsBattlePartner() && FNPC_FLAG_PARTNER_WILD_BATTLES != 0
-     && (FNPC_FLAG_PARTNER_WILD_BATTLES == FNPC_ALWAYS || FlagGet(FNPC_FLAG_PARTNER_WILD_BATTLES)) && FNPC_NPC_FOLLOWER_WILD_BATTLE_VS_2 == TRUE)
-        return TRUE;
-    else if (B_FLAG_FORCE_DOUBLE_WILD != 0 && FlagGet(B_FLAG_FORCE_DOUBLE_WILD))
+    else if (FlagGet(B_FLAG_FORCE_DOUBLE_WILD))
         return TRUE;
 #endif
 #if B_DOUBLE_WILD_CHANCE != 0

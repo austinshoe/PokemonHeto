@@ -28,7 +28,7 @@ Text_NeptunesDrift_RivalGiveDive:
 	.string "told me to stay back and give this to\l"
 	.string "you, so that we could go together.$"
 
-Text_NeptunesDrift_RivalExplainDive:
+Text_NeptunesDrift_RivalGiveDive:
 	.string "This HM contains Dive.\n"
 	.string "When you're surfing you sometimes see\l"
 	.string "those dark patches of water.\p"

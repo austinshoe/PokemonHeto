@@ -613,45 +613,5 @@ extern const u8 EventScript_TradeCenter_Chair0[];
 extern const u8 EventScript_ConfirmLeaveCableClubRoom[];
 extern const u8 EventScript_TerminateLink[];
 extern const u8 EventScript_ObjectApproachPlayer[];
-extern const u8 VSSeeker_Text_BatteryNotChargedNeedXSteps[];
-extern const u8 VSSeeker_Text_NoTrainersWithinRange[];
-extern const u8 VSSeeker_Text_TrainersNotReady[];
-extern const u8 EventScript_VsSeekerChargingDone[];
-
-extern const u8 Common_Movement_FollowerSafeStart[];
-extern const u8 Common_Movement_FollowerSafeEnd[];
-
-extern const u8 Common_Movement_WalkUpSlow[];
-extern const u8 Common_Movement_WalkDownSlow[];
-extern const u8 Common_Movement_WalkRightSlow[];
-extern const u8 Common_Movement_WalkLeftSlow[];
-extern const u8 Common_Movement_WalkUp[];
-extern const u8 Common_Movement_WalkDown[];
-extern const u8 Common_Movement_WalkRight[];
-extern const u8 Common_Movement_WalkLeft[];
-extern const u8 Common_Movement_WalkUpFast[];
-extern const u8 Common_Movement_WalkDownFast[];
-extern const u8 Common_Movement_WalkRightFast[];
-extern const u8 Common_Movement_WalkLeftFast[];
-extern const u8 Common_Movement_WalkUpFaster[];
-extern const u8 Common_Movement_WalkDownFaster[];
-extern const u8 Common_Movement_WalkRightFaster[];
-extern const u8 Common_Movement_WalkLeftFaster[];
-extern const u8 Common_Movement_FaceUp[];
-extern const u8 Common_Movement_FaceDown[];
-extern const u8 Common_Movement_FaceRight[];
-extern const u8 Common_Movement_FaceLeft[];
-
-extern const u8 EventScript_CancelMessageBox[];
-extern const u8 Common_EventScript_ShowPokemonCenterSign[];
-extern const u8 Common_EventScript_ShowPokemartSign[];
-// DexNav
-extern const u8 EventScript_StartDexNavBattle[];
-extern const u8 EventScript_NotFoundNearby[];
-extern const u8 EventScript_PokemonGotAway[];
-extern const u8 EventScript_LostSignal[];
-extern const u8 EventScript_TooDark[];
-extern const u8 EventScript_MovedTooFast[];
-
 
 #endif // GUARD_EVENT_SCRIPTS_H

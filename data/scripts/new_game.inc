@@ -273,5 +273,6 @@ EventScript_ResetAllMapFlags::
 	setflag FLAG_HIDE_SKY_PILLAR_TOP_RAYQUAZA_STILL
 	setflag FLAG_UNUSED_0x022
 	setflag FLAG_RECEIVED_HM_ROCK_SMASH
+	setflag FLAG_HIDE_LITTLEROOT_TOWN_RIVAL
 	call EventScript_ResetAllBerries
 	end

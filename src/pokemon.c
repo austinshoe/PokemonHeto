@@ -15,8 +15,6 @@
 #include "evolution_scene.h"
 #include "field_specials.h"
 #include "field_weather.h"
-#include "follower_npc.h"
-#include "graphics.h"
 #include "item.h"
 #include "link.h"
 #include "main.h"
@@ -5572,10 +5570,6 @@ u8 GetMonsStateToDoubles_2(void)
 {
     s32 aliveCount = 0;
     s32 i;
-
-    if (OW_DOUBLE_APPROACH_WITH_ONE_MON
-     || FollowerNPCIsBattlePartner())
-        return PLAYER_HAS_TWO_USABLE_MONS;
 
     for (i = 0; i < PARTY_SIZE; i++)
     {
