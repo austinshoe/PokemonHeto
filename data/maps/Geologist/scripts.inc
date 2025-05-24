@@ -290,7 +290,7 @@ Geologist_KirschbluteConvince:
     .string "{COLOR BLUE}Dr. Stone{COLOR DARK_GRAY}: I- I don't understand...\n"
     .string "Wh-What do you mean by “one of us”?\l"
     .string "And wh-who are you?\p"
-    .string "{COLOR BLUE}???{COLOR DARK_GRAY}: You can call me {COLOR RED}Kirschblüte{COLOR DARK_GRAY}.\p"
+    .string "{COLOR BLUE}???{COLOR DARK_GRAY}: You can call me {COLOR RED}Kirschblüte{COLOR DARK_GRAY}\p"
     .string "$"
     
 Geologist_KirschbluteIntro:
@@ -317,7 +317,7 @@ Geologist_KirschbluteExplain:
     .string "{COLOR RED}Kirschblüte{COLOR DARK_GRAY}: ...\p"
     .string "Dr. Stone, surely you remember the war\n"
     .string "that happened a decade ago?\l"
-    .string "You must have lost someone dear to you.\p"
+    .string "You must have lost someone dear to you\p"
     .string "After all, the war affected everyone,\n"
     .string "not just those on the front lines. \p"
     .string "{COLOR BLUE}Dr. Stone{COLOR DARK_GRAY}: ...\p"
@@ -345,7 +345,7 @@ Geologist_KirschbluteKill:
 
 Geologist_KirschblutePreEntrance:
     .string "{COLOR RED}Kirschblüte{COLOR DARK_GRAY}: ...\p"
-    .string "You disappoint me, Mr. Stone.\p"
+    .string "You disappoint me, Mr. Stone\p"
     .string "$"
 
 Geologist_KirschbluteSeize:
@@ -425,7 +425,7 @@ Geologist_Grunt2_FoundData:
     .string "$"
 
 Geologist_Grunt2_FoundData2:
-    .string "{COLOR RED}Kirschblüte{COLOR DARK_GRAY}: Perfectly timed.\p"
+    .string "{COLOR RED}Kirschblute{COLOR DARK_GRAY}: Perfectly timed.\p"
     .string "Grunts! Move out!\p"
     .string "$"
 

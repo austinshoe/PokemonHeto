@@ -71,7 +71,6 @@ HetonianPowerPlant_Rival_Player_SplitUp:
 
 HetonianPowerPlant_ShouldntGoThere::
     msgbox Text_HetonianPowerPlant_ShouldntGoThere, MSGBOX_DEFAULT
-    closemessage
     applymovement OBJ_EVENT_ID_PLAYER, HetonianPowerPlant_Walk_Left
     waitmovement 0
     end
@@ -97,21 +96,16 @@ HetonianPowerPlant_AngrbodaGrunt4::
 	end
 
 HetonianPowerPlant_AngrbodaGrunt5::
-    msgbox HetonianPowerPlant_Text_Grunt5, MSGBOX_DEFAULT
-    trainerbattle_no_intro TRAINER_GRUNT_AQUA_HIDEOUT_6, HetonianPowerPlant_Text_Grunt5Defeat
+    trainerbattle_single TRAINER_GRUNT_AQUA_HIDEOUT_6, HetonianPowerPlant_Text_Grunt5, HetonianPowerPlant_Text_Grunt5Defeat
 	msgbox HetonianPowerPlant_Text_Grunt5PostBattle, MSGBOX_DEFAULT
     closemessage
     applymovement 6, HetonianPowerPlant_GruntSkedaddle
-    call HetonianPowerPlant_AdjustGruntY
     setvar VAR_NEW_MAUVILLE_STATE, 3
     waitmovement 0
     setflag FLAG_TEMP_2
     playse SE_EXIT
     removeobject 6
 	end
-
-HetonianPowerPlant_AdjustGruntY:
-    
 
 HetonianPowerPlant_EventScript_BlueButton::
     lockall
