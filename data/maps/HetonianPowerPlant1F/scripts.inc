@@ -102,6 +102,7 @@ HetonianPowerPlant_AngrbodaGrunt5::
 	msgbox HetonianPowerPlant_Text_Grunt5PostBattle, MSGBOX_DEFAULT
     closemessage
     applymovement 6, HetonianPowerPlant_GruntSkedaddle
+    waitmovement 6
     call HetonianPowerPlant_AdjustGruntY
     setvar VAR_NEW_MAUVILLE_STATE, 3
     waitmovement 0
@@ -111,7 +112,21 @@ HetonianPowerPlant_AngrbodaGrunt5::
 	end
 
 HetonianPowerPlant_AdjustGruntY:
-    
+    getplayerxy VAR_TEMP_5, VAR_TEMP_6
+    switch VAR_TEMP_6
+    case 4, HetonianPowerPlant_AngrbodaGrunt4Up1
+    case 5, HetonianPowerPlant_AngrbodaGrunt4Up2
+    return
+
+HetonianPowerPlant_AngrbodaGrunt4Up1:
+    applymovement 6, HetonianPowerPlant_GruntSkedaddle1
+    waitmovement 0
+    return
+
+HetonianPowerPlant_AngrbodaGrunt4Up2:
+    applymovement 6, HetonianPowerPlant_GruntSkedaddle2
+    waitmovement 0
+    return
 
 HetonianPowerPlant_EventScript_BlueButton::
     lockall
@@ -319,3 +334,13 @@ HetonianPowerPlant_GruntSkedaddle:
     walk_left
     walk_up
     step_end
+
+HetonianPowerPlant_GruntSkedaddle1:
+    walk_up
+    step_end
+
+HetonianPowerPlant_GruntSkedaddle2:
+    walk_up
+    walk_up
+    step_end
+

@@ -160,36 +160,36 @@
       "x": 5,
       "y": 14,
       "elevation": 0,
-      "var": "VAR_TEMP_MIXED_RECORDS",
-      "var_value": "0",
-      "script": "NULL"
+      "var": "VAR_NEW_MAUVILLE_STATE",
+      "var_value": "3",
+      "script": "HetonianPowerPlant2F_AngrbodaTrigger1"
     },
     {
       "type": "trigger",
       "x": 5,
       "y": 15,
       "elevation": 0,
-      "var": "VAR_TEMP_MIXED_RECORDS",
-      "var_value": "0",
-      "script": "NULL"
+      "var": "VAR_NEW_MAUVILLE_STATE",
+      "var_value": "3",
+      "script": "HetonianPowerPlant2F_AngrbodaTrigger1"
     },
     {
       "type": "trigger",
       "x": 5,
       "y": 17,
       "elevation": 0,
-      "var": "VAR_TEMP_MIXED_RECORDS",
-      "var_value": "0",
-      "script": "NULL"
+      "var": "VAR_NEW_MAUVILLE_STATE",
+      "var_value": "3",
+      "script": "HetonianPowerPlant2F_AngrbodaTrigger1"
     },
     {
       "type": "trigger",
       "x": 5,
       "y": 16,
       "elevation": 0,
-      "var": "VAR_TEMP_MIXED_RECORDS",
-      "var_value": "0",
-      "script": "NULL"
+      "var": "VAR_NEW_MAUVILLE_STATE",
+      "var_value": "3",
+      "script": "HetonianPowerPlant2F_AngrbodaTrigger1"
     }
   ],
   "bg_events": [
