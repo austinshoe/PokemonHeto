@@ -4,7 +4,7 @@ HetonianPowerPlant2F_MapScripts::
 	.byte 0
 
 HetonianPowerPlant2F_OnTransition:
-    compare VAR_NEW_MAUVILLE_STATE, 2
+    compare VAR_NEW_MAUVILLE_STATE, 3
     goto_if_eq HetonianPowerPlant1F_ShowAngrboda
     setflag FLAG_TEMP_5
     setflag FLAG_TEMP_3
@@ -27,6 +27,7 @@ HetonianPowerPlant2F_OnLoad:
 
 HetonianPowerPlant2F_AngrbodaTrigger1::
     lockall
+    clearflag FLAG_TEMP_2
     addobject 4
     setobjectxyperm 4, 5, 14
     addobject 4
@@ -36,11 +37,11 @@ HetonianPowerPlant2F_AngrbodaTrigger1::
     waitmovement OBJ_EVENT_ID_PLAYER
     waitmovement 5
     call HetonianPowerPlant2F_AngrbodaTriggerEnd
-    waitmessage
     goto HetonianPowerPlant2F_AngrbodaTriggerFinal
 
 HetonianPowerPlant2F_AngrbodaTrigger2::
     lockall
+    clearflag FLAG_TEMP_2
     addobject 4
     setobjectxyperm 4, 5, 15
     addobject 4
@@ -53,11 +54,11 @@ HetonianPowerPlant2F_AngrbodaTrigger2::
     waitmovement 5
     call HetonianPowerPlant2F_AngrbodaTriggerEnd
     applymovement 4, HetonianPowerPlant2F_AdjustPlayerY2
-    waitmessage
     goto HetonianPowerPlant2F_AngrbodaTriggerFinal
 
 HetonianPowerPlant2F_AngrbodaTrigger3::
     lockall
+    clearflag FLAG_TEMP_2
     addobject 4
     setobjectxyperm 4, 5, 16
     addobject 4
@@ -70,11 +71,11 @@ HetonianPowerPlant2F_AngrbodaTrigger3::
     waitmovement 5
     call HetonianPowerPlant2F_AngrbodaTriggerEnd
     applymovement 4, HetonianPowerPlant2F_AdjustPlayerY3
-    waitmessage
     goto HetonianPowerPlant2F_AngrbodaTriggerFinal
 
 HetonianPowerPlant2F_AngrbodaTrigger4::
     lockall
+    clearflag FLAG_TEMP_2
     addobject 4
     setobjectxyperm 4, 5, 17
     clearflag FLAG_TEMP_2
@@ -88,7 +89,7 @@ HetonianPowerPlant2F_AngrbodaTrigger4::
     waitmovement 5
     call HetonianPowerPlant2F_AngrbodaTriggerEnd
     applymovement 4,HetonianPowerPlant2F_AdjustPlayerY4
-    waitmessage
+    waitmovement 4
     goto HetonianPowerPlant2F_AngrbodaTriggerFinal
     
 
@@ -126,16 +127,14 @@ HetonianPowerPlant2F_AngrbodaTriggerEnd:
     waitmessage
     waitmovement 0
     message HetonianPowerPlant2F_AlexandrCalmDown
+    waitmessage
     return
-    
-    @ Player walks up, Alexandr sees it's just a teenager and
-    @ starts laughing
 
 HetonianPowerPlant2F_AngrbodaTriggerFinal:
     applymovement 4, HetonianPowerPlant2F_AdjustPlayerX
-    waitmovement 0
+    waitmovement 4
     applymovement 4, HetonianPowerPlant2F_PlayerPullUp
-    waitmovement 0
+    waitmovement 4
     applymovement OBJ_EVENT_ID_PLAYER, HetonianPowerPlant2F_ReFocusCam
     showobjectat OBJ_EVENT_ID_PLAYER, 0
     setflag FLAG_TEMP_2
@@ -164,7 +163,6 @@ HetonianPowerPlant2F_AngrbodaTriggerFinal:
     addobject 8
     addobject 9
     applymovement 7, HetonianPowerPlant2F_AngrbodaPullUp1
-    @ delay 16 @@@@@@@@@@@
     applymovement 6, HetonianPowerPlant2F_AngrbodaPullUp2
     applymovement 8, HetonianPowerPlant2F_AngrbodaPullUp3
     waitmovement 7
