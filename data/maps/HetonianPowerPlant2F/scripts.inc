@@ -140,12 +140,15 @@ HetonianPowerPlant2F_AngrbodaTriggerFinal:
     setflag FLAG_TEMP_2
     removeobject 4
     applymovement 5, Common_Movement_FaceDown
-    waitmovement 0
+    waitmovement 5
     applymovement 5, Common_Movement_ExclamationMark
     message HetonianPowerPlant2F_GruntSeePlayer
     waitmessage
-    waitbuttonpress
+    waitmovement 5
     closemessage
+    end
+
+HetonianPowerPlant_Unused::
     applymovement 1, Common_Movement_ExclamationMark
     applymovement 2, Common_Movement_ExclamationMark
     applymovement 3, Common_Movement_ExclamationMark
