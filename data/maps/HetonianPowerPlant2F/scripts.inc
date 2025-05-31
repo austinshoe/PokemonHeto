@@ -27,9 +27,8 @@ HetonianPowerPlant2F_OnLoad:
 
 HetonianPowerPlant2F_AngrbodaTrigger1::
     lockall
-    clearflag FLAG_TEMP_2
-    addobject 4
     setobjectxyperm 4, 5, 14
+    clearflag FLAG_TEMP_2
     addobject 4
     hideobjectat OBJ_EVENT_ID_PLAYER, 0
     applymovement OBJ_EVENT_ID_PLAYER HetonianPowerPlant2F_AdjustPlayerX
@@ -38,12 +37,12 @@ HetonianPowerPlant2F_AngrbodaTrigger1::
     waitmovement 5
     call HetonianPowerPlant2F_AngrbodaTriggerEnd
     goto HetonianPowerPlant2F_AngrbodaTriggerFinal
+    end
 
 HetonianPowerPlant2F_AngrbodaTrigger2::
     lockall
-    clearflag FLAG_TEMP_2
-    addobject 4
     setobjectxyperm 4, 5, 15
+    clearflag FLAG_TEMP_2
     addobject 4
     hideobjectat OBJ_EVENT_ID_PLAYER, 0
     applymovement OBJ_EVENT_ID_PLAYER HetonianPowerPlant2F_AdjustPlayerX
@@ -55,12 +54,12 @@ HetonianPowerPlant2F_AngrbodaTrigger2::
     call HetonianPowerPlant2F_AngrbodaTriggerEnd
     applymovement 4, HetonianPowerPlant2F_AdjustPlayerY2
     goto HetonianPowerPlant2F_AngrbodaTriggerFinal
+    end
 
 HetonianPowerPlant2F_AngrbodaTrigger3::
     lockall
-    clearflag FLAG_TEMP_2
-    addobject 4
     setobjectxyperm 4, 5, 16
+    clearflag FLAG_TEMP_2
     addobject 4
     hideobjectat OBJ_EVENT_ID_PLAYER, 0
     applymovement OBJ_EVENT_ID_PLAYER HetonianPowerPlant2F_AdjustPlayerX
@@ -72,11 +71,10 @@ HetonianPowerPlant2F_AngrbodaTrigger3::
     call HetonianPowerPlant2F_AngrbodaTriggerEnd
     applymovement 4, HetonianPowerPlant2F_AdjustPlayerY3
     goto HetonianPowerPlant2F_AngrbodaTriggerFinal
+    end
 
 HetonianPowerPlant2F_AngrbodaTrigger4::
     lockall
-    clearflag FLAG_TEMP_2
-    addobject 4
     setobjectxyperm 4, 5, 17
     clearflag FLAG_TEMP_2
     addobject 4
@@ -91,6 +89,7 @@ HetonianPowerPlant2F_AngrbodaTrigger4::
     applymovement 4,HetonianPowerPlant2F_AdjustPlayerY4
     waitmovement 4
     goto HetonianPowerPlant2F_AngrbodaTriggerFinal
+    end
     
 
 HetonianPowerPlant2F_AngrbodaTriggerEnd:
@@ -142,13 +141,16 @@ HetonianPowerPlant2F_AngrbodaTriggerFinal:
     applymovement 5, Common_Movement_FaceDown
     waitmovement 5
     applymovement 5, Common_Movement_ExclamationMark
-    message HetonianPowerPlant2F_GruntSeePlayer
-    waitmessage
     waitmovement 5
-    closemessage
     end
 
+    
+    
+
 HetonianPowerPlant_Unused::
+    message HetonianPowerPlant2F_GruntSeePlayer
+    waitmessage
+    closemessage
     applymovement 1, Common_Movement_ExclamationMark
     applymovement 2, Common_Movement_ExclamationMark
     applymovement 3, Common_Movement_ExclamationMark
