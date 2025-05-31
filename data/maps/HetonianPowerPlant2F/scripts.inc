@@ -130,11 +130,14 @@ HetonianPowerPlant2F_AngrbodaTriggerEnd:
     return
 
 HetonianPowerPlant2F_AngrbodaTriggerFinal:
+    setobjectxyperm 4, 5, 14 
+    addobject 4
     applymovement 4, HetonianPowerPlant2F_AdjustPlayerX
     waitmovement 4
     applymovement 4, HetonianPowerPlant2F_PlayerPullUp
     waitmovement 4
     applymovement OBJ_EVENT_ID_PLAYER, HetonianPowerPlant2F_ReFocusCam
+    waitmovement OBJ_EVENT_ID_PLAYER
     showobjectat OBJ_EVENT_ID_PLAYER, 0
     setflag FLAG_TEMP_2
     removeobject 4
@@ -142,12 +145,6 @@ HetonianPowerPlant2F_AngrbodaTriggerFinal:
     waitmovement 5
     applymovement 5, Common_Movement_ExclamationMark
     waitmovement 5
-    end
-
-    
-    
-
-HetonianPowerPlant_Unused::
     message HetonianPowerPlant2F_GruntSeePlayer
     waitmessage
     closemessage
@@ -401,7 +398,7 @@ HetonianPowerPlant2F_GruntReport:
     .string "N-No!\p"
     .string "Not at all!\p"
     .string "Sir, Alexandr, sir, it's just that we\n"
-    .string "have an intruder here, and they've"
+    .string "have an intruder here, and they've\l"
     .string "beaten me and the other grunts!$"
 
 HetonianPowerPlant2F_ScientistWorried1:
@@ -422,7 +419,7 @@ HetonianPowerPlant2F_AlexandrCalmDown:
     .string "Why are we getting all riled up over\n"
     .string "some intruder?\p"
     .string "Nothing I can't handle.\p"
-    .string "Scientist 1: B-But, what if its THEM\p"
+    .string "Scientist 1: B-But, what if its THEM?\p"
     .string "Alexandr: Sure, if it were the champion\n"
     .string "things could get a bit sticky, but even\l"
     .string "then we should still be fine.\p"
@@ -439,6 +436,7 @@ HetonianPowerPlant2F_ReFocusCam:
     walk_down
     walk_down
     face_up
+    step_end
 
 HetonianPowerPlant2F_GruntSeePlayer:
     .string "Grunt: There he is, sir! The intruder!$"
