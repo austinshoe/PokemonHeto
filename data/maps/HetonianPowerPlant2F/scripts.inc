@@ -108,6 +108,7 @@ HetonianPowerPlant2F_AngrbodaTriggerEnd:
     waitmovement 0
     delay 16
     applymovement 5, Common_Movement_ExclamationMark
+    waitbuttonpress
     message HetonianPowerPlant2F_GruntReport
     waitmessage
     waitmovement 0
@@ -125,8 +126,10 @@ HetonianPowerPlant2F_AngrbodaTriggerEnd:
     message HetonianPowerPlant2F_ScientistWorried2
     waitmessage
     waitmovement 0
+    waitbuttonpress
     message HetonianPowerPlant2F_AlexandrCalmDown
     waitmessage
+    waitbuttonpress
     return
 
 HetonianPowerPlant2F_AngrbodaTriggerFinal:
@@ -147,6 +150,7 @@ HetonianPowerPlant2F_AngrbodaTriggerFinal:
     waitmovement 5
     message HetonianPowerPlant2F_GruntSeePlayer
     waitmessage
+    waitbuttonpress
     closemessage
     applymovement 1, Common_Movement_ExclamationMark
     applymovement 2, Common_Movement_ExclamationMark
@@ -184,15 +188,20 @@ HetonianPowerPlant2F_AngrbodaTriggerFinal:
     message HetonianPowerPlant2F_WhyAreAllGruntsHere
     waitmessage
     waitmovement 1
+    waitbuttonpress
     message HetonianPowerPlant2F_BeatenBySomeCaerulea
     waitmessage
+    waitbuttonpress
     closemessage
+    clearflag FLAG_TEMP_4
+    addobject 9
     applymovement 9, HetonianPowerPlant2F_RivalPullUp1
     waitmovement 9
     message HetonianPowerPlant2F_LiamWhereAreYouGoing
     applymovement 9, HetonianPowerPlant2F_RivalPullUp2
     waitmovement 9
     waitmessage
+    waitbuttonpress
     closemessage
     applymovement 9, Common_Movement_FaceRight
     waitmovement 0
@@ -200,8 +209,10 @@ HetonianPowerPlant2F_AngrbodaTriggerFinal:
     message HetonianPowerPlant2F_PlayerHereToo
     waitmessage
     waitmovement 9
+    waitbuttonpress
     message HetonianPowerPlant2F_AlexandrYouThere
     waitmessage
+    waitbuttonpress
     applymovement 9, Common_Movement_FaceUp
     applymovement 2, Common_Movement_FaceUp
     applymovement 3, Common_Movement_FaceUp
@@ -215,6 +226,7 @@ HetonianPowerPlant2F_AngrbodaTriggerFinal:
     waitmessage
     waitmovement 2
     waitmovement 3
+    waitbuttonpress
     message HetonianPowerPlant2F_AlexandrJustGo
     waitmessage
     waitbuttonpress
@@ -227,6 +239,7 @@ HetonianPowerPlant2F_AngrbodaTriggerFinal:
     waitmovement 7
     message HetonianPowerPlant2F_LiamHoldThemOff
     waitmessage
+    waitbuttonpress
     closemessage
     applymovement 9, HetonianPowerPlant2F_LiamBackUp
     waitmovement 0
@@ -247,6 +260,7 @@ HetonianPowerPlant2F_AngrbodaTriggerFinal:
     applymovement 2, Common_Movement_ExclamationMark
     message HetonianPowerPlant2F_GotMessageFromHQ
     waitmessage
+    waitbuttonpress
     waitmovement 2
     applymovement 2, Common_Movement_FaceDown
     waitmovement 2
@@ -255,6 +269,7 @@ HetonianPowerPlant2F_AngrbodaTriggerFinal:
     applymovement 2, Common_Movement_FaceUp
     waitmovement 2
     applymovement 1, Common_Movement_ExclamationMark
+    waitbuttonpress
     message HetonianPowerPlant2F_AlexandrWhatWasMsg
     waitmessage
     waitbuttonpress
@@ -534,7 +549,7 @@ HetonianPowerPlant2F_BeatenBySomeCaerulea:
     .string "nowhere, and defeated us, sir!\p"
     .string "He was really strong... There was little\n"
     .string "we could do...\p"
-    .string "Alexandr: Caerulea kid? I meant that"
+    .string "Alexandr: Caerulea kid? I meant that\n"
     .string "Viola brat back there...\p"
     .string "What Caerulea kid-$"
 
@@ -597,6 +612,7 @@ HetonianPowerPlant2F_LiamHoldThemOff:
     .string "Go stop him!$"
 
 HetonianPowerPlant2F_ReadjustGruntPos:
+    walk_up
     walk_right
     face_down
     step_end
@@ -639,12 +655,12 @@ HetonianPowerPlant2F_AlexandrWhatWasMsg:
     .string "Scientist: T-They said there's a n-new\n"
     .string "energy reading on the map-\l"
     .string "They say it's even more s-stronger than\l"
-    .string "the p-power levels h-here-"
+    .string "the p-power levels h-here-\p"
     .string "Alexandr: Where?\p"
     .string "Scientist: M-Mount E-Emberfall's\n"
     .string "s-south-eastern ridge.\p"
     .string "Alexandr: All right, then...\p"
-    .string "GRUNTS$"
+    .string "GRUNTS!$"
 
 HetonianPowerPlant2F_MoveOut:
     .string "We're moving out! We have a new target!$"

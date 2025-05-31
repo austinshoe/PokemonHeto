@@ -35,9 +35,15 @@ Text_NeptunesDrift_RivalExplainDive:
 	.string "Those patches of water are actually just\n"
 	.string "deep parts of the sea, where you can\l"
 	.string "dive underneath the water.\p"
-	.string "Lena and Shin already dived, so let's go.$"
+	.string "The dive patch we need to go to isn't\n"
+	.string "acutally the one just under us, but\l"
+	.string "it's a bit further down the drift, on\l"
+	.string "east side.\p"
+	.string "Lena and Shin already dived, so let's go\n"
+	.string "after them.\p"
+	.string "$"
 
 NeptunesDrift_RivalWalkAway:
-	walk_down
+	walk_up
 	step_end
 

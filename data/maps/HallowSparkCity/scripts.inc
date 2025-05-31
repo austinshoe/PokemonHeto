@@ -317,6 +317,7 @@ HallowSparkCity_PostAngrbodaCutscene::
     applymovement 9, Common_Movement_FaceRight
     waitmovement 9
     applymovement 9, Common_Movement_ExclamationMark
+    waitbuttonpress
     message HallowSparkCity_ShinWhoAreKids
     waitmessage
     waitmovement 0
@@ -341,10 +342,12 @@ HallowSparkCity_PostAngrbodaCutscene::
     waitmovement 1
     message HallowSpark_LenaAskForHelp
     waitmessage
+    waitbuttonpress
     applymovement 1, HallowSparkCity_ShinWalkAway
     waitmovement 1
     setobjectxy 1, 35, 0
     setobjectxyperm 1, 35, 0
+    waitbuttonpress
     applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceDown
     applymovement 2, Common_Movement_FaceUp
     waitmovement 0
@@ -1031,7 +1034,7 @@ HallowSparkCity_ShinWhoAreKids:
     .string "Shin: -the war? Was your brother Daiya?\n"
     .string "Thank you, too, for helping us.\p"
     .string "The government and the\n"
-    .string "Pokémon Association are working on this\n"
+    .string "Pokémon Association are working on this\l"
     .string "case with Angrboda.\p"
     .string "It would be very helpful if you could\n"
     .string "brief me on what happened in there.$"
