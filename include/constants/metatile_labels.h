@@ -853,6 +853,8 @@
 #define METATILE_volcano1_RightBottom         0x01A
 #define METATILE_volcano1_RightCovered        0x17B
 #define METATILE_volcano1_RightLava           0x166
+#define METATILE_volcano1_RoughField          0x000
+#define METATILE_volcano1_SmoothField         0x0DF
 #define METATILE_volcano1_StairLeft           0x096
 #define METATILE_volcano1_StairLeftCovered    0x176
 #define METATILE_volcano1_StairRight          0x097

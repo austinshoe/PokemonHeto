@@ -1024,7 +1024,7 @@ HallowSparkCity_ShinWhoAreKids:
     .string "That's Shin!\p"
     .string "Lena: They were helping me because...\n"
     .string "because- because I left my Pokémon\l"
-    .string "back home..."
+    .string "back home...\p"
     .string "Shin: Oh, is that the kid Khione was\n"
     .string "talking about?\p"
     .string "Thank you again.\p"
@@ -1032,6 +1032,7 @@ HallowSparkCity_ShinWhoAreKids:
     .string "Liam: My name is Liam.. My brother-\n"
     .string "my brother served alongside you in-\p"
     .string "Shin: -the war? Was your brother Daiya?\n"
+    .string "You look just like him.\p"
     .string "Thank you, too, for helping us.\p"
     .string "The government and the\n"
     .string "Pokémon Association are working on this\l"
@@ -1077,7 +1078,7 @@ HallowSpark_LenaAskForHelp:
     .string "quite pressing.$"
 
 HallowSpark_LiamOutro:
-    .string "I'll meet up with you at Neptune's Drift$"
+    .string "I'll meet up with you at Neptune's Drift.$"
 
 HetonianPowerPlant2F_LiamLeave:
     walk_left

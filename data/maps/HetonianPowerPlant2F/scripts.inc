@@ -152,6 +152,10 @@ HetonianPowerPlant2F_AngrbodaTriggerFinal:
     waitmessage
     waitbuttonpress
     closemessage
+    applymovement 2, Common_Movement_FaceDown
+    applymovement 3, Common_Movement_FaceDown
+    waitmovement 2
+    waitmovement 3
     applymovement 1, Common_Movement_ExclamationMark
     applymovement 2, Common_Movement_ExclamationMark
     applymovement 3, Common_Movement_ExclamationMark
@@ -311,9 +315,7 @@ HetonianPowerPlant2F_AngrbodaTriggerFinal:
     applymovement 9, HetonianPowerPlant2F_RivalMeetPlayer
     applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceDown
     msgbox HetonianPowerPlant2F_RivalLetsGoDown, MSGBOX_DEFAULT
-    call Common_EventScript_OutOfCenterPartyHeal
-    clearflag FLAG_TEMP_3
-    removeobject 9
+    special HealPlayerParty
     setvar VAR_NEW_MAUVILLE_STATE, 3
     setvar VAR_FORTREE_CITY_STATE, 5
     delay 32
@@ -454,7 +456,7 @@ HetonianPowerPlant2F_ReFocusCam:
     step_end
 
 HetonianPowerPlant2F_GruntSeePlayer:
-    .string "Grunt: There he is, sir! The intruder!$"
+    .string "Grunt: There, sir! The intruder!$"
 
 HetonianPowerPlant2F_AlexandrSeePlayer:
     .string "Alexandr: This is the trainer that beat\n"
@@ -638,7 +640,7 @@ HetonianPowerPlant2F_AlexandrUnderestimated:
 
 HetonianPowerPlant2F_GotMessageFromHQ:
     .string "Scientist: Sir! I've received a message\n"
-    .string "from HQ\p"
+    .string "from HQ-\p"
     .string "They say that the p-power from the\n"
     .string "generator s-still isn't enough!\p"
     .string "Alexandr: Impossible! The generator\n"
