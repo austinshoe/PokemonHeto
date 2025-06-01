@@ -827,6 +827,8 @@
 #define METATILE_Underwater_RockWall     0x21E
 
 // gTileset_volcano1
+#define METATILE_volcano1_AshGrassRough       0x024
+#define METATILE_volcano1_AshGrassSmooth      0x023
 #define METATILE_volcano1_Bottom              0x019
 #define METATILE_volcano1_BottomCovered       0x182
 #define METATILE_volcano1_BottomLeftCovered   0x181
@@ -849,6 +851,8 @@
 #define METATILE_volcano1_LeftCovered         0x179
 #define METATILE_volcano1_LeftLava            0x164
 #define METATILE_volcano1_Middle              0x011
+#define METATILE_volcano1_NormalGrassRough    0x01C
+#define METATILE_volcano1_NormalGrassSmooth   0x01B
 #define METATILE_volcano1_Right               0x012
 #define METATILE_volcano1_RightBottom         0x01A
 #define METATILE_volcano1_RightCovered        0x17B
