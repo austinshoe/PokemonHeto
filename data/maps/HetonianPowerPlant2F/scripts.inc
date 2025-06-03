@@ -28,6 +28,7 @@ HetonianPowerPlant2F_OnLoad:
 HetonianPowerPlant2F_AngrbodaTrigger1::
     lockall
     setobjectxyperm 4, 5, 14
+    call HetonianPowerPlant2F_UpdatePlayerGFX
     clearflag FLAG_TEMP_2
     addobject 4
     hideobjectat OBJ_EVENT_ID_PLAYER, 0
@@ -39,9 +40,20 @@ HetonianPowerPlant2F_AngrbodaTrigger1::
     goto HetonianPowerPlant2F_AngrbodaTriggerFinal
     end
 
+HetonianPowerPlant2F_UpdatePlayerGFX:
+    checkplayergender
+    compare VAR_RESULT, FEMALE
+    call_if_eq HetonianPowerPlant2F_PlayerGFXGirl
+    return
+    
+HetonianPowerPlant2F_PlayerGFXGirl:
+    setobjectgfx 2, OBJ_EVENT_GFX_MAY_NORMAL
+    return
+
 HetonianPowerPlant2F_AngrbodaTrigger2::
     lockall
     setobjectxyperm 4, 5, 15
+    call HetonianPowerPlant2F_UpdatePlayerGFX
     clearflag FLAG_TEMP_2
     addobject 4
     hideobjectat OBJ_EVENT_ID_PLAYER, 0
@@ -59,6 +71,7 @@ HetonianPowerPlant2F_AngrbodaTrigger2::
 HetonianPowerPlant2F_AngrbodaTrigger3::
     lockall
     setobjectxyperm 4, 5, 16
+    call HetonianPowerPlant2F_UpdatePlayerGFX
     clearflag FLAG_TEMP_2
     addobject 4
     hideobjectat OBJ_EVENT_ID_PLAYER, 0
@@ -76,6 +89,7 @@ HetonianPowerPlant2F_AngrbodaTrigger3::
 HetonianPowerPlant2F_AngrbodaTrigger4::
     lockall
     setobjectxyperm 4, 5, 17
+    call HetonianPowerPlant2F_UpdatePlayerGFX
     clearflag FLAG_TEMP_2
     addobject 4
     hideobjectat OBJ_EVENT_ID_PLAYER, 0

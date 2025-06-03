@@ -359,6 +359,7 @@ HallowSparkCity_PostAngrbodaCutscene::
     waitmovement 2
     setflag FLAG_TEMP_1
     removeobject 2
+    setrespawn HEAL_LOCATION_HALLOW_SPARK_CITY
     setvar VAR_FORTREE_CITY_STATE, 6
     clearflag FLAG_HIDE_LITTLEROOT_TOWN_RIVAL
     delay 16

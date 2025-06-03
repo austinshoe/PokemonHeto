@@ -25,7 +25,32 @@
     }
   ],
   "object_events": [
-
+    {
+      "graphics_id": "OBJ_EVENT_GFX_BRENDAN_NORMAL",
+      "x": 21,
+      "y": 53,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "FLAG_TEMP_1"
+    },
+    {
+      "graphics_id": "OBJ_EVENT_GFX_BRENDAN_NORMAL",
+      "x": 0,
+      "y": 69,
+      "elevation": 0,
+      "movement_type": "MOVEMENT_TYPE_FACE_UP",
+      "movement_range_x": 0,
+      "movement_range_y": 0,
+      "trainer_type": "TRAINER_TYPE_NONE",
+      "trainer_sight_or_berry_tree_id": "0",
+      "script": "NULL",
+      "flag": "0"
+    }
   ],
   "warp_events": [
     {
@@ -106,6 +131,24 @@
       "y": 1,
       "elevation": 0,
       "weather": "COORD_EVENT_WEATHER_VOLCANIC_ASH"
+    },
+    {
+      "type": "trigger",
+      "x": 20,
+      "y": 55,
+      "elevation": 0,
+      "var": "VAR_SKY_PILLAR_STATE",
+      "var_value": "0",
+      "script": "MtEmberfallExtS_Triggers"
+    },
+    {
+      "type": "trigger",
+      "x": 21,
+      "y": 55,
+      "elevation": 0,
+      "var": "VAR_SKY_PILLAR_STATE",
+      "var_value": "0",
+      "script": "MtEmberfallExtS_Triggers"
     }
   ],
   "bg_events": [
