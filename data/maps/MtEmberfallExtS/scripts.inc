@@ -1,5 +1,5 @@
 MtEmberfallExtS_MapScripts::
-	map_script MtEmberfallExtS_OnTransition, MAP_SCRIPT_ON_TRANSITION
+	map_script MAP_SCRIPT_ON_TRANSITION, MtEmberfallExtS_OnTransition
 	.byte 0
 
 MtEmberfallExtS_OnTransition:

@@ -1,5 +1,5 @@
 MtEmberfallCrater_MapScripts::
-	map_script MtEmberfallCrater_OnTransition, MAP_SCRIPT_ON_TRANSITION
+	map_script MAP_SCRIPT_ON_TRANSITION, MtEmberfallCrater_OnTransition
 	.byte 0
 
 MtEmberfallCrater_OnTransition:
@@ -39,9 +39,8 @@ MtEmberfallCrater_UpdatePlayerGFXBoy:
 
 MtEmberfallCrater_TriggerLeft::
 	lockall
-	getplayerxy VAR_TEMP_0, VAR_TEMP_1
 	call MtEmberfallCrater_UpdatePlayerGFX
-	setobjextectxyperm 4, VAR_TEMP_0, VAR_TEMP_1
+	setobjextectxyperm 4, 11, 41
 	setobjectgfx 4, OBJ_EVENT_GFX_BRENDAN_NORMAL
 	addobject 4
 	hideobjectat OBJ_EVENT_ID_PLAYER, 0
@@ -77,9 +76,8 @@ MtEmberfallCrater_TriggerLeft::
 
 MtEmberfallCrater_TriggerRightt::
 	lockall
-	getplayerxy VAR_TEMP_0, VAR_TEMP_1
 	call MtEmberfallCrater_UpdatePlayerGFX
-	setobjextectxyperm 4, VAR_TEMP_0, VAR_TEMP_1
+	setobjextectxyperm 4, 12, 41
 	setobjectgfx 4, OBJ_EVENT_GFX_BRENDAN_NORMAL
 	addobject 4
 	hideobjectat OBJ_EVENT_ID_PLAYER, 0
@@ -130,7 +128,7 @@ MtEmberfallCrater_PreEnterTriggerTop::
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceDown
 	waitmovement OBJ_EVENT_ID_PLAYER
 	applymovement 2, Common_Movement_FaceUp
-	waitmovement
+	waitmovement 0
 	msgbox MtEmberfallCrater_FoundWhereTheyAre, MSGBOX_DEFAULT
 	waitmessage
 	closemessage
@@ -197,7 +195,7 @@ MtEmberfallCrater_PreEnterTriggerBottom::
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceDown
 	waitmovement OBJ_EVENT_ID_PLAYER
 	applymovement 2, Common_Movement_FaceUp
-	waitmovement
+	waitmovement 0
 	msgbox MtEmberfallCrater_FoundWhereTheyAre, MSGBOX_DEFAULT
 	waitmessage
 	closemessage
