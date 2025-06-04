@@ -41,8 +41,11 @@ MtEmberfallCrater_TriggerLeft::
 	lockall
 	call MtEmberfallCrater_UpdatePlayerGFX
 	setobjectxyperm 4, 11, 41
-	setobjectgfx 4, OBJ_EVENT_GFX_BRENDAN_NORMAL
 	addobject 4
+	setobjectgfx 4, OBJ_EVENT_GFX_LOTAD_DOLL
+	end
+
+MtEmberfallCrater_TriggerUnusedForNow::
 	hideobjectat OBJ_EVENT_ID_PLAYER, 0
 	applymovement OBJ_EVENT_ID_PLAYER, MtEmberfallCrater_PanCamRightUp
 	waitmovement 0
@@ -258,7 +261,7 @@ MtEmberfallCrater_PanCamUp:
 	step_end
 
 MtEmberfallCrater_PanCamRightUp:
-	walk_left
+	walk_right
 	walk_up
 	walk_up
 	walk_up
