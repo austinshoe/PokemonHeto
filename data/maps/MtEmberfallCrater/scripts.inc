@@ -43,6 +43,7 @@ MtEmberfallCrater_TriggerLeft::
 	setobjectxyperm 4, 11, 41
 	addobject 4
 	setobjectgfx 4, OBJ_EVENT_GFX_LOTAD_DOLL
+	releaseall
 	end
 
 MtEmberfallCrater_TriggerUnusedForNow::
