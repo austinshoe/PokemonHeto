@@ -12,33 +12,25 @@ MtEmberfallExtS_SetUpRivalOBJpos:
 	clearflag FLAG_TEMP_1
 	end
 
-MtEmberfallExtS_UpdatePlayerGFX:
+MtEmberfallExtS_Triggers::
+	lockall
     checkplayergender
     compare VAR_RESULT, FEMALE
-    call_if_eq MtEmberfallExtS_UpdatePlayerGFXGirl
-	compare VAR_RESULT, MALE
-	call_if_eq MtEmberfallExtS_UpdatePlayerGFXBoy
-    return
+    goto_if_eq MtEmberfallExtS_UpdatePlayerGFXGirl
+	goto MtEmberfallExtS_UpdatePlayerGFXBoy
     
 MtEmberfallExtS_UpdatePlayerGFXGirl:
     setobjectgfx 2, OBJ_EVENT_GFX_MAY_NORMAL
-    return
+    goto MtEmberfallExtS_TriggersUnusedForNow
 
 MtEmberfallExtS_UpdatePlayerGFXBoy:
 	setobjectgfx 2, OBJ_EVENT_GFX_BRENDAN_NORMAL
-	return
+	goto MtEmberfallExtS_TriggersUnusedForNow
 
-MtEmberfallExtS_Triggers::
-	lockall
+MtEmberfallExtS_TriggersUnusedForNow:
 	getplayerxy VAR_TEMP_0, VAR_TEMP_1
-	call MtEmberfallExtS_UpdatePlayerGFX
 	setobjectxyperm 2, VAR_TEMP_0, VAR_TEMP_1
 	addobject 2
-	setvar VAR_SKY_PILLAR_STATE, 1
-	releaseall
-	end
-
-MtEmberfallExtS_TriggersUnusedForNOw:
 	hideobjectat OBJ_EVENT_ID_PLAYER, 0
 	applymovement OBJ_EVENT_ID_PLAYER, MtEmberfallExtS_PanCamUp
 	waitmovement OBJ_EVENT_ID_PLAYER

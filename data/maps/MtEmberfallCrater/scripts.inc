@@ -21,32 +21,28 @@ MtEmberfallCrater_SetUpHealer:
 	setflag FLAG_TEMP_1
 	end
 
+MtEmberfallCrater_TriggerLeft::
+	lockall
+	goto MtEmberfallCrater_UpdatePlayerGFX
+
 MtEmberfallCrater_UpdatePlayerGFX:
     checkplayergender
     compare VAR_RESULT, FEMALE
-    call_if_eq MtEmberfallCrater_UpdatePlayerGFXGirl
-	compare VAR_RESULT, MALE
-	call_if_eq MtEmberfallCrater_UpdatePlayerGFXBoy
-    return
+    goto_if_eq MtEmberfallCrater_UpdatePlayerGFXGirl
+	goto MtEmberfallCrater_UpdatePlayerGFXBoy
     
 MtEmberfallCrater_UpdatePlayerGFXGirl:
     setobjectgfx 4, OBJ_EVENT_GFX_MAY_NORMAL
-    return
+    goto MtEmberfallCrater_TriggerUnusedForNow
 
 MtEmberfallCrater_UpdatePlayerGFXBoy:
 	setobjectgfx 4, OBJ_EVENT_GFX_BRENDAN_NORMAL
-	return
+	goto MtEmberfallCrater_TriggerUnusedForNow
 
-MtEmberfallCrater_TriggerLeft::
-	lockall
-	call MtEmberfallCrater_UpdatePlayerGFX
-	setobjectxyperm 4, 11, 41
-	addobject 4
-	setobjectgfx 4, OBJ_EVENT_GFX_LOTAD_DOLL
-	releaseall
-	end
 
 MtEmberfallCrater_TriggerUnusedForNow::
+	setobjectxyperm 4, 11, 41
+	addobject 4
 	hideobjectat OBJ_EVENT_ID_PLAYER, 0
 	applymovement OBJ_EVENT_ID_PLAYER, MtEmberfallCrater_PanCamRightUp
 	waitmovement 0
@@ -80,7 +76,23 @@ MtEmberfallCrater_TriggerUnusedForNow::
 
 MtEmberfallCrater_TriggerRightt::
 	lockall
-	call MtEmberfallCrater_UpdatePlayerGFX
+	goto MtEmberfallCrater_UpdatePlayerGFX1
+
+MtEmberfallCrater_UpdatePlayerGFX1:
+    checkplayergender
+    compare VAR_RESULT, FEMALE
+    goto_if_eq MtEmberfallCrater_UpdatePlayerGFXGirl1
+	goto MtEmberfallCrater_UpdatePlayerGFXBoy1
+    
+MtEmberfallCrater_UpdatePlayerGFXGirl1:
+    setobjectgfx 4, OBJ_EVENT_GFX_MAY_NORMAL
+    goto MtEmberfallCrater_TriggerUnusedForNow
+
+MtEmberfallCrater_UpdatePlayerGFXBoy1:
+	setobjectgfx 4, OBJ_EVENT_GFX_BRENDAN_NORMAL
+	goto MtEmberfallCrater_TriggerUnusedForNow1
+
+MtEmberfallCrater_TriggerUnusedForNow1:
 	setobjectxyperm 4, 12, 41
 	setobjectgfx 4, OBJ_EVENT_GFX_BRENDAN_NORMAL
 	addobject 4
