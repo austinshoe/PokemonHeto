@@ -20,10 +20,12 @@ MtEmberfallExtS_Triggers::
 	goto MtEmberfallExtS_UpdatePlayerGFXBoy
     
 MtEmberfallExtS_UpdatePlayerGFXGirl:
+	addobject 2
     setobjectgfx 2, OBJ_EVENT_GFX_MAY_NORMAL
     goto MtEmberfallExtS_TriggersUnusedForNow
 
 MtEmberfallExtS_UpdatePlayerGFXBoy:
+	addobject 2
 	setobjectgfx 2, OBJ_EVENT_GFX_BRENDAN_NORMAL
 	goto MtEmberfallExtS_TriggersUnusedForNow
 
