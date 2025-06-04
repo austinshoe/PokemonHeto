@@ -40,7 +40,7 @@ MtEmberfallCrater_UpdatePlayerGFXBoy:
 MtEmberfallCrater_TriggerLeft::
 	lockall
 	call MtEmberfallCrater_UpdatePlayerGFX
-	setobjextectxyperm 4, 11, 41
+	setobjectxyperm 4, 11, 41
 	setobjectgfx 4, OBJ_EVENT_GFX_BRENDAN_NORMAL
 	addobject 4
 	hideobjectat OBJ_EVENT_ID_PLAYER, 0
@@ -77,7 +77,7 @@ MtEmberfallCrater_TriggerLeft::
 MtEmberfallCrater_TriggerRightt::
 	lockall
 	call MtEmberfallCrater_UpdatePlayerGFX
-	setobjextectxyperm 4, 12, 41
+	setobjectxyperm 4, 12, 41
 	setobjectgfx 4, OBJ_EVENT_GFX_BRENDAN_NORMAL
 	addobject 4
 	hideobjectat OBJ_EVENT_ID_PLAYER, 0
