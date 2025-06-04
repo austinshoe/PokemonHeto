@@ -32,17 +32,19 @@ MtEmberfallCrater_UpdatePlayerGFX:
 	goto MtEmberfallCrater_UpdatePlayerGFXBoy
     
 MtEmberfallCrater_UpdatePlayerGFXGirl:
+	addobject 4
     setobjectgfx 4, OBJ_EVENT_GFX_MAY_NORMAL
     goto MtEmberfallCrater_TriggerUnusedForNow
 
 MtEmberfallCrater_UpdatePlayerGFXBoy:
+	addobject 4
 	setobjectgfx 4, OBJ_EVENT_GFX_BRENDAN_NORMAL
 	goto MtEmberfallCrater_TriggerUnusedForNow
-
 
 MtEmberfallCrater_TriggerUnusedForNow::
 	setobjectxyperm 4, 11, 41
 	addobject 4
+	delay 16
 	hideobjectat OBJ_EVENT_ID_PLAYER, 0
 	applymovement OBJ_EVENT_ID_PLAYER, MtEmberfallCrater_PanCamRightUp
 	waitmovement 0
