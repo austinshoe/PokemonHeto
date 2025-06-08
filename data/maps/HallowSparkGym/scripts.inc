@@ -13,8 +13,66 @@ HallowSparkGym_OnTransition:
 	end
 
 HallowSparkGym_Andre::
-	setvar VAR_FORTREE_CITY_STATE, 2
+	lock
+	faceplayer
+	trainerbattle_single TRAINER_NORMAN_1, Text_HallowSparkGym_Andre, Text_HallowSparkGym_AndreDefeat, HallowSparkGym_AndreDefeated, NO_MUSIC
+	goto_if_unset FLAG_RECEIVED_TM_FACADE, HallowSparkGym_GiveThunder
+	msgbox Text_HallowSparkGym_AndrePostBattle, MSGBOX_DEFAULT
+	release
 	end
+
+HallowSparkGym_AndreDefeated:
+	message Text_HallowSparkGym_VoltBadge
+	waitmessage
+	call Common_EventScript_PlayGymBadgeFanfare
+	msgbox Text_HallowSparkGym_ExplainVoltBadge, MSGBOX_DEFAULT
+	setflag FLAG_DEFEATED_PETALBURG_GYM
+	setflag FLAG_BADGE05_GET
+	setvar VAR_FORTREE_CITY_STATE, 2
+HallowSparkGym_GiveThunder:
+	giveitem ITEM_TM_THUNDER
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+	setflag FLAG_RECEIVED_TM_FACADE
+	msgbox Text_HallowSparkGym_ExplainTM, MSGBOX_DEFAULT
+	release
+	end
+
+Text_HallowSparkGym_Andre:
+	.string "Andre: Ah... Another challenger...\p"
+	.string "Welcome to my humble little gym of\n"
+	.string "currents and phantoms...\p"
+	.string "Most trainers see strength as something\n"
+	.string "bright, something loud.\p"
+	.string "But true strength...\n"
+	.string "It haunts.\l"
+	.string "It lingers.$"
+
+Text_HallowSparkGym_AndreDefeat:
+	.string "Elettrizzante... Percutant...$"
+
+Text_HallowSparkGym_VoltBadge:
+	.string "Andre: Fascinating...\p"
+	.string "Take this badge as proof of your\n"
+	.string "victory...\p"
+	.string "{PLAYER} received the VOLT BADGE\n"
+	.string "from Andre.$"
+
+Text_HallowSparkGym_ExplainVoltBadge:
+	.string "Andre: The VOLT BADGE will allow you to\n"
+	.string "use the move Dive outside of battle.\p"
+	.string "You'll be able to dive into the depths\n"
+	.string "of the ocean.\p"
+	.string "As an extra reward, take this TM.$"
+
+Text_HallowSparkGym_ExplainTM:
+	.string "This TM contains Thunder.\p"
+	.string "It is a powerful Electric-type move.\p"
+	.string "It has a high chance of paralyzing the\n"
+	.string "target, but it has a low accuracy.$"
+
+Text_HallowSparkGym_AndrePostBattle:
+	.string "Make a haunting impression on the world.$"
+
 
 HallowSparkGym_PatternSet1:
 	setvar VAR_TEMP_0, 1
