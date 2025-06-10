@@ -8026,25 +8026,25 @@ u8 GetLedgeJumpDirection(s16 x, s16 y, u8 direction)
 
     if (MetatileBehavior_IsOmnidirectionalJump(behavior)) {
         if (direction == DIR_SOUTH) {
-            if (GetVanillaCollisionOmniJump(x, y + 1) = COLLISION_NONE) {
+            if (GetVanillaCollisionOmniJump(x, y + 1) == COLLISION_NONE) {
                 return DIR_SOUTH;
             }
             return DIR_NONE;
         }
         else if (direction == DIR_NORTH) {
-            if (GetVanillaCollisionOmniJump(x, y - 1) = COLLISION_NONE) {
+            if (GetVanillaCollisionOmniJump(x, y - 1) == COLLISION_NONE) {
                 return DIR_NORTH;
             }
             return DIR_NONE;
         }
         else if (direction == DIR_WEST) {
-            if (GetVanillaCollisionOmniJump(x - 1, y) = COLLISION_NONE) {
+            if (GetVanillaCollisionOmniJump(x - 1, y) == COLLISION_NONE) {
                 return DIR_WEST;
             }
             return DIR_NONE;
         }
         else if (direction == DIR_EAST) {
-            if (GetVanillaCollisionOmniJump(x + 1, y) = COLLISION_NONE) {
+            if (GetVanillaCollisionOmniJump(x + 1, y) == COLLISION_NONE) {
                 return DIR_EAST;
             }
             return DIR_NONE;
