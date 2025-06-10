@@ -20,7 +20,6 @@ MtEmberfallDraconarixLair_TriggerTop::
 	waitmovement 11
 	waitmovement 12
 	waitmovement OBJ_EVENT_ID_PLAYER
-	goto MtEmberfallDraconarixLair_UpdatePlayerGFX
 	checkplayergender
 	compare VAR_RESULT, FEMALE
 	goto_if_eq MtEmberfallDraconarixLair_UpdatePlayerGFXGirl
