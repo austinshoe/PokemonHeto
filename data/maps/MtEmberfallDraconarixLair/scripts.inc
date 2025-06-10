@@ -484,7 +484,7 @@ MtEmberfallDraconarixLair_PokemonJump:
 	jump_in_place_up
 	step_end
 
-MtEmberfallDraconarixLair_PanCamBack;
+MtEmberfallDraconarixLair_PanCamBack:
 	walk_left
 	face_down
 	step_end

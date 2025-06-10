@@ -58,6 +58,7 @@ MtEmberfallCrater_Aftermath1:
 	removeobject 2
 	removeobject 3
 	setvar VAR_SKY_PILLAR_STATE, 5
+	setrespawn HEAL_LOCATION_ONSEN_CITY
 	releaseall
 	end
 
@@ -323,6 +324,7 @@ MtEmberfallCrater_PreEnterTriggerBottom::
 	removeobject 3
 	setvar VAR_SKY_PILLAR_STATE, 3
 	setvar VAR_SEAFLOOR_CAVERN_STATE, 1
+	setrespawn HEAL_LOCATION_MT_EMBERFALL_CRATER
 	releaseall
 	end
 
