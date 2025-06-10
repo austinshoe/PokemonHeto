@@ -4799,9 +4799,6 @@ u8 GetVanillaCollisionOmniJump(s16 x, s16 y)
     #endif
     if (MapGridGetCollisionAt(x, y) || GetMapBorderIdAt(x, y) == CONNECTION_INVALID)
         return COLLISION_IMPASSABLE;
-    else if (DoesObjectCollideWithObjectAt(objectEvent, x, y))
-        return COLLISION_OBJECT_EVENT;
-    
     return COLLISION_NONE;
 }
 
@@ -8033,21 +8030,25 @@ u8 GetLedgeJumpDirection(s16 x, s16 y, u8 direction)
                 if (GetVanillaCollisionOmniJump(x, y + 1) = COLLISION_NONE) {
                     return DIR_SOUTH;
                 }
+                return DIR_NONE
                 break;
             case DIR_NORTH:
                 if (GetVanillaCollisionOmniJump(x, y - 1) = COLLISION_NONE) {
                     return DIR_NORTH;
                 }
                 break;
+                return DIR_NONE
             case DIR_WEST:
                 if (GetVanillaCollisionOmniJump(x - 1, y) = COLLISION_NONE) {
                     return DIR_WEST;
                 }
+                return DIR_NONE
                 break;
             case DIR_EAST:
                 if (GetVanillaCollisionOmniJump(x + 1, y) = COLLISION_NONE) {
                     return DIR_EAST;
                 }
+                return DIR_NONE
                 break;
             default:
                 return DIR_NONE; // invalid direction
