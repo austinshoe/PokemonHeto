@@ -183,6 +183,8 @@ Text_FallGrove_GeologistExplainMtEmberfall:
     .string "If you go down south, and continue on\n"
     .string "the route below, you'll arrive at\l"
     .string "{COLOR RED}Mt. Emberfall{COLOR DARK_GRAY} in no time.\p"
+    .string "It might be worth it to take a look in\n"
+    .string "the houses around town, too.\p"
     .string "Anyways, I'll be awaiting your report.\p"
     .string "{FONT FONT_SMALL_NARROW}click{FONT FONT_NORMAL}\p"
     .string "...\p"
@@ -191,6 +193,8 @@ Text_FallGrove_GeologistExplainMtEmberfall:
 Text_FallGrove_GeologistNotExplainingMtEmberfall:
     .string "Yeah, I'll need you to check on what's\n"
     .string "going on there.\p"
+    .string "It might be worth it to take a look in\n"
+    .string "the houses around town, too.\p"
     .string "Let me know if anything's up.\p"
     .string "I'll be awaiting your report.\p"
     .string "{FONT FONT_SMALL}click{FONT FONT_NORMAL}\p"

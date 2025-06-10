@@ -46,16 +46,16 @@ Text_ResearchersHouse_LittleBoy:
 
 Text_ResearchersHouse_OldWoman:
 	.string "Hello there youngin!\p"
-	.string "Are you interested in hearing me story?$"
+	.string "Are you interested in hearing m' story?$"
 
 Text_ResearchersHouse_OldWomanSaidNo:
-	.string "Glosh diggity drabbity darn it...$"
+	.string "Gosh diggity drabbity darn it...$"
 
 Text_ResearchersHouse_OldWomanSaidYes:
-	.string "Golly gee wilikers!\p"
-	.string "I promiseth tis worth thy time!\p"
+	.string "Finally! 'un who'll listen!\p"
+	.string "I promise tis worth your time!\p"
 	.string "Legends speak of a legendary dragon\n"
-	.string "Pokémon calle' Draconarix.\p"
+	.string "Pok'mon calle' Draconarix.\p"
 	.string "They says Draconarix was born in the\n"
 	.string "heart of Mt. Emb'fall, and it is said ta\l"
 	.string "possess more power tha' any other\l"

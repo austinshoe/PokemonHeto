@@ -17,7 +17,7 @@
     {
       "graphics_id": "OBJ_EVENT_GFX_MOM",
       "x": 7,
-      "y": 5,
+      "y": 7,
       "elevation": 0,
       "movement_type": "MOVEMENT_TYPE_FACE_LEFT",
       "movement_range_x": 0,
@@ -31,21 +31,21 @@
   "warp_events": [
     {
       "x": 10,
-      "y": 2,
+      "y": 3,
       "elevation": 0,
       "dest_map": "MAP_PLAYER_ROOM",
       "dest_warp_id": "0"
     },
     {
       "x": 9,
-      "y": 10,
+      "y": 9,
       "elevation": 0,
       "dest_map": "MAP_PEARL_TOWN",
       "dest_warp_id": "1"
     },
     {
       "x": 10,
-      "y": 10,
+      "y": 9,
       "elevation": 0,
       "dest_map": "MAP_PEARL_TOWN",
       "dest_warp_id": "1"

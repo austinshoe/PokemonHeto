@@ -65,8 +65,8 @@
       "x": 24,
       "y": 6,
       "elevation": 0,
-      "dest_map": "MAP_HALLOW_SPARK_CITY",
-      "dest_warp_id": "3"
+      "dest_map": "MAP_HETONIAN_DESERT_ENTRANCE",
+      "dest_warp_id": "4"
     }
   ],
   "coord_events": [

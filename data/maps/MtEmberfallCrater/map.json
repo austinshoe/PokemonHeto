@@ -131,6 +131,24 @@
       "var": "VAR_SKY_PILLAR_STATE",
       "var_value": "2",
       "script": "MtEmberfallCrater_PreEnterTriggerBottom"
+    },
+    {
+      "type": "trigger",
+      "x": 25,
+      "y": 10,
+      "elevation": 0,
+      "var": "VAR_SKY_PILLAR_STATE",
+      "var_value": "3",
+      "script": "MtEmberfallCrater_TriggerCannotLeave"
+    },
+    {
+      "type": "trigger",
+      "x": 25,
+      "y": 11,
+      "elevation": 0,
+      "var": "VAR_SKY_PILLAR_STATE",
+      "var_value": "3",
+      "script": "MtEmberfallCrater_TriggerCannotLeave"
     }
   ],
   "bg_events": [

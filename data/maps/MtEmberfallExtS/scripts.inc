@@ -33,7 +33,7 @@ MtEmberfallExtS_TriggersUnusedForNow:
 	getplayerxy VAR_TEMP_0, VAR_TEMP_1
 	setobjectxyperm 2, VAR_TEMP_0, VAR_TEMP_1
 	addobject 2
-	delay 16
+	delay 64
 	hideobjectat OBJ_EVENT_ID_PLAYER, 0
 	applymovement OBJ_EVENT_ID_PLAYER, MtEmberfallExtS_PanCamUp
 	waitmovement OBJ_EVENT_ID_PLAYER

@@ -64,7 +64,8 @@ HetonianPowerPlant_Rival_Player_SplitUp:
     delay 16
     applymovement 1, HetonianPowerPlant_RivalLeave2
     waitmovement 0
-    setflag FLAG_TEMP_1
+    setobjectxyperm 1, 30, 3
+    setobjectxy 1, 30, 3
     setvar VAR_NEW_MAUVILLE_STATE, 2
     releaseall
     end

@@ -151,22 +151,22 @@
       "x": 19,
       "y": 40,
       "elevation": 0,
-      "dest_map": "MAP_HETONIAN_DESERT",
-      "dest_warp_id": "0"
+      "dest_map": "MAP_HETONIAN_DESERT_ENTRANCE",
+      "dest_warp_id": "2"
     },
     {
       "x": 20,
       "y": 40,
       "elevation": 0,
-      "dest_map": "MAP_HETONIAN_DESERT",
+      "dest_map": "MAP_HETONIAN_DESERT_ENTRANCE",
       "dest_warp_id": "0"
     },
     {
       "x": 21,
       "y": 40,
       "elevation": 0,
-      "dest_map": "MAP_HETONIAN_DESERT",
-      "dest_warp_id": "0"
+      "dest_map": "MAP_HETONIAN_DESERT_ENTRANCE",
+      "dest_warp_id": "1"
     },
     {
       "x": 25,

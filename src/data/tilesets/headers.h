@@ -1166,3 +1166,14 @@ const struct Tileset gTileset_HallowSpark_Gears =
     .metatileAttributes = gMetatileAttributes_HallowSpark_Gears,
     .callback = InitTilesetAnim_HallowSpark_Gears,
 };
+
+const struct Tileset gTileset_NewIndoors =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_NewIndoors,
+    .palettes = gTilesetPalettes_NewIndoors,
+    .metatiles = gMetatiles_NewIndoors,
+    .metatileAttributes = gMetatileAttributes_NewIndoors,
+    .callback = NULL,
+};

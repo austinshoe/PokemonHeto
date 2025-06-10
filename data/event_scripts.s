@@ -1372,3 +1372,5 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/Kushinada_Gym2/scripts.inc"
 
 	.include "data/maps/Kushinada_Gym_Buffer/scripts.inc"
+
+	.include "data/maps/HetonianDesertEntrance/scripts.inc"

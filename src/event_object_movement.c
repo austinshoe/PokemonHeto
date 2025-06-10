@@ -4790,6 +4790,21 @@ static u8 GetVanillaCollision(struct ObjectEvent *objectEvent, s16 x, s16 y, u8 
     return COLLISION_NONE;
 }
 
+u8 GetVanillaCollisionOmniJump(s16 x, s16 y)
+{
+
+    #if OW_FLAG_NO_COLLISION != 0
+        if (FlagGet(OW_FLAG_NO_COLLISION))
+            return COLLISION_NONE;
+    #endif
+    if (MapGridGetCollisionAt(x, y) || GetMapBorderIdAt(x, y) == CONNECTION_INVALID)
+        return COLLISION_IMPASSABLE;
+    else if (DoesObjectCollideWithObjectAt(objectEvent, x, y))
+        return COLLISION_OBJECT_EVENT;
+    
+    return COLLISION_NONE;
+}
+
 static bool8 ObjectEventOnLeftSideStair(struct ObjectEvent *objectEvent, s16 x, s16 y, u8 direction)
 {
     switch (direction)
@@ -8009,8 +8024,35 @@ u8 GetLedgeJumpDirection(s16 x, s16 y, u8 direction)
     index--;
     behavior = MapGridGetMetatileBehaviorAt(x, y);
     //test omnidirectional jump
-    if (ledgeBehaviorFuncs[index](behavior) == TRUE || MetatileBehavior_IsOmnidirectionalJump(behavior))
+    if (ledgeBehaviorFuncs[index](behavior) == TRUE)
         return index + 1;
+
+    if (MetatileBehavior_IsOmnidirectionalJump(behavior)) {
+        switch (direction) {
+            case DIR_SOUTH:
+                if (GetVanillaCollisionOmniJump(x, y + 1) = COLLISION_NONE) {
+                    return DIR_SOUTH;
+                }
+                break;
+            case DIR_NORTH:
+                if (GetVanillaCollisionOmniJump(x, y - 1) = COLLISION_NONE) {
+                    return DIR_NORTH;
+                }
+                break;
+            case DIR_WEST:
+                if (GetVanillaCollisionOmniJump(x - 1, y) = COLLISION_NONE) {
+                    return DIR_WEST;
+                }
+                break;
+            case DIR_EAST:
+                if (GetVanillaCollisionOmniJump(x + 1, y) = COLLISION_NONE) {
+                    return DIR_EAST;
+                }
+                break;
+            default:
+                return DIR_NONE; // invalid direction
+        }
+    }
 
     return DIR_NONE;
 }

@@ -601,7 +601,8 @@ HetonianPowerPlant2F_PlayerHereToo:
 
 HetonianPowerPlant2F_AlexandrYouThere:
     .string "Alexandr: tch...\p"
-    .string "You there! Scientists!$"
+    .string "You there! Scientists!\n"
+    .string "Go stop those kids.$"
 
 HetonianPowerPlant2F_ScientistsProtest:
     .string "Scientist 1: U-Us?\p"

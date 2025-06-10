@@ -300,3 +300,6 @@ const u16 gMetatileAttributes_HallowSpark_Gym[] = INCBIN_U16("data/tilesets/prim
 
 const u16 gMetatiles_HallowSpark_Gears[] = INCBIN_U16("data/tilesets/secondary/hallow_spark_gears/metatiles.bin");
 const u16 gMetatileAttributes_HallowSpark_Gears[] = INCBIN_U16("data/tilesets/secondary/hallow_spark_gears/metatile_attributes.bin");
+
+const u16 gMetatiles_NewIndoors[] = INCBIN_U16("data/tilesets/secondary/new_indoors/metatiles.bin");
+const u16 gMetatileAttributes_NewIndoors[] = INCBIN_U16("data/tilesets/secondary/new_indoors/metatile_attributes.bin");
