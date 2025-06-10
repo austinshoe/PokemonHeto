@@ -6,6 +6,7 @@ HallowSparkCity_MapScripts::
 
 HallowSparkCity_OnTransition:
     setflag FLAG_TEMP_1
+    setflag FLAG_TEMP_2
     setvar VAR_UNUSED_0x4091, 0
     setflag FLAG_VISITED_FORTREE_CITY
     goto HallowSparkCity_SetUpObjxy
@@ -51,14 +52,12 @@ HallowSparkCity_SetUpLenaPos:
     end
 
 HallowSparkCity_SetUpRivalLenaPos:
-    clearflag FLAG_TEMP_1
-    addobject 2
-    setobjectgfx 2, OBJ_EVENT_GFX_BRENDAN_NORMAL
+    addobject 11
     addobject 1
     setobjectxyperm 1, 32, 11
-    setobjectxyperm 2, 32, 12
+    setobjectxyperm 11, 32, 12
     setobjectmovementtype 1, MOVEMENT_TYPE_FACE_DOWN
-    setobjectmovementtype 2, MOVEMENT_TYPE_FACE_UP
+    setobjectmovementtype 11, MOVEMENT_TYPE_FACE_UP
     end
 
 HallowSparkCity_SetUpLenaHealerPos:
@@ -78,14 +77,12 @@ HallowSparkCity_LenaHealer::
 	end
 
 HallowSparkCity_SetUpLenaChampRivalPos::
-    clearflag FLAG_TEMP_1
-    addobject 2
-    setobjectgfx 2, OBJ_EVENT_GFX_BRENDAN_NORMAL
+    addobject 11
     addobject 1
     setobjectxyperm 1, 34, 10
     setobjectmovementtype 1, MOVEMENT_TYPE_FACE_DOWN
-    setobjectxyperm 2, 36, 10
-    setobjectmovementtype 2, MOVEMENT_TYPE_FACE_DOWN
+    setobjectxyperm 11, 36, 10
+    setobjectmovementtype 11, MOVEMENT_TYPE_FACE_DOWN
     setobjectxyperm 9, 27, 11
     setobjectmovementtype 9, MOVEMENT_TYPE_FACE_RIGHT
     addobject 9
@@ -117,21 +114,14 @@ HallowSparkCity_LenaCutscene1:
     delay 16
     applymovement 1, Common_Movement_FaceDown
     waitmovement 1
-    getplayerxy VAR_TEMP_0, VAR_TEMP_1
-    setobjectxyperm 2, VAR_TEMP_0, VAR_TEMP_1
-    goto HallowSparkCityUpdatePlayerGFX
-
-HallowSparkCityUpdatePlayerGFX:
     checkplayergender
     compare VAR_RESULT, FEMALE
-    goto_if_eq HallowSparkCityUpdatePlayerGFXGirl
-    goto HallowSparkCity_LenaCutscene15
-    
-HallowSparkCityUpdatePlayerGFXGirl:
-    setobjectgfx 2, OBJ_EVENT_GFX_MAY_NORMAL
-    goto HallowSparkCity_LenaCutscene15
+    goto_if_eq HallowSparkCity_LenaCutscene15Female
+    goto HallowSparkCity_LenaCutscene15 
 
 HallowSparkCity_LenaCutscene15:
+    getplayerxy VAR_TEMP_0, VAR_TEMP_1
+    setobjectxyperm 2, VAR_TEMP_0, VAR_TEMP_1
     addobject 2
     clearflag FLAG_TEMP_1
     setobjectxyperm 2, VAR_TEMP_0, VAR_TEMP_1
@@ -177,6 +167,58 @@ HallowSparkCity_LenaCutscene1pt3:
     setflag FLAG_TEMP_1
     removeobject 2
     setobjectxyperm 2, 0, 0
+    setvar VAR_FORTREE_CITY_STATE, 1
+    releaseall
+    end
+
+HallowSparkCity_LenaCutscene15Female:
+    getplayerxy VAR_TEMP_0, VAR_TEMP_1
+    setobjectxyperm 10, VAR_TEMP_0, VAR_TEMP_1
+    addobject 10
+    clearflag FLAG_TEMP_2
+    setobjectxyperm 10, VAR_TEMP_0, VAR_TEMP_1
+    hideobjectat OBJ_EVENT_ID_PLAYER, 0
+    compare VAR_TEMP_0, 10
+    goto_if_eq HallowSparkCity_LenaCutscene1OtherMvmtFemale
+    applymovement OBJ_EVENT_ID_PLAYER, HallowsparkCity_PanCameraUp1
+    waitmovement 0
+    call HallowSparkCity_LenaCutscene1pt2Female
+    waitmovement 1
+    applymovement 1, HallowSpark_LenaLeaveForNow2
+    applymovement OBJ_EVENT_ID_PLAYER, HallowsparkCity_PanCameraDown1
+    waitmovement 0
+    waitmovement 1
+    goto HallowSparkCity_LenaCutscene1pt3Female
+
+HallowSparkCity_LenaCutscene1OtherMvmtFemale:
+    applymovement OBJ_EVENT_ID_PLAYER, HallowsparkCity_PanCameraUp2
+    waitmovement 0
+    call HallowSparkCity_LenaCutscenHallowSparkCity_LenaCutscene1pt2Femalee1pt2
+    waitmovement 1
+    applymovement 1, HallowSpark_LenaLeaveForNow2
+    applymovement OBJ_EVENT_ID_PLAYER, HallowsparkCity_PanCameraDown2
+    waitmovement 0
+    waitmovement 1
+    goto HallowSparkCity_LenaCutscene1pt3Female
+
+HallowSparkCity_LenaCutscene1pt2Female:
+    msgbox HallowSpark_LenaSawAngrboda, MSGBOX_DEFAULT
+    applymovement 1, HallowSpark_LookAround
+    waitmovement 1
+    msgbox HallowSpark_LenaBetterWatchOut, MSGBOX_DEFAULT
+    applymovement 1, HallowSpark_LenaStepUp
+    applymovement OBJ_EVENT_ID_PLAYER, HallowSpark_LenaStepUp
+    waitmovement 1
+    waitmovement OBJ_EVENT_ID_PLAYER
+    msgbox HallowSpark_LenaLieLow, MSGBOX_DEFAULT
+    applymovement 1, HallowSpark_LenaLeaveForNow
+    return
+
+HallowSparkCity_LenaCutscene1pt3Female:
+    showobjectat OBJ_EVENT_ID_PLAYER, 0
+    setflag FLAG_TEMP_2
+    removeobject 10
+    setobjectxyperm 10, 0, 0
     setvar VAR_FORTREE_CITY_STATE, 1
     releaseall
     end
@@ -255,27 +297,26 @@ HallowSparkCity_AngrbodaCutscene2:
     removeobject 4
     waitse
     fadescreen FADE_TO_BLACK
-    addobject 2
-    showobjectat 2, MAP_HALLOW_SPARK_CITY
-    setobjectxyperm 2, 32, 17
-    setobjectxy 2, 32, 17
-    clearflag FLAG_TEMP_1
+    addobject 11
+    showobjectat 11, MAP_HALLOW_SPARK_CITY
+    setobjectxyperm 11, 32, 17
+    setobjectxy 11, 32, 17
+    clearflag FLAG_TEMP_2
     addobject 1
-    setobjectgfx 2, OBJ_EVENT_GFX_BRENDAN_NORMAL
     setobjectxy 1, 27, 11
     showobjectat 1, MAP_HALLOW_SPARK_CITY
     fadescreen FADE_FROM_BLACK
     addobject 1
-    addobject 2
+    addobject 11
     delay 16
-    applymovement 2, HallowSparkCity_LenaPullUp
+    applymovement 11, HallowSparkCity_LenaPullUp
     applymovement 1, HallowSparkCity_RivalPullUp
     waitmovement 1
-    applymovement 2, Common_Movement_FaceUp
+    applymovement 11, Common_Movement_FaceUp
     applymovement 1, Common_Movement_FaceDown
     waitmovement 1
     applymovement 1, Common_Movement_ExclamationMark
-    applymovement 2, Common_Movement_ExclamationMark
+    applymovement 11, Common_Movement_ExclamationMark
     waitbuttonpress
     setvar VAR_FORTREE_CITY_STATE, 3
     warpsilent MAP_HALLOW_SPARK_CITY, VAR_UNUSED_0x40FE, VAR_UNUSED_0x40FF
@@ -284,7 +325,7 @@ HallowSparkCity_AngrbodaCutscene2:
 HallowSparkCity_PostAngrbodaCutscene::
     lockall
     delay 32
-    applymovement 2, HallowSparkCity_WalkDownFaceLeft
+    applymovement 11, HallowSparkCity_WalkDownFaceLeft
     applymovement OBJ_EVENT_ID_PLAYER, HallowSparkCity_WalkDownFaceLeft
     waitmovement 0
     delay 32
@@ -294,10 +335,10 @@ HallowSparkCity_PostAngrbodaCutscene::
     message HallowSparkCity_LenaThereYallAre
     waitmessage
     waitmovement 1
-    applymovement 2, Common_Movement_FaceLeft
+    applymovement 11, Common_Movement_FaceLeft
     applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft
     waitmovement 0
-    applymovement 2, Common_Movement_ExclamationMark
+    applymovement 11, Common_Movement_ExclamationMark
     applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_ExclamationMark
     message HallowSparkCity_LenaWorried
     waitmessage
@@ -349,16 +390,16 @@ HallowSparkCity_PostAngrbodaCutscene::
     setobjectxyperm 1, 35, 0
     waitbuttonpress
     applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceDown
-    applymovement 2, Common_Movement_FaceUp
+    applymovement 11, Common_Movement_FaceUp
     waitmovement 0
     message HallowSpark_LiamOutro
     waitmessage
     waitbuttonpress
     closemessage
-    applymovement 2, HetonianPowerPlant2F_LiamLeave
-    waitmovement 2
-    setflag FLAG_TEMP_1
-    removeobject 2
+    applymovement 11, HetonianPowerPlant2F_LiamLeave
+    waitmovement 11
+    setflag FLAG_TEMP_2
+    removeobject 11
     setrespawn HEAL_LOCATION_HALLOW_SPARK_CITY
     setvar VAR_FORTREE_CITY_STATE, 6
     clearflag FLAG_HIDE_LITTLEROOT_TOWN_RIVAL
@@ -371,13 +412,13 @@ HallowSpark_LenaRivalEventTriggers::
     getplayerxy VAR_UNUSED_0x40FE, VAR_UNUSED_0x40FF
     delay 16
     applymovement 1, Common_Movement_ExclamationMark
-    applymovement 2, Common_Movement_ExclamationMark
+    applymovement 11, Common_Movement_ExclamationMark
     waitmovement 1
     delay 32
     message HallowSpark_LiamSurprised
     waitmessage
     waitbuttonpress
-    waitmovement 2
+    waitmovement 11
     closemessage
     applymovement 1, Common_Movement_QuestionMark
     delay 32
@@ -386,7 +427,7 @@ HallowSpark_LenaRivalEventTriggers::
     waitmovement 1
     message HallowSpark_LiamWhoRU
     waitmessage
-    applymovement 2, Common_Movement_ExclamationMark
+    applymovement 11, Common_Movement_ExclamationMark
     delay 32
     message HallowSpark_LiamAngrbodaAccusations
     waitmessage
@@ -400,14 +441,14 @@ HallowSpark_LenaRivalEventTriggers::
     closemessage
     call HallowSparkCity_TurnRival 
     delay 8
-    applymovement 2, Common_Movement_ExclamationMark
+    applymovement 11, Common_Movement_ExclamationMark
     delay 32
     message HallowSpark_RivalHollaAtYou
     waitmessage
-    waitmovement 2
+    waitmovement 11
     closemessage
     call HallowSpark_PlayerPullUp
-    applymovement 2, Common_Movement_FaceUp
+    applymovement 11, Common_Movement_FaceUp
     applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp
     waitmovement 0
     delay 16
@@ -418,11 +459,11 @@ HallowSpark_LenaRivalEventTriggers::
     waitmovement 1
     message HallowSpark_RivalWhoIsLena
     waitmessage
-    applymovement 2, Common_Movement_ExclamationMark
+    applymovement 11, Common_Movement_ExclamationMark
     delay 32
     message HallowSpark_OverstepBounds
     waitmessage 
-    waitmovement 2
+    waitmovement 11
     message HallowSpark_AngrbodaUniform
     waitmessage
     applymovement 1, HallowSpark_LenaAboutToLeave
@@ -436,11 +477,11 @@ HallowSpark_LenaRivalEventTriggers::
     waitmessage
     closemessage
     delay 32
-    applymovement 2, HallowSpark_RivalGetBehindLena
+    applymovement 11, HallowSpark_RivalGetBehindLena
     applymovement OBJ_EVENT_ID_PLAYER, HallowSpark_RivalGetBehindLena
     waitmovement 0
     applymovement 1, HallowSpark_LenaGoToEntr
-    applymovement 2, HallowSpark_RivalFollowLena
+    applymovement 11, HallowSpark_RivalFollowLena
     applymovement OBJ_EVENT_ID_PLAYER, HallowSpark_RivalFollowLena
     waitmovement 0
     delay 32
@@ -449,7 +490,7 @@ HallowSpark_LenaRivalEventTriggers::
     closemessage
     applymovement 1, HallowSpark_LenaGetInPos
     waitmovement 0
-    applymovement 2, Common_Movement_FaceLeft
+    applymovement 11, Common_Movement_FaceLeft
     applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight
     waitmovement 0
     message HallowSpark_LiamWeBetterGetGoing
@@ -457,11 +498,11 @@ HallowSpark_LenaRivalEventTriggers::
     waitbuttonpress
     setrespawn HEAL_LOCATION_HALLOWSPARK_LENA
     closemessage
-    applymovement 2, HallowSpark_RivalEnter
+    applymovement 11, HallowSpark_RivalEnter
     waitmovement 0
     playse SE_EXIT
-    setflag FLAG_TEMP_1
-    removeobject 2
+    setflag FLAG_TEMP_2
+    removeobject 11
     applymovement OBJ_EVENT_ID_PLAYER, HallowSpark_PlayerEnter
     setvar VAR_NEW_MAUVILLE_STATE, 1
     setvar VAR_FORTREE_CITY_STATE, 4
@@ -481,15 +522,15 @@ HallowSparkCity_TurnRival:
     return
 
 HallowSpark_RivalDown:
-    turnobject 2, DIR_SOUTH
+    turnobject 11, DIR_SOUTH
     return
 
 HallowSpark_RivalLeft:
-    turnobject 2, DIR_WEST
+    turnobject 11, DIR_WEST
     return
 
 HallowSpark_RivalUp:
-    turnobject 2, DIR_NORTH
+    turnobject 11, DIR_NORTH
     return
 
 HallowSpark_PlayerPullUp:
@@ -505,8 +546,8 @@ HallowSpark_PlayerAdjustX:
     case 34, HallowSpark_PlayerLeft3
     case 35, HallowSpark_PlayerLeft4
     case 30, HallowSpark_PlayerRight1
-    applymovement 2, Common_Movement_FaceUp
-    waitmovement 2
+    applymovement 11, Common_Movement_FaceUp
+    waitmovement 11
     return
 
 HallowSpark_PlayerAdjustY:

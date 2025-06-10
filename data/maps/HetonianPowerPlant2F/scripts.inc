@@ -47,6 +47,7 @@ HetonianPowerPlant2F_UpdatePlayerGFX:
     return
     
 HetonianPowerPlant2F_PlayerGFXGirl:
+    addobject 2
     setobjectgfx 2, OBJ_EVENT_GFX_MAY_NORMAL
     return
 
