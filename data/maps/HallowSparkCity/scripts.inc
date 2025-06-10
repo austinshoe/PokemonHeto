@@ -193,7 +193,7 @@ HallowSparkCity_LenaCutscene15Female:
 HallowSparkCity_LenaCutscene1OtherMvmtFemale:
     applymovement OBJ_EVENT_ID_PLAYER, HallowsparkCity_PanCameraUp2
     waitmovement 0
-    call HallowSparkCity_LenaCutscenHallowSparkCity_LenaCutscene1pt2Femalee1pt2
+    call HallowSparkCity_LenaCutscene1pt2Female
     waitmovement 1
     applymovement 1, HallowSpark_LenaLeaveForNow2
     applymovement OBJ_EVENT_ID_PLAYER, HallowsparkCity_PanCameraDown2
