@@ -117,6 +117,7 @@ MtEmberfallCrater_TriggerUnusedForNow::
 	waitmessage
 	closemessage
 	applymovement 4, MtEmberfallCrater_PanCamRightUp
+	waitmovement 4
 	showobjectat OBJ_EVENT_ID_PLAYER, 0
 	setobjectxyperm 4, 0, 0
 	removeobject 4
@@ -137,6 +138,7 @@ MtEmberfallCrater_TriggerUnusedForNow::
 	removeobject 1
 	removeobject 2
 	removeobject 3
+	closemessage
 	fadescreen FADE_FROM_BLACK
 	releaseall
 	end
