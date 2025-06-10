@@ -27,10 +27,10 @@ HetonianPowerPlant2F_OnLoad:
 
 HetonianPowerPlant2F_AngrbodaTrigger1::
     lockall
-    setobjectxyperm 4, 5, 14
     call HetonianPowerPlant2F_UpdatePlayerGFX
+    setobjectxyperm VAR_TEMP_1, 5, 14
     clearflag FLAG_TEMP_2
-    addobject 4
+    addobject VAR_TEMP_1
     hideobjectat OBJ_EVENT_ID_PLAYER, 0
     applymovement OBJ_EVENT_ID_PLAYER HetonianPowerPlant2F_AdjustPlayerX
     applymovement 5, HetonianPowerPlant2F_AngrboaWalkUp
@@ -41,22 +41,22 @@ HetonianPowerPlant2F_AngrbodaTrigger1::
     end
 
 HetonianPowerPlant2F_UpdatePlayerGFX:
+    setvar VAR_TEMP_1, 4
     checkplayergender
     compare VAR_RESULT, FEMALE
     call_if_eq HetonianPowerPlant2F_PlayerGFXGirl
     return
     
 HetonianPowerPlant2F_PlayerGFXGirl:
-    addobject 2
-    setobjectgfx 2, OBJ_EVENT_GFX_MAY_NORMAL
+    setvar VAR_TEMP_1, 11
     return
 
 HetonianPowerPlant2F_AngrbodaTrigger2::
     lockall
-    setobjectxyperm 4, 5, 15
+    setobjectxyperm VAR_TEMP_1, 5, 15
     call HetonianPowerPlant2F_UpdatePlayerGFX
     clearflag FLAG_TEMP_2
-    addobject 4
+    addobject VAR_TEMP_1
     hideobjectat OBJ_EVENT_ID_PLAYER, 0
     applymovement OBJ_EVENT_ID_PLAYER HetonianPowerPlant2F_AdjustPlayerX
     waitmovement 0
@@ -65,16 +65,16 @@ HetonianPowerPlant2F_AngrbodaTrigger2::
     waitmovement OBJ_EVENT_ID_PLAYER
     waitmovement 5
     call HetonianPowerPlant2F_AngrbodaTriggerEnd
-    applymovement 4, HetonianPowerPlant2F_AdjustPlayerY2
+    applymovement VAR_TEMP_1, HetonianPowerPlant2F_AdjustPlayerY2
     goto HetonianPowerPlant2F_AngrbodaTriggerFinal
     end
 
 HetonianPowerPlant2F_AngrbodaTrigger3::
     lockall
-    setobjectxyperm 4, 5, 16
+    setobjectxyperm VAR_TEMP_1, 5, 16
     call HetonianPowerPlant2F_UpdatePlayerGFX
     clearflag FLAG_TEMP_2
-    addobject 4
+    addobject VAR_TEMP_1
     hideobjectat OBJ_EVENT_ID_PLAYER, 0
     applymovement OBJ_EVENT_ID_PLAYER HetonianPowerPlant2F_AdjustPlayerX
     waitmovement 0
@@ -83,16 +83,16 @@ HetonianPowerPlant2F_AngrbodaTrigger3::
     waitmovement OBJ_EVENT_ID_PLAYER
     waitmovement 5
     call HetonianPowerPlant2F_AngrbodaTriggerEnd
-    applymovement 4, HetonianPowerPlant2F_AdjustPlayerY3
+    applymovement VAR_TEMP_1, HetonianPowerPlant2F_AdjustPlayerY3
     goto HetonianPowerPlant2F_AngrbodaTriggerFinal
     end
 
 HetonianPowerPlant2F_AngrbodaTrigger4::
     lockall
-    setobjectxyperm 4, 5, 17
+    setobjectxyperm VAR_TEMP_1, 5, 17
     call HetonianPowerPlant2F_UpdatePlayerGFX
     clearflag FLAG_TEMP_2
-    addobject 4
+    addobject VAR_TEMP_1
     hideobjectat OBJ_EVENT_ID_PLAYER, 0
     applymovement OBJ_EVENT_ID_PLAYER HetonianPowerPlant2F_AdjustPlayerX
     waitmovement 0
@@ -101,8 +101,8 @@ HetonianPowerPlant2F_AngrbodaTrigger4::
     waitmovement OBJ_EVENT_ID_PLAYER
     waitmovement 5
     call HetonianPowerPlant2F_AngrbodaTriggerEnd
-    applymovement 4,HetonianPowerPlant2F_AdjustPlayerY4
-    waitmovement 4
+    applymovement VAR_TEMP_1, HetonianPowerPlant2F_AdjustPlayerY4
+    waitmovement VAR_TEMP_1
     goto HetonianPowerPlant2F_AngrbodaTriggerFinal
     end
     
@@ -148,17 +148,17 @@ HetonianPowerPlant2F_AngrbodaTriggerEnd:
     return
 
 HetonianPowerPlant2F_AngrbodaTriggerFinal:
-    setobjectxyperm 4, 5, 14 
-    addobject 4
-    applymovement 4, HetonianPowerPlant2F_AdjustPlayerX
-    waitmovement 4
-    applymovement 4, HetonianPowerPlant2F_PlayerPullUp
-    waitmovement 4
+    setobjectxyperm VAR_TEMP_1, 5, 14 
+    addobject VAR_TEMP_1
+    applymovement VAR_TEMP_1, HetonianPowerPlant2F_AdjustPlayerX
+    waitmovement VAR_TEMP_1
+    applymovement VAR_TEMP_1, HetonianPowerPlant2F_PlayerPullUp
+    waitmovement VAR_TEMP_1
     applymovement OBJ_EVENT_ID_PLAYER, HetonianPowerPlant2F_ReFocusCam
     waitmovement OBJ_EVENT_ID_PLAYER
     showobjectat OBJ_EVENT_ID_PLAYER, 0
     setflag FLAG_TEMP_2
-    removeobject 4
+    removeobject VAR_TEMP_1
     applymovement 5, Common_Movement_FaceDown
     waitmovement 5
     applymovement 5, Common_Movement_ExclamationMark
