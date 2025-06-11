@@ -57,7 +57,7 @@ MtEmberfallDraconarixLair_UpdatePlayerGFXBoy:
 MtEmberfallDraconarixLair_TriggerPartTwo:
 	addobject VAR_TEMP_4
 	setobjectxyperm VAR_TEMP_4, 56, 16
-	setobjectmovementtype VAR_TEMP_4, MOVEMENT_TYPE_FACE_Right
+	setobjectmovementtype VAR_TEMP_4, MOVEMENT_TYPE_FACE_RIGHT
 	addobject VAR_TEMP_4
 	delay 32
 	hideobjectat OBJ_EVENT_ID_PLAYER, 0
@@ -199,15 +199,21 @@ MtEmberfallDraconarixLair_TriggerPartThree:
 	waitmessage
 	closemessage
 	delay 32
-	setobjectgfx 1, OBJ_EVENT_GFX_ITEM_BALL
+	addobject 25
+	setobjectxyperm 25, 61, 15
+	addobject 25
+	removeobject 1
 	delay 64
-	applymovement 1, MtEmberfallDraconarixLair_PokemonJump
-	waitmovement 1
+	applymovement 25, MtEmberfallDraconarixLair_PokemonJump
+	waitmovement 25
 	delay 16
-	applymovement 1, MtEmberfallDraconarixLair_PokemonJump
-	waitmovement 1
+	applymovement 25, MtEmberfallDraconarixLair_PokemonJump
+	waitmovement 25
 	delay 16
-	setobjectgfx 1, OBJ_EVENT_GFX_GROUDON_FRONT
+	removeobject 25
+	addobject 1
+	setobjectxyperm 1, 61, 15
+	addobject 1
 	delay 16
 	setvar VAR_0x8004, 1  @ vertical pan
 	setvar VAR_0x8005, 2  @ horizontal pan
@@ -230,17 +236,20 @@ MtEmberfallDraconarixLair_TriggerPartThree:
 	waitmovement 6
 	closemessage
 	delay 32
-	setobjectgfx 1, OBJ_EVENT_GFX_ITEM_BALL
+	addobject 25
+	setobjectxyperm 25, 61, 15
+	addobject 25
+	removeobject 1
 	delay 64
-	applymovement 1, MtEmberfallDraconarixLair_PokemonJump
-	waitmovement 1
+	applymovement 25, MtEmberfallDraconarixLair_PokemonJump
+	waitmovement 25
 	delay 16
-	applymovement 1, MtEmberfallDraconarixLair_PokemonJump
-	waitmovement 1
+	applymovement 25, MtEmberfallDraconarixLair_PokemonJump
+	waitmovement 25
 	delay 16
 	playse SE_PIN
 	delay 32
-	removeobject 1
+	removeobject 25
 	removeobject 14
 	removeobject 15
 	removeobject 16
@@ -262,10 +271,14 @@ MtEmberfallDraconarixLair_TriggerPartThree:
 	waitmessage
 	waitmovement 0
 	closemessage
-	addobject 1
-	setobjectgfx 1, OBJ_EVENT_GFX_ITEM_BALL
+	addobject 25
 	delay 32
-	setobjectgfx 1, OBJ_EVENT_GFX_GROUDON_FRONT
+	rmoveobject 25
+	setobjectxyperm 25, 61, 15
+	addobject 25
+	addobject 1
+	setobjectxyperm 1, 61, 15
+	addobject 1
 	delay 32
 	setvar VAR_0x8004, 3  @ vertical pan
 	setvar VAR_0x8005, 3  @ horizontal pan
@@ -281,6 +294,7 @@ MtEmberfallDraconarixLair_TriggerPartThree:
 	waitstate
 	fadescreen FADE_TO_BLACK
 	call MtEmberfallDraconarixLair_SetFloorDamaged
+	setobjectxyperm 25, 79, 0
 	special DrawWholeMapView
 	delay 16
 	fadescreen FADE_FROM_BLACK
