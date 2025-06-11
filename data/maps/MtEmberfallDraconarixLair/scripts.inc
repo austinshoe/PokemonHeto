@@ -55,7 +55,9 @@ MtEmberfallDraconarixLair_UpdatePlayerGFXBoy:
 	goto MtEmberfallDraconarixLair_TriggerPartTwo
 
 MtEmberfallDraconarixLair_TriggerPartTwo:
+	addobject VAR_TEMP_4
 	setobjectxyperm VAR_TEMP_4, 56, 16
+	setobjectmovementtype VAR_TEMP_4, MOVEMENT_TYPE_FACE_Right
 	addobject VAR_TEMP_4
 	delay 32
 	hideobjectat OBJ_EVENT_ID_PLAYER, 0
@@ -82,6 +84,7 @@ MtEmberfallDraconarixLair_TriggerPartTwo:
 	message MtEmberfallDraconarixLair_JormungandrSeeIntruders
 	waitmessage
 	waitmovement 6
+	waitbuttonpress
 	applymovement 10, Common_Movement_ExclamationMark
 	playse SE_PIN
 	message MtEmberfallDraconarixLair_ShinSoItWasYou
@@ -130,12 +133,12 @@ MtEmberfallDraconarixLair_TriggerPartTwo:
 	waitmovement 10
 	waitmovement 11
 	waitmovement 12
-	waitmovement 13
+	waitmovement VAR_TEMP_4
 	applymovement OBJ_EVENT_ID_PLAYER, MtEmberfallDraconarixLair_PanCamBack
 	waitmovement OBJ_EVENT_ID_PLAYER
 	showobjectat OBJ_EVENT_ID_PLAYER, 0
-	setobjectxyperm 13, 79, 0
-	removeobject 13
+	setobjectxyperm VAR_TEMP_4, 79, 0
+	removeobject VAR_TEMP_4
 	delay 32
 	message MtEmberfallDraconarixLair_PlayerTakeDullahan
 	waitmessage
@@ -172,6 +175,8 @@ MtEmberfallDraconarixLair_UpdatePlayerGFXBoy2:
 	goto MtEmberfallDraconarixLair_TriggerPartThree
 	
 MtEmberfallDraconarixLair_TriggerPartThree:
+	applymovement VAR_TEMP_4, Common_Movement_FaceDown
+	waitmovement VAR_TEMP_4
 	message MtEmberfallDraconarixLair_DullahanPostDefeat
 	waitmessage
 	closemessage
@@ -180,7 +185,9 @@ MtEmberfallDraconarixLair_TriggerPartThree:
 	applymovement VAR_TEMP_4, Common_Movement_FaceRight
 	applymovement 9, Common_Movement_FaceRight
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight
-	waitmovement 0
+	waitmovement VAR_TEMP_4
+	waitmovement 9
+	waitmovement OBJ_EVENT_ID_PLAYER
 	setobjectxyperm VAR_TEMP_4, 56, 16
 	addobject VAR_TEMP_4
 	delay 32
@@ -274,6 +281,7 @@ MtEmberfallDraconarixLair_TriggerPartThree:
 	waitstate
 	fadescreen FADE_TO_BLACK
 	call MtEmberfallDraconarixLair_SetFloorDamaged
+	special DrawWholeMapView
 	delay 16
 	fadescreen FADE_FROM_BLACK
 	delay 16

@@ -105,6 +105,7 @@ MtEmberfallCrater_UpdatePlayerGFXBoy:
 	goto MtEmberfallCrater_TriggerUnusedForNow
 
 MtEmberfallCrater_TriggerUnusedForNow::
+	addobject VAR_TEMP_4
 	setobjectxyperm VAR_TEMP_4, 11, 41
 	addobject VAR_TEMP_4
 	delay 16
@@ -157,6 +158,7 @@ MtEmberfallCrater_UpdatePlayerGFXBoy1:
 	goto MtEmberfallCrater_TriggerUnusedForNow1
 
 MtEmberfallCrater_TriggerUnusedForNow1:
+	addobject VAR_TEMP_4
 	setobjectxyperm VAR_TEMP_4, 12, 41
 	addobject VAR_TEMP_4
 	hideobjectat OBJ_EVENT_ID_PLAYER, 0
@@ -166,6 +168,7 @@ MtEmberfallCrater_TriggerUnusedForNow1:
 	waitmessage
 	closemessage
 	applymovement VAR_TEMP_4, MtEmberfallCrater_PanCamUp
+	waitmovement VAR_TEMP_4
 	showobjectat OBJ_EVENT_ID_PLAYER, 0
 	setobjectxyperm VAR_TEMP_4, 0, 0
 	removeobject VAR_TEMP_4
@@ -186,6 +189,7 @@ MtEmberfallCrater_TriggerUnusedForNow1:
 	removeobject 1
 	removeobject 2
 	removeobject 3
+	closemessage
 	fadescreen FADE_FROM_BLACK
 	releaseall
 	end
