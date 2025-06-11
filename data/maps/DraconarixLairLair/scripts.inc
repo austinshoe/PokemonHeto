@@ -1,9 +1,14 @@
 DraconarixLairLair_MapScripts::
+	map_script MAP_SCRIPT_ON_TRANSITION, DraconarixLairLair_OnTransition
+	map_script MAP_SCRIPT_ON_LOAD, DraconarixLairLair_OnLoad
 	.byte 0
 
 DraconarixLairLair_OnTransition:
-	call_if_set FLAG_HIDE_MAGMA_HIDEOUT_GRUNTS, DraconarixLairLair_SetFloorDamaged
 	call_if_unset FLAG_HIDE_MAGMA_HIDEOUT_GRUNTS, DraconarixLairLair_SetFloorNormal
+	end
+
+DraconarixLairLair_OnLoad:
+	call_if_set FLAG_HIDE_MAGMA_HIDEOUT_GRUNTS, DraconarixLairLair_SetFloorDamaged
 	end
 
 DraconarixLairLair_SetFloorDamaged:
@@ -42,6 +47,8 @@ DraconarixLairLair_SetFloorDamaged:
 	return
 
 DraconarixLairLair_SetFloorNormal:
+	removeobject 18
+	removeobject 19
 	setflag FLAG_TEMP_1
 	setflag FLAG_TEMP_2
 	return
@@ -68,6 +75,8 @@ MtEmberfallDraconarixLair_TriggerTop::
 
 MtEmberfallDraconarixLair_TriggerBottom::
 	lockall
+	removeobject 18
+	removeobject 19
 	applymovement OBJ_EVENT_ID_PLAYER, MtEmberfallDraconarixLair_PlayerMoveDown
 	waitmovement OBJ_EVENT_ID_PLAYER
 	applymovement OBJ_EVENT_ID_PLAYER, MtEmberfallDraconarixLair_PlayerMoveUp
