@@ -343,7 +343,7 @@ MtEmberfallDraconarixLair_TriggerPartThree:
 	special ShakeCamera
 	waitstate
 	fadescreen FADE_TO_BLACK
-	call MtEmberfallDraconarixLair_SetFloorDamaged
+	call DraconarixLairLair_SetFloorDamaged
 	setobjectxyperm 17, 38, 0
 	special DrawWholeMapView
 	delay 16
