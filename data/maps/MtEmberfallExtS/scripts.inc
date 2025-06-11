@@ -20,19 +20,17 @@ MtEmberfallExtS_Triggers::
 	goto MtEmberfallExtS_UpdatePlayerGFXBoy
     
 MtEmberfallExtS_UpdatePlayerGFXGirl:
-	addobject 2
-    setobjectgfx 2, OBJ_EVENT_GFX_MAY_NORMAL
+	setvar VAR_TEMP_4, 3
     goto MtEmberfallExtS_TriggersUnusedForNow
 
 MtEmberfallExtS_UpdatePlayerGFXBoy:
-	addobject 2
-	setobjectgfx 2, OBJ_EVENT_GFX_BRENDAN_NORMAL
+	setvar VAR_TEMP_4, 2
 	goto MtEmberfallExtS_TriggersUnusedForNow
 
 MtEmberfallExtS_TriggersUnusedForNow:
 	getplayerxy VAR_TEMP_0, VAR_TEMP_1
-	setobjectxyperm 2, VAR_TEMP_0, VAR_TEMP_1
-	addobject 2
+	setobjectxyperm VAR_TEMP_4, VAR_TEMP_0, VAR_TEMP_1
+	addobject VAR_TEMP_4
 	delay 64
 	hideobjectat OBJ_EVENT_ID_PLAYER, 0
 	applymovement OBJ_EVENT_ID_PLAYER, MtEmberfallExtS_PanCamUp
@@ -45,8 +43,8 @@ MtEmberfallExtS_TriggersUnusedForNow:
 	applymovement OBJ_EVENT_ID_PLAYER, MtEmberfallExtS_PanCamDown
 	waitmovement OBJ_EVENT_ID_PLAYER
 	showobjectat OBJ_EVENT_ID_PLAYER, 0
-	setobjectxyperm 2, 0, 69
-	removeobject 2
+	setobjectxyperm VAR_TEMP_4, 0, 69
+	removeobject VAR_TEMP_4
 	setvar VAR_SKY_PILLAR_STATE, 1
 	setflag FLAG_TEMP_1
 	removeobject 1

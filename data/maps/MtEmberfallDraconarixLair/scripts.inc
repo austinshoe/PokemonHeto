@@ -47,18 +47,16 @@ MtEmberfallDraconarixLair_TriggerBottom::
 	goto MtEmberfallDraconarixLair_UpdatePlayerGFXBoy
 
 MtEmberfallDraconarixLair_UpdatePlayerGFXGirl:
-	addobject 13
-	setobjectgfx 13, OBJ_EVENT_GFX_MAY_NORMAL
+	setvar VAR_TEMP_4, 24
 	goto MtEmberfallDraconarixLair_TriggerPartTwo
 
 MtEmberfallDraconarixLair_UpdatePlayerGFXBoy:
-	addobject 13
-	setobjectgfx 13, OBJ_EVENT_GFX_BRENDAN_NORMAL
+	setvar VAR_TEMP_4, 13
 	goto MtEmberfallDraconarixLair_TriggerPartTwo
 
 MtEmberfallDraconarixLair_TriggerPartTwo:
-	setobjectxyperm 13, 56, 16
-	addobject 13
+	setobjectxyperm VAR_TEMP_4, 56, 16
+	addobject VAR_TEMP_4
 	delay 32
 	hideobjectat OBJ_EVENT_ID_PLAYER, 0
 	applymovement OBJ_EVENT_ID_PLAYER, MtEmberfallDraconarixLair_PanCamRight
@@ -125,7 +123,7 @@ MtEmberfallDraconarixLair_TriggerPartTwo:
 	applymovement 15, MtEmberfallDraconarixLair_PokemonJump
 	applymovement 14, MtEmberfallDraconarixLair_PokemonJump
 	waitmovement 9 
-	applymovement 13, Common_Movement_FaceDown
+	applymovement VAR_TEMP_4, Common_Movement_FaceDown
 	applymovement 10, Common_Movement_FaceDown
 	applymovement 11, Common_Movement_FaceDown
 	applymovement 12, Common_Movement_FaceDown
@@ -160,33 +158,31 @@ MtEmberfallDraconarixLair_TriggerPartTwo:
 	trainerbattle_single TRAINER_GRUNT_SEAFLOOR_CAVERN_5, MtEmberfallDraconarixLair_DullahanIntro, MtEmberfallDraconarixLair_DullahanDefeat, MtEmberfallDraconarixLair_TriggerSegue
 
 MtEmberfallDraconarixLair_TriggerSegue:
-	message MtEmberfallDraconarixLair_DullahanPostDefeat
-	waitmessage
-	closemessage
-	setobjectxyperm 13, 79, 0
-	addobject 13
-	applymovement 13, Common_Movement_FaceRight
-	applymovement 9, Common_Movement_FaceRight
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight
-	waitmovement 0
 	checkplayergender
 	compare VAR_RESULT, FEMALE
 	goto_if_eq MtEmberfallDraconarixLair_UpdatePlayerGFXGirl2
 	goto MtEmberfallDraconarixLair_UpdatePlayerGFXBoy2
 
 MtEmberfallDraconarixLair_UpdatePlayerGFXGirl2:
-	addobject 13
-	setobjectgfx 13, OBJ_EVENT_GFX_MAY_NORMAL
+	setvar VAR_TEMP_4, 24
 	goto MtEmberfallDraconarixLair_TriggerPartThree
 
 MtEmberfallDraconarixLair_UpdatePlayerGFXBoy2:
-	addobject 13
-	setobjectgfx 13, OBJ_EVENT_GFX_BRENDAN_NORMAL
+	setvar VAR_TEMP_4, 13
 	goto MtEmberfallDraconarixLair_TriggerPartThree
-
+	
 MtEmberfallDraconarixLair_TriggerPartThree:
-	setobjectxyperm 13, 56, 16
-	addobject 13
+	message MtEmberfallDraconarixLair_DullahanPostDefeat
+	waitmessage
+	closemessage
+	setobjectxyperm VAR_TEMP_4, 79, 0
+	addobject VAR_TEMP_4
+	applymovement VAR_TEMP_4, Common_Movement_FaceRight
+	applymovement 9, Common_Movement_FaceRight
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight
+	waitmovement 0
+	setobjectxyperm VAR_TEMP_4, 56, 16
+	addobject VAR_TEMP_4
 	delay 32
 	hideobjectat OBJ_EVENT_ID_PLAYER, 0
 	delay 16
@@ -275,9 +271,8 @@ MtEmberfallDraconarixLair_TriggerPartThree:
 	setvar VAR_0x8006, 8  @ num shakes
 	setvar VAR_0x8007, 5  @ shake delay
 	special ShakeCamera
-	delay 16
-	fadescreen FADE_TO_BLACK
 	waitstate
+	fadescreen FADE_TO_BLACK
 	call MtEmberfallDraconarixLair_SetFloorDamaged
 	delay 16
 	fadescreen FADE_FROM_BLACK
@@ -291,8 +286,8 @@ MtEmberfallDraconarixLair_TriggerPartThree:
 	applymovement OBJ_EVENT_ID_PLAYER, MtEmberfallDraconarixLair_PanCamBAckToOrig
 	waitmovement OBJ_EVENT_ID_PLAYER
 	showobjectat OBJ_EVENT_ID_PLAYER, 0
-	setobjectxyperm 13, 79, 0
-	removeobject 13
+	setobjectxyperm VAR_TEMP_4, 79, 0
+	removeobject VAR_TEMP_4
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceDown
 	applymovement 9, Common_Movement_FaceUp
 	message MtEmberfallDraconarixLair_DullahanGottaGo

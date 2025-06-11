@@ -97,18 +97,16 @@ MtEmberfallCrater_TriggerLeft::
 	goto MtEmberfallCrater_UpdatePlayerGFXBoy
     
 MtEmberfallCrater_UpdatePlayerGFXGirl:
-	addobject 4
-    setobjectgfx 4, OBJ_EVENT_GFX_MAY_NORMAL
+	setvar VAR_TEMP_4, 6
     goto MtEmberfallCrater_TriggerUnusedForNow
 
 MtEmberfallCrater_UpdatePlayerGFXBoy:
-	addobject 4
-	setobjectgfx 4, OBJ_EVENT_GFX_BRENDAN_NORMAL
+	setvar VAR_TEMP_4, 4
 	goto MtEmberfallCrater_TriggerUnusedForNow
 
 MtEmberfallCrater_TriggerUnusedForNow::
-	setobjectxyperm 4, 11, 41
-	addobject 4
+	setobjectxyperm VAR_TEMP_4, 11, 41
+	addobject VAR_TEMP_4
 	delay 16
 	hideobjectat OBJ_EVENT_ID_PLAYER, 0
 	applymovement OBJ_EVENT_ID_PLAYER, MtEmberfallCrater_PanCamRightUp
@@ -116,11 +114,11 @@ MtEmberfallCrater_TriggerUnusedForNow::
 	msgbox MtEmberfallCrater_DiscussionTopMountain, MSGBOX_DEFAULT
 	waitmessage
 	closemessage
-	applymovement 4, MtEmberfallCrater_PanCamRightUp
-	waitmovement 4
+	applymovement VAR_TEMP_4, MtEmberfallCrater_PanCamRightUp
+	waitmovement VAR_TEMP_4
 	showobjectat OBJ_EVENT_ID_PLAYER, 0
-	setobjectxyperm 4, 0, 0
-	removeobject 4
+	setobjectxyperm VAR_TEMP_4, 0, 0
+	removeobject VAR_TEMP_4
 	delay 16
 	applymovement 3, Common_Movement_FaceRight
 	waitmovement 3
@@ -151,29 +149,26 @@ MtEmberfallCrater_TriggerRightt::
 	goto MtEmberfallCrater_UpdatePlayerGFXBoy1
     
 MtEmberfallCrater_UpdatePlayerGFXGirl1:
-	addobject 4
-    setobjectgfx 4, OBJ_EVENT_GFX_MAY_NORMAL
-    goto MtEmberfallCrater_TriggerUnusedForNow
+	setvar VAR_TEMP_4, 6
+    goto MtEmberfallCrater_TriggerUnusedForNow1
 
 MtEmberfallCrater_UpdatePlayerGFXBoy1:
-	addobject 4
-	setobjectgfx 4, OBJ_EVENT_GFX_BRENDAN_NORMAL
+	setvar VAR_TEMP_4, 4
 	goto MtEmberfallCrater_TriggerUnusedForNow1
 
 MtEmberfallCrater_TriggerUnusedForNow1:
-	setobjectxyperm 4, 12, 41
-	setobjectgfx 4, OBJ_EVENT_GFX_BRENDAN_NORMAL
-	addobject 4
+	setobjectxyperm VAR_TEMP_4, 12, 41
+	addobject VAR_TEMP_4
 	hideobjectat OBJ_EVENT_ID_PLAYER, 0
 	applymovement OBJ_EVENT_ID_PLAYER, MtEmberfallCrater_PanCamUp
 	waitmovement 0
 	msgbox MtEmberfallCrater_DiscussionTopMountain, MSGBOX_DEFAULT
 	waitmessage
 	closemessage
-	applymovement 4, MtEmberfallCrater_PanCamUp
+	applymovement VAR_TEMP_4, MtEmberfallCrater_PanCamUp
 	showobjectat OBJ_EVENT_ID_PLAYER, 0
-	setobjectxyperm 4, 0, 0
-	removeobject 4
+	setobjectxyperm VAR_TEMP_4, 0, 0
+	removeobject VAR_TEMP_4
 	delay 16
 	applymovement 3, Common_Movement_FaceRight
 	waitmovement 3
