@@ -21,8 +21,8 @@ MtEmberfallCrater_WaitForPlayerSetUp:
 	setobjectxyperm 1, 20, 10
 	setobjectxyperm 2, 19, 10
 	setobjectmovementtype 3, MOVEMENT_TYPE_FACE_DOWN
-	setobjectmovementtype 2, MOVEMENT_TYPE_FACE_LEFT
-	setobjectmovementtype 1, MOVEMENT_TYPE_FACE_RIGHT
+	setobjectmovementtype 2, MOVEMENT_TYPE_FACE_RIGHT
+	setobjectmovementtype 1, MOVEMENT_TYPE_FACE_LEFT
 	end
 	
 MtEmberfallCrater_OnFrameTable:
@@ -544,7 +544,7 @@ MtEmberfallCrater_LenaLeave:
 	step_end
 
 MtEmberfallCrater_LiamLeave:
-	walk_up
+	walk_down
 	walk_right
 	walk_right
 	walk_right

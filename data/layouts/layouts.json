@@ -6076,7 +6076,7 @@
     {
       "id": "LAYOUT_MT_EMBERFALL_DRACONARIX_LAIR",
       "name": "MtEmberfallDraconarixLair_Layout",
-      "width": 80,
+      "width": 41,
       "height": 30,
       "border_width": 2,
       "border_height": 2,
@@ -7164,6 +7164,18 @@
       "secondary_tileset": "gTileset_NewIndoors",
       "border_filepath": "data/layouts/HetonianDesertEntrance/border.bin",
       "blockdata_filepath": "data/layouts/HetonianDesertEntrance/map.bin"
+    },
+    {
+      "id": "LAYOUT_DRACONARIX_LAIR_LAIR",
+      "name": "DraconarixLairLair_Layout",
+      "width": 39,
+      "height": 30,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_volcano1",
+      "secondary_tileset": "gTileset_volcano_2",
+      "border_filepath": "data/layouts/DraconarixLairLair/border.bin",
+      "blockdata_filepath": "data/layouts/DraconarixLairLair/map.bin"
     }
   ]
 }
