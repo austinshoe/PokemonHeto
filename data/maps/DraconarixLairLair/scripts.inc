@@ -218,6 +218,14 @@ MtEmberfallDraconarixLair_TriggerPartTwo:
 	trainerbattle_single TRAINER_GRUNT_SEAFLOOR_CAVERN_5, MtEmberfallDraconarixLair_DullahanIntro, MtEmberfallDraconarixLair_DullahanDefeat, MtEmberfallDraconarixLair_TriggerSegue
 
 MtEmberfallDraconarixLair_TriggerSegue:
+	applymovement 11, Common_Movement_FaceUp
+	applymovement 12, Common_Movement_FaceUp
+	applymovement 13, Common_Movement_FaceUp
+	applymovement 1, Common_Movement_FaceDown
+	applymovement 2, Common_Movement_FaceDown
+	applymovement 3, Common_Movement_FaceDown
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceDown
+	waitmovement 0
 	checkplayergender
 	compare VAR_RESULT, FEMALE
 	goto_if_eq MtEmberfallDraconarixLair_UpdatePlayerGFXGirl2
@@ -232,7 +240,6 @@ MtEmberfallDraconarixLair_UpdatePlayerGFXBoy2:
 	goto MtEmberfallDraconarixLair_TriggerPartThree
 	
 MtEmberfallDraconarixLair_TriggerPartThree:
-	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceDown
 	applymovement VAR_TEMP_4, Common_Movement_FaceDown
 	waitmovement VAR_TEMP_4
 	message MtEmberfallDraconarixLair_DullahanPostDefeat
