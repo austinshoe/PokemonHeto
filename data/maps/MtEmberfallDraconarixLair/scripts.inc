@@ -273,7 +273,7 @@ MtEmberfallDraconarixLair_TriggerPartThree:
 	closemessage
 	addobject 25
 	delay 32
-	rmoveobject 25
+	removeobject 25
 	setobjectxyperm 25, 61, 15
 	addobject 25
 	addobject 1
