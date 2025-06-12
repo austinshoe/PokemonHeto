@@ -44,7 +44,7 @@ MtEmberfallCrater_Aftermath1:
 	message MtEmberfallCrater_Aftermath1ShinPostDitch
 	waitmessage
 	closemessage
-	applymovement 2, Common_Movement_FaceDown
+	applymovement 2, Common_Movement_FaceUp
 	waitmovement 2
 	applymovement 2, Common_Movement_ExclamationMark
 	playse SE_PIN

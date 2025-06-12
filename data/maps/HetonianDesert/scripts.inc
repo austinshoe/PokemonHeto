@@ -10,7 +10,7 @@ HetonianDesert_Random_Weather::
     case 2, HetonianDesert_WeatherSandStorm
     case 3, HetonianDesert_WeatherSunny
     case 4, HetonianDesert_WeatherNormal
-    case 5, HetonianDesert_WeatherNormal
+    case 5, HetonianDesert_WeatherSandStorm
     case 6, HetonianDesert_WeatherSunny
     case 7, HetonianDesert_WeatherSandStorm
     case 8, HetonianDesert_WeatherSunny

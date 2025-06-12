@@ -78,7 +78,7 @@
       "x": 5,
       "y": 8,
       "elevation": 0,
-      "var": "VAR_TEMP_MIXED_RECORDS",
+      "var": "VAR_TEMP_0",
       "var_value": "0",
       "script": "HetonianDesertEntrance_Triggers"
     },

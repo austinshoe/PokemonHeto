@@ -42,6 +42,12 @@ DraconarixLairLair_SetFloorDamaged:
 	setmetatile 21, 16, METATILE_volcano1_Lava, TRUE
 	setmetatile 22, 16, METATILE_volcano1_Lava, TRUE
 	setmetatile 23, 16, METATILE_volcano1_Lava, TRUE
+	setmetatile 16, 14, METATILE_volcano1_RightLava, TRUE
+	setmetatile 16, 15, METATILE_volcano1_RightLava, TRUE
+	setmetatile 16, 16, METATILE_volcano1_RightLava, TRUE
+	setmetatile 24, 14 METATILE_volcano1_LeftLava
+	setmetatile 24, 15 METATILE_volcano1_LeftLava
+	setmetatile 24, 16 METATILE_volcano1_LeftLava
 	clearflag FLAG_TEMP_1
 	clearflag FLAG_TEMP_2
 	return
@@ -162,9 +168,9 @@ MtEmberfallDraconarixLair_TriggerPartTwo:
 	addobject 16
 	addobject 15
 	addobject 14
-	setobjectxyperm 16, 60, 16
-	setobjectxyperm 15, 61, 16
-	setobjectxyperm 14, 62, 16
+	setobjectxyperm 16, 19, 16
+	setobjectxyperm 15, 20, 16
+	setobjectxyperm 14, 21, 16
 	addobject 16
 	addobject 15
 	addobject 14
@@ -267,6 +273,7 @@ MtEmberfallDraconarixLair_TriggerPartThree:
 	removeobject 4
 	addobject 17
 	setobjectxyperm 17, 20, 15
+	setobjectxy 17, 20, 15
 	addobject 17
 	delay 64
 	applymovement 17, MtEmberfallDraconarixLair_PokemonJump
@@ -360,6 +367,8 @@ MtEmberfallDraconarixLair_TriggerPartThree:
 	waitstate
 	fadescreen FADE_TO_BLACK
 	call DraconarixLairLair_SetFloorDamaged
+	addobject 18
+	addobject 19
 	setobjectxyperm 17, 38, 0
 	special DrawWholeMapView
 	delay 16
