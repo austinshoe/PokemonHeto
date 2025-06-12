@@ -45,9 +45,9 @@ DraconarixLairLair_SetFloorDamaged:
 	setmetatile 16, 14, METATILE_volcano1_RightLava, TRUE
 	setmetatile 16, 15, METATILE_volcano1_RightLava, TRUE
 	setmetatile 16, 16, METATILE_volcano1_RightLava, TRUE
-	setmetatile 24, 14 METATILE_volcano1_LeftLava
-	setmetatile 24, 15 METATILE_volcano1_LeftLava
-	setmetatile 24, 16 METATILE_volcano1_LeftLava
+	setmetatile 24, 14 METATILE_volcano1_LeftLava, TRUE
+	setmetatile 24, 15 METATILE_volcano1_LeftLava, TRUE
+	setmetatile 24, 16 METATILE_volcano1_LeftLava, TRUE
 	clearflag FLAG_TEMP_1
 	clearflag FLAG_TEMP_2
 	return
