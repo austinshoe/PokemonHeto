@@ -30,18 +30,22 @@ RuinveilDesertConnection_RivalBattlePullUp:
 
 RuinveilDesertConnection_RivalBattlePullUp_9:
 	applymovement OBJ_EVENT_ID_PLAYER, RuinveilDesertConnection_PlayerPullUp
-	applymovement 1, RuinveilDesertConnection_RivalBattlePullUp_9
+	applymovement 1, RuinveilDesertConnection_RivalPullUp9
 	waitmovement 0
 	return
 
-RuinveilDesertConnection_RivalBattlePullUp_10
+RuinveilDesertConnection_RivalBattlePullUp_10:
 	applymovement OBJ_EVENT_ID_PLAYER, RuinveilDesertConnection_PlayerPullUp
-	applymovement 1, RuinveilDesertConnection_RivalBattlePullUp_10
+	applymovement 1, RuinveilDesertConnection_RivalPullUp10
 	waitmovement 0
 	return
 
 RuinveilDesertConnection_RivalOutro:
 	msgbox RuinveilDesertConnection_RivalPostBattle, MSGBOX_DEFAULT
+	waitmessage
+	giveitem ITEM_MEGA_RING, 1
+	giveitem ITEM_SALAMENCITE, 1
+	msgbox RuinveilDesertConnection_RivalExplainMegaRing, MSGBOX_DEFAULT
 	waitmessage
 	closemessage
 	applymovement 1, RuinveilDesertConnection_RivalLeave1
@@ -86,7 +90,7 @@ RuinveilDesertConnection_RivalPullUp9:
 	walk_up
 	step_end
 
-RuinveilDesertConnection_RivalBattlePullUp_10:
+RuinveilDesertConnection_RivalPullUp10:
 	walk_up
 	walk_right
 	face_up
@@ -95,8 +99,9 @@ RuinveilDesertConnection_RivalBattlePullUp_10:
 RuinveilDesertConnection_RivalPostBattle:
 	.string "Looks like I lost again...\p"
 	.string "But it's okay.\n"
-	.string "I can feel the gap between us closing.\p"
-	.string "I'll be sure to defeat you next time.$"
+	.string "I can feel the gap between us closing.\n"
+	.string "I'll be sure to defeat you next time.\p"
+	.string "That reminds me, I forgot to give this to you.$"
 
 
 RuinveilDesertConnection_RivalLeave1:
@@ -121,4 +126,17 @@ RuinveilDesertConnection_RivalLeave2:
 	walk_down
 	walk_down
 	step_end
+
+RuinveilDesertConnection_RivalExplainMegaRing:
+	.string "That's a mega ring and a Salamencite.\p"
+	.string "With these, you can Mega Evolve your\n"
+	.string "Salamence... or when your Shelgon\l"
+	.string "evolves, you can Mega Evolve it then.\p"
+	.string "Professor Pine gave these to me in light\n"
+	.string "of the recent events with Angrboda.\p"
+	.string "You can give a mega stone to its\n"
+	.string "respective Pokémon to hold, and you'll\l"
+	.string "be able to Mega Evolve it in battle.\p"
+	.string "You can only Mega Evolve one Pokémon\n"
+	.string "per battle, though.$"
 
