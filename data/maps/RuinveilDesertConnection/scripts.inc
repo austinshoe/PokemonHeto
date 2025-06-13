@@ -41,6 +41,8 @@ RuinveilDesertConnection_RivalBattlePullUp_10:
 	return
 
 RuinveilDesertConnection_RivalOutro:
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceDown
+	waitmovement 0
 	msgbox RuinveilDesertConnection_RivalPostBattle, MSGBOX_DEFAULT
 	waitmessage
 	giveitem ITEM_MEGA_RING, 1
@@ -72,7 +74,7 @@ RuinveilDesertConnection_RivalLongTime:
 	.string "Looks like you're here too.$"
 
 RuinveilDesertConnection_RivalIntro:
-	.string "Are you going to challenge the Ruinveil\l"
+	.string "Are you going to challenge the Ruinveil\n"
 	.string "Gym?\p"
 	.string "Me too.\p"
 	.string "Since we're both here, let me see how\n"
@@ -84,6 +86,7 @@ RuinveilDesertConnection_RivalDefeat:
 RuinveilDesertConnection_PlayerPullUp:
 	walk_down
 	walk_down
+	face_down
 	step_end
 
 RuinveilDesertConnection_RivalPullUp9:
@@ -101,10 +104,12 @@ RuinveilDesertConnection_RivalPostBattle:
 	.string "But it's okay.\n"
 	.string "I can feel the gap between us closing.\n"
 	.string "I'll be sure to defeat you next time.\p"
-	.string "That reminds me, I forgot to give this to you.$"
+	.string "That reminds me, I forgot to give this\n"
+	.string "to you.$"
 
 
 RuinveilDesertConnection_RivalLeave1:
+	walk_left
 	walk_down
 	step_end
 

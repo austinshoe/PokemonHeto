@@ -24,7 +24,7 @@ NeptunesDrift_RivalGiveDive::
 
 Text_NeptunesDrift_RivalGiveDive:
 	.string "{PLAYER}! There you are!\p"
-	.string "Lena and Shin already moved on, but they\n"
+	.string "Lena and Nou already moved on, but they\n"
 	.string "told me to stay back and give this to\l"
 	.string "you, so that we could go together.$"
 
@@ -39,7 +39,7 @@ Text_NeptunesDrift_RivalExplainDive:
 	.string "acutally the one just under us, but\l"
 	.string "it's a bit further down the drift, on\l"
 	.string "east side.\p"
-	.string "Lena and Shin already dived, so let's go\n"
+	.string "Lena and Nou already dived, so let's go\n"
 	.string "after them.\p"
 	.string "$"
 

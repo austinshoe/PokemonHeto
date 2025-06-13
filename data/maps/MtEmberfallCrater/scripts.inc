@@ -403,7 +403,7 @@ MtEmberfallCrater_LiamPullUp:
 	step_end
 
 MtEmberfallCrater_DiscussionTopMountain:
-	.string "Shin: Something's off. I don't like how\n"
+	.string "Nou: Something's off. I don't like how\n"
 	.string "we haven't seen any Angrboda members\l"
 	.string "on the way up here.\p"
 	.string "Lena: Where's {PLAYER}?\p"
@@ -413,17 +413,17 @@ MtEmberfallCrater_DiscussionTopMountain:
 
 MtEmberfallCrater_RivalThereHeIs:
 	.string "Liam: There you are.\p"
-	.string "Shin: Now that {PLAYER} is here, let's\n"
+	.string "Nou: Now that {PLAYER} is here, let's\n"
 	.string "search the crater for any leads.\p"
 	.string "If any of you find something, let me\n"
 	.string "or Lena know.$"
 
 MtEmberfallCrater_FoundWhereTheyAre:
-	.string "Shin: This is probably where they are.\n"
+	.string "Nou: This is probably where they are.\n"
 	.string "Good job, {PLAYER}.\p"
 	.string "Lena: When's backup from the Association\n"
 	.string "arriving?\p"
-	.string "Shin: They're short staffed, so only the\n"
+	.string "Nou: They're short staffed, so only the\n"
 	.string "healer will be here with us.\p"
 	.string "Liam: So, what's the plan?$"
 
@@ -467,7 +467,7 @@ MtEmberfallCrater_LiamGoToEntrance:
 	step_end
 
 MtEmberfallCrater_Plan:
-	.string "Shin: There is no plan.\p"
+	.string "Nou: There is no plan.\p"
 	.string "We go in there, and we apprehend them.$"
 
 MtEmberfallCrater_NursePullUp:
@@ -518,7 +518,7 @@ MtEmberfallCrater_NursePostHeal:
 	.string "All healed up!$"
 
 MtEmberfallCrater_Aftermath1Text:
-	.string "Shin: We barely managed to prevent them\n"
+	.string "Nou: We barely managed to prevent them\n"
 	.string "from breaking through.\p"
 	.string "I think we should keep an eye on any\n"
 	.string "unusual activity, as we still don't know\l"
@@ -570,7 +570,7 @@ MtemberfallCrater_ShinMoveOutofWay:
 	step_end
 
 MtEmberfallCrater_Aftermath1ShinPostDitch:
-	.string "Shin: About your friend, Liam...\n"
+	.string "Nou: About your friend, Liam...\n"
 	.string "He's strong. But at the same time he\l"
 	.string "seems troubled...\p"
 	.string "Did he ever tell you what happened to\n"

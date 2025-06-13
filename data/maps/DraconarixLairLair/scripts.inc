@@ -405,7 +405,7 @@ MtEmberfallDraconarixLair_PlayerMoveDown:
 	step_end
 
 MtEmberfallDraconarixLair_WeGottaGo:
-	.string "Shin: There's no time to waste.\n"
+	.string "Nou: There's no time to waste.\n"
 	.string "Let's stop them.$"
 
 MtEmberfallDraconarixLair_StevenGoDown:
@@ -454,7 +454,7 @@ MtEmberfallDraconarixLair_PanCamRight:
 	step_end
 
 MtEmberfallDraconarixLair_ShinRecognize:
-	.string "Shin: That- No way...\p"
+	.string "Nou: That- No way...\p"
 	.string "$"
 
 MtEmberfallDraconarixLair_DraconarixOnlyInLegends:
@@ -484,9 +484,9 @@ MtEmberfallDraconarixLair_JormungandrSeeIntruders:
 	.string "kids you were talking about, Alexandr.$"
 
 MtEmberfallDraconarixLair_ShinSoItWasYou:
-	.string "Shin: So it was you behind everything.\p"
+	.string "Nou: So it was you behind everything.\p"
 	.string "???: Miss me?\p"
-	.string "Shin: Not in the slightest.\p"
+	.string "Nou: Not in the slightest.\p"
 	.string "Liam: I'm confused. Who's this old man?\p"
 	.string "Lena: That's Jörmungandr.\n"
 	.string "During the war, he was the leader of\l"
@@ -543,7 +543,7 @@ MtEmberfallDraconarixLair_PlayerTakeDullahan:
 	.string "Lena: {PLAYER}, you'll need to\n"
 	.string "hold off Dullahan while we take care of\l"
 	.string "the other grunts!\p"
-	.string "Shin: We need to stop them, fast!$"
+	.string "Nou: We need to stop them, fast!$"
 
 MtEmberfallDraconarixLair_ShinToGrunt:
 	walk_up

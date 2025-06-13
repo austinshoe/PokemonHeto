@@ -40,8 +40,8 @@ Script_HetonianDesertMan1::
     end
 
 Text_HetonianDesertMan1:
-    .string "Are you also running away from those\n"
-    .string "guys from the powerplant?$"
+    .string "Do you know who those weird guys at the\n"
+    .string "powerplant were?$"
     
 Script_HetonianDesertWoman1::
     lock
@@ -51,8 +51,8 @@ Script_HetonianDesertWoman1::
     end
 
 Text_HetonianDesertWoman1:
-    .string "The dispute ended years ago.\n"
-    .string "Why are they still mad about it?$"
+    .string "May Arceus and Bidoof bless this land of.\n"
+    .string "peace.$"
     
 Script_HetonianDesertMan2::
     lock

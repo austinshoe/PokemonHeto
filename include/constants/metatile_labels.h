@@ -475,6 +475,9 @@
 #define METATILE_RSMossdeepGym_Switch_Down     0x239
 #define METATILE_RSMossdeepGym_Switch_Up       0x238
 
+// gTileset_Ruinveil
+#define METATILE_Ruinveil_BrownCliff  0x04E
+
 // gTileset_Rustboro
 #define METATILE_Rustboro_Door_Gray  0x21F
 #define METATILE_Rustboro_Door_Tan   0x22F
@@ -825,6 +828,11 @@
 // gTileset_Underwater
 #define METATILE_Underwater_FloorShadow  0x228
 #define METATILE_Underwater_RockWall     0x21E
+
+// gTileset_ruinveil2
+#define METATILE_ruinveil2_PurpleBrownCliff  0x259
+#define METATILE_ruinveil2_PurpleCliff       0x271
+#define METATILE_ruinveil2_PurpleStone       0x242
 
 // gTileset_volcano1
 #define METATILE_volcano1_AshGrassRough       0x024

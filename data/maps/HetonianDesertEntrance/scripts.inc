@@ -3,7 +3,7 @@ HetonianDesertEntrance_MapScripts::
 
 HetonianDesertEntrance_Triggers::
 	lockall
-	goto_if_set FLAG_RECEIVED_GO_GOGGLES, HetonianDesertEntrance_TriggerCannotProceed
+	goto_if_unset FLAG_RECEIVED_GO_GOGGLES, HetonianDesertEntrance_TriggerCannotProceed
 	releaseall
 	end
 
