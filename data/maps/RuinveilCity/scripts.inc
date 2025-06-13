@@ -1,7 +1,7 @@
 RuinveilCity_MapScripts::
     map_script MAP_SCRIPT_ON_LOAD, RuinveilCity_OnLoad
     map_script MAP_SCRIPT_ON_TRANSITION, RuinveilCity_OnTransition
-    map_script ON_FRAME_TABLE, RuinveilCity_OnFrame
+    map_script MAP_SCRIPT_ON_FRAME_TABLE, RuinveilCity_OnFrame
     .byte 0
 
 RuinveilCity_OnLoad:
