@@ -129,7 +129,7 @@ Text_RuinveilGym2_Puzzle2:
 
 Text_RuinveilGym2_Puzzle3:
 	.string "You turn away, yet you know what lies\n"
-	.string "behind — did you see it?$"
+	.string "behind- did you see it?$"
 
 Text_RuinveilGym2_WrongAnswer:
 	.string "That was the wrong answer!\p"

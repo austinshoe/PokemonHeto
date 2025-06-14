@@ -3,7 +3,7 @@ RuinveilGymFail_MapScripts::
 	.byte 0
 
 RuinveilGymFail_OnFrame:
-	map_script VAR_UNUSED_0x40A1, 1, RuinveilGymFail_HeadVoices
+	map_script_2 VAR_UNUSED_0x40A1, 1, RuinveilGymFail_HeadVoices
 	map_script_2 VAR_TEMP_0, 1, RuinveilGymFail_WarpBackPostBattle
 	.2byte 0
 
