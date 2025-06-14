@@ -6,7 +6,7 @@ HallowSparkCity_MapScripts::
 
 HallowSparkCity_OnTransition:
     setflag FLAG_TEMP_1
-    setflag FLAG_TEMP_2
+    setflag FLAG_TEMP_3
     setvar VAR_UNUSED_0x4091, 0
     setflag FLAG_VISITED_FORTREE_CITY
     goto HallowSparkCity_SetUpObjxy
@@ -175,7 +175,7 @@ HallowSparkCity_LenaCutscene15Female:
     getplayerxy VAR_TEMP_0, VAR_TEMP_1
     setobjectxyperm 10, VAR_TEMP_0, VAR_TEMP_1
     addobject 10
-    clearflag FLAG_TEMP_2
+    clearflag FLAG_TEMP_3
     setobjectxyperm 10, VAR_TEMP_0, VAR_TEMP_1
     hideobjectat OBJ_EVENT_ID_PLAYER, 0
     compare VAR_TEMP_0, 10
@@ -216,7 +216,7 @@ HallowSparkCity_LenaCutscene1pt2Female:
 
 HallowSparkCity_LenaCutscene1pt3Female:
     showobjectat OBJ_EVENT_ID_PLAYER, 0
-    setflag FLAG_TEMP_2
+    setflag FLAG_TEMP_3
     removeobject 10
     setobjectxyperm 10, 0, 0
     setvar VAR_FORTREE_CITY_STATE, 1

@@ -53,8 +53,8 @@ RuinveilGym_SumAndModTrigger2:
 	delay 16
 	fadescreen FADE_TO_WHITE
 	call RuinveilGym_SumAndModUpdateFloor
-	special DrawWholeMapView
 	delay 32
+	special DrawWholeMapView
 	fadescreen FADE_FROM_WHITE
 	goto RuinveilGym_ModFour
 
@@ -365,6 +365,7 @@ RuinveilGym_SumAndModWarpFail::
 
 RuinveilGym_SumAndModWarpNextStage::
 	warpsilent MAP_RUINVEIL_GYM2, 0
+	end
 	
 Text_RuinveilGymPuzzle1_Hint:
 	.string "Step upon the glowing rune,\n"

@@ -84,7 +84,7 @@ RuinveilGym2_Puzzle2Correct:
 RuinveilGym2_Puzzle3::
 	goto_if_set FLAG_TEMP_3, RuinveilGym2_PuzzleEnd
 	msgbox Text_RuinveilGym2_Puzzle3 MSGBOX_YESNO
-	compare VAR_RESULT, NO
+	compare VAR_RESULT, YES
 	goto_if_eq RuinveilGym2_Puzzle3Correct
 	msgbox Text_RuinveilGym2_WrongAnswer, MSGBOX_DEFAULT
 	waitmessage

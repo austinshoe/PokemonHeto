@@ -8,7 +8,7 @@ RuinveilGymFail_OnFrame:
 	.2byte 0
 
 RuinveilGymFail_HeadVoices:
-	setvar VAR_UNUSED_0x40A1, 1
+	setvar VAR_UNUSED_0x40A1, 0
 	msgbox Text_RuinveilGymFail_HeadVoices, MSGBOX_AUTOCLOSE
 	end
 

@@ -18,7 +18,9 @@ RuinveilDesertConnection_RivalBattleScript:
 	closemessage
 	call RuinveilDesertConnection_RivalBattlePullUp
 	delay 16
-	trainerbattle_single TRAINER_MAY_ROUTE_119_MUDKIP, RuinveilDesertConnection_RivalIntro, RuinveilDesertConnection_RivalDefeat, RuinveilDesertConnection_RivalOutro
+	msgbox RuinveilDesertConnection_RivalIntro, MSGBOX_DEFAULT
+	trainerbattle_no_intro TRAINER_MAY_ROUTE_119_MUDKIP, RuinveilDesertConnection_RivalDefeat
+	goto RuinveilDesertConnection_RivalOutro
 
 RuinveilDesertConnection_RivalBattlePullUp:
 	getplayerxy VAR_TEMP_0, VAR_TEMP_1

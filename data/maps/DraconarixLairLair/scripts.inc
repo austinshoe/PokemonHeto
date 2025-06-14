@@ -221,9 +221,10 @@ MtEmberfallDraconarixLair_TriggerPartTwo:
 	setobjectmovementtype 1, MOVEMENT_TYPE_FACE_DOWN
 	setobjectmovementtype 2, MOVEMENT_TYPE_FACE_DOWN
 	setobjectmovementtype 3, MOVEMENT_TYPE_FACE_DOWN
-	trainerbattle_single TRAINER_GRUNT_SEAFLOOR_CAVERN_5, MtEmberfallDraconarixLair_DullahanIntro, MtEmberfallDraconarixLair_DullahanDefeat, MtEmberfallDraconarixLair_TriggerSegue
-
-MtEmberfallDraconarixLair_TriggerSegue:
+	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceDown
+	waitmovement 0
+	msgbox MtEmberfallDraconarixLair_DullahanIntro, MSGBOX_DEFAULT
+	trainerbattle_no_intro TRAINER_GRUNT_SEAFLOOR_CAVERN_5, MtEmberfallDraconarixLair_DullahanDefeat
 	applymovement 11, Common_Movement_FaceUp
 	applymovement 12, Common_Movement_FaceUp
 	applymovement 13, Common_Movement_FaceUp
