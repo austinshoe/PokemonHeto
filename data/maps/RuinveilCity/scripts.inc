@@ -114,8 +114,10 @@ RuinveilCity_TriggerEnd:
     applymovement 1, Common_Movement_ExclamationMark
     applymovement 2, Common_Movement_ExclamationMark
     msgbox Text_RuinveilCity_MinersMoveOutofWay, MSGBOX_DEFAULT
+    waitmessage
     waitmovement 1
     waitmovement 2
+    closemessage
     applymovement 1, RuinveilCity_MinersMoveOutofWayLeft
     applymovement 2, RuinveilCity_MinersMoveOutofWayRight
     applymovement 6, RuinveilCity_ShinEnterRuins

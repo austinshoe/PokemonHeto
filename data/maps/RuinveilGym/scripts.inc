@@ -103,15 +103,15 @@ RuinveilGym_SumAndModTrigger::
 	@ setvar VAR_TEMP_3, VAR_RESULT
 
 	setvar VAR_TEMP_1, 1
-	setvar VAR_TEMP_1, 2
-	setvar VAR_TEMP_1, 3
+	setvar VAR_TEMP_2, 2
+	setvar VAR_TEMP_3, 3
 
-	setvar VAR_TEMP_4, 0
+	setvar VAR_UNUSED_0x4091, 0
 	delay 16
-	addvar VAR_TEMP_4, VAR_TEMP_1
-	addvar VAR_TEMP_4, VAR_TEMP_2
-	addvar VAR_TEMP_4, VAR_TEMP_3
-	addvar VAR_TEMP_4, 3
+	addvar VAR_UNUSED_0x4091, VAR_TEMP_1
+	addvar VAR_UNUSED_0x4091, VAR_TEMP_2
+	addvar VAR_UNUSED_0x4091, VAR_TEMP_3
+	addvar VAR_UNUSED_0x4091, 3
 	goto RuinveilGym_SetNumberMetatiles1
 
 
@@ -137,14 +137,14 @@ RuinveilGym_SumAndModTrigger2:
 	goto RuinveilGym_ModFour
 
 RuinveilGym_ModFour:
-	compare VAR_TEMP_4, 4
-	goto_if_gt RuinveilGym_SubFour
+	compare VAR_UNUSED_0x4091, 4
+	goto_if_ge RuinveilGym_SubFour
 	setvar VAR_TEMP_F, 1
 	releaseall
 	end
 
 RuinveilGym_SubFour:
-	subvar VAR_TEMP_4, 4
+	subvar VAR_UNUSED_0x4091, 4
 	goto RuinveilGym_ModFour
 
 RuinveilGym_SetNumberMetatiles1::
@@ -243,7 +243,7 @@ RuinveilGym_SumAndModUpdateFloor:
 	setmetatile 27, 27, METATILE_RuinveilGym_Floor, FALSE
 	setmetatile 28, 27, METATILE_RuinveilGym_Floor, FALSE
 	setmetatile 29, 27, METATILE_RuinveilGym_Floor, FALSE
-	setmetatile 30, 27, VAR_TEMP_2, FALSE
+	setmetatile 30, 27, VAR_TEMP_3, FALSE
 
 	setmetatile 31, 27, METATILE_RuinveilGym_Floor, FALSE
 	setmetatile 32, 27, METATILE_RuinveilGym_Floor, FALSE
@@ -416,28 +416,28 @@ RuinveilGym_SumAndModUpdateFloor:
 
 RuinveilGym_SumAndModWarp1::
 	setvar VAR_TEMP_F, 0
-	compare VAR_TEMP_4, 1
+	compare VAR_UNUSED_0x4091, 0
 	goto_if_eq RuinveilGym_SumAndModWarpNextStage
 	goto RuinveilGym_SumAndModWarpFail
 
 
 RuinveilGym_SumAndModWarp2::
 	setvar VAR_TEMP_F, 0
-	compare VAR_TEMP_4, 2
+	compare VAR_UNUSED_0x4091, 1
 	goto_if_eq RuinveilGym_SumAndModWarpNextStage
 	goto RuinveilGym_SumAndModWarpFail
 
 
 RuinveilGym_SumAndModWarp3::
 	setvar VAR_TEMP_F, 0
-	compare VAR_TEMP_4, 3
+	compare VAR_UNUSED_0x4091, 2
 	goto_if_eq RuinveilGym_SumAndModWarpNextStage
 	goto RuinveilGym_SumAndModWarpFail
 
 
 RuinveilGym_SumAndModWarp4::
 	setvar VAR_TEMP_F, 0
-	compare VAR_TEMP_4, 4
+	compare VAR_UNUSED_0x4091, 2
 	goto_if_eq RuinveilGym_SumAndModWarpNextStage
 	goto RuinveilGym_SumAndModWarpFail
 

@@ -196,7 +196,7 @@ RuinveilGym2_Puzzle3UpdateMap:
 	setmetatile 25, 15, METATILE_RuinveilGym_Floor, FALSE
 	setmetatile 26, 15, METATILE_RuinveilGym_Floor, FALSE
 	setmetatile 24, 14, METATILE_RuinveilGym_Floor, FALSE
-	setmetatile 25, 15, METATILE_RuinveilGym_Floor, FALSE
+	setmetatile 25, 14, METATILE_RuinveilGym_Floor, FALSE
 	setmetatile 26, 14, METATILE_RuinveilGym_Floor, FALSE
 	setmetatile 24, 13, METATILE_RuinveilGym_Floor, FALSE
 	setmetatile 25, 13, METATILE_RuinveilGym_Floor, FALSE
