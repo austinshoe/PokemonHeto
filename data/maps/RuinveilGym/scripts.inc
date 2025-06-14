@@ -6,6 +6,75 @@ RuinveilGym_OnTransition::
 	setvar VAR_UNUSED_0x40A1, 0
 	end
 
+RuinveilGym_Kanae::
+	trainerbattle_single TRAINER_WINONA_1, RuinveilGym_KanaeIntro, RuinveilGym_KanaeDefeat, RuinveilGym_KanaeDefeated
+	goto_if_unset FLAG_RECEIVED_TM_AERIAL_ACE, RuinveilGym_KanaeDefeated_GivePsychic2
+	msgbox RuinveilGym_KanaePostBattle, MSGBOX_DEFAULT
+	release
+	end
+
+RuinveilGym_KanaeDefeated:
+	message RuinveilGym_ReceivedVeilBadge
+	waitmessage
+	call Common_EventScript_PlayGymBadgeFanfare
+	msgbox RuinveilGym_ExplainVeilBadgeTakeThis, MSGBOX_DEFAULT
+	setflag FLAG_DEFEATED_FORTREE_GYM
+	setflag FLAG_BADGE06_GET
+	call RuinveilGym_KanaeDefeated_GivePsychic
+	release
+	end
+
+RuinveilGym_KanaeDefeated_GivePsychic2::
+	giveitem ITEM_TM_PSYCHIC
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
+	msgbox RuinveilGym_KanaeExplainPsychic, MSGBOX_DEFAULT
+	setflag FLAG_RECEIVED_TM_AERIAL_ACE
+	release
+	end
+
+RuinveilGym_KanaeDefeated_GivePsychic::
+	giveitem ITEM_TM_PSYCHIC
+	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_BagIsFull
+	msgbox RuinveilGym_KanaeExplainPsychic, MSGBOX_DEFAULT
+	setflag FLAG_RECEIVED_TM_AERIAL_ACE
+	return
+
+RuinveilGym_ReceivedVeilBadge:
+	.string "{PLAYER} received the VEIL BADGE\n"
+	.string "from Kanae.$"
+
+RuinveilGym_ExplainVeilBadgeTakeThis:
+	.string "Kanae: With the VEIL BADGE, you'll be\n"
+	.string "to use the HM move Strength outside of\l"
+	.string "battle.\p"
+	.string "And this…\n"
+	.string "This is a gift from me.$"
+
+RuinveilGym_KanaeExplainPsychic:
+	.string "This TM contains the move Psychic.\p"
+	.string "It's a strong, reliable psychic type\l"
+	.string "move.\p"
+	.string "Congratulations.$"
+
+
+RuinveilGym_KanaeIntro:
+	.string "Kanae: You're the kid that was with\n"
+	.string "Nou back there…\p"
+	.string "Welcome to the Ruinveil City Gym.\p"
+	.string "I've heard a lot about you from\n"
+	.string "Nou, Lena, and the other Gym Leaders.\p"
+	.string "The city… ruins… they judge you…\n"
+	.string "They tell me things too…\p"
+	.string "Only in the darkness can true clarity\n"
+	.string "emerge…$"
+
+RuinveilGym_KanaePostBattle:
+	.string "How did you like the puzzles?\n"
+	.string "My assistant, Chet Gippittee, came up\l"
+	.string "most of them...\p"
+	.string "He's a mysterious, person...\n"
+	.string "Come to think of it, I think he's on\l"
+	.string "vacation right now...$"
 
 RuinveilGym_GymGuide::
 	lock

@@ -33,7 +33,7 @@ Script_SunaHouse1Woman1::
 
 Text_SunaHouse1Woman1:
     .string "How many gym badges do you have?\p"
-    .string "Wow!\l"
+    .string "Wow!\n"
     .string "That's a lot!\l"
     .string "Good job!$"
     
@@ -45,6 +45,6 @@ Script_SunaHouse1Woman2::
     end
 
 Text_SunaHouse1Woman2:
-    .string "All the political unrest is just too\n"
+    .string "All the political unrest was just too\n"
     .string "much for me.\l"
     .string "That's why I like just relaxing here.$"
