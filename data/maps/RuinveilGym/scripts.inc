@@ -23,12 +23,18 @@ RuinveilGym_SumAndModHint::
 
 RuinveilGym_SumAndModTrigger::
 	lockall
-	random 4
-	setvar VAR_TEMP_1, VAR_RESULT
-	random 4
-	setvar VAR_TEMP_2, VAR_RESULT
-	random 4
-	setvar VAR_TEMP_3, VAR_RESULT
+	@ random 4
+	@ setvar VAR_TEMP_1, VAR_RESULT
+	@ random 4
+	@ setvar VAR_TEMP_2, VAR_RESULT
+	@ random 4
+	@ setvar VAR_TEMP_3, VAR_RESULT
+
+	setvar VAR_TEMP_1, 1
+	setvar VAR_TEMP_1, 2
+	setvar VAR_TEMP_1, 3
+
+	setvar VAR_TEMP_4, 0
 	delay 16
 	addvar VAR_TEMP_4, VAR_TEMP_1
 	addvar VAR_TEMP_4, VAR_TEMP_2

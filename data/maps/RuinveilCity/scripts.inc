@@ -94,12 +94,14 @@ RuinveilCity_TriggerRight::
     addobject 6
     applymovement 6, RuinveilCity_ShinPullUp
     waitmovement 6
-    applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft
+    applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight
     waitmovement 0
     goto RuinveilCity_TriggerEnd
     
 RuinveilCity_TriggerEnd:
     msgbox Text_RuinveilCity_GymLeaderHelpingRN, MSGBOX_DEFAULT
+    waitmessage
+    closemessage
     applymovement 6, RuinveilCity_NouGoToRuins
     applymovement OBJ_EVENT_ID_PLAYER, RuinveilCity_PlayerGoToRuins
     waitmovement 0

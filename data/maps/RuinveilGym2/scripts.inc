@@ -27,6 +27,7 @@ RuinveilGym2_Puzzle1::
 	goto RuinveilGymFail_JarBattle
 
 RuinveilGym2_Puzzle1Correct:
+	closemessage
 	setvar VAR_0x8004, 5  @ vertical pan
 	setvar VAR_0x8005, 5  @ horizontal pan
 	setvar VAR_0x8006, 8  @ num shakes
@@ -60,6 +61,7 @@ RuinveilGym2_Puzzle2::
 	goto RuinveilGymFail_JarBattle
 
 RuinveilGym2_Puzzle2Correct:
+	closemessage
 	setvar VAR_0x8004, 5  @ vertical pan
 	setvar VAR_0x8005, 5  @ horizontal pan
 	setvar VAR_0x8006, 8  @ num shakes
@@ -93,6 +95,7 @@ RuinveilGym2_Puzzle3::
 	goto RuinveilGymFail_JarBattle
 
 RuinveilGym2_Puzzle3Correct:
+	closemessage
 	setvar VAR_0x8004, 5  @ vertical pan
 	setvar VAR_0x8005, 5  @ horizontal pan
 	setvar VAR_0x8006, 8  @ num shakes
