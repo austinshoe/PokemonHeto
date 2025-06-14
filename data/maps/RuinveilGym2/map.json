@@ -1,0 +1,274 @@
+{
+  "id": "MAP_RUINVEIL_GYM2",
+  "name": "RuinveilGym2",
+  "layout": "LAYOUT_RUINVEIL_GYM2",
+  "music": "MUS_ABANDONED_SHIP",
+  "region_map_section": "MAPSEC_LITTLEROOT_TOWN",
+  "requires_flash": false,
+  "weather": "WEATHER_NONE",
+  "map_type": "MAP_TYPE_UNDERGROUND",
+  "allow_cycling": false,
+  "allow_escaping": false,
+  "allow_running": true,
+  "show_map_name": false,
+  "battle_scene": "MAP_BATTLE_SCENE_NORMAL",
+  "connections": 0,
+  "object_events": [
+
+  ],
+  "warp_events": [
+    {
+      "x": 30,
+      "y": 48,
+      "elevation": 0,
+      "dest_map": "MAP_RUINVEIL_GYM",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 31,
+      "y": 48,
+      "elevation": 0,
+      "dest_map": "MAP_RUINVEIL_GYM",
+      "dest_warp_id": "2"
+    },
+    {
+      "x": 19,
+      "y": 35,
+      "elevation": 0,
+      "dest_map": "MAP_RUINVEIL_GYM_FAIL",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 20,
+      "y": 35,
+      "elevation": 0,
+      "dest_map": "MAP_RUINVEIL_GYM_FAIL",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 21,
+      "y": 35,
+      "elevation": 0,
+      "dest_map": "MAP_RUINVEIL_GYM_FAIL",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 29,
+      "y": 22,
+      "elevation": 0,
+      "dest_map": "MAP_RUINVEIL_GYM_FAIL",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 29,
+      "y": 23,
+      "elevation": 0,
+      "dest_map": "MAP_RUINVEIL_GYM_FAIL",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 29,
+      "y": 24,
+      "elevation": 0,
+      "dest_map": "MAP_RUINVEIL_GYM_FAIL",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 29,
+      "y": 8,
+      "elevation": 0,
+      "dest_map": "MAP_RUINVEIL_GYM_FAIL",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 29,
+      "y": 9,
+      "elevation": 0,
+      "dest_map": "MAP_RUINVEIL_GYM_FAIL",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 29,
+      "y": 10,
+      "elevation": 0,
+      "dest_map": "MAP_RUINVEIL_GYM_FAIL",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 21,
+      "y": 8,
+      "elevation": 0,
+      "dest_map": "MAP_RUINVEIL_GYM",
+      "dest_warp_id": "3"
+    },
+    {
+      "x": 21,
+      "y": 9,
+      "elevation": 0,
+      "dest_map": "MAP_RUINVEIL_GYM",
+      "dest_warp_id": "3"
+    },
+    {
+      "x": 21,
+      "y": 10,
+      "elevation": 0,
+      "dest_map": "MAP_RUINVEIL_GYM",
+      "dest_warp_id": "3"
+    }
+  ],
+  "coord_events": [
+    {
+      "type": "trigger",
+      "x": 19,
+      "y": 34,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "RuinveilGym2_VoiceInHead"
+    },
+    {
+      "type": "trigger",
+      "x": 20,
+      "y": 34,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "RuinveilGym2_VoiceInHead"
+    },
+    {
+      "type": "trigger",
+      "x": 21,
+      "y": 34,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "RuinveilGym2_VoiceInHead"
+    },
+    {
+      "type": "trigger",
+      "x": 28,
+      "y": 22,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "RuinveilGym2_VoiceInHead"
+    },
+    {
+      "type": "trigger",
+      "x": 28,
+      "y": 23,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "RuinveilGym2_VoiceInHead"
+    },
+    {
+      "type": "trigger",
+      "x": 28,
+      "y": 24,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "NULL"
+    },
+    {
+      "type": "trigger",
+      "x": 28,
+      "y": 25,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "RuinveilGym2_VoiceInHead"
+    },
+    {
+      "type": "trigger",
+      "x": 28,
+      "y": 8,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "RuinveilGym2_VoiceInHead"
+    },
+    {
+      "type": "trigger",
+      "x": 28,
+      "y": 9,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "RuinveilGym2_VoiceInHead"
+    },
+    {
+      "type": "trigger",
+      "x": 28,
+      "y": 10,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "RuinveilGym2_VoiceInHead"
+    },
+    {
+      "type": "trigger",
+      "x": 28,
+      "y": 11,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "RuinveilGym2_VoiceInHead"
+    },
+    {
+      "type": "trigger",
+      "x": 22,
+      "y": 8,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "RuinveilGym2_VoiceInHead2"
+    },
+    {
+      "type": "trigger",
+      "x": 22,
+      "y": 9,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "RuinveilGym2_VoiceInHead2"
+    },
+    {
+      "type": "trigger",
+      "x": 22,
+      "y": 10,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "RuinveilGym2_VoiceInHead2"
+    },
+    {
+      "type": "trigger",
+      "x": 22,
+      "y": 11,
+      "elevation": 0,
+      "var": "VAR_TEMP_0",
+      "var_value": "0",
+      "script": "RuinveilGym2_VoiceInHead2"
+    }
+  ],
+  "bg_events": [
+    {
+      "type": "sign",
+      "x": 26,
+      "y": 28,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "RuinveilGym2_Puzzle1"
+    },
+    {
+      "type": "sign",
+      "x": 8,
+      "y": 34,
+      "elevation": 0,
+      "player_facing_dir": "BG_EVENT_PLAYER_FACING_ANY",
+      "script": "RuinveilGym2_Puzzle2"
+    }
+  ]
+}

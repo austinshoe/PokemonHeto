@@ -2242,3 +2242,22 @@ const u16 gTilesetPalettes_NewIndoors[][16] =
 };
 
 const u32 gTilesetTiles_NewIndoors[] = INCBIN_U32("data/tilesets/secondary/new_indoors/tiles.4bpp.lz");
+
+const u16 gTilesetPalettes_RuinveilGym[][16] =
+{
+    INCBIN_U16("data/tilesets/primary/ruinveil_gym/palettes/00.gbapal"),
+    INCBIN_U16("data/tilesets/primary/ruinveil_gym/palettes/01.gbapal"),
+    INCBIN_U16("data/tilesets/primary/ruinveil_gym/palettes/02.gbapal"),
+    INCBIN_U16("data/tilesets/primary/ruinveil_gym/palettes/03.gbapal"),
+    INCBIN_U16("data/tilesets/primary/ruinveil_gym/palettes/04.gbapal"),
+    INCBIN_U16("data/tilesets/primary/ruinveil_gym/palettes/05.gbapal"),
+    INCBIN_U16("data/tilesets/primary/ruinveil_gym/palettes/06.gbapal"),
+    INCBIN_U16("data/tilesets/primary/ruinveil_gym/palettes/07.gbapal"),
+    INCBIN_U16("data/tilesets/primary/ruinveil_gym/palettes/08.gbapal"),
+    INCBIN_U16("data/tilesets/primary/ruinveil_gym/palettes/09.gbapal"),
+    INCBIN_U16("data/tilesets/primary/ruinveil_gym/palettes/10.gbapal"),
+    INCBIN_U16("data/tilesets/primary/ruinveil_gym/palettes/11.gbapal"),
+    INCBIN_U16("data/tilesets/primary/ruinveil_gym/palettes/12.gbapal"),
+};
+
+const u32 gTilesetTiles_RuinveilGym[] = INCBIN_U32("data/tilesets/primary/ruinveil_gym/tiles.4bpp.lz");

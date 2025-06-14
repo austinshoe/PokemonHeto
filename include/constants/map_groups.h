@@ -728,6 +728,9 @@
 #define MAP_RUINVEIL_HOUSE4            (5 | (43 << 8))
 #define MAP_FLUORITES_EYE              (6 | (43 << 8))
 #define MAP_RUINVEIL_DESERT_CONNECTION (7 | (43 << 8))
+#define MAP_RUINVEIL_GYM               (8 | (43 << 8))
+#define MAP_RUINVEIL_GYM_FAIL          (9 | (43 << 8))
+#define MAP_RUINVEIL_GYM2              (10 | (43 << 8))
 
 // gMapGroup_IndoorKushinada
 #define MAP_KUSHINADA_CENTER     (0 | (44 << 8))

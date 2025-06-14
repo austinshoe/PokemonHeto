@@ -1376,3 +1376,9 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/HetonianDesertEntrance/scripts.inc"
 
 	.include "data/maps/DraconarixLairLair/scripts.inc"
+
+	.include "data/maps/RuinveilGym/scripts.inc"
+
+	.include "data/maps/RuinveilGymFail/scripts.inc"
+
+	.include "data/maps/RuinveilGym2/scripts.inc"

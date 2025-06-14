@@ -475,6 +475,32 @@
 #define METATILE_RSMossdeepGym_Switch_Down     0x239
 #define METATILE_RSMossdeepGym_Switch_Up       0x238
 
+// gTileset_RuinveilGym
+#define METATILE_RuinveilGym_EmptyTop         0x01C
+#define METATILE_RuinveilGym_EmptyTopLeft     0x032
+#define METATILE_RuinveilGym_EmptyTopRight    0x033
+#define METATILE_RuinveilGym_Floor            0x000
+#define METATILE_RuinveilGym_Four             0x017
+#define METATILE_RuinveilGym_One              0x014
+#define METATILE_RuinveilGym_PurplePath       0x008
+#define METATILE_RuinveilGym_Three            0x016
+#define METATILE_RuinveilGym_Top              0x002
+#define METATILE_RuinveilGym_TopBottom        0x029
+#define METATILE_RuinveilGym_TopBottomLeft    0x028
+#define METATILE_RuinveilGym_TopBottomRight   0x02A
+#define METATILE_RuinveilGym_TopCornerLeft    0x031
+#define METATILE_RuinveilGym_TopCornerRight   0x030
+#define METATILE_RuinveilGym_TopLeft          0x02C
+#define METATILE_RuinveilGym_TopRight         0x02B
+#define METATILE_RuinveilGym_Two              0x015
+#define METATILE_RuinveilGym_WallBottom       0x021
+#define METATILE_RuinveilGym_WallLeftBottom   0x020
+#define METATILE_RuinveilGym_WallRightBottom  0x022
+#define METATILE_RuinveilGym_WallTop          0x019
+#define METATILE_RuinveilGym_WallTopLeft      0x018
+#define METATILE_RuinveilGym_WallTopRight     0x01A
+#define METATILE_RuinveilGym_YellowPath       0x009
+
 // gTileset_Ruinveil
 #define METATILE_Ruinveil_BrownCliff  0x04E
 

@@ -771,7 +771,10 @@
     "RuinveilHouse3",
     "RuinveilHouse4",
     "FluoritesEye",
-    "RuinveilDesertConnection"
+    "RuinveilDesertConnection",
+    "RuinveilGym",
+    "RuinveilGymFail",
+    "RuinveilGym2"
   ],
   "gMapGroup_IndoorKushinada": [
     "KushinadaCenter",

@@ -7176,6 +7176,42 @@
       "secondary_tileset": "gTileset_volcano_2",
       "border_filepath": "data/layouts/DraconarixLairLair/border.bin",
       "blockdata_filepath": "data/layouts/DraconarixLairLair/map.bin"
+    },
+    {
+      "id": "LAYOUT_RUINVEIL_GYM",
+      "name": "RuinveilGym_Layout",
+      "width": 40,
+      "height": 40,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_RuinveilGym",
+      "secondary_tileset": "gTileset_volcano_2",
+      "border_filepath": "data/layouts/RuinveilGym/border.bin",
+      "blockdata_filepath": "data/layouts/RuinveilGym/map.bin"
+    },
+    {
+      "id": "LAYOUT_RUINVEIL_GYM_FAIL",
+      "name": "RuinveilGymFail_Layout",
+      "width": 5,
+      "height": 5,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_RuinveilGym",
+      "secondary_tileset": "gTileset_volcano_2",
+      "border_filepath": "data/layouts/RuinveilGymFail/border.bin",
+      "blockdata_filepath": "data/layouts/RuinveilGymFail/map.bin"
+    },
+    {
+      "id": "LAYOUT_RUINVEIL_GYM2",
+      "name": "RuinveilGym2_Layout",
+      "width": 40,
+      "height": 50,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_RuinveilGym",
+      "secondary_tileset": "gTileset_volcano_2",
+      "border_filepath": "data/layouts/RuinveilGym2/border.bin",
+      "blockdata_filepath": "data/layouts/RuinveilGym2/map.bin"
     }
   ]
 }
