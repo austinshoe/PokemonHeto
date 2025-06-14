@@ -194,7 +194,7 @@ RuinveilGym_SumAndModUpdateFloor:
 
 	setmetatile 17, 25, METATILE_RuinveilGym_PurplePath, FALSE
 	setmetatile 18, 25, METATILE_RuinveilGym_PurplePath, FALSE
-	setmetatile 19, 26, METATILE_RuinveilGym_WallTopLeft, TRUE
+	setmetatile 19, 25, METATILE_RuinveilGym_WallTopLeft, TRUE
 	setmetatile 20, 25, METATILE_RuinveilGym_WallTop, TRUE
 	setmetatile 21, 25, METATILE_RuinveilGym_WallTopRight, TRUE
 
@@ -337,24 +337,28 @@ RuinveilGym_SumAndModUpdateFloor:
 
 
 RuinveilGym_SumAndModWarp1::
+	setvar VAR_TEMP_F, 0
 	compare VAR_TEMP_4, 1
 	goto_if_eq RuinveilGym_SumAndModWarpNextStage
 	goto RuinveilGym_SumAndModWarpFail
 
 
 RuinveilGym_SumAndModWarp2::
+	setvar VAR_TEMP_F, 0
 	compare VAR_TEMP_4, 2
 	goto_if_eq RuinveilGym_SumAndModWarpNextStage
 	goto RuinveilGym_SumAndModWarpFail
 
 
 RuinveilGym_SumAndModWarp3::
+	setvar VAR_TEMP_F, 0
 	compare VAR_TEMP_4, 3
 	goto_if_eq RuinveilGym_SumAndModWarpNextStage
 	goto RuinveilGym_SumAndModWarpFail
 
 
 RuinveilGym_SumAndModWarp4::
+	setvar VAR_TEMP_F, 0
 	compare VAR_TEMP_4, 4
 	goto_if_eq RuinveilGym_SumAndModWarpNextStage
 	goto RuinveilGym_SumAndModWarpFail

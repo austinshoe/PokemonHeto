@@ -183,18 +183,18 @@
       "x": 12,
       "y": 50,
       "elevation": 0,
-      "var": "VAR_TEMP_MIXED_RECORDS",
+      "var": "VAR_LILYCOVE_CITY_STATE",
       "var_value": "0",
-      "script": "NULL"
+      "script": "RuinveilCity_TriggerLeft"
     },
     {
       "type": "trigger",
       "x": 13,
       "y": 50,
       "elevation": 0,
-      "var": "VAR_TEMP_MIXED_RECORDS",
+      "var": "VAR_LILYCOVE_CITY_STATE",
       "var_value": "0",
-      "script": "NULL"
+      "script": "RuinveilCity_TriggerRight"
     }
   ],
   "bg_events": [
