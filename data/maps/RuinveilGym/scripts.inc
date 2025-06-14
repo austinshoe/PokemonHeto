@@ -68,6 +68,9 @@ RuinveilGym_KanaeIntro:
 	.string "Only in the darkness can true clarity\n"
 	.string "emerge…$"
 
+RuinveilGym_KanaeDefeat:
+	.string "Walk the path of reason and instinct.$"
+
 RuinveilGym_KanaePostBattle:
 	.string "How did you like the puzzles?\n"
 	.string "My assistant, Chet Gippittee, came up\l"
