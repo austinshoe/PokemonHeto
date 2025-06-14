@@ -1,6 +1,11 @@
 RuinveilGym_MapScripts::
+	map_script MAP_SCRIPT_ON_LOAD, RuinveilGym_OnLoad
 	map_script MAP_SCRIPT_ON_TRANSITION, RuinveilGym_OnTransition
 	.byte 0
+
+RuinveilGym_OnLoad::
+	setvar VAR_UNUSED_0x4091, 0
+	end
 
 RuinveilGym_OnTransition::
 	setvar VAR_UNUSED_0x40A1, 0
@@ -95,6 +100,9 @@ RuinveilGym_SumAndModHint::
 
 RuinveilGym_SumAndModTrigger::
 	lockall
+	randomtovar 4, VAR_TEMP_1
+	randomtovar 4, VAR_TEMP_2
+	randomtovar 4, VAR_TEMP_3
 	@ random 4
 	@ setvar VAR_TEMP_1, VAR_RESULT
 	@ random 4
@@ -102,9 +110,9 @@ RuinveilGym_SumAndModTrigger::
 	@ random 4
 	@ setvar VAR_TEMP_3, VAR_RESULT
 
-	setvar VAR_TEMP_1, 1
-	setvar VAR_TEMP_2, 2
-	setvar VAR_TEMP_3, 3
+	@ setvar VAR_TEMP_1, 1
+	@ setvar VAR_TEMP_2, 2
+	@ setvar VAR_TEMP_3, 3
 
 	setvar VAR_UNUSED_0x4091, 0
 	delay 16

@@ -1749,6 +1749,13 @@
 	.2byte \graphicsId
 	.endm
 
+	@ Stores a random integer between 0 and limit (exclusive of limit) in specified variable.
+	.macro randomtovar limit:req, var:req
+	.byte 0xe5
+	.2byte \limit
+	.2byte \var
+	.endm
+
 
 @ Supplementary
 

@@ -2369,3 +2369,12 @@ void ScrCmd_setobjectgfx(struct ScriptContext *ctx)
     }
     return;
 }*/
+
+bool8 ScrCmd_randomtovar(struct ScriptContext *ctx)
+{
+    u16 max = VarGet(ScriptReadHalfword(ctx));
+    u16 *var = GetVarPointer(ScriptReadHalfword(ctx));
+
+    *var = Random() % max;
+    return FALSE;
+}
