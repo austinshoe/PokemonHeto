@@ -104,10 +104,10 @@ RuinveilGym_SumAndModTrigger::
 
 RuinveilGym_GetSum1:
 	switch VAR_TEMP_1
-	case 0: RuinveilGym_GetSum11
-	case 1: RuinveilGym_GetSum12
-	case 2: RuinveilGym_GetSum13
-	case 3: RuinveilGym_GetSum14
+	case 0, RuinveilGym_GetSum11
+	case 1, RuinveilGym_GetSum12
+	case 2, RuinveilGym_GetSum13
+	case 3, RuinveilGym_GetSum14
 	goto RuinveilGym_GetSum2
 
 RuinveilGym_GetSum11:
@@ -128,10 +128,10 @@ RuinveilGym_GetSum14:
 
 RuinveilGym_GetSum2:
 	switch VAR_TEMP_2
-	case 0: RuinveilGym_GetSum21
-	case 1: RuinveilGym_GetSum22
-	case 2: RuinveilGym_GetSum23
-	case 3: RuinveilGym_GetSum24
+	case 0, RuinveilGym_GetSum21
+	case 1, RuinveilGym_GetSum22
+	case 2, RuinveilGym_GetSum23
+	case 3, RuinveilGym_GetSum24
 	goto RuinveilGym_GetSum3
 
 RuinveilGym_GetSum21:
@@ -152,10 +152,10 @@ RuinveilGym_GetSum24:
 
 RuinveilGym_GetSum3:
 	switch VAR_TEMP_3
-	case 0: RuinveilGym_GetSum31
-	case 1: RuinveilGym_GetSum32
-	case 2: RuinveilGym_GetSum33
-	case 3: RuinveilGym_GetSum34
+	case 0, RuinveilGym_GetSum31
+	case 1, RuinveilGym_GetSum32
+	case 2, RuinveilGym_GetSum33
+	case 3, RuinveilGym_GetSum34
 	goto RuinveilGym_SetNumberMetatiles1
 
 RuinveilGym_GetSum31:
