@@ -306,3 +306,9 @@ const u16 gMetatileAttributes_NewIndoors[] = INCBIN_U16("data/tilesets/secondary
 
 const u16 gMetatiles_RuinveilGym[] = INCBIN_U16("data/tilesets/primary/ruinveil_gym/metatiles.bin");
 const u16 gMetatileAttributes_RuinveilGym[] = INCBIN_U16("data/tilesets/primary/ruinveil_gym/metatile_attributes.bin");
+
+const u16 gMetatiles_NewCave[] = INCBIN_U16("data/tilesets/primary/new_cave/metatiles.bin");
+const u16 gMetatileAttributes_NewCave[] = INCBIN_U16("data/tilesets/primary/new_cave/metatile_attributes.bin");
+
+const u16 gMetatiles_GenericCave[] = INCBIN_U16("data/tilesets/secondary/generic_cave/metatiles.bin");
+const u16 gMetatileAttributes_GenericCave[] = INCBIN_U16("data/tilesets/secondary/generic_cave/metatile_attributes.bin");

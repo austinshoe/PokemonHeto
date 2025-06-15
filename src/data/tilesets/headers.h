@@ -1188,3 +1188,25 @@ const struct Tileset gTileset_RuinveilGym =
     .metatileAttributes = gMetatileAttributes_RuinveilGym,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_NewCave =
+{
+    .isCompressed = TRUE,
+    .isSecondary = FALSE,
+    .tiles = gTilesetTiles_NewCave,
+    .palettes = gTilesetPalettes_NewCave,
+    .metatiles = gMetatiles_NewCave,
+    .metatileAttributes = gMetatileAttributes_NewCave,
+    .callback = NULL,
+};
+
+const struct Tileset gTileset_GenericCave =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_GenericCave,
+    .palettes = gTilesetPalettes_GenericCave,
+    .metatiles = gMetatiles_GenericCave,
+    .metatileAttributes = gMetatileAttributes_GenericCave,
+    .callback = NULL,
+};

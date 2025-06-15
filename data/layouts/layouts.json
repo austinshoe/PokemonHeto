@@ -5540,7 +5540,7 @@
       "height": 40,
       "border_width": 2,
       "border_height": 2,
-      "primary_tileset": "gTileset_General",
+      "primary_tileset": "gTileset_NewCave",
       "secondary_tileset": "gTileset_MirageTower",
       "border_filepath": "data/layouts/WintersPassage/border.bin",
       "blockdata_filepath": "data/layouts/WintersPassage/map.bin"
@@ -5552,8 +5552,8 @@
       "height": 48,
       "border_width": 2,
       "border_height": 2,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_MirageTower",
+      "primary_tileset": "gTileset_NewCave",
+      "secondary_tileset": "gTileset_GenericCave",
       "border_filepath": "data/layouts/WintersPassage2F/border.bin",
       "blockdata_filepath": "data/layouts/WintersPassage2F/map.bin"
     },
