@@ -100,10 +100,78 @@ RuinveilGym_SumAndModTrigger::
 	randomtovar 4, VAR_TEMP_3
 	setvar VAR_UNUSED_0x4091, 0
 	delay 16
-	addvar VAR_UNUSED_0x4091, VAR_TEMP_1
-	addvar VAR_UNUSED_0x4091, VAR_TEMP_2
-	addvar VAR_UNUSED_0x4091, VAR_TEMP_3
+	goto RuinveilGym_GetSum1
+
+RuinveilGym_GetSum1:
+	switch VAR_TEMP_1
+	case 0: RuinveilGym_GetSum11
+	case 1: RuinveilGym_GetSum12
+	case 2: RuinveilGym_GetSum13
+	case 3: RuinveilGym_GetSum14
+	goto RuinveilGym_GetSum2
+
+RuinveilGym_GetSum11:
+	addvar VAR_UNUSED_0x4091, 1
+	goto RuinveilGym_GetSum2
+
+RuinveilGym_GetSum12:
+	addvar VAR_UNUSED_0x4091, 2
+	goto RuinveilGym_GetSum2
+
+RuinveilGym_GetSum13:
 	addvar VAR_UNUSED_0x4091, 3
+	goto RuinveilGym_GetSum2
+
+RuinveilGym_GetSum14:
+	addvar VAR_UNUSED_0x4091, 4
+	goto RuinveilGym_GetSum2
+
+RuinveilGym_GetSum2:
+	switch VAR_TEMP_2
+	case 0: RuinveilGym_GetSum21
+	case 1: RuinveilGym_GetSum22
+	case 2: RuinveilGym_GetSum23
+	case 3: RuinveilGym_GetSum24
+	goto RuinveilGym_GetSum3
+
+RuinveilGym_GetSum21:
+	addvar VAR_UNUSED_0x4091, 1
+	goto RuinveilGym_GetSum3
+
+RuinveilGym_GetSum22:
+	addvar VAR_UNUSED_0x4091, 2
+	goto RuinveilGym_GetSum3
+
+RuinveilGym_GetSum23:
+	addvar VAR_UNUSED_0x4091, 3
+	goto RuinveilGym_GetSum3
+
+RuinveilGym_GetSum24:
+	addvar VAR_UNUSED_0x4091, 4
+	goto RuinveilGym_GetSum3
+
+RuinveilGym_GetSum3:
+	switch VAR_TEMP_3
+	case 0: RuinveilGym_GetSum31
+	case 1: RuinveilGym_GetSum32
+	case 2: RuinveilGym_GetSum33
+	case 3: RuinveilGym_GetSum34
+	goto RuinveilGym_SetNumberMetatiles1
+
+RuinveilGym_GetSum31:
+	addvar VAR_UNUSED_0x4091, 1
+	goto RuinveilGym_SetNumberMetatiles1
+
+RuinveilGym_GetSum32:
+	addvar VAR_UNUSED_0x4091, 2
+	goto RuinveilGym_SetNumberMetatiles1
+
+RuinveilGym_GetSum33:
+	addvar VAR_UNUSED_0x4091, 3
+	goto RuinveilGym_SetNumberMetatiles1
+
+RuinveilGym_GetSum34:
+	addvar VAR_UNUSED_0x4091, 4
 	goto RuinveilGym_SetNumberMetatiles1
 
 
