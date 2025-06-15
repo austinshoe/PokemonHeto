@@ -1,11 +1,6 @@
 RuinveilGym_MapScripts::
-	map_script MAP_SCRIPT_ON_LOAD, RuinveilGym_OnLoad
 	map_script MAP_SCRIPT_ON_TRANSITION, RuinveilGym_OnTransition
 	.byte 0
-
-RuinveilGym_OnLoad::
-	setvar VAR_UNUSED_0x4091, 0
-	end
 
 RuinveilGym_OnTransition::
 	setvar VAR_UNUSED_0x40A1, 0
@@ -434,7 +429,7 @@ RuinveilGym_SumAndModWarp3::
 
 RuinveilGym_SumAndModWarp4::
 	setvar VAR_TEMP_F, 0
-	compare VAR_UNUSED_0x4091, 2
+	compare VAR_UNUSED_0x4091, 3
 	goto_if_eq RuinveilGym_SumAndModWarpNextStage
 	goto RuinveilGym_SumAndModWarpFail
 
