@@ -57,7 +57,7 @@ RuinveilGym_ExplainVeilBadgeTakeThis:
 
 RuinveilGym_KanaeExplainPsychic:
 	.string "This TM contains the move Psychic.\p"
-	.string "It's a strong, reliable psychic type\l"
+	.string "It's a strong, reliable psychic type\n"
 	.string "move.\p"
 	.string "Congratulations.$"
 
@@ -79,7 +79,7 @@ RuinveilGym_KanaeDefeat:
 RuinveilGym_KanaePostBattle:
 	.string "How did you like the puzzles?\n"
 	.string "My assistant, Chet Gippittee, came up\l"
-	.string "most of them...\p"
+	.string "with most of them...\p"
 	.string "He's a mysterious, person...\n"
 	.string "Come to think of it, I think he's on\l"
 	.string "vacation right now...$"
@@ -103,17 +103,6 @@ RuinveilGym_SumAndModTrigger::
 	randomtovar 4, VAR_TEMP_1
 	randomtovar 4, VAR_TEMP_2
 	randomtovar 4, VAR_TEMP_3
-	@ random 4
-	@ setvar VAR_TEMP_1, VAR_RESULT
-	@ random 4
-	@ setvar VAR_TEMP_2, VAR_RESULT
-	@ random 4
-	@ setvar VAR_TEMP_3, VAR_RESULT
-
-	@ setvar VAR_TEMP_1, 1
-	@ setvar VAR_TEMP_2, 2
-	@ setvar VAR_TEMP_3, 3
-
 	setvar VAR_UNUSED_0x4091, 0
 	delay 16
 	addvar VAR_UNUSED_0x4091, VAR_TEMP_1
