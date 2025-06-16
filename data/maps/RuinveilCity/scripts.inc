@@ -194,7 +194,7 @@ RuinveilCity_BadNews:
     .string "Miner 1: Mrs. Kanae!\p"
     .string "Kanae: How's the excavation going?\p"
     .string "Miner 2: We were just standing guard\n"
-    .strgin "when all of a sudden, a huge group of\l"
+    .string "when all of a sudden, a huge group of\l"
     .string "people wearing dark blue uniforms\l"
     .string "forced their way past us!\p"
     .string "Miner 1: We tried to stop them, but they\n"
