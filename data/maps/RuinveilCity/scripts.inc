@@ -9,6 +9,8 @@ RuinveilCity_OnLoad:
     goto_if_eq RuinveilCity_SetWallUnbroken
     compare VAR_LILYCOVE_CITY_STATE, 3
     goto_if_eq RuinveilCity_SetUpMinersGrunts
+    compare VAR_LILYCOVE_CITY_STATE, 4
+    goto_if_eq RuinveilCity_SetUpMinersGruntsKanae
     end
 
 RuinveilCity_SetUpMinersGrunts:
@@ -17,6 +19,15 @@ RuinveilCity_SetUpMinersGrunts:
     setobjectxyperm 8, 12, 43
     end
 
+RuinveilCity_SetUpMinersGruntsKanae:
+    setobjectxyperm 1, 40, 48
+    setobjectxyperm 2, 43, 48
+    setobjectxyperm 8, 40, 35
+    setobjectxyperm 9, 41, 34
+    setobjectmovementtype 8, MOVEMENT_TYPE_FACE_UP
+    setobjectmovementtype 9, MOVEMENT_TYPE_FACE_DOWN
+    setobjectmovementtype 10, MOVEMENT_TYPE_FACE_DOWN
+    end
 
 RuinveilCity_SetWallUnbroken:
     setmetatile 40, 31, METATILE_Ruinveil_BrownCliff, TRUE
@@ -57,7 +68,7 @@ RuinveilCity_ExcavationStart:
 
 RuinveilCity_StartMainEv:
     lockall
-    delay 32
+    delay 64
     applymovement 8, RuinveilCity_KanaePullUp
     applymovement OBJ_EVENT_ID_PLAYER, RuinveilCity_PlayerPullUp
     waitmovement 8
@@ -66,10 +77,137 @@ RuinveilCity_StartMainEv:
     applymovement OBJ_EVENT_ID_PLAYER, RuinveilCity_PlayerGoToRuins
     waitmovement 8
     waitmovement OBJ_EVENT_ID_PLAYER
+    applymovement 1, Common_Movement_FaceDown
+    applymovement 2, Common_Movement_FaceDown
+    waitmovement 1
+    waitmovement 2
+    applymovement 1, Common_Movement_ExclamationMark
+    applymovement 2, Common_Movement_ExclamationMark
+    msgbox RuinveilCity_BadNews, MSGBOX_DEFAULT
+    waitmessage
+    closemessage
+    applymovement 8, RuinveilCity_KanaeGoToRuinEntrance
+    applymovement OBJ_EVENT_ID_PLAYER, RuinveilCity_PlayerGoToRuinEntrance
+    waitmovement 8
+    waitmovement OBJ_EVENT_ID_PLAYER
+    applymovement 10, Common_Movement_FaceDown
+    applymovement 9, Common_Movement_FaceDown
+    waitmovement 0
+    applymovement 10, Common_Movement_ExclamationMark
+    applymovement 9, Common_Movement_ExclamationMark
+    msgbox RuinveilCity_IntrudersSpotted, MSGBOX_DEFAULT
+    waitmessage
+    closemessage
+    applymovement 9, RuinveilCity_SealOffEntrance
+    waitmovement 9
+    delay 64
+    applymovement 8, Common_Movement_FaceRight
+    applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft
+    waitmovement 0
+    msgbox RuinveilCity_BeatTheseGrunts, MSGBOX_DEFAULT
+    waitmessage
+    closemessage
+    call Common_EventScript_OutOfCenterPartyHeal
+    delay 32
+    msgbox RuinveilCity_HealYourMons, MSGBOX_DEFAULT
+    waitmessage
+    closemessage
+    applymovement 8, RuinveilCity_KanaeToGrunts
+    waitmovement 0
+    setrespawn HEAL_LOCATION_RUINVEIL_CITY_KANAE
     setvar VAR_LILYCOVE_CITY_STATE, 4
-    @ STUB FIX THIS
     releaseall
     end
+
+RuinveilCity_KanaeHeal::
+    lock
+    faceplayer
+    msgbox RuinveilCity_KanaeHealMons, MSGBOX_AUTOCLOSE
+    call Common_EventScript_OutOfCenterPartyHeal
+    delay 32
+    applymovement 8, Common_Movement_FaceUp
+    waitmovement 8
+    release
+    end
+
+RuinveilCity_KanaeHealMons:
+    .string "Here, let me heal your Pokémon.$"
+
+RuinveilCity_KanaeToGrunts:
+    walk_up
+    step_end
+
+RuinveilCity_HealYourMons:
+    .string "Kanae: If you need to heal at any time,\p"
+    .string "I have a lot of Full Restores in my bag.$"
+
+RuinveilCity_BeatTheseGrunts:
+    .string "Kanae: We need to beat these grunts.\p"
+    .string "I'll take the one on the left, you\n"
+    .string "take the one on the right.\p"
+    .string "First, let me heal your party.$"
+
+RuinveilCity_SealOffEntrance:
+    walk_left
+    face_down
+    step_end
+
+RuinveilCity_IntrudersSpotted:
+    .string "Intruders! Seal off the entrance!$"
+
+RuinveilCity_KanaeGoToRuinEntrance:
+    walk_up
+    walk_up
+    walk_up
+    walk_up
+    walk_up
+    walk_up
+    walk_up
+    walk_up
+    walk_up
+    walk_up
+    walk_up
+    walk_up
+    walk_up
+    walk_left
+    face_up
+    step_end
+
+RuinveilCity_PlayerGoToRuinEntrance:
+    walk_up
+    walk_up
+    walk_up
+    walk_up
+    walk_up
+    walk_up
+    walk_up
+    walk_up
+    walk_up
+    walk_up
+    walk_up
+    walk_up
+    walk_up
+    walk_up
+    step_end
+
+RuinveilCity_BadNews:
+    .string "Miner 1: Mrs. Kanae!\p"
+    .string "Kanae: How's the excavation going?\p"
+    .string "Miner 2: We were just standing guard\n"
+    .strgin "when all of a sudden, a huge group of\l"
+    .string "people wearing dark blue uniforms\l"
+    .string "forced their way past us!\p"
+    .string "Miner 1: We tried to stop them, but they\n"
+    .string "were too strong.\p"
+    .string "We can't even tell Lena and the others\n"
+    .string "inside the ruins, because they're\l"
+    .string "blocking off the entrance!\p"
+    .string "Kanae: No... This is exactly what Nou\n"
+    .string "was scared of.\p"
+    .string "{PLAYER}, we need to stop them.\p"
+    .string "You two, contact the Association and try\n"
+    .string "to get to Nou!$"
+
 
 RuinveilCity_KanaePullUp:
     walk_down
