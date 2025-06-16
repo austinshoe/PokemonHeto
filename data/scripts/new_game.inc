@@ -274,5 +274,6 @@ EventScript_ResetAllMapFlags::
 	setflag FLAG_UNUSED_0x022
 	setflag FLAG_RECEIVED_HM_ROCK_SMASH
 	setflag FLAG_HIDE_LITTLEROOT_TOWN_RIVAL
+	setflag FLAG_HIDE_SLATEPORT_CITY_OCEANIC_MUSEUM_AQUA_GRUNTS
 	call EventScript_ResetAllBerries
 	end

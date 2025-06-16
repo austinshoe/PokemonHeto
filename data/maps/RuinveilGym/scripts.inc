@@ -1,10 +1,52 @@
 RuinveilGym_MapScripts::
 	map_script MAP_SCRIPT_ON_TRANSITION, RuinveilGym_OnTransition
+	map_script MAP_SCRIPT_ON_FRAME_TABLE, RuinveilGym_OnFrame
 	.byte 0
 
 RuinveilGym_OnTransition::
 	setvar VAR_UNUSED_0x40A1, 0
 	end
+
+RuinveilGym_OnFrame:
+	map_script_2 VAR_LILYCOVE_CITY_STATE, 3, RuinveilGym_StartRuinveilMainEvent
+	.2byte 0
+
+RuinveilGym_StartRuinveilMainEvent:
+	lockall
+	setvar VAR_0x8004, 3  @ vertical pan
+	setvar VAR_0x8005, 5  @ horizontal pan
+	setvar VAR_0x8006, 8  @ num shakes
+	setvar VAR_0x8007, 5  @ shake delay
+	special ShakeCamera
+	waitstate
+	delay 16
+	setvar VAR_0x8004, 5  @ vertical pan
+	setvar VAR_0x8005, 3  @ horizontal pan
+	setvar VAR_0x8006, 8  @ num shakes
+	setvar VAR_0x8007, 5  @ shake delay
+	special ShakeCamera
+	waitstate
+	delay 16
+	setvar VAR_0x8004, 3  @ vertical pan
+	setvar VAR_0x8005, 5  @ horizontal pan
+	setvar VAR_0x8006, 8  @ num shakes
+	setvar VAR_0x8007, 5  @ shake delay
+	special ShakeCamera
+	waitstate
+	delay 32
+	applymovement 3, Common_Movement_ExclamationMark
+	msgbox RuinveilGym_StartedExcavation, MSGBOX_DEFAULT
+	waitmessage
+	closemessage
+	warpsilent MAP_RUINVEIL_CITY, 8
+	delay 32
+	end
+
+RuinveilGym_StartedExcavation:
+	.string "Kanae: Looks like they're in the middle\n"
+	.string "clearing out the ruins.\p"
+	.string "Let's go check it out.$"
+
 
 RuinveilGym_Kanae::
 	trainerbattle_single TRAINER_WINONA_1, RuinveilGym_KanaeIntro, RuinveilGym_KanaeDefeat, RuinveilGym_KanaeDefeated
@@ -19,6 +61,8 @@ RuinveilGym_KanaeDefeated:
 	call Common_EventScript_PlayGymBadgeFanfare
 	msgbox RuinveilGym_ExplainVeilBadgeTakeThis, MSGBOX_DEFAULT
 	setflag FLAG_DEFEATED_FORTREE_GYM
+	setvar VAR_LILYCOVE_CITY_STATE, 3
+	clearflag FLAG_HIDE_SLATEPORT_CITY_OCEANIC_MUSEUM_AQUA_GRUNTS
 	setflag FLAG_BADGE06_GET
 	call RuinveilGym_KanaeDefeated_GivePsychic
 	release

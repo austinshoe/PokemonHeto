@@ -7,7 +7,16 @@ RuinveilCity_MapScripts::
 RuinveilCity_OnLoad:
     compare VAR_LILYCOVE_CITY_STATE, 0
     goto_if_eq RuinveilCity_SetWallUnbroken
+    compare VAR_LILYCOVE_CITY_STATE, 3
+    goto_if_eq RuinveilCity_SetUpMinersGrunts
     end
+
+RuinveilCity_SetUpMinersGrunts:
+    setobjectxyperm 1, 40, 48
+    setobjectxyperm 2, 43, 48
+    setobjectxyperm 8, 12, 43
+    end
+
 
 RuinveilCity_SetWallUnbroken:
     setmetatile 40, 31, METATILE_Ruinveil_BrownCliff, TRUE
@@ -30,6 +39,7 @@ RuinveilCity_OnTransition:
 
 RuinveilCity_OnFrame:
     map_script_2 VAR_LILYCOVE_CITY_STATE, 1, RuinveilCity_ExcavationStart
+    map_script_2 VAR_LILYCOVE_CITY_STATE, 3, RuinveilCity_StartMainEv
     .2byte 0
 
 RuinveilCity_ExcavationStart:
@@ -44,6 +54,46 @@ RuinveilCity_ExcavationStart:
     setvar VAR_LILYCOVE_CITY_STATE, 2
     releaseall
     end
+
+RuinveilCity_StartMainEv:
+    lockall
+    delay 32
+    applymovement 8, RuinveilCity_KanaePullUp
+    applymovement OBJ_EVENT_ID_PLAYER, RuinveilCity_PlayerPullUp
+    waitmovement 8
+    waitmovement OBJ_EVENT_ID_PLAYER
+    applymovement 8, RuinveilCity_NouGoToRuins
+    applymovement OBJ_EVENT_ID_PLAYER, RuinveilCity_PlayerGoToRuins
+    waitmovement 8
+    waitmovement OBJ_EVENT_ID_PLAYER
+    setvar VAR_LILYCOVE_CITY_STATE, 4
+    @ STUB FIX THIS
+    releaseall
+    end
+
+RuinveilCity_KanaePullUp:
+    walk_down
+    walk_down
+    walk_down
+    walk_down
+    walk_down
+    walk_down
+    walk_down
+    walk_right
+    walk_right
+    step_end
+
+RuinveilCity_PlayerPullUp:
+    walk_down
+    walk_down
+    walk_down
+    walk_down
+    walk_down
+    walk_down
+    walk_down
+    walk_down
+    walk_right
+    step_end
 
 
 RuinveilCity_MinersGuardingEntrance::
