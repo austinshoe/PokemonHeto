@@ -74,7 +74,7 @@ RuinveilCity_ExcavationStart:
     releaseall
     end
 
-RuinveilCity_GruntBattle:
+RuinveilCity_GruntBattle::
     lockall
     faceplayer
     msgbox RuinveilCity_GruntPreBattle, MSGBOX_DEFAULT
@@ -82,7 +82,7 @@ RuinveilCity_GruntBattle:
     delay 32
     applymovement 10, Common_Movement_ExclamationMark
     msgbox RuinveilCity_KanaeWin, MSGBOX_DEFAULT
-    waitmovement
+    waitmovement 10
     waitmessage
     closemessage
     fadescreen FADE_TO_BLACK
@@ -110,7 +110,7 @@ RuinveilCity_GruntBattle:
     end
 
 
-RuinveilCity_KanaeEnterRuins;
+RuinveilCity_KanaeEnterRuins:
     walk_up
     walk_right
     walk_up
