@@ -105,6 +105,7 @@ RuinveilCity_GruntBattle::
     playse SE_EXIT
     setobjectxyperm 8, 0, 0
     setobjectxy 8, 0, 0
+    setrespawn HEAL_LOCATION_RUINVEIL_CITY
     setvar VAR_LILYCOVE_CITY_STATE, 5
     releaseall
     end
