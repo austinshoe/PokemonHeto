@@ -7,10 +7,12 @@ RuinveilCity_MapScripts::
 RuinveilCity_OnLoad:
     compare VAR_LILYCOVE_CITY_STATE, 0
     goto_if_eq RuinveilCity_SetWallUnbroken
-    compare VAR_LILYCOVE_CITY_STATE, 3
-    goto_if_eq RuinveilCity_SetUpMinersGrunts
-    compare VAR_LILYCOVE_CITY_STATE, 4
-    goto_if_eq RuinveilCity_SetUpMinersGruntsKanae
+    end
+
+RuinveilCity_HideGruntsKanae:
+    setobjectxyperm 9, 0, 0
+    setobjectxyperm 10, 0, 0
+    setobjectxyperm 8, 0, 0
     end
 
 RuinveilCity_SetUpMinersGrunts:
@@ -46,6 +48,12 @@ RuinveilCity_SetWallUnbroken:
 
 RuinveilCity_OnTransition:
     setflag FLAG_VISITED_LILYCOVE_CITY
+    compare VAR_LILYCOVE_CITY_STATE, 3
+    goto_if_eq RuinveilCity_SetUpMinersGrunts
+    compare VAR_LILYCOVE_CITY_STATE, 4
+    goto_if_eq RuinveilCity_SetUpMinersGruntsKanae
+    compare VAR_LILYCOVE_CITY_STATE, 5
+    goto_if_eq RuinveilCity_HideGruntsKanae
     end
 
 RuinveilCity_OnFrame:
@@ -65,6 +73,80 @@ RuinveilCity_ExcavationStart:
     setvar VAR_LILYCOVE_CITY_STATE, 2
     releaseall
     end
+
+RuinveilCity_GruntBattle:
+    lockall
+    faceplayer
+    msgbox RuinveilCity_GruntPreBattle, MSGBOX_DEFAULT
+    trainerbattle_no_intro TRAINER_GRUNT_WEATHER_INST_1, RuinveilCity_GruntDefeat
+    delay 32
+    applymovement 10, Common_Movement_ExclamationMark
+    msgbox RuinveilCity_KanaeWin, MSGBOX_DEFAULT
+    waitmovement
+    waitmessage
+    closemessage
+    fadescreen FADE_TO_BLACK
+    hideobjectat 9, MAP_RUINVEIL_CITY
+    hideobjectat 10, MAP_RUINVEIL_CITY
+    fadescreen FADE_FROM_BLACK
+    setobjectxyperm 9, 0, 0
+    setobjectxyperm 10, 0, 0
+    setobjectxy 9, 0, 0
+    setobjectxy 10, 0, 0
+    call RuinveilCity_ReAdjustPlayerX
+    applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceLeft
+    applymovement 8, Common_Movement_FaceRight
+    waitmovement 0
+    msgbox RuinveilCity_KanaePlayerEnterRuins, MSGBOX_DEFAULT
+    waitmessage
+    closemessage
+    applymovement 8, RuinveilCity_KanaeEnterRuins
+    waitmovement 0
+    playse SE_EXIT
+    setobjectxyperm 8, 0, 0
+    setobjectxy 8, 0, 0
+    setvar VAR_LILYCOVE_CITY_STATE, 5
+    releaseall
+    end
+
+
+RuinveilCity_KanaeEnterRuins;
+    walk_up
+    walk_right
+    walk_up
+    step_end
+
+RuinveilCity_KanaePlayerEnterRuins:
+    .string "Kanae: The miners at the entrance said\n"
+    .string "that there was a large group of them.\p"
+    .string "We need to go in there and help Lena.\p"
+    .string "I'll go in first.$"
+
+RuinveilCity_ReAdjustPlayerX:
+    getplayerxy VAR_TEMP_0, VAR_TEMP_1
+    compare VAR_TEMP_0, 42
+    call_if_eq RuinveilCity_MoveToKanae
+    return
+
+RuinveilCity_MoveToKanae:
+    applymovement OBJ_EVENT_ID_PLAYER, RuinveilCity_DownLeft
+    waitmovement 0
+    return
+
+RuinveilCity_DownLeft: 
+    walk_down
+    walk_left
+    step_end
+
+RuinveilCity_GruntPreBattle:
+    .string "You're not getting past me!$"
+
+RuinveilCity_GruntDefeat:
+    .string "No!$"
+
+RuinveilCity_KanaeWin:
+    .string "Kanae: Your resistance was futile.\p"
+    .string "Grunt: Ow... Let's go...$"
 
 RuinveilCity_StartMainEv:
     lockall
@@ -238,6 +320,8 @@ RuinveilCity_MinersGuardingEntrance::
     lock
     compare VAR_LILYCOVE_CITY_STATE, 2
     goto_if_eq RuinveilCity_MinersGuardingEntranceES
+    compare VAR_LILYCOVE_CITY_STATE, 3
+    goto_if_ge RuinveilCity_MinersBeaten
     msgbox Text_RuinveilCity_MinersGuardingEntrance, MSGBOX_DEFAULT
     release
     end
@@ -247,6 +331,13 @@ RuinveilCity_MinersGuardingEntranceES:
     release
     end
 
+RuinveilCity_MinersBeaten: 
+    msgbox Text_RuinveilCity_MinersBeaten, MSGBOX_DEFAULT
+    release
+    end
+
+Text_RuinveilCity_MinersBeaten:
+    .string "Oof...$"
 
 Text_RuinveilCity_MinersGuardingEntrance:
     .string "So this is where Mr. Nou said to \n"
