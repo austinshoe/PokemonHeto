@@ -55,6 +55,7 @@ KuromisaRuins2_DraconarixCoreCutscene:
 	applymovement OBJ_EVENT_ID_PLAYER, KuromisaRuins2_PanCameraUp
 	waitmovement 0
 	@ @ @ @ STUB @ @ @ @
+	setvar VAR_LILYCOVE_CITY_STATE, 6
 	releaseall
 	end
 

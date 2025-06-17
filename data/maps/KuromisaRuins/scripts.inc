@@ -11,7 +11,7 @@ KuromisaRuins_Grunt1Intro:
 	.string "Where did you come from?\p"
 	.string "No matter. I'll crush you anyways!$"
 
-KuromisaRuins_Grunt1Defeat;
+KuromisaRuins_Grunt1Defeat:
 	.string "Gahlee...$"
 
 KuromisaRuins_Grunt1PostBattle:
