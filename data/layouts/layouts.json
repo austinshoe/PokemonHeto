@@ -6668,8 +6668,8 @@
       "height": 40,
       "border_width": 2,
       "border_height": 2,
-      "primary_tileset": "gTileset_General",
-      "secondary_tileset": "gTileset_Fallarbor",
+      "primary_tileset": "gTileset_NewCave",
+      "secondary_tileset": "gTileset_GenericCave",
       "border_filepath": "data/layouts/TunnelSunaRuinveil/border.bin",
       "blockdata_filepath": "data/layouts/TunnelSunaRuinveil/map.bin"
     },
@@ -7212,6 +7212,18 @@
       "secondary_tileset": "gTileset_volcano_2",
       "border_filepath": "data/layouts/RuinveilGym2/border.bin",
       "blockdata_filepath": "data/layouts/RuinveilGym2/map.bin"
+    },
+    {
+      "id": "LAYOUT_WINTERS_PASSAGE3F",
+      "name": "WintersPassage3F_Layout",
+      "width": 20,
+      "height": 20,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_NewCave",
+      "secondary_tileset": "gTileset_GenericCave",
+      "border_filepath": "data/layouts/WintersPassage3F/border.bin",
+      "blockdata_filepath": "data/layouts/WintersPassage3F/map.bin"
     }
   ]
 }

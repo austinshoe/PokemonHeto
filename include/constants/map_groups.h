@@ -779,6 +779,7 @@
 #define MAP_KUROMISA_RUINS2              (10 | (47 << 8))
 #define MAP_TUNNEL_SUNA_RUINVEIL         (11 | (47 << 8))
 #define MAP_DRACONARIX_LAIR_LAIR         (12 | (47 << 8))
+#define MAP_WINTERS_PASSAGE3F            (13 | (47 << 8))
 
 #define MAP_GROUPS_COUNT 48
 

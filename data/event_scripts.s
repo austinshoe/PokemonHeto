@@ -1382,3 +1382,5 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/RuinveilGymFail/scripts.inc"
 
 	.include "data/maps/RuinveilGym2/scripts.inc"
+
+	.include "data/maps/WintersPassage3F/scripts.inc"

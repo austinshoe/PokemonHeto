@@ -4,6 +4,14 @@ RuinveilCity_MapScripts::
     map_script MAP_SCRIPT_ON_FRAME_TABLE, RuinveilCity_OnFrame
     .byte 0
 
+RuinveilCity_OldMan::
+    msgbox Text_RuinveilCity_OldMan, MSGBOX_NPC
+    release
+    end
+
+Text_RuinveilCity_OldMan:
+    .string "I keep finding things on the ground...$"
+
 RuinveilCity_OnLoad:
     compare VAR_LILYCOVE_CITY_STATE, 0
     goto_if_eq RuinveilCity_SetWallUnbroken
@@ -54,12 +62,135 @@ RuinveilCity_OnTransition:
     goto_if_eq RuinveilCity_SetUpMinersGruntsKanae
     compare VAR_LILYCOVE_CITY_STATE, 5
     goto_if_eq RuinveilCity_HideGruntsKanae
+    compare VAR_LILYCOVE_CITY_STATE, 7
+    goto_if_eq RuinveilCity_SetUpPostEv
+    compare VAR_LILYCOVE_CITY_STATE, 8
+    goto_if_eq RuinveilCity_SetUpTunnelDig
+    compare VAR_LILYCOVE_CITY_STATE, 9
+    goto_if_eq RuinveilCity_ShowPlayer
+    end
+
+RuinveilCity_ShowPlayer:
+    showobjectat OBJ_EVENT_ID_PLAYER, 0
     end
 
 RuinveilCity_OnFrame:
     map_script_2 VAR_LILYCOVE_CITY_STATE, 1, RuinveilCity_ExcavationStart
     map_script_2 VAR_LILYCOVE_CITY_STATE, 3, RuinveilCity_StartMainEv
+    map_script_2 VAR_LILYCOVE_CITY_STATE, 7, RuinveilCity_PostEv
+    map_script_2 VAR_LILYCOVE_CITY_STATE, 8, RuinveilCity_TunnelDig
     .2byte 0
+
+RuinveilCity_SetUpTunnelDig:
+    setobjectxyperm 13, 19, 7
+    setobjectmovementtype 13, MOVEMENT_TYPE_FACE_UP
+    hideobjectat OBJ_EVENT_ID_PLAYER, 0
+    end
+
+RuinveilCity_TunnelDig:
+    msgbox RuinveilCity_WishHadStrength, MSGBOX_AUTOCLOSE
+    setvar VAR_LILYCOVE_CITY_STATE, 9
+    warpsilent MAP_RUINVEIL_CITY, 41, 49
+    end
+
+
+RuinveilCity_WishHadStrength:
+    .string "I wish I had Strength to move those\n"
+    .string "boulders in the tunnel...\p"
+    .string "Then I'd be able to get to Suna Town\n"
+    .string "without crossing the desert...$"
+
+RuinveilCity_SetUpPostEv:
+    clearflag FLAG_HIDE_PETALBURG_CITY_WALLYS_MOM
+    setobjectxyperm 1, 0, 0
+    setobjectxyperm 2, 0, 0
+    setobjectxyperm 3, 0, 0
+    setobjectxyperm 4, 0, 0
+    setobjectxyperm 11, 42, 49
+    setobjectxyperm 5, 42, 50
+    setobjectmovementtype 5, Common_Movement_FaceUp
+    setobjectxyperm 7, 41, 50
+    setobjectmovementtype 7, Common_Movement_FaceUp
+    end
+
+RuinveilCity_PostEv:
+    msgbox Text_RuinveilCity_PostEv, MSGBOX_AUTOCLOSE
+    fadescreen FADE_TO_BLACK
+    setflag FLAG_HIDE_PETALBURG_CITY_WALLYS_MOM
+    removeobject 5
+    removeobject 7
+    setobjectxyperm 11, 0, 0
+    setobjectxy 11, 0, 0
+    addobject 12
+    setobjectxy 12, 51, 49
+    fadescreen FADE_FROM_BLACK
+    applymovement 12, RuinveilCity_OldManWalkUp
+    waitmovement 12
+    applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceRight
+    msgbox Text_RuinveilCity_GiveStrength, MSGBOX_DEFAULT
+    waitmessage
+    giveitem ITEM_HM04, 1
+    msgbox Text_RuinveilCity_OldManLeave, MSGBOX_DEFAULT
+    waitmessage
+    closemessage
+    applymovement 12, RuinveilCity_OldManWalkBack
+    waitmovement 12
+    setobjectxyperm 12, 57, 40
+    setvar VAR_LILYCOVE_CITY_STATE, 8
+    setflag FLAG_HIDE_SLATEPORT_CITY_OCEANIC_MUSEUM_AQUA_GRUNTS
+    warpsilent MAP_RUINVEIL_CITY, 19, 7
+    release
+    end
+
+Text_RuinveilCity_OldManLeave:
+    .string "These scatterbrained youngins...$"
+
+Text_RuinveilCity_GiveStrength:
+    .string "You there!\p"
+    .string "You're a trainer right?\p"
+    .string "You must've dropped this.$"
+
+RuinveilCity_OldManWalkBack:
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    walk_right
+    step_end
+
+RuinveilCity_OldManWalkUp:
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    walk_left
+    step_end
+
+Text_RuinveilCity_PostEv:
+    .string "Lena: I just got a message from Shin.\p"
+    .string "Based on the Association's intel,\n"
+    .string "Angrboda's hideout is located in\l"
+    .string "Silverstone City.\p"
+    .string "Kanae: I'll gather up the rest of the\n"
+    .string "Elite Four and the gym leaders.\p"
+    .string "Lena: I'll send out a signal when we\n"
+    .string "storm their HQ.\p"
+    .string "Liam: Wait where's Silverstone?$"
+    .string "Lena: You'll need to go back to\n"
+    .string "Neptune's Drift, and Dive South.\p"
+    .string "There's another dive patch there-\n"
+    .string "It's not the same one as the one we\l"
+    .string "took last time when we went to\l"
+    .string "Mt. Emberfall.\p"
+    .string "Liam: Alright. I'll make my way there.$"
 
 RuinveilCity_ExcavationStart:
     lockall
@@ -107,6 +238,7 @@ RuinveilCity_GruntBattle::
     setobjectxy 8, 0, 0
     setrespawn HEAL_LOCATION_RUINVEIL_CITY
     setvar VAR_LILYCOVE_CITY_STATE, 5
+    delay 64
     releaseall
     end
 

@@ -300,6 +300,13 @@
 #define METATILE_InsideShip_IntactDoor_Bottom_Locked    0x233
 #define METATILE_InsideShip_IntactDoor_Bottom_Unlocked  0x22B
 
+// gTileset_KuromisaRuins
+#define METATILE_KuromisaRuins_EmptyBottomLeft   0x099
+#define METATILE_KuromisaRuins_EmptyBottomRight  0x09A
+#define METATILE_KuromisaRuins_EmptyTopLeft      0x091
+#define METATILE_KuromisaRuins_EmptyTopRight     0x092
+#define METATILE_KuromisaRuins_Floor             0x001
+
 // gTileset_Lavaridge
 #define METATILE_Lavaridge_AshGrass             0x207
 #define METATILE_Lavaridge_CaveEntrance_Bottom  0x25E
