@@ -108,9 +108,9 @@ RuinveilCity_SetUpPostEv:
     setobjectxyperm 4, 0, 0
     setobjectxyperm 11, 42, 49
     setobjectxyperm 5, 42, 50
-    setobjectmovementtype 5, Common_Movement_FaceUp
+    setobjectmovementtype 5, MOVEMENT_TYPE_FACE_UP
     setobjectxyperm 7, 41, 50
-    setobjectmovementtype 7, Common_Movement_FaceUp
+    setobjectmovementtype 7, MOVEMENT_TYPE_FACE_UP
     end
 
 RuinveilCity_PostEv:
