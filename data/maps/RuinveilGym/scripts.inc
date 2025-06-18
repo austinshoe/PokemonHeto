@@ -49,11 +49,15 @@ RuinveilGym_StartedExcavation:
 
 
 RuinveilGym_Kanae::
-	trainerbattle_single TRAINER_WINONA_1, RuinveilGym_KanaeIntro, RuinveilGym_KanaeDefeat, RuinveilGym_KanaeDefeated
+	trainerbattle_double TRAINER_WINONA_1, RuinveilGym_KanaeIntro, RuinveilGym_KanaeDefeat, RuinveilGym_KanaeNotEnoughMons, RuinveilGym_KanaeDefeated
 	goto_if_unset FLAG_RECEIVED_TM_AERIAL_ACE, RuinveilGym_KanaeDefeated_GivePsychic2
 	msgbox RuinveilGym_KanaePostBattle, MSGBOX_DEFAULT
 	release
 	end
+
+RuinveilGym_KanaeNotEnoughMons::
+	.string "Kanae: Looks like you don't have enough\n"
+	.string "Pokémon for a double battle...$"
 
 RuinveilGym_KanaeDefeated:
 	message RuinveilGym_ReceivedVeilBadge
