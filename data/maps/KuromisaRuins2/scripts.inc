@@ -178,7 +178,7 @@ KuromisaRuins2_DraconarixCoreCutscene:
 	call Common_EventScript_OutOfCenterPartyHeal
 	msgbox KuromisaRuins2_KanaeComeToMeForHeal, MSGBOX_AUTOCLOSE
 	setvar VAR_LILYCOVE_CITY_STATE, 6
-	applymovement 8, Common_Movement_Face_Up
+	applymovement 8, Common_Movement_FaceUp
 	goto KuromisaRuins2_KbluteBattle
 
 KuromisaRuins2_KbluteNPC::
