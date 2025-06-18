@@ -42,7 +42,7 @@ KuromisaRuins2_DullahanText:
 KuromisaRuins2_LiamText:
 	.string "Gyarados! Use Dragon Dance!$"
 
-KuromisaRuins2_Lena:
+KuromisaRuins2_LenaText:
 	.string "Lucario! Use Bullet Punch!$"
 
 KuromisaRuins2_OnTransition:
@@ -61,9 +61,9 @@ KuromisaRuins2_MidBattle:
 	setobjectxyperm 8, 10, 8
 	setobjectxyperm 9, 8, 8
 	setobjectmovementtype 9, MOVEMENT_TYPE_FACE_UP
-	setobjectxyperm 2, MOVEMENT_TYPE_FACE_DOWN
-	setobjectxyperm 3, MOVEMENT_TYPE_FACE_DOWN
-	setobjectxyperm 4, MOVEMENT_TYPE_FACE_DOWN
+	setobjectmovementtype 2, MOVEMENT_TYPE_FACE_DOWN
+	setobjectmovementtype 3, MOVEMENT_TYPE_FACE_DOWN
+	setobjectmovementtype 4, MOVEMENT_TYPE_FACE_DOWN
 	end
 
 
@@ -133,7 +133,7 @@ KuromisaRuins2_DraconarixCoreCutscene:
 	waitmovement 6
 	msgbox KuromisaRuins2_KanaeHealLena, MSGBOX_AUTOCLOSE
 	applymovement 7, Common_Movement_FaceUp
-	waitmovement
+	waitmovement 7
 	applymovement 8, KuromisaRuins2_KanaeRet
 	waitmovement 8
 	applymovement OBJ_EVENT_ID_PLAYER, Common_Movement_FaceUp
@@ -202,7 +202,7 @@ KuromisaRuins2_KbluteBattle::
 	fadescreen FADE_FROM_BLACK
 	msgbox KuromisaRuins2_PostEv, MSGBOX_AUTOCLOSE
 	setvar VAR_LILYCOVE_CITY_STATE, 7
-	warpsilent MAP_RUINVEIL_CITY 41, 49
+	warpsilent MAP_RUINVEIL_CITY, 41, 49
 	delay 64
 	releaseall
 	end
