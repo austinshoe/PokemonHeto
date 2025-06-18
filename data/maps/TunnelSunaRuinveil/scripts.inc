@@ -13,12 +13,17 @@ Tunnel_StrengthBoulder::
 	dofieldeffect FLDEFF_USE_STRENGTH
 	waitstate
 	setvar VAR_PETALBURG_WOODS_STATE, 1
-	getplayerxy VAR_TEMP_0, VAR_TEMP_1
+	getplayerxy VAR_UNUSED_0x40FE, VAR_UNUSED_0x40FF
 	fadescreen FADE_TO_BLACK
 	setflag FLAG_HIDE_OLDALE_TOWN_RIVAL
-	addvar VAR_TEMP_1, 2
+	removeobject 1
+	removeobject 2
+	removeobject 3
+	removeobject 4
+	addvar VAR_UNUSED_0x40FF, 2
 	addobject 5
-	setobjectxyperm 5, VAR_TEMP_0, VAR_TEMP_1
+	setobjectxyperm 5, VAR_UNUSED_0x40FE, VAR_UNUSED_0x40FF
+	setobjectxy 5, VAR_UNUSED_0x40FE, VAR_UNUSED_0x40FF
 	addobject 5
 	fadescreen FADE_FROM_BLACK
 	delay 32

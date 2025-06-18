@@ -178,6 +178,7 @@ KuromisaRuins2_DraconarixCoreCutscene:
 	call Common_EventScript_OutOfCenterPartyHeal
 	msgbox KuromisaRuins2_KanaeComeToMeForHeal, MSGBOX_AUTOCLOSE
 	setvar VAR_LILYCOVE_CITY_STATE, 6
+	applymovement 8, Common_Movement_Face_Up
 	goto KuromisaRuins2_KbluteBattle
 
 KuromisaRuins2_KbluteNPC::
@@ -279,7 +280,7 @@ KuromisaRuins2_KanaeSeeLena:
 
 KuromisaRuins2_AngrbodaSeePLayer:
 	.string "Alexandr: Uhhhhh...\p"
-	.string "Sir, I think we might have company...\p"
+	.string "Sir, I think we might have company...$"
 
 KuromisaRuins2_ThisMustBeCore:
 	.string "Jörmungandr: This... This must be it...\p"

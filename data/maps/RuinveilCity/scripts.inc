@@ -1,8 +1,17 @@
 RuinveilCity_MapScripts::
     map_script MAP_SCRIPT_ON_LOAD, RuinveilCity_OnLoad
     map_script MAP_SCRIPT_ON_TRANSITION, RuinveilCity_OnTransition
+    map_script MAP_SCRIPT_ON_WARP_INTO_MAP_TABLE, RuinveilCity_OnWarp
     map_script MAP_SCRIPT_ON_FRAME_TABLE, RuinveilCity_OnFrame
     .byte 0
+
+RuinveilCity_OnWarp:
+    map_script_2 VAR_LILYCOVE_CITY_STATE, 8, RuinveilCity_HidePlayer
+    .2byte 0
+
+RuinveilCity_HidePlayer:
+    hideobjectat OBJ_EVENT_ID_PLAYER, 0
+    end
 
 RuinveilCity_OldMan::
     msgbox Text_RuinveilCity_OldMan, MSGBOX_NPC
@@ -72,6 +81,10 @@ RuinveilCity_OnTransition:
 
 RuinveilCity_ShowPlayer:
     showobjectat OBJ_EVENT_ID_PLAYER, 0
+    setobjectxyperm 1, 0, 0
+    setobjectxyperm 2, 0, 0
+    setobjectxyperm 3, 0, 0
+    setobjectxyperm 4, 0, 0
     end
 
 RuinveilCity_OnFrame:
@@ -88,6 +101,7 @@ RuinveilCity_SetUpTunnelDig:
     end
 
 RuinveilCity_TunnelDig:
+    hideobjectat OBJ_EVENT_ID_PLAYER, 0
     msgbox RuinveilCity_WishHadStrength, MSGBOX_AUTOCLOSE
     setvar VAR_LILYCOVE_CITY_STATE, 9
     warpsilent MAP_RUINVEIL_CITY, 41, 49
@@ -183,7 +197,7 @@ Text_RuinveilCity_PostEv:
     .string "Elite Four and the gym leaders.\p"
     .string "Lena: I'll send out a signal when we\n"
     .string "storm their HQ.\p"
-    .string "Liam: Wait where's Silverstone?$"
+    .string "Liam: Wait where's Silverstone?\p"
     .string "Lena: You'll need to go back to\n"
     .string "Neptune's Drift, and Dive South.\p"
     .string "There's another dive patch there-\n"
