@@ -33,7 +33,7 @@ Kushinada_Gym_CornwallDefeated::
 	end
 
 Kushinada_Gym_CornwallGive2::
-	giveitem ITEM_TM_DAZZLING_GLEAM
+	giveitem ITEM_TM51
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_ShowBagIsFull
 	msgbox Kushinada_Gym_ExplainDazzlingGleam, MSGBOX_DEFAULT
 	setflag FLAG_RECEIVED_TM_CALM_MIND
@@ -41,7 +41,7 @@ Kushinada_Gym_CornwallGive2::
 	end
 
 MossdeepCity_Gym_EventScript_GiveCalmMind::
-	giveitem ITEM_TM_DAZZLING_GLEAM
+	giveitem ITEM_TM51
 	goto_if_eq VAR_RESULT, FALSE, Common_EventScript_BagIsFull
 	msgbox Kushinada_Gym_ExplainDazzlingGleam, MSGBOX_DEFAULT
 	setflag FLAG_RECEIVED_TM_CALM_MIND
