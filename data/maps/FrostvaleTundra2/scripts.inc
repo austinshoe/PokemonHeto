@@ -106,8 +106,6 @@ Text_FrostvaleTundraWoman2:
     .string "So I can warn other people not to.$"
 
 Script_FrostvaleTundra2Op1::
-    lock
-    faceplayer
     trainerbattle_single TRAINER_AUSTINA, Text_FrostvaleTundra2Op1Intro, Text_FrostvaleTundra2Op1Defeat
     msgbox Text_FrostvaleTundra2Op1PostBattle, MSGBOX_AUTOCLOSE
     end
@@ -124,8 +122,6 @@ Text_FrostvaleTundra2Op1PostBattle:
     .string "I must be going now.$"
 
 Script_FrostvaleTundra2Op2::
-    lock
-    faceplayer
     trainerbattle_single TRAINER_GWEN, Text_FrostvaleTundra2Op2Intro, Text_FrostvaleTundra2Op2Defeat
     msgbox Text_FrostvaleTundra2Op2PostBattle, MSGBOX_AUTOCLOSE
     end

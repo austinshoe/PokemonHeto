@@ -157,8 +157,6 @@ RAKMovementSkedaddlydoo:
     step_end
 
 Script_RouteafterkassanOp1::
-    lock
-    faceplayer
     trainerbattle_single TRAINER_LOLA_2, Text_RouteafterkassanOp1Intro, Text_RouteafterkassanOp1Defeat
     msgbox Text_RouteafterkassanOp1PostBattle, MSGBOX_AUTOCLOSE
     end
@@ -177,8 +175,6 @@ Text_RouteafterkassanOp1PostBattle:
     .string "was a bit <word that means happy>$"
 
 Script_RouteafterkassanOp2::
-    lock
-    faceplayer
     trainerbattle_single TRAINER_LOLA_3, Text_RouteafterkassanOp2Intro, Text_RouteafterkassanOp2Defeat
     msgbox Text_RouteafterkassanOp2PostBattle, MSGBOX_AUTOCLOSE
     end
@@ -195,8 +191,6 @@ Text_RouteafterkassanOp2PostBattle:
     .string "another time.$"
 
 Script_RouteafterkassanOp3::
-    lock
-    faceplayer
     trainerbattle_single TRAINER_LOLA_4, Text_RouteafterkassanOp3Intro, Text_RouteafterkassanOp3Defeat
     msgbox Text_RouteafterkassanOp3PostBattle, MSGBOX_AUTOCLOSE
     end

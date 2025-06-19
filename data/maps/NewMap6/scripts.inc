@@ -13,8 +13,6 @@ Text_RouteAfterFallGroveTownMan1:
     .string "I can't handle heat very well.$"
 
 Script_YellowFallMapOp4::
-    lock
-    faceplayer
     trainerbattle_single TRAINER_CHARLIE, Text_YellowFallMapOp4Intro, Text_YellowFallMapOp4Defeat
     msgbox Text_YellowFallMapOp4PostBattle, MSGBOX_AUTOCLOSE
     end

@@ -174,8 +174,6 @@ Frostvale_Movement_RivalSkedaddle:
     step_end
 
 Script_FrostvaleTundraOp1::
-    lock
-    faceplayer
     trainerbattle_single TRAINER_ROSE_1, Text_FrostvaleTundraOp1Intro, Text_FrostvaleTundraOp1Defeat
     msgbox Text_FrostvaleTundraOp1PostBattle, MSGBOX_AUTOCLOSE
     end
@@ -194,8 +192,6 @@ Text_FrostvaleTundraOp1PostBattle:
     .string "Go away.$"
     
 Script_FrostvaleTundraOp2::
-    lock
-    faceplayer
     trainerbattle_single TRAINER_FELIX, Text_FrostvaleTundraOp2Intro, Text_FrostvaleTundraOp2Defeat
     msgbox Text_FrostvaleTundraOp2PostBattle, MSGBOX_AUTOCLOSE
     end
@@ -212,8 +208,6 @@ Text_FrostvaleTundraOp2PostBattle:
     .string "I'm always itching to get stronger.$"
     
 Script_FrostvaleTundraOp3::
-    lock
-    faceplayer
     trainerbattle_single TRAINER_VIOLET, Text_FrostvaleTundraOp3Intro, Text_FrostvaleTundraOp3Defeat
     msgbox Text_FrostvaleTundraOp3PostBattle, MSGBOX_AUTOCLOSE
     end
