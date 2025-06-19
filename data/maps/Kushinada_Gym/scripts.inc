@@ -7,10 +7,7 @@ Kushinada_Gym_OnTransition:
 	end
 
 Kushinada_Gym_Cornwall::
-	lock
-	faceplayer
-	msgbox Kushinada_Gym_CornwallIntro, MSGBOX_DEFAULT
-	trainerbattle_no_intro TRAINER_TATE_AND_LIZA_1, Kushinada_Gym_CornwallDefeat, Kushinada_Gym_CornwallDefeated
+	trainerbattle_single TRAINER_TATE_AND_LIZA_1, Kushinada_Gym_CornwallIntro, Kushinada_Gym_CornwallDefeat, Kushinada_Gym_CornwallDefeated
 	goto_if_unset FLAG_RECEIVED_TM_CALM_MIND, Kushinada_Gym_CornwallGive2
 	msgbox Kushinada_Gym_CornwallPostBattle, MSGBOX_DEFAULT
 	setweather WEATHER_NONE

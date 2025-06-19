@@ -57,7 +57,7 @@ Kushinada_Gym2_GirlInto::
 Kushinada_Gym2_GirlDefeat::
 	.string "Wahhhh$"
 
-Kushinada_Gym2_GirlDefeated::
+Kushinada_Gym2_GirlPostBattle::
 	.string "Bowtruckles are so cruel!$"
 
 Kushinada_Gym2_Trainer::
