@@ -3,7 +3,7 @@ Kushinada_Gym_MapScripts::
 	.byte 0
 
 Kushinada_Gym_OnTransition:
-	setvar VAR_UNUSED_0x4091, MAP_KUSHINADA_GYM2
+	setvar VAR_UNUSED_0x4091, 0
 	end
 
 Kushinada_Gym_Cornwall::

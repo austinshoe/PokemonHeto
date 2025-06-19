@@ -3,7 +3,7 @@ Kushinada_Gym2_MapScripts::
 	.byte 0
 
 Kushinada_Gym2_OnTransition:
-	setvar VAR_UNUSED_0x4091, MAP_KUSHINADA_GYM
+	setvar VAR_UNUSED_0x4091, 1
 	end
 
 Kushinada_Gym2_Guide::
@@ -30,7 +30,16 @@ Kushinada_Gym2_Boy::
 
 Kushinada_Gym2_BoyDefeated::
 	getplayerxy VAR_UNUSED_0x40FE, VAR_UNUSED_0x40FF
-	warpsilent VAR_UNUSED_0x4091, VAR_UNUSED_0x40FE, VAR_UNUSED_0x40FF
+	compare VAR_UNUSED_0x4091, 1
+	goto_if_eq Warp_To_Gym1
+	goto Warp_To_Gym2
+
+Warp_To_Gym1::
+	warpsilent MAP_KUSHINADA_GYM2, VAR_UNUSED_0x40FE, VAR_UNUSED_0x40FF
+	end
+
+Warp_To_Gym2::
+	warpsilent MAP_KUSHINADA_GYM, VAR_UNUSED_0x40FE, VAR_UNUSED_0x40FF
 	end
 
 Kushinada_Gym2_BoyInto::
@@ -48,8 +57,11 @@ Kushinada_Gym2_Girl::
 	end
 
 Kushinada_Gym2_GirlDefeated::
-	warpsilent VAR_UNUSED_0x4091, 16, 17
-	end
+	setvar VAR_UNUSED_0x40FE, 16
+	setvar VAR_UNUSED_0x40FF, 17
+	compare VAR_UNUSED_0x4091, 1
+	goto_if_eq Warp_To_Gym1
+	goto Warp_To_Gym2
 
 Kushinada_Gym2_GirlInto::
 	.string "I hate Grass Types!$"
@@ -67,8 +79,9 @@ Kushinada_Gym2_Trainer::
 
 Kushinada_Gym2_TrainerDefeated::
 	getplayerxy VAR_UNUSED_0x40FE, VAR_UNUSED_0x40FF
-	warpsilent VAR_UNUSED_0x4091, VAR_UNUSED_0x40FE, VAR_UNUSED_0x40FF
-	end
+	compare VAR_UNUSED_0x4091, 1
+	goto_if_eq Warp_To_Gym1
+	goto Warp_To_Gym2
 
 Kushinada_Gym2_Trainerintro::
 	.string "I challenge you to a contest of ability!$"
