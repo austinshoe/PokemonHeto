@@ -8,12 +8,14 @@ Kushinada_Gym2_OnTransition:
 
 Kushinada_Gym2_Guide::
 	msgbox Kushinada_Gym2_GuideText, MSGBOX_AUTOCLOSE
+	end
+
 
 Kushinada_Gym2_GuideText::
 	.string "Welcome, champ, to the gym here at\n"
 	.string "Kushinada!\p"
 	.string "The puzzle is exactly what it seems-\n"
-	.string "It's a maze!$"
+	.string "It's a maze!\p"
 	.string "You'll battle your way through the maze,\n"
 	.string "but sometimes, things will feel as if...\l"
 	.string "something has changed...\p"
@@ -35,11 +37,11 @@ Kushinada_Gym2_BoyDefeated::
 	goto Warp_To_Gym2
 
 Warp_To_Gym1::
-	warpsilent MAP_KUSHINADA_GYM2, VAR_UNUSED_0x40FE, VAR_UNUSED_0x40FF
+	warpsilent MAP_KUSHINADA_GYM, VAR_UNUSED_0x40FE, VAR_UNUSED_0x40FF
 	end
 
 Warp_To_Gym2::
-	warpsilent MAP_KUSHINADA_GYM, VAR_UNUSED_0x40FE, VAR_UNUSED_0x40FF
+	warpsilent MAP_KUSHINADA_GYM2, VAR_UNUSED_0x40FE, VAR_UNUSED_0x40FF
 	end
 
 Kushinada_Gym2_BoyInto::
