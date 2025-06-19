@@ -54,10 +54,10 @@ Kushinada_Gym2_GirlDefeated::
 Kushinada_Gym2_GirlInto::
 	.string "I hate Grass Types!$"
 
-Kushinada_Gym2_BoyDefeat::
+Kushinada_Gym2_GirlDefeat::
 	.string "Wahhhh$"
 
-Kushinada_Gym2_BoyPostBattle::
+Kushinada_Gym2_GirlDefeated::
 	.string "Bowtruckles are so cruel!$"
 
 Kushinada_Gym2_Trainer::
