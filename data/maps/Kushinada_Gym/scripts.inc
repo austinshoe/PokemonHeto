@@ -47,15 +47,15 @@ Kushinada_Gym_CornwallGive::
 Kushinada_Gym_CornwallIntro::
 	.string "Welcome, challenger, to the Kushinada\n"
 	.string "Gym!\p"
-	.string "What's that? Why is there fog?\p"
+	.string "What's that? Why do I wear a witch hat?\p"
 	.string "I'll tell you if you defeat me!$"
 
 Kushinada_Gym_CornwallDefeat::
 	.string "Oho...$"
 
 Kushinada_Gym_CornwallPostBattle::
-	.string "To be honest, the only purpose the fog\n"
-	.string "serves is dramatic effect.$"
+	.string "To be honest, the only purpose the hat\n"
+	.string "serves is style.$"
 
 Kushinada_Gym_ReceiveBadge::
 	.string "{PLAYER} received the MIST BADGE\n"

@@ -69,10 +69,9 @@ Text_WintersPassageWoman1:
     .string "hot chocolate during break?$"
 
 Script_WintersPassageOp1::
-    lock
-    faceplayer
     trainerbattle_single TRAINER_SAWYER_1, Text_WinterPassageOp1Intro, Text_WinterPassageOp1Defeat
-    msgbox Text_WinterPassageOp1PostBattle, MSGBOX_AUTOCLOSE
+    msgbox Text_WinterPassageOp1PostBattle, MSGBOX_DEFAULT
+    release
     end
 
 Text_WinterPassageOp1Intro:
@@ -87,10 +86,9 @@ Text_WinterPassageOp1PostBattle:
     .string "all time.$"
 
 Script_WintersPassageOp2::
-    lock
-    faceplayer
     trainerbattle_single TRAINER_GABRIELLE_1, Text_WinterPassageOp2Intro, Text_WinterPassageOp2Defeat
-    msgbox Text_WinterPassageOp2PostBattle, MSGBOX_AUTOCLOSE
+    msgbox Text_WinterPassageOp2PostBattle, MSGBOX_DEFAULT
+    release
     end
 
 Text_WinterPassageOp2Intro:
@@ -105,10 +103,9 @@ Text_WinterPassageOp2PostBattle:
     .string "Nerf Miner.$"
     
 Script_WintersPassageOp3::
-    lock
-    faceplayer
     trainerbattle_single TRAINER_MARCEL, Text_WinterPassageOp3Intro, Text_WinterPassageOp3Defeat
-    msgbox Text_WinterPassageOp3PostBattle, MSGBOX_AUTOCLOSE
+    msgbox Text_WinterPassageOp3PostBattle, MSGBOX_DEFAULT
+    release
     end
 
 Text_WinterPassageOp3Intro:
