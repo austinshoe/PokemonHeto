@@ -26,10 +26,17 @@
     },
     {
       "x": 0,
-      "y": 5,
+      "y": 24,
       "elevation": 0,
-      "dest_map": "MAP_EVERBLOOM_CITY",
-      "dest_warp_id": "9"
+      "dest_map": "MAP_ANGRBODA_HIDEOUT_B1F",
+      "dest_warp_id": "0"
+    },
+    {
+      "x": 4,
+      "y": 25,
+      "elevation": 0,
+      "dest_map": "MAP_ANGRBODA_HIDEOUT_B1F",
+      "dest_warp_id": "1"
     }
   ],
   "coord_events": [

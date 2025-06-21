@@ -310,7 +310,7 @@ bool8 MetatileBehavior_IsSurfableWaterOrUnderwater(u8 metatileBehavior)
 
 bool8 MetatileBehavior_IsEastArrowWarp(u8 metatileBehavior)
 {
-    if (metatileBehavior == MB_EAST_ARROW_WARP)
+    if (metatileBehavior == MB_EAST_ARROW_WARP || metatileBehavior == MB_UNUSED_EE)
         return TRUE;
     else
         return FALSE;
@@ -1444,7 +1444,7 @@ bool8 MetatileBehavior_IsSidewaysStairsLeftSide(u8 metatileBehavior)
 
 bool8 MetatileBehavior_IsSidewaysStairsRightSideTop(u8 metatileBehavior)
 {
-    if (metatileBehavior == MB_SIDEWAYS_STAIRS_RIGHT_SIDE_TOP || metatileBehavior == MB_UNUSED_EF)
+    if (metatileBehavior == MB_SIDEWAYS_STAIRS_RIGHT_SIDE_TOP || metatileBehavior == MB_UNUSED_EF || metatileBehavior == MB_UNUSED_EE)
         return TRUE;
     else
         return FALSE;
@@ -1479,7 +1479,8 @@ bool8 MetatileBehavior_IsSidewaysStairsRightSideAny(u8 metatileBehavior)
     if (metatileBehavior == MB_SIDEWAYS_STAIRS_RIGHT_SIDE
      || metatileBehavior == MB_SIDEWAYS_STAIRS_RIGHT_SIDE_BOTTOM
      || metatileBehavior == MB_SIDEWAYS_STAIRS_RIGHT_SIDE_TOP
-     || metatileBehavior == MB_UNUSED_EF)
+     || metatileBehavior == MB_UNUSED_EF
+     || metatileBehavior == MB_UNUSED_EE)
         return TRUE;
     else
         return FALSE;

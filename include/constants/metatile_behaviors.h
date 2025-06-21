@@ -239,8 +239,8 @@
 #define MB_UNUSED_EB 0xEB
 #define MB_UNUSED_EC 0xEC
 #define MB_UNUSED_ED 0xED
-#define MB_UNUSED_EE 0xEE
-#define MB_UNUSED_EF 0xEF //Sideways stair warp going up and to the right
+#define MB_UNUSED_EE 0xEE //Sideways stair warp going down and to the right
+#define MB_UNUSED_EF 0xEF //Sideways stair warp going up and to the left
 #define MB_NON_ANIMATED_DOOR_LEFT 0xF1
 #define MB_NON_ANIMATED_DOOR_RIGHT 0xF2
 #define MB_SAND_GRASS 0xF3
