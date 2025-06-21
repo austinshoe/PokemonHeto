@@ -21,6 +21,7 @@ Kushinada_Gym_CornwallDefeated::
 	call Common_EventScript_PlayGymBadgeFanfare
 	msgbox Kushinada_Gym_ExplainBadge, MSGBOX_DEFAULT
 	setflag FLAG_DEFEATED_MOSSDEEP_GYM
+	setvar VAR_MOSSDEEP_CITY_STATE, 1
 	setflag FLAG_BADGE07_GET
 	call Kushinada_Gym_CornwallGive
 	setweather WEATHER_NONE
@@ -70,6 +71,6 @@ Kushinada_Gym_ExplainBadge::
 Kushinada_Gym_ExplainDazzlingGleam::
 	.string "That TM there contains Dazzling Geam.\n"
 	.string "It's a strong Fairy Type move, and it\l"
-	.string "Can damage both opponents in a double\l"
+	.string "can damage both opponents in a double\l"
 	.string "battle!$"
 

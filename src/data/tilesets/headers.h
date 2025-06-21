@@ -1210,3 +1210,14 @@ const struct Tileset gTileset_GenericCave =
     .metatileAttributes = gMetatileAttributes_GenericCave,
     .callback = NULL,
 };
+
+const struct Tileset gTileset_AngrbodaHideout =
+{
+    .isCompressed = TRUE,
+    .isSecondary = TRUE,
+    .tiles = gTilesetTiles_AngrbodaHideout,
+    .palettes = gTilesetPalettes_AngrbodaHideout,
+    .metatiles = gMetatiles_AngrbodaHideout,
+    .metatileAttributes = gMetatileAttributes_AngrbodaHideout,
+    .callback = NULL,
+};

@@ -800,7 +800,10 @@
     "SilverstoneHouse5A",
     "SilverstoneHouse5B",
     "SilverstoneHouse6A",
-    "SilverstoneHouse6B"
+    "SilverstoneHouse6B",
+    "AngrbodaHideout1F",
+    "AngrbodaHideoutElevator",
+    "AngrbodaHideoutB1F"
   ],
   "gMapGroup_Underwater": [
     "NeptunetoEmberfall",

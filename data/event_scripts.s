@@ -1384,3 +1384,9 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/RuinveilGym2/scripts.inc"
 
 	.include "data/maps/WintersPassage3F/scripts.inc"
+
+	.include "data/maps/AngrbodaHideout1F/scripts.inc"
+
+	.include "data/maps/AngrbodaHideoutElevator/scripts.inc"
+
+	.include "data/maps/AngrbodaHideoutB1F/scripts.inc"

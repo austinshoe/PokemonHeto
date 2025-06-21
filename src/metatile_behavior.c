@@ -318,7 +318,7 @@ bool8 MetatileBehavior_IsEastArrowWarp(u8 metatileBehavior)
 
 bool8 MetatileBehavior_IsWestArrowWarp(u8 metatileBehavior)
 {
-    if (metatileBehavior == MB_WEST_ARROW_WARP)
+    if (metatileBehavior == MB_WEST_ARROW_WARP || metatileBehavior == MB_UNUSED_EF)
         return TRUE;
     else
         return FALSE;
@@ -1444,7 +1444,7 @@ bool8 MetatileBehavior_IsSidewaysStairsLeftSide(u8 metatileBehavior)
 
 bool8 MetatileBehavior_IsSidewaysStairsRightSideTop(u8 metatileBehavior)
 {
-    if (metatileBehavior == MB_SIDEWAYS_STAIRS_RIGHT_SIDE_TOP)
+    if (metatileBehavior == MB_SIDEWAYS_STAIRS_RIGHT_SIDE_TOP || metatileBehavior == MB_UNUSED_EF)
         return TRUE;
     else
         return FALSE;

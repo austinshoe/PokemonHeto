@@ -312,3 +312,6 @@ const u16 gMetatileAttributes_NewCave[] = INCBIN_U16("data/tilesets/primary/new_
 
 const u16 gMetatiles_GenericCave[] = INCBIN_U16("data/tilesets/secondary/generic_cave/metatiles.bin");
 const u16 gMetatileAttributes_GenericCave[] = INCBIN_U16("data/tilesets/secondary/generic_cave/metatile_attributes.bin");
+
+const u16 gMetatiles_AngrbodaHideout[] = INCBIN_U16("data/tilesets/secondary/angrboda_hideout/metatiles.bin");
+const u16 gMetatileAttributes_AngrbodaHideout[] = INCBIN_U16("data/tilesets/secondary/angrboda_hideout/metatile_attributes.bin");
