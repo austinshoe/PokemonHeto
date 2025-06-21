@@ -30,6 +30,8 @@ SilverstoneCity_Trigger::
 	releaseall
 	end
 	
+SilverstoneCity_RivalGoToEntrance:
+	step_end
 
 SilverstoneCity_PlayerMeetRival:
 	walk_down
