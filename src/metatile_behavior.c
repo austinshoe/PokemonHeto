@@ -1478,7 +1478,8 @@ bool8 MetatileBehavior_IsSidewaysStairsRightSideAny(u8 metatileBehavior)
 {
     if (metatileBehavior == MB_SIDEWAYS_STAIRS_RIGHT_SIDE
      || metatileBehavior == MB_SIDEWAYS_STAIRS_RIGHT_SIDE_BOTTOM
-     || metatileBehavior == MB_SIDEWAYS_STAIRS_RIGHT_SIDE_TOP)
+     || metatileBehavior == MB_SIDEWAYS_STAIRS_RIGHT_SIDE_TOP
+     || metatileBehavior == MB_UNUSED_EF)
         return TRUE;
     else
         return FALSE;
