@@ -7260,6 +7260,42 @@
       "secondary_tileset": "gTileset_AngrbodaHideout",
       "border_filepath": "data/layouts/AngrbodaHideoutB1F/border.bin",
       "blockdata_filepath": "data/layouts/AngrbodaHideoutB1F/map.bin"
+    },
+    {
+      "id": "LAYOUT_ANGRBODA_HIDEOUT_B2F",
+      "name": "AngrbodaHideoutB2F_Layout",
+      "width": 30,
+      "height": 30,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_NewCave",
+      "secondary_tileset": "gTileset_AngrbodaHideout",
+      "border_filepath": "data/layouts/AngrbodaHideoutB2F/border.bin",
+      "blockdata_filepath": "data/layouts/AngrbodaHideoutB2F/map.bin"
+    },
+    {
+      "id": "LAYOUT_ANGRBODA_HIDEOUT_B3F",
+      "name": "AngrbodaHideoutB3F_Layout",
+      "width": 30,
+      "height": 30,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_NewCave",
+      "secondary_tileset": "gTileset_AngrbodaHideout",
+      "border_filepath": "data/layouts/AngrbodaHideoutB3F/border.bin",
+      "blockdata_filepath": "data/layouts/AngrbodaHideoutB3F/map.bin"
+    },
+    {
+      "id": "LAYOUT_ANGRBODA_HIDEOUT_DRACONARIX",
+      "name": "AngrbodaHideoutDraconarix_Layout",
+      "width": 23,
+      "height": 21,
+      "border_width": 2,
+      "border_height": 2,
+      "primary_tileset": "gTileset_NewCave",
+      "secondary_tileset": "gTileset_AngrbodaHideout",
+      "border_filepath": "data/layouts/AngrbodaHideoutDraconarix/border.bin",
+      "blockdata_filepath": "data/layouts/AngrbodaHideoutDraconarix/map.bin"
     }
   ]
 }

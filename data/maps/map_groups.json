@@ -803,7 +803,10 @@
     "SilverstoneHouse6B",
     "AngrbodaHideout1F",
     "AngrbodaHideoutElevator",
-    "AngrbodaHideoutB1F"
+    "AngrbodaHideoutB1F",
+    "AngrbodaHideoutB2F",
+    "AngrbodaHideoutB3F",
+    "AngrbodaHideoutDraconarix"
   ],
   "gMapGroup_Underwater": [
     "NeptunetoEmberfall",

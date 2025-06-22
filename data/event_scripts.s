@@ -1390,3 +1390,9 @@ Common_EventScript_LegendaryFlewAway::
 	.include "data/maps/AngrbodaHideoutElevator/scripts.inc"
 
 	.include "data/maps/AngrbodaHideoutB1F/scripts.inc"
+
+	.include "data/maps/AngrbodaHideoutB2F/scripts.inc"
+
+	.include "data/maps/AngrbodaHideoutB3F/scripts.inc"
+
+	.include "data/maps/AngrbodaHideoutDraconarix/scripts.inc"
