@@ -513,6 +513,12 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_ALBA_MAN_2] =               &gObjectEventGraphicsInfo_AlbaMan2,
     [OBJ_EVENT_GFX_ALBA_WOMAN_1] =             &gObjectEventGraphicsInfo_AlbaWoman1,
     [OBJ_EVENT_GFX_ALBA_WOMAN_2] =             &gObjectEventGraphicsInfo_AlbaWoman2,
+    [OBJ_EVENT_GFX_AQUILA_LITTLE_BOY] =        &gObjectEventGraphicsInfo_AquilaLittleBoy,
+    [OBJ_EVENT_GFX_AQUILA_LITTLE_GIRL] =       &gObjectEventGraphicsInfo_AquilaLittleGirl,
+    [OBJ_EVENT_GFX_AQUILA_MAN_1] =             &gObjectEventGraphicsInfo_AquilaMan1,
+    [OBJ_EVENT_GFX_AQUILA_MAN_2] =             &gObjectEventGraphicsInfo_AquilaMan2,
+    [OBJ_EVENT_GFX_AQUILA_WOMAN_1] =           &gObjectEventGraphicsInfo_AquilaWoman1,
+    [OBJ_EVENT_GFX_AQUILA_WOMAN_2] =           &gObjectEventGraphicsInfo_AquilaWoman2,
 
 
     /*
