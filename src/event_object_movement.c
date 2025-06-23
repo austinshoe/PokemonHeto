@@ -454,6 +454,16 @@ const u8 gInitialMovementTypeFacingDirections[] = {
 #define OBJ_EVENT_PAL_TAG_LUGIA                   0x1121
 #define OBJ_EVENT_PAL_TAG_RS_BRENDAN              0x1122
 #define OBJ_EVENT_PAL_TAG_RS_MAY                  0x1123
+#define OBJ_EVENT_PAL_TAG_NEW_NPC_1               0x1124
+#define OBJ_EVENT_PAL_TAG_NEW_NPC_2               0x1125
+#define OBJ_EVENT_PAL_TAG_NEW_NPC_3               0x1126
+#define OBJ_EVENT_PAL_TAG_ROCKY                   0x1127
+#define OBJ_EVENT_PAL_TAG_RIVAL_2                 0x1128
+#define OBJ_EVENT_PAL_TAG_NEW_NPC_1_REFLECTION    0x1129
+#define OBJ_EVENT_PAL_TAG_NEW_NPC_2_REFLECTION    0x1130
+// #define OBJ_EVENT_PAL_TAG_NEW_NPC_3_REFLECTION    0x1129
+#define OBJ_EVENT_PAL_TAG_ROCKY_REFLECTION        0x1130
+#define OBJ_EVENT_PAL_TAG_RIVAL_2_REFLECTION      0x1131
 #define OBJ_EVENT_PAL_TAG_NONE                    0x11FF
 
 #include "data/object_events/object_event_graphics_info_pointers.h"
@@ -500,6 +510,16 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPal_Lugia,                 OBJ_EVENT_PAL_TAG_LUGIA},
     {gObjectEventPal_RubySapphireBrendan,   OBJ_EVENT_PAL_TAG_RS_BRENDAN},
     {gObjectEventPal_RubySapphireMay,       OBJ_EVENT_PAL_TAG_RS_MAY},
+    {gObjectEventPal_NewNPC1,               OBJ_EVENT_PAL_TAG_NEW_NPC_1},
+    {gObjectEventPal_NewNPC2,               OBJ_EVENT_PAL_TAG_NEW_NPC_2},
+    {gObjectEventPal_NewNPC3,               OBJ_EVENT_PAL_TAG_NEW_NPC_3},
+    {gObjectEventPal_NewPlayer,             OBJ_EVENT_PAL_TAG_ROCKY},
+    {gObjectEventPal_NewRival,              OBJ_EVENT_PAL_TAG_RIVAL_2},
+    {gObjectEventPal_NewNPC1Reflection,     OBJ_EVENT_PAL_TAG_NEW_NPC_1_REFLECTION},
+    {gObjectEventPal_NewNPC2Reflection,     OBJ_EVENT_PAL_TAG_NEW_NPC_2_REFLECTION},
+    // {gObjectEventPal_NewNPC3,               OBJ_EVENT_PAL_TAG_NEW_NPC_3},
+    {gObjectEventPal_NewPlayerReflection,   OBJ_EVENT_PAL_TAG_ROCKY_REFLECTION},
+    {gObjectEventPal_NewRivalReflection,    OBJ_EVENT_PAL_TAG_RIVAL_2_REFLECTION},
 #ifdef BUGFIX
     {NULL,                                  OBJ_EVENT_PAL_TAG_NONE},
 #else

@@ -244,6 +244,13 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Storyteller
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Giddy;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_UnusedMauvilleOldMan1;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_UnusedMauvilleOldMan2;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_AlbaLittleBoy;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_AlbaLittleGirl;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_AlbaMan1;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_AlbaMan2;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_AlbaWoman1;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_AlbaWoman2;
+
 /*
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RockyNormal;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RockyMachBike;
@@ -500,6 +507,14 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_LINK_RS_MAY] =              &gObjectEventGraphicsInfo_RubySapphireMay,
     [OBJ_EVENT_GFX_LUGIA] =                    &gObjectEventGraphicsInfo_Lugia,
     [OBJ_EVENT_GFX_HOOH] =                     &gObjectEventGraphicsInfo_HoOh,
+    [OBJ_EVENT_GFX_ALBA_LITTLE_BOY] =          &gObjectEventGraphicsInfo_AlbaLittleBoy,
+    [OBJ_EVENT_GFX_ALBA_LITTLE_GIRL] =         &gObjectEventGraphicsInfo_AlbaLittleGirl,
+    [OBJ_EVENT_GFX_ALBA_MAN_1] =               &gObjectEventGraphicsInfo_AlbaMan1,
+    [OBJ_EVENT_GFX_ALBA_MAN_2] =               &gObjectEventGraphicsInfo_AlbaMan1,
+    [OBJ_EVENT_GFX_ALBA_WOMAN_1] =             &gObjectEventGraphicsInfo_AlbaMan1,
+    [OBJ_EVENT_GFX_ALBA_WOMAN_2] =             &gObjectEventGraphicsInfo_AlbaMan1,
+
+
     /*
     [OBJ_EVENT_GFX_ROCKY_NORMAL] =             &gObjectEventGraphicsInfo_RockyNormal,
     [OBJ_EVENT_GFX_ROCKY_MACH_BIKE] =          &gObjectEventGraphicsInfo_RockyMachBike,
