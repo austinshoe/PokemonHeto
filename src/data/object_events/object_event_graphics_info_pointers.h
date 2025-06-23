@@ -510,9 +510,9 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_ALBA_LITTLE_BOY] =          &gObjectEventGraphicsInfo_AlbaLittleBoy,
     [OBJ_EVENT_GFX_ALBA_LITTLE_GIRL] =         &gObjectEventGraphicsInfo_AlbaLittleGirl,
     [OBJ_EVENT_GFX_ALBA_MAN_1] =               &gObjectEventGraphicsInfo_AlbaMan1,
-    [OBJ_EVENT_GFX_ALBA_MAN_2] =               &gObjectEventGraphicsInfo_AlbaMan1,
-    [OBJ_EVENT_GFX_ALBA_WOMAN_1] =             &gObjectEventGraphicsInfo_AlbaMan1,
-    [OBJ_EVENT_GFX_ALBA_WOMAN_2] =             &gObjectEventGraphicsInfo_AlbaMan1,
+    [OBJ_EVENT_GFX_ALBA_MAN_2] =               &gObjectEventGraphicsInfo_AlbaMan2,
+    [OBJ_EVENT_GFX_ALBA_WOMAN_1] =             &gObjectEventGraphicsInfo_AlbaWoman1,
+    [OBJ_EVENT_GFX_ALBA_WOMAN_2] =             &gObjectEventGraphicsInfo_AlbaWoman2,
 
 
     /*
