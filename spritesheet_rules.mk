@@ -654,6 +654,23 @@ $(OBJEVENTGFXDIR)/HGSS_Styled/NPCs/Aquila/aquila_woman_1.4bpp: %.4bpp: %.png
 $(OBJEVENTGFXDIR)/HGSS_Styled/NPCs/Aquila/aquila_woman_2.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
+$(OBJEVENTGFXDIR)/HGSS_Styled/NPCs/Aurata/aurata_little_boy.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
+
+$(OBJEVENTGFXDIR)/HGSS_Styled/NPCs/Aurata/aurata_little_girl.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
+
+$(OBJEVENTGFXDIR)/HGSS_Styled/NPCs/Aurata/aurata_man_1.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
+
+$(OBJEVENTGFXDIR)/HGSS_Styled/NPCs/Aurata/aurata_man_2.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
+
+$(OBJEVENTGFXDIR)/HGSS_Styled/NPCs/Aurata/aurata_woman_1.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
+
+$(OBJEVENTGFXDIR)/HGSS_Styled/NPCs/Aurata/aurata_woman_2.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 
 $(FLDEFFGFXDIR)/arrow.4bpp: %.4bpp: %.png

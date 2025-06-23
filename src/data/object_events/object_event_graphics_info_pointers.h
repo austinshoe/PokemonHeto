@@ -256,6 +256,12 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_AquilaMan1;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_AquilaMan2;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_AquilaWoman1;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_AquilaWoman2;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_AurataLittleBoy;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_AurataLittleGirl;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_AurataMan1;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_AurataMan2;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_AurataWoman1;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_AurataWoman2;
 
 /*
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RockyNormal;
@@ -525,7 +531,12 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_AQUILA_MAN_2] =             &gObjectEventGraphicsInfo_AquilaMan2,
     [OBJ_EVENT_GFX_AQUILA_WOMAN_1] =           &gObjectEventGraphicsInfo_AquilaWoman1,
     [OBJ_EVENT_GFX_AQUILA_WOMAN_2] =           &gObjectEventGraphicsInfo_AquilaWoman2,
-
+    [OBJ_EVENT_GFX_AURATA_LITTLE_BOY] =        &gObjectEventGraphicsInfo_AurataLittleBoy,
+    [OBJ_EVENT_GFX_AURATA_LITTLE_GIRL] =       &gObjectEventGraphicsInfo_AurataLittleGirl,
+    [OBJ_EVENT_GFX_AURATA_MAN_1] =             &gObjectEventGraphicsInfo_AurataMan1,
+    [OBJ_EVENT_GFX_AURATA_MAN_2] =             &gObjectEventGraphicsInfo_AurataMan2,
+    [OBJ_EVENT_GFX_AURATA_WOMAN_1] =           &gObjectEventGraphicsInfo_AurataWoman1,
+    [OBJ_EVENT_GFX_AURATA_WOMAN_2] =           &gObjectEventGraphicsInfo_AurataWoman2,
 
     /*
     [OBJ_EVENT_GFX_ROCKY_NORMAL] =             &gObjectEventGraphicsInfo_RockyNormal,
