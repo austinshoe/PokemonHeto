@@ -2390,6 +2390,78 @@ static const struct SpriteFrameImage sPicTable_AurataWoman2[] = {
     overworld_frame(gObjectEventPic_AurataWoman2, 4, 4, 8),
 };
 
+static const struct SpriteFrameImage sPicTable_CaeruleaLittleBoy[] = {
+    overworld_frame(gObjectEventPic_CaeruleaLittleBoy, 4, 4, 0),
+    overworld_frame(gObjectEventPic_CaeruleaLittleBoy, 4, 4, 1),
+    overworld_frame(gObjectEventPic_CaeruleaLittleBoy, 4, 4, 2),
+    overworld_frame(gObjectEventPic_CaeruleaLittleBoy, 4, 4, 3),
+    overworld_frame(gObjectEventPic_CaeruleaLittleBoy, 4, 4, 4),
+    overworld_frame(gObjectEventPic_CaeruleaLittleBoy, 4, 4, 5),
+    overworld_frame(gObjectEventPic_CaeruleaLittleBoy, 4, 4, 6),
+    overworld_frame(gObjectEventPic_CaeruleaLittleBoy, 4, 4, 7),
+    overworld_frame(gObjectEventPic_CaeruleaLittleBoy, 4, 4, 8),
+};
+
+static const struct SpriteFrameImage sPicTable_CaeruleaLittleGirl[] = {
+    overworld_frame(gObjectEventPic_CaeruleaLittleGirl, 4, 4, 0),
+    overworld_frame(gObjectEventPic_CaeruleaLittleGirl, 4, 4, 1),
+    overworld_frame(gObjectEventPic_CaeruleaLittleGirl, 4, 4, 2),
+    overworld_frame(gObjectEventPic_CaeruleaLittleGirl, 4, 4, 3),
+    overworld_frame(gObjectEventPic_CaeruleaLittleGirl, 4, 4, 4),
+    overworld_frame(gObjectEventPic_CaeruleaLittleGirl, 4, 4, 5),
+    overworld_frame(gObjectEventPic_CaeruleaLittleGirl, 4, 4, 6),
+    overworld_frame(gObjectEventPic_CaeruleaLittleGirl, 4, 4, 7),
+    overworld_frame(gObjectEventPic_CaeruleaLittleGirl, 4, 4, 8),
+};
+
+static const struct SpriteFrameImage sPicTable_CaeruleaMan1[] = {
+    overworld_frame(gObjectEventPic_CaeruleaMan1, 4, 4, 0),
+    overworld_frame(gObjectEventPic_CaeruleaMan1, 4, 4, 1),
+    overworld_frame(gObjectEventPic_CaeruleaMan1, 4, 4, 2),
+    overworld_frame(gObjectEventPic_CaeruleaMan1, 4, 4, 3),
+    overworld_frame(gObjectEventPic_CaeruleaMan1, 4, 4, 4),
+    overworld_frame(gObjectEventPic_CaeruleaMan1, 4, 4, 5),
+    overworld_frame(gObjectEventPic_CaeruleaMan1, 4, 4, 6),
+    overworld_frame(gObjectEventPic_CaeruleaMan1, 4, 4, 7),
+    overworld_frame(gObjectEventPic_CaeruleaMan1, 4, 4, 8),
+};
+
+static const struct SpriteFrameImage sPicTable_CaeruleaMan2[] = {
+    overworld_frame(gObjectEventPic_CaeruleaMan2, 4, 4, 0),
+    overworld_frame(gObjectEventPic_CaeruleaMan2, 4, 4, 1),
+    overworld_frame(gObjectEventPic_CaeruleaMan2, 4, 4, 2),
+    overworld_frame(gObjectEventPic_CaeruleaMan2, 4, 4, 3),
+    overworld_frame(gObjectEventPic_CaeruleaMan2, 4, 4, 4),
+    overworld_frame(gObjectEventPic_CaeruleaMan2, 4, 4, 5),
+    overworld_frame(gObjectEventPic_CaeruleaMan2, 4, 4, 6),
+    overworld_frame(gObjectEventPic_CaeruleaMan2, 4, 4, 7),
+    overworld_frame(gObjectEventPic_CaeruleaMan2, 4, 4, 8),
+};
+
+static const struct SpriteFrameImage sPicTable_CaeruleaWoman1[] = {
+    overworld_frame(gObjectEventPic_CaeruleaWoman1, 4, 4, 0),
+    overworld_frame(gObjectEventPic_CaeruleaWoman1, 4, 4, 1),
+    overworld_frame(gObjectEventPic_CaeruleaWoman1, 4, 4, 2),
+    overworld_frame(gObjectEventPic_CaeruleaWoman1, 4, 4, 3),
+    overworld_frame(gObjectEventPic_CaeruleaWoman1, 4, 4, 4),
+    overworld_frame(gObjectEventPic_CaeruleaWoman1, 4, 4, 5),
+    overworld_frame(gObjectEventPic_CaeruleaWoman1, 4, 4, 6),
+    overworld_frame(gObjectEventPic_CaeruleaWoman1, 4, 4, 7),
+    overworld_frame(gObjectEventPic_CaeruleaWoman1, 4, 4, 8),
+};
+
+static const struct SpriteFrameImage sPicTable_CaeruleaWoman2[] = {
+    overworld_frame(gObjectEventPic_CaeruleaWoman2, 4, 4, 0),
+    overworld_frame(gObjectEventPic_CaeruleaWoman2, 4, 4, 1),
+    overworld_frame(gObjectEventPic_CaeruleaWoman2, 4, 4, 2),
+    overworld_frame(gObjectEventPic_CaeruleaWoman2, 4, 4, 3),
+    overworld_frame(gObjectEventPic_CaeruleaWoman2, 4, 4, 4),
+    overworld_frame(gObjectEventPic_CaeruleaWoman2, 4, 4, 5),
+    overworld_frame(gObjectEventPic_CaeruleaWoman2, 4, 4, 6),
+    overworld_frame(gObjectEventPic_CaeruleaWoman2, 4, 4, 7),
+    overworld_frame(gObjectEventPic_CaeruleaWoman2, 4, 4, 8),
+};
+
 /*
 static const struct SpriteFrameImage sPicTable_RockyNormal[] = {
     overworld_frame(gObjectEventPic_RockyNormal, 2, 4, 0),
