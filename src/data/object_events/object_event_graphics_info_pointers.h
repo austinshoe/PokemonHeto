@@ -268,6 +268,12 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_CaeruleaMan
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_CaeruleaMan2;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_CaeruleaWoman1;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_CaeruleaWoman2;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_FerrugineaLittleBoy;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_FerrugineaLittleGirl;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_FerrugineaMan1;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_FerrugineaMan2;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_FerrugineaWoman1;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_FerrugineaWoman2;
 
 /*
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RockyNormal;
@@ -549,6 +555,12 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_CAERULEA_MAN_2] =           &gObjectEventGraphicsInfo_CaeruleaMan2,
     [OBJ_EVENT_GFX_CAERULEA_WOMAN_1] =         &gObjectEventGraphicsInfo_CaeruleaWoman1,
     [OBJ_EVENT_GFX_CAERULEA_WOMAN_2] =         &gObjectEventGraphicsInfo_CaeruleaWoman2,
+    [OBJ_EVENT_GFX_FERRUGINEA_LITTLE_BOY] =    &gObjectEventGraphicsInfo_FerrugineaLittleBoy,
+    [OBJ_EVENT_GFX_FERRUGINEA_LITTLE_GIRL] =   &gObjectEventGraphicsInfo_FerrugineaLittleGirl,
+    [OBJ_EVENT_GFX_FERRUGINEA_MAN_1] =         &gObjectEventGraphicsInfo_FerrugineaMan1,
+    [OBJ_EVENT_GFX_FERRUGINEA_MAN_2] =         &gObjectEventGraphicsInfo_FerrugineaMan2,
+    [OBJ_EVENT_GFX_FERRUGINEA_WOMAN_1] =       &gObjectEventGraphicsInfo_FerrugineaWoman1,
+    [OBJ_EVENT_GFX_FERRUGINEA_WOMAN_2] =       &gObjectEventGraphicsInfo_FerrugineaWoman2,
 
     /*
     [OBJ_EVENT_GFX_ROCKY_NORMAL] =             &gObjectEventGraphicsInfo_RockyNormal,

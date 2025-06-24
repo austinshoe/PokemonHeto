@@ -264,6 +264,12 @@
 #define OBJ_EVENT_GFX_CAERULEA_MAN_2             260
 #define OBJ_EVENT_GFX_CAERULEA_WOMAN_1           261
 #define OBJ_EVENT_GFX_CAERULEA_WOMAN_2           262
+#define OBJ_EVENT_GFX_FERRUGINEA_LITTLE_BOY      263
+#define OBJ_EVENT_GFX_FERRUGINEA_LITTLE_GIRL     264
+#define OBJ_EVENT_GFX_FERRUGINEA_MAN_1           265
+#define OBJ_EVENT_GFX_FERRUGINEA_MAN_2           266
+#define OBJ_EVENT_GFX_FERRUGINEA_WOMAN_1         267
+#define OBJ_EVENT_GFX_FERRUGINEA_WOMAN_2         268
 
 /*
 #define OBJ_EVENT_GFX_ROCKY_NORMAL               239
@@ -288,7 +294,7 @@
 // object graphics that can be removed. If more graphics are needed, anything that
 // stores graphics ids will need to be increased in size. See wiki entry below:
 // https://github.com/pret/pokeemerald/wiki/Feature-Branches#overworld-expansion
-#define NUM_OBJ_EVENT_GFX                        263
+#define NUM_OBJ_EVENT_GFX                        269
 
 
 // These are dynamic object gfx ids.

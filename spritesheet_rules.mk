@@ -690,6 +690,25 @@ $(OBJEVENTGFXDIR)/HGSS_Styled/NPCs/Caerulea/caerulea_woman_1.4bpp: %.4bpp: %.png
 $(OBJEVENTGFXDIR)/HGSS_Styled/NPCs/Caerulea/caerulea_woman_2.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
+$(OBJEVENTGFXDIR)/HGSS_Styled/NPCs/Ferruginea/ferruginea_little_boy.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
+
+$(OBJEVENTGFXDIR)/HGSS_Styled/NPCs/Ferruginea/ferruginea_little_girl.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
+
+$(OBJEVENTGFXDIR)/HGSS_Styled/NPCs/Ferruginea/ferruginea_man_1.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
+
+$(OBJEVENTGFXDIR)/HGSS_Styled/NPCs/Ferruginea/ferruginea_man_2.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
+
+$(OBJEVENTGFXDIR)/HGSS_Styled/NPCs/Ferruginea/ferruginea_woman_1.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
+
+$(OBJEVENTGFXDIR)/HGSS_Styled/NPCs/Ferruginea/ferruginea_woman_2.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
+
+
 $(FLDEFFGFXDIR)/arrow.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 2
 
