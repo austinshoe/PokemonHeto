@@ -5395,7 +5395,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_VeridiaMan1 = {
     .affineAnims = gDummySpriteAffineAnimTable,
 };
 
-const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RubelaMan2 = {
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_VeridiaMan2 = {
     .tileTag = TAG_NONE,
     .paletteTag = OBJ_EVENT_PAL_TAG_NEW_NPC_1,
     .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NEW_NPC_1_REFLECTION,

@@ -708,6 +708,43 @@ $(OBJEVENTGFXDIR)/HGSS_Styled/NPCs/Ferruginea/ferruginea_woman_1.4bpp: %.4bpp: %
 $(OBJEVENTGFXDIR)/HGSS_Styled/NPCs/Ferruginea/ferruginea_woman_2.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
+$(OBJEVENTGFXDIR)/HGSS_Styled/NPCs/Rubela/rubela_little_boy.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
+
+$(OBJEVENTGFXDIR)/HGSS_Styled/NPCs/Rubela/rubela_little_girl.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
+
+$(OBJEVENTGFXDIR)/HGSS_Styled/NPCs/Rubela/rubela_man_1.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
+
+$(OBJEVENTGFXDIR)/HGSS_Styled/NPCs/Rubela/rubela_man_2.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
+
+$(OBJEVENTGFXDIR)/HGSS_Styled/NPCs/Rubela/rubela_woman_1.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
+
+$(OBJEVENTGFXDIR)/HGSS_Styled/NPCs/Rubela/rubela_woman_2.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
+
+$(OBJEVENTGFXDIR)/HGSS_Styled/NPCs/Veridia/veridia_little_boy.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
+
+$(OBJEVENTGFXDIR)/HGSS_Styled/NPCs/Veridia/veridia_little_girl.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
+
+$(OBJEVENTGFXDIR)/HGSS_Styled/NPCs/Veridia/veridia_man_1.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
+
+$(OBJEVENTGFXDIR)/HGSS_Styled/NPCs/Veridia/veridia_man_2.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
+
+$(OBJEVENTGFXDIR)/HGSS_Styled/NPCs/Veridia/veridia_woman_1.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
+
+$(OBJEVENTGFXDIR)/HGSS_Styled/NPCs/Veridia/veridia_woman_2.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
+
+
 
 $(FLDEFFGFXDIR)/arrow.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 2

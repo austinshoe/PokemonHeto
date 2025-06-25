@@ -280,6 +280,12 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RubelaMan1;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RubelaMan2;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RubelaWoman1;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RubelaWoman2;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_VeridiaLittleBoy;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_VeridiaLittleGirl;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_VeridiaMan1;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_VeridiaMan2;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_VeridiaWoman1;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_VeridiaWoman2;
 
 /*
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RockyNormal;
@@ -573,12 +579,12 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_RUBELA_MAN_2] =             &gObjectEventGraphicsInfo_RubelaMan2,
     [OBJ_EVENT_GFX_RUBELA_WOMAN_1] =           &gObjectEventGraphicsInfo_RubelaWoman1,
     [OBJ_EVENT_GFX_RUBELA_WOMAN_2] =           &gObjectEventGraphicsInfo_RubelaWoman2,
-    [OBJ_EVENT_GFX_VERIDIA_LITTLE_BOY] =        &gObjectEventGraphicsInfo_VeridiaLittleBoy,
-    [OBJ_EVENT_GFX_VERIDIA_LITTLE_GIRL] =       &gObjectEventGraphicsInfo_VeridiaLittleGirl,
-    [OBJ_EVENT_GFX_VERIDIA_MAN_1] =             &gObjectEventGraphicsInfo_VeridiaMan1,
-    [OBJ_EVENT_GFX_VERIDIA_MAN_2] =             &gObjectEventGraphicsInfo_VeridiaMan2,
-    [OBJ_EVENT_GFX_VERIDIA_WOMAN_1] =           &gObjectEventGraphicsInfo_VeridiaWoman1,
-    [OBJ_EVENT_GFX_VERIDIA_WOMAN_2] =           &gObjectEventGraphicsInfo_VeridiaWoman2,
+    [OBJ_EVENT_GFX_VERIDIA_LITTLE_BOY] =       &gObjectEventGraphicsInfo_VeridiaLittleBoy,
+    [OBJ_EVENT_GFX_VERIDIA_LITTLE_GIRL] =      &gObjectEventGraphicsInfo_VeridiaLittleGirl,
+    [OBJ_EVENT_GFX_VERIDIA_MAN_1] =            &gObjectEventGraphicsInfo_VeridiaMan1,
+    [OBJ_EVENT_GFX_VERIDIA_MAN_2] =            &gObjectEventGraphicsInfo_VeridiaMan2,
+    [OBJ_EVENT_GFX_VERIDIA_WOMAN_1] =          &gObjectEventGraphicsInfo_VeridiaWoman1,
+    [OBJ_EVENT_GFX_VERIDIA_WOMAN_2] =          &gObjectEventGraphicsInfo_VeridiaWoman2,
 
     /*
     [OBJ_EVENT_GFX_ROCKY_NORMAL] =             &gObjectEventGraphicsInfo_RockyNormal,
