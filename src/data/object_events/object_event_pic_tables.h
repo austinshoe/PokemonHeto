@@ -2607,6 +2607,78 @@ static const struct SpriteFrameImage sPicTable_RubelaWoman2[] = {
 };
 
 
+static const struct SpriteFrameImage sPicTable_VeridiaLittleBoy[] = {
+    overworld_frame(gObjectEventPic_VeridiaLittleBoy, 4, 4, 0),
+    overworld_frame(gObjectEventPic_VeridiaLittleBoy, 4, 4, 1),
+    overworld_frame(gObjectEventPic_VeridiaLittleBoy, 4, 4, 2),
+    overworld_frame(gObjectEventPic_VeridiaLittleBoy, 4, 4, 3),
+    overworld_frame(gObjectEventPic_VeridiaLittleBoy, 4, 4, 4),
+    overworld_frame(gObjectEventPic_VeridiaLittleBoy, 4, 4, 5),
+    overworld_frame(gObjectEventPic_VeridiaLittleBoy, 4, 4, 6),
+    overworld_frame(gObjectEventPic_VeridiaLittleBoy, 4, 4, 7),
+    overworld_frame(gObjectEventPic_VeridiaLittleBoy, 4, 4, 8),
+};
+
+static const struct SpriteFrameImage sPicTable_VeridiaLittleGirl[] = {
+    overworld_frame(gObjectEventPic_VeridiaLittleGirl, 4, 4, 0),
+    overworld_frame(gObjectEventPic_VeridiaLittleGirl, 4, 4, 1),
+    overworld_frame(gObjectEventPic_VeridiaLittleGirl, 4, 4, 2),
+    overworld_frame(gObjectEventPic_VeridiaLittleGirl, 4, 4, 3),
+    overworld_frame(gObjectEventPic_VeridiaLittleGirl, 4, 4, 4),
+    overworld_frame(gObjectEventPic_VeridiaLittleGirl, 4, 4, 5),
+    overworld_frame(gObjectEventPic_VeridiaLittleGirl, 4, 4, 6),
+    overworld_frame(gObjectEventPic_VeridiaLittleGirl, 4, 4, 7),
+    overworld_frame(gObjectEventPic_VeridiaLittleGirl, 4, 4, 8),
+};
+
+static const struct SpriteFrameImage sPicTable_VeridiaMan1[] = {
+    overworld_frame(gObjectEventPic_VeridiaMan1, 4, 4, 0),
+    overworld_frame(gObjectEventPic_VeridiaMan1, 4, 4, 1),
+    overworld_frame(gObjectEventPic_VeridiaMan1, 4, 4, 2),
+    overworld_frame(gObjectEventPic_VeridiaMan1, 4, 4, 3),
+    overworld_frame(gObjectEventPic_VeridiaMan1, 4, 4, 4),
+    overworld_frame(gObjectEventPic_VeridiaMan1, 4, 4, 5),
+    overworld_frame(gObjectEventPic_VeridiaMan1, 4, 4, 6),
+    overworld_frame(gObjectEventPic_VeridiaMan1, 4, 4, 7),
+    overworld_frame(gObjectEventPic_VeridiaMan1, 4, 4, 8),
+};
+
+static const struct SpriteFrameImage sPicTable_VeridiaMan2[] = {
+    overworld_frame(gObjectEventPic_VeridiaMan2, 4, 4, 0),
+    overworld_frame(gObjectEventPic_VeridiaMan2, 4, 4, 1),
+    overworld_frame(gObjectEventPic_VeridiaMan2, 4, 4, 2),
+    overworld_frame(gObjectEventPic_VeridiaMan2, 4, 4, 3),
+    overworld_frame(gObjectEventPic_VeridiaMan2, 4, 4, 4),
+    overworld_frame(gObjectEventPic_VeridiaMan2, 4, 4, 5),
+    overworld_frame(gObjectEventPic_VeridiaMan2, 4, 4, 6),
+    overworld_frame(gObjectEventPic_VeridiaMan2, 4, 4, 7),
+    overworld_frame(gObjectEventPic_VeridiaMan2, 4, 4, 8),
+};
+
+static const struct SpriteFrameImage sPicTable_VeridiaWoman1[] = {
+    overworld_frame(gObjectEventPic_VeridiaWoman1, 4, 4, 0),
+    overworld_frame(gObjectEventPic_VeridiaWoman1, 4, 4, 1),
+    overworld_frame(gObjectEventPic_VeridiaWoman1, 4, 4, 2),
+    overworld_frame(gObjectEventPic_VeridiaWoman1, 4, 4, 3),
+    overworld_frame(gObjectEventPic_VeridiaWoman1, 4, 4, 4),
+    overworld_frame(gObjectEventPic_VeridiaWoman1, 4, 4, 5),
+    overworld_frame(gObjectEventPic_VeridiaWoman1, 4, 4, 6),
+    overworld_frame(gObjectEventPic_VeridiaWoman1, 4, 4, 7),
+    overworld_frame(gObjectEventPic_VeridiaWoman1, 4, 4, 8),
+};
+
+static const struct SpriteFrameImage sPicTable_VeridiaWoman2[] = {
+    overworld_frame(gObjectEventPic_VeridiaWoman2, 4, 4, 0),
+    overworld_frame(gObjectEventPic_VeridiaWoman2, 4, 4, 1),
+    overworld_frame(gObjectEventPic_VeridiaWoman2, 4, 4, 2),
+    overworld_frame(gObjectEventPic_VeridiaWoman2, 4, 4, 3),
+    overworld_frame(gObjectEventPic_VeridiaWoman2, 4, 4, 4),
+    overworld_frame(gObjectEventPic_VeridiaWoman2, 4, 4, 5),
+    overworld_frame(gObjectEventPic_VeridiaWoman2, 4, 4, 6),
+    overworld_frame(gObjectEventPic_VeridiaWoman2, 4, 4, 7),
+    overworld_frame(gObjectEventPic_VeridiaWoman2, 4, 4, 8),
+};
+
 
 /*
 static const struct SpriteFrameImage sPicTable_RockyNormal[] = {
