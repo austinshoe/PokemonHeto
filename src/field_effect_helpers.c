@@ -1014,7 +1014,8 @@ u32 FldEff_SurfBlob(void)
     {
         sprite = &gSprites[spriteId];
         sprite->coordOffsetEnabled = TRUE;
-        sprite->oam.paletteNum = 0;
+        //sprite->oam.paletteNum = 0;
+        sprite->oam.paletteNum = PALSLOT_NPC_2;
         sprite->tPlayerObjId = gFieldEffectArguments[2];
         sprite->data[3] = -1;
         sprite->data[6] = -1;
