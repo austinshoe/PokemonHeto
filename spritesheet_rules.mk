@@ -744,6 +744,21 @@ $(OBJEVENTGFXDIR)/HGSS_Styled/NPCs/Veridia/veridia_woman_1.4bpp: %.4bpp: %.png
 $(OBJEVENTGFXDIR)/HGSS_Styled/NPCs/Veridia/veridia_woman_2.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
+$(OBJEVENTGFXDIR)/HGSS_Styled/Player/rocky/walking.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
+
+$(OBJEVENTGFXDIR)/HGSS_Styled/Player/rocky/running.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
+
+$(OBJEVENTGFXDIR)/HGSS_Styled/Player/rocky/surfing.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
+
+$(OBJEVENTGFXDIR)/HGSS_Styled/Player/rocky/field_move.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
+
+$(OBJEVENTGFXDIR)/HGSS_Styled/Player/rocky/underwater.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
+
 
 
 $(FLDEFFGFXDIR)/arrow.4bpp: %.4bpp: %.png

@@ -464,6 +464,7 @@ const u8 gInitialMovementTypeFacingDirections[] = {
 // #define OBJ_EVENT_PAL_TAG_NEW_NPC_3_REFLECTION    0x1129
 #define OBJ_EVENT_PAL_TAG_ROCKY_REFLECTION        0x1130
 #define OBJ_EVENT_PAL_TAG_RIVAL_2_REFLECTION      0x1131
+#define OBJ_EVENT_PAL_TAG_ROCKY_UNDERWATER        0x1132
 #define OBJ_EVENT_PAL_TAG_NONE                    0x11FF
 
 #include "data/object_events/object_event_graphics_info_pointers.h"
@@ -520,6 +521,7 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     // {gObjectEventPal_NewNPC3,               OBJ_EVENT_PAL_TAG_NEW_NPC_3},
     {gObjectEventPal_NewPlayerReflection,   OBJ_EVENT_PAL_TAG_ROCKY_REFLECTION},
     {gObjectEventPal_NewRivalReflection,    OBJ_EVENT_PAL_TAG_RIVAL_2_REFLECTION},
+    {gObjectEventPal_NewPlayerUnderwater,   OBJ_EVENT_PAL_TAG_ROCKY_UNDERWATER},
 #ifdef BUGFIX
     {NULL,                                  OBJ_EVENT_PAL_TAG_NONE},
 #else
@@ -543,16 +545,21 @@ static const u16 sReflectionPaletteTags_May[] = {
 };
 
 static const u16 sReflectionPaletteTags_PlayerUnderwater[] = {
+    OBJ_EVENT_PAL_TAG_ROCKY_UNDERWATER,
+    OBJ_EVENT_PAL_TAG_ROCKY_UNDERWATER,
+    OBJ_EVENT_PAL_TAG_ROCKY_UNDERWATER,
+    OBJ_EVENT_PAL_TAG_ROCKY_UNDERWATER,
+    /*OBJ_EVENT_PAL_TAG_PLAYER_UNDERWATER,
     OBJ_EVENT_PAL_TAG_PLAYER_UNDERWATER,
     OBJ_EVENT_PAL_TAG_PLAYER_UNDERWATER,
-    OBJ_EVENT_PAL_TAG_PLAYER_UNDERWATER,
-    OBJ_EVENT_PAL_TAG_PLAYER_UNDERWATER,
+    OBJ_EVENT_PAL_TAG_PLAYER_UNDERWATER,*/
 };
 
 static const struct PairedPalettes sPlayerReflectionPaletteSets[] = {
     {OBJ_EVENT_PAL_TAG_BRENDAN,           sReflectionPaletteTags_Brendan},
     {OBJ_EVENT_PAL_TAG_MAY,               sReflectionPaletteTags_May},
-    {OBJ_EVENT_PAL_TAG_PLAYER_UNDERWATER, sReflectionPaletteTags_PlayerUnderwater},
+    //{OBJ_EVENT_PAL_TAG_PLAYER_UNDERWATER, sReflectionPaletteTags_PlayerUnderwater},
+    {OBJ_EVENT_PAL_TAG_ROCKY_UNDERWATER, sReflectionPaletteTags_PlayerUnderwater},
     {OBJ_EVENT_PAL_TAG_NONE,              NULL},
 };
 

@@ -2679,6 +2679,62 @@ static const struct SpriteFrameImage sPicTable_VeridiaWoman2[] = {
     overworld_frame(gObjectEventPic_VeridiaWoman2, 4, 4, 8),
 };
 
+static const struct SpriteFrameImage sPicTable_RockyNormal[] = {
+    overworld_frame(gObjectEventPic_RockyNormal, 4, 4, 0),
+    overworld_frame(gObjectEventPic_RockyNormal, 4, 4, 1),
+    overworld_frame(gObjectEventPic_RockyNormal, 4, 4, 2),
+    overworld_frame(gObjectEventPic_RockyNormal, 4, 4, 3),
+    overworld_frame(gObjectEventPic_RockyNormal, 4, 4, 4),
+    overworld_frame(gObjectEventPic_RockyNormal, 4, 4, 5),
+    overworld_frame(gObjectEventPic_RockyNormal, 4, 4, 6),
+    overworld_frame(gObjectEventPic_RockyNormal, 4, 4, 7),
+    overworld_frame(gObjectEventPic_RockyNormal, 4, 4, 8),
+    overworld_frame(gObjectEventPic_RockyRunning, 4, 4, 0),
+    overworld_frame(gObjectEventPic_RockyRunning, 4, 4, 1),
+    overworld_frame(gObjectEventPic_RockyRunning, 4, 4, 2),
+    overworld_frame(gObjectEventPic_RockyRunning, 4, 4, 3),
+    overworld_frame(gObjectEventPic_RockyRunning, 4, 4, 4),
+    overworld_frame(gObjectEventPic_RockyRunning, 4, 4, 5),
+    overworld_frame(gObjectEventPic_RockyRunning, 4, 4, 6),
+    overworld_frame(gObjectEventPic_RockyRunning, 4, 4, 7),
+    overworld_frame(gObjectEventPic_RockyRunning, 4, 4, 8),
+};
+
+static const struct SpriteFrameImage sPicTable_RockySurfing[] = {
+    overworld_frame(gObjectEventPic_RockySurfing, 4, 4, 0),
+    overworld_frame(gObjectEventPic_RockySurfing, 4, 4, 2),
+    overworld_frame(gObjectEventPic_RockySurfing, 4, 4, 4),
+    overworld_frame(gObjectEventPic_RockySurfing, 4, 4, 0),
+    overworld_frame(gObjectEventPic_RockySurfing, 4, 4, 0),
+    overworld_frame(gObjectEventPic_RockySurfing, 4, 4, 2),
+    overworld_frame(gObjectEventPic_RockySurfing, 4, 4, 2),
+    overworld_frame(gObjectEventPic_RockySurfing, 4, 4, 4),
+    overworld_frame(gObjectEventPic_RockySurfing, 4, 4, 4),
+    overworld_frame(gObjectEventPic_RockySurfing, 4, 4, 1),
+    overworld_frame(gObjectEventPic_RockySurfing, 4, 4, 3),
+    overworld_frame(gObjectEventPic_RockySurfing, 4, 4, 5),
+};
+
+static const struct SpriteFrameImage sPicTable_RockyUnderwater[] = {
+    overworld_frame(gObjectEventPic_RockyUnderwater, 4, 4, 0),
+    overworld_frame(gObjectEventPic_RockyUnderwater, 4, 4, 1),
+    overworld_frame(gObjectEventPic_RockyUnderwater, 4, 4, 2),
+    overworld_frame(gObjectEventPic_RockyUnderwater, 4, 4, 0),
+    overworld_frame(gObjectEventPic_RockyUnderwater, 4, 4, 0),
+    overworld_frame(gObjectEventPic_RockyUnderwater, 4, 4, 1),
+    overworld_frame(gObjectEventPic_RockyUnderwater, 4, 4, 1),
+    overworld_frame(gObjectEventPic_RockyUnderwater, 4, 4, 2),
+    overworld_frame(gObjectEventPic_RockyUnderwater, 4, 4, 2),
+};
+
+static const struct SpriteFrameImage sPicTable_RockyFieldMove[] = {
+    overworld_frame(gObjectEventPic_RockyFieldMove, 4, 4, 0),
+    overworld_frame(gObjectEventPic_RockyFieldMove, 4, 4, 1),
+    overworld_frame(gObjectEventPic_RockyFieldMove, 4, 4, 2),
+    overworld_frame(gObjectEventPic_RockyFieldMove, 4, 4, 3),
+    overworld_frame(gObjectEventPic_RockyFieldMove, 4, 4, 4),
+};
+
 
 /*
 static const struct SpriteFrameImage sPicTable_RockyNormal[] = {

@@ -585,9 +585,13 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_VERIDIA_MAN_2] =            &gObjectEventGraphicsInfo_VeridiaMan2,
     [OBJ_EVENT_GFX_VERIDIA_WOMAN_1] =          &gObjectEventGraphicsInfo_VeridiaWoman1,
     [OBJ_EVENT_GFX_VERIDIA_WOMAN_2] =          &gObjectEventGraphicsInfo_VeridiaWoman2,
+    [OBJ_EVENT_GFX_ROCKY_NORMAL] =             &gObjectEventGraphicsInfo_RockyNormal,
+    [OBJ_EVENT_GFX_ROCKY_SURFING] =            &gObjectEventGraphicsInfo_RockySurfing,
+    [OBJ_EVENT_GFX_ROCKY_FIELD_MOVE] =         &gObjectEventGraphicsInfo_RockyFieldMove,
+    [OBJ_EVENT_GFX_ROCKY_UNDERWATER] =         &gObjectEventGraphicsInfo_RockyUnderwater,
 
     /*
-    [OBJ_EVENT_GFX_ROCKY_NORMAL] =             &gObjectEventGraphicsInfo_RockyNormal,
+    
     [OBJ_EVENT_GFX_ROCKY_MACH_BIKE] =          &gObjectEventGraphicsInfo_RockyMachBike,
     [OBJ_EVENT_GFX_ROCKY_SURFING] =            &gObjectEventGraphicsInfo_RockySurfing,
     [OBJ_EVENT_GFX_ROCKY_FIELD_MOVE] =         &gObjectEventGraphicsInfo_RockyFieldMove,
