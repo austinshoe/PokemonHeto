@@ -759,6 +759,8 @@ $(OBJEVENTGFXDIR)/HGSS_Styled/Player/rocky/field_move.4bpp: %.4bpp: %.png
 $(OBJEVENTGFXDIR)/HGSS_Styled/Player/rocky/underwater.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
+$(OBJEVENTGFXDIR)/HGSS_Styled/Player/surf_blob.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 
 $(FLDEFFGFXDIR)/arrow.4bpp: %.4bpp: %.png
