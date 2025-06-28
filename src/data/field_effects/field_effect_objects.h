@@ -171,12 +171,12 @@ const struct SpriteTemplate gFieldEffectObjectTemplate_Ash = {
 };
 
 static const struct SpriteFrameImage sPicTable_SurfBlob[] = {
-    /*overworld_frame(gFieldEffectObjectPic_SurfBlob, 4, 4, 0),
+    overworld_frame(gFieldEffectObjectPic_SurfBlob, 4, 4, 0),
     overworld_frame(gFieldEffectObjectPic_SurfBlob, 4, 4, 1),
-    overworld_frame(gFieldEffectObjectPic_SurfBlob, 4, 4, 2),*/
-    overworld_frame(gFieldEffectObjectPic_NewSurfBlob, 4, 4, 0),
+    overworld_frame(gFieldEffectObjectPic_SurfBlob, 4, 4, 2),
+    /*overworld_frame(gFieldEffectObjectPic_NewSurfBlob, 4, 4, 0),
     overworld_frame(gFieldEffectObjectPic_NewSurfBlob, 4, 4, 1),
-    overworld_frame(gFieldEffectObjectPic_NewSurfBlob, 4, 4, 2),
+    overworld_frame(gFieldEffectObjectPic_NewSurfBlob, 4, 4, 2),*/
 };
 
 static const union AnimCmd sSurfBlobAnim_FaceSouth[] =
