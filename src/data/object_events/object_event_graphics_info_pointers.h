@@ -286,6 +286,10 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_VeridiaMan1
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_VeridiaMan2;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_VeridiaWoman1;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_VeridiaWoman2;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RockyNormal;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RockySurfing;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RockyFieldMove;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RockyUnderwater;
 
 /*
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RockyNormal;
