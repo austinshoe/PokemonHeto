@@ -430,5 +430,6 @@ const u16 gObjectEventPic_VeridiaWoman2[] = INCBIN_U16("graphics/object_events/p
 const u16 gObjectEventPal_NewPlayerUnderwater[] = INCBIN_U16("graphics/object_events/pics/HGSS_Styled/palettes/underwater.gbapal");
 const u16 gObjectEventPic_RockyNormal[] = INCBIN_U16("graphics/object_events/pics/HGSS_Styled/Player/rocky/walking.4bpp");
 const u16 gObjectEventPic_RockyRunning[] = INCBIN_U16("graphics/object_events/pics/HGSS_Styled/Player/rocky/running.4bpp");
+const u16 gObjectEventPic_RockySurfing[] = INCBIN_U16("graphics/object_events/pics/HGSS_Styled/Player/rocky/surfing.4bpp");
 const u16 gObjectEventPic_RockyFieldMove[] = INCBIN_U16("graphics/object_events/pics/HGSS_Styled/Player/rocky/field_move.4bpp");
 const u16 gObjectEventPic_RockyUnderwater[] = INCBIN_U16("graphics/object_events/pics/HGSS_Styled/Player/rocky/underwater.4bpp");
