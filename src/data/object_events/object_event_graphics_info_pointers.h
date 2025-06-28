@@ -593,6 +593,10 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_ROCKY_SURFING] =            &gObjectEventGraphicsInfo_RockySurfing,
     [OBJ_EVENT_GFX_ROCKY_FIELD_MOVE] =         &gObjectEventGraphicsInfo_RockyFieldMove,
     [OBJ_EVENT_GFX_ROCKY_UNDERWATER] =         &gObjectEventGraphicsInfo_RockyUnderwater,
+    [OBJ_EVENT_GFX_MAI_NORMAL] =               &gObjectEventGraphicsInfo_MaiNormal,
+    [OBJ_EVENT_GFX_MAI_SURFING] =              &gObjectEventGraphicsInfo_MaiSurfing,
+    [OBJ_EVENT_GFX_MAI_FIELD_MOVE] =           &gObjectEventGraphicsInfo_MaiFieldMove,
+    [OBJ_EVENT_GFX_MAI_UNDERWATER] =           &gObjectEventGraphicsInfo_MaiUnderwater,
 
     /*
     

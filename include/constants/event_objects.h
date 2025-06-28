@@ -286,6 +286,10 @@
 #define OBJ_EVENT_GFX_ROCKY_SURFING              282
 #define OBJ_EVENT_GFX_ROCKY_FIELD_MOVE           283
 #define OBJ_EVENT_GFX_ROCKY_UNDERWATER           284
+#define OBJ_EVENT_GFX_MAI_NORMAL                 285
+#define OBJ_EVENT_GFX_MAI_SURFING                286
+#define OBJ_EVENT_GFX_MAI_FIELD_MOVE             287
+#define OBJ_EVENT_GFX_MAI_UNDERWATER             288
 
 /*
 #define OBJ_EVENT_GFX_ROCKY_NORMAL               239
@@ -310,7 +314,7 @@
 // object graphics that can be removed. If more graphics are needed, anything that
 // stores graphics ids will need to be increased in size. See wiki entry below:
 // https://github.com/pret/pokeemerald/wiki/Feature-Branches#overworld-expansion
-#define NUM_OBJ_EVENT_GFX                        285
+#define NUM_OBJ_EVENT_GFX                        289
 
 
 // These are dynamic object gfx ids.
