@@ -290,6 +290,10 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RockyNormal
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RockySurfing;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RockyFieldMove;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RockyUnderwater;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_MaiNormal;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_MaiSurfing;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_MaiFieldMove;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_MaiUnderwater;
 
 /*
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RockyNormal;
