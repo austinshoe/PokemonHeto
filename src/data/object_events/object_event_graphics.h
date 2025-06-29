@@ -439,4 +439,5 @@ const u16 gObjectEventPic_MaiRunning[] = INCBIN_U16("graphics/object_events/pics
 const u16 gObjectEventPic_MaiSurfing[] = INCBIN_U16("graphics/object_events/pics/HGSS_Styled/Player/mai/surfing.4bpp");
 const u16 gObjectEventPic_MaiFieldMove[] = INCBIN_U16("graphics/object_events/pics/HGSS_Styled/Player/mai/field_move.4bpp");
 const u16 gObjectEventPic_MaiUnderwater[] = INCBIN_U16("graphics/object_events/pics/HGSS_Styled/Player/mai/underwater.4bpp");
+const u16 gObjectEventPic_Liam[] = INCBIN_U16("graphics/object_events/pics/HGSS_Styled/Rival/Liam.4bpp");
 //const u32 gFieldEffectObjectPic_NewSurfBlob[] = INCBIN_U32("graphics/object_events/pics/HGSS_Styled/Player/surf_blob.4bpp");

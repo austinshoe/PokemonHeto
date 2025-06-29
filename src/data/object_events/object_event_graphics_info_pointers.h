@@ -294,6 +294,7 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_MaiNormal;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_MaiSurfing;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_MaiFieldMove;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_MaiUnderwater;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Liam;
 
 /*
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RockyNormal;
@@ -601,6 +602,7 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_MAI_SURFING] =              &gObjectEventGraphicsInfo_MaiSurfing,
     [OBJ_EVENT_GFX_MAI_FIELD_MOVE] =           &gObjectEventGraphicsInfo_MaiFieldMove,
     [OBJ_EVENT_GFX_MAI_UNDERWATER] =           &gObjectEventGraphicsInfo_MaiUnderwater,
+    [OBJ_EVENT_GFX_LIAM] =                     &gObjectEventGraphicsInfo_Liam,
 
     /*
     

@@ -777,6 +777,9 @@ $(OBJEVENTGFXDIR)/HGSS_Styled/Player/mai/field_move.4bpp: %.4bpp: %.png
 $(OBJEVENTGFXDIR)/HGSS_Styled/Player/mai/underwater.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
+$(OBJEVENTGFXDIR)/HGSS_Styled/Rival/Liam.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
+
 
 
 
