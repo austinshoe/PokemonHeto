@@ -5699,7 +5699,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_ViolaMan2 = {
     .affineAnims = gDummySpriteAffineAnimTable,
 };
 
-const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_ViolaWoman1 = {
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_ViolaWoman = {
     .tileTag = TAG_NONE,
     .paletteTag = OBJ_EVENT_PAL_TAG_ROCKY,
     .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_ROCKY_REFLECTION,
