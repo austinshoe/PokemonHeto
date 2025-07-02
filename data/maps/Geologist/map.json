@@ -28,7 +28,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_F",
+      "graphics_id": "OBJ_EVENT_GFX_ANGRBODA_ALBA_FEMALE",
       "x": 5,
       "y": 5,
       "elevation": 0,
@@ -41,7 +41,7 @@
       "flag": "FLAG_RECOVERED_DEVON_GOODS"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_M",
+      "graphics_id": "OBJ_EVENT_GFX_ANGRBODA_AURATA_MALE",
       "x": 7,
       "y": 5,
       "elevation": 0,
@@ -54,7 +54,7 @@
       "flag": "FLAG_RECOVERED_DEVON_GOODS"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_ANABEL",
+      "graphics_id": "OBJ_EVENT_GFX_CERISITHIA",
       "x": 6,
       "y": 5,
       "elevation": 0,
@@ -67,7 +67,7 @@
       "flag": "FLAG_RECOVERED_DEVON_GOODS"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_M",
+      "graphics_id": "OBJ_EVENT_GFX_ANGRBODA_AURATA_MALE",
       "x": 6,
       "y": 6,
       "elevation": 0,
@@ -80,7 +80,7 @@
       "flag": "FLAG_RECOVERED_DEVON_GOODS"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_BRENDAN_NORMAL",
+      "graphics_id": "OBJ_EVENT_GFX_ROCKY_NORMAL",
       "x": 6,
       "y": 9,
       "elevation": 0,
@@ -93,7 +93,7 @@
       "flag": "FLAG_RECOVERED_DEVON_GOODS"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_MAY_NORMAL",
+      "graphics_id": "OBJ_EVENT_GFX_MAI_NORMAL",
       "x": 6,
       "y": 9,
       "elevation": 0,
