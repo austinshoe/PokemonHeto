@@ -295,6 +295,11 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_MaiSurfing;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_MaiFieldMove;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_MaiUnderwater;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Liam;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_ViolaLittleBoy;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_ViolaLittleGirl;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_ViolaMan1;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_ViolaMan2;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_ViolaWoman;
 
 /*
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RockyNormal;
@@ -603,6 +608,11 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_MAI_FIELD_MOVE] =           &gObjectEventGraphicsInfo_MaiFieldMove,
     [OBJ_EVENT_GFX_MAI_UNDERWATER] =           &gObjectEventGraphicsInfo_MaiUnderwater,
     [OBJ_EVENT_GFX_LIAM] =                     &gObjectEventGraphicsInfo_Liam,
+    [OBJ_EVENT_GFX_VIOLA_LITTLE_BOY] =         &gObjectEventGraphicsInfo_ViolaLittleBoy,
+    [OBJ_EVENT_GFX_VIOLA_LITTLE_GIRL] =        &gObjectEventGraphicsInfo_ViolaLittleGirl,
+    [OBJ_EVENT_GFX_VIOLA_MAN_1] =              &gObjectEventGraphicsInfo_ViolaMan1,
+    [OBJ_EVENT_GFX_VIOLA_MAN_2] =              &gObjectEventGraphicsInfo_ViolaMan2,
+    [OBJ_EVENT_GFX_VIOLA_WOMAN] =              &gObjectEventGraphicsInfo_ViolaWoman,
 
     /*
     
