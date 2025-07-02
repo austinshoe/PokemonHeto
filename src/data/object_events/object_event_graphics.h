@@ -389,7 +389,7 @@ const u16 gObjectEventPic_AlbaWoman1[] = INCBIN_U16("graphics/object_events/pics
 const u16 gObjectEventPic_AlbaWoman2[] = INCBIN_U16("graphics/object_events/pics/HGSS_Styled/NPCs/Alba/alba_woman_2.4bpp");
 const u16 gObjectEventPal_NewNPC1Reflection[] = INCBIN_U16("graphics/object_events/pics/HGSS_Styled/palettes/npc1_reflection.gbapal");
 const u16 gObjectEventPal_NewNPC2Reflection[] = INCBIN_U16("graphics/object_events/pics/HGSS_Styled/palettes/npc2_reflection.gbapal");
-// const u16 gObjectEventPal_NewNPC3[] = INCBIN_U16("graphics/object_events/pics/HGSS_Styled/palettes/npc3.gbapal");
+const u16 gObjectEventPal_NewNPC3Reflection[] = INCBIN_U16("graphics/object_events/pics/HGSS_Styled/palettes/npc3_reflection.gbapal");
 const u16 gObjectEventPal_NewPlayerReflection[] = INCBIN_U16("graphics/object_events/pics/HGSS_Styled/palettes/rocky_reflection.gbapal");
 const u16 gObjectEventPal_NewRivalReflection[] = INCBIN_U16("graphics/object_events/pics/HGSS_Styled/palettes/rival2_reflection.gbapal");
 const u16 gObjectEventPic_AquilaLittleBoy[] = INCBIN_U16("graphics/object_events/pics/HGSS_Styled/NPCs/Aquila/aquila_little_boy.4bpp");
@@ -445,4 +445,27 @@ const u16 gObjectEventPic_ViolaLittleGirl[] = INCBIN_U16("graphics/object_events
 const u16 gObjectEventPic_ViolaMan1[] = INCBIN_U16("graphics/object_events/pics/HGSS_Styled/NPCs/Viola/viola_man_1.4bpp");
 const u16 gObjectEventPic_ViolaMan2[] = INCBIN_U16("graphics/object_events/pics/HGSS_Styled/NPCs/Viola/viola_man_2.4bpp");
 const u16 gObjectEventPic_ViolaWoman[] = INCBIN_U16("graphics/object_events/pics/HGSS_Styled/NPCs/Viola/viola_woman_1.4bpp");
+const u16 gObjectEventPic_Nou[] = INCBIN_U16("graphics/object_events/pics/HGSS_Styled/GL_EF/Nou.4bpp");
+const u16 gObjectEventPic_Lilah[] = INCBIN_U16("graphics/object_events/pics/HGSS_Styled/GL_EF/Lilah.4bpp");
+const u16 gObjectEventPic_Alexandr[] = INCBIN_U16("graphics/object_events/pics/HGSS_Styled/Angrboda/alexandr.4bpp");
+const u16 gObjectEventPic_AngrbodaAlbaFemale[] = INCBIN_U16("graphics/object_events/pics/HGSS_Styled/Angrboda/angrboda_alba_female.4bpp");
+const u16 gObjectEventPic_AngrbodaAlbaMale[] = INCBIN_U16("graphics/object_events/pics/HGSS_Styled/Angrboda/angrboda_alba_male.4bpp");
+const u16 gObjectEventPic_AngrbodaAlbaSci[] = INCBIN_U16("graphics/object_events/pics/HGSS_Styled/Angrboda/angrboda_alba_scientist.4bpp");
+const u16 gObjectEventPic_AngrbodaAurataFemale[] = INCBIN_U16("graphics/object_events/pics/HGSS_Styled/Angrboda/angrboda_aurata_female.4bpp");
+const u16 gObjectEventPic_AngrbodaAurataMale[] = INCBIN_U16("graphics/object_events/pics/HGSS_Styled/Angrboda/angrboda_aurata_male.4bpp");
+const u16 gObjectEventPic_AngrbodaAurataSci[] = INCBIN_U16("graphics/object_events/pics/HGSS_Styled/Angrboda/angrboda_aurata_scientist.4bpp");
+const u16 gObjectEventPic_Dullahan[] = INCBIN_U16("graphics/object_events/pics/HGSS_Styled/Angrboda/dullahan.4bpp");
+const u16 gObjectEventPic_Jormungandr[] = INCBIN_U16("graphics/object_events/pics/HGSS_Styled/Angrboda/Jormungandr.4bpp");
+const u16 gObjectEventPic_Cerisithia[] = INCBIN_U16("graphics/object_events/pics/HGSS_Styled/Angrboda/cerisithia_masked.4bpp");
+const u16 gObjectEventPic_Miner[] = INCBIN_U16("graphics/object_events/pics/HGSS_Styled/NPCs/Other/miner.4bpp");
+const u16 gObjectEventPic_Policeman[] = INCBIN_U16("graphics/object_events/pics/HGSS_Styled/NPCs/Other/policeman.4bpp");
+const u16 gObjectEventPic_Scientist[] = INCBIN_U16("graphics/object_events/pics/HGSS_Styled/NPCs/Other/scientist.4bpp");
+const u16 gObjectEventPic_ItemBall2[] = INCBIN_U16("graphics/object_events/pics/HGSS_Styled/Item/item_ball.4bpp");
+const u16 gObjectEventPic_TMBall[] = INCBIN_U16("graphics/object_events/pics/HGSS_Styled/Item/tm_ball.4bpp");
+const u32 gObjectEventPic_NewCuttableTree[] = INCBIN_U32("graphics/object_events/pics/HGSS_Styled/Interact/cuttable_tree.4bpp");
+const u32 gObjectEventPic_NewBreakableRock[] = INCBIN_U32("graphics/object_events/pics/HGSS_Styled/Interact/breakable_rock.4bpp");
+const u32 gObjectEventPic_NewPushableBoulder[] = INCBIN_U32("graphics/object_events/pics/HGSS_Styled/Interact/pushable_boulder.4bpp");
+
+
+
 //const u32 gFieldEffectObjectPic_NewSurfBlob[] = INCBIN_U32("graphics/object_events/pics/HGSS_Styled/Player/surf_blob.4bpp");

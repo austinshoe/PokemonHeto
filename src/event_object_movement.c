@@ -461,10 +461,10 @@ const u8 gInitialMovementTypeFacingDirections[] = {
 #define OBJ_EVENT_PAL_TAG_RIVAL_2                 0x1128
 #define OBJ_EVENT_PAL_TAG_NEW_NPC_1_REFLECTION    0x1129
 #define OBJ_EVENT_PAL_TAG_NEW_NPC_2_REFLECTION    0x1130
-// #define OBJ_EVENT_PAL_TAG_NEW_NPC_3_REFLECTION    0x1129
-#define OBJ_EVENT_PAL_TAG_ROCKY_REFLECTION        0x1130
-#define OBJ_EVENT_PAL_TAG_RIVAL_2_REFLECTION      0x1131
-#define OBJ_EVENT_PAL_TAG_ROCKY_UNDERWATER        0x1132
+#define OBJ_EVENT_PAL_TAG_NEW_NPC_3_REFLECTION    0x1131
+#define OBJ_EVENT_PAL_TAG_ROCKY_REFLECTION        0x1132
+#define OBJ_EVENT_PAL_TAG_RIVAL_2_REFLECTION      0x1133
+#define OBJ_EVENT_PAL_TAG_ROCKY_UNDERWATER        0x1134
 #define OBJ_EVENT_PAL_TAG_NONE                    0x11FF
 
 #include "data/object_events/object_event_graphics_info_pointers.h"
@@ -518,7 +518,7 @@ static const struct SpritePalette sObjectEventSpritePalettes[] = {
     {gObjectEventPal_NewRival,              OBJ_EVENT_PAL_TAG_RIVAL_2},
     {gObjectEventPal_NewNPC1Reflection,     OBJ_EVENT_PAL_TAG_NEW_NPC_1_REFLECTION},
     {gObjectEventPal_NewNPC2Reflection,     OBJ_EVENT_PAL_TAG_NEW_NPC_2_REFLECTION},
-    // {gObjectEventPal_NewNPC3,               OBJ_EVENT_PAL_TAG_NEW_NPC_3},
+    {gObjectEventPal_NewNPC3Reflection,     OBJ_EVENT_PAL_TAG_NEW_NPC_3_REFLECTION},
     {gObjectEventPal_NewPlayerReflection,   OBJ_EVENT_PAL_TAG_ROCKY_REFLECTION},
     {gObjectEventPal_NewRivalReflection,    OBJ_EVENT_PAL_TAG_RIVAL_2_REFLECTION},
     {gObjectEventPal_NewPlayerUnderwater,   OBJ_EVENT_PAL_TAG_ROCKY_UNDERWATER},

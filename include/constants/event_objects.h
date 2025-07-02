@@ -295,7 +295,28 @@
 #define OBJ_EVENT_GFX_VIOLA_LITTLE_GIRL          291
 #define OBJ_EVENT_GFX_VIOLA_MAN_1                292
 #define OBJ_EVENT_GFX_VIOLA_MAN_2                293
-#define OBJ_EVENT_GFX_VIOLA_WOMAN               294
+#define OBJ_EVENT_GFX_VIOLA_WOMAN                294
+#define OBJ_EVENT_GFX_NOU                        295
+#define OBJ_EVENT_GFX_LILAH                      296
+#define OBJ_EVENT_GFX_ALEXANDR                   297
+#define OBJ_EVENT_GFX_ANGRBODA_ALBA_FEMALE       298
+#define OBJ_EVENT_GFX_ANGRBODA_ALBA_MALE         299
+#define OBJ_EVENT_GFX_ANGRBODA_ALBA_SCI          300
+#define OBJ_EVENT_GFX_ANGRBODA_AURATA_FEMALE     301
+#define OBJ_EVENT_GFX_ANGRBODA_AURATA_MALE       302
+#define OBJ_EVENT_GFX_ANGRBODA_AURATA_SCI        303
+#define OBJ_EVENT_GFX_DULLAHAN                   304
+#define OBJ_EVENT_GFX_JORMUNGANDR                305
+#define OBJ_EVENT_GFX_CERISITHIA                 306
+#define OBJ_EVENT_GFX_MINER                      307
+#define OBJ_EVENT_GFX_POLICEMAN                  308
+#define OBJ_EVENT_GFX_SCIENTIST                  309
+#define OBJ_EVENT_GFX_ITEM_BALL_2                310
+#define OBJ_EVENT_GFX_TM_BALL                    311
+#define OBJ_EVENT_GFX_NEW_CUTTABLE_TREE          312
+#define OBJ_EVENT_GFX_NEW_BREAKABLE_ROCK         313
+#define OBJ_EVENT_GFX_NEW_PUSHABLE_BOULDER       314
+
 
 /*
 #define OBJ_EVENT_GFX_ROCKY_NORMAL               239
@@ -320,7 +341,7 @@
 // object graphics that can be removed. If more graphics are needed, anything that
 // stores graphics ids will need to be increased in size. See wiki entry below:
 // https://github.com/pret/pokeemerald/wiki/Feature-Branches#overworld-expansion
-#define NUM_OBJ_EVENT_GFX                        295
+#define NUM_OBJ_EVENT_GFX                        315
 
 
 // These are dynamic object gfx ids.

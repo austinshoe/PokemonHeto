@@ -15,7 +15,7 @@
   "connections": 0,
   "object_events": [
     {
-      "graphics_id": "OBJ_EVENT_GFX_BREAKABLE_ROCK",
+      "graphics_id": "OBJ_EVENT_GFX_NEW_BREAKABLE_ROCK",
       "x": 23,
       "y": 30,
       "elevation": 0,
@@ -28,7 +28,7 @@
       "flag": "FLAG_TEMP_1"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_BREAKABLE_ROCK",
+      "graphics_id": "OBJ_EVENT_GFX_NEW_BREAKABLE_ROCK",
       "x": 24,
       "y": 30,
       "elevation": 0,
@@ -132,7 +132,7 @@
       "flag": "FLAG_UNUSED_0x022"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_BREAKABLE_ROCK",
+      "graphics_id": "OBJ_EVENT_GFX_NEW_BREAKABLE_ROCK",
       "x": 25,
       "y": 24,
       "elevation": 0,
@@ -145,7 +145,7 @@
       "flag": "FLAG_TEMP_4"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_BREAKABLE_ROCK",
+      "graphics_id": "OBJ_EVENT_GFX_NEW_BREAKABLE_ROCK",
       "x": 25,
       "y": 25,
       "elevation": 0,

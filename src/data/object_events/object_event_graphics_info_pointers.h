@@ -300,6 +300,26 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_ViolaLittle
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_ViolaMan1;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_ViolaMan2;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_ViolaWoman;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Nou;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Lilah;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Alexandr;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_AngrbodaAlbaFemale;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_AngrbodaAlbaMale;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_AngrbodaAlbaSci;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_AngrbodaAurataFemale;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_AngrbodaAurataMale;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_AngrbodaAurataSci;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Dullahan;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Jormungandr;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Cerisithia;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Miner;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Policeman;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Scientist;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_ItemBall2;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_TMBall;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_NewBreakableRock;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_NewPushableBoulder;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_NewCuttableTree;
 
 /*
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RockyNormal;
@@ -613,6 +633,26 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_VIOLA_MAN_1] =              &gObjectEventGraphicsInfo_ViolaMan1,
     [OBJ_EVENT_GFX_VIOLA_MAN_2] =              &gObjectEventGraphicsInfo_ViolaMan2,
     [OBJ_EVENT_GFX_VIOLA_WOMAN] =              &gObjectEventGraphicsInfo_ViolaWoman,
+    [OBJ_EVENT_GFX_NOU] =                      &gObjectEventGraphicsInfo_Nou,
+    [OBJ_EVENT_GFX_LILAH] =                    &gObjectEventGraphicsInfo_Lilah,
+    [OBJ_EVENT_GFX_ALEXANDR] =                 &gObjectEventGraphicsInfo_Alexandr,
+    [OBJ_EVENT_GFX_ANGRBODA_ALBA_FEMALE] =     &gObjectEventGraphicsInfo_AngrbodaAlbaFemale,
+    [OBJ_EVENT_GFX_ANGRBODA_ALBA_MALE] =       &gObjectEventGraphicsInfo_AngrbodaAlbaMale,
+    [OBJ_EVENT_GFX_ANGRBODA_ALBA_MALE] =       &gObjectEventGraphicsInfo_AngrbodaAlbaSci,
+    [OBJ_EVENT_GFX_ANGRBODA_AURATA_FEMALE] =   &gObjectEventGraphicsInfo_AngrbodaAurataFemale,
+    [OBJ_EVENT_GFX_ANGRBODA_AURATA_MALE] =     &gObjectEventGraphicsInfo_AngrbodaAurataMale,
+    [OBJ_EVENT_GFX_ANGRBODA_AURATA_MALE] =     &gObjectEventGraphicsInfo_AngrbodaAurataSci,
+    [OBJ_EVENT_GFX_DULLAHAN] =                 &gObjectEventGraphicsInfo_Dullahan,
+    [OBJ_EVENT_GFX_JORMUNGANDR] =              &gObjectEventGraphicsInfo_Jormungandr,
+    [OBJ_EVENT_GFX_CERISITHIA] =               &gObjectEventGraphicsInfo_Cerisithia,
+    [OBJ_EVENT_GFX_MINER] =                    &gObjectEventGraphicsInfo_Miner,
+    [OBJ_EVENT_GFX_POLICEMAN] =                &gObjectEventGraphicsInfo_Policeman,
+    [OBJ_EVENT_GFX_SCIENTIST] =                &gObjectEventGraphicsInfo_Scientist,
+    [OBJ_EVENT_GFX_ITEM_BALL_2] =              &gObjectEventGraphicsInfo_ItemBall2,
+    [OBJ_EVENT_GFX_TM_BALL] =                  &gObjectEventGraphicsInfo_TMBall,
+    [OBJ_EVENT_GFX_NEW_CUTTABLE_TREE] =        &gObjectEventGraphicsInfo_NewCuttableTree,
+    [OBJ_EVENT_GFX_NEW_BREAKABLE_ROCK] =       &gObjectEventGraphicsInfo_NewBreakableRock,
+    [OBJ_EVENT_GFX_NEW_PUSHABLE_BOULDER] =     &gObjectEventGraphicsInfo_NewPushableBoulder,
 
     /*
     
