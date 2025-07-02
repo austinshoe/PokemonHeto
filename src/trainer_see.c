@@ -125,7 +125,7 @@ static const struct OamData sOamData_Icons =
     .tileNum = 0,
     .priority = 1,
     //.paletteNum = 0,
-    .paletteNum = 3,
+    .paletteNum = 4, //or 3 maybe
     .affineParam = 0,
 };
 
