@@ -124,7 +124,8 @@ static const struct OamData sOamData_Icons =
     .size = SPRITE_SIZE(16x16),
     .tileNum = 0,
     .priority = 1,
-    .paletteNum = 0,
+    //.paletteNum = 0,
+    .paletteNum = 3,
     .affineParam = 0,
 };
 
