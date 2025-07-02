@@ -5657,7 +5657,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_ViolaLittleGirl = 
     .oam = &gObjectEventBaseOam_32x32,
     .subspriteTables = sOamTables_32x32,
     .anims = sAnimTable_Standard,
-    .images = sPicTable_ViolaaLittleGirl,
+    .images = sPicTable_ViolaLittleGirl,
     .affineAnims = gDummySpriteAffineAnimTable,
 };
 
@@ -5695,7 +5695,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_ViolaMan2 = {
     .oam = &gObjectEventBaseOam_32x32,
     .subspriteTables = sOamTables_32x32,
     .anims = sAnimTable_Standard,
-    .images = sPicTable_VeridiaMan2,
+    .images = sPicTable_ViolaMan2,
     .affineAnims = gDummySpriteAffineAnimTable,
 };
 
