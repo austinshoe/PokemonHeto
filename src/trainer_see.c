@@ -125,7 +125,7 @@ static const struct OamData sOamData_Icons =
     .tileNum = 0,
     .priority = 1,
     //.paletteNum = 0,
-    .paletteNum = 4, //or 3 maybe
+    .paletteNum = 4, //or 3 maybe //or whatever
     .affineParam = 0,
 };
 
@@ -170,8 +170,8 @@ static const union AnimCmd *const sSpriteAnimTable_Icons[] =
 static const struct SpriteTemplate sSpriteTemplate_ExclamationQuestionMark =
 {
     .tileTag = TAG_NONE,
-    // .paletteTag = TAG_NONE,
-    .paletteTag = 0x1126,
+    .paletteTag = TAG_NONE,
+    //.paletteTag = 0x1126,
     .oam = &sOamData_Icons,
     .anims = sSpriteAnimTable_Icons,
     .images = sSpriteImageTable_ExclamationQuestionMark,
