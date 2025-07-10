@@ -269,10 +269,21 @@ static const union AnimCmd *const sAnimTable_Arrow[] =
     sArrowAnim_East,
 };
 
+/**
+ * 
+ */
+
+static const struct OamData sArrowOam = {
+    .shape = SPRITE_SHAPE(16x16),
+    .size = SPRITE_SIZE(16x16),
+    .priority = 2,
+    .paletteNum = 4,
+};
+
 const struct SpriteTemplate gFieldEffectObjectTemplate_Arrow = {
     .tileTag = TAG_NONE,
     .paletteTag = TAG_NONE,
-    .oam = &gObjectEventBaseOam_16x16,
+    .oam = &sArrowOam,
     .anims = sAnimTable_Arrow,
     .images = sPicTable_Arrow,
     .affineAnims = gDummySpriteAffineAnimTable,
