@@ -316,6 +316,8 @@
 #define OBJ_EVENT_GFX_NEW_CUTTABLE_TREE          312
 #define OBJ_EVENT_GFX_NEW_BREAKABLE_ROCK         313
 #define OBJ_EVENT_GFX_NEW_PUSHABLE_BOULDER       314
+#define OBJ_EVENT_GFX_NEW_OLD_MAN                315
+#define OBJ_EVENT_GFX_NEW_OLD_WOMAN              316
 
 
 /*
@@ -341,7 +343,7 @@
 // object graphics that can be removed. If more graphics are needed, anything that
 // stores graphics ids will need to be increased in size. See wiki entry below:
 // https://github.com/pret/pokeemerald/wiki/Feature-Branches#overworld-expansion
-#define NUM_OBJ_EVENT_GFX                        315
+#define NUM_OBJ_EVENT_GFX                        317
 
 
 // These are dynamic object gfx ids.

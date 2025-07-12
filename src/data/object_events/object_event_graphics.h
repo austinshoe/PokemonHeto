@@ -465,6 +465,8 @@ const u16 gObjectEventPic_TMBall[] = INCBIN_U16("graphics/object_events/pics/HGS
 const u32 gObjectEventPic_NewCuttableTree[] = INCBIN_U32("graphics/object_events/pics/HGSS_Styled/Interact/cuttable_tree.4bpp");
 const u32 gObjectEventPic_NewBreakableRock[] = INCBIN_U32("graphics/object_events/pics/HGSS_Styled/Interact/breakable_rock.4bpp");
 const u32 gObjectEventPic_NewPushableBoulder[] = INCBIN_U32("graphics/object_events/pics/HGSS_Styled/Interact/pushable_boulder.4bpp");
+const u16 gObjectEventPic_NewOldMan[] = INCBIN_U16("graphics/object_events/pics/HGSS_Styled/NPCs/Other/old_man.4bpp");
+const u16 gObjectEventPic_NewOldWoman[] = INCBIN_U16("graphics/object_events/pics/HGSS_Styled/NPCs/Other/old_woman.4bpp");
 
 
 

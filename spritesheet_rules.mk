@@ -846,6 +846,12 @@ $(OBJEVENTGFXDIR)/HGSS_Styled/Interact/cuttable_tree.4bpp: %.4bpp: %.png
 $(OBJEVENTGFXDIR)/HGSS_Styled/Interact/breakable_rock.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 2 -mheight 2
 
+$(OBJEVENTGFXDIR)/HGSS_Styled/NPCs/Other/old_man.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
+
+$(OBJEVENTGFXDIR)/HGSS_Styled/NPCs/Other/old_woman.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
+
 
 
 
