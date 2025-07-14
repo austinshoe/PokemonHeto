@@ -9,8 +9,18 @@ MtEmberfall2_OnTransition:
     end
 
 MtEmberfall2_SetUpBattle:
+    checkplayergender
+    compare VAR_RESULT, FEMALE
+    goto_if_eq MtEmberfall2_SetUpBattle2
     setobjectxyperm 3, 15, 10
+    setvar VAR_TEMP_4, 3
     end
+
+MtEmberfall2_SetUpBattle2:
+    setobjectxyperm 4, 15, 10
+    setvar VAR_TEMP_4, 4
+    end
+
 
 MtEmberfall2_OnFrame:
     map_script_2 VAR_MAUVILLE_CITY_STATE, 1, MtEmberfall2_RivalBattle
@@ -53,9 +63,9 @@ MtEmberfall2_RivalBattle:
     waitmovement OBJ_EVENT_ID_PLAYER
     showobjectat OBJ_EVENT_ID_PLAYER, 0
     setflag FLAG_DEFEATED_RIVAL_RUSTBORO
-    setobjectxyperm 3, 29, 0
+    setobjectxyperm VAR_TEMP_4, 29, 0
     removeobject 2
-    removeobject 3
+    removeobject VAR_TEMP_4
     release
 	end
 

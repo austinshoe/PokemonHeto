@@ -21,7 +21,7 @@
   ],
   "object_events": [
     {
-      "graphics_id": "OBJ_EVENT_GFX_STEVEN",
+      "graphics_id": "OBJ_EVENT_GFX_NOU",
       "x": 12,
       "y": 13,
       "elevation": 0,
@@ -34,7 +34,7 @@
       "flag": "FLAG_HIDE_MAGMA_HIDEOUT_GRUNTS"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_BEAUTY",
+      "graphics_id": "OBJ_EVENT_GFX_LILAH",
       "x": 12,
       "y": 14,
       "elevation": 0,
@@ -47,7 +47,7 @@
       "flag": "FLAG_HIDE_MAGMA_HIDEOUT_GRUNTS"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_BRENDAN_NORMAL",
+      "graphics_id": "OBJ_EVENT_GFX_LIAM",
       "x": 12,
       "y": 15,
       "elevation": 0,
@@ -73,7 +73,7 @@
       "flag": "FLAG_LEGENDARIES_IN_SOOTOPOLIS"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_OLD_MAN",
+      "graphics_id": "OBJ_EVENT_GFX_JORMUNGANDR",
       "x": 20,
       "y": 17,
       "elevation": 0,
@@ -86,7 +86,7 @@
       "flag": "FLAG_HIDE_MAGMA_HIDEOUT_GRUNTS"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_ARCHIE",
+      "graphics_id": "OBJ_EVENT_GFX_DULLAHAN",
       "x": 19,
       "y": 18,
       "elevation": 0,
@@ -99,7 +99,7 @@
       "flag": "FLAG_HIDE_MAGMA_HIDEOUT_GRUNTS"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_M",
+      "graphics_id": "OBJ_EVENT_GFX_ALEXANDR",
       "x": 20,
       "y": 18,
       "elevation": 0,
@@ -112,7 +112,7 @@
       "flag": "FLAG_HIDE_MAGMA_HIDEOUT_GRUNTS"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_ANABEL",
+      "graphics_id": "OBJ_EVENT_GFX_CERISITHIA",
       "x": 21,
       "y": 18,
       "elevation": 0,
@@ -125,7 +125,7 @@
       "flag": "FLAG_HIDE_MAGMA_HIDEOUT_GRUNTS"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_BRENDAN_NORMAL",
+      "graphics_id": "OBJ_EVENT_GFX_ROCKY_NORMAL",
       "x": 38,
       "y": 0,
       "elevation": 0,
@@ -138,7 +138,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_MAY_NORMAL",
+      "graphics_id": "OBJ_EVENT_GFX_MAI_NORMAL",
       "x": 38,
       "y": 1,
       "elevation": 0,
@@ -151,7 +151,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_M",
+      "graphics_id": "OBJ_EVENT_GFX_ANGRBODA_ALBA_MALE",
       "x": 18,
       "y": 12,
       "elevation": 0,
@@ -164,7 +164,7 @@
       "flag": "FLAG_HIDE_MAGMA_HIDEOUT_GRUNTS"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_F",
+      "graphics_id": "OBJ_EVENT_GFX_ANGRBODA_ALBA_FEMALE",
       "x": 20,
       "y": 12,
       "elevation": 0,
@@ -177,7 +177,7 @@
       "flag": "FLAG_HIDE_MAGMA_HIDEOUT_GRUNTS"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_AQUA_MEMBER_M",
+      "graphics_id": "OBJ_EVENT_GFX_ANGRBODA_AURATA_MALE",
       "x": 22,
       "y": 12,
       "elevation": 0,
@@ -190,7 +190,7 @@
       "flag": "FLAG_HIDE_MAGMA_HIDEOUT_GRUNTS"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL_2",
       "x": 37,
       "y": 0,
       "elevation": 0,
@@ -203,7 +203,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL_2",
       "x": 36,
       "y": 0,
       "elevation": 0,
@@ -216,7 +216,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL_2",
       "x": 35,
       "y": 0,
       "elevation": 0,
@@ -229,7 +229,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL",
+      "graphics_id": "OBJ_EVENT_GFX_ITEM_BALL_2",
       "x": 34,
       "y": 0,
       "elevation": 0,
@@ -242,7 +242,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_BREAKABLE_ROCK",
+      "graphics_id": "OBJ_EVENT_GFX_NEW_BREAKABLE_ROCK",
       "x": 17,
       "y": 17,
       "elevation": 0,
@@ -255,7 +255,7 @@
       "flag": "FLAG_TEMP_2"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_BREAKABLE_ROCK",
+      "graphics_id": "OBJ_EVENT_GFX_NEW_BREAKABLE_ROCK",
       "x": 25,
       "y": 14,
       "elevation": 0,

@@ -26,7 +26,7 @@
   ],
   "object_events": [
     {
-      "graphics_id": "OBJ_EVENT_GFX_BOY_2",
+      "graphics_id": "OBJ_EVENT_GFX_RUBELA_MAN_2",
       "x": 23,
       "y": 31,
       "elevation": 0,
@@ -39,7 +39,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_EXPERT_F",
+      "graphics_id": "OBJ_EVENT_GFX_NEW_OLD_WOMAN",
       "x": 37,
       "y": 24,
       "elevation": 0,
@@ -52,7 +52,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_FAT_MAN",
+      "graphics_id": "OBJ_EVENT_GFX_VIOLA_MAN_2",
       "x": 23,
       "y": 15,
       "elevation": 0,
@@ -65,7 +65,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_GIRL_3",
+      "graphics_id": "OBJ_EVENT_GFX_ALBA_WOMAN_1",
       "x": 7,
       "y": 50,
       "elevation": 0,
@@ -78,7 +78,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_GIRL_2",
+      "graphics_id": "OBJ_EVENT_GFX_AQUILA_WOMAN_2",
       "x": 23,
       "y": 35,
       "elevation": 0,

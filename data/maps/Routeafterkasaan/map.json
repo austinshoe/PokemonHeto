@@ -21,7 +21,7 @@
   ],
   "object_events": [
     {
-      "graphics_id": "OBJ_EVENT_GFX_LITTLE_BOY_3",
+      "graphics_id": "OBJ_EVENT_GFX_RUBELA_LITTLE_BOY",
       "x": 16,
       "y": 37,
       "elevation": 0,
@@ -34,7 +34,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_LITTLE_GIRL",
+      "graphics_id": "OBJ_EVENT_GFX_VERIDIA_LITTLE_GIRL",
       "x": 25,
       "y": 21,
       "elevation": 0,
@@ -86,7 +86,7 @@
       "flag": "FLAG_TEMP_12"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_BARD",
+      "graphics_id": "OBJ_EVENT_GFX_VERIDIA_MAN_2",
       "x": 16,
       "y": 47,
       "elevation": 0,
@@ -99,7 +99,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_DRAKE",
+      "graphics_id": "OBJ_EVENT_GFX_CAERULEA_MAN_2",
       "x": 21,
       "y": 33,
       "elevation": 0,
@@ -112,7 +112,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_FAT_MAN",
+      "graphics_id": "OBJ_EVENT_GFX_AQUILA_MAN_1",
       "x": 15,
       "y": 19,
       "elevation": 0,

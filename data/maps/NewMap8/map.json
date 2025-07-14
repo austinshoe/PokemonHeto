@@ -26,7 +26,7 @@
   ],
   "object_events": [
     {
-      "graphics_id": "OBJ_EVENT_GFX_MAN_4",
+      "graphics_id": "OBJ_EVENT_GFX_VERIDIA_MAN_1",
       "x": 23,
       "y": 15,
       "elevation": 0,
@@ -39,7 +39,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_MAN_5",
+      "graphics_id": "OBJ_EVENT_GFX_RUBELA_MAN_1",
       "x": 29,
       "y": 14,
       "elevation": 0,
@@ -52,7 +52,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_TUBER_F",
+      "graphics_id": "OBJ_EVENT_GFX_AURATA_LITTLE_GIRL",
       "x": 46,
       "y": 14,
       "elevation": 0,
@@ -65,7 +65,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_TUBER_M",
+      "graphics_id": "OBJ_EVENT_GFX_CAERULEA_LITTLE_BOY",
       "x": 47,
       "y": 12,
       "elevation": 0,
@@ -78,7 +78,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_TUBER_F",
+      "graphics_id": "OBJ_EVENT_GFX_CAERULEA_LITTLE_GIRL",
       "x": 43,
       "y": 10,
       "elevation": 0,

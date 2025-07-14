@@ -322,6 +322,8 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_NewPushable
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_NewCuttableTree;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_NewOldMan;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_NewOldWoman;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_NewNurse;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_NewMartClerk;
 
 /*
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RockyNormal;
@@ -655,8 +657,10 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_NEW_CUTTABLE_TREE] =        &gObjectEventGraphicsInfo_NewCuttableTree,
     [OBJ_EVENT_GFX_NEW_BREAKABLE_ROCK] =       &gObjectEventGraphicsInfo_NewBreakableRock,
     [OBJ_EVENT_GFX_NEW_PUSHABLE_BOULDER] =     &gObjectEventGraphicsInfo_NewPushableBoulder,
-    [OBJ_EVENT_GFX_NEW_OLD_MAN] =            &gObjectEventGraphicsInfo_NewOldMan,
-    [OBJ_EVENT_GFX_NEW_OLD_WOMAN] =          &gObjectEventGraphicsInfo_NewOldWoman,
+    [OBJ_EVENT_GFX_NEW_OLD_MAN] =              &gObjectEventGraphicsInfo_NewOldMan,
+    [OBJ_EVENT_GFX_NEW_OLD_WOMAN] =            &gObjectEventGraphicsInfo_NewOldWoman,
+    [OBJ_EVENT_GFX_NEW_NURSE] =                &gObjectEventGraphicsInfo_NewNurse,
+    [OBJ_EVENT_GFX_NEW_MART_CLERK] =           &gObjectEventGraphicsInfo_NewMartClerk,
 
     /*
     

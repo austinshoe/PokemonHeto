@@ -15,7 +15,7 @@
   "connections": 0,
   "object_events": [
     {
-      "graphics_id": "OBJ_EVENT_GFX_BOY_3",
+      "graphics_id": "OBJ_EVENT_GFX_ALBA_MAN_1",
       "x": 2,
       "y": 3,
       "elevation": 0,
@@ -28,7 +28,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_SCHOOL_KID_M",
+      "graphics_id": "OBJ_EVENT_GFX_RUBELA_LITTLE_BOY",
       "x": 4,
       "y": 3,
       "elevation": 0,
@@ -41,7 +41,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_LITTLE_BOY",
+      "graphics_id": "OBJ_EVENT_GFX_ALBA_LITTLE_BOY",
       "x": 10,
       "y": 3,
       "elevation": 0,
@@ -54,7 +54,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_LITTLE_BOY",
+      "graphics_id": "OBJ_EVENT_GFX_RUBELA_LITTLE_BOY",
       "x": 15,
       "y": 15,
       "elevation": 0,
@@ -67,7 +67,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_LITTLE_BOY_3",
+      "graphics_id": "OBJ_EVENT_GFX_AQUILA_LITTLE_BOY",
       "x": 11,
       "y": 15,
       "elevation": 0,
@@ -80,7 +80,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_LITTLE_BOY",
+      "graphics_id": "OBJ_EVENT_GFX_VERIDIA_LITTLE_BOY",
       "x": 13,
       "y": 14,
       "elevation": 0,
@@ -93,7 +93,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_LITTLE_GIRL",
+      "graphics_id": "OBJ_EVENT_GFX_ALBA_LITTLE_GIRL",
       "x": 13,
       "y": 16,
       "elevation": 0,
@@ -158,7 +158,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_LITTLE_BOY",
+      "graphics_id": "OBJ_EVENT_GFX_AQUILA_LITTLE_BOY",
       "x": 7,
       "y": 5,
       "elevation": 0,
@@ -171,7 +171,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_LITTLE_BOY_3",
+      "graphics_id": "OBJ_EVENT_GFX_VIOLA_LITTLE_BOY",
       "x": 12,
       "y": 5,
       "elevation": 0,
@@ -184,7 +184,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_LITTLE_GIRL",
+      "graphics_id": "OBJ_EVENT_GFX_CAERULEA_LITTLE_GIRL",
       "x": 15,
       "y": 3,
       "elevation": 0,
@@ -197,7 +197,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_LITTLE_BOY_3",
+      "graphics_id": "OBJ_EVENT_GFX_FERRUGINEA_LITTLE_BOY",
       "x": 6,
       "y": 12,
       "elevation": 0,
@@ -210,7 +210,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_LITTLE_BOY",
+      "graphics_id": "OBJ_EVENT_GFX_CAERULEA_LITTLE_BOY",
       "x": 2,
       "y": 13,
       "elevation": 0,
@@ -223,7 +223,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_LITTLE_BOY",
+      "graphics_id": "OBJ_EVENT_GFX_VERIDIA_LITTLE_BOY",
       "x": 4,
       "y": 13,
       "elevation": 0,
@@ -236,7 +236,7 @@
       "flag": "0"
     },
     {
-      "graphics_id": "OBJ_EVENT_GFX_LITTLE_BOY_3",
+      "graphics_id": "OBJ_EVENT_GFX_AURATA_LITTLE_BOY",
       "x": 4,
       "y": 11,
       "elevation": 0,
