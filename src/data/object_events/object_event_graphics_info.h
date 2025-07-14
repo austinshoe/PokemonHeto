@@ -6121,8 +6121,8 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_NewOldMan = {
 
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_NewOldWoman = {
     .tileTag = TAG_NONE,
-    .paletteTag = OBJ_EVENT_PAL_TAG_ROCKY,
-    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_ROCKY_REFLECTION,
+    .paletteTag = OBJ_EVENT_PAL_TAG_NEW_NPC_2,
+    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NEW_NPC_2_REFLECTION,
     .size = 512,
     .width = 32,
     .height = 32,
@@ -6140,8 +6140,8 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_NewOldWoman = {
 
 const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_NewNurse = {
     .tileTag = TAG_NONE,
-    .paletteTag = OBJ_EVENT_PAL_TAG_ROCKY,
-    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_ROCKY_REFLECTION,
+    .paletteTag = OBJ_EVENT_PAL_TAG_NEW_NPC_2,
+    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NEW_NPC_2_REFLECTION,
     .size = 512,
     .width = 32,
     .height = 32,
