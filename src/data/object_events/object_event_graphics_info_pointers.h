@@ -325,6 +325,7 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_NewOldWoman
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_NewNurse;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_NewMartClerk;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_ProfessorPine;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Flora;
 
 /*
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RockyNormal;
