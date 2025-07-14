@@ -858,6 +858,9 @@ $(OBJEVENTGFXDIR)/HGSS_Styled/NPCs/Other/nurse.4bpp: %.4bpp: %.png
 $(OBJEVENTGFXDIR)/HGSS_Styled/NPCs/Other/mart_clerk.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
+$(OBJEVENTGFXDIR)/HGSS_Styled/GL_EF/Other/Prof_Pine.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 4 -mheight 4
+
 
 
 

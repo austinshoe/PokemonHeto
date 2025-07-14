@@ -324,6 +324,7 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_NewOldMan;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_NewOldWoman;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_NewNurse;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_NewMartClerk;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_ProfessorPine;
 
 /*
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RockyNormal;
@@ -661,6 +662,7 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_NEW_OLD_WOMAN] =            &gObjectEventGraphicsInfo_NewOldWoman,
     [OBJ_EVENT_GFX_NEW_NURSE] =                &gObjectEventGraphicsInfo_NewNurse,
     [OBJ_EVENT_GFX_NEW_MART_CLERK] =           &gObjectEventGraphicsInfo_NewMartClerk,
+    [OBJ_EVENT_GFX_PROFESSOR_PINE] =           &gObjectEventGraphicsInfo_ProfessorPine,
 
     /*
     

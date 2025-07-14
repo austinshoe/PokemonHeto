@@ -469,6 +469,7 @@ const u16 gObjectEventPic_NewOldMan[] = INCBIN_U16("graphics/object_events/pics/
 const u16 gObjectEventPic_NewOldWoman[] = INCBIN_U16("graphics/object_events/pics/HGSS_Styled/NPCs/Other/old_woman.4bpp");
 const u16 gObjectEventPic_NewNurse[] = INCBIN_U16("graphics/object_events/pics/HGSS_Styled/NPCs/Other/nurse.4bpp");
 const u16 gObjectEventPic_NewMartClerk[] = INCBIN_U16("graphics/object_events/pics/HGSS_Styled/NPCs/Other/mart_clerk.4bpp");
+const u16 gObjectEventPic_ProfessorPine[] = INCBIN_U16("graphics/object_events/pics/HGSS_Styled/GL_EF/Prof_Pine.4bpp");
 
 
 
