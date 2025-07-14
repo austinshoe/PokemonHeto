@@ -663,6 +663,7 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_NEW_NURSE] =                &gObjectEventGraphicsInfo_NewNurse,
     [OBJ_EVENT_GFX_NEW_MART_CLERK] =           &gObjectEventGraphicsInfo_NewMartClerk,
     [OBJ_EVENT_GFX_PROFESSOR_PINE] =           &gObjectEventGraphicsInfo_ProfessorPine,
+    [OBJ_EVENT_GFX_FLORA] =                    &gObjectEventGraphicsInfo_Flora,
 
     /*
     
