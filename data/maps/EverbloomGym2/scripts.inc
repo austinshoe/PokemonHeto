@@ -49,6 +49,10 @@ Everbloom_Gym_Flora::
     waitmessage
     waitbuttonpress
     closemessage
+    call Everbloom_Gym_Flora2
+    goto Everbloom_Gym_Flora3
+
+Everbloom_Gym_FloraUnused:
     getplayerxy VAR_TEMP_0, VAR_TEMP_1
     compare VAR_TEMP_0, 7
     goto_if_eq Everbloom_Gym_Flora_Playeris7

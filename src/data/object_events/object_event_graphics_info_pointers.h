@@ -326,6 +326,12 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_NewNurse;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_NewMartClerk;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_ProfessorPine;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Flora;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Khione;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Marina;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Ryo;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Andre;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Kanae;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Cornwall;
 
 /*
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RockyNormal;
@@ -665,6 +671,12 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_NEW_MART_CLERK] =           &gObjectEventGraphicsInfo_NewMartClerk,
     [OBJ_EVENT_GFX_PROFESSOR_PINE] =           &gObjectEventGraphicsInfo_ProfessorPine,
     [OBJ_EVENT_GFX_FLORA] =                    &gObjectEventGraphicsInfo_Flora,
+    [OBJ_EVENT_GFX_KHIONE] =                   &gObjectEventGraphicsInfo_Khione,
+    [OBJ_EVENT_GFX_MARINA] =                   &gObjectEventGraphicsInfo_Marina,
+    [OBJ_EVENT_GFX_RYO] =                      &gObjectEventGraphicsInfo_Ryo,
+    [OBJ_EVENT_GFX_ANDRE] =                    &gObjectEventGraphicsInfo_Andre,
+    [OBJ_EVENT_GFX_KANAE] =                    &gObjectEventGraphicsInfo_Kanae,
+    [OBJ_EVENT_GFX_CORNWALL] =                 &gObjectEventGraphicsInfo_Cornwall,
 
     /*
     

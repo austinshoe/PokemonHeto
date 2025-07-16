@@ -471,6 +471,12 @@ const u16 gObjectEventPic_NewNurse[] = INCBIN_U16("graphics/object_events/pics/H
 const u16 gObjectEventPic_NewMartClerk[] = INCBIN_U16("graphics/object_events/pics/HGSS_Styled/NPCs/Other/mart_clerk.4bpp");
 const u16 gObjectEventPic_ProfessorPine[] = INCBIN_U16("graphics/object_events/pics/HGSS_Styled/GL_EF/Prof_Pine.4bpp");
 const u16 gObjectEventPic_Flora[] = INCBIN_U16("graphics/object_events/pics/HGSS_Styled/GL_EF/flora.4bpp");
+const u16 gObjectEventPic_Khione[] = INCBIN_U16("graphics/object_events/pics/HGSS_Styled/GL_EF/khione.4bpp");
+const u16 gObjectEventPic_Marina[] = INCBIN_U16("graphics/object_events/pics/HGSS_Styled/GL_EF/marina.4bpp");
+const u16 gObjectEventPic_Ryo[] = INCBIN_U16("graphics/object_events/pics/HGSS_Styled/GL_EF/ryo.4bpp");
+const u16 gObjectEventPic_Andre[] = INCBIN_U16("graphics/object_events/pics/HGSS_Styled/GL_EF/andre.4bpp");
+const u16 gObjectEventPic_Kanae[] = INCBIN_U16("graphics/object_events/pics/HGSS_Styled/GL_EF/Kanae.4bpp");
+const u16 gObjectEventPic_Cornwall[] = INCBIN_U16("graphics/object_events/pics/HGSS_Styled/GL_EF/Cornwall.4bpp");
 
 
 
