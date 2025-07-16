@@ -810,7 +810,7 @@ $(OBJEVENTGFXDIR)/HGSS_Styled/Angrboda/angrboda_alba_female.4bpp: %.4bpp: %.png
 $(OBJEVENTGFXDIR)/HGSS_Styled/Angrboda/angrboda_alba_male.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
-$(OBJEVENTGFXDIR)/HGSS_Styled/Angrboda/angrboda_aurata_scientist.4bpp: %.4bpp: %.png
+$(OBJEVENTGFXDIR)/HGSS_Styled/Angrboda/angrboda_alba_scientist.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
 $(OBJEVENTGFXDIR)/HGSS_Styled/Angrboda/angrboda_aurata_female.4bpp: %.4bpp: %.png
