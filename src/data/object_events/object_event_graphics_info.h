@@ -6328,6 +6328,25 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Cornwall = {
     .affineAnims = gDummySpriteAffineAnimTable,
 };
 
+const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Draconarix = {
+    .tileTag = TAG_NONE,
+    .paletteTag = OBJ_EVENT_PAL_TAG_NEW_NPC_3,
+    .reflectionPaletteTag = OBJ_EVENT_PAL_TAG_NEW_NPC_3_REFLECTION,
+    .size = 512,
+    .width = 32,
+    .height = 32,
+    .paletteSlot = PALSLOT_NPC_3,
+    .shadowSize = SHADOW_SIZE_M,
+    .inanimate = FALSE,
+    .disableReflectionPaletteLoad = FALSE,
+    .tracks = TRACKS_FOOT,
+    .oam = &gObjectEventBaseOam_64x64,
+    .subspriteTables = sOamTables_64x64,
+    .anims = sAnimTable_Draconarix,
+    .images = sPicTable_Draconarix,
+    .affineAnims = gDummySpriteAffineAnimTable,
+};
+
 
 
 

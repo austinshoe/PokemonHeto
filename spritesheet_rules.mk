@@ -882,6 +882,9 @@ $(OBJEVENTGFXDIR)/HGSS_Styled/GL_EF/Kanae.4bpp: %.4bpp: %.png
 $(OBJEVENTGFXDIR)/HGSS_Styled/GL_EF/Cornwall.4bpp: %.4bpp: %.png
 	$(GFX) $< $@ -mwidth 4 -mheight 4
 
+$(OBJEVENTGFXDIR)/HGSS_Styled/Pokemon/Draconarix.4bpp: %.4bpp: %.png
+	$(GFX) $< $@ -mwidth 8 -mheight 8
+
 
 
 

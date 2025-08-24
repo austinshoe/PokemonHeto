@@ -328,6 +328,7 @@
 #define OBJ_EVENT_GFX_ANDRE                      324
 #define OBJ_EVENT_GFX_KANAE                      325
 #define OBJ_EVENT_GFX_CORNWALL                   326
+#define OBJ_EVENT_GFX_DRACONARIX                 327
 
 
 /*
@@ -353,7 +354,7 @@
 // object graphics that can be removed. If more graphics are needed, anything that
 // stores graphics ids will need to be increased in size. See wiki entry below:
 // https://github.com/pret/pokeemerald/wiki/Feature-Branches#overworld-expansion
-#define NUM_OBJ_EVENT_GFX                        327
+#define NUM_OBJ_EVENT_GFX                        328
 
 
 // These are dynamic object gfx ids.

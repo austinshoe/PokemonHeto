@@ -3213,6 +3213,12 @@ static const struct SpriteFrameImage sPicTable_Cornwall[] = {
     overworld_frame(gObjectEventPic_Cornwall, 4, 4, 8),
 };
 
+static const struct SpriteFrameImage sPicTable_Draconarix[] = {
+    overworld_frame(gObjectEventPic_Draconarix, 8, 8, 0),
+    overworld_frame(gObjectEventPic_Draconarix, 8, 8, 1),
+    overworld_frame(gObjectEventPic_Draconarix, 8, 8, 2),
+};
+
 
 
 

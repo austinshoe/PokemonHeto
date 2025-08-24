@@ -477,6 +477,7 @@ const u16 gObjectEventPic_Ryo[] = INCBIN_U16("graphics/object_events/pics/HGSS_S
 const u16 gObjectEventPic_Andre[] = INCBIN_U16("graphics/object_events/pics/HGSS_Styled/GL_EF/andre.4bpp");
 const u16 gObjectEventPic_Kanae[] = INCBIN_U16("graphics/object_events/pics/HGSS_Styled/GL_EF/Kanae.4bpp");
 const u16 gObjectEventPic_Cornwall[] = INCBIN_U16("graphics/object_events/pics/HGSS_Styled/GL_EF/Cornwall.4bpp");
+const u16 gObjectEventPic_Draconarix[] = INCBIN_U16("graphics/object_events/pics/HGSS_Styled/Pokemon/Draconarix.4bpp");
 
 
 

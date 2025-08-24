@@ -20,7 +20,7 @@ Tunnel_StrengthBoulder::
 	removeobject 2
 	removeobject 3
 	removeobject 4
-	addvar VAR_UNUSED_0x40FF, 2
+	addvar VAR_UNUSED_0x40FF, 3
 	addobject 5
 	setobjectxyperm 5, VAR_UNUSED_0x40FE, VAR_UNUSED_0x40FF
 	setobjectxy 5, VAR_UNUSED_0x40FE, VAR_UNUSED_0x40FF

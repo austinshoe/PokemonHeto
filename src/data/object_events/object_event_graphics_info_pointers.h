@@ -332,6 +332,7 @@ extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Ryo;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Andre;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Kanae;
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Cornwall;
+extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Draconarix;
 
 /*
 extern const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_RockyNormal;
@@ -677,6 +678,7 @@ const struct ObjectEventGraphicsInfo *const gObjectEventGraphicsInfoPointers[NUM
     [OBJ_EVENT_GFX_ANDRE] =                    &gObjectEventGraphicsInfo_Andre,
     [OBJ_EVENT_GFX_KANAE] =                    &gObjectEventGraphicsInfo_Kanae,
     [OBJ_EVENT_GFX_CORNWALL] =                 &gObjectEventGraphicsInfo_Cornwall,
+    [OBJ_EVENT_GFX_DRACONARIX] =               &gObjectEventGraphicsInfo_Draconarix,
 
     /*
     
