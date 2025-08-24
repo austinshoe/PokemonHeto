@@ -6342,7 +6342,7 @@ const struct ObjectEventGraphicsInfo gObjectEventGraphicsInfo_Draconarix = {
     .tracks = TRACKS_FOOT,
     .oam = &gObjectEventBaseOam_64x64,
     .subspriteTables = sOamTables_64x64,
-    .anims = sAnimTable_Draconarix,
+    .anims = sAnimTable_Inanimate,
     .images = sPicTable_Draconarix,
     .affineAnims = gDummySpriteAffineAnimTable,
 };
