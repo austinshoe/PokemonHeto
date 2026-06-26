@@ -7,6 +7,7 @@ on:
       - upcoming
       - OW-Sprites
   pull_request:
+  workflow_dispatch:
 
 jobs:
   build:
